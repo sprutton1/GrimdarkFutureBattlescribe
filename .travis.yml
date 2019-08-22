@@ -1,0 +1,17 @@
+language: csharp
+mono: none
+dotnet: 2.0.0
+
+install:
+- dotnet tool install wham -g --version 0.6.17
+
+script:
+ - wham publish -a zip index bsi -s . -o ./index --repo-name https://grimdark-future.s3.amazonaws.com/index.bsi -f index
+deploy:
+  provider: s3
+  access_key_id: $AWS_KEY
+  secret_access_key: $AWS_SECRET
+  bucket: "grimdark-future"
+  skip_cleanup: true
+  acl: public_read
+  local_dir: public
