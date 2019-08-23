@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="2" battleScribeVersion="2.02" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="4" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.4"/>
   </publications>
@@ -32,12 +32,18 @@
         <characteristicType id="189e-687a-bec2-51ad" name="Special Rules"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="57dc-caf6-641d-327b" name="Psychic Power">
+      <characteristicTypes>
+        <characteristicType id="86f2-adcb-3afd-566c" name="Roll"/>
+        <characteristicType id="e490-3d41-dc85-9d0f" name="Details"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <forceEntries>
     <forceEntry id="e1b6-6db4-e6e8-6188" name="Army" hidden="false"/>
   </forceEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="a1da-51ac-5a8f-8f95" name="Assault Rifle" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="a1da-51ac-5a8f-8f95" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a002-0989-a345-3d40" name="Assault Rifle" hidden="false" targetId="e313-290f-cb18-c4ea" type="profile"/>
       </infoLinks>
@@ -45,7 +51,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4761-1567-afe2-c2ed" name="CCW (A1)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="4761-1567-afe2-c2ed" name="CCW (A1)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="088f-cdeb-e532-bdf8" name="CCW (A1)" hidden="false" targetId="149b-6881-3b3f-3972" type="profile"/>
       </infoLinks>
@@ -53,7 +59,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2cf5-bae0-bd1b-c205" name="CCW (A2)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2cf5-bae0-bd1b-c205" name="CCW (A2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="af26-0fd8-bc19-6313" name="CCW (A2)" hidden="false" targetId="a133-fbbf-5794-de55" type="profile"/>
       </infoLinks>
@@ -61,7 +67,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ebb4-9dca-acaa-4dcf" name="Flamethrower" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="ebb4-9dca-acaa-4dcf" name="Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1012-c6b5-9cdd-cb85" name="Flamethrower" hidden="false" targetId="b1bc-ecdd-2f81-a345" type="profile"/>
       </infoLinks>
@@ -69,7 +75,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f389-e078-075e-fbff" name="Fusion Rifle" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="f389-e078-075e-fbff" name="Fusion Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="30d9-4b2c-0d7e-eb0e" name="Fusion Rifle" hidden="false" targetId="d49d-3ce6-6941-e14c" type="profile"/>
         <infoLink id="3e9a-e70b-364b-ab64" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -79,7 +85,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e089-6dd6-ec4e-12e6" name="Grenade Launcher" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="e089-6dd6-ec4e-12e6" name="Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="fd2e-c1e8-299f-f131" name="Grenade Launcher - pick one each turn: HE" hidden="false" targetId="ec46-b128-6c2a-36cc" type="profile"/>
         <infoLink id="b57f-71e8-5a5f-4426" name="Grenade Launcher - pick one each turn: AT" hidden="false" targetId="a8f2-5811-9c54-fc5d" type="profile"/>
@@ -90,7 +96,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4cc-bca2-fafc-9825" name="Heavy Flamethrower" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b4cc-bca2-fafc-9825" name="Heavy Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="105e-fc3f-cf29-0b0c" name="Heavy Flamethrower" hidden="false" targetId="a5d8-f3e8-cea1-7ea2" type="profile"/>
         <infoLink id="f19c-351f-0f0e-623c" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -99,7 +105,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bb7e-64f2-5ded-f697" name="Pistol" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bb7e-64f2-5ded-f697" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a792-d637-77a0-a602" name="Pistol" hidden="false" targetId="12e1-e98e-4814-6d75" type="profile"/>
       </infoLinks>
@@ -107,7 +113,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4bf-2a04-6bf7-a1e0" name="Plasma Pistol" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b4bf-2a04-6bf7-a1e0" name="Plasma Pistol" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="eaf6-13d1-8a48-a62b" name="Plasma Pistol" hidden="false" targetId="a075-a524-44f8-9c1a" type="profile"/>
         <infoLink id="7ccc-3b03-ddb3-78e8" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -116,7 +122,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4cb4-c780-e943-646a" name="Plasma Rifle" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="4cb4-c780-e943-646a" name="Plasma Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2517-caa3-1382-febf" name="Plasma Rifle" hidden="false" targetId="cf74-e2c2-dd6c-662f" type="profile"/>
         <infoLink id="315c-3a07-e46e-ecc1" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -125,7 +131,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9ee5-5c13-dfef-ff7c" name="Shotgun" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="9ee5-5c13-dfef-ff7c" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="40f5-f196-7db8-81da" name="Shotgun" hidden="false" targetId="60a3-2b87-f77c-195c" type="profile"/>
       </infoLinks>
@@ -133,7 +139,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="77e0-0bbf-54ae-e813" name="Sniper Rifle" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="77e0-0bbf-54ae-e813" name="Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ba07-f567-2b5e-c69d" name="Sniper" hidden="false" targetId="2943-e3f6-fb44-ae13" type="rule"/>
         <infoLink id="240b-fe61-7b62-3381" name="Sniper Rifle" hidden="false" targetId="2581-6c6d-d8a9-c61e" type="profile"/>
@@ -143,7 +149,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b085-6801-9084-46f0" name="Energy Sword" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b085-6801-9084-46f0" name="Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9da2-c58b-1c61-80f1" name="Energy Sword" hidden="false" targetId="d26d-a459-c183-3009" type="profile"/>
         <infoLink id="6b9c-aa19-2775-1578" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -152,7 +158,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ffff-7bb4-119c-0f59" name="Energy Fist" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="ffff-7bb4-119c-0f59" name="Energy Fist" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ed02-89f2-8820-bacf" name="Energy Fist" page="" hidden="false" targetId="2001-b03e-9d66-d6a0" type="profile"/>
         <infoLink id="7bca-607f-0cf1-8e6a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -161,7 +167,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b1f7-fded-6b90-629b" name="Assault Rifle" hidden="false" collective="true" type="upgrade">
+    <selectionEntry id="b1f7-fded-6b90-629b" name="Assault Rifle" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0665-b656-0ac3-cb82" name="Assault Rifle" hidden="false" targetId="e313-290f-cb18-c4ea" type="profile"/>
       </infoLinks>
@@ -169,7 +175,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b521-2bfc-867e-4ea1" name="CCW (A1)" hidden="false" collective="true" type="upgrade">
+    <selectionEntry id="b521-2bfc-867e-4ea1" name="CCW (A1)" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="eeef-748c-2218-56e4" name="CCW (A1)" hidden="false" targetId="149b-6881-3b3f-3972" type="profile"/>
       </infoLinks>
@@ -177,7 +183,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="168d-fc4b-a9af-d00f" name="CCW (A2)" hidden="false" collective="true" type="upgrade">
+    <selectionEntry id="168d-fc4b-a9af-d00f" name="CCW (A2)" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="b999-9dce-ffb8-a85d" name="CCW (A2)" hidden="false" targetId="a133-fbbf-5794-de55" type="profile"/>
       </infoLinks>
@@ -185,7 +191,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0f74-a615-8329-0c1a" name="Pistol" hidden="false" collective="true" type="upgrade">
+    <selectionEntry id="0f74-a615-8329-0c1a" name="Pistol" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0ce4-d7ff-82b1-1cfb" name="Pistol" hidden="false" targetId="12e1-e98e-4814-6d75" type="profile"/>
       </infoLinks>
@@ -193,15 +199,15 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b771-ea0a-7bdf-0bb1" name="Assault Rifle &amp; CCW (A1)" hidden="false" collective="true" type="upgrade">
+    <selectionEntry id="b771-ea0a-7bdf-0bb1" name="Assault Rifle &amp; CCW (A1)" hidden="false" collective="true" import="true" type="upgrade">
       <entryLinks>
-        <entryLink id="708f-74cd-6f7a-369a" name="Assault Rifle" hidden="false" collective="false" targetId="b1f7-fded-6b90-629b" type="selectionEntry">
+        <entryLink id="708f-74cd-6f7a-369a" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="b1f7-fded-6b90-629b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a5e-73b2-d19f-848a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cb1-7d0c-50c9-a470" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="bd7c-58fa-b890-82e5" name="CCW (A1)" hidden="false" collective="false" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+        <entryLink id="bd7c-58fa-b890-82e5" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31bd-3a95-8495-ef6e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaa9-3477-6acb-f465" type="max"/>
@@ -212,15 +218,15 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a0d3-db2e-c6a3-cd70" name="Pistol &amp; CCW (A2)" hidden="false" collective="true" type="upgrade">
+    <selectionEntry id="a0d3-db2e-c6a3-cd70" name="Pistol &amp; CCW (A2)" hidden="false" collective="true" import="true" type="upgrade">
       <entryLinks>
-        <entryLink id="a7d8-e19c-5632-8788" name="Pistol" hidden="false" collective="false" targetId="0f74-a615-8329-0c1a" type="selectionEntry">
+        <entryLink id="a7d8-e19c-5632-8788" name="Pistol" hidden="false" collective="false" import="true" targetId="0f74-a615-8329-0c1a" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e9f-7dba-b791-15bf" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4eb-8cfc-dba2-66b4" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="2d49-5000-8c34-daf7" name="CCW (A2)" hidden="false" collective="false" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
+        <entryLink id="2d49-5000-8c34-daf7" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bdd-925e-cad5-6bff" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e8a-a6c4-5321-18d8" type="max"/>
@@ -231,7 +237,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4481-49a4-e4f7-925b" name="Heavy Machinegun" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="4481-49a4-e4f7-925b" name="Heavy Machinegun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5b56-5d6a-36d2-8205" name="Heavy Machinegun" hidden="false" targetId="adb7-a8df-091b-22a9" type="profile"/>
         <infoLink id="2719-2115-d0b5-a85b" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -240,7 +246,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ff1b-714c-6353-221d" name="Missile Launcher" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="ff1b-714c-6353-221d" name="Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f8ac-30ba-202f-f038" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="8c31-acb6-f242-292f" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
@@ -252,7 +258,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5726-d775-71fa-e9fd" name="Mortar" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5726-d775-71fa-e9fd" name="Mortar" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="45a7-f336-e218-a8a3" name="Indirect" hidden="false" targetId="587a-b92c-a265-06c4" type="rule"/>
         <infoLink id="645d-79ec-42cf-a62f" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
@@ -262,7 +268,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9557-8f54-7c72-fe96" name="Autocannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="9557-8f54-7c72-fe96" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0d3c-9f6e-c020-c1c9" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="7a54-8de2-0ba9-d077" name="Autocannon" hidden="false" targetId="a131-08b1-7b13-e56b" type="profile"/>
@@ -271,7 +277,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1f20-2b60-f100-bed0" name="Laser Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1f20-2b60-f100-bed0" name="Laser Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3775-0241-fc71-d9ac" name="Laser Cannon" hidden="false" targetId="6666-f9ec-53ed-14ce" type="profile"/>
         <infoLink id="de66-d4a1-bd39-03d3" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
@@ -281,7 +287,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3640-bb26-8a54-047c" name="Twin Autocannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="3640-bb26-8a54-047c" name="Twin Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="b107-1772-19f4-8da0" name="Twin Autocannon" hidden="false" targetId="64df-e095-a608-3f07" type="profile"/>
         <infoLink id="ec06-f3d4-f24c-a776" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -290,7 +296,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6bf9-8992-7b02-5764" name="Light Machinegun" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6bf9-8992-7b02-5764" name="Light Machinegun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9a80-6f53-330c-6f89" name="Light Machinegun" hidden="false" targetId="c0d6-cc28-d227-9727" type="profile"/>
       </infoLinks>
@@ -298,7 +304,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5dc2-4ac8-2769-e4ba" name="Dozer Blade" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5dc2-4ac8-2769-e4ba" name="Dozer Blade" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9682-04ab-e20b-c527" name="Dozer Blade" hidden="false" targetId="264c-3d01-4b6d-fb09" type="profile"/>
         <infoLink id="a2db-a804-11d8-9850" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
@@ -307,7 +313,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="696d-b8cf-37bb-c9bf" name="Storm Rifle" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="696d-b8cf-37bb-c9bf" name="Storm Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3cc7-dd39-7a5a-0e79" name="Storm Rifle" hidden="false" targetId="ebf6-9e34-7e8f-e18e" type="profile"/>
       </infoLinks>
@@ -315,7 +321,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f587-2140-510e-48b8" name="Flamethrower Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="f587-2140-510e-48b8" name="Flamethrower Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="79e5-ef7b-b903-c53b" name="Flamethrower Cannon" hidden="false" targetId="dadd-7e42-132b-f562" type="profile"/>
         <infoLink id="766f-40bb-ad2d-6c45" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -324,7 +330,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9a2d-2097-e3db-8bbf" name="Fusion Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="9a2d-2097-e3db-8bbf" name="Fusion Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="af0e-b57d-8a76-b4be" name="Fusion Cannon" hidden="false" targetId="c6c3-1131-fa6e-5dbc" type="profile"/>
         <infoLink id="b75e-e1cf-7336-a1ba" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -334,7 +340,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a5f5-d44a-03b0-9a99" name="Heavy Fusion Rifle" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="a5f5-d44a-03b0-9a99" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="66fb-26d8-e73b-7368" name="Heavy Fusion Rifle" hidden="false" targetId="83d5-c300-ef46-f049" type="profile"/>
         <infoLink id="cd02-af5c-a752-e932" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -344,7 +350,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e835-5aa3-edaa-ee4a" name="Heavy Autocannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="e835-5aa3-edaa-ee4a" name="Heavy Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d3a6-4a95-38e8-b32e" name="Heavy Autocannon" hidden="false" targetId="a758-adad-063c-ed2c" type="profile"/>
         <infoLink id="b9c5-4522-9dc4-05eb" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -353,7 +359,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e710-08f1-e420-99f1" name="Heavy Plasma Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="e710-08f1-e420-99f1" name="Heavy Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="59a3-e29d-6815-5c1a" name="Heavy Plasma Cannon" hidden="false" targetId="b95c-ee70-6ac7-feb3" type="profile"/>
         <infoLink id="9c73-c324-1c91-23f0" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -363,7 +369,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="05e9-6fae-2a04-8820" name="Plasma Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="05e9-6fae-2a04-8820" name="Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="78d7-21ab-a75e-3c5c" name="Plasma Cannon" hidden="false" targetId="02ee-587a-682f-9447" type="profile"/>
         <infoLink id="cfd0-6017-1ed3-4fa5" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -373,7 +379,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3f8b-5098-c8b9-5cd2" name="Twin AA-Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="3f8b-5098-c8b9-5cd2" name="Twin AA-Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="cb62-e894-1282-f446" name="Twin AA-Cannon" hidden="false" targetId="9517-6537-8037-ca3e" type="profile"/>
         <infoLink id="db3a-b894-f0f3-185f" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -383,7 +389,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8716-34a0-f5b9-30b2" name="Energy Sword" hidden="false" collective="true" type="upgrade">
+    <selectionEntry id="8716-34a0-f5b9-30b2" name="Energy Sword" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="69a7-f3f8-826d-901c" name="Energy Sword" hidden="false" targetId="d26d-a459-c183-3009" type="profile"/>
         <infoLink id="47b6-c9c0-6e23-a404" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -392,7 +398,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d271-2d81-e640-0040" name="Twin Laser Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="d271-2d81-e640-0040" name="Twin Laser Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8261-d8f0-e8ae-2e9e" name="Twin Laser Cannon" hidden="false" targetId="165e-82b4-d3e4-a1b8" type="profile"/>
         <infoLink id="6ecb-4d1e-e408-f9e2" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -402,7 +408,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c756-9c2d-beca-986c" name="Hunter Missile" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="c756-9c2d-beca-986c" name="Hunter Missile" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4720-5f91-f344-7081" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="fb86-30bf-d394-3417" name="Hunter Missiles" hidden="false" targetId="0e73-640e-36f0-bd90" type="profile"/>
@@ -412,7 +418,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="76d2-5dc6-d28b-c278" name="Twin Heavy Flamethrower" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="76d2-5dc6-d28b-c278" name="Twin Heavy Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0b1b-ea00-84f5-fdc2" name="Twin Heavy Flamethrower" hidden="false" targetId="821d-cc71-99f5-c708" type="profile"/>
         <infoLink id="c200-9574-0c0a-3f48" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -421,7 +427,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7837-57e0-d13e-35ab" name="Twin Heavy Fusion Rifle" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7837-57e0-d13e-35ab" name="Twin Heavy Fusion Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3a93-edfc-d046-232c" name="Twin Heavy Fusion Rifle" hidden="false" targetId="ab35-b28f-057d-1284" type="profile"/>
         <infoLink id="6f0b-7d89-a181-9153" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -431,7 +437,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dae8-3106-6a96-228c" name="Twin Heavy Machinegun" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="dae8-3106-6a96-228c" name="Twin Heavy Machinegun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a423-6f78-f234-bc7e" name="Twin Heavy Machinegun" hidden="false" targetId="cf32-7ef8-6e43-092c" type="profile"/>
         <infoLink id="568c-b663-bb10-3277" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -440,10 +446,18 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dfe2-1816-bfb9-2813" name="Heavy Gravity Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="dfe2-1816-bfb9-2813" name="Heavy Gravity Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3e76-dbe6-b7ad-9506" name="Heavy Gravity Cannon" hidden="false" targetId="9259-0661-988e-be92" type="profile"/>
         <infoLink id="86da-aaf0-821c-44a9" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="619b-fa14-4a45-3a48" name="Twin Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="83bc-7e4d-53d2-e977" name="Twin Flamethrower" hidden="false" targetId="70e5-4ee0-4848-bed9" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -867,6 +881,13 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">30&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A5</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(D3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="70e5-4ee0-4848-bed9" name="Twin Flamethrower" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A12</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
