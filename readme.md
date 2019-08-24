@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/sprutton1/GrimdarkFutureBattlescribe.svg?branch=master)](https://travis-ci.com/sprutton1/GrimdarkFutureBattlescribe)
 
 <!-- TOC -->
 
