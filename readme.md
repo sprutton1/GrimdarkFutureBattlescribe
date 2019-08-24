@@ -81,7 +81,7 @@ table!
 |Machine Cult|Done|-|
 |Mercenaries|Not started|-|
 |Orc Marauders|Not started|-|
-|Ratmen Clans|In progress|[Issue 7](../../issues/7)|
+|Ratmen Clans| Done |[Issue 7](../../issues/7)|
 |Rebel Guerrillas|Not started|-|
 |Robot Legions|Not started|-|
 |Soul-Snatchers|Not started|-|
