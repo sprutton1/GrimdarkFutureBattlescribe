@@ -76,7 +76,7 @@ table!
 |Dark Elf Raiders|Not started|-|
 |Dwarf Guilds|Not started|-|
 |Havoc Brothers|Not started|-|
-|High Elf Fleets|Not started|-|
+|High Elf Fleets|Not started|[Issue 10](../../issues/10)|
 |Human Defense Force|Done|-|
 |Infected Colonies|Not started|-|
 |Machine Cult|Done|-|
