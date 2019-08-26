@@ -554,12 +554,12 @@
   <sharedProfiles>
     <profile id="2432-e2b3-c2c4-9482" name="Psychic(1)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad"/>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Psychic(1)</characteristic>
       </characteristics>
     </profile>
     <profile id="3e8c-01f9-834d-a443" name="Psychic(2)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad"/>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Psychic(2)</characteristic>
       </characteristics>
     </profile>
     <profile id="149b-6881-3b3f-3972" name="CCW (A1)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -888,6 +888,11 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A12</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cdae-0f78-03a5-6bc8" name="Psychic(3)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Psychic(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
