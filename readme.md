@@ -33,6 +33,8 @@ The index is hosted at:
 
 https://grimdark-future.s3.amazonaws.com/index.bsi
 
+## Instructions
+
 [Instructions for Desktop](./desktop.md)
 
 [Instructions for Mobile](./mobile.md)
