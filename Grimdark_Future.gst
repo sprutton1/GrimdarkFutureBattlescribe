@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="4" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="5" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
-    <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.4"/>
+    <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.5"/>
   </publications>
   <costTypes>
     <costType id="567f-6468-66c6-2ea2" name="pts" defaultCostLimit="-1.0"/>
@@ -463,6 +463,119 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e098-3b64-3d3c-33c2" name="Twin Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="11bc-2c16-a7e0-7fb1" name="Twin Assault Rifle" hidden="false" targetId="9cfd-12a7-cc5c-a4e5" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3e4a-da63-fdf2-c5fb" name="Gravity Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="906f-db57-134b-ae47" name="Gravity Rifle" hidden="false" targetId="45f8-cff2-66bf-bec8" type="profile"/>
+        <infoLink id="9c20-412d-0021-7628" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f790-2f7c-63a0-1603" name="Gravity Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="011c-4d61-cbf3-e8b7" name="Gravity Pistol" hidden="false" targetId="ce8c-c128-3331-08c4" type="profile"/>
+        <infoLink id="c5de-ef79-9ae0-13a7" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="506f-ba7e-2043-fba2" name="Gravity Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="423d-d04e-267c-2b29" name="Gravity Cannon" hidden="false" targetId="1553-c261-6538-c59d" type="profile"/>
+        <infoLink id="0c41-abfe-e32b-e26b" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+        <infoLink id="cb08-42e4-3001-aed8" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7b99-9f38-072e-e027" name="Minigun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="88f2-652b-b838-305e" name="Minigun" hidden="false" targetId="60a0-b774-7ccf-1ea7" type="profile"/>
+        <infoLink id="efd4-7a89-b20f-ea19" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="5c1c-4162-7e41-bacc" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4281-d3a5-e070-03a4" name="Twin Gravity Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1dff-9e68-3b21-efef" name="Twin Gravity Cannon" hidden="false" targetId="d2a6-ca18-f35b-ac24" type="profile"/>
+        <infoLink id="22d4-3e32-8e1b-bcc5" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+        <infoLink id="0f49-a75f-f9d0-4777" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3fb5-656b-ea36-5cf5" name="Twin Fusion Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="746d-8b09-b5e8-7153" name="Twin Fusion Rifle" hidden="false" targetId="b1f3-3818-ef59-06df" type="profile"/>
+        <infoLink id="7223-1853-21cd-47b6" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="f7e9-604e-04ba-42a3" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="faa1-761d-0d50-2135" name="Assault Rifle Array" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3e52-ef07-2677-3da3" name="Assault Rifle Array" hidden="false" targetId="1a6b-0c0b-dd33-5669" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a8f7-27d2-59eb-c865" name="Twin Minigun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3093-1110-4170-33f6" name="Twin Minigun" hidden="false" targetId="8548-1339-dc4d-857b" type="profile"/>
+        <infoLink id="debd-5103-fd64-d31a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="5167-c89c-9b5c-b003" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d726-b9c0-f08a-068b" name="Twin Plasma Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4894-c9d0-684b-381d" name="Twin Plasma Rifle" hidden="false" targetId="a241-a229-59d1-0ef9" type="profile"/>
+        <infoLink id="8d7a-c316-bc39-beec" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c214-91e2-a10a-62c7" name="Twin Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6e2f-50f2-82cd-3cfa" name="Twin Plasma Cannon" hidden="false" targetId="f8ab-f448-77b8-9c36" type="profile"/>
+        <infoLink id="964b-8b83-88cf-fa57" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="5b2d-6da8-87c6-eb9f" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2071-4cb6-f32c-5d11" name="Fusion Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="39b3-7a81-2396-bdfd" name="Fusion Pistol" hidden="false" targetId="f7da-4442-b818-1df4" type="profile"/>
+        <infoLink id="61ae-7624-f301-b879" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="ab86-3aea-b5e8-6261" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="859e-e070-e91c-26e1" name="Ambush" hidden="false">
@@ -549,6 +662,9 @@
     </rule>
     <rule id="5dc4-d373-d034-fff7" name="Mend" hidden="false">
       <description>Once per turn, if within 2” of a friendly unit with tough, roll one die and on 4+ restore 1 wound.</description>
+    </rule>
+    <rule id="973a-bce3-c43c-b039" name="Relentless" publicationId="d755-5d69-pubN65537" hidden="false">
+      <description>For each unmodified roll of 6 to hit when shooting this model may roll 1 extra attack. This rule doesn’t apply to newly generated attacks.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -887,12 +1003,54 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A12</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
     <profile id="cdae-0f78-03a5-6bc8" name="Psychic(3)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Psychic(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d2a6-ca18-f35b-ac24" name="Twin Gravity Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(3), Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b1f3-3818-ef59-06df" name="Twin Fusion Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8548-1339-dc4d-857b" name="Twin Minigun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A8</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a241-a229-59d1-0ef9" name="Twin Plasma Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f8ab-f448-77b8-9c36" name="Twin Plasma Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f7da-4442-b818-1df4" name="Fusion Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
