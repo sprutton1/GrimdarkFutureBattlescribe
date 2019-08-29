@@ -71,12 +71,12 @@ table!
 | Army | Progress | Issue Link |
 |---|---|---|
 |Alien Hives|Not started|-|
-|Battle Brothers|Not started|-|
+|Battle Brothers|In Progress|[Issue 13](../../issues/13|
 |Battle Sisters|Done|-|
 |Dark Elf Raiders|Not started|-|
 |Dwarf Guilds|Not started|-|
 |Havoc Brothers|Not started|-|
-|High Elf Fleets|Not started|[Issue 10](../../issues/10)|
+|High Elf Fleets|Done|[Issue 10](../../issues/10)|
 |Human Defense Force|Done|-|
 |Infected Colonies|Not started|-|
 |Machine Cult|Done|-|
