@@ -3,7 +3,7 @@
 <!-- TOC -->
 - [Introduction](#introduction)
 - [How do I use these files?](#how-do-i-use-these-files)
-- [Instructions](#instructions)
+    - [Instructions](#instructions)
 - [How can I help?](#how-can-i-help)
     - [Adding an army](#adding-an-army)
         - [Guidelines](#guidelines)
