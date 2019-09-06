@@ -71,7 +71,7 @@ table!
 
 | Army | Progress | Issue Link |
 |---|---|---|
-|Alien Hives|Not started|-|
+|Alien Hives|Not started|[Issue 18](../../issues/18)|
 |Battle Brothers|Done!|[Issue 13](../../issues/13)|
 |Battle Sisters|Done|-|
 |Dark Elf Raiders|Not started|-|
