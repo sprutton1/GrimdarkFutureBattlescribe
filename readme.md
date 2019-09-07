@@ -71,25 +71,25 @@ table!
 
 | Army | Progress | Issue Link |
 |---|---|---|
-|Alien Hives|Not started|[Issue 18](../../issues/18)|
-|Battle Brothers|Done!|[Issue 13](../../issues/13)|
+|Alien Hives|In Progress|[Issue 18](../../issues/18)|
+|Battle Brothers|Done!|~~[Issue 13](../../issues/13)~~|
 |Battle Sisters|Done|-|
-|Dark Elf Raiders|Not started|-|
-|Dwarf Guilds|Not started|-|
-|Havoc Brothers|Not started|-|
-|High Elf Fleets|Done|[Issue 10](../../issues/10)|
+|Dark Elf Raiders|Not started|[Issue 19](../../issues/19)|
+|Dwarf Guilds|Not started|[Issue 20](../../issues/20)|
+|Havoc Brothers|Not started|[Issue 21](../../issues/21)|
+|High Elf Fleets|Done|~~[Issue 10](../../issues/10)~~|
 |Human Defense Force|Done|-|
-|Infected Colonies|Not started|-|
+|Infected Colonies|Not started|[Issue 22](../../issues/22)|
 |Machine Cult|Done|-|
-|Mercenaries|Not started|-|
-|Orc Marauders|Not started|-|
-|Ratmen Clans| Done |[Issue 7](../../issues/7)|
-|Rebel Guerrillas|Not started|-|
-|Robot Legions|Not started|-|
-|Soul-Snatchers|Not started|-|
-|TAO Coalition|Not started|-|
-|Titan Lords|Not started|-|
-|Wormhole Daemons|Not started|-|
+|Mercenaries|Not started|[Issue 23](../../issues/23)|
+|Orc Marauders|Not started|[Issue 24](../../issues/24)|
+|Ratmen Clans| Done |~~[Issue 7](../../issues/7)~~|
+|Rebel Guerrillas|Not started|[Issue 25](../../issues/25)|
+|Robot Legions|Not started|[Issue 26](../../issues/26)|
+|Soul-Snatchers|Not started|[Issue 27](../../issues/27)|
+|TAO Coalition|Not started|[Issue 28](../../issues/28)|
+|Titan Lords|Not started|[Issue 29](../../issues/29)|
+|Wormhole Daemons|Not started|[Issue 30](../../issues/30)|
 
 
 
