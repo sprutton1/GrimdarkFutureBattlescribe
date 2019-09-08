@@ -71,7 +71,7 @@ table!
 
 | Army | Progress | Issue Link |
 |---|---|---|
-|Alien Hives|In Progress|[Issue 18](../../issues/18)|
+|Alien Hives|Done|~~[Issue 18](../../issues/18)~~|
 |Battle Brothers|Done!|~~[Issue 13](../../issues/13)~~|
 |Battle Sisters|Done|-|
 |Dark Elf Raiders|Not started|[Issue 19](../../issues/19)|
@@ -85,7 +85,7 @@ table!
 |Orc Marauders|Not started|[Issue 24](../../issues/24)|
 |Ratmen Clans| Done |~~[Issue 7](../../issues/7)~~|
 |Rebel Guerrillas|Not started|[Issue 25](../../issues/25)|
-|Robot Legions|Not started|[Issue 26](../../issues/26)|
+|Robot Legions|In Progress|[Issue 26](../../issues/26)|
 |Soul-Snatchers|Not started|[Issue 27](../../issues/27)|
 |TAO Coalition|Not started|[Issue 28](../../issues/28)|
 |Titan Lords|Not started|[Issue 29](../../issues/29)|
