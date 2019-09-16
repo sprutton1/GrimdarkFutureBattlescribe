@@ -76,7 +76,7 @@ table!
 |Battle Brothers|Main v2.4 - Detachments v2.5|Done!|~~[Issue 13](../../issues/13)~~|
 |Battle Sisters|v2.1|Done|-|
 |Dark Elf Raiders|v2.3|Done|~~[Issue 19](../../issues/19)~~|
-|Dwarf Guilds|-|Not started|[Issue 20](../../issues/20)|
+|Dwarf Guilds|v2.1|Done|~~[Issue 20](../../issues/20)~~|
 |Havoc Brothers|-|Not started|[Issue 21](../../issues/21)|
 |High Elf Fleets|v2.3|Done|~~[Issue 10](../../issues/10)~~|
 |Human Defense Force|v2.2|Done|-|
