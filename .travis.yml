@@ -9,10 +9,10 @@ install:
 script:
  - wham publish -a zip bsi -s . -o ./index --repo-name https://grimdark-future.s3.amazonaws.com/index.bsi -f index
 
-deploy:
-  provider: s3
-  access_key_id: $AWS_KEY
-  secret_access_key: $AWS_SECRET
-  bucket: "grimdark-future"
-  skip_cleanup: true
-  local_dir: index
+#deploy:
+#  provider: s3
+#  access_key_id: $AWS_KEY
+#  secret_access_key: $AWS_SECRET
+#  bucket: "grimdark-future"
+#  skip_cleanup: true
+#  local_dir: index

@@ -73,11 +73,11 @@ table!
 |---|---|---|---|
 |Game System|v2.5|-|-|
 |Alien Hives|v2.2|Done|~~[Issue 18](../../issues/18)~~|
-|Battle Brothers|Main v2.4 - Detachments v2.5|Done!|~~[Issue 13](../../issues/13)~~|
+|Battle Brothers|Main v2.4 - Detachments v2.5|Done|~~[Issue 13](../../issues/13)~~|
 |Battle Sisters|v2.1|Done|-|
 |Dark Elf Raiders|v2.3|Done|~~[Issue 19](../../issues/19)~~|
 |Dwarf Guilds|v2.1|Done|~~[Issue 20](../../issues/20)~~|
-|Havoc Brothers|-|Not started|[Issue 21](../../issues/21)|
+|Havoc Brothers|-|Done|~~[Issue 21](../../issues/21)~~|
 |High Elf Fleets|v2.3|Done|~~[Issue 10](../../issues/10)~~|
 |Human Defense Force|v2.2|Done|-|
 |Infected Colonies|-|Not started|[Issue 22](../../issues/22)|
