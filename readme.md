@@ -80,7 +80,7 @@ table!
 |Havoc Brothers|Main v2.4 - Detachments v2.4|Done|~~[Issue 21](../../issues/21)~~|
 |High Elf Fleets|v2.3|Done|~~[Issue 10](../../issues/10)~~|
 |Human Defense Force|v2.2|Done|-|
-|Infected Colonies|-|Not started|[Issue 22](../../issues/22)|
+|Infected Colonies|v2.1|Done|~~[Issue 22](../../issues/22)~~|
 |Machine Cult|v2.2|Done|-|
 |Mercenaries|-|Not started|[Issue 23](../../issues/23)|
 |Orc Marauders|-|Not started|[Issue 24](../../issues/24)|
