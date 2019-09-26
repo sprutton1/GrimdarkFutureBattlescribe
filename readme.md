@@ -69,28 +69,28 @@ table!
 
 ### What's Done
 
-| Army | Version | Progress | Issue Link |
-|---|---|---|---|
-|Game System|v2.5|-|-|
-|Alien Hives|v2.2|Done|~~[Issue 18](../../issues/18)~~|
-|Battle Brothers|Main v2.4 - Detachments v2.5|Done|~~[Issue 13](../../issues/13)~~|
-|Battle Sisters|v2.1|Done|-|
-|Dark Elf Raiders|v2.3|Done|~~[Issue 19](../../issues/19)~~|
-|Dwarf Guilds|v2.1|Done|~~[Issue 20](../../issues/20)~~|
-|Havoc Brothers|Main v2.4 - Detachments v2.4|Done|~~[Issue 21](../../issues/21)~~|
-|High Elf Fleets|v2.3|Done|~~[Issue 10](../../issues/10)~~|
-|Human Defense Force|v2.2|Done|-|
-|Infected Colonies|v2.1|Done|~~[Issue 22](../../issues/22)~~|
-|Machine Cult|v2.2|Done|-|
-|Mercenaries|-|Not started|[Issue 23](../../issues/23)|
-|Orc Marauders|-|Not started|[Issue 24](../../issues/24)|
-|Ratmen Clans|v2.3|Done|~~[Issue 7](../../issues/7)~~|
-|Rebel Guerrillas|-|Not started|[Issue 25](../../issues/25)|
-|Robot Legions|v2.4|Done|[Issue 26](../../issues/26)|
-|Soul-Snatchers|-|Not started|[Issue 27](../../issues/27)|
-|TAO Coalition|-|Not started|[Issue 28](../../issues/28)|
-|Titan Lords|-|Not started|[Issue 29](../../issues/29)|
-|Wormhole Daemons|-|Not started|[Issue 30](../../issues/30)|
+| Army | Version | Progress |
+|---|---|---|
+|Game System|v2.6|Need updates|
+|Alien Hives|v2.2|Done|
+|Battle Brothers|Main v2.4 - Detachments 2.5|Done|
+|Battle Sisters|v2.1|Done|
+|Dark Elf Raiders|v2.3|Done|
+|Dwarf Guilds|v2.1|Done|
+|Havoc Brothers|Main v2.4 - Detachments v2.4|Done|
+|High Elf Fleets|v2.3|Done|
+|Human Defense Force|v2.2|Done|
+|Infected Colonies|v2.1|Done|
+|Machine Cult|v2.2|Done|
+|Mercenaries|-|Not started|
+|Orc Marauders|v2.4|Done|
+|Ratmen Clans|v2.3|Done|
+|Rebel Guerrillas|-|Not started|
+|Robot Legions|v2.4|Done|
+|Soul-Snatchers|-|Not started|
+|TAO Coalition|-|Not started|
+|Titan Lords|-|Not started|
+|Wormhole Daemons|-|Not started|
 
 
 
