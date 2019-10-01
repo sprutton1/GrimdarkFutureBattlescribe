@@ -3,16 +3,16 @@ mono: none
 dotnet: 2.2
 
 install:
- - dotnet tool install wham -g --version 0.6.17
+ - dotnet tool install wham -g --version 0.7.0-alpha-0002 
  - export PATH="$PATH:/home/travis/.dotnet/tools"
 
 script:
  - wham publish -a zip bsi -s . -o ./index --repo-name https://grimdark-future.s3.amazonaws.com/index.bsi -f index
 
-#deploy:
-#  provider: s3
-#  access_key_id: $AWS_KEY
-#  secret_access_key: $AWS_SECRET
-#  bucket: "grimdark-future"
-#  skip_cleanup: true
-#  local_dir: index
+deploy:
+  provider: s3
+  access_key_id: $AWS_KEY
+  secret_access_key: $AWS_SECRET
+  bucket: "grimdark-future"
+  skip_cleanup: true
+  local_dir: index

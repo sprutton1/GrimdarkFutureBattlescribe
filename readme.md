@@ -88,7 +88,7 @@ table!
 |Rebel Guerrillas|-|Not started|
 |Robot Legions|v2.4|Done|
 |Soul-Snatchers|-|Not started|
-|TAO Coalition|-|Not started|
+|TAO Coalition|v2.4|Done|
 |Titan Lords|-|Not started|
 |Wormhole Daemons|-|Not started|
 
