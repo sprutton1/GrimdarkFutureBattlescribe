@@ -1,16 +1,6 @@
 [![Build Status](https://travis-ci.com/sprutton1/GrimdarkFutureBattlescribe.svg?branch=master)](https://travis-ci.com/sprutton1/GrimdarkFutureBattlescribe)
 
-<!-- TOC -->
-- [Introduction](#introduction)
-- [How do I use these files?](#how-do-i-use-these-files)
-    - [Instructions](#instructions)
-- [How can I help?](#how-can-i-help)
-    - [Adding an army](#adding-an-army)
-        - [Guidelines](#guidelines)
-        - [What's Done](#whats-done)
-    - [Reporting an issue](#reporting-an-issue)
-- [Credits](#credits)
-<!-- /TOC -->
+<!-- TOC -->autoauto- [Introduction](#introduction)auto- [How do I use these files?](#how-do-i-use-these-files)auto    - [Instructions](#instructions)auto- [How can I help?](#how-can-i-help)auto    - [Adding an army](#adding-an-army)auto        - [Guidelines](#guidelines)auto        - [What's Done](#whats-done)auto    - [Reporting an issue](#reporting-an-issue)auto- [Credits](#credits)autoauto<!-- /TOC -->
 
 # Introduction
 
@@ -89,7 +79,7 @@ table!
 |Robot Legions|v2.4|Done|
 |Soul-Snatchers|-|Not started|
 |TAO Coalition|v2.4|Done|
-|Titan Lords|-|Not started|
+|Titan Lords|v2.2|Done|
 |Wormhole Daemons|-|Not started|
 
 
