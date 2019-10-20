@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="7" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="8" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
-    <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.6"/>
+    <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.7"/>
   </publications>
   <costTypes>
     <costType id="567f-6468-66c6-2ea2" name="pts" defaultCostLimit="-1.0"/>
@@ -592,13 +592,13 @@
       <description>All hits are multiplied by X.</description>
     </rule>
     <rule id="377b-3864-960e-57ac" name="Deadly(X)" hidden="false">
-      <description>Assign each wound to one model and multiply it by X. Note that wounds don&apos;t carry over to other models if killed</description>
+      <description>Assign each wound to one model and multiply it by X. Note that wounds don&apos;t carry over to other models if killed.</description>
     </rule>
     <rule id="f6ca-56fe-a21c-08fa" name="Fast" hidden="false">
       <description>Move 9” when using Advance and 18” when using Rush/Charge.</description>
     </rule>
     <rule id="d21e-0b0f-ebec-46da" name="Fear" hidden="false">
-      <description>Before melee units without this rule must take a morale test and if failed they get –1 to hit rolls.</description>
+      <description>Always counts as having dealt +D3 wounds for seeing who won melee.</description>
     </rule>
     <rule id="fe6b-f29d-2128-a0b0" name="Fearless" hidden="false">
       <description>Gets +1 to morale tests.</description>
@@ -608,7 +608,7 @@
 </description>
     </rule>
     <rule id="ded5-4f1f-c61d-4659" name="Furious" hidden="false">
-      <description>Take one quality test when charging, if successful deal 1 hit.</description>
+      <description>Gets +1 attack with a weapon of your choice when charging.</description>
     </rule>
     <rule id="0c08-1729-0be7-c286" name="Impact(X)" hidden="false">
       <description>Deals X automatic hits when charging successfully.</description>
@@ -617,16 +617,16 @@
       <description>May target enemies that are not in line of sight but gets –1 to hit rolls when doing so.</description>
     </rule>
     <rule id="2c45-0e1e-fec5-8dbb" name="Poison(X)" hidden="false">
-      <description>When rolling an unmodified 6 to hit the target takes 2 extra hits.</description>
+      <description>When rolling an unmodified 6 to hit that hit is multiplied by 3.</description>
     </rule>
     <rule id="ba47-b43b-18f8-97c1" name="Psychic(X)" hidden="false">
-      <description>May cast one spell at any point during its activation. Choose a spell and roll D6+X and if the result is equal or higher than the number in brackets you may resolve the effects. Enemy psychics within 12” may roll one die and on a 5+ the spell’s effects are immediately blocked.</description>
+      <description>May cast one spell at any point during its activation before attacking. Choose a spell and roll D6+X and if the result is equal or higher than the number in brackets you may resolve the effects. Enemy psychics within 12” may also roll D6+X and if their result is higher the spell’s effects are blocked, but they may only either cast a spell or block a spell each round.</description>
     </rule>
     <rule id="dea8-a8f9-1865-4424" name="Regeneration" hidden="false">
       <description>When taking a wound roll one die, on a 5+ it is ignored.</description>
     </rule>
     <rule id="9726-accd-9015-f6f6" name="Rending" hidden="false">
-      <description>Unmodified rolls of 6 to hit can only be blocked on a roll of 6+ and ignore regeneration.</description>
+      <description>Unmodified rolls of 6 to hit count as having AP(4) and ignore the regeneration rule.</description>
     </rule>
     <rule id="7bc7-a892-49bc-ad88" name="Scout" hidden="false">
       <description>After all units have deployed this model may deploy within 24” of the player’s table edge. If both of the players have Scout they roll-off to see who deploys first.</description>
@@ -659,9 +659,6 @@
     </rule>
     <rule id="2c1d-c23a-cb5d-cb83" name="Immobile" hidden="false">
       <description>May never move/charge.</description>
-    </rule>
-    <rule id="5dc4-d373-d034-fff7" name="Mend" hidden="false">
-      <description>Once per turn, if within 2” of a friendly unit with tough, roll one die and on 4+ restore 1 wound.</description>
     </rule>
     <rule id="973a-bce3-c43c-b039" name="Relentless" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>For each unmodified roll of 6 to hit when shooting this model may roll 1 extra attack. This rule doesn’t apply to newly generated attacks.</description>
@@ -699,19 +696,19 @@
     <profile id="2001-b03e-9d66-d6a0" name="Energy Fist" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="a84b-1f66-915f-b56f" name="Energy Hammer" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Deadly(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="d26d-a459-c183-3009" name="Energy Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Rending</characteristic>
       </characteristics>
     </profile>
     <profile id="e313-290f-cb18-c4ea" name="Assault Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -759,14 +756,14 @@
     <profile id="ce8c-c128-3331-08c4" name="Gravity Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Rending</characteristic>
       </characteristics>
     </profile>
     <profile id="45f8-cff2-66bf-bec8" name="Gravity Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Rending</characteristic>
       </characteristics>
     </profile>
