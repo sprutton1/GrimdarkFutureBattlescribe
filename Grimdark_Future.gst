@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="8" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="9" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.7"/>
   </publications>
@@ -579,89 +579,114 @@
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="859e-e070-e91c-26e1" name="Ambush" hidden="false">
-      <description>This model may be kept in reserve instead of deploying. At the start of any round after the first you may place the model anywhere over 9” away from enemy units. If both player have Ambush they roll-off to see who deploys first.</description>
+      <description>You may choose not to deploy a model with this special rule with your army but instead keep it off the table in reserve.
+
+At the beginning of any round after the first you may place the model anywhere on the table over 9” away from enemy units.
+
+If both players have units with Ambush they must roll-off to see who deploys first.</description>
     </rule>
     <rule id="1875-13ee-b0ef-5a65" name="Anti-Air" hidden="false">
-      <description>This unit doesn’t count as being extra 12” away and doesn’t get –1 to shooting against aircraft.</description>
+      <description>When shooting at enemy Aircraft models firing this weapon don’t count as being an extra 12” away and don’t get –1 to hit rolls.</description>
     </rule>
     <rule id="f84f-fda5-e478-455d" name="AP(X)" hidden="false">
-      <description>Targets get –X to Defense rolls when blocking hits.
-</description>
+      <description>Enemy units taking hits from weapons with this special rule get -X to Defense rolls.</description>
     </rule>
     <rule id="187f-6414-7037-a542" name="Blast(X)" hidden="false">
-      <description>All hits are multiplied by X.</description>
+      <description>Whenever enemy units take hits from a weapon with this special rule they multiply the hits by X.</description>
     </rule>
     <rule id="377b-3864-960e-57ac" name="Deadly(X)" hidden="false">
-      <description>Assign each wound to one model and multiply it by X. Note that wounds don&apos;t carry over to other models if killed.</description>
+      <description>Whenever a model takes wounds from a weapon with this special rule multiply the amount of wounds suffered by X.
+
+Note that wounds suffered by that model don’t carry over to other models if it dies.</description>
     </rule>
     <rule id="f6ca-56fe-a21c-08fa" name="Fast" hidden="false">
-      <description>Move 9” when using Advance and 18” when using Rush/Charge.</description>
+      <description>Units with this special rule move 9” when using Advance actions and 18” when using Rush or Charge actions.</description>
     </rule>
     <rule id="d21e-0b0f-ebec-46da" name="Fear" hidden="false">
-      <description>Always counts as having dealt +D3 wounds for seeing who won melee.</description>
+      <description>When in melee units with this special rule count as having caused +D3 wounds when determining who won the combat.</description>
     </rule>
     <rule id="fe6b-f29d-2128-a0b0" name="Fearless" hidden="false">
-      <description>Gets +1 to morale tests.</description>
+      <description>Units with this special rule get +1 to their morale test rolls.</description>
     </rule>
     <rule id="adc6-ddd5-223d-29b1" name="Flying" hidden="false">
-      <description>May move through obstacles and may ignore terrain effects.
-</description>
+      <description>Units with this special rule may move through other units and impassable terrain and they may ignore terrain effects.</description>
     </rule>
     <rule id="ded5-4f1f-c61d-4659" name="Furious" hidden="false">
-      <description>Gets +1 attack with a weapon of your choice when charging.</description>
+      <description>Whenever a model with this special rule charges an enemy it gets +1 attack with a weapon of your choice.</description>
     </rule>
     <rule id="0c08-1729-0be7-c286" name="Impact(X)" hidden="false">
-      <description>Deals X automatic hits when charging successfully.</description>
+      <description>Whenever a model with this special rule charges it deals X automatic hits.</description>
     </rule>
     <rule id="587a-b92c-a265-06c4" name="Indirect" hidden="false">
-      <description>May target enemies that are not in line of sight but gets –1 to hit rolls when doing so.</description>
+      <description>Weapons with this special rule may shoot at enemies that are not within line of sight, however they get –1 to hit when doing so.</description>
     </rule>
     <rule id="2c45-0e1e-fec5-8dbb" name="Poison(X)" hidden="false">
-      <description>When rolling an unmodified 6 to hit that hit is multiplied by 3.</description>
+      <description>Whenever you roll an unmodified to hit result of 6 whilst firing this weapon that hit is multiplied by 3.</description>
     </rule>
     <rule id="ba47-b43b-18f8-97c1" name="Psychic(X)" hidden="false">
-      <description>May cast one spell at any point during its activation before attacking. Choose a spell and roll D6+X and if the result is equal or higher than the number in brackets you may resolve the effects. Enemy psychics within 12” may also roll D6+X and if their result is higher the spell’s effects are blocked, but they may only either cast a spell or block a spell each round.</description>
+      <description>Models with this special rule may cast one spell at any point during their activation before attacking.
+
+To cast a spell pick one from the psychic’s army and roll D6+X. If the result is equal to or higher than the number in brackets then you may resolve the spell’s effects.
+
+Enemy psychics within 12” may also roll D6+X, and if the result is higher than that of the casting psychic, then the spell’s effects are blocked instead.
+
+Note that a psychic may only either cast a spell or block a spell each round.</description>
     </rule>
     <rule id="dea8-a8f9-1865-4424" name="Regeneration" hidden="false">
-      <description>When taking a wound roll one die, on a 5+ it is ignored.</description>
+      <description>Whenever this model takes wounds roll one die for each. On a 5+ the wound is ignored.</description>
     </rule>
     <rule id="9726-accd-9015-f6f6" name="Rending" hidden="false">
-      <description>Unmodified rolls of 6 to hit count as having AP(4) and ignore the regeneration rule.</description>
+      <description>Whenever you roll an unmodified to hit result of 6 whilst using this weapon that hit counts as having AP(4) and it ignores the Regeneration rule.</description>
     </rule>
     <rule id="7bc7-a892-49bc-ad88" name="Scout" hidden="false">
-      <description>After all units have deployed this model may deploy within 24” of the player’s table edge. If both of the players have Scout they roll-off to see who deploys first.</description>
+      <description>After all other units have been deployed models with scout may deploy within 24” of the player’s table edge (instead of 12”).
+If both players have units with Scout they must roll-off to see who deploys first.</description>
     </rule>
     <rule id="394b-1b64-d270-f49e" name="Slow" hidden="false">
-      <description>Move 4” when using Advance and 8” when using Rush/Charge.
-</description>
+      <description>Units with this special rule move 4” when using Advance actions and 8” when using Rush or Charge actions.</description>
     </rule>
     <rule id="2943-e3f6-fb44-ae13" name="Sniper" hidden="false">
-      <description>Always fires at quality 2+ and ignores cover. The attacker can pick which model is hit in the unit.</description>
+      <description>Models firing this weapon count as having Quality 2+ when rolling to hit.
+
+This weapon ignores cover and the attacker may pick which model from the target unit is hit when shooting.</description>
     </rule>
     <rule id="1b59-5d31-4675-c926" name="Stealth" hidden="false">
-      <description>Enemies get -1 to shooting when targeting this unit.
-</description>
+      <description>Enemies targeting this unit get –1 to hit when shooting at it.</description>
     </rule>
     <rule id="9dea-b566-200a-0605" name="Strider" hidden="false">
-      <description>This model may ignore the effects of difficult terrain.</description>
+      <description>Units with this special rule treat Difficult Terrain as Open Terrain when moving (may move more than 6”).</description>
     </rule>
     <rule id="b9d3-4d17-007c-22cb" name="Tough(X)" hidden="false">
-      <description>This model must take X wounds before being killed. Models with tough that joins unit without it are removed last when the unit takes wounds. Note that you must put all wounds on a single Tough model until it is killed before putting them on the next Tough model.</description>
+      <description>Models with this special rule must accumulate X wounds before being removed as a casualty.
+
+If a model with Tough joins a unit without it then you must remove regular models as casualties before starting to accumulate wounds on the model with Tough.
+
+When a unit with multiple Tough models takes wounds you must accumulate them on a single model until it is killed before starting to accumulate them on another.</description>
     </rule>
     <rule id="3460-57e3-8a15-7977" name="Transport(X)" hidden="false">
-      <description>May transport X other models. Units embark by moving into contact and may use any action to disembark but only move by 6”. Units may also be deployed inside of a transport. If a unit is inside of a transport when it’s destroyed then it takes a dangerous terrain test, is immediately Pinned, and surviving models must be placed within 6” of the transport before it’s removed.</description>
+      <description>Models with this special rule may transport up to X models in their cargo.
+
+Units may embark by moving into contact with the transport and embarked units may use any action to disembark but only move up to 6”. Units may also be deployed within a transport at the beginning of the game.
+
+If a unit is inside of a Transport when it is destroyed then it must take a Dangerous Terrain test, is immediately Pinned, and surviving models must be placed within 6” of the transport before it is removed.</description>
     </rule>
     <rule id="5065-c3a4-a9cf-db27" name="Hero" hidden="false">
-      <description>May be deployed as part of a friendly unit. When rolling morale test use the hero’s quality value but when rolling for defense use the value of the majority of models.</description>
+      <description>Models with this special rule may be deployed as part of one other friendly unit at the beginning of the game.
+
+When rolling morale tests use the hero’s Quality value and when rolling to block use the Defense of the majority of models.</description>
     </rule>
     <rule id="187f-6a03-5b99-a4db" name="Aircraft" publicationId="d755-5d69-pubN65537" hidden="false">
-      <description>This model doesn’t interact physically with other models/terrain and can’t be moved into contact with. Non-aircraft units count as being extra 12” away when measuring and get –1 to shooting. When activated this model must move 18”-36” in a straight line and if it goes off-table then its activation ends and it may be placed back on any table edge.</description>
+      <description>These models fly far above the battlefield and can’t physically interact with any other models or terrain, nor can they be moved in base contact with.
+
+Non-Aircraft models that shoot at Aircraft count as being an extra 12” away when measuring and get –1 to their to hit rolls.
+
+When an Aircraft is activated it must move a full 18” to 36” in a straight line. If this move brings it off the table edge then its activation ends immediately and it must be placed back on any table edge you choose.</description>
     </rule>
     <rule id="2c1d-c23a-cb5d-cb83" name="Immobile" hidden="false">
-      <description>May never move/charge.</description>
+      <description>Units with this special rule may never move regardless of which action they take and they can’t take Charge actions.</description>
     </rule>
     <rule id="973a-bce3-c43c-b039" name="Relentless" publicationId="d755-5d69-pubN65537" hidden="false">
-      <description>For each unmodified roll of 6 to hit when shooting this model may roll 1 extra attack. This rule doesn’t apply to newly generated attacks.</description>
+      <description>Whenever this model rolls an unmodified to hit result of 6 when shooting it may roll 1 extra attack. This rule doesn’t apply to newly generated attacks.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
