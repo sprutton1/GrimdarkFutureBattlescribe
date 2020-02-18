@@ -91,6 +91,7 @@
         <infoLink id="b57f-71e8-5a5f-4426" name="Grenade Launcher - pick one each turn: AT" hidden="false" targetId="a8f2-5811-9c54-fc5d" type="profile"/>
         <infoLink id="489d-6349-70c3-6969" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
         <infoLink id="b73a-aa3f-9bd4-a437" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="4b29-0b1f-33a4-4390" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -296,7 +297,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6bf9-8992-7b02-5764" name="Light Machinegun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6bf9-8992-7b02-5764" name="Machinegun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9a80-6f53-330c-6f89" name="Light Machinegun" hidden="false" targetId="c0d6-cc28-d227-9727" type="profile"/>
       </infoLinks>
@@ -334,7 +335,7 @@
       <infoLinks>
         <infoLink id="af0e-b57d-8a76-b4be" name="Fusion Cannon" hidden="false" targetId="c6c3-1131-fa6e-5dbc" type="profile"/>
         <infoLink id="b75e-e1cf-7336-a1ba" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
-        <infoLink id="e629-18fb-c9fc-efa3" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+        <infoLink id="e629-18fb-c9fc-efa3" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -503,7 +504,6 @@
       <infoLinks>
         <infoLink id="88f2-652b-b838-305e" name="Minigun" hidden="false" targetId="60a0-b774-7ccf-1ea7" type="profile"/>
         <infoLink id="efd4-7a89-b20f-ea19" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
-        <infoLink id="5c1c-4162-7e41-bacc" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -541,7 +541,6 @@
       <infoLinks>
         <infoLink id="3093-1110-4170-33f6" name="Twin Minigun" hidden="false" targetId="8548-1339-dc4d-857b" type="profile"/>
         <infoLink id="debd-5103-fd64-d31a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
-        <infoLink id="5167-c89c-9b5c-b003" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -575,6 +574,47 @@
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="1eb5-e70c-2563-86d4" name="Carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f498-3ed2-5c6e-9592" name="Carbine" hidden="false" targetId="d8f5-017c-af30-39ed" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="fa7d-5662-869b-c879" name="Shred Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ecb9-8f85-7686-a120" name="Shred Rifle" hidden="false" targetId="fd11-c55f-ae6b-d56f" type="profile"/>
+        <infoLink id="b925-9562-4233-92f3" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="e57e-4a03-ae5a-5411" name="Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ebec-3f8d-8130-4f40" name="Rifle" hidden="false" targetId="86ba-8f73-e0ab-aeee" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="db8f-b317-2b7d-2ed3" name="Flame Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="37a7-5aaf-1437-aa2a" name="Flame Pistol" hidden="false" targetId="f2fb-1177-d9b5-af5f" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="da63-ce3d-cbd5-4a09" name="Rocket Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="535b-799c-3bfb-28a3" name="Rocket Launcher" hidden="false" targetId="f9fc-acd3-f324-9a39" type="profile"/>
+        <infoLink id="f128-5dc8-a8ca-81eb" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="d78b-5604-11d7-cc89" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2a96-365b-4ad8-7cfd" name="Battle Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6394-de69-b77b-b42f" name="Battle Cannon" hidden="false" targetId="e68b-748b-b886-4235" type="profile"/>
+        <infoLink id="30c6-b78e-ff16-20a0" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="792f-427b-b641-54a7" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f7a6-c6c9-0567-4b34" name="Laser Machinegun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7e3d-9f13-ef40-a72b" name="Laser Machinegun" hidden="false" targetId="eeeb-582d-9c61-e971" type="profile"/>
+        <infoLink id="c447-ea9e-3009-2309" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -796,7 +836,7 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Deadly(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="ec46-b128-6c2a-36cc" name="Grenade Launcher - pick one each turn: HE" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -824,7 +864,7 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A4</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Rending</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
     <profile id="e771-a4c0-bb57-b779" name="Missile Launcher - pick one each turn: AT" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -885,9 +925,9 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
     </profile>
     <profile id="dadd-7e42-132b-f562" name="Flamethrower Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
     <profile id="64df-e095-a608-3f07" name="Twin Autocannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -925,7 +965,7 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="c0d6-cc28-d227-9727" name="Light Machinegun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="c0d6-cc28-d227-9727" name="Machinegun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
@@ -936,7 +976,7 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Blast(3)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="83d5-c300-ef46-f049" name="Heavy Fusion Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -1051,7 +1091,7 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A8</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Rending</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
     <profile id="a241-a229-59d1-0ef9" name="Twin Plasma Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -1073,6 +1113,55 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
         <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d8f5-017c-af30-39ed" name="Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fd11-c55f-ae6b-d56f" name="Shred Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="86ba-8f73-e0ab-aeee" name="Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">30&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f2fb-1177-d9b5-af5f" name="Flame Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f9fc-acd3-f324-9a39" name="Rocket Launcher" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e68b-748b-b886-4235" name="Battle Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Blast (6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="eeeb-582d-9c61-e971" name="Laser Machinegun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
