@@ -25,6 +25,7 @@
     <entryLink id="c9bc-943f-e298-d3fc" name="Dwarf Gunship" hidden="false" collective="false" import="true" targetId="8ab7-5e36-8977-54bd" type="selectionEntry"/>
     <entryLink id="dd14-ed7f-6260-f855" name="Berserker Lord" hidden="false" collective="false" import="true" targetId="7330-fd9a-8d99-56fd" type="selectionEntry"/>
     <entryLink id="8e58-18b8-b313-115b" name="Engineer" hidden="false" collective="false" import="true" targetId="07f6-a528-b233-43ee" type="selectionEntry"/>
+    <entryLink id="69f5-ef44-e23e-7755" name="Rune Master" hidden="false" collective="false" import="true" targetId="7a9b-f2a0-6d0f-912e" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fed0-8bd1-0e14-22dc" name="Guild Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -2434,6 +2435,312 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7a9b-f2a0-6d0f-912e" name="Rune Master" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2511-286a-020a-a2f3" name="Rune Master" hidden="false" targetId="ac1b-835a-e0b5-85e9" type="profile"/>
+        <infoLink id="4442-c2e3-a85c-e53a" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="3893-48dc-2134-27b3" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+        <infoLink id="f920-bc82-44ab-23c8" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
+        <infoLink id="df5b-cea7-ebe5-31ec" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b942-1a74-de62-5aa4" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="632d-2609-3877-8084" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9585-61af-89a8-35b6" name="Jetpack" hidden="false" collective="false" import="true" targetId="cb65-a5f5-b06d-bd22" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b0c2-c874-dc4f-20e7" name="Combat Bike" hidden="false" collective="false" import="true" targetId="d63b-2817-1a01-c320" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ee3f-66d4-845b-b2f9" name="Power Suit (Upgrade)" hidden="false" collective="false" import="true" targetId="2dc2-ca94-3629-7623" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="aafa-b2db-58c6-cca4" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="5049-0913-9e7a-5b4a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afe7-1801-a534-5ddf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cee-ea39-81bd-cd85" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5049-0913-9e7a-5b4a" name="Rifle &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="ae5b-38e3-11a6-2309" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="4b8a-2ded-d882-0fa9">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52f9-99a9-4165-e5b7" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e87-2957-b0a7-5b29" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="4b8a-2ded-d882-0fa9" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9694-03e8-8ff0-d261" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1736-aa4d-0a5f-84ca" name="Shock Hammer" hidden="false" collective="false" import="true" targetId="2912-4e2a-7b82-1871" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ea2-908a-9545-d981" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="c505-769c-d511-d089" name="Drill Hammer" hidden="false" collective="false" import="true" targetId="e228-703a-4efb-d3e6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1263-7652-e5ca-b238" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="c89c-a951-fa52-073c" name="Plasma Hammer" hidden="false" collective="false" import="true" targetId="ce20-65d9-4d9c-9555" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ae5-f284-9a9b-cd75" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="a135-9fc2-a34d-8cf9" name="Heat Hammer" hidden="false" collective="false" import="true" targetId="8612-5a2e-a1cb-13f1" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54c9-493a-8cc3-3904" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="137a-34ab-1a5c-1bbb" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="a1da-51ac-5a8f-8f95" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0321-c1f9-717a-b404" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7240-fa58-3842-1885" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a0ae-3ac3-f2ee-741c" name="Pistol &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="374e-5a34-89aa-bd91" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="3e54-43b9-b7ea-228b">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a3d-5c7e-0ce5-3f8d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ac0-3fa7-40f9-9dc0" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="3e54-43b9-b7ea-228b" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6caf-007b-bfbf-8bdf" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="6775-012a-d8fe-b075" name="Shock Hammer" hidden="false" collective="false" import="true" targetId="2912-4e2a-7b82-1871" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="721d-8937-e240-fe6c" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="f7a0-ad70-7ede-73d0" name="Drill Hammer" hidden="false" collective="false" import="true" targetId="e228-703a-4efb-d3e6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb5f-701f-3efc-9ef7" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="64e9-ebf2-b15a-ea34" name="Plasma Hammer" hidden="false" collective="false" import="true" targetId="ce20-65d9-4d9c-9555" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="377f-75d2-3b23-d247" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="7836-a0e7-7a68-2b78" name="Heat Hammer" hidden="false" collective="false" import="true" targetId="8612-5a2e-a1cb-13f1" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd58-26af-2c54-acdc" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="688a-4ed7-5bc9-25cb" name="Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="d47f-e341-ccaa-7293">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e051-c47f-bf21-f57f" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e6d-0834-1788-2aa3" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="cc06-5c09-8135-8de9" name="Heavy Pistol" hidden="false" collective="false" import="true" targetId="106f-280b-0fd6-3922" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5451-21cb-8c9b-6291" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="8f56-ee8a-bd0e-d7c6" name="Burst Pistol" hidden="false" collective="false" import="true" targetId="3619-22e1-b72f-6b32" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a0f-db2d-6c75-a06d" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="d47f-e341-ccaa-7293" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ace-0260-b94f-f673" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="c15a-8985-a7aa-fd10" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5f7-305d-506d-6236" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="2fde-500a-b8ab-5b5c" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="b4bf-2a04-6bf7-a1e0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f50b-9c41-3ebc-de8d" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7c6e-7a5a-f4f1-60ea" name="Psychic(X)" hidden="false" collective="false" import="true" defaultSelectionEntryId="0ebd-4257-a916-ad85">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2979-ab34-4174-2cd5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cab-89a3-c8a0-a3de" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0ebd-4257-a916-ad85" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="aea6-2080-7d0a-cfa5" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="765a-344b-0624-b202" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="bdf1-28f1-e0ee-523d" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="242d-b270-8cfe-43ad" name="Dwarf Psychic Powers" hidden="false" collective="false" import="true" targetId="1e4b-2ab1-f985-50b4" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b27-d18a-60f5-8781" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe43-22e3-bc6b-d15b" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ea0c-495e-2fb3-fc49" name="Balance Rune" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2a4b-23bf-9a7f-04d1" name="Balance Rune" hidden="false" targetId="7be2-c1b0-ab27-8b70" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="e97e-1c1c-cc3e-85c2" name="Smiting Rune" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9b43-4902-9335-1340" name="Smiting Rune" hidden="false" targetId="32e5-f35e-6e6d-0b9b" type="profile"/>
+        <infoLink id="6dce-8367-1004-6fb1" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="81a3-8006-e10e-db9a" name="Cleaving Rune" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3a7b-088d-646c-df4c" name="Cleaving Rune" hidden="false" targetId="8fce-2604-3365-55d7" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="be8a-6e4b-b449-0000" name="Battle Rune" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e500-e471-c3ea-6212" name="Battle Rune" hidden="false" targetId="6d31-641d-696d-b6d5" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="912e-1476-b13b-485e" name="Spite Rune" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f51f-e7bb-acc5-f6dd" name="Spite Rune" hidden="false" targetId="f1f9-8baf-c133-34c8" type="profile"/>
+        <infoLink id="83bd-7c15-f30b-2270" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5837-7eab-2919-2354" name="Breaking Rune" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b5df-c1ff-d316-8f04" name="Breaking Rune" hidden="false" targetId="6f40-3118-2695-0437" type="profile"/>
+        <infoLink id="431f-b86f-23c0-f6c4" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="1e4b-2ab1-f985-50b4" name="Dwarf Psychic Powers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="97d6-7fce-ca58-53f3" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="c791-4391-dfa7-00d6" name="Balance Rune" hidden="false" collective="false" import="true" targetId="ea0c-495e-2fb3-fc49" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7d4-a68f-bfd1-240d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf37-4266-1606-b026" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="00a6-4129-ead8-a18e" name="Breaking Rune" hidden="false" collective="false" import="true" targetId="5837-7eab-2919-2354" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e7-1abe-875d-0ac7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b7a-1fe6-060f-9cde" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="be77-8c87-8df9-5ad4" name="Battle Rune" hidden="false" collective="false" import="true" targetId="be8a-6e4b-b449-0000" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fee8-aafe-9938-435f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87b4-d0f7-b236-5536" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b897-8fac-7321-8535" name="Cleaving Rune" hidden="false" collective="false" import="true" targetId="81a3-8006-e10e-db9a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2ee-3df8-abcf-cd9a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f423-365c-bae3-102c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4294-6e56-ead6-e51a" name="Spite Rune" hidden="false" collective="false" import="true" targetId="912e-1476-b13b-485e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4740-e36a-0200-cb83" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="358e-3556-e083-598d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9050-601b-a829-b6a5" name="Smiting Rune" hidden="false" collective="false" import="true" targetId="e97e-1c1c-cc3e-85c2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4912-2474-5b51-b58e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91f0-4dcc-70af-8afd" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="02aa-a54a-ba59-0336" name="Battle Lore" hidden="false">
@@ -2753,6 +3060,49 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Repair, Slow, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ac1b-835a-e0b5-85e9" name="Rune Master" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Psychic(1), Slow, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7be2-c1b0-ab27-8b70" name="Balance Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target unit within 12&quot; immediately loses all enemy spell effects.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="32e5-f35e-6e6d-0b9b" name="Smiting Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 12&quot; takes 3 automatic hits with AP(4).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f1f9-8baf-c133-34c8" name="Spite Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets Rending next time it shoots.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8fce-2604-3365-55d7" name="Cleaving Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target 2 enemy units within 12&quot; take 6 automatic hits each.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6d31-641d-696d-b6d5" name="Battle Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 24&quot; gets +3&quot; to its next movement.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6f40-3118-2695-0437" name="Breaking Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24&quot; takes 6 automatic hits with AP(1).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
