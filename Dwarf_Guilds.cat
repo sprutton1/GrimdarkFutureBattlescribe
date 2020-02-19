@@ -1342,6 +1342,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="1cb8-803e-0e89-1e88" name="Plasma Pistols &amp; Hammers" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -1577,6 +1580,9 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="23da-d7d5-92a0-0881" name="Rifles &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -1628,6 +1634,9 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1687,9 +1696,10 @@
         <infoLink id="229e-dda7-074c-9c73" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
         <infoLink id="77e5-aca7-ecd2-b938" name="Dwarf Trike" hidden="false" targetId="acee-0219-c3b5-6f1a" type="profile"/>
         <infoLink id="0b40-c899-7fee-ca24" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="c8df-5e2d-7385-31c1" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c93b-deb8-d258-c5ca" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="254f-cfad-17cb-51c6">
+        <selectionEntryGroup id="c93b-deb8-d258-c5ca" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="254f-cfad-17cb-51c6">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93f9-bc5b-bd92-6149" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d975-09ec-3f23-96ec" type="max"/>
@@ -1763,12 +1773,18 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="225a-5829-bff0-711f" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
+        </entryLink>
+        <entryLink id="c3c7-81ed-d65a-d769" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="a1da-51ac-5a8f-8f95" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a45-65b6-6dfe-7d8d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1f2-9df2-0e98-1a99" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f8ef-d493-b25e-56bc" name="Explosive Keg" hidden="false" collective="false" import="true" type="upgrade">
@@ -3742,8 +3758,8 @@
     <profile id="acee-0219-c3b5-6f1a" name="Dwarf Trike" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
-        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Tough(3)</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(3), Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="1fbc-5c00-0b75-abd4" name="Half-Track" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -3869,7 +3885,7 @@
     </profile>
     <profile id="8b4f-c8b3-df0f-2f40" name="Explosive Keg" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Impact(3)</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Impact(+3)</characteristic>
       </characteristics>
     </profile>
     <profile id="aeda-284b-7d65-8e0d" name="Artillery Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
