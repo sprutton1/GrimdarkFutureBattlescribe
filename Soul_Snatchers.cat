@@ -6,6 +6,7 @@
   <entryLinks>
     <entryLink id="0c25-2fe6-1f00-9719" name="Soul-Snatcher Patriarch" hidden="false" collective="false" import="true" targetId="ffcd-a559-7a12-9c84" type="selectionEntry"/>
     <entryLink id="fe57-cbb7-0e96-73d2" name="Mage" hidden="false" collective="false" import="true" targetId="b88d-fc61-274a-1e4c" type="selectionEntry"/>
+    <entryLink id="e0c1-3fc1-0538-1a6d" name="Acolyte Warden" hidden="false" collective="false" import="true" targetId="0790-4005-934d-507b" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa29-a674-51a5-6a99" name="Agitator" hidden="false" collective="false" import="true" type="upgrade">
@@ -149,7 +150,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="135.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c149-430f-96f4-7984" name="Piercing Claws" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c149-430f-96f4-7984" name="Piercing Claws (Patriarch)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="c2a2-2de7-ad17-8b15" name="Piercing Claws" hidden="false" targetId="6195-d24b-c684-8a0d" type="profile"/>
         <infoLink id="9daf-466a-644a-212e" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -268,6 +269,50 @@
         <infoLink id="4566-731e-8df5-1b1f" name="CCW (A3)" hidden="false" targetId="7e93-3ba1-34a0-b8d2" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="91ff-aaeb-558a-5964" name="Piercing Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="08ed-11bf-fb7e-5798" name="Piercing Claws" hidden="false" targetId="5a0d-9ff7-fa13-9c48" type="profile"/>
+        <infoLink id="fe35-e7b6-806a-07be" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2feb-c0ae-2749-5520" name="Piercing Claws (Elite)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="55b9-9b5e-2227-83fa" name="Piercing Claws (Elite)" hidden="false" targetId="31ff-fda3-fc67-17a2" type="profile"/>
+        <infoLink id="c62c-aa2f-0a34-5ec6" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0790-4005-934d-507b" name="Acolyte Warden" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="eead-80b1-8f18-b9e9" name="Acolyte Warden" hidden="false" targetId="67a9-84c7-f26e-be9a" type="profile"/>
+        <infoLink id="6b40-be93-1811-ab93" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="4404-c65e-ab5d-b0e9" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="e590-c923-a876-6821" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="3a05-6404-4c22-766f" name="Banner" hidden="false" targetId="437c-ba05-6e5f-2dd8" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="aad3-7ad7-b311-d22c" name="Banner" hidden="false" collective="false" import="true" targetId="61a5-f2f5-fbf4-9306" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d35a-40ce-aa2d-965a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01f9-9b01-14be-5ae1" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="396b-2e39-e250-413d" name="Piercing Claws (Elite)" hidden="false" collective="false" import="true" targetId="2feb-c0ae-2749-5520" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f718-ec0c-f275-682d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b5-1f2b-d2c9-10ec" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e72e-9c27-273d-5754" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f02-6f0e-6464-42bd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efbc-b76d-a359-1973" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="100.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="5d13-1e1f-67f7-4dcc" name="Agitator" hidden="false">
@@ -300,7 +345,7 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fear, Hero, Psychic(1), Scout, Strider, Tough(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="6195-d24b-c684-8a0d" name="Piercing Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="6195-d24b-c684-8a0d" name="Piercing Claws (Patriarch)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Rending</characteristic>
@@ -359,6 +404,25 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="31ff-fda3-fc67-17a2" name="Piercing Claws (Elite)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5a0d-9ff7-fa13-9c48" name="Piercing Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="67a9-84c7-f26e-be9a" name="Acolyte Warden" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Banner, Hero, Scout, Tough(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
