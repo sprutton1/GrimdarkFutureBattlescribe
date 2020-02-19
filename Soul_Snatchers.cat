@@ -5,6 +5,7 @@
   </publications>
   <entryLinks>
     <entryLink id="0c25-2fe6-1f00-9719" name="Soul-Snatcher Patriarch" hidden="false" collective="false" import="true" targetId="ffcd-a559-7a12-9c84" type="selectionEntry"/>
+    <entryLink id="fe57-cbb7-0e96-73d2" name="Mage" hidden="false" collective="false" import="true" targetId="b88d-fc61-274a-1e4c" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa29-a674-51a5-6a99" name="Agitator" hidden="false" collective="false" import="true" type="upgrade">
@@ -126,18 +127,21 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="c944-c35b-17cb-4a57" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0154-5bc5-3789-5a4d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e4d-e690-a9e0-89c4" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1868-eaed-f816-6cb5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0154-5bc5-3789-5a4d" name="Piercing Claws" hidden="false" collective="false" import="true" targetId="c149-430f-96f4-7984" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="bf0d-1505-4bc4-67fd" name="Soul Snatcher Psychic Powers" hidden="false" collective="false" import="true" targetId="1158-e159-93e1-59cb" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2830-8a4e-b011-0063" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="056c-8391-b28e-4c0b" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c6d7-2cef-9fed-9e38" name="Piercing Claws" hidden="false" collective="false" import="true" targetId="c149-430f-96f4-7984" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3416-633b-a9ae-d2e1" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="857c-fbc9-c817-aba2" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -169,6 +173,99 @@
       <infoLinks>
         <infoLink id="8de4-01d9-b788-b28a" name="Familiar" hidden="false" targetId="27bf-e14f-e3b9-90d4" type="profile"/>
         <infoLink id="c7ed-3a55-0733-e64b" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="b88d-fc61-274a-1e4c" name="Mage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f1f6-86c1-62fc-7e27" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="85c4-061b-a0c3-3ea6" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="36ba-6bc7-7fd8-9a05" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="3a20-a398-bd34-0444" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+        <infoLink id="d066-41b5-cbd3-c58b" name="Mage" hidden="false" targetId="2f88-fb25-995c-175b" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="71b9-0c6e-c4cd-f09d" name="Psychic(X)" hidden="false" collective="false" import="true" defaultSelectionEntryId="8e1b-02da-3730-c937">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a03-dff2-0288-506d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b222-c854-0751-fdbd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8e1b-02da-3730-c937" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d30-2e01-609d-4334" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="91b3-92ac-e368-0bad" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="1881-37f8-61c9-a8fd" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0fc-6609-7275-746a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0b80-ce45-94eb-b675" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8ae2-4a40-e715-f8a0" name="Upgrade with up to two:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e6e-4e72-0fe6-0079" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3af4-56e4-b527-ded3" name="Familiar" hidden="false" collective="false" import="true" targetId="8ccc-4faf-5c4e-7dd5" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0b3f-cab7-0e67-2852" name="Upgrade with:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0bc-ebbf-9b23-580f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6ce4-39cb-4231-bc55" name="Psychic Idol" hidden="false" collective="false" import="true" targetId="6c5b-24ba-e370-30d7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c9-59ed-b338-36a2" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b2d1-b14f-8428-c562" name="Soul Snatcher Psychic Powers" hidden="false" collective="false" import="true" targetId="1158-e159-93e1-59cb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08e0-dcef-6309-dd8c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffe2-6cca-b3bc-4e8f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b60e-7506-e867-ea3e" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e500-d396-ddab-bec1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3896-6839-0082-0853" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d907-e84e-3637-6def" name="CCW (A3)" hidden="false" collective="false" import="true" targetId="dc07-cbe9-adf9-83df" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6fb-abbb-8e5d-d557" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28e8-8c84-0e42-7a55" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dc07-cbe9-adf9-83df" name="CCW (A3)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4566-731e-8df5-1b1f" name="CCW (A3)" hidden="false" targetId="7e93-3ba1-34a0-b8d2" type="profile"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -249,6 +346,19 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2f88-fb25-995c-175b" name="Mage" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Psychic(1), Scout, Tough</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7e93-3ba1-34a0-b8d2" name="CCW (A3)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
