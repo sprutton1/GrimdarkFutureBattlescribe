@@ -23,6 +23,7 @@
     <entryLink id="4849-f831-b840-3b9b" name="Dwarf Walker" hidden="false" collective="false" import="true" targetId="982c-e0e7-1cad-b71c" type="selectionEntry"/>
     <entryLink id="9c2c-db80-d385-f3db" name="Artillery" hidden="false" collective="false" import="true" targetId="260a-e27b-35dc-e573" type="selectionEntry"/>
     <entryLink id="c9bc-943f-e298-d3fc" name="Dwarf Gunship" hidden="false" collective="false" import="true" targetId="8ab7-5e36-8977-54bd" type="selectionEntry"/>
+    <entryLink id="dd14-ed7f-6260-f855" name="Berserker Lord" hidden="false" collective="false" import="true" targetId="7330-fd9a-8d99-56fd" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fed0-8bd1-0e14-22dc" name="Guild Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -2203,6 +2204,34 @@
         <infoLink id="f329-c4cc-487c-e322" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="7330-fd9a-8d99-56fd" name="Berserker Lord" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="04f9-428e-8972-8756" name="Berserker Lord" hidden="false" targetId="1fa4-3a0e-0287-7c56" type="profile"/>
+        <infoLink id="9316-c4ff-63ae-cce0" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="add1-5220-6e5d-74a1" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+        <infoLink id="5ba7-8182-5896-9ce0" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="5d35-3d1e-0bf6-b2cc" name="Slayer" hidden="false" targetId="9b2d-06a5-7a64-7bdf" type="rule"/>
+        <infoLink id="c8f5-7de3-2cb7-56c8" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
+        <infoLink id="37b9-06d2-064d-5c74" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="24d1-39bc-67fa-f28c" name="Berserker Axe (Lord)" hidden="false" collective="false" import="true" targetId="d44b-0ec2-f6ec-4194" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db1a-d4bd-8f68-c37b" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b63a-1f99-b413-5b54" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d44b-0ec2-f6ec-4194" name="Berserker Axe (Lord)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a56d-1c2c-6971-e9c6" name="Berserker Axe (Lord)" hidden="false" targetId="7b07-c01b-eeeb-75fa" type="profile"/>
+        <infoLink id="21c4-67c7-c4a0-3c40" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="02aa-a54a-ba59-0336" name="Battle Lore" hidden="false">
@@ -2502,6 +2531,19 @@
     <profile id="318d-949c-60a9-53c9" name="Power Suit (Upgrade)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Ambush, Tough(+3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1fa4-3a0e-0287-7c56" name="Berserker Lord" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Furious, Hero, Slayer, Slow, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7b07-c01b-eeeb-75fa" name="Berserker Axe (Lord)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
