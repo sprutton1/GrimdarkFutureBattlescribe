@@ -945,23 +945,6 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f253-ff5f-da6b-08db" name="Hammerer" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="537e-41a7-0e2e-0abc" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
-        <infoLink id="91d3-6fb4-49c9-2a28" name="Hammerer" hidden="false" targetId="3345-69a0-58d8-6914" type="profile"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="18a1-3c04-9cb7-ffae" name="Energy Hammer" hidden="false" collective="false" import="true" targetId="4a6a-f1cc-fc20-c7a4" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3ce-21b3-9f3f-aae9" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0676-d0cc-d5ba-dfdb" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="4a6a-f1cc-fc20-c7a4" name="Energy Hammer" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2e38-189a-41ec-b852" name="Energy Hammer" hidden="false" targetId="a84b-1f66-915f-b56f" type="profile"/>
@@ -971,17 +954,45 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d32d-c852-7d37-58ae" name="Hammerers" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="465e-e98b-a4b2-aad8" name="Hammerer" hidden="false" collective="false" import="true" targetId="f253-ff5f-da6b-08db" type="selectionEntry">
+    <selectionEntry id="d32d-c852-7d37-58ae" name="Elites" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="84ca-cdcc-4411-dcdb" name="Hammerer" hidden="false" targetId="3345-69a0-58d8-6914" type="profile"/>
+        <infoLink id="982e-e05d-968b-a270" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="8bd3-5229-4ab0-9b21" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8e43-2340-b937-7fc1" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f810-81e9-e729-d347">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7b6-c927-4182-7b04" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="995e-7186-3816-d9d8" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84f9-b765-1ccd-7491" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bfc-7765-1fcc-af5c" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <entryLinks>
+            <entryLink id="f810-81e9-e729-d347" name="Heavy Hammer" hidden="false" collective="false" import="true" targetId="b0b8-50a5-4e64-31e8" type="selectionEntry"/>
+            <entryLink id="788d-f351-7295-7633" name="Shock Hammer" hidden="false" collective="false" import="true" targetId="2912-4e2a-7b82-1871" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9e4b-c053-81d0-468f" name="Drill Hammer" hidden="false" collective="false" import="true" targetId="e228-703a-4efb-d3e6" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7f2f-8220-490c-d8c2" name="Plasma Hammer" hidden="false" collective="false" import="true" targetId="ce20-65d9-4d9c-9555" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="96cc-3b7a-d23a-6032" name="Heat Hammer" hidden="false" collective="false" import="true" targetId="8612-5a2e-a1cb-13f1" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="841e-d57a-31f4-8329" name="Jetpack Warriors" hidden="false" collective="false" import="true" type="upgrade">
@@ -3432,6 +3443,12 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b0b8-50a5-4e64-31e8" name="Heavy Hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="13aa-d6a4-5742-33c1" name="Heavy Hammer" hidden="false" targetId="c78f-2c84-58f4-ea02" type="profile"/>
+        <infoLink id="0159-2793-8512-d761" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="02aa-a54a-ba59-0336" name="Battle Lore" hidden="false">
@@ -3479,11 +3496,11 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Slow</characteristic>
       </characteristics>
     </profile>
-    <profile id="3345-69a0-58d8-6914" name="Hammerer" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="3345-69a0-58d8-6914" name="Elite" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
-        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
-        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Slow</characteristic>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Slow</characteristic>
       </characteristics>
     </profile>
     <profile id="64ef-14b1-5df5-30ef" name="Jetpack Warrior" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -3813,6 +3830,12 @@
     <profile id="1e69-a5d4-60bc-9dfa" name="Berserker Axe (Trooper)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c78f-2c84-58f4-ea02" name="Heavy Hammer" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
