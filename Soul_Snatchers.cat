@@ -16,6 +16,7 @@
     <entryLink id="8bc9-db08-26cd-531c" name="Neophyte Duelist" hidden="false" collective="false" import="true" targetId="a940-b7b0-f015-296e" type="selectionEntry"/>
     <entryLink id="e0a4-bd6a-baed-fefb" name="Propagandist" hidden="false" collective="false" import="true" targetId="6cc5-a1b0-7cc7-74b1" type="selectionEntry"/>
     <entryLink id="9991-f79a-7b9f-a2aa" name="Assassin" hidden="false" collective="false" import="true" targetId="226d-736e-de3a-b699" type="selectionEntry"/>
+    <entryLink id="7899-b70a-c86a-0165" name="Minions" hidden="false" collective="false" import="true" targetId="d751-a251-023e-afcc" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa29-a674-51a5-6a99" name="Agitator" hidden="false" collective="false" import="true" type="upgrade">
@@ -631,6 +632,209 @@
         <infoLink id="2819-8369-5a4a-2954" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="38a9-49b2-5567-a46e" name="Minion" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="144f-2ff0-2dcc-d806" name="Minion" hidden="false" targetId="4602-bf06-9d17-7a77" type="profile"/>
+        <infoLink id="97c8-b68d-7d1d-0066" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="109e-8c50-8504-2cc9" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="b1f7-fded-6b90-629b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b911-1160-0ced-becb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4984-3a82-745c-b16a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9e43-1080-4171-8ccf" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f34-2dcb-35cc-5daf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5bb-84a8-1bc4-67e2" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="c4f0-0ce2-2c60-2d99" name="Minion (Special Weapon)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="06e6-39b5-9f3a-f8b6" name="Minion" hidden="false" targetId="4602-bf06-9d17-7a77" type="profile"/>
+        <infoLink id="0209-b5f4-7dec-0275" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d266-3846-a3d8-55e1" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4e8d-c273-098b-016e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4224-0b7b-585a-f4a7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb44-10b3-1a46-04e8" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4e8d-c273-098b-016e" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="a1da-51ac-5a8f-8f95" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea7d-a148-321e-0924" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ccd2-2ca0-feb2-b02f" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99b5-9841-2c99-0c59" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="e021-2e13-6759-d9ab" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="e089-6dd6-ec4e-12e6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a32-c952-691e-0ece" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a2cf-4693-4d43-0fef" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fad5-1de8-09fb-31ec" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="4d0e-a888-f3b5-9bb5" name="Shred Rifle" hidden="false" collective="false" import="true" targetId="fa7d-5662-869b-c879" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68bd-9d3a-7e22-4c65" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="05b7-df47-2451-2cd7" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f52-0a5e-b636-4da6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2db-bae0-6fce-64dc" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="417d-7891-b679-be5c" name="Minion (Leader)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4218-65e4-9284-de60" name="Minion" hidden="false" targetId="4602-bf06-9d17-7a77" type="profile"/>
+        <infoLink id="8d28-9cfb-9614-0d7b" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="f2e8-ba4c-44a9-b8ec" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01d1-e89e-d931-f7be" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0875-f04f-b398-eb35" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1c07-4243-17b0-0c68" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6855-5202-7523-ad2b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d4c-154d-cebd-b3d5" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="d751-a251-023e-afcc" name="Minions" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d4b4-8042-34ea-9e4d" name="Minions" hidden="false" collective="false" import="true" defaultSelectionEntryId="3d26-a56c-c28f-3b48">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c17-6dbb-bdcf-27d6" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb05-a212-4f63-7a55" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3d26-a56c-c28f-3b48" name="Minion" hidden="false" collective="false" import="true" targetId="38a9-49b2-5567-a46e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba05-9f7c-1ef7-1a50" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="e23c-50b0-9c0d-e514" name="Minion (Support Weapon)" hidden="false" collective="false" import="true" targetId="c4f0-0ce2-2c60-2d99" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60d5-5679-385c-ab06" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="027d-2245-0ce6-d58b" name="Minion (Leader)" hidden="false" collective="false" import="true" targetId="417d-7891-b679-be5c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e56-2a12-5f99-9c17" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7b4d-15e9-5de3-4f59" name="Support Minion" hidden="false" collective="false" import="true" targetId="75ac-e98f-e6f4-0ca1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="debd-95a4-94c7-82f1" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="75ac-e98f-e6f4-0ca1" name="Support Minion" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3cd5-c873-c511-a479" name="Support Minion" hidden="false" targetId="7f33-aeef-b528-2355" type="profile"/>
+        <infoLink id="3e6a-8917-1425-5266" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="f880-35dd-7045-4828" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ab27-a1e1-d13b-ac13" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7827-32fb-805d-3ed7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ce1-4b9f-faed-bff2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4ef-f46b-dc67-8453" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7827-32fb-805d-3ed7" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a51e-b90b-b233-db52" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="475a-6d0e-ab2b-47e6" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="ff1b-714c-6353-221d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c1b-287b-1412-e171" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7db9-1e48-4b27-4231" name="Mortar" hidden="false" collective="false" import="true" targetId="5726-d775-71fa-e9fd" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a78-17bd-b101-a1f8" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="0e47-1f64-981a-2ed9" name="Autocannon" hidden="false" collective="false" import="true" targetId="9557-8f54-7c72-fe96" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bcd-559d-4bb3-641c" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2cc7-77bb-da2a-0c9c" name="Laser Cannon" hidden="false" collective="false" import="true" targetId="1f20-2b60-f100-bed0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c8d-bc49-e6f8-c31a" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ee1c-7f09-659a-c7a2" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f32-df3e-74c6-f2dc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7b2-67e4-8150-9e6c" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="5d13-1e1f-67f7-4dcc" name="Agitator" hidden="false">
@@ -849,6 +1053,20 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4602-bf06-9d17-7a77" name="Minion" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Scout</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7f33-aeef-b528-2355" name="Support Minion" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Scout, Tough(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
