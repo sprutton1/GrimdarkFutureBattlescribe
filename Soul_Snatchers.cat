@@ -24,6 +24,7 @@
     <entryLink id="d9ee-04ce-16b7-b3e3" name="Mutant Brutes" hidden="false" collective="false" import="true" targetId="1201-5b49-9e4c-f508" type="selectionEntry"/>
     <entryLink id="5879-3fe6-59e2-dc08" name="Soul-Snatchers" hidden="false" collective="false" import="true" targetId="24a6-672a-0e31-7d25" type="selectionEntry"/>
     <entryLink id="a060-04fe-1d9e-6741" name="Elite Snatchers" hidden="false" collective="false" import="true" targetId="c1db-d950-d8fa-2e2b" type="selectionEntry"/>
+    <entryLink id="ed94-9841-54c8-6251" name="Minion Bikers" hidden="false" collective="false" import="true" targetId="58a5-fad2-6c07-768f" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa29-a674-51a5-6a99" name="Agitator" hidden="false" collective="false" import="true" type="upgrade">
@@ -1681,6 +1682,9 @@
       <infoLinks>
         <infoLink id="f5c9-92ff-3b45-a294" name="Razor Claws" hidden="false" targetId="9cb9-33f9-01e1-407f" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c1db-d950-d8fa-2e2b" name="Elite Snatchers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1736,6 +1740,90 @@
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="255.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="58a5-fad2-6c07-768f" name="Minion Bikers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2f5f-41fe-9827-3bbf" name="Minion Biker" hidden="false" targetId="1216-f973-27ec-974f" type="profile"/>
+        <infoLink id="624e-31f0-e278-3c0a" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="a399-09fe-fddd-f826" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="3656-12e3-999b-e80d" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="78a9-f533-0478-bddb" name="Ranged Weapons [pick 5]" hidden="false" collective="false" import="true" defaultSelectionEntryId="ab73-a9cb-2ab9-c289">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77be-2c47-d67f-6618" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bb7-c2c1-8a0d-cdb4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ab73-a9cb-2ab9-c289" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry"/>
+            <entryLink id="350e-f79d-b690-2875" name="Burst Pistol" hidden="false" collective="false" import="true" targetId="cbf7-80f9-4501-3a24" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8527-8375-3e71-ca6c" name="Shotgun" hidden="false" collective="false" import="true" targetId="9ee5-5c13-dfef-ff7c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ebbf-0052-45f6-2682" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="a1da-51ac-5a8f-8f95" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7da9-9103-8d91-31bc" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="e089-6dd6-ec4e-12e6" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e812-186d-6e4f-a22e" name="Melee Weapons [pick 5]" hidden="false" collective="false" import="true" defaultSelectionEntryId="4628-de0f-a39c-6aa7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82b8-b406-0249-1f63" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6149-a11e-5945-2dea" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="502e-8df9-47ce-3b36" name="Replace one CCW:" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c570-8152-c933-3c99" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="47bc-5ca3-7fca-fb57" name="Energy Axe" hidden="false" collective="false" import="true" targetId="9e17-09d1-fd2a-1aa4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e13d-31c7-e1cc-1f7b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d391-fc39-73b3-695b" name="Energy Pick" hidden="false" collective="false" import="true" targetId="d6ac-e89c-26eb-01c9" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f00-0ef5-4f73-6934" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="dc0a-2a90-3d8f-aad4" name="Energy Hammer" hidden="false" collective="false" import="true" targetId="ee08-0414-e5c3-908f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d74-4e18-3f74-c922" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="4628-de0f-a39c-6aa7" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2115,7 +2203,7 @@
     <profile id="9cb9-33f9-01e1-407f" name="Razor Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
       </characteristics>
     </profile>
     <profile id="c55c-681d-4a96-a7cf" name="Elite Snatcher" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -2123,6 +2211,13 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Regeneration, Scout, Strider</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1216-f973-27ec-974f" name="Minion Biker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(1), Scout</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
