@@ -576,98 +576,55 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c3b3-21fa-59f8-f695" name="War Chant" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cb4-d8cb-f021-6c04" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="bcd5-5cbb-208d-a6a3" name="War Chant" hidden="false" targetId="e623-156f-ebce-b9d6" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9e0c-90cc-7c69-1f50" name="Upgrades" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="f0d7-4873-ed80-4bcb" name="Equipment Upgrade [max 1]" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d79b-0daf-6655-1be1" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="42e7-67bd-b96d-fd58" name="Jetpack" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="619c-158f-43b3-8de8" name="Jetpack" hidden="false" collective="false" import="true" targetId="33d6-ea20-9d27-5f4e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f269-8ad2-c8b2-5014" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f9c-c23f-4a37-baa6" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="bfa5-01cd-1308-bf6b" name="Bike" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="6125-44b2-9025-aec4" name="Bike" hidden="false" collective="false" import="true" targetId="c47e-3660-de3d-86f7" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5680-fd23-0fe5-23c6" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58c3-2dab-b8e7-e17e" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f0f1-df06-00a2-33ac" name="Destroyer Armor" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="3e11-288e-99b5-aa9b" name="Destroyer Armor" hidden="false" collective="false" import="true" targetId="8150-2743-e904-7a5c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="177d-d649-f019-bc84" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aaf-ecec-7c57-addb" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="da2e-1328-3c4c-870c" name="Dark Brothers" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8bb9-ad8e-0b56-8649" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbdc-7443-29a9-ec5b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4cf-0608-5037-f90a" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="ff27-e456-e157-6e6b" name="Dark Brothers - Dark Assault &amp; Dark Resolve" hidden="false" collective="false" import="true" targetId="cf31-8c37-3347-79a3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6689-1f5d-8a89-e8bd" type="max"/>
-              </constraints>
+            <entryLink id="b507-2578-b1f4-a6c1" name="Jetpack" hidden="false" collective="false" import="true" targetId="33d6-ea20-9d27-5f4e" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="7def-4186-48a2-be2e" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ba-d973-9b44-bb32" type="max"/>
-              </constraints>
+            <entryLink id="5263-64dd-e1d1-612f" name="Bike" hidden="false" collective="false" import="true" targetId="c47e-3660-de3d-86f7" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7bd4-f5ab-b92d-708d" name="Destroyer Armor" hidden="false" collective="false" import="true" targetId="8150-2743-e904-7a5c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
               </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="c01f-4e73-2358-baba" name="Tactical Upgrade [max 1]" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="004b-76a8-2edc-0b85" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="420d-38ca-e95b-a36d" name="Advanced Tactics" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="4730-a56a-3fc9-2afa" name="Advanced Tactics" hidden="false" targetId="ef60-5e8d-9985-cf37" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6235-316b-d057-68fd" name="War Chant" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="fc0d-095e-2d70-4bc8" name="War Chant" hidden="false" targetId="e623-156f-ebce-b9d6" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="57a9-6f2b-17ad-ba34" name="Leader Weapons" hidden="false" collective="false" import="true" targetId="763b-1230-bcad-b19d" type="selectionEntryGroup"/>
         <entryLink id="0f14-fc50-9fab-ab8d" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
@@ -680,12 +637,12 @@
         </entryLink>
         <entryLink id="a2b9-59fa-5c3b-9e81" name="Death Brothers - Tactical Master" hidden="false" collective="false" import="true" targetId="f2e2-ff33-227d-9876" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
           </costs>
         </entryLink>
         <entryLink id="ef48-46ce-cc9c-ddcb" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
         <entryLink id="49a7-d2d7-416d-1d6b" name="Wolf Brothers - Counter-Attack" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
@@ -693,6 +650,17 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
           </costs>
         </entryLink>
+        <entryLink id="b643-bdab-40a0-2230" name="Dark Brothers - Dark Assault" hidden="false" collective="false" import="true" targetId="cf31-8c37-3347-79a3" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="7398-32e6-24c6-2ac8" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="40b7-139e-2a8e-1bfa" name="Leader Weapons" hidden="false" collective="false" import="true" targetId="763b-1230-bcad-b19d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="100.0"/>
@@ -6721,7 +6689,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="105.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0e50-ac50-e026-dae4" name="Destroyer Armor" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0e50-ac50-e026-dae4" name="Destroyer Armor (Dark)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="36f2-9baf-e0cd-a3c0" name="Destroyer Armor" hidden="false" targetId="72ec-8d57-b499-acf0" type="profile"/>
         <infoLink id="2fb4-aa34-e42a-27f4" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
