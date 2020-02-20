@@ -25,6 +25,7 @@
     <entryLink id="5879-3fe6-59e2-dc08" name="Soul-Snatchers" hidden="false" collective="false" import="true" targetId="24a6-672a-0e31-7d25" type="selectionEntry"/>
     <entryLink id="a060-04fe-1d9e-6741" name="Elite Snatchers" hidden="false" collective="false" import="true" targetId="c1db-d950-d8fa-2e2b" type="selectionEntry"/>
     <entryLink id="ed94-9841-54c8-6251" name="Minion Bikers" hidden="false" collective="false" import="true" targetId="58a5-fad2-6c07-768f" type="selectionEntry"/>
+    <entryLink id="c658-a9cb-91a8-89e9" name="Minion Quadbike" hidden="false" collective="false" import="true" targetId="d7ed-b46a-d024-aa04" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa29-a674-51a5-6a99" name="Agitator" hidden="false" collective="false" import="true" type="upgrade">
@@ -1826,6 +1827,47 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d7ed-b46a-d024-aa04" name="Minion Quadbike" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ce57-24ca-4d6a-c253" name="Minion Quadbike" hidden="false" targetId="3fbd-7258-f975-ac1c" type="profile"/>
+        <infoLink id="adb5-c144-e023-d0b4" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="4a47-0ba2-570d-20e1" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="50ba-2ec5-3369-569f" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="e5af-c09b-1d18-dab6" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e7de-7f02-1550-9b89" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3f16-d461-18cb-9077">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97e3-dadf-060a-4b60" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f364-41b2-5773-8bdd" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3f16-d461-18cb-9077" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry"/>
+            <entryLink id="2b98-3007-3213-b418" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1b61-4b44-1954-c2e4" name="Mining Laser" hidden="false" collective="false" import="true" targetId="8dbd-389a-13d3-7c1b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="81be-c262-e715-1f40" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57f8-35d0-f857-e332" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36b0-362b-c777-aafc" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="5d13-1e1f-67f7-4dcc" name="Agitator" hidden="false">
@@ -2218,6 +2260,13 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(1), Scout</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3fbd-7258-f975-ac1c" name="Minion Quadbike" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(3), Scout, Tough(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
