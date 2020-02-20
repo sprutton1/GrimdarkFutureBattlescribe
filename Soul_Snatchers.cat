@@ -27,6 +27,7 @@
     <entryLink id="ed94-9841-54c8-6251" name="Minion Bikers" hidden="false" collective="false" import="true" targetId="58a5-fad2-6c07-768f" type="selectionEntry"/>
     <entryLink id="c658-a9cb-91a8-89e9" name="Minion Quadbike" hidden="false" collective="false" import="true" targetId="d7ed-b46a-d024-aa04" type="selectionEntry"/>
     <entryLink id="1aab-bf6b-b4cd-83e2" name="Attack Vehicle" hidden="false" collective="false" import="true" targetId="fa71-78ff-9f60-b5f6" type="selectionEntry"/>
+    <entryLink id="7833-9b2d-0239-dad5" name="Light APC" hidden="false" collective="false" import="true" targetId="cd96-b8f5-840e-ec98" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa29-a674-51a5-6a99" name="Agitator" hidden="false" collective="false" import="true" type="upgrade">
@@ -1961,6 +1962,113 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="220.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="cd96-b8f5-840e-ec98" name="Light APC" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="13c9-79e9-d629-c0e9" name="Light APC" hidden="false" targetId="3ed9-caed-7cc9-cc89" type="profile"/>
+        <infoLink id="e1dd-7c20-3670-c9e8" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
+        <infoLink id="db0e-44d0-84c1-0fca" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="2a3f-da17-ea11-464a" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="e328-2b29-156a-5f66" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1e03-9b08-8485-f755" name="Weapon - Turret [pick 1]" hidden="false" collective="false" import="true" defaultSelectionEntryId="db3a-5b31-f0ca-8544">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d46-c4e7-6971-83cc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84b6-0748-4eec-ee4e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="db3a-5b31-f0ca-8544" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b912-51ff-5eaa-a42f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4780-7b8a-99f8-d400" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="750b-5732-9596-3456" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="99e4-0c4b-4f05-6b16" name="Laser Machinegun" hidden="false" collective="false" import="true" targetId="f7a6-c6c9-0567-4b34" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ddd-e340-7f52-bf52" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0737-16e6-614c-8a77" name="Weapon - Hull [pick 1]" hidden="false" collective="false" import="true" defaultSelectionEntryId="877e-e275-2a8e-dc0d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9b9-fbf5-d888-0ed8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5b9-4e93-ab51-0e88" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="877e-e275-2a8e-dc0d" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3d7-4117-4274-0cc8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c1e8-8d04-eda4-f025" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a3-7efa-5935-1bfb" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="30c2-213b-9950-3417" name="Weapon - Pintle [max 1]" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7975-d59e-05fc-4999" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e9e6-c2fe-0388-a7e9" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2d8-a3a6-83a9-08e5" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="c95a-0f15-fec2-2790" name="Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce62-81d6-7441-2d95" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="98d2-97df-bc4c-9de1" name="Vehicle Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="b136-a1e8-d7bf-1a6c" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="5dc2-4ac8-2769-e4ba" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7746-dace-efba-f8e6" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="dc33-4118-9867-67e4" name="Hunter Missile" hidden="false" collective="false" import="true" targetId="c756-9c2d-beca-986c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1903-a0ba-1737-15cf" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="205.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="5d13-1e1f-67f7-4dcc" name="Agitator" hidden="false">
@@ -2396,6 +2504,13 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Blast(3), Indirect</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3ed9-caed-7cc9-cc89" name="Light APC" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(6), Tough(6), Transport(11)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
