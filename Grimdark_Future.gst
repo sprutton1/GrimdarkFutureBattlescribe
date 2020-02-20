@@ -297,7 +297,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6bf9-8992-7b02-5764" name="Machinegun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6bf9-8992-7b02-5764" name="Light Machinegun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9a80-6f53-330c-6f89" name="Light Machinegun" hidden="false" targetId="c0d6-cc28-d227-9727" type="profile"/>
       </infoLinks>
@@ -652,6 +652,9 @@
         <infoLink id="dfab-960a-58de-d29a" name="Energy Axe" hidden="false" targetId="07b5-8899-5b19-65d2" type="profile"/>
         <infoLink id="a206-ba09-487e-8c4b" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -1002,7 +1005,7 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="c0d6-cc28-d227-9727" name="Machinegun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="c0d6-cc28-d227-9727" name="Light Machinegun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>

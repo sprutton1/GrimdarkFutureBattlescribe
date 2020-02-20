@@ -28,6 +28,7 @@
     <entryLink id="c658-a9cb-91a8-89e9" name="Minion Quadbike" hidden="false" collective="false" import="true" targetId="d7ed-b46a-d024-aa04" type="selectionEntry"/>
     <entryLink id="1aab-bf6b-b4cd-83e2" name="Attack Vehicle" hidden="false" collective="false" import="true" targetId="fa71-78ff-9f60-b5f6" type="selectionEntry"/>
     <entryLink id="7833-9b2d-0239-dad5" name="Light APC" hidden="false" collective="false" import="true" targetId="cd96-b8f5-840e-ec98" type="selectionEntry"/>
+    <entryLink id="1402-ddaa-9934-210e" name="Grinder Truck" hidden="false" collective="false" import="true" targetId="a560-19ae-c0a9-d40b" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa29-a674-51a5-6a99" name="Agitator" hidden="false" collective="false" import="true" type="upgrade">
@@ -1874,16 +1875,25 @@
       <infoLinks>
         <infoLink id="1ad4-0393-6d1a-5665" name="Flare Gun" hidden="false" targetId="ed54-d942-a458-3bc5" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b511-caea-9a4e-fa32" name="Spotter" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5012-d12e-6dff-75a8" name="Spotter" hidden="false" targetId="3c96-fe14-fe22-4a7a" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d2c9-3c71-7e90-ca4a" name="Survey Vehicle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7cac-4e54-4f03-a3a3" name="Survey Vehicle" hidden="false" targetId="a6df-89df-ec68-d08f" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2008-6778-3051-2e2d" name="Heavy Mining Laser" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1891,6 +1901,9 @@
         <infoLink id="386c-6d3f-0ad9-d91b" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="e059-fc49-998c-f47b" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1654-9521-7249-4b44" name="Heavy Mortar" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1899,6 +1912,9 @@
         <infoLink id="1b2a-b0ac-96e4-4b07" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="ca35-8e41-4250-0077" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="fa71-78ff-9f60-b5f6" name="Attack Vehicle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -2068,6 +2084,60 @@
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="205.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="a560-19ae-c0a9-d40b" name="Grinder Truck" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c0bd-fcff-ba8b-a50b" name="Grinder Truck" hidden="false" targetId="9e44-a04a-cf89-e902" type="profile"/>
+        <infoLink id="6e95-bfca-de30-855a" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="eb5a-3802-2502-20c4" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
+        <infoLink id="37e1-da72-fcf0-969b" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="c394-ce60-a8fb-3bcb" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="3e48-7c12-179b-f7c9" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8466-dd9d-4512-2d06" name="Main Weapon [pick 1]" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd4b-be44-4c60-7462">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91b5-5a4a-cbd8-1c9a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fb9-f7ae-1ff7-89ee" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="dd4b-be44-4c60-7462" name="Heavy Incinerator" hidden="false" collective="false" import="true" targetId="9083-f503-a3ad-e26b" type="selectionEntry"/>
+            <entryLink id="9966-752e-4067-4e56" name="Heavy Mining Laser" hidden="false" collective="false" import="true" targetId="2008-6778-3051-2e2d" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9b48-3680-5167-a365" name="Heavy Earthquake Cannon" hidden="false" collective="false" import="true" targetId="3e32-2df7-c31a-339c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="cd3e-0c57-d166-bc31" name="Light Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8456-ad2d-e137-018d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fad-88d1-75ca-4ba7" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="215.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9083-f503-a3ad-e26b" name="Heavy Incinerator" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c0ff-bc2e-5bd6-0ba7" name="Heavy Incinerator" hidden="false" targetId="f249-b459-84d8-25a6" type="profile"/>
+        <infoLink id="4733-da84-b011-dff2" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="3e32-2df7-c31a-339c" name="Heavy Earthquake Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c7af-1ed6-ce5a-796b" name="Heavy Earthquake Cannon" hidden="false" targetId="134b-494a-9954-600d" type="profile"/>
+        <infoLink id="79c4-f91d-e643-9169" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -2511,6 +2581,27 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(6), Tough(6), Transport(11)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9e44-a04a-cf89-e902" name="Grinder Truck" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(9), Strider, Tough(6), Transport(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f249-b459-84d8-25a6" name="Heavy Incinerator" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="134b-494a-9954-600d" name="Heavy Earthquake Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A5</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
