@@ -769,52 +769,6 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="381b-98eb-8252-f64b" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d51-567c-4f6d-4021" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="02df-2ccb-3228-dbb0" name="Jetpack" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="8082-ba74-769b-d11e" name="Jetpack" hidden="false" collective="false" import="true" targetId="33d6-ea20-9d27-5f4e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09c3-128d-020e-d7b1" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="741f-b4bd-88f3-c7c8" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d4cb-5d5c-1672-a9f6" name="Bike" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="74a2-8c54-9e00-3014" name="Bike" hidden="false" collective="false" import="true" targetId="c47e-3660-de3d-86f7" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5af-7d03-643a-755f" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5763-8af7-c449-8cde" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1677-4795-ece7-e38f" name="Destroyer Armor" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="a075-37aa-d3ce-6c95" name="Destroyer Armor" hidden="false" collective="false" import="true" targetId="8150-2743-e904-7a5c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aa7-b5ef-b262-32ee" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a6-7ca9-bab9-6c62" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
         <selectionEntryGroup id="c292-8656-29c7-619e" name="Psychic" hidden="false" collective="false" import="true" defaultSelectionEntryId="a9cd-c1a5-fc3c-42ec">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5844-6937-3429-a390" type="max"/>
@@ -829,7 +783,7 @@
                 <infoLink id="2226-e7fb-c6ce-7fe3" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a9cd-c1a5-fc3c-42ec" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
@@ -845,54 +799,24 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="4edf-d2dd-2bc5-c1a8" name="Blood Brothers" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fc5e-c95a-636b-865d" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="5a1d-131d-4fc7-dc1c" name="Furious" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fe4-a57e-56a5-57db" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="efdb-8719-b05a-f838" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="6a81-4c35-a05e-7cbc" name="Dark Brothers" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8bb9-ad8e-0b56-8649" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <selectionEntryGroup id="843f-05ff-2b01-c965" name="Equipment Upgrade [max 1]" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85e5-4d83-6fce-f986" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5e7-206c-ca1a-06f5" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="cf18-ff19-648d-858a" name="Dark Brothers - Dark Assault &amp; Dark Resolve" hidden="false" collective="false" import="true" targetId="cf31-8c37-3347-79a3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cafa-608d-d802-57ae" type="max"/>
-              </constraints>
+            <entryLink id="31fe-b9d0-7a74-a52c" name="Jetpack" hidden="false" collective="false" import="true" targetId="33d6-ea20-9d27-5f4e" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="4cd3-78bd-7a3a-884b" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae16-74c5-1b47-d228" type="max"/>
-              </constraints>
+            <entryLink id="ce3e-efe6-a247-5949" name="Bike" hidden="false" collective="false" import="true" targetId="c47e-3660-de3d-86f7" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b174-a8b8-40af-0e8d" name="Destroyer Armor" hidden="false" collective="false" import="true" targetId="8150-2743-e904-7a5c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -901,14 +825,9 @@
       <entryLinks>
         <entryLink id="6995-d557-166b-4895" name="Leader Weapons" hidden="false" collective="false" import="true" targetId="763b-1230-bcad-b19d" type="selectionEntryGroup"/>
         <entryLink id="bbe4-04a6-d4c7-74a3" name="Spells" hidden="false" collective="false" import="true" targetId="7cab-4ff5-56e3-14cd" type="selectionEntryGroup"/>
-        <entryLink id="75d5-56f1-0da1-f5db" name="Custodian Brothers - Regeneration" hidden="false" collective="false" import="true" targetId="5eba-5a59-c1ab-8cbc" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-          </costs>
-        </entryLink>
         <entryLink id="3847-a81a-4514-eef5" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
         <entryLink id="a498-662d-d2bf-e29b" name="Wolf Brothers - Counter-Attack" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
@@ -916,9 +835,29 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
           </costs>
         </entryLink>
+        <entryLink id="1060-d4ae-6f01-7d77" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="3462-2a30-cc52-632c" name="Custodian Brothers - Regeneration" hidden="false" collective="false" import="true" targetId="5eba-5a59-c1ab-8cbc" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="9b59-3dd9-a27a-e546" name="Dark Brothers - Dark Assault" hidden="false" collective="false" import="true" targetId="cf31-8c37-3347-79a3" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="6006-f313-be43-3231" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="115.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="125.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f735-425b-dce3-f41c" name="Battle Brother" hidden="false" collective="false" import="true" type="upgrade">
@@ -13975,22 +13914,13 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7cab-4ff5-56e3-14cd" name="Spells" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="7cab-4ff5-56e3-14cd" name="Psychic Spell List" hidden="false" collective="false" import="true" defaultSelectionEntryId="1c89-4c74-14fe-d382">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="266a-748b-3349-f295" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="481c-25c3-1e79-94bb" type="max"/>
+      </constraints>
       <selectionEntries>
-        <selectionEntry id="1c89-4c74-14fe-d382" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5afe-d010-2cea-03e5" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2f26-c83d-870c-62d5" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fc5e-c95a-636b-865d" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+        <selectionEntry id="1c89-4c74-14fe-d382" name="Battle Brother Psychic Spells" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b215-4b9e-7439-24f6" type="max"/>
           </constraints>
@@ -14001,7 +13931,7 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="cc21-48d3-7c46-9d56" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="cc21-48d3-7c46-9d56" name="Blood Brother Psychic Spells" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -14019,7 +13949,7 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1c88-bf57-3f89-9411" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1c88-bf57-3f89-9411" name="Knight Brother Psychic Spells" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -14037,7 +13967,7 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a094-545f-4434-2809" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a094-545f-4434-2809" name="Wolf Brother Psychic Spells" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
