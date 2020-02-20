@@ -20,6 +20,7 @@
     <entryLink id="73d8-3f27-e3dc-eaaf" name="Support Minions" hidden="false" collective="false" import="true" targetId="9de3-2660-1fa3-0fd7" type="selectionEntry"/>
     <entryLink id="037f-f9da-319e-0d5f" name="Neophytes" hidden="false" collective="false" import="true" targetId="7cf1-af4c-d26d-5bef" type="selectionEntry"/>
     <entryLink id="8d6a-b65c-48f0-089f" name="Acolytes" hidden="false" collective="false" import="true" targetId="ef3c-73e0-e863-ba3e" type="selectionEntry"/>
+    <entryLink id="68c7-aa25-4091-8f1d" name="Morphs" hidden="false" collective="false" import="true" targetId="c27b-2a6b-9a45-b738" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa29-a674-51a5-6a99" name="Agitator" hidden="false" collective="false" import="true" type="upgrade">
@@ -1402,6 +1403,94 @@
         <infoLink id="0106-26ef-3191-5690" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="c27b-2a6b-9a45-b738" name="Morphs" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a5d7-b221-b70f-22ec" name="Morph" hidden="false" targetId="e606-2dde-542e-92b8" type="profile"/>
+        <infoLink id="8a9e-4656-2499-8d96" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5c13-0235-da69-401c" name="Ranged Weapons [pick 5]" hidden="false" collective="false" import="true" defaultSelectionEntryId="682f-e9cb-66a7-c6da">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89c4-75e8-6b2f-c21a" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c58-803e-ec4a-50e7" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="682f-e9cb-66a7-c6da" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry"/>
+            <entryLink id="9f97-3416-03ec-33c0" name="Flame Pistol" hidden="false" collective="false" import="true" targetId="db8f-b317-2b7d-2ed3" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ad6d-f0b8-342f-7126" name="Melee Weapons [pick 5]" hidden="false" collective="false" import="true" defaultSelectionEntryId="6286-666a-0706-af7b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fb8-8dbc-1c2f-c71e" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c826-755f-f5b1-1eb4" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6286-666a-0706-af7b" name="Mutated Talons" hidden="false" collective="false" import="true" targetId="5362-e233-d937-3794" type="selectionEntry"/>
+            <entryLink id="fe9d-f709-c2fc-2abe" name="Mutated Claws" hidden="false" collective="false" import="true" targetId="2a91-873d-d635-35ac" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="76f7-839d-691a-9008" name="Mutated Whips" hidden="false" collective="false" import="true" targetId="3541-516e-fbd4-613f" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="e91c-8e98-6e49-9d4e" name="Mutated Sword Claw" hidden="false" collective="false" import="true" targetId="8ddd-3e3d-151b-3c71" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="203e-92bd-0e3b-fa76" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d3a1-e0b3-b024-dcb1" name="Battle Standard" hidden="false" collective="false" import="true" targetId="dab9-0c82-9c53-89e3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a43f-4e4c-7507-026d" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5362-e233-d937-3794" name="Mutated Talons" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f34f-682f-37c0-676d" name="Mutated Talons" hidden="false" targetId="f651-4819-8339-5814" type="profile"/>
+        <infoLink id="bec8-ee82-57a2-e1d5" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2a91-873d-d635-35ac" name="Mutated Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8e42-1d2a-7fd3-48f3" name="Mutated Claws" hidden="false" targetId="0521-1626-2d59-c0fc" type="profile"/>
+        <infoLink id="0db7-00d8-56de-25c7" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="c4f2-0e51-e5c1-07eb" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="3541-516e-fbd4-613f" name="Mutated Whips" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c267-3d26-ad67-1f43" name="Mutated Whips" hidden="false" targetId="54b2-8539-2b07-d15e" type="profile"/>
+        <infoLink id="31d9-7afc-2afe-5972" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="8ddd-3e3d-151b-3c71" name="Mutated Sword Claw" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c600-0a2a-8f55-1a94" name="Mutated Sword Claw" hidden="false" targetId="174c-33f4-54e8-d389" type="profile"/>
+        <infoLink id="a6b7-55d9-d8bc-f3dc" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="cf0e-3bc3-5781-0801" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="5d13-1e1f-67f7-4dcc" name="Agitator" hidden="false">
@@ -1729,6 +1818,37 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e606-2dde-542e-92b8" name="Morph" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Scout</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f651-4819-8339-5814" name="Mutated Talons" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0521-1626-2d59-c0fc" name="Mutated Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="54b2-8539-2b07-d15e" name="Mutated Whips" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="174c-33f4-54e8-d389" name="Mutated Sword Claw" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Deadly(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
