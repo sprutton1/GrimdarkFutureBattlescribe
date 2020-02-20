@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6b93-03ad-4cbe-782d" name="Battle Brothers" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6b93-03ad-4cbe-782d" name="Battle Brothers" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication id="dead-6af1-a069-5579" name="Battle Brothers v2.4"/>
-    <publication id="a380-f550-5f9a-c792" name="Battle Brothers Detachments v2.5"/>
+    <publication id="dead-6af1-a069-5579" name="Battle Brothers v2.10"/>
+    <publication id="a380-f550-5f9a-c792" name="Battle Brothers Detachments v2.9"/>
+    <publication id="339e-d00a-321f-4a00" name="Prime Brothers v2.10"/>
   </publications>
   <entryLinks>
     <entryLink id="5e41-31cb-5063-301e" name="Champion" hidden="false" collective="false" import="true" targetId="7708-7d52-a3b5-5a3a" type="selectionEntry"/>
@@ -414,6 +415,7 @@
         <infoLink id="4f42-dfa1-06e7-1d94" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
         <infoLink id="9669-211d-587b-bacb" name="Captain" hidden="false" targetId="f641-a58c-570f-e759" type="profile"/>
         <infoLink id="9383-8ea1-1833-3a52" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="6682-51f5-456c-b844" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="121a-4fb3-a1b2-c7bf" name="Veteran Infantry" hidden="false" collective="false" import="true" type="upgrade">
@@ -562,7 +564,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="100.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="33d6-ea20-9d27-5f4e" name="Jetpack" hidden="false" collective="false" import="true" type="upgrade">
@@ -758,7 +760,7 @@
         <infoLink id="c4b3-d886-6794-794e" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="5af2-5657-55ec-b279" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
         <infoLink id="e988-ef58-dbce-f8bf" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="c8a2-4889-0cea-9135" name="Mend" hidden="false" targetId="5dc4-d373-d034-fff7" type="rule"/>
+        <infoLink id="c8a2-4889-0cea-9135" name="Repair" hidden="false" targetId="e5ed-cad2-4eba-2fbc" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="120e-5a29-2500-441d" name="Dark Brothers" hidden="false" collective="false" import="true">
@@ -14380,7 +14382,7 @@
       <description>The hero and his unit get Furious.</description>
     </rule>
     <rule id="ef60-5e8d-9985-cf37" name="Advanced Tactics" hidden="false">
-      <description>The hero and his unit get +1 to their attack rolls for melee and shooting.</description>
+      <description>The hero and his unit get +3&quot; range when shooting and +3&quot; range when using charge actions.</description>
     </rule>
     <rule id="cf50-737f-31f8-9542" name="Veteran Walker" hidden="false">
       <description>This model gets +1 to its attack rolls for melee and shooting.</description>
@@ -14436,13 +14438,19 @@
     <rule id="626a-c071-1a4b-7188" name="Precision Shots" hidden="false">
       <description>The hero and his unit get AP(+1) when shooting.</description>
     </rule>
+    <rule id="e5ed-cad2-4eba-2fbc" name="Repair" hidden="false">
+      <description>Once per turn, if within 2&quot; of a unit with Tough, roll one die. On a 4+ you may repair one wound from the target.</description>
+    </rule>
+    <rule id="04cf-fd8f-5f82-c13d" name="Medical Training" hidden="false">
+      <description>This model and his unit get the Regeneration rule.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="f641-a58c-570f-e759" name="Captain" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Hero, Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Hero, Relentless, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="116b-3e16-3133-a062" name="Champion" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -14567,37 +14575,37 @@
     <profile id="1c41-92ce-3fc3-9145" name="Psychic Speed" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">The psychic gets the Fast rule and Impact(D3) until the end of the round.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may immediately move by up to 6&quot;</characteristic>
       </characteristics>
     </profile>
     <profile id="197d-ecae-ee9b-88b5" name="Foresight" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12” gets +1 to its shooting rolls until the end of the round.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +6&quot; range to its next shooting.</characteristic>
       </characteristics>
     </profile>
     <profile id="b23f-49bd-fe4b-15ed" name="Expel" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12” gets Defense -1 until the end of the round.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 4 automatic hits with AP(2).</characteristic>
       </characteristics>
     </profile>
     <profile id="8875-9a6a-426d-3d96" name="Protective Dome" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 36” gets Stealth until the end of the round.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 24&quot; gets Stealth next time it is shot at.</characteristic>
       </characteristics>
     </profile>
     <profile id="6887-5a11-b4ee-ac92" name="Flame Breath" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18” takes 2D6 automatic hits with AP(1).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 8 automatic hits with AP(1).</characteristic>
       </characteristics>
     </profile>
     <profile id="25bf-ba02-bbe5-ec4a" name="Psychic Roar" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24” must take a morale test. If failed the unit takes D3+3 automatic wounds.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target 2 enemy units within 6&quot; take 4 hits with AP(4) each.</characteristic>
       </characteristics>
     </profile>
     <profile id="15da-b1f3-bc67-992b" name="Energy Hammer" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
