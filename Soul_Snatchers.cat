@@ -8,6 +8,14 @@
     <entryLink id="fe57-cbb7-0e96-73d2" name="Mage" hidden="false" collective="false" import="true" targetId="b88d-fc61-274a-1e4c" type="selectionEntry"/>
     <entryLink id="e0c1-3fc1-0538-1a6d" name="Acolyte Warden" hidden="false" collective="false" import="true" targetId="0790-4005-934d-507b" type="selectionEntry"/>
     <entryLink id="7730-e0ab-eb4e-5f94" name="Brute Champion" hidden="false" collective="false" import="true" targetId="2ff6-5939-49ec-bf03" type="selectionEntry"/>
+    <entryLink id="75b3-45e5-990b-5cae" name="Commander" hidden="false" collective="false" import="true" targetId="3046-6a29-740d-3021" type="selectionEntry"/>
+    <entryLink id="eea4-bcf2-eb43-6239" name="Alpha Biker" hidden="false" collective="false" import="true" targetId="ee16-fb49-c19d-b3b1" type="selectionEntry"/>
+    <entryLink id="459e-23df-7455-6ffb" name="Bodyguard" hidden="false" collective="false" import="true" targetId="b13d-99c7-b7ce-f578" type="selectionEntry"/>
+    <entryLink id="4683-cee7-1a49-89df" name="Mad Scientist" hidden="false" collective="false" import="true" targetId="5686-9135-e357-a29d" type="selectionEntry"/>
+    <entryLink id="d92f-818d-5208-af32" name="Prime Neophyte" hidden="false" collective="false" import="true" targetId="bbce-ea20-8dc2-650f" type="selectionEntry"/>
+    <entryLink id="8bc9-db08-26cd-531c" name="Neophyte Duelist" hidden="false" collective="false" import="true" targetId="a940-b7b0-f015-296e" type="selectionEntry"/>
+    <entryLink id="e0a4-bd6a-baed-fefb" name="Propagandist" hidden="false" collective="false" import="true" targetId="6cc5-a1b0-7cc7-74b1" type="selectionEntry"/>
+    <entryLink id="9991-f79a-7b9f-a2aa" name="Assassin" hidden="false" collective="false" import="true" targetId="226d-736e-de3a-b699" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa29-a674-51a5-6a99" name="Agitator" hidden="false" collective="false" import="true" type="upgrade">
@@ -29,7 +37,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="15e0-1264-14d0-5181" name="Commander" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="15e0-1264-14d0-5181" name="Commander (Upgrade)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9ab5-23e1-d442-a659" name="Commander" hidden="false" targetId="1853-7ddd-1474-0d2a" type="rule"/>
       </infoLinks>
@@ -88,6 +96,9 @@
               <infoLinks>
                 <infoLink id="ce17-354a-4724-3410" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="de6d-5085-db7b-fd61" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -129,7 +140,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c944-c35b-17cb-4a57" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0154-5bc5-3789-5a4d">
+        <selectionEntryGroup id="c944-c35b-17cb-4a57" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="0154-5bc5-3789-5a4d">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e4d-e690-a9e0-89c4" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1868-eaed-f816-6cb5" type="max"/>
@@ -170,12 +181,18 @@
         <infoLink id="3ee3-839b-1e88-643d" name="Mind Poison" hidden="false" targetId="c9b3-1c91-002b-7b0b" type="profile"/>
         <infoLink id="6f23-2c10-8fde-734b" name="Mind Control" hidden="false" targetId="fbed-b955-02d1-2ed6" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8ccc-4faf-5c4e-7dd5" name="Familiar" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8de4-01d9-b788-b28a" name="Familiar" hidden="false" targetId="27bf-e14f-e3b9-90d4" type="profile"/>
         <infoLink id="c7ed-3a55-0733-e64b" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b88d-fc61-274a-1e4c" name="Mage" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -199,6 +216,9 @@
               <infoLinks>
                 <infoLink id="91b3-92ac-e368-0bad" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="1881-37f8-61c9-a8fd" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -269,18 +289,27 @@
       <infoLinks>
         <infoLink id="4566-731e-8df5-1b1f" name="CCW (A3)" hidden="false" targetId="7e93-3ba1-34a0-b8d2" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="91ff-aaeb-558a-5964" name="Piercing Claws" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="08ed-11bf-fb7e-5798" name="Piercing Claws" hidden="false" targetId="5a0d-9ff7-fa13-9c48" type="profile"/>
         <infoLink id="fe35-e7b6-806a-07be" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2feb-c0ae-2749-5520" name="Piercing Claws (Elite)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="55b9-9b5e-2227-83fa" name="Piercing Claws (Elite)" hidden="false" targetId="31ff-fda3-fc67-17a2" type="profile"/>
         <infoLink id="c62c-aa2f-0a34-5ec6" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0790-4005-934d-507b" name="Acolyte Warden" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -339,6 +368,267 @@
         <infoLink id="41b8-c3c5-d1da-bc9e" name="Sledgehammer" hidden="false" targetId="0c08-1a1d-3075-0b2a" type="profile"/>
         <infoLink id="a7c7-269d-9cc4-c2c6" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="fa46-960f-bbf5-cfb7" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3046-6a29-740d-3021" name="Commander" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bf05-643b-6904-e19f" name="Commander" hidden="false" targetId="af61-ee8c-07a0-3598" type="profile"/>
+        <infoLink id="de12-00dd-65a8-9eed" name="Commander" hidden="false" targetId="1853-7ddd-1474-0d2a" type="rule"/>
+        <infoLink id="908d-66f5-3e52-0cb7" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="161e-6a54-ff23-226b" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="cd59-8330-aec7-4d61" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="3ae6-8e79-b96d-8c20" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce63-a341-bd5b-9830" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa68-b439-5792-f7e9" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="15c4-463f-8071-d4f9" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52b9-ab64-c741-13d1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2c1-2d94-0baf-46b1" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ee16-fb49-c19d-b3b1" name="Alpha Biker" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dbc6-f488-2d67-f801" name="Alpha Biker" hidden="false" targetId="dc68-832f-179b-27a1" type="profile"/>
+        <infoLink id="e3ba-d377-ef68-d5d7" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="5373-6c79-4334-9a2e" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="b9ed-47bc-b96f-e01b" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="4387-86cf-0e5a-29e9" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="cb9a-e81d-e8e8-93ff" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="0d37-ba58-cb20-2bac" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b12f-c761-982d-fdfe" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73e3-df4e-8d8d-7d4a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b54b-b73b-90c2-9800" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="77e0-0bbf-54ae-e813" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1b0-f8d4-1514-ce41" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9de8-4d54-528d-d68e" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b13d-99c7-b7ce-f578" name="Bodyguard" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7fe0-aaf4-d4f0-dd82" name="Bodyguard" hidden="false" targetId="3405-394c-ac77-50ee" type="profile"/>
+        <infoLink id="efde-61d0-dea6-182e" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="8459-674a-7f24-0cfc" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="c2a3-5c71-aeec-3ae9" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="6013-b208-7fe1-6846" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="5572-3327-a3f4-f398" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5ca4-9be6-aa7b-dcbb" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a579-7e3a-8e17-dfb2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f526-2d3b-42e8-2b30" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26f5-0f39-bde7-f2e2" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a579-7e3a-8e17-dfb2" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5686-9135-e357-a29d" name="Mad Scientist" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6038-819c-c133-b500" name="Mad Scientist" hidden="false" targetId="2d5e-198b-8ea6-ae42" type="profile"/>
+        <infoLink id="cb24-5eed-a4d8-ac76" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="9909-743f-15b5-c606" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="38ce-69e3-e21e-3af3" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="e7ba-6681-017d-ae11" name="Experiments" hidden="false" targetId="4576-e504-d9b4-3aa9" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="6597-9589-62af-6449" name="Syringe Goad" hidden="false" collective="false" import="true" targetId="ac02-2352-c99f-b8ea" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae43-a0e6-8fae-28ea" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f582-656a-70dd-b919" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ac02-2352-c99f-b8ea" name="Syringe Goad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="576e-a826-d2d8-44ab" name="Syringe Goad" hidden="false" targetId="51d1-86dc-2628-08b8" type="profile"/>
+        <infoLink id="4d87-d8f5-3086-47e7" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="5d97-5863-179d-cbb0" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="bbce-ea20-8dc2-650f" name="Prime Neophyte" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="db88-8cfc-0cdb-3e46" name="Prime Neophyte" hidden="false" targetId="d4e6-3142-5073-5d92" type="profile"/>
+        <infoLink id="7436-b695-7c5c-0ae5" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="6a80-e409-8f05-c078" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="0072-ca9a-603b-ba0f" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="e0d5-d298-2283-7070" name="Agitator" hidden="false" targetId="5d13-1e1f-67f7-4dcc" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="92fd-9958-29df-19a2" name="Array of CCWs" hidden="false" collective="false" import="true" targetId="8111-9b6b-3ae4-7e3c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37d0-06a8-a9be-28b5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03ae-515b-5afa-2ca1" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8b7b-1604-8d9a-ebb6" name="Array of Pistols" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1545-9a9f-0c48-e465" name="Array of Pistols" hidden="false" targetId="7ba9-b72c-4545-256e" type="profile"/>
+        <infoLink id="6868-69cb-85ec-b34a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="8111-9b6b-3ae4-7e3c" name="Array of CCWs" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="81c3-b36d-0c5c-6c79" name="Array of CCWs" hidden="false" targetId="09d8-3060-16be-5065" type="profile"/>
+        <infoLink id="d588-9509-c0e9-8cd1" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+        <infoLink id="1379-4f6d-2dc4-5711" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="c8e5-0db3-f1b8-2d8b" name="Poison(X)" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="a940-b7b0-f015-296e" name="Neophyte Duelist" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3274-db57-ad92-90d8" name="Neophyte Duelist" hidden="false" targetId="cef5-b8bc-5a14-f21f" type="profile"/>
+        <infoLink id="04b5-ef83-5786-a51b" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="849e-7f6d-3f85-e916" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="2243-486e-3fa2-3ee7" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="83be-3fe9-894b-c63c" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="cd2d-1207-2aac-0e3b" name="CCW (A3)" hidden="false" collective="false" import="true" targetId="dc07-cbe9-adf9-83df" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95f9-01de-af1e-69d7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb03-a306-8467-bdc3" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1904-e0c3-d59a-ba74" name="Array of Pistols" hidden="false" collective="false" import="true" targetId="8b7b-1604-8d9a-ebb6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a67-075a-5581-1100" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acbd-981a-7c19-10d6" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6cc5-a1b0-7cc7-74b1" name="Propagandist" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="46c1-7261-41b8-0833" name="Propagandist" hidden="false" targetId="a73a-99e2-6047-d083" type="profile"/>
+        <infoLink id="0fbc-79ea-ac56-04b9" name="Megaphone" hidden="false" targetId="89c5-e50f-e11d-4123" type="rule"/>
+        <infoLink id="9250-e104-327a-9005" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="d973-06da-43e0-be32" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="7dbc-7d70-ffe5-3c95" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="a6cf-8da6-c61a-5913" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d27f-d705-a531-c741" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccfb-8fc5-fe32-aab3" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="92bb-bc5a-a792-fd4a" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e97-9e44-c73a-e6b1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="081d-bf81-b1d2-a095" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="226d-736e-de3a-b699" name="Assassin" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="66f1-d3a0-cfe0-2837" name="Assassin" hidden="false" targetId="748f-1b21-c3c0-263d" type="profile"/>
+        <infoLink id="fb8d-882b-0c30-f83f" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="0a46-4eff-b02a-f0bd" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="ebcd-8ee6-9234-66db" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+        <infoLink id="620b-a517-f0dc-ff43" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bf48-cb39-eb08-0cce" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="790a-c309-df0a-eace">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c61-03cc-9319-df75" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75d6-35dc-35c5-9b9b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="790a-c309-df0a-eace" name="Burst Pistol" hidden="false" collective="false" import="true" targetId="cbf7-80f9-4501-3a24" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d854-1411-9322-902f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="16f7-0ee1-7acd-4cbb" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="77e0-0bbf-54ae-e813" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82d8-e4db-9f62-adc2" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="aca1-e817-e0c8-81d4" name="Needle Carbine" hidden="false" collective="false" import="true" targetId="7f5c-483d-a6f3-e871" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01aa-4f48-78f8-73cc" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0888-ad1f-e5a9-a05d" name="Toxin Knife" hidden="false" collective="false" import="true" targetId="49ed-e936-5634-e104" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53ad-a641-95d3-36fa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a52b-e11e-44d3-8340" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cbf7-80f9-4501-3a24" name="Burst Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4127-865f-6b40-3927" name="Burst Pistol" hidden="false" targetId="3891-8eb1-2a99-eb99" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="49ed-e936-5634-e104" name="Toxin Knife" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="69b5-828c-6bb2-bf1e" name="Toxin Knife" hidden="false" targetId="4aa8-995e-0e92-c81c" type="profile"/>
+        <infoLink id="97dc-7be7-bb35-8171" name="Poison(X)" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7f5c-483d-a6f3-e871" name="Needle Carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4522-0d6d-a10f-7ad2" name="Needle Carbine" hidden="false" targetId="48c0-df7a-5167-4b7f" type="profile"/>
+        <infoLink id="2819-8369-5a4a-2954" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -431,7 +721,7 @@
     <profile id="7e93-3ba1-34a0-b8d2" name="CCW (A3)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
       </characteristics>
     </profile>
     <profile id="31ff-fda3-fc67-17a2" name="Piercing Claws (Elite)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -464,6 +754,101 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="af61-ee8c-07a0-3598" name="Commander" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Commander, Hero, Scout, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dc68-832f-179b-27a1" name="Alpha Biker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Hero, Impact(1), Scout, Tought(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3405-394c-ac77-50ee" name="Bodyguard" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Furious, Hero, Scout, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2d5e-198b-8ea6-ae42" name="Mad Scientist" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Experiments, Hero, Scout, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="51d1-86dc-2628-08b8" name="Syringe Goad" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d4e6-3142-5073-5d92" name="Prime Neophyte" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Agitator, Hero, Scout, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7ba9-b72c-4545-256e" name="Array of Pistols" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="09d8-3060-16be-5065" name="Array of CCWs" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Poison, Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cef5-b8bc-5a14-f21f" name="Neophyte Duelist" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Relentless, Scout, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a73a-99e2-6047-d083" name="Propagandist" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Megaphone, Scout, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="748f-1b21-c3c0-263d" name="Assassin" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Scout, Stealth, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3891-8eb1-2a99-eb99" name="Burst Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4aa8-995e-0e92-c81c" name="Toxin Knife" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="48c0-df7a-5167-4b7f" name="Needle Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Poison</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
