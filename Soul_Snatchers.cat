@@ -17,6 +17,7 @@
     <entryLink id="e0a4-bd6a-baed-fefb" name="Propagandist" hidden="false" collective="false" import="true" targetId="6cc5-a1b0-7cc7-74b1" type="selectionEntry"/>
     <entryLink id="9991-f79a-7b9f-a2aa" name="Assassin" hidden="false" collective="false" import="true" targetId="226d-736e-de3a-b699" type="selectionEntry"/>
     <entryLink id="7899-b70a-c86a-0165" name="Minions" hidden="false" collective="false" import="true" targetId="d751-a251-023e-afcc" type="selectionEntry"/>
+    <entryLink id="73d8-3f27-e3dc-eaaf" name="Support Minions" hidden="false" collective="false" import="true" targetId="9de3-2660-1fa3-0fd7" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa29-a674-51a5-6a99" name="Agitator" hidden="false" collective="false" import="true" type="upgrade">
@@ -834,6 +835,34 @@
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="9de3-2660-1fa3-0fd7" name="Support Minions" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="53b9-894f-790a-3dfa" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d3f-1313-ecd9-56db" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2ecb-ef59-8419-f171" name="Support Minion" hidden="false" collective="false" import="true" targetId="75ac-e98f-e6f4-0ca1" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="36eb-48e8-db94-e2fd" name="Support Minions" hidden="false" collective="false" import="true" defaultSelectionEntryId="f7a6-a1e6-4484-f64b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bbc-4557-21bf-7fe3" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c823-ab0d-7c7d-55c4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f7a6-a1e6-4484-f64b" name="Support Minion" hidden="false" collective="false" import="true" targetId="75ac-e98f-e6f4-0ca1" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
