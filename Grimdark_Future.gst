@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="9" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="10" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.7"/>
   </publications>
@@ -579,22 +579,34 @@
       <infoLinks>
         <infoLink id="f498-3ed2-5c6e-9592" name="Carbine" hidden="false" targetId="d8f5-017c-af30-39ed" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="fa7d-5662-869b-c879" name="Shred Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ecb9-8f85-7686-a120" name="Shred Rifle" hidden="false" targetId="fd11-c55f-ae6b-d56f" type="profile"/>
         <infoLink id="b925-9562-4233-92f3" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e57e-4a03-ae5a-5411" name="Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ebec-3f8d-8130-4f40" name="Rifle" hidden="false" targetId="86ba-8f73-e0ab-aeee" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="db8f-b317-2b7d-2ed3" name="Flame Pistol" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="37a7-5aaf-1437-aa2a" name="Flame Pistol" hidden="false" targetId="f2fb-1177-d9b5-af5f" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="da63-ce3d-cbd5-4a09" name="Rocket Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -602,6 +614,9 @@
         <infoLink id="f128-5dc8-a8ca-81eb" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="d78b-5604-11d7-cc89" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2a96-365b-4ad8-7cfd" name="Battle Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -609,11 +624,24 @@
         <infoLink id="30c6-b78e-ff16-20a0" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="792f-427b-b641-54a7" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f7a6-c6c9-0567-4b34" name="Laser Machinegun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7e3d-9f13-ef40-a72b" name="Laser Machinegun" hidden="false" targetId="eeeb-582d-9c61-e971" type="profile"/>
         <infoLink id="c447-ea9e-3009-2309" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ee08-0414-e5c3-908f" name="Energy Hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ccbf-a1a3-57f3-f346" name="Energy Hammer" hidden="false" targetId="a84b-1f66-915f-b56f" type="profile"/>
+        <infoLink id="000d-06c6-5819-f4b0" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="8c45-2154-b53a-48c2" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1119,7 +1147,7 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
     <profile id="fd11-c55f-ae6b-d56f" name="Shred Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -1133,14 +1161,14 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">30&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
     <profile id="f2fb-1177-d9b5-af5f" name="Flame Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
     <profile id="f9fc-acd3-f324-9a39" name="Rocket Launcher" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
