@@ -23,6 +23,7 @@
     <entryLink id="68c7-aa25-4091-8f1d" name="Morphs" hidden="false" collective="false" import="true" targetId="c27b-2a6b-9a45-b738" type="selectionEntry"/>
     <entryLink id="d9ee-04ce-16b7-b3e3" name="Mutant Brutes" hidden="false" collective="false" import="true" targetId="1201-5b49-9e4c-f508" type="selectionEntry"/>
     <entryLink id="5879-3fe6-59e2-dc08" name="Soul-Snatchers" hidden="false" collective="false" import="true" targetId="24a6-672a-0e31-7d25" type="selectionEntry"/>
+    <entryLink id="a060-04fe-1d9e-6741" name="Elite Snatchers" hidden="false" collective="false" import="true" targetId="c1db-d950-d8fa-2e2b" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fa29-a674-51a5-6a99" name="Agitator" hidden="false" collective="false" import="true" type="upgrade">
@@ -1681,6 +1682,62 @@
         <infoLink id="f5c9-92ff-3b45-a294" name="Razor Claws" hidden="false" targetId="9cb9-33f9-01e1-407f" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="c1db-d950-d8fa-2e2b" name="Elite Snatchers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4f3e-0216-2e77-1f58" name="Elite Snatcher" hidden="false" targetId="c55c-681d-4a96-a7cf" type="profile"/>
+        <infoLink id="51c8-3a33-fe30-8d81" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="74f1-1711-10b1-eb98" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="83ad-0c4b-33e6-03f6" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="e11f-2703-d320-8149" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="0fab-5632-8c39-91ff" name="Upgrade one with Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f0b-5ee1-2c3d-98f7" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ea6e-9bb6-d008-495f" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="e8b4-af76-726e-4a24" name="Soul-Snatcher Psychic Powers" hidden="false" collective="false" import="true" targetId="1158-e159-93e1-59cb" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8797-9b76-52a0-d804" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c13-bf56-3f35-9c8b" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ac1c-4dfb-1229-ec57" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+              </infoLinks>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1844-2770-164a-6b58" name="Weapon Upgrades [max 5]" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="0832-d484-1410-da84" name="Piercing Claws (Elite)" hidden="false" collective="false" import="true" targetId="2feb-c0ae-2749-5520" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c45-caa9-6875-1642" type="min"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79bd-6eee-55d3-6d07" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6198-463f-a3ef-6365" name="Razor Claws" hidden="false" collective="false" import="true" targetId="57b4-4c7e-891b-cffe" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcfa-d1a2-32e1-7b58" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="255.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="5d13-1e1f-67f7-4dcc" name="Agitator" hidden="false">
@@ -2059,6 +2116,13 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c55c-681d-4a96-a7cf" name="Elite Snatcher" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Regeneration, Scout, Strider</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
