@@ -3737,12 +3737,11 @@
       <infoLinks>
         <infoLink id="9cc3-57e8-ed4a-2e77" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="0569-d085-9c5c-3487" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="a8b0-8d8a-59cb-c356" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="864e-356b-a86b-cfa5" name="Attack Walker" hidden="false" targetId="b3aa-2f94-720e-ef3a" type="profile"/>
         <infoLink id="4627-4e99-a0bf-c4fc" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="db6c-86ca-20df-e64d" name="Arm 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="a125-c334-72c6-3e9b">
+        <selectionEntryGroup id="db6c-86ca-20df-e64d" name="Left Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="8d34-331c-5d68-2577">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f93-3970-6b3d-758b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a229-d7e0-c4d7-60ff" type="min"/>
@@ -3750,52 +3749,24 @@
           <selectionEntries>
             <selectionEntry id="6796-eb2c-f9a9-bb6c" name="Walker Fist &amp; Under-Slung Weapon" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
-                <selectionEntryGroup id="1ab7-43da-a267-4fe4" name="Under-Slung Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="550e-0936-5e72-3ea0">
+                <selectionEntryGroup id="1ab7-43da-a267-4fe4" name="Under-Slung Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6a44-fa20-10eb-16b2">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1885-78fd-5c87-03df" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee07-a546-292d-c8f9" type="max"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="550e-0936-5e72-3ea0" name="Storm Rifle" hidden="false" collective="false" import="true" type="upgrade">
-                      <entryLinks>
-                        <entryLink id="7e48-849b-cb7f-d387" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac7b-2375-3f80-9ab3" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="722b-ec39-fe4d-323d" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="c808-3524-a370-3f62" name="Heavy Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
-                      <entryLinks>
-                        <entryLink id="a6d5-7ff9-ac61-e439" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="370f-b474-2da3-7fe3" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81e5-6e66-bd1e-6f7a" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
+                  <entryLinks>
+                    <entryLink id="6a44-fa20-10eb-16b2" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry"/>
+                    <entryLink id="f362-e4fc-740b-9ecf" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
                       </costs>
-                    </selectionEntry>
-                    <selectionEntry id="e0b6-b57f-63a3-321f" name="Fusion Rifle" hidden="false" collective="false" import="true" type="upgrade">
-                      <entryLinks>
-                        <entryLink id="aace-1847-3e43-944d" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d8f-29b1-d8cb-58c6" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f1a-ed5c-2504-95b3" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
+                    </entryLink>
+                    <entryLink id="f0a9-29db-a603-d3b6" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
                       </costs>
-                    </selectionEntry>
-                  </selectionEntries>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
@@ -3810,111 +3781,45 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a125-c334-72c6-3e9b" name="Assault Rifle Array" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="c440-ba62-13a7-4558" name="Assault Rifle Array" hidden="false" collective="false" import="true" targetId="faa1-761d-0d50-2135" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2a4-b5b9-5b88-8751" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd83-d82b-e488-e4d1" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1277-a06e-7302-33f9" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="1dbb-4b5e-63e0-f8ad" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" targetId="a5f5-d44a-03b0-9a99" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20b9-1750-9de2-f82e" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdab-0393-bf27-3b0a" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="8d34-331c-5d68-2577" name="Assault Rifle Array" hidden="false" collective="false" import="true" targetId="faa1-761d-0d50-2135" type="selectionEntry"/>
+            <entryLink id="13b4-621b-400b-2cbb" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" targetId="a5f5-d44a-03b0-9a99" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="1f2b-dd56-881f-9684" name="Twin Heavy Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="24d3-87da-d3e8-2818" name="Twin Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="76d2-5dc6-d28b-c278" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="579e-8fa0-1f8e-d264" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a3-f5c7-0795-c838" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="0ae5-3c6c-8a81-fb39" name="Heavy Minigun" hidden="false" collective="false" import="true" targetId="9db1-0539-dc9f-f147" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="23c9-db5f-8ff1-a768" name="Twin Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="8e03-3d6a-29a9-1934" name="Twin Autocannon" hidden="false" collective="false" import="true" targetId="3640-bb26-8a54-047c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ead-9db1-2a5e-8812" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6b5-d5b0-1019-182e" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="2c15-b300-c055-0bd4" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="05e9-6fae-2a04-8820" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="bf7c-12f9-b5bb-1d0f" name="Twin Autocannon" hidden="false" collective="false" import="true" targetId="3640-bb26-8a54-047c" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="e864-f3f1-5b22-db2d" name="Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="71d3-abef-1fc1-6ab3" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="05e9-6fae-2a04-8820" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b19-0c71-ce5a-ca67" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76de-255b-9ffb-27af" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="72bb-f3bf-d321-2010" name="Twin Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="76d2-5dc6-d28b-c278" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="9efb-4b95-dc4a-e5a0" name="Twin Heavy Machinegun" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="f9c4-4cf1-020c-64a0" name="Twin Heavy Machinegun" hidden="false" collective="false" import="true" targetId="dae8-3106-6a96-228c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="287d-3682-295f-498b" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81e3-223b-9ce5-3db9" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="7bd0-22b1-3454-c320" name="Twin Heavy Machinegun" hidden="false" collective="false" import="true" targetId="dae8-3106-6a96-228c" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="fd80-ad17-38fc-6a82" name="Twin Laser Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="2b35-59c1-24fd-6616" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1743-dcdc-ad88-1eb6" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b21-83f0-9759-2b1d" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="bbcc-a2d7-bcf9-1c68" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="2386-f08b-334c-4516" name="Minigun" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="0c6a-ecda-1a84-b9ac" name="Minigun" hidden="false" collective="false" import="true" targetId="7b99-9f38-072e-e027" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9df5-aa97-c1f9-ea6b" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2452-3f66-f255-9652" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="8cae-a2f9-6e57-50ca" name="Upgrades" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -3926,7 +3831,7 @@
                 <infoLink id="17f8-40f9-baca-07e8" name="Veteran Walker" hidden="false" targetId="cf50-737f-31f8-9542" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="150.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="155.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3941,101 +3846,56 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="bd7d-4ff0-9948-9f55" name="Arm 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="1431-a6ae-33bf-d6ca">
+        <selectionEntryGroup id="bd7d-4ff0-9948-9f55" name="Right Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="be17-a92c-e3d7-a8d8">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb78-930f-487c-97c8" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ef7-fdf8-1fb7-76ca" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1431-a6ae-33bf-d6ca" name="Walker Fist &amp; Under-Slung Weapon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="be17-a92c-e3d7-a8d8" name="Walker Fist &amp; Under-Slung Weapon" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
-                <selectionEntryGroup id="89b2-b03e-c9cf-0152" name="Under-Slung Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="781f-e1cb-d5b9-7368">
+                <selectionEntryGroup id="afab-322e-dc5d-6cfa" name="Under-Slung Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="75ea-2db6-4f5e-bd6b">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb96-4c06-d097-dc13" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f24e-3850-1bc9-9767" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ab-5b13-88f3-4c9c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cfa-29ce-e759-20cf" type="max"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="781f-e1cb-d5b9-7368" name="Storm Rifle" hidden="false" collective="false" import="true" type="upgrade">
-                      <entryLinks>
-                        <entryLink id="99f7-36f9-c8a5-c257" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc25-51f4-41c2-784f" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51d5-d65d-36e7-f2c3" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="5a99-0f38-f100-1f12" name="Heavy Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
-                      <entryLinks>
-                        <entryLink id="da9a-d9b6-59e2-be9b" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e8a-66e4-a6a7-a087" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9a0-c7bc-25af-9f1d" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
+                  <entryLinks>
+                    <entryLink id="75ea-2db6-4f5e-bd6b" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry"/>
+                    <entryLink id="e0fa-aaab-c7eb-2479" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
                       </costs>
-                    </selectionEntry>
-                    <selectionEntry id="104b-6da0-996b-af3a" name="Fusion Rifle" hidden="false" collective="false" import="true" type="upgrade">
-                      <entryLinks>
-                        <entryLink id="ffc3-656e-fc67-9c18" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6663-6948-2e9b-2ec3" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c2e-4cfa-f383-315e" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
+                    </entryLink>
+                    <entryLink id="d137-7de4-638d-01cb" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
                       </costs>
-                    </selectionEntry>
-                  </selectionEntries>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="b300-5f3e-dac9-90f3" name="Walker Fist" hidden="false" collective="false" import="true" targetId="e008-b179-c068-469a" type="selectionEntry">
+                <entryLink id="9f55-74f7-c5e4-dad1" name="Walker Fist" hidden="false" collective="false" import="true" targetId="e008-b179-c068-469a" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="243d-3e97-65e1-8f63" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d379-382d-aaed-a027" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="145d-2e85-eab6-6079" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffa8-e6b6-8935-3bed" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
             </selectionEntry>
-            <selectionEntry id="d82a-ff1c-1363-0516" name="Twin Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="67b6-7bc8-6606-3cb0" name="Twin Autocannon" hidden="false" collective="false" import="true" targetId="3640-bb26-8a54-047c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5c1-6463-5fa4-f090" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d3b-32b8-738e-79df" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2892-87fb-bedb-9193" name="Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="d35f-6b55-d233-781c" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="ff1b-714c-6353-221d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec9f-e641-eb2a-31f1" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f069-b8e5-4b02-7940" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="33fe-d839-f7e3-4469" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="ff1b-714c-6353-221d" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink id="861f-df6a-ea75-e20a" name="Twin Autocannon" hidden="false" collective="false" import="true" targetId="3640-bb26-8a54-047c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -4044,9 +3904,20 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
           </costs>
         </entryLink>
+        <entryLink id="40e6-c423-732b-3f17" name="Stomp (Walker)" hidden="false" collective="false" import="true" targetId="fd88-1524-b5ee-010c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55c0-69f4-17ba-c862" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e6a-8f97-d7aa-33a0" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3a97-8869-4862-1fb0" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="455.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="465.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b2d1-3291-34b7-3063" name="Blood Fist" hidden="false" collective="false" import="true" type="upgrade">
@@ -5606,7 +5477,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="465.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e008-b179-c068-469a" name="Walker Fist" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e008-b179-c068-469a" name="Walker Fist (Attack Walker)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5fed-1877-0714-bf98" name="Walker Fist" hidden="false" targetId="a245-81f6-670d-6d94" type="profile"/>
         <infoLink id="5836-1928-51d1-14f0" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -12972,7 +12843,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="360.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9353-6eec-8ab4-0ba9" name="Walker Fist" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9353-6eec-8ab4-0ba9" name="Walker Fist (Prime Light Walker)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="177b-344f-397c-0cf4" name="Walker Fist" hidden="false" targetId="49f3-7d43-407a-1d39" type="profile"/>
         <infoLink id="cd5d-ef37-ca15-1e45" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -13787,6 +13658,12 @@
       <infoLinks>
         <infoLink id="8950-e681-1b86-cdec" name="CCW (A1,AP1)" hidden="false" targetId="1380-66c8-7d07-a74d" type="profile"/>
         <infoLink id="c877-b777-4608-f592" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="fd88-1524-b5ee-010c" name="Stomp (Walker)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b230-be0c-0d9d-e896" name="Stomp (Walker)" hidden="false" targetId="e9e1-eca6-4088-ea07" type="profile"/>
+        <infoLink id="e6a3-8b99-3819-e15d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -14646,7 +14523,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Impact(3), Tough(12)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Tough(12)</characteristic>
       </characteristics>
     </profile>
     <profile id="f99c-24db-654e-e22f" name="Artillery Cannon" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -14731,7 +14608,7 @@
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Transport(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="a245-81f6-670d-6d94" name="Walker Fist" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="a245-81f6-670d-6d94" name="Walker Fist (Attack Walker)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4)</characteristic>
@@ -15848,7 +15725,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="49f3-7d43-407a-1d39" name="Walker Fist" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="49f3-7d43-407a-1d39" name="Walker Fist (Prime Light Walker)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
@@ -15876,6 +15753,12 @@
     <profile id="3bb3-11bb-0fae-c720" name="Rear Grapples" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">This unit may transport a single Attack Walker in addition to any other units it is transporting.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e9e1-eca6-4088-ea07" name="Stomp (Walker)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
