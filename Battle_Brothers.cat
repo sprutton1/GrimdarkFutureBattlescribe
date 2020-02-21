@@ -407,6 +407,7 @@
     <entryLink id="07e5-b3aa-4eb6-da79" name="Prime Attack Walker" page="" hidden="false" collective="false" import="true" targetId="8190-7f9b-48c5-67b0" type="selectionEntry"/>
     <entryLink id="716b-da4b-d86e-dac1" name="Anti-Grav Tank" hidden="false" collective="false" import="true" targetId="63df-d87e-1506-01cc" type="selectionEntry"/>
     <entryLink id="075b-7412-c0f0-671f" name="Heavy Anti-Grav Tank" page="" hidden="false" collective="false" import="true" targetId="49e2-29e2-9ef6-6348" type="selectionEntry"/>
+    <entryLink id="f8ed-a680-cc16-2de7" name="Prime Grave Captain" hidden="false" collective="false" import="true" targetId="7092-baf4-8ce7-475a" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="40e7-3f33-f159-d98d" name="Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -13665,6 +13666,37 @@
         <infoLink id="b230-be0c-0d9d-e896" name="Stomp (Walker)" hidden="false" targetId="e9e1-eca6-4088-ea07" type="profile"/>
         <infoLink id="e6a3-8b99-3819-e15d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7092-baf4-8ce7-475a" name="Prime Grave Captain" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a08b-ad64-3469-e6ef" name="Prime Grave Captain" hidden="false" targetId="59d7-8d08-5bcc-9305" type="profile"/>
+        <infoLink id="f5b2-e45b-8f65-967c" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="e14d-9fcd-e75c-4600" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="8d8d-31b0-43f7-deec" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="509b-dfee-758c-a3d7" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cbe-27bf-4907-5dfc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1463-b4f8-1ebe-d218" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="18f8-593d-de69-2670" name="Fist-Pistol" hidden="false" collective="false" import="true" targetId="baef-7852-49ca-c43c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aff-c9b2-5948-b4d7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27c1-0958-1b30-2a46" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="eab2-4187-d991-db6e" name="Energy Fist" hidden="false" collective="false" import="true" targetId="ffff-7bb4-119c-0f59" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="856e-aca2-a733-37e2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9626-e038-c26b-3533" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="215.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
