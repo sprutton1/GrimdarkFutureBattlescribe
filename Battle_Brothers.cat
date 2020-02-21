@@ -3306,43 +3306,23 @@
         <infoLink id="f558-3816-d32b-ecc4" name="Large Cargo" hidden="false" targetId="1014-5e6a-76ca-b552" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a787-bbd3-d5ef-4cf5" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="58c6-299b-152b-9f94">
+        <selectionEntryGroup id="a787-bbd3-d5ef-4cf5" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b147-a783-7404-5088">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78c0-3277-d86f-a466" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7150-0925-ea2c-3d2c" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="58c6-299b-152b-9f94" name="Storm Rifle" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="0738-a674-37c1-5dc6" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47a4-54ad-7f4c-68ec" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab3e-da7f-9095-0864" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="422e-e85c-3e38-c74c" name="Death Launcher" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="3d6e-b12c-d443-e57c" name="Death Launcher" hidden="false" collective="false" import="true" targetId="c35f-7c3c-a214-d2b1" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6943-33cd-2a33-d810" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="620f-9025-0979-88e5" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="9c72-46de-0a5d-8f43" name="Death Launcher" hidden="false" collective="false" import="true" targetId="c35f-7c3c-a214-d2b1" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink id="b147-a783-7404-5088" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="205.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="215.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c35f-7c3c-a214-d2b1" name="Death Launcher" hidden="false" collective="false" import="true" type="upgrade">
