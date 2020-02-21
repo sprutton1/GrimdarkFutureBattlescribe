@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="10" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="11" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.7"/>
   </publications>
@@ -672,6 +672,9 @@
         <infoLink id="32d7-30e7-6f68-0942" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="8fca-4b20-5b0d-3573" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="79f3-661e-0e13-6497" name="Anti-Tank Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -679,12 +682,28 @@
         <infoLink id="d796-a6fa-1cfb-0684" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="ee05-2c84-9ff1-a442" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b28c-3c17-5552-b1f9" name="Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6295-bd1e-1f14-515b" name="Gatling Cannon" hidden="false" targetId="1546-5828-50d8-3dfb" type="profile"/>
         <infoLink id="18e0-b847-7d0c-df50" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="71e9-a72c-6160-0673" name="Energy Claw" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9ed4-bb8b-d98c-6e9c" name="Energy Claw" hidden="false" targetId="8181-d687-4fac-59bb" type="profile"/>
+        <infoLink id="8036-27b8-80fe-8d86" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="3ff9-e86a-8ea3-5f65" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
