@@ -2115,7 +2115,7 @@
         <infoLink id="cc9d-c63a-a4c2-b041" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8dbf-24fa-8eef-a302" name="Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="714f-4f29-db71-324b">
+        <selectionEntryGroup id="8dbf-24fa-8eef-a302" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="714f-4f29-db71-324b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="213f-d734-aaf0-1fb3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0533-2c11-65da-c1cf" type="min"/>
@@ -2188,15 +2188,15 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d6fc-b39b-e9f6-345f" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf1d-3b56-b922-dc77">
+        <selectionEntryGroup id="d6fc-b39b-e9f6-345f" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf1d-3b56-b922-dc77">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc37-eb31-9cc4-08a7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aff7-1e23-2877-e71d" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="bf1d-3b56-b922-dc77" name="CCW (A1)" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="bf1d-3b56-b922-dc77" name="CCW (A1,AP1)" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="1153-f0af-3b2c-8bf2" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+                <entryLink id="1153-f0af-3b2c-8bf2" name="CCW (A1,AP1)" hidden="false" collective="false" import="true" targetId="ab06-a544-cce3-4727" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14f4-5da0-c28b-77fd" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f340-f74e-3fd3-e93c" type="min"/>
@@ -2222,17 +2222,17 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="acdf-2bca-cb9c-e653" name="Upgrades" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="55a2-d86c-9986-b44c" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcd2-adb0-1f3d-7aa9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70b3-a588-d69b-3e3b" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="fb11-9c4d-5881-cafc" name="Assault Rifle Array" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1fc1-2969-28f9-8f8d" name="Assault Rifle Array" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="a626-3525-846b-ede8" name="Assault Rifle Array" hidden="false" collective="false" import="true" targetId="faa1-761d-0d50-2135" type="selectionEntry">
+                <entryLink id="188d-5845-521a-3016" name="Assault Rifle Array" hidden="false" collective="false" import="true" targetId="faa1-761d-0d50-2135" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b09-1122-47b3-9e77" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2498-24fb-630a-0fbe" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="951d-1351-ac65-7160" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc96-6d3a-0dfa-cd83" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2240,12 +2240,12 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5e9a-6f25-8bb6-02d9" name="Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d959-d7fa-dcda-efeb" name="Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="f121-b866-53c4-1a7b" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="ff1b-714c-6353-221d" type="selectionEntry">
+                <entryLink id="22ee-a7e7-fa5f-c07e" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="ff1b-714c-6353-221d" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5560-b613-57c5-3a00" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9b4-78e5-9400-a7d1" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2aec-a3bb-0eb2-40d1" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca2b-1699-8a96-f906" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2256,6 +2256,33 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8265-59d2-45e9-7f0a" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="ec4f-0314-d9ef-af6d" name="Custodian Brothers - Regeneration" hidden="false" collective="false" import="true" targetId="5eba-5a59-c1ab-8cbc" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="e6f7-7ae1-8a89-b85e" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="de97-b0bb-14fe-d96b" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="845a-379f-3bdf-8740" name="Wolf Brothers - Counter" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
@@ -14111,6 +14138,12 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ab06-a544-cce3-4727" name="CCW (A1,AP1)" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8950-e681-1b86-cdec" name="CCW (A1,AP1)" hidden="false" targetId="1380-66c8-7d07-a74d" type="profile"/>
+        <infoLink id="c877-b777-4608-f592" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="763b-1230-bcad-b19d" name="Leader Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a186-9d3d-21d5-0818">
@@ -16189,6 +16222,12 @@
     <profile id="8981-ead4-83ff-988c" name="Heavy Chainsaw Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1380-66c8-7d07-a74d" name="CCW (A1,AP1)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
