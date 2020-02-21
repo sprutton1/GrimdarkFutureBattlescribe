@@ -11609,28 +11609,52 @@
         <infoLink id="a032-9b94-30e0-74b2" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="7326-a27f-b6f0-5e47" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bab2-b376-e944-ed85" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="a9e8-03c3-ac2b-7cab" name="Camo Cloak" hidden="false" collective="false" import="true" targetId="b06e-0b6c-7bb6-03cb" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d84c-17c9-e928-49db" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9cac-4610-2bc9-aa6b" name="Psychic" hidden="false" collective="false" import="true" defaultSelectionEntryId="2113-4842-3c99-4c07">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b929-85e8-b999-05e6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e09-31b9-15f9-7b50" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7c1f-de04-ec76-aa70" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54af-b2ba-4405-2d0e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7acb-ef36-b540-eedf" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2113-4842-3c99-4c07" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07c6-fe0b-72f6-726b" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d46e-9426-6782-06b6" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c21f-ca95-8029-c3a2" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08fa-f62f-1220-d782" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d74-1374-7b6c-0430" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="65d1-8d74-e91a-9cd3" name="Camo Cloak" hidden="false" collective="false" import="true" targetId="b06e-0b6c-7bb6-03cb" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b207-117e-ca7b-10c3" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="d072-c7f4-4f3c-67da" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df8e-1e5e-9bcf-d41b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a317-e0c8-3f5b-336b" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="982d-86ef-e847-7336" name="Spells" hidden="false" collective="false" import="true" targetId="7cab-4ff5-56e3-14cd" type="selectionEntryGroup"/>
+        <entryLink id="982d-86ef-e847-7336" name="Prime Psychic Spell List" hidden="false" collective="false" import="true" targetId="b8a5-2300-ea05-b1e8" type="selectionEntryGroup"/>
         <entryLink id="550b-3e2d-7351-6af6" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
@@ -11656,9 +11680,10 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
           </costs>
         </entryLink>
+        <entryLink id="caec-c8a0-495b-0b0b" name="Prime Leader Weapons" hidden="false" collective="false" import="true" targetId="d455-2126-cc2a-5f47" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="135.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1545-1608-f888-3398" name="Prime Brother" hidden="false" collective="false" import="true" type="upgrade">
@@ -14301,6 +14326,79 @@
           </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="-10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b8a5-2300-ea05-b1e8" name="Prime Psychic Spell List" hidden="false" collective="false" import="true" defaultSelectionEntryId="dab3-681f-ed76-8c49">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01d1-4ee3-2107-f08f" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f1c-74ad-085b-028b" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="dab3-681f-ed76-8c49" name="Prime Brother Psychic Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="001d-3b8a-e3bd-2674" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="84f5-72d0-85a7-3e9f" name="Prime Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="f606-1ed3-6344-cd01" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9ce2-d947-0abb-c08a" name="Blood Brother Psychic Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fc5e-c95a-636b-865d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a12-b077-c8b8-64ab" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c61f-9fc2-872b-9e46" name="Blood Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="e6bc-e6cc-cdb2-3924" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6969-bd9d-2d46-66a5" name="Knight Brother Psychic Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2f26-c83d-870c-62d5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="094d-2d46-53f2-d128" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="bc22-0705-2005-c5e3" name="Knight Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="ef87-9afc-97d0-abdf" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9cfd-b099-94d9-2430" name="Wolf Brother Psychic Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5afe-d010-2cea-03e5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d0b-fe20-cbd4-248d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5530-ad8b-4ce1-2f06" name="Wolf Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="b6c7-182d-972d-6ca2" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
