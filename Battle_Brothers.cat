@@ -11534,27 +11534,6 @@
         <infoLink id="b813-67aa-91fa-2984" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3012-8756-aca0-f3ab" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="fc2d-e41f-01cc-c389">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d947-02ab-76a8-401d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="183f-de87-8190-1e36" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="fc2d-e41f-01cc-c389" name="Auto-Rifle" hidden="false" collective="false" import="true" targetId="f2a7-6ad7-5096-a448" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4363-148c-49e5-ed3c" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="c9d8-5d8a-7985-aaae" name="Marksman Carbine" hidden="false" collective="false" import="true" targetId="b604-5a58-4980-54a4" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeed-26ef-7c1f-6be1" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="-5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="ff50-7fe6-2ad8-f15a" name="Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="362d-6b67-fb41-5e5f" name="Ancient Banner" hidden="false" collective="false" import="true" targetId="c068-afcc-2781-0ea4" type="selectionEntry">
@@ -11562,7 +11541,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb8b-9f73-0cc1-bac7" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </entryLink>
             <entryLink id="e377-ed03-9da3-fc27" name="Camo Cloak" hidden="false" collective="false" import="true" targetId="b06e-0b6c-7bb6-03cb" type="selectionEntry">
@@ -11577,12 +11556,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="aa16-d50a-f480-809f" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2114-742a-9937-506b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89c7-415c-9cc6-73a5" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="54cc-56be-4e39-f781" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
@@ -11595,17 +11568,17 @@
         </entryLink>
         <entryLink id="2bc1-05ce-3d97-af6d" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
         <entryLink id="e83a-09e6-9b69-8f75" name="Death Brothers - Tactical Master" hidden="false" collective="false" import="true" targetId="f2e2-ff33-227d-9876" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
           </costs>
         </entryLink>
         <entryLink id="025f-2210-9a61-ab61" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
         <entryLink id="107c-c656-83b7-15b6" name="Wolf Brothers - Counter-Attack" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
@@ -11613,6 +11586,7 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
           </costs>
         </entryLink>
+        <entryLink id="49ab-fa35-c045-3183" name="Prime Leader Weapons" hidden="false" collective="false" import="true" targetId="d455-2126-cc2a-5f47" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
