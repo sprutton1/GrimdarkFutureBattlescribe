@@ -4587,6 +4587,7 @@
     <selectionEntry id="b974-8328-92d6-2239" name="Holy Chalice" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f26b-aa45-fea0-4759" name="Holy Chalice" hidden="false" targetId="0d1d-bf99-38d8-b3fb" type="profile"/>
+        <infoLink id="04bd-d9f7-c877-728f" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
@@ -14227,7 +14228,7 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3585-6e03-704b-5409" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3585-6e03-704b-5409" name="Blood Shield" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="848c-6ada-4abe-7746" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8565-b8d2-0e83-5316" type="min"/>
@@ -15263,37 +15264,37 @@
     <profile id="aaf1-c35a-0cc3-ad70" name="Fear" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12” must immediately take a morale test. If failed the unit takes D3+1 automatic wounds.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24&quot; must take a morale test. If failed, it takes 8 hits.</characteristic>
       </characteristics>
     </profile>
     <profile id="3db5-216c-4fb9-d4fc" name="Blood Curse" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 18” takes D3+2 automatic hits.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 6&quot; takes 1 automatic hit with AP(1) per model.</characteristic>
       </characteristics>
     </profile>
     <profile id="1029-2b17-519c-a398" name="Rage" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 18” gets +1A when charging until the end of the round.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +1 to melee rolls on its next combat.</characteristic>
       </characteristics>
     </profile>
     <profile id="c579-dca2-9e9e-dcbe" name="Lance" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12” takes one automatic hit with AP(4) and Deadly(6).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 12&quot; takes 4 automatic hits with AP(4).</characteristic>
       </characteristics>
     </profile>
     <profile id="abb5-8768-8e06-0d8f" name="Quickness" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12” gets Fast until the end of the round.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may immediately charge by up to 6&quot;</characteristic>
       </characteristics>
     </profile>
-    <profile id="ee9e-efd2-b712-4702" name="Shield" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="ee9e-efd2-b712-4702" name="Blood Shield" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12” gets Regeneration until the end of the round.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 18&quot; gets the Regeneration rule next time it takes any wounds.</characteristic>
       </characteristics>
     </profile>
     <profile id="b425-cb9c-df03-bc13" name="Custodian Captain" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
