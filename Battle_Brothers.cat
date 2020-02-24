@@ -13226,6 +13226,11 @@
           </constraints>
           <entryLinks>
             <entryLink id="97aa-dcdf-a090-0f58" name="Heavy Plasma Cannon" hidden="false" collective="false" import="true" targetId="e710-08f1-e420-99f1" type="selectionEntry"/>
+            <entryLink id="d0f9-122f-f411-7181" name="Heavy Laser Cannon" hidden="false" collective="false" import="true" targetId="79f9-758b-24c4-e1b6" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="227d-a394-5796-8e2c" name="Upgrades" hidden="false" collective="false" import="true">
@@ -13274,18 +13279,6 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b9e6-85fc-28fb-984f" name="Weapon - Hull" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a79-14c5-cbc3-3863" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3c9-4614-66f3-204e" type="max"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="7541-a37c-b7b4-417c" name="Weapon - Pintle" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ae2-c824-6607-1d53" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d7e-262d-49e7-204d" type="max"/>
-          </constraints>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2963-8a58-24f3-9779" name="Blood Brothers - Very Fast" hidden="false" collective="false" import="true" targetId="ec17-0396-1d9d-0ad9" type="selectionEntry">
@@ -13295,17 +13288,29 @@
         </entryLink>
         <entryLink id="a2b1-94ba-e1ed-dfb5" name="Custodian Brothers - Regeneration" hidden="false" collective="false" import="true" targetId="5eba-5a59-c1ab-8cbc" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
           </costs>
         </entryLink>
         <entryLink id="6473-3b8a-25a5-9214" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
           </costs>
+        </entryLink>
+        <entryLink id="eb34-e468-46d4-9c4e" name="Twin Heavy Machinegun" hidden="false" collective="false" import="true" targetId="dae8-3106-6a96-228c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2ff-e07c-1aab-7860" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bbf-d6d7-2a6b-967f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d40b-0449-dd5c-aaf7" name="Heavy Gatling Gun" hidden="false" collective="false" import="true" targetId="53fd-83b6-c5ce-01f3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d16-2dfd-123e-ce8c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7acb-1a63-db8f-8b52" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="750.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="835.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5666-6954-7608-c6cd" name="Twin AA-Machinegun" hidden="false" collective="false" import="true" type="upgrade">
@@ -13896,6 +13901,13 @@
         <infoLink id="015c-4cda-0b6a-b9e7" name="Missile Array" hidden="false" targetId="bb6e-e3a2-0769-c34e" type="profile"/>
         <infoLink id="0855-0508-38a4-0a6a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="5c47-b23f-0755-0585" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="79f9-758b-24c4-e1b6" name="Heavy Laser Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="900e-31e8-bf55-afd2" name="Heavy Laser Cannon" hidden="false" targetId="19dc-21da-bf1d-1f2f" type="profile"/>
+        <infoLink id="e2cf-5b4e-8ce5-2116" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="b5e5-d1f9-c19f-f999" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -16149,13 +16161,6 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="9a36-5ed7-020c-d22f" name="Heavy Laser Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(3)</characteristic>
-      </characteristics>
-    </profile>
     <profile id="60b7-07a9-ea9a-1280" name="AA-Rocket Pod" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
@@ -16379,6 +16384,13 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32"> Fast, Fearless, Impact(6), Strider, Tough(18), Transport(11)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="19dc-21da-bf1d-1f2f" name="Heavy Laser Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
