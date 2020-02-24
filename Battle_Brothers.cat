@@ -6048,49 +6048,81 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="725.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d6f1-a4b0-78ba-9010" name="Black Knight Bikers" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntryGroups>
-        <selectionEntryGroup id="9a5e-628f-971f-471f" name="Bikers" hidden="false" collective="false" import="true" defaultSelectionEntryId="ba80-e050-41b6-c780">
+    <selectionEntry id="d6f1-a4b0-78ba-9010" name="Black Bikers" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntries>
+        <selectionEntry id="1569-5d95-971f-8f11" name="Upgrade Bike Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da29-2935-0aea-d9f3" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72b0-66bb-c145-db2f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9bd-a0aa-da2b-5ded" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="ba80-e050-41b6-c780" name="Black Knight Biker" hidden="false" collective="false" import="true" targetId="87b2-868a-ce21-4d83" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="7609-3c94-40cb-b6fa" name="Bike Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="0df0-4b4a-2222-96d7">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc7f-e3dc-b310-44c8" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a37a-0df5-cfa0-01b9" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="739c-7232-b8ff-9b0e" type="max"/>
               </constraints>
-            </entryLink>
-            <entryLink id="1a48-7ab5-a5be-89e8" name="Black Knight Biker (Grenade Launcher)" hidden="false" collective="false" import="true" targetId="00d6-6955-ca75-ec94" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="095a-b256-5cd9-3e6a" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="0df0-4b4a-2222-96d7" name="Twin Plasma Carbine" hidden="false" collective="false" import="true" targetId="81ca-8223-37eb-73ae" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3564-cfca-f200-5908" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdae-0633-7d57-be05" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="7940-cf04-1e03-7997" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="e089-6dd6-ec4e-12e6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e9a-560d-698b-3974" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="f151-dee3-b29c-b79d" name="Black Knight Biker" hidden="false" collective="false" import="true" targetId="87b2-868a-ce21-4d83" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="162c-2ee2-dad5-a050" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2115-8e23-002a-52d5" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="87b2-868a-ce21-4d83" name="Black Knight Biker" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="87b2-868a-ce21-4d83" name="Black Biker" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="639b-8ed2-3173-d0c6" name="Black Knight Bikers" hidden="false" targetId="4853-6b39-96ed-a9eb" type="profile"/>
         <infoLink id="021a-52b1-05e7-7482" name="Dark Resolve" hidden="false" targetId="5dec-9937-47f8-7cf4" type="rule"/>
         <infoLink id="eaa9-c30b-a2a6-bb2e" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
         <infoLink id="53c2-8286-fb54-628f" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="65a5-3f5f-113d-8df2" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink id="2035-0510-4540-b074" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e962-6901-8840-ad60" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3496-fb93-ed03-abb4">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="271f-e505-812f-7b3c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70de-70ca-b54b-a43c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6522-64e6-a719-9649" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b97-444a-cd01-dc13" type="max"/>
           </constraints>
-        </entryLink>
-        <entryLink id="4553-2773-ca97-1c11" name="Twin Plasma Carbine" hidden="false" collective="false" import="true" targetId="81ca-8223-37eb-73ae" type="selectionEntry">
+          <entryLinks>
+            <entryLink id="3496-fb93-ed03-abb4" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry"/>
+            <entryLink id="fd10-06b7-7d76-9c84" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="caf9-2779-d046-fda0" name="Energy Hammer" hidden="false" collective="false" import="true" targetId="ee08-0414-e5c3-908f" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4553-2773-ca97-1c11" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a5a-9f12-56c9-adb8" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4853-48ed-fab3-001e" type="min"/>
@@ -6106,31 +6138,6 @@
         <infoLink id="fe7a-95c9-0253-4144" name="Twin Plasma Carbines" hidden="false" targetId="542a-104b-9c73-e7bf" type="profile"/>
         <infoLink id="a83d-8003-ece9-02ac" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="00d6-6955-ca75-ec94" name="Black Knight Biker (Grenade Launcher)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="01d4-745d-9d3b-d7d8" name="Black Knight Bikers" hidden="false" targetId="4853-6b39-96ed-a9eb" type="profile"/>
-        <infoLink id="7f40-dc42-ae04-38a5" name="Dark Resolve" hidden="false" targetId="5dec-9937-47f8-7cf4" type="rule"/>
-        <infoLink id="24cd-2e68-1aa5-0d26" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-        <infoLink id="7b6b-af35-7512-62d6" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="af1d-0883-4b0c-73ef" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8bc-bbec-6b91-5764" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e61c-ef2b-eaee-c379" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="b0b7-7601-9f1f-9343" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="e089-6dd6-ec4e-12e6" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48d3-28a7-721c-32ed" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f835-27d4-6743-9a06" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
@@ -14908,11 +14915,11 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Dark Assult, Grim, Tough(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="4853-6b39-96ed-a9eb" name="Black Knight Biker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="4853-6b39-96ed-a9eb" name="Black Biker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Dark Resolve, Fast, Scout</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Grim, Impact(1), Scout</characteristic>
       </characteristics>
     </profile>
     <profile id="1095-a5b6-8960-00f2" name="Destroyer Knight" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
