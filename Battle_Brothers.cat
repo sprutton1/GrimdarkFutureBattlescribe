@@ -5534,6 +5534,12 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0ec-1dff-8920-c78a" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="4ff0-9520-8d2b-9c48" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5004-e1da-f874-2914" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4326-b1f0-2ed9-e753" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -5569,11 +5575,11 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="150.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3927-d814-2872-1a5e" name="Witch Hunter Sister" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3927-d814-2872-1a5e" name="Hunter Sister" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="aa10-3342-6920-3d0e" name="Witch Hunter Sister" hidden="false" targetId="b391-240e-1c68-e666" type="profile"/>
         <infoLink id="29fd-4ae4-aca2-2ef0" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="c533-73db-9330-f5e3" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+        <infoLink id="c533-73db-9330-f5e3" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="e622-9a8e-0d5d-b4ac" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
@@ -5601,7 +5607,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d70e-a28a-8d49-0c67" name="Witch Hunter Sisters" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d70e-a28a-8d49-0c67" name="Hunter Sisters" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
         <selectionEntryGroup id="c788-5d79-9dbe-174b" name="Upgrade all:" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -5613,7 +5619,7 @@
                 <infoLink id="ad89-5111-60d5-2222" name="Anti-Psychic" hidden="false" targetId="bd7f-ef2d-b55f-bc58" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5628,7 +5634,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="145.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e89b-c06d-103d-ec46" name="Custodian Walker" hidden="false" collective="false" import="true" type="upgrade">
@@ -15144,11 +15150,11 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Relentless</characteristic>
       </characteristics>
     </profile>
-    <profile id="b391-240e-1c68-e666" name="Witch Hunter Sister" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="b391-240e-1c68-e666" name="Hunter Sister" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Scout</characteristic>
       </characteristics>
     </profile>
     <profile id="06b4-b2b5-1e33-d835" name="Custodian Walker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
