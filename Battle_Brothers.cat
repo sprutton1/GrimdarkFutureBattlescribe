@@ -5641,46 +5641,24 @@
       <infoLinks>
         <infoLink id="39d9-f3a4-c2cf-4035" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="7d83-7ff4-b166-cf89" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="ac01-a811-e365-055e" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="f5e4-ac04-2447-09e9" name="Custodian Walker" hidden="false" targetId="06b4-b2b5-1e33-d835" type="profile"/>
         <infoLink id="2b6e-48a4-6073-9d9d" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-        <infoLink id="14ff-4f1d-490d-b2a7" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
         <infoLink id="ed1b-7e09-2626-da70" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7062-43e5-1971-8326" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e994-ef4f-498f-b19a">
+        <selectionEntryGroup id="7062-43e5-1971-8326" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="dcbd-4672-5fed-8f5d">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb06-24fe-54b8-5ced" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59d4-4cd3-16a9-6b38" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="b1e0-931a-b557-b7d6" name="Heavy Minigun" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="74ed-b3e2-8c14-a1f9" name="Heavy Minigun" hidden="false" collective="false" import="true" targetId="9db1-0539-dc9f-f147" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77da-6929-7a94-fb0e" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de49-592c-5dd3-84e6" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="dcbd-4672-5fed-8f5d" name="Heavy Minigun" hidden="false" collective="false" import="true" targetId="9db1-0539-dc9f-f147" type="selectionEntry"/>
+            <entryLink id="3576-67b5-05eb-7375" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" targetId="a5f5-d44a-03b0-9a99" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="e994-ef4f-498f-b19a" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="b557-526d-b545-ed2d" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" targetId="a5f5-d44a-03b0-9a99" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85ce-76dd-cce3-c0cf" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c75-ed26-8786-6bc9" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -5696,9 +5674,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3b7-9bac-2a95-5013" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="691c-1679-fcdb-6e3d" name="Stomp (Walker)" hidden="false" collective="false" import="true" targetId="fd88-1524-b5ee-010c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b2b-f27d-9344-d040" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf88-1dd6-d28d-5ba0" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="560.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="550.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9db1-0539-dc9f-f147" name="Heavy Minigun" hidden="false" collective="false" import="true" type="upgrade">
@@ -15161,7 +15145,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fear, Fearless, Impact(3), Tough(12), Regeneration</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Tough(12), Regeneration</characteristic>
       </characteristics>
     </profile>
     <profile id="e8d9-43b8-0ede-5ac8" name="Spear-Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
