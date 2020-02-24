@@ -418,6 +418,15 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="83d5-3eaa-a77b-0d8a" name="Custodian Jetbikers" hidden="false" collective="false" import="true" targetId="b7be-2c98-a415-ca1f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5fbd-7c2c-ce31-fa5f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="40e7-3f33-f159-d98d" name="Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -13675,6 +13684,67 @@
         <infoLink id="6e60-e304-79a8-2fd3" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="b7be-2c98-a415-ca1f" name="Custodian Jetbikers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a991-0a66-fd3a-8c72" name="Custodian Jetbiker" hidden="false" targetId="0efe-cd3b-0181-d9a7" type="profile"/>
+        <infoLink id="ac41-cf44-00ce-3109" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="80d2-bb3e-8035-1645" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="ee02-04b2-057b-4d0b" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="6761-d31c-f8ec-9091" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="00de-871a-2409-da74" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="87ad-5824-da63-43a9" name="Jetbike Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56ba-0318-78bd-47a8" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="662a-5b25-7a51-339b" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="6f8f-b395-790d-9497">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b834-b63e-b054-5fd7" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c01b-882d-8450-5f21" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="6f8f-b395-790d-9497" name="Assault Rifle Array" hidden="false" collective="false" import="true" targetId="faa1-761d-0d50-2135" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb4c-b4ba-4eb1-157f" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="1c8c-b427-e671-1b41" name="Fusion Missiles" hidden="false" collective="false" import="true" targetId="0fec-c1d9-5bbe-acdd" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4db0-d844-eee1-dc57" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="43e4-a24a-4f16-4b36" name="Energy Lance" hidden="false" collective="false" import="true" targetId="ff42-7a39-9d57-f334" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6817-ca29-f16b-b11b" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0e5-3da1-567e-83a4" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="195.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0fec-c1d9-5bbe-acdd" name="Fusion Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3318-d7cc-54b9-bc1b" name="Fusion Missiles" hidden="false" targetId="9257-f4d9-13be-1bb4" type="profile"/>
+        <infoLink id="7351-de10-c0d6-c087" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="b599-a313-3d2e-81ca" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="763b-1230-bcad-b19d" name="Leader Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a186-9d3d-21d5-0818">
@@ -16202,6 +16272,20 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0efe-cd3b-0181-d9a7" name="Custodian Jetbiker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fearless, Impact(1), Regeneration, Strider</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9257-f4d9-13be-1bb4" name="Fusion Missiles" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
