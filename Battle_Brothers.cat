@@ -4767,41 +4767,21 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c896-6e7e-7f8a-0446" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="0386-01cd-c768-cf59">
+        <selectionEntryGroup id="c896-6e7e-7f8a-0446" name="Weapon - Turret" hidden="false" collective="false" import="true" defaultSelectionEntryId="9f8d-8047-c6f9-993f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9365-d442-4343-2562" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e35-46bf-adf7-3d1c" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="73e1-9308-91c6-429c" name="Twin Minigun" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="4ee2-7d41-574d-90de" name="Twin Minigun" hidden="false" collective="false" import="true" targetId="a8f7-27d2-59eb-c865" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3244-a245-26b1-8150" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93cb-4e0b-1f9f-4f27" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="9f8d-8047-c6f9-993f" name="Flamethrower Cannon" hidden="false" collective="false" import="true" targetId="f587-2140-510e-48b8" type="selectionEntry"/>
+            <entryLink id="5c9c-206d-7b52-74ec" name="Twin Minigun" hidden="false" collective="false" import="true" targetId="a8f7-27d2-59eb-c865" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="0386-01cd-c768-cf59" name="Flamethrower Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="8fca-d0d4-6446-7c9e" name="Flamethrower Cannon" hidden="false" collective="false" import="true" targetId="f587-2140-510e-48b8" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6738-8388-9d49-7404" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0204-dfd2-3bdc-6945" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="754d-9455-8f58-514f" name="Sponsons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="754d-9455-8f58-514f" name="Weapon - Sponsons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="327f-c75c-f3df-e2ea" type="max"/>
           </constraints>
@@ -4836,7 +4816,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="425.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="435.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="db5d-0f53-5fb4-8f08" name="Overcharged Engines" hidden="false" collective="false" import="true" type="upgrade">
