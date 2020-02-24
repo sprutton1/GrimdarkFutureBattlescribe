@@ -12346,6 +12346,7 @@
       <infoLinks>
         <infoLink id="3243-cbf1-d9be-ead6" name="Aggro Brothers" hidden="false" targetId="0760-7de5-6321-ec51" type="profile"/>
         <infoLink id="b9ae-a025-830f-d5f2" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="4b4b-aebb-a091-7423" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="7e16-2685-d65e-edb3" name="Energy Fist" hidden="false" collective="false" import="true" targetId="b9d2-571b-92d1-126a" type="selectionEntry">
@@ -12356,8 +12357,8 @@
         </entryLink>
         <entryLink id="3165-5cd0-d7e3-0da9" name="Fist-Carbine" hidden="false" collective="false" import="true" targetId="d984-2f6e-718a-0ff7" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ae5-7f3a-ea94-d506" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e16-cbdb-1065-0e20" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ae5-7f3a-ea94-d506" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e16-cbdb-1065-0e20" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -12369,6 +12370,7 @@
       <infoLinks>
         <infoLink id="a6e6-2fc1-c99a-344c" name="Aggro Brothers" hidden="false" targetId="0760-7de5-6321-ec51" type="profile"/>
         <infoLink id="6d16-d905-f539-3448" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="ef94-75a7-03b7-1bcc" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="c9f2-d65d-f4e5-b9ec" name="Energy Fist" hidden="false" collective="false" import="true" targetId="b9d2-571b-92d1-126a" type="selectionEntry">
@@ -12379,8 +12381,8 @@
         </entryLink>
         <entryLink id="697e-fd92-0817-4c11" name="Fist-Flamethrower" hidden="false" collective="false" import="true" targetId="efce-8bcd-f1d3-20ca" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cb8-186a-dfd6-4497" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1951-e105-79ff-7cd2" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cb8-186a-dfd6-4497" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1951-e105-79ff-7cd2" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -12396,7 +12398,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f10a-0151-35d5-28f9" name="Aggro Brothers" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f10a-0151-35d5-28f9" name="Aggro Squad" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
         <selectionEntryGroup id="5641-67a5-7bba-5f24" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5bb-56ae-fa2f-e43a">
           <constraints>
@@ -12427,12 +12429,12 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b4a5-f093-9091-5f0a" name="Upgrade all:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="b4a5-f093-9091-5f0a" name="Upgrade all models with:" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="4c31-7bbb-4114-7719" name="Grenade Launchers" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -12461,22 +12463,27 @@
         </entryLink>
         <entryLink id="e5f7-bbcf-98de-da54" name="Custodian Brothers - Regeneration" hidden="false" collective="false" import="true" targetId="5eba-5a59-c1ab-8cbc" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
           </costs>
         </entryLink>
         <entryLink id="8b23-93ad-6700-f700" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
           </costs>
         </entryLink>
         <entryLink id="0e13-7c7c-056f-0f64" name="Wolf Brothers - Counter-Attack" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="942a-9999-b15b-fafd" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="145.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="370.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e14-dd3a-e262-3f43" name="Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -15918,7 +15925,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="344a-22b2-a43e-2e29" name="Jetpack Brother" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
