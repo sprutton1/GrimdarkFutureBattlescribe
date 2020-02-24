@@ -409,6 +409,15 @@
     <entryLink id="075b-7412-c0f0-671f" name="Heavy Anti-Grav Tank" page="" hidden="false" collective="false" import="true" targetId="49e2-29e2-9ef6-6348" type="selectionEntry"/>
     <entryLink id="f8ed-a680-cc16-2de7" name="Prime Grave Captain" hidden="false" collective="false" import="true" targetId="7092-baf4-8ce7-475a" type="selectionEntry"/>
     <entryLink id="56e5-e899-3d9a-2bbb" name="Anti-Grav APC" hidden="false" collective="false" import="true" targetId="6861-14d1-eb2c-c1dc" type="selectionEntry"/>
+    <entryLink id="cfde-e6ca-fc92-6482" name="Custodian Destroyers" hidden="false" collective="false" import="true" targetId="c77a-9942-2734-509a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5fbd-7c2c-ce31-fa5f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="40e7-3f33-f159-d98d" name="Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -13468,12 +13477,18 @@
         <infoLink id="c1b8-f76a-15d2-c307" name="Artillery Relay" hidden="false" targetId="fb8d-0e55-3ee9-b783" type="profile"/>
         <infoLink id="dc9b-d8bd-c867-2d93" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4b26-fe51-2a7b-4778" name="Shield Projector" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0144-c83a-c436-bf3a" name="Shield Projector" hidden="false" targetId="2be3-6a2d-1b3d-3e24" type="profile"/>
         <infoLink id="4379-73c0-9c67-d413" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d552-19c2-322e-8f4a" name="Missile Array" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -13481,6 +13496,9 @@
         <infoLink id="0855-0508-38a4-0a6a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="5c47-b23f-0755-0585" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="79f9-758b-24c4-e1b6" name="Heavy Laser Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -13488,17 +13506,26 @@
         <infoLink id="e2cf-5b4e-8ce5-2116" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="b5e5-d1f9-c19f-f999" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3c67-faf9-889f-bec7" name="Axe (Captain)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d552-ee63-711e-02b1" name="Axe (Captain)" hidden="false" targetId="3ee4-fba4-e780-be25" type="profile"/>
         <infoLink id="600a-35fe-edfc-a413" name="Poison(X)" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e4c4-169c-560d-e5a3" name="Axe-Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="c1ea-b9fc-6b55-d92b" name="Axe-Rifle" hidden="false" targetId="3fc7-654b-36cf-c038" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ff42-7a39-9d57-f334" name="Energy Lance" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -13506,6 +13533,9 @@
         <infoLink id="23b8-9239-68d9-f934" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="3980-68db-3599-6404" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d5e6-7c9e-bcf1-d156" name="Jetbike" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -13514,16 +13544,135 @@
         <infoLink id="9532-7e75-3db2-5eeb" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
         <infoLink id="2f6f-c457-bb28-1597" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d104-a3e3-df5b-025c" name="Prosecution Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f964-3e6e-3c3d-35a5" name="Prosecution Rifle" hidden="false" targetId="21d6-4c00-d05f-7a38" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f1e1-8f92-4ddb-c443" name="Axe" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="b319-ea27-3b14-d7f4" name="Axe" hidden="false" targetId="db61-dacf-d88c-867b" type="profile"/>
         <infoLink id="407e-1afd-03a5-4df5" name="Poison(X)" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c71c-cdc0-9f3f-07ac" name="Custodian Destroyer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2283-83de-d88a-4156" name="Custodian Destroyer" hidden="false" targetId="f4e3-6fe2-059d-633c" type="profile"/>
+        <infoLink id="387b-261d-01a2-7ecf" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="c2a5-fede-a2ad-3f16" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="edf6-dff4-ed58-ca06" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="0534-8764-6c8f-351e" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9b6b-ceed-52c6-c7c0" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d41d-600f-04c0-acdd">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cce-00ce-b70d-2e64" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fd3-bc6e-1ee5-1fd2" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d41d-600f-04c0-acdd" name="Spear-Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="fc6b-a3c8-aec6-3372" name="Spear" hidden="false" collective="false" import="true" targetId="20f4-7691-4f75-4b58" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64aa-aa46-60f9-8d15" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0247-d796-3505-d09b" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="5768-7f4b-cc03-195f" name="Spear-Rifle" hidden="false" collective="false" import="true" targetId="281a-ee78-0632-079d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c65-8383-449a-af4c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7969-2c2c-0b68-7fee" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b93a-d8b5-657c-aa55" name="Axe-Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="dc13-a6fa-9e8c-5b51" name="Axe" hidden="false" collective="false" import="true" targetId="f1e1-8f92-4ddb-c443" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f62c-9c91-3d27-8c08" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f949-ee82-8820-d741" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="d7a8-466e-e865-12fb" name="Axe-Rifle" hidden="false" collective="false" import="true" targetId="e4c4-169c-560d-e5a3" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c921-2635-539d-89a7" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="958d-0bb3-5c55-0193" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="c77a-9942-2734-509a" name="Custodian Destroyers" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a24e-a78e-c33d-22bf" name="Upgrade all:" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="6b6b-e047-7c8f-717f" name="Wrist-GLs" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c90-d584-4a00-05d3" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="9aa3-9bca-2892-d363" name="Wrist-GLs" hidden="false" collective="false" import="true" targetId="0365-f4b2-3ec0-0693" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32e3-9d77-10a6-963e" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dad4-fdda-2ab4-7c13" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0ef0-eebd-f3f4-bad5" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="a158-09e4-3503-d882" name="Battle Standard" hidden="false" collective="false" import="true" targetId="398c-3d34-79c6-a425" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1cd-be3f-b3c6-be6e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d9d7-a88e-d6b2-7f35" name="Custodian Destroyer" hidden="false" collective="false" import="true" targetId="c71c-cdc0-9f3f-07ac" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43ad-4d28-2aa4-3121" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ab8-a53a-88b7-e7fa" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="405.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0365-f4b2-3ec0-0693" name="Wrist-GLs" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0ee3-977c-8656-5cfe" name="Wrist-GLs" hidden="false" targetId="5ee3-f681-2708-c0fe" type="profile"/>
+        <infoLink id="6e60-e304-79a8-2fd3" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -16014,7 +16163,7 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
     <profile id="9cb7-64e7-06d1-f371" name="Energy Lance" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -16032,13 +16181,27 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
     <profile id="db61-dacf-d88c-867b" name="Axe" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f4e3-6fe2-059d-633c" name="Custodian Destroyer" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fearless, Regeneration, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5ee3-f681-2708-c0fe" name="Wrist-GLs" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
