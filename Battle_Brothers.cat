@@ -6002,47 +6002,50 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="685.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b142-6b0d-32b9-f489" name="Destroyer Knight" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="18ec-0e0c-fcc5-021d" name="Destroyer Knight" hidden="false" targetId="1095-a5b6-8960-00f2" type="profile"/>
-        <infoLink id="45d6-ec48-cfe0-7369" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="0ad8-392c-6059-70b9" name="Dark Resolve" hidden="false" targetId="5dec-9937-47f8-7cf4" type="rule"/>
-        <infoLink id="dbaf-ff9e-b32e-71b8" name="Dark Assault" hidden="false" targetId="2f63-3966-49eb-3601" type="rule"/>
-        <infoLink id="533b-12bc-9c00-ec05" name="Shield Wall" hidden="false" targetId="ff04-8ef9-82f1-a88b" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="4635-89ad-82cd-bb4c" name="Heavy Mace" hidden="false" collective="true" import="true" targetId="1231-61b7-e02f-3361" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a586-2921-f7ed-c0c0" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4410-d14c-eb1a-2256" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1231-61b7-e02f-3361" name="Heavy Mace" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="1231-61b7-e02f-3361" name="Heavy Mace" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9016-53c1-a85c-3aa4" name="Heavy Maces" page="" hidden="false" targetId="6ea1-5ae5-4539-1099" type="profile"/>
         <infoLink id="f6e5-d52b-ae62-0bdd" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
-        <infoLink id="380e-4d80-3073-eb48" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="380e-4d80-3073-eb48" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6a8b-fd9b-a0d6-1861" name="Destroyer Knights" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="159b-49c9-4974-e1c0" name="Destroyer Knight" hidden="false" collective="false" import="true" targetId="b142-6b0d-32b9-f489" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="ba2c-e933-3c03-e567" name="Destroyer Knight" hidden="false" targetId="1095-a5b6-8960-00f2" type="profile"/>
+        <infoLink id="40a6-8fa9-8d10-771d" name="Dark Assault" hidden="false" targetId="2f63-3966-49eb-3601" type="rule"/>
+        <infoLink id="57b4-f2f7-c516-5073" name="Dark Resolve" hidden="false" targetId="5dec-9937-47f8-7cf4" type="rule"/>
+        <infoLink id="3bcb-e362-e026-b3a6" name="Shield Wall" hidden="false" targetId="ff04-8ef9-82f1-a88b" type="rule"/>
+        <infoLink id="6b51-d5f3-921e-9969" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8cc7-aec5-38d1-3268" name="Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="11d0-724c-b9ae-76b7">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4400-9668-ed3f-a586" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fdd-9492-6807-15e5" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be1b-ba07-67d6-2d21" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adff-a6ed-4af5-36fa" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <entryLinks>
+            <entryLink id="11d0-724c-b9ae-76b7" name="Heavy Mace" hidden="false" collective="false" import="true" targetId="1231-61b7-e02f-3361" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdfb-7213-e4ab-255f" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="542f-b171-3864-d654" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="dcaf-ae34-84fc-9164" name="Heavy Flail" hidden="false" collective="false" import="true" targetId="87a3-d290-9631-54dc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="067c-9616-8d7c-23d1" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="635.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="725.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d6f1-a4b0-78ba-9010" name="Black Knight Bikers" hidden="false" collective="false" import="true" type="upgrade">
@@ -13420,6 +13423,13 @@
         <infoLink id="b599-a313-3d2e-81ca" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="87a3-d290-9631-54dc" name="Heavy Flail" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e98f-ce4b-4c06-ddc8" name="Heavy Flail" hidden="false" targetId="6e59-0f8f-7c4e-692a" type="profile"/>
+        <infoLink id="bb4d-bc29-25f6-8b3f" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="88ab-c7e7-545a-a035" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="763b-1230-bcad-b19d" name="Leader Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a186-9d3d-21d5-0818">
@@ -14909,7 +14919,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Dark Assault, Dark Resolve, Shield Wall, Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Dark Assault, Grim, Shield Wall, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="8604-29c9-6075-bace" name="Shroud Speeder" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -14943,7 +14953,7 @@
     <profile id="6ea1-5ae5-4539-1099" name="Heavy Mace" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Impact(1)</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Rending</characteristic>
       </characteristics>
     </profile>
     <profile id="542a-104b-9c73-e7bf" name="Twin Plasma Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -15956,6 +15966,12 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6e59-0f8f-7c4e-692a" name="Heavy Flail" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Impact(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
