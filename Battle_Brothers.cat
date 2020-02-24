@@ -3883,6 +3883,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -11691,17 +11694,24 @@
         <infoLink id="93cc-b86b-cfa6-bda1" name="Prime Brothers" hidden="false" targetId="bbe1-413f-34a9-3de8" type="profile"/>
         <infoLink id="a2c1-bf08-5967-25a4" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d6d6-fba5-c7c7-adba" name="Rifle" hidden="false" collective="false" import="true" defaultSelectionEntryId="e1ed-6672-dae1-ba11">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbd9-2f2f-7126-fcc6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b91-480f-a25f-4aa3" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e1ed-6672-dae1-ba11" name="Auto-Rifle" hidden="false" collective="false" import="true" targetId="c585-5a84-313c-a7cf" type="selectionEntry"/>
+            <entryLink id="c84a-480e-1f8f-7c3e" name="Rifle" hidden="false" collective="false" import="true" targetId="e57e-4a03-ae5a-5411" type="selectionEntry"/>
+            <entryLink id="934c-66ef-c1cb-28f3" name="Precision Rifle" hidden="false" collective="false" import="true" targetId="141f-9981-66b1-32bd" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="b955-9ecb-1083-f737" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
+        <entryLink id="b955-9ecb-1083-f737" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23c6-94be-3731-09bf" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28ff-eee6-cbc6-8f0e" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="2a1e-fdb2-db50-36c4" name="Auto-Rifle" hidden="false" collective="false" import="true" targetId="f2a7-6ad7-5096-a448" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f82c-c0db-ff3e-b92a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1ae-e688-a67f-e0b6" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -11711,7 +11721,7 @@
     </selectionEntry>
     <selectionEntry id="deed-eef5-264b-a884" name="Prime Brothers" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="8fd4-9051-acf4-1f50" name="Upgrade one:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8fd4-9051-acf4-1f50" name="Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="39b1-3e89-1877-59e9" name="Medical Training" hidden="false" collective="false" import="true" targetId="8352-cbe6-9410-a422" type="selectionEntry">
               <constraints>
@@ -11721,16 +11731,41 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
               </costs>
             </entryLink>
+            <entryLink id="da63-0674-17ed-77f2" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="e089-6dd6-ec4e-12e6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db95-62d5-51b6-1e50" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f6bd-1bbb-4d3a-ce66" name="Prime Brothers" hidden="false" collective="false" import="true" defaultSelectionEntryId="cbac-8225-4c1d-588f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c5e-bd3f-33cb-eaa2" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="654c-86b5-0bba-3ea0" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="cbac-8225-4c1d-588f" name="Prime Brother" hidden="false" collective="false" import="true" targetId="1545-1608-f888-3398" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ec8-09f8-3f9a-99d5" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ac5b-50d7-b063-18cd" name="Prime Brother (Leader)" hidden="false" collective="false" import="true" targetId="44eb-c1e6-0855-4e65" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6c1-cb81-51df-2576" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="588c-2308-07b5-1ee0" name="Prime Brother (Specialist)" hidden="false" collective="false" import="true" targetId="f3c9-bdf9-78cc-4c35" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="691a-1488-f3e4-316c" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c0c5-193d-3d9f-4716" name="Prime Brother" hidden="false" collective="false" import="true" targetId="1545-1608-f888-3398" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97cf-84f6-d748-de92" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e845-c237-3716-be21" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="249c-d416-9a98-f5c9" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
@@ -11748,12 +11783,17 @@
         </entryLink>
         <entryLink id="4033-d71d-b5cf-a422" name="Wolf Brothers - Counter-Attack" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="a3e4-8ceb-21ff-bfde" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="220.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="240.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c379-e61c-9d54-f055" name="Blaster Brother (Heavy Plasma Rifles)" hidden="false" collective="false" import="true" type="upgrade">
@@ -13508,12 +13548,18 @@
         <infoLink id="8950-e681-1b86-cdec" name="CCW (A1,AP1)" hidden="false" targetId="1380-66c8-7d07-a74d" type="profile"/>
         <infoLink id="c877-b777-4608-f592" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="fd88-1524-b5ee-010c" name="Stomp (Walker)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="b230-be0c-0d9d-e896" name="Stomp (Walker)" hidden="false" targetId="e9e1-eca6-4088-ea07" type="profile"/>
         <infoLink id="e6a3-8b99-3819-e15d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7092-baf4-8ce7-475a" name="Prime Grave Captain" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -13551,22 +13597,34 @@
         <infoLink id="bc36-6123-6c6e-ee63" name="Heavy Carbine" hidden="false" targetId="0065-92af-3416-e66c" type="profile"/>
         <infoLink id="9327-6b95-6218-f56f" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="893b-7055-5ccb-3592" name="Rifle (A2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2279-1460-6388-af72" name="Rifle (A2)" hidden="false" targetId="f5a8-f239-5b36-8477" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="141f-9981-66b1-32bd" name="Precision Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="b7a2-a3ff-bbc5-b287" name="Precision Rifle" hidden="false" targetId="c1a9-364d-6b41-9394" type="profile"/>
         <infoLink id="d897-0143-32d8-2eda" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6c17-17f3-4027-3c9f" name="Flamethrower Pistol" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2b4c-2950-dbdb-d6c5" name="Flamethrower Pistol" hidden="false" targetId="b574-ad82-82b6-8486" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="cd64-9c2b-796a-a23d" name="Energy Sword (Prime)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -13574,12 +13632,18 @@
         <infoLink id="fc80-de4f-94d1-da05" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="48f0-f89a-425a-959c" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="14b5-9b15-044f-e126" name="Energy Fist (Prime)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="dc49-2b5e-222c-e36c" name="Energy Fist (Prime)" hidden="false" targetId="e4c9-94b1-f362-5a2c" type="profile"/>
         <infoLink id="41a7-9f42-1076-f1aa" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a618-db4a-13f7-92a3" name="Energy Hammer (Prime)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -13587,6 +13651,64 @@
         <infoLink id="2fa8-012b-4674-b6d2" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="3dea-6f94-536b-e304" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="44eb-c1e6-0855-4e65" name="Prime Brother (Leader)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="44fe-3bc4-f2e9-4143" name="Prime Brothers" hidden="false" targetId="bbe1-413f-34a9-3de8" type="profile"/>
+        <infoLink id="9eaf-1142-3318-6a9d" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="b018-6367-3c19-cb35" name="Prime Leader Weapons" hidden="false" collective="false" import="true" targetId="d455-2126-cc2a-5f47" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f3c9-bdf9-78cc-4c35" name="Prime Brother (Specialist)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c1cd-3c56-e99c-baba" name="Prime Brothers" hidden="false" targetId="bbe1-413f-34a9-3de8" type="profile"/>
+        <infoLink id="5cad-73ad-8263-87ab" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e7a2-ffcb-5edd-3caf" name="Specialist Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7b1e-271e-a859-f808">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="116e-958b-f0d3-8b5c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4adf-b76b-0b16-a930" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7b1e-271e-a859-f808" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry"/>
+            <entryLink id="d182-9f00-db02-38e9" name="Gravity Rifle" hidden="false" collective="false" import="true" targetId="3e4a-da63-fdf2-c5fb" type="selectionEntry"/>
+            <entryLink id="2235-ec21-e5af-c87b" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry"/>
+            <entryLink id="2ba9-7e7c-bc29-5e5b" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7029-8b4b-9733-1e82" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60b8-4e3f-353b-80c7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4b4-fc41-e55d-466d" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c585-5a84-313c-a7cf" name="Auto-Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7204-92d1-b6e2-b2af" name="Auto-Rifle" hidden="false" targetId="6566-7dec-c93b-88f3" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -14259,6 +14381,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e084-b012-0a76-e2f6" name="Pistol &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -15731,7 +15856,7 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
     <profile id="c049-e130-4093-9256" name="CCW (A3)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -16001,7 +16126,7 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">30&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
     <profile id="c1a9-364d-6b41-9394" name="Precision Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -16015,7 +16140,7 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
     <profile id="bddc-3c21-5d50-b20a" name="Energy Sword (Prime)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
