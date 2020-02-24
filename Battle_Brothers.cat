@@ -11837,7 +11837,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="855a-d205-3a2e-a218" name="Assault Plasma Rifle" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="855a-d205-3a2e-a218" name="Plasma Auto-Rifle" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4875-7da1-fe8e-3bdc" name="Assault Plasma Rifle" hidden="false" targetId="f7d7-670a-422b-d19a" type="profile"/>
         <infoLink id="840a-e806-69ae-a6f3" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -11869,7 +11869,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d0f1-634c-3177-22b2" name="Blaster Brother (Assault Plasma Rifles)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d0f1-634c-3177-22b2" name="Blaster Brother (Plasma Auto-Rfiles)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="c4f3-6447-03f2-f6c5" name="Blaster Brothers" hidden="false" targetId="1a44-a57f-e98b-3cde" type="profile"/>
         <infoLink id="1c1a-d544-c5df-cf38" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
@@ -11900,7 +11900,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c413-f420-4207-b2d5" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c7ff-62e0-4540-db7e" name="Assault Plasma Rifles" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c7ff-62e0-4540-db7e" name="Plasma Auto-Rifles" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="f85a-12f3-6661-7a06" name="Blaster Brother (Assault Plasma Rifles)" hidden="false" collective="false" import="true" targetId="d0f1-634c-3177-22b2" type="selectionEntry">
                   <constraints>
@@ -11941,6 +11941,18 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="4946-0794-e377-2d10" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="3c7d-aa68-9544-df48" name="Medical Training" hidden="false" collective="false" import="true" targetId="8352-cbe6-9410-a422" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2545-6e39-619e-0148" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="0740-eb20-80b7-93b8" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
@@ -11955,7 +11967,17 @@
         </entryLink>
         <entryLink id="9015-976e-5c04-013e" name="Wolf Brothers - Counter-Attack" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="af42-f507-1102-8b38" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="9f80-ec1e-79d0-45e9" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -16029,7 +16051,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
       </characteristics>
     </profile>
-    <profile id="f7d7-670a-422b-d19a" name="Assault Plasma Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="f7d7-670a-422b-d19a" name="Plasma Auto-Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
