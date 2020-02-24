@@ -12726,7 +12726,6 @@
       <infoLinks>
         <infoLink id="a9fe-f688-30b7-f248" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="fe4c-06b7-d0d9-da78" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="c655-ea51-fd9f-780b" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="efdd-6002-bb4e-db87" name="Prime Light Walker" hidden="false" targetId="f2fa-9ae4-c414-6cbe" type="profile"/>
         <infoLink id="1fb6-e4e7-edfe-2c89" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
         <infoLink id="de44-07cb-d6a9-6830" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
@@ -12801,12 +12800,23 @@
         </entryLink>
         <entryLink id="d81c-5fc2-378c-a663" name="Custodian Brothers - Regeneration" hidden="false" collective="false" import="true" targetId="5eba-5a59-c1ab-8cbc" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="2595-a036-6dd3-e780" name="Stomp (Walker)" hidden="false" collective="false" import="true" targetId="fd88-1524-b5ee-010c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44fe-765e-2038-121e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65d5-528a-81c6-06ba" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c202-a087-d18c-8aa7" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
           </costs>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="360.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="470.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9353-6eec-8ab4-0ba9" name="Walker Fist (Prime Light Walker)" hidden="false" collective="false" import="true" type="upgrade">
@@ -16028,7 +16038,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Impact(3), Scout, Tough(9)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Scout, Tough(12)</characteristic>
       </characteristics>
     </profile>
     <profile id="3063-82ba-83de-6710" name="Prime Attack Walker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -16184,9 +16194,9 @@
     </profile>
     <profile id="c336-2c56-db73-c7cc" name="Heavy MG Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(3)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
     <profile id="7f89-0213-b236-a3c4" name="Ancient Banner" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
