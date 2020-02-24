@@ -12261,31 +12261,6 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="240.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="532c-6725-3ef7-1269" name="Elimination Brother" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="cb58-65f6-80c0-468b" name="Elimination Brothers" hidden="false" targetId="896d-5723-bff7-6613" type="profile"/>
-        <infoLink id="86cf-0786-0425-0f63" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="3357-12a7-db36-a539" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-        <infoLink id="1b8e-cd41-ed15-5068" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="1969-1b7f-9e4a-20f9" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8504-f150-baef-feeb" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ca4-8826-1fec-0752" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="1e11-1754-a00b-0cc2" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="64cc-3aa6-e9d1-dedf" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7d6-8aeb-ee14-b0ef" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ce2-5dcf-6322-6e15" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="64cc-3aa6-e9d1-dedf" name="Sniper Rifle" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="81bc-b655-3575-a925" name="Sniper" hidden="false" targetId="2943-e3f6-fb44-ae13" type="rule"/>
@@ -12296,14 +12271,33 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2978-03f1-c623-1271" name="Elimination Brothers" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="495c-1e6a-5a50-0e6b" name="Elimination Brother" hidden="false" collective="false" import="true" targetId="532c-6725-3ef7-1269" type="selectionEntry">
+    <selectionEntry id="2978-03f1-c623-1271" name="Elimination Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e971-98f1-2311-c352" name="Elimination Brothers" hidden="false" targetId="896d-5723-bff7-6613" type="profile"/>
+        <infoLink id="c10b-b194-b160-8df5" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="fdde-8ce0-7b7e-7f32" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="7128-d1e9-203a-4e73" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8fd3-22a2-bcef-10b6" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd99-b4c9-7f79-1a1e">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a84b-128e-2fcd-d561" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8f0-28bf-99ad-c88b" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24a0-1fa9-4679-135f" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c35e-436b-d904-a732" type="max"/>
           </constraints>
-        </entryLink>
+          <entryLinks>
+            <entryLink id="cd99-b4c9-7f79-1a1e" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="77e0-0bbf-54ae-e813" type="selectionEntry"/>
+            <entryLink id="1ce8-64cd-e670-e303" name="Laser Rifle" hidden="false" collective="false" import="true" targetId="f69f-c3c7-8aef-d01b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cb9-57ec-0a6b-acc9" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
         <entryLink id="5cd8-0189-ffdc-9b0e" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
@@ -12316,17 +12310,28 @@
         </entryLink>
         <entryLink id="0073-96c9-9d55-339f" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
         <entryLink id="f386-fda4-c2f2-409f" name="Wolf Brothers - Counter-Attack" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="04fa-9ba6-634d-63d7" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec8a-f737-06de-b015" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="468e-e334-f85b-b5ae" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d680-48aa-75de-6789" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="205.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d984-2f6e-718a-0ff7" name="Fist-Carbine" hidden="false" collective="true" import="true" type="upgrade">
@@ -13807,6 +13812,13 @@
       <infoLinks>
         <infoLink id="ae75-df98-69cc-da5f" name="Heavy Chainsaw Sword (A9)" hidden="false" targetId="8738-edea-82e1-348a" type="profile"/>
         <infoLink id="751f-78da-38ee-f73c" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f69f-c3c7-8aef-d01b" name="Laser Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4435-9a40-d4c0-0424" name="Laser Rifle" hidden="false" targetId="1305-d7c7-ca33-8fdf" type="profile"/>
+        <infoLink id="e346-79f8-9222-88bf" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="e70b-1192-e34f-7c52" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -15895,7 +15907,7 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Scout</characteristic>
       </characteristics>
     </profile>
-    <profile id="896d-5723-bff7-6613" name="Elimination Brothers" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="896d-5723-bff7-6613" name="Elimination Brother" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
@@ -16264,6 +16276,13 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A9</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1305-d7c7-ca33-8fdf" name="Laser Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
