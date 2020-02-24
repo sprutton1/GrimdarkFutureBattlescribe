@@ -5053,10 +5053,10 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1916-4d07-c6cb-0b72" name="Sword" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1916-4d07-c6cb-0b72" name="Sword (Captain)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="74f3-471b-7d3e-f2d7" name="Sword" hidden="false" targetId="37a2-1941-90a5-7b6a" type="profile"/>
-        <infoLink id="6162-694c-c21a-f3ca" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="6162-694c-c21a-f3ca" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -5071,7 +5071,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="86cc-9e22-6960-9f10" name="Spear" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="86cc-9e22-6960-9f10" name="Spear (Captain)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6d68-d3a3-bd1f-7ff5" name="Spear" hidden="false" targetId="2c23-f093-b7c2-29b6" type="profile"/>
         <infoLink id="66e0-c1c3-9214-8e23" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -5105,7 +5105,6 @@
         <infoLink id="5665-6683-8e98-19a7" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="f211-4af8-48a3-5884" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
         <infoLink id="5705-4301-7273-d8c2" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="0433-d4d7-6329-7480" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="59f4-2ef0-68cf-13e7" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4d0c-085e-0831-f692">
@@ -5152,21 +5151,55 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="d7ee-b92f-19ba-9247" name="Axe-Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="2a3e-0ccc-2551-ef08" name="Axe (Captain)" hidden="false" collective="false" import="true" targetId="3c67-faf9-889f-bec7" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d9b-2705-925f-1bc2" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab4b-f275-0070-079f" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="ec37-3a1f-253b-c839" name="Axe-Rifle" hidden="false" collective="false" import="true" targetId="e4c4-169c-560d-e5a3" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1de6-9ab3-90c8-e782" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f68-b3d4-deb7-4cee" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="b40d-4b83-63f3-6a71" name="Energy Lance" hidden="false" collective="false" import="true" targetId="ff42-7a39-9d57-f334" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9644-8598-9eb4-9160" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2742-72af-106f-44f4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b3da-6b5d-c466-99b6" name="Combat Shield" hidden="false" collective="false" import="true" targetId="5d42-38b9-de5e-58fd" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="14e1-022d-4c5d-9735" name="Jetbike" hidden="false" collective="false" import="true" targetId="d5e6-7c9e-bcf1-d156" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b107-a6f4-6640-f4cf" name="Destroyer Armor" hidden="false" collective="false" import="true" targetId="8150-2743-e904-7a5c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="c712-3b23-473b-cff3" name="Combat Shield" hidden="false" collective="false" import="true" targetId="f5b9-642f-6bfe-ce58" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5713-6c39-3f36-8226" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="135.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b122-05bc-5b2d-4d4f" name="High Sister" hidden="false" collective="false" import="true" type="upgrade">
@@ -13409,6 +13442,32 @@
         <infoLink id="b5e5-d1f9-c19f-f999" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="3c67-faf9-889f-bec7" name="Axe (Captain)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d552-ee63-711e-02b1" name="Axe (Captain)" hidden="false" targetId="3ee4-fba4-e780-be25" type="profile"/>
+        <infoLink id="600a-35fe-edfc-a413" name="Poison(X)" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="e4c4-169c-560d-e5a3" name="Axe-Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c1ea-b9fc-6b55-d92b" name="Axe-Rifle" hidden="false" targetId="3fc7-654b-36cf-c038" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="ff42-7a39-9d57-f334" name="Energy Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c1d2-a6bd-cac9-0bf2" name="Energy Lance" hidden="false" targetId="9cb7-64e7-06d1-f371" type="profile"/>
+        <infoLink id="23b8-9239-68d9-f934" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="3980-68db-3599-6404" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="d5e6-7c9e-bcf1-d156" name="Jetbike" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3931-9f4a-6877-dfa5" name="Jetbike" hidden="false" targetId="cdaf-d6ec-0595-9dbc" type="profile"/>
+        <infoLink id="d02a-0b8a-67fa-5412" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="9532-7e75-3db2-5eeb" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="2f6f-c457-bb28-1597" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="763b-1230-bcad-b19d" name="Leader Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a186-9d3d-21d5-0818">
@@ -14251,7 +14310,7 @@
       <description>This model moves 12” when using Advance and 24” when using Rush/Charge.</description>
     </rule>
     <rule id="bd7f-ef2d-b55f-bc58" name="Anti-Psychic" hidden="false">
-      <description>This model gets +2 to melee and shooting rolls when targeting units with Psychic models in them.</description>
+      <description>This unit may block spells as if it had the Psychic special rule.	</description>
     </rule>
     <rule id="f93e-33e7-6cae-cba4" name="Eternal Vigilant" hidden="false">
       <description>The hero and his unit get +1 to their melee rolls.</description>
@@ -14777,7 +14836,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fearless, Hero, Regeneration, Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Hero, Regeneration, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="780f-7669-8076-5c49" name="High Sister" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -14829,9 +14888,9 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
-    <profile id="2c23-f093-b7c2-29b6" name="Spear" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="2c23-f093-b7c2-29b6" name="Spear (Captain)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
-        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A5</characteristic>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
@@ -14854,10 +14913,10 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
-    <profile id="37a2-1941-90a5-7b6a" name="Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="37a2-1941-90a5-7b6a" name="Sword (Captain)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
-        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A5</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
       </characteristics>
     </profile>
     <profile id="232e-a3ff-fda4-7f0d" name="Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -15885,6 +15944,30 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3ee4-fba4-e780-be25" name="Axe (Captain)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3fc7-654b-36cf-c038" name="Axe-Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9cb7-64e7-06d1-f371" name="Energy Lance" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Impact(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cdaf-d6ec-0595-9dbc" name="Jetbike" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Fast, Impact(1), Strider</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
