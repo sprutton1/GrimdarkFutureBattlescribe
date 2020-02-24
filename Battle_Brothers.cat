@@ -12868,12 +12868,11 @@
       <infoLinks>
         <infoLink id="5a9a-b569-52a6-98fc" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="30e3-79fd-b270-a642" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="391a-ef45-a53a-1ddb" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="484d-9e3d-792b-0311" name="Prime Attack Walker" hidden="false" targetId="3063-82ba-83de-6710" type="profile"/>
         <infoLink id="c096-9c11-1404-061d" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="76a7-8b80-7832-5821" name="Arm 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="c72a-b80d-06b3-407d">
+        <selectionEntryGroup id="76a7-8b80-7832-5821" name="Right Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="c72a-b80d-06b3-407d">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fe0-5ed8-9bfc-2829" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d2b-adbb-0770-6cfb" type="min"/>
@@ -12894,27 +12893,24 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1ff4-4c27-454a-88e8" name="Upgrades" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1ff4-4c27-454a-88e8" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a679-4789-a08f-eabe" type="max"/>
+          </constraints>
           <entryLinks>
             <entryLink id="be19-8207-a02a-b0ee" name="Gatling Gun" hidden="false" collective="false" import="true" targetId="2680-ae75-416d-93ea" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1425-ddf7-3647-c5af" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
               </costs>
             </entryLink>
             <entryLink id="83ac-c7bc-ee3b-f401" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a5b-51b3-f947-84d0" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6e8b-39c3-1c91-caaa" name="Arm 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="a141-47a1-ed0d-c87e">
+        <selectionEntryGroup id="6e8b-39c3-1c91-caaa" name="Left Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="a141-47a1-ed0d-c87e">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bde9-97dd-2267-f791" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76e5-86ed-d267-9a65" type="min"/>
@@ -12951,14 +12947,25 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
-        <entryLink id="9b65-5c68-5890-ce5c" name="Custodian Brothers - Regeneration" hidden="false" collective="false" import="true" targetId="5eba-5a59-c1ab-8cbc" type="selectionEntry">
+        <entryLink id="e7cd-5d22-e244-6e80" name="Stomp (Walker)" hidden="false" collective="false" import="true" targetId="fd88-1524-b5ee-010c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b806-0ae2-4e69-9410" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9452-c4e6-8ab2-6c7a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6d5a-e386-efc9-15d0" name="Custodian Brothers - Regeneration" hidden="false" collective="false" import="true" targetId="5eba-5a59-c1ab-8cbc" type="selectionEntry">
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="5cdc-913a-45ff-1641" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
           </costs>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="530.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="630.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c262-f674-c03e-dcae" name="Twin Storm Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -16045,7 +16052,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Impact(3), Tough(12)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Tough(15)</characteristic>
       </characteristics>
     </profile>
     <profile id="178e-604a-1e45-0b70" name="Heavy Anti-Grav Tank" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
