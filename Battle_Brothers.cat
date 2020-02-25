@@ -7820,32 +7820,36 @@
         <infoLink id="c9ef-991f-eeb1-003d" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="ae24-e273-e99d-cd8a" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="ae7a-5645-ba12-8e61" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b92-9b38-8dfe-b2d5">
+      <selectionEntries>
+        <selectionEntry id="36b1-e86f-3fc9-c8d5" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a20a-8cf4-6799-6e18" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a0d-e718-fd83-40f2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d405-cb9f-74d0-9c8c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="cfba-028e-661c-28c5" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+            <infoLink id="8562-9562-f13d-f89d" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="11ac-0e55-b6ad-8851" name="Knight Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="ef87-9afc-97d0-abdf" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a3f1-c0f2-50bd-0c7e" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="cc8c-0134-ebc2-6374">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fbc-77df-73ee-5376" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bddb-d9b7-0922-6122" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="0708-739b-0aa3-3445" name="Daemon Hammer" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5dc1-5d18-cb51-79f6" name="2x Energy Falchions" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="887d-5fb6-9d3d-b9a3" name="Daemon Hammer" hidden="false" collective="false" import="true" targetId="10b6-089c-2053-fa2d" type="selectionEntry">
+                <entryLink id="4f31-e7bc-32e0-8798" name="Energy Falchions" hidden="false" collective="false" import="true" targetId="50ff-a6f0-26a7-44be" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a38-89db-1a98-ec9e" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3801-1057-a477-6a4b" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="43e8-ad20-f4da-8bee" name="Energy Halberd" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="5d98-4af4-1bb2-2bb0" name="Energy Halberd" hidden="false" collective="false" import="true" targetId="7b55-7b95-caec-2fe5" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a8a-d029-957a-d1ac" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7222-e6a3-c135-47b4" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6372-0798-370c-a123" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="460d-b186-6953-17d9" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -7853,50 +7857,21 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0bbc-e799-504d-36a4" name="2x Energy Falchions" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="79d1-b23c-27d5-280a" name="Energy Falchions" hidden="false" collective="false" import="true" targetId="50ff-a6f0-26a7-44be" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab10-5779-9849-555e" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a40-3fec-5c2e-4aac" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6f0a-ed04-8692-f82e" name="Energy Staff" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="3de8-30c8-44b8-3ca9" name="Energy Staff" hidden="false" collective="false" import="true" targetId="5812-eb85-ab7d-c183" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f319-c166-eab8-cc13" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65c4-4c8b-4d87-2315" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2b92-9b38-8dfe-b2d5" name="Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="4452-3ef3-9481-c91e" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6ec-85d7-fbbe-d20a" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f44-c991-b762-4197" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="cc8c-0134-ebc2-6374" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry"/>
+            <entryLink id="e0aa-f8c1-5b87-57a0" name="Energy Staff" hidden="false" collective="false" import="true" targetId="5812-eb85-ab7d-c183" type="selectionEntry"/>
+            <entryLink id="f1b9-86ee-e08d-9325" name="Energy Halberd" hidden="false" collective="false" import="true" targetId="7b55-7b95-caec-2fe5" type="selectionEntry"/>
+            <entryLink id="c09a-5eec-c240-d87b" name="Daemon Hammer" hidden="false" collective="false" import="true" targetId="10b6-089c-2053-fa2d" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ddbb-5efb-913a-c7e2" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="f12b-5533-2329-5b92" type="selectionEntry">
+        <entryLink id="ddbb-5efb-913a-c7e2" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff9a-95e5-98de-e97b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c12f-0c1a-cf6a-e1fa" type="min"/>
@@ -7915,71 +7890,84 @@
         <infoLink id="3358-e660-6412-1c0f" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
         <infoLink id="abef-06b3-4489-1043" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="e76e-fa24-8c62-27cf" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6352-f27d-df81-b164">
+      <selectionEntries>
+        <selectionEntry id="67c9-4895-0125-1c69" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a533-e10a-7755-3f2c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4490-767f-1a05-bc07" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5ab-6a55-2150-bdd8" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="fb15-4d69-723a-b067" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+            <infoLink id="7146-dc2f-5be4-b278" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="237c-8d76-589d-6093" name="Knight Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="ef87-9afc-97d0-abdf" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e849-c767-165d-7b9d" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ee3-eb2e-f528-2d76">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b0b-350b-da05-d206" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d3d-aa57-5c67-642a" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="47e2-a99d-1219-0df1" name="Psychic Silencer" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="396e-b8e3-be93-d391" name="2x Energy Falchions" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="ba66-6d46-50a9-4616" name="Psychic Silencer" hidden="false" collective="false" import="true" targetId="ad33-44fc-7c8b-a775" type="selectionEntry">
+                <entryLink id="b983-099d-2a9a-1261" name="Energy Falchions" hidden="false" collective="false" import="true" targetId="50ff-a6f0-26a7-44be" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf78-8530-9583-a2cc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a37d-3658-e493-646b" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf9-5087-963c-c0d3" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8098-f6e3-904e-a6f2" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="17ce-e8ba-0631-b384" name="Psychic Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="ad95-c14f-e2bd-5890" name="Psychic Cannon" hidden="false" collective="false" import="true" targetId="c6a1-a06c-031f-3a28" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f578-922c-19c1-26fa" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75a7-f811-10e4-b00f" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6352-f27d-df81-b164" name="Incinerator" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="5256-e245-b501-cc82" name="Incinerator" hidden="false" collective="false" import="true" targetId="10a4-0331-6a0c-0de6" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbd4-6451-6a95-2ee0" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="353a-8765-e84d-a00a" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="9ee3-eb2e-f528-2d76" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry"/>
+            <entryLink id="95f9-62dc-02ac-13cf" name="Energy Staff" hidden="false" collective="false" import="true" targetId="5812-eb85-ab7d-c183" type="selectionEntry"/>
+            <entryLink id="764d-cc9b-4177-138a" name="Energy Halberd" hidden="false" collective="false" import="true" targetId="7b55-7b95-caec-2fe5" type="selectionEntry"/>
+            <entryLink id="5901-3d98-0b8e-96e6" name="Daemon Hammer" hidden="false" collective="false" import="true" targetId="10b6-089c-2053-fa2d" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6439-ae9b-2ab3-913c" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ac64-c7a3-f8e1-66fa">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="922f-f178-76c2-18d2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8504-5250-781f-d253" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9ff0-ecb7-a0fc-0b41" name="Psychic Silencer" hidden="false" collective="false" import="true" targetId="ad33-44fc-7c8b-a775" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ee3e-5160-8abe-8a57" name="Psychic Cannon" hidden="false" collective="false" import="true" targetId="c6a1-a06c-031f-3a28" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ac64-c7a3-f8e1-66fa" name="Incinerator" hidden="false" collective="false" import="true" targetId="10a4-0331-6a0c-0de6" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="5ad2-0e90-72e2-dc4e" name="Energy Sword" hidden="false" collective="false" import="true" targetId="8716-34a0-f5b9-30b2" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7596-ca5c-2e51-92b6" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9249-2385-7a48-e1a4" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9a90-8232-9496-b9aa" name="Knight Destroyers" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="7311-b74d-1ae1-e5b4" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
-      </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="152a-46cd-9f68-039a" name="Brothers" hidden="false" collective="false" import="true" defaultSelectionEntryId="035e-23a4-5bb0-802e">
           <constraints>
@@ -8007,9 +7995,10 @@
               </constraints>
               <infoLinks>
                 <infoLink id="8c21-04c4-9f69-81c3" name="Paladins" hidden="false" targetId="622f-f793-edf3-3f22" type="profile"/>
+                <infoLink id="3318-87f8-02f7-8b59" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="330.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -8018,41 +8007,22 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1490-7a83-1e70-a16f" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="85fa-94dd-03e0-6279" name="Medical Training" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="3b4c-2b37-d06d-c08c" name="Medical Training" hidden="false" collective="false" import="true" targetId="8352-cbe6-9410-a422" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e75c-f974-35e2-fa6c" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a03a-67e5-5de7-ec66" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="b5f4-df58-2994-8fe6" name="Medical Training" hidden="false" collective="false" import="true" targetId="8352-cbe6-9410-a422" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="8888-fc42-ed98-a8c1" name="Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="3932-e6d5-62ce-4e26" name="Battle Standard" hidden="false" collective="false" import="true" targetId="398c-3d34-79c6-a425" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dcf-6776-5135-30aa" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1f1-dffd-cf40-da74" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="4e19-f4ca-14ee-c812" name="Battle Standard" hidden="false" collective="false" import="true" targetId="398c-3d34-79c6-a425" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="6c2d-5da9-02a0-452c" name="Spells" hidden="false" collective="false" import="true" targetId="7cab-4ff5-56e3-14cd" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="605.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="615.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="958b-7da3-b06b-63d3" name="Knight Walker" hidden="false" collective="false" import="true" type="upgrade">
@@ -14972,7 +14942,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Brotherhood, Fearless, Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Aegis, Ambush, Fearless, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="ce11-7786-0ce0-7699" name="Knight Walker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -15065,7 +15035,7 @@
     </profile>
     <profile id="622f-f793-edf3-3f22" name="Paladins" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Tough(+3)</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Impact(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="fd09-5160-497c-7aff" name="Heavy Incinerator" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
