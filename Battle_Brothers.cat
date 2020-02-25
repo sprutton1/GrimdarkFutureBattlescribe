@@ -8049,6 +8049,9 @@
           <entryLinks>
             <entryLink id="68af-abbd-4a4c-7c47" name="Knight Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="ef87-9afc-97d0-abdf" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -8999,12 +9002,13 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="365.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="21ae-cfbf-b345-5314" name="Cyborg Wolf" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="21ae-cfbf-b345-5314" name="Wolf" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ce75-c507-f8b7-62ac" name="Cyborg Wolf" hidden="false" targetId="88b6-3cef-d05a-0798" type="profile"/>
         <infoLink id="bb20-d437-1eb0-d79b" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
         <infoLink id="a87f-7241-c3e3-d379" name="Counter-Attack" hidden="false" targetId="5c24-d8ee-b4ed-4c8d" type="rule"/>
         <infoLink id="7fdb-f4f0-b846-628d" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="d8bb-c5c6-90e8-76aa" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="427a-733d-0159-6bde" name="Claws" hidden="false" collective="false" import="true" targetId="a8f4-d9ee-4670-fd42" type="selectionEntry">
@@ -9026,7 +9030,24 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2fe2-f15a-5e23-4215" name="Cyborg Wolves" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2fe2-f15a-5e23-4215" name="Wolves" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntries>
+        <selectionEntry id="f761-c505-02fb-72d1" name="Cyborg Bodies" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5499-6199-c314-5989" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="df74-2f72-2cc6-942d" name="Cyborg Bodies" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Defense +1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="28e7-0c16-f710-1092" name="Cyborg Wolf" hidden="false" collective="false" import="true" targetId="21ae-cfbf-b345-5314" type="selectionEntry">
           <constraints>
@@ -12490,6 +12511,9 @@
         <infoLink id="bf31-e0ad-54f3-de0c" name="Stomp (Knight Walker)" hidden="false" targetId="9ee2-3d2c-f13b-6c65" type="profile"/>
         <infoLink id="f60e-eb6e-1651-a83b" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5ab5-bbc9-2858-fd74" name="Great Wolf Mount" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -12505,12 +12529,18 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b3f8-ec99-741a-436e" name="Claws (Great Wolf)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="206e-eb89-2dca-6b05" name="Claws (AP1)" hidden="false" targetId="4bfd-85ee-240c-f5f9" type="profile"/>
         <infoLink id="e442-0b40-71c7-3670" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bba9-1bd4-20c7-921a" name="Wolf Destroyer (Energy Claws)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -13431,6 +13461,9 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="6fb8-da3b-0df3-1851" name="2x Energy Claws" hidden="false" collective="false" import="true" type="upgrade">
           <entryLinks>
@@ -14477,11 +14510,11 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Counter-Attack, Fast, Fearless, Tough(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="88b6-3cef-d05a-0798" name="Cyborg Wolf" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="88b6-3cef-d05a-0798" name="Wolf" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
-        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Counter-Attack, Fast, Strider</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Counter, Fast, Impact(1), Strider</characteristic>
       </characteristics>
     </profile>
     <profile id="9d9a-bc3f-b4f9-2387" name="Wolf Walker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -14508,7 +14541,7 @@
     <profile id="b093-057f-ef7e-7edf" name="Guard Wolf" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
       </characteristics>
     </profile>
     <profile id="39ad-81c8-533d-3a8f" name="Heavy Energy Axe" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -14569,7 +14602,7 @@
     <profile id="fa11-1250-0332-9b2c" name="Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
       </characteristics>
     </profile>
     <profile id="3267-d4d5-e839-e742" name="Frost Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
