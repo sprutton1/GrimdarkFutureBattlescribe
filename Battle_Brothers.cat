@@ -7470,16 +7470,18 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="af9c-19fd-a6b5-cfd2" name="Chosen Knight" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="af9c-19fd-a6b5-cfd2" name="Knight Champion" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9b83-5a94-4998-20d7" name="Chosen Knight" hidden="false" targetId="e113-68fd-52bf-d3ef" type="profile"/>
         <infoLink id="05e7-e001-679c-cf1a" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="b20f-c737-a3bd-e50a" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
         <infoLink id="112c-117c-6e8f-1c5c" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="25b6-8bd4-5ee9-807b" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+        <infoLink id="da71-b49b-112d-f951" name="Combat Master" hidden="false" targetId="8efa-bc76-b06a-4e99" type="rule"/>
+        <infoLink id="e2d0-a336-ecb4-ff99" name="Aegis" hidden="false" targetId="ed8b-a6ad-6d94-9c14" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="2eab-3d14-875e-af7f" name="Spells" hidden="false" collective="false" import="true" targetId="7cab-4ff5-56e3-14cd" type="selectionEntryGroup"/>
+        <entryLink id="2eab-3d14-875e-af7f" name="Knight Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="ef87-9afc-97d0-abdf" type="selectionEntryGroup"/>
         <entryLink id="4ffe-d87c-fff1-ea1b" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aae8-3f15-dac4-b435" type="max"/>
@@ -7494,7 +7496,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="225.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0976-4e28-a1e6-addf" name="Knight Brother" hidden="false" collective="false" import="true" type="upgrade">
@@ -14104,6 +14106,13 @@
     <rule id="04cf-fd8f-5f82-c13d" name="Medical Training" publicationId="a380-f550-5f9a-c792" hidden="false">
       <description>This model and his unit get the Regeneration rule.</description>
     </rule>
+    <rule id="8efa-bc76-b06a-4e99" name="Combat Master" hidden="false">
+      <description>When the hero fights in melee pick one of the following stances:
+- Ox: +1 to hit
+- Plow: AP(+1)
+- Fool: Rending
+- Hoof: Impact(1)	</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="f641-a58c-570f-e759" name="Captain" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -14859,11 +14868,11 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Sniper</characteristic>
       </characteristics>
     </profile>
-    <profile id="e113-68fd-52bf-d3ef" name="Chosen Knight" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="e113-68fd-52bf-d3ef" name="Knight Champion" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Hero, Psychic(1), Tough(6)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Aegis, Combat Master, Fearless, Hero, Psychic(1), Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="0a8d-b93d-e9ec-3b53" name="Knight Brother" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -14896,38 +14905,38 @@
     </profile>
     <profile id="acfc-c875-0b17-ad85" name="Purge" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24” must take a morale test. If failed it takes D3 wounds.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target 2 enemy units within 12&quot; must take a morale test each. If failed they take 8 automatic hits with AP(2).</characteristic>
       </characteristics>
     </profile>
     <profile id="3e18-13a9-ea75-8c8c" name="Strike" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">The psychic and his unit get AP(+2) in melee until the end of the round.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets AP(+1) next time it fights in melee.</characteristic>
       </characteristics>
     </profile>
     <profile id="35d0-8360-5f57-962c" name="Ward" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">The psychic and his unit get the Regeneration rule until the end of the round.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets Stealth next time it is shot at.</characteristic>
       </characteristics>
     </profile>
     <profile id="0296-7448-dede-860b" name="Cleanse" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12” takes 2D6 automatic hits.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 8 automatic hits with AP(1).</characteristic>
       </characteristics>
     </profile>
     <profile id="3e78-1e1c-cdad-2e66" name="Doom" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12” takes D2 automatic hits with AP(4) and Deadly(6).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 1 automatic hit with AP(4) and Deadly(3).</characteristic>
       </characteristics>
     </profile>
     <profile id="3ff3-44b5-785c-f412" name="Warp" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">The psychic and his unit may be placed anywhere on the table over 12” away from enemy units.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may be placed anywhere within 9&quot; of its current position, ignoring units and terrain.</characteristic>
       </characteristics>
     </profile>
     <profile id="d6dc-ad74-772e-edde" name="Incinerator" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
