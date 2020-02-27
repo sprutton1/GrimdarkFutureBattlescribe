@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="df4c-bebc-a82e-f430" name="Alien Hives" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="df4c-bebc-a82e-f430" name="Alien Hives" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication id="3518-c2b3-bfde-3ff1" name="Alien Hives v2.2"/>
+    <publication id="3518-c2b3-bfde-3ff1" name="Alien Hives v2.7"/>
   </publications>
   <entryLinks>
     <entryLink id="a502-27a4-fc46-4917" name="Hive Lord" hidden="false" collective="false" import="true" targetId="b4ec-35df-a8ec-3001" type="selectionEntry"/>
@@ -3201,29 +3201,32 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="9a50-ebf7-113d-0a93" name="Explosive Head" hidden="false">
-      <description>If this model is ever engaged in melee it is immediately killed and the enemy takes 3 automatic hits.</description>
+    <rule id="9a50-ebf7-113d-0a93" name="Explosive Head" publicationId="3518-c2b3-bfde-3ff1" hidden="false">
+      <description>If this model is ever engaged in melee it is immediately killed and the enemy takes 3 hits for Spores and 9 hits for a Massive Spore. Additionally this model automatically passes all morale tests.</description>
     </rule>
-    <rule id="b7c0-78ce-1622-6361" name="Pheromone" hidden="false">
-      <description>When this unit is activated you may nominate 2 friendly units within 12”, which get Fearless until the end of the round.</description>
+    <rule id="b7c0-78ce-1622-6361" name="Pheromones" publicationId="3518-c2b3-bfde-3ff1" hidden="false">
+      <description>When this unit is activated pick 2 friendly units within 12&quot;, which get +1 to their rolls next time they take a morale test.</description>
     </rule>
-    <rule id="e84b-2811-0895-94c9" name="Shrouding Mist" hidden="false">
-      <description>When this unit is activated you may nominate 2 friendly units within 6”, which get Stealth until the end of the round.</description>
+    <rule id="e84b-2811-0895-94c9" name="Shrouding Mist" publicationId="3518-c2b3-bfde-3ff1" hidden="false">
+      <description>When this unit is activated pick 2 friendly units within 6”, which get Stealth next time they are shot at.</description>
     </rule>
-    <rule id="d9c2-922a-69c6-eec4" name="Spores" hidden="false">
-      <description>If this weapon misses you may place a unit of Spores 12” away from the target, but the position is decided by your opponent. Note that this new unit can’t be activated on the round in which it is placed.</description>
+    <rule id="d9c2-922a-69c6-eec4" name="Spores" publicationId="3518-c2b3-bfde-3ff1" hidden="false">
+      <description>If this weapon misses you may place a unit of 3 Spores or 1 Massive Spore 12&quot; away from the target, but the position is decided by your opponent. Note that this new unit can&apos;t be activated on the round in which it is placed.</description>
     </rule>
-    <rule id="8272-5465-c7a2-8ada" name="Psychic Synapse" hidden="false">
-      <description>This unit counts as having Psychic(X), where X is the number of models in it. Only one model may cast spells per round.</description>
+    <rule id="8272-5465-c7a2-8ada" name="Psychic Synapse" publicationId="3518-c2b3-bfde-3ff1" hidden="false">
+      <description>This unit counts as having Psychic(X), where X is the number of models in it. Only one model may cast or block spells each round.</description>
     </rule>
-    <rule id="9f61-9c21-1e77-176f" name="Spawn" hidden="false">
-      <description>When this unit is activated you may roll one die, and on a 4+ you may place one unit of Grunts within 6”. Note that this new unit can’t be activated on the round in which it is placed.</description>
+    <rule id="9f61-9c21-1e77-176f" name="Spawn Grunts" publicationId="3518-c2b3-bfde-3ff1" hidden="false">
+      <description>When this unit is activated you may place a unit of 5 Grunts fully within 6&quot;.</description>
     </rule>
-    <rule id="0bf2-d8cc-a5ce-d06f" name="Surprise Attack" hidden="false">
-      <description>This unit may be placed up to 1” away from enemy units when using Ambush, and once deployed one enemy unit within 3” of this unit immediately takes 6 hits with AP(2).</description>
+    <rule id="0bf2-d8cc-a5ce-d06f" name="Surprise Attack" publicationId="3518-c2b3-bfde-3ff1" hidden="false">
+      <description>This unit counts as having the Ambush rule and may be deployed up to 3&quot; away from enemy units. Once the unit is deployed roll 4 dice, for each 4+ it deals 3 hits with AP(2) to one enemy unit within 3&quot; (this may target multiple units).</description>
     </rule>
     <rule id="9c8c-ca69-9384-405f" name="Transport Spore" hidden="false">
       <description>This unit may transport up to 11 models, or use all of its transport capacity to carry one Carnivo-Rex, Psycho-Rex or Toxico-Rex.</description>
+    </rule>
+    <rule id="74c2-7341-acbc-48a9" name="Psychic Barrier" publicationId="3518-c2b3-bfde-3ff1" hidden="false">
+      <description>This model may block spells as if it had the Psychic special rule. If it is a Psychic then it gets +1 to spell block rolls.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -3587,38 +3590,38 @@
     </profile>
     <profile id="7796-3eef-4798-4f42" name="Shriek" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18” must take a morale test. If failed it takes D3 wounds.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target 2 enemy units within 6&quot; take 6 automatic hits with AP(2) each.</characteristic>
       </characteristics>
     </profile>
     <profile id="7872-f9fd-387f-5980" name="Terror" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 30” must immediately take a morale test. If failed it takes 1 automatic wound.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24&quot; must take a morale test. If failed it takes 12 automatic hits at AP(1).</characteristic>
       </characteristics>
     </profile>
-    <profile id="8bd3-f59f-92a2-647c" name="Overwhelm Senses" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="8bd3-f59f-92a2-647c" name="Overwhelm" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12” gets -1 to its melee and shooting rolls.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; gets -1 to its rolls next time it shoots.</characteristic>
       </characteristics>
     </profile>
     <profile id="b6f9-c08f-ce8e-349f" name="Drive Swarm" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 24” may shoot even after using Rush actions until the end of the round.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may immediately move by up to 9&quot;.</characteristic>
       </characteristics>
     </profile>
     <profile id="6a62-5e67-4d62-9fd8" name="Infuse Life" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12” gets Regeneration until the end of the round.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 18” gets Regeneration next time it takes wounds.</characteristic>
       </characteristics>
     </profile>
     <profile id="f8b3-90ca-878c-8da4" name="Psychic Blast" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18” takes 1 automatic hit with AP(4) and Deadly(6).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 1 hit with AP(4) and Deadly(3).</characteristic>
       </characteristics>
     </profile>
     <profile id="6d19-c7c8-d468-1872" name="Twin Bio-Pistols" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">

@@ -62,11 +62,11 @@ table!
 | Army | Version | Progress |
 |---|---|---|
 |Game System|v2.7|Done|
-|Alien Hives|v2.2|Done|
-|Battle Brothers|Main v2.4 - Detachments 2.5|Done|
+|Alien Hives|v2.7|Done|
+|Battle Brothers|Main v2.10 - Prime v2.10 - Detachments v2.9|Done|
 |Battle Sisters|v2.1|Done|
 |Dark Elf Raiders|v2.3|Done|
-|Dwarf Guilds|v2.1|Done|
+|Dwarf Guilds|v2.3|Done|
 |Havoc Brothers|Main v2.4 - Detachments v2.4|Done|
 |High Elf Fleets|v2.3|Done|
 |Human Defense Force|v2.2|Done|
@@ -77,7 +77,7 @@ table!
 |Ratmen Clans|v2.3|Done|
 |Rebel Guerrillas|-|Not started|
 |Robot Legions|v2.4|Done|
-|Soul-Snatchers|-|Not started|
+|Soul-Snatchers|v2.6|Done|
 |TAO Coalition|v2.4|Done|
 |Titan Lords|v2.2|Done|
 |Wormhole Daemons|-|Not started|
