@@ -38,184 +38,230 @@
         <infoLink id="ecff-cba8-c52a-083e" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="a8d8-7afe-a284-3be1" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
         <infoLink id="cf84-10fc-a3dd-fb16" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-        <infoLink id="297a-0f21-e41f-e62d" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="e172-e433-9f19-6124" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="fa6b-1d6c-e310-2a18" name="Hive Lord" hidden="false" targetId="2005-c874-8d25-283d" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="40b8-788f-710d-32bf" name="Upgrade with one:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="3d87-fd08-4175-8f50" name="Weapons - Arms [pick 2]" hidden="false" collective="false" import="true" defaultSelectionEntryId="26ed-65af-1f50-6273">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12a9-ce3c-c12d-7ae9" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8951-6b95-6507-762e" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c47e-99aa-8090-fb95" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c208-e2ab-c678-7102" name="Razor Claws" page="" hidden="false" collective="false" import="true" targetId="c76e-deb8-200c-e75a" type="selectionEntry">
+            <entryLink id="26ed-65af-1f50-6273" name="Razor Claws" hidden="false" collective="false" import="true" targetId="c76e-deb8-200c-e75a" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f50b-bba5-41f0-896a" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e095-fb44-07a4-0d35" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ecdf-d337-16a9-704e" name="Piercing Claws (A3,AP2)" hidden="false" collective="false" import="true" targetId="3ad1-63ca-437f-86f3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ee-3e21-ed36-d6ce" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2ca2-1b1b-3519-7eb9" name="Smashing Claw (A3,AP4)" hidden="false" collective="false" import="true" targetId="86f9-3f6a-6b08-f085" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4de6-1caf-8d96-dd3f" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d955-ae13-37d9-9f93" name="Serrated Claws (A6,AP2)" hidden="false" collective="false" import="true" targetId="4339-677c-1361-9190" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6eb-0d80-6501-1adb" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="7581-2710-ee2a-ad7c" name="Twin Bio-Pistols" hidden="false" collective="false" import="true" targetId="76ac-3068-350d-19e1" type="selectionEntry">
+            <entryLink id="1179-3886-cfea-dd28" name="Sword Claws (A3,AP2)" hidden="false" collective="false" import="true" targetId="5dc8-5fec-55fe-de7a" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5eba-63bb-734d-11c8" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebd6-a7ab-46fd-2915" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="c05c-b235-68dd-bb1e" name="Bio-Carbine" hidden="false" collective="false" import="true" targetId="aede-097e-fe3f-bc18" type="selectionEntry">
+            <entryLink id="beb1-a19d-c112-5ad0" name="Whip Limb &amp; Sword Claw (A2,AP1)" hidden="false" collective="false" import="true" targetId="4b6a-becd-466c-f590" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a324-4535-2775-129d" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f0-8deb-38d4-dc5a" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="e407-3f17-e3c7-7b3c" name="Heavy Bio-Carbine" hidden="false" collective="false" import="true" targetId="0c5b-9d5b-8488-a3ab" type="selectionEntry">
+            <entryLink id="fc33-bc8d-2a92-a531" name="Twin Bio-Pistols" hidden="false" collective="false" import="true" targetId="76ac-3068-350d-19e1" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb56-db53-7494-bf81" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8999-71ba-ea16-c195" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f366-310a-538a-646a" name="Heavy Bio-Carbine" hidden="false" collective="false" import="true" targetId="0c5b-9d5b-8488-a3ab" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab60-657f-aea1-bc2d" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="c538-dbe4-7b3b-8c32" name="Barb-Cannon" hidden="false" collective="false" import="true" targetId="0796-3b38-5f88-4f96" type="selectionEntry">
+            <entryLink id="05b6-7360-6a12-1ec3" name="Barb-Cannon" hidden="false" collective="false" import="true" targetId="0796-3b38-5f88-4f96" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ab1-1e33-874f-173a" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="887e-abd5-2b8e-0125" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="37a0-9e71-c944-4a2b" name="Acid Cannon" hidden="false" collective="false" import="true" targetId="6df6-dafc-66b8-08c8" type="selectionEntry">
+            <entryLink id="e2f7-8d1d-42d5-63d9" name="Acid Cannon" hidden="false" collective="false" import="true" targetId="6df6-dafc-66b8-08c8" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a77e-9f39-fece-7ab8" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="2ef4-eb85-777b-8067" name="Upgrade with one:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8db9-33c1-2462-f029" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="2e38-12ac-0feb-aebe" name="Shredding Hooks" hidden="false" collective="false" import="true" targetId="7f7d-756a-e1aa-a78e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2564-4f41-d0f5-be7d" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e807-1cc8-7e2d-089e" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </entryLink>
-            <entryLink id="1809-0e30-eb70-e481" name="Shock Hooks" hidden="false" collective="false" import="true" targetId="117b-ca3d-57ce-d6aa" type="selectionEntry">
+            <entryLink id="559d-9108-351b-d2be" name="Heavy Bio-Spitter" hidden="false" collective="false" import="true" targetId="abc4-b335-2409-eca3" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d23-528f-edf3-543a" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="175a-c4d5-87cd-54cd" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
             </entryLink>
-            <entryLink id="7958-02ad-c517-8c9f" name="Poison Hooks" hidden="false" collective="false" import="true" targetId="31ab-9e78-2768-bc9a" type="selectionEntry">
+            <entryLink id="5024-6e16-88c8-b3f8" name="Heavy Barb Cannon" hidden="false" collective="false" import="true" targetId="17ea-ec1a-1358-8440" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54b5-ebc4-cb94-f27f" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5838-7f8c-b261-18bb" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="65a1-de37-7717-56ac" name="Heavy Acid Cannon" hidden="false" collective="false" import="true" targetId="e2d8-c57c-c20b-bd7a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a78-053c-3a90-f3ef" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="4b78-3fb2-0f71-6db7" name="Bio-Carbine" hidden="false" collective="false" import="true" targetId="aaaa-2ae3-b951-327b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3372-0860-388b-4e2b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="76ae-4857-2ff5-9f3d" name="Bio-Spitter" hidden="false" collective="false" import="true" targetId="8021-94c2-4f34-b199" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="528c-c9a9-87ce-2f6f" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="80a5-18e4-a5c8-6478" name="Weapons - Tail [max 1]" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acc6-9254-2b8e-f83f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="cd90-5ce1-783b-e9d3" name="Tail Pincer" hidden="false" collective="false" import="true" targetId="38f3-89bc-9e12-0cae" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="feda-d9e6-33d2-7ab2" name="Tail Mace" hidden="false" collective="false" import="true" targetId="3226-9559-4259-5bb3" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d1e6-4823-80a8-e30b" name="Tail Scythe" hidden="false" collective="false" import="true" targetId="76af-6ed6-c8c0-9cc9" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="aadc-b63c-137b-2084" name="Tail Whip" hidden="false" collective="false" import="true" targetId="df63-ba7f-f649-3504" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0a29-c8f5-6bcd-c824" name="Weapons - Hooks [max 1]" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8502-e733-de38-375a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8d64-1880-ac8f-39f3" name="Poison Hooks" hidden="false" collective="false" import="true" targetId="31ab-9e78-2768-bc9a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="321f-55d6-b8e3-1f92" name="Shredding Hooks" hidden="false" collective="false" import="true" targetId="7f7d-756a-e1aa-a78e" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="151a-4c8e-d52c-6d3d" name="Shock Hooks" hidden="false" collective="false" import="true" targetId="117b-ca3d-57ce-d6aa" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a63a-fd06-57b4-e234" name="Acid Hooks" hidden="false" collective="false" import="true" targetId="6441-62c0-b1f1-d179" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8c4f-f341-6189-2149" name="Upgrade with any:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="b4e0-ea4d-8657-40f7" name="Bio-Recovery" hidden="false" collective="false" import="true" targetId="2a11-e0c5-1a93-42ab" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c13-7c24-6dfa-036d" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="4458-21d8-9cae-2f2e" name="Wings" hidden="false" collective="false" import="true" targetId="7b88-395d-235a-d9dc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c9e-e1bd-80f1-2259" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ef2b-a3c2-f9b5-84c9" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5c13-a927-c41e-edc2">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d7f-4825-7943-2821" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="645f-0d58-bea1-b45d" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="b154-03cc-b191-2809" name="Whip Limb &amp; Sword Claw" hidden="false" collective="false" import="true" targetId="07f0-d50a-c743-3b69" type="selectionEntry">
+            <entryLink id="319c-a349-c3d1-a37e" name="Psychic Barrier" hidden="false" collective="false" import="true" targetId="2a7a-c32c-2234-9969" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e3f-ab94-b8c8-94e2" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="5c13-a927-c41e-edc2" name="Razor Claws" hidden="false" collective="false" import="true" targetId="c76e-deb8-200c-e75a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2709-e588-3f5e-b7f1" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="e936-d180-34cc-d290" name="Razor Pincers" hidden="false" collective="false" import="true" targetId="3ad1-63ca-437f-86f3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bc7-20c3-a112-abe4" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="92f0-a608-4309-266a" name="Sword Claws" hidden="false" collective="false" import="true" targetId="5dc8-5fec-55fe-de7a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a047-c313-e8d5-61de" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc41-be49-53d3-2557" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="6eee-7094-cb4c-cb70" name="Upgrade with any:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="f747-d8d2-c092-4e3c" name="Tail Pincer" hidden="false" collective="false" import="true" targetId="38f3-89bc-9e12-0cae" type="selectionEntry">
+            <entryLink id="ab4b-8c37-0d92-6ef8" name="Pheromones" hidden="false" collective="false" import="true" targetId="40fd-ce58-371d-5c1b" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e03f-112e-ff71-2345" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4978-ca2f-6ce5-6e6b" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="260f-915b-25c9-3bfd" name="Wings" hidden="false" collective="false" import="true" targetId="7b88-395d-235a-d9dc" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d880-3f30-594b-2cfa" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="7a08-fd79-edd7-671f" name="Toxic Bite" hidden="false" collective="false" import="true" targetId="1dbe-4977-670d-178c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9d9-f742-b413-4cb0" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="795a-bb09-3222-6ee6" name="Acid Bite" hidden="false" collective="false" import="true" targetId="4309-3f1f-9064-d7e3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcee-9dba-af2d-e2fc" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="c1c2-794b-4791-8af0" name="Adrenaline" hidden="false" collective="false" import="true" targetId="4a74-a48d-f6b0-a75b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b923-ab1c-9b40-7c32" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
               </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9427-cb38-d3de-3727" name="Stomp" hidden="false" collective="false" import="true" targetId="b500-c0f7-a620-34ee" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91e6-0903-1548-f944" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daac-1f8d-9953-9fc2" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="415.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="435.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c76e-deb8-200c-e75a" name="Razor Claws" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c76e-deb8-200c-e75a" name="Razor Claws (A3,AP2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ba38-be80-f894-fcb6" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="4a67-ee95-121e-41d0" name="Razor Claws" hidden="false" targetId="baa0-ad77-cf5b-c2a3" type="profile"/>
@@ -249,10 +295,11 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0796-3b38-5f88-4f96" name="Barb-Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0796-3b38-5f88-4f96" name="Barb Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="724d-22af-09e4-34f3" name="Barb-Cannon" hidden="false" targetId="659c-4020-d60a-9a32" type="profile"/>
         <infoLink id="46af-828b-2aa3-abc5" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+        <infoLink id="4d40-3628-a15e-c32c" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -262,7 +309,7 @@
       <infoLinks>
         <infoLink id="8165-3650-27a1-44c0" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="dcd2-3f41-37e2-555b" name="Acid Cannon" hidden="false" targetId="ce88-8997-159f-9f28" type="profile"/>
-        <infoLink id="b43a-d79c-92cb-042f" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+        <infoLink id="b43a-d79c-92cb-042f" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -295,7 +342,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3ad1-63ca-437f-86f3" name="Razor Pincers" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3ad1-63ca-437f-86f3" name="Piercing Claws (A3,AP2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d9c1-de4b-bf70-757f" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="1ba7-5304-7cff-3dff" name="Razor Pincers" hidden="false" targetId="013d-25a5-22b3-3a53" type="profile"/>
@@ -305,7 +352,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5dc8-5fec-55fe-de7a" name="Sword Claws" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5dc8-5fec-55fe-de7a" name="Sword Claws (A3,AP2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e01d-6733-80c7-5eac" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="02e0-5d72-796d-ec23" name="Sword Claws" hidden="false" targetId="a855-0977-d1de-4b67" type="profile"/>
@@ -315,7 +362,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="07f0-d50a-c743-3b69" name="Whip Limb &amp; Sword Claw" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="07f0-d50a-c743-3b69" name="Whip Limb &amp; Sword Claw (A3,AP3)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1c19-668e-1194-dd5c" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="f91c-c6fd-a6e3-78ce" name="Whip Limb &amp; Sword Claw" hidden="false" targetId="f830-e53e-6be4-95fe" type="profile"/>
@@ -356,6 +403,7 @@
       <infoLinks>
         <infoLink id="0cba-169c-f2b2-0bdb" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="ac44-f7b6-1831-cd3e" name="Tail Pincer" hidden="false" targetId="6cfb-beba-ff50-1bba" type="profile"/>
+        <infoLink id="975a-ff87-bee9-d683" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -565,7 +613,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="115.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8238-a866-fe92-0d9f" name="Razor Pincers" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="8238-a866-fe92-0d9f" name="Piercing Claws (A2)" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8dbb-2b08-5b3b-6643" name="Razor Pincers" hidden="false" targetId="05be-f7be-083d-ea2a" type="profile"/>
         <infoLink id="8c06-2b61-dc20-0992" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
@@ -605,7 +653,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cfe1-1ce9-77d2-fe48" name="Razor Claws" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="cfe1-1ce9-77d2-fe48" name="Razor Claws (A1)" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5d82-7422-eacd-49c9" name="Razor Claws" hidden="false" targetId="cdf0-5c69-607a-6321" type="profile"/>
       </infoLinks>
@@ -866,7 +914,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="809d-d00d-d438-6b88" name="Razor Claws" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="809d-d00d-d438-6b88" name="Razor Claws (A2)" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="efe6-5e96-5c95-3f86" name="Razor Claws" hidden="false" targetId="d389-5c28-8aa8-abbb" type="profile"/>
       </infoLinks>
@@ -1454,7 +1502,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4764-2fc1-e9be-f1b5" name="Smashing Claw" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4764-2fc1-e9be-f1b5" name="Smashing Claw (A2,AP2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5f1a-7c4c-108a-0239" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="4151-5754-0072-be43" name="Smashing Claws" hidden="false" targetId="523a-c781-941f-1bb4" type="profile"/>
@@ -1463,7 +1511,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4b6a-becd-466c-f590" name="Whip Limb &amp; Sword Claw" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4b6a-becd-466c-f590" name="Whip Limb &amp; Sword Claw (A2,AP1)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="df42-1376-a33a-bfc6" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="8e4e-cffe-f42b-e397" name="Whip Limb &amp; Sword Claw" hidden="false" targetId="645f-42ea-5df9-2a55" type="profile"/>
@@ -1493,7 +1541,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3f92-30c4-b2a1-9ac4" name="Razor Claws" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3f92-30c4-b2a1-9ac4" name="Razor Claws (A2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0c67-adf0-2eae-dbae" name="Razor Claws" hidden="false" targetId="d389-5c28-8aa8-abbb" type="profile"/>
       </infoLinks>
@@ -1664,7 +1712,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0805-b28f-ca7e-9159" name="Razor Pincers" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0805-b28f-ca7e-9159" name="Piercing Claws (A2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6214-9b16-d645-a689" name="Razor Pincers" hidden="false" targetId="05be-f7be-083d-ea2a" type="profile"/>
         <infoLink id="9d97-2064-c630-c40e" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
@@ -1884,7 +1932,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5c30-2ce2-c8dc-316a" name="Razor Claws" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5c30-2ce2-c8dc-316a" name="Razor Claws (A3,AP1)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d765-52cd-0324-7a69" name="Razor Claws" hidden="false" targetId="f054-22e9-23ec-2e9a" type="profile"/>
       </infoLinks>
@@ -1892,7 +1940,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c0eb-995f-28e7-9f27" name="Razor Claws" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c0eb-995f-28e7-9f27" name="Razor Claws (A2,AP2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="fee7-956e-a219-faa8" name="Razor Claws" hidden="false" targetId="6145-5a8f-3dbf-1e16" type="profile"/>
       </infoLinks>
@@ -1900,7 +1948,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0a1a-e3b3-d6db-f33e" name="Razor Claws" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0a1a-e3b3-d6db-f33e" name="Razor Claws (A5,AP2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ad99-c657-8602-1373" name="Razor Claws" hidden="false" targetId="6b18-3e27-02bd-b0fb" type="profile"/>
       </infoLinks>
@@ -1908,7 +1956,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="441c-3ab7-3c58-9b5e" name="Razor Claws" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="441c-3ab7-3c58-9b5e" name="Razor Claws (A5)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0b13-af1c-85e1-a3a3" name="Razor Claws" hidden="false" targetId="36b2-0cf7-2e28-a014" type="profile"/>
       </infoLinks>
@@ -1936,7 +1984,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="86f9-3f6a-6b08-f085" name="Smashing Claw" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="86f9-3f6a-6b08-f085" name="Smashing Claw (A3,AP4)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="c9be-28d0-8c7d-2832" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="ed18-e20b-b9ad-2dd1" name="Smashing Claws" hidden="false" targetId="b3b9-9216-66a8-c72f" type="profile"/>
@@ -1945,7 +1993,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0be2-c35e-d557-0885" name="Smashing Claw" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0be2-c35e-d557-0885" name="Smashing Claw (A2,AP4)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6e3a-6292-9f6c-b46f" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="870a-4b6a-d60a-a7c7" name="Smashing Claws" hidden="false" targetId="0eb4-8d97-6f0c-a51c" type="profile"/>
@@ -2014,7 +2062,7 @@
       <infoLinks>
         <infoLink id="f83f-0569-96c2-b577" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="82e1-bd8e-5ad5-ad69" name="Tail Scythe" hidden="false" targetId="174a-babf-72ad-5dca" type="profile"/>
-        <infoLink id="6d8a-e615-216d-59fd" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+        <infoLink id="6d8a-e615-216d-59fd" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -2042,13 +2090,13 @@
       <infoLinks>
         <infoLink id="347f-70ea-4c37-96e3" name="Heavy Acid Cannon" hidden="false" targetId="6f88-eb4e-542a-be51" type="profile"/>
         <infoLink id="90b7-8658-fb0e-aeb8" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
-        <infoLink id="ecb9-686a-d985-559d" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+        <infoLink id="ecb9-686a-d985-559d" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="17ea-ec1a-1358-8440" name="Heavy Barb-Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="17ea-ec1a-1358-8440" name="Heavy Barb Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="dc7c-0ac8-802b-d07b" name="Heavy Barb-Cannon" hidden="false" targetId="e33c-9411-95d2-fbf1" type="profile"/>
         <infoLink id="ae90-5ccd-5cbc-a39d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -2087,7 +2135,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="50ad-68c4-7540-0320" name="Razor Pincers" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="50ad-68c4-7540-0320" name="Piercing Claws (A3,AP1)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1f5e-bb66-c02c-8471" name="Razor Pincers" hidden="false" targetId="84c9-d94d-94d1-4bb9" type="profile"/>
         <infoLink id="9a09-ec6b-6d50-de90" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
@@ -3111,6 +3159,61 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b500-c0f7-a620-34ee" name="Stomp" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b55a-f891-f600-9514" name="Stomp" hidden="false" targetId="de0e-7ae0-8a73-f687" type="profile"/>
+        <infoLink id="feec-0529-6e3e-3590" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7e90-7000-7bb7-46b8" name="Stomp (Heavy)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3ac4-2549-4dcd-23c4" name="Stomp (Heavy)" hidden="false" targetId="7b4b-7667-3512-f588" type="profile"/>
+        <infoLink id="dc0e-3296-c577-9af9" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="4339-677c-1361-9190" name="Serrated Claws (A6,AP2)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bce4-4b41-85c0-ebd8" name="Serrated Claws (A6,AP2)" hidden="false" targetId="2889-5d8d-b260-c347" type="profile"/>
+        <infoLink id="8908-cfbd-ac7e-4d47" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="8021-94c2-4f34-b199" name="Bio-Spitter" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e3bb-95ef-f460-158b" name="Bio-Spitter" hidden="false" targetId="08c3-f102-6a36-915f" type="profile"/>
+        <infoLink id="2cf6-7447-24a9-a72c" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="abc4-b335-2409-eca3" name="Heavy Bio-Spitter" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="345e-1f71-907b-8d6d" name="Heavy Bio-Spitter" hidden="false" targetId="0c46-526e-b262-252d" type="profile"/>
+        <infoLink id="bb3d-9028-29d3-f7ae" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="c53d-ae2c-7e9a-743f" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="df63-ba7f-f649-3504" name="Tail Whip" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0eb5-1879-00f7-8af1" name="Tail Whip" hidden="false" targetId="6b17-8978-2e0f-4e1e" type="profile"/>
+        <infoLink id="2f94-e6a3-c984-8cfc" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="6441-62c0-b1f1-d179" name="Acid Hooks" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4889-9dc4-dcd4-e2c1" name="Acid Hooks" hidden="false" targetId="ba9c-1b61-81fb-ba5b" type="profile"/>
+        <infoLink id="4337-f193-d593-04c4" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="40fd-ce58-371d-5c1b" name="Pheromones" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6265-53d5-4560-cc19" name="Pheromones" hidden="false" targetId="6152-39e9-47e6-d95e" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2a7a-c32c-2234-9969" name="Psychic Barrier" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f8a9-c6dd-6338-c4d9" name="Psychic Barrier" hidden="false" targetId="961e-5970-1890-3f9d" type="profile"/>
+        <infoLink id="5b77-7c1e-3a08-d5b1" name="Psychic Barrier" hidden="false" targetId="74c2-7341-acbc-48a9" type="rule"/>
+        <infoLink id="8fca-077e-4197-32d8" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="db9a-8ce7-bcc1-14f5" name="Spells" hidden="false" collective="false" import="true">
@@ -3234,7 +3337,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Hero, Impact(3), Tough(12)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Hero, Tough(12)</characteristic>
       </characteristics>
     </profile>
     <profile id="b5c8-31f1-f89c-610e" name="Prime Warrior" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -3349,7 +3452,7 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Explosive Head</characteristic>
       </characteristics>
     </profile>
-    <profile id="baa0-ad77-cf5b-c2a3" name="Razor Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="baa0-ad77-cf5b-c2a3" name="Razor Claws (A3,AP2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
@@ -3358,11 +3461,11 @@
     <profile id="7065-88e2-ddfd-bc22" name="Bio-Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
-    <profile id="05be-f7be-083d-ea2a" name="Razor Pincers" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="05be-f7be-083d-ea2a" name="Piercing Claws (A2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
@@ -3375,7 +3478,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
-    <profile id="cdf0-5c69-607a-6321" name="Razor Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="cdf0-5c69-607a-6321" name="Razor Claws (A1)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
@@ -3387,7 +3490,7 @@
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
       </characteristics>
     </profile>
-    <profile id="d389-5c28-8aa8-abbb" name="Razor Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="d389-5c28-8aa8-abbb" name="Razor Claws (A2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
@@ -3448,58 +3551,58 @@
     <profile id="b2a9-9862-f8d5-c1e5" name="Heavy Bio-Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="659c-4020-d60a-9a32" name="Barb-Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="659c-4020-d60a-9a32" name="Barb Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(6)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Blast(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="ce88-8997-159f-9f28" name="Acid Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Blast(3)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="7e4a-9a65-1448-15aa" name="Poison Hooks" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Poison</characteristic>
       </characteristics>
     </profile>
     <profile id="eb3c-d35d-6121-02be" name="Shredding Hooks" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Rending</characteristic>
       </characteristics>
     </profile>
     <profile id="c445-3f9b-3698-a85f" name="Shock Hooks" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
       </characteristics>
     </profile>
-    <profile id="013d-25a5-22b3-3a53" name="Razor Pincers" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="013d-25a5-22b3-3a53" name="Piercing Claws (A3,AP2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Rending</characteristic>
       </characteristics>
     </profile>
-    <profile id="a855-0977-d1de-4b67" name="Sword Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="a855-0977-d1de-4b67" name="Sword Claws (A3,AP2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Deadly(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="f830-e53e-6be4-95fe" name="Whip Limb &amp; Sword Claw" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="f830-e53e-6be4-95fe" name="Whip Limb &amp; Sword Claw (A3,AP3)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3), Deadly(3)</characteristic>
@@ -3520,13 +3623,13 @@
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">AP(+1) in melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="523a-c781-941f-1bb4" name="Smashing Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="523a-c781-941f-1bb4" name="Smashing Claws (A2,AP2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
-    <profile id="645f-42ea-5df9-2a55" name="Whip Limb &amp; Sword Claw" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="645f-42ea-5df9-2a55" name="Whip Limb &amp; Sword Claw (A2,AP1)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Deadly(3)</characteristic>
@@ -3575,7 +3678,7 @@
     <profile id="6cfb-beba-ff50-1bba" name="Tail Pincer" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Rending</characteristic>
       </characteristics>
     </profile>
     <profile id="957d-8c74-3975-485a" name="Vicious Jaws" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
@@ -3701,7 +3804,7 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Aircraft, Fearless, Tough(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="6145-5a8f-3dbf-1e16" name="Razor Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="6145-5a8f-3dbf-1e16" name="Razor Claws (A2,AP2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
@@ -3720,7 +3823,7 @@
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Poison</characteristic>
       </characteristics>
     </profile>
-    <profile id="b3b9-9216-66a8-c72f" name="Smashing Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="b3b9-9216-66a8-c72f" name="Smashing Claws (A3,AP4)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4)</characteristic>
@@ -3754,19 +3857,19 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
       </characteristics>
     </profile>
-    <profile id="f054-22e9-23ec-2e9a" name="Razor Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="f054-22e9-23ec-2e9a" name="Razor Claws (A3,AP1)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="6b18-3e27-02bd-b0fb" name="Razor Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="6b18-3e27-02bd-b0fb" name="Razor Claws (A5,AP2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A5</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
-    <profile id="36b2-0cf7-2e28-a014" name="Razor Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="36b2-0cf7-2e28-a014" name="Razor Claws (A5)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A5</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
@@ -3787,7 +3890,7 @@
     <profile id="174a-babf-72ad-5dca" name="Tail Scythe" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Rending</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Deadly</characteristic>
       </characteristics>
     </profile>
     <profile id="1523-9188-ba73-7529" name="Tail Mace" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -3796,7 +3899,7 @@
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4)</characteristic>
       </characteristics>
     </profile>
-    <profile id="0eb4-8d97-6f0c-a51c" name="Smashing Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="0eb4-8d97-6f0c-a51c" name="Smashing Claws (A2,AP4)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4)</characteristic>
@@ -3813,10 +3916,10 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Blast(3)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="e33c-9411-95d2-fbf1" name="Heavy Barb-Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="e33c-9411-95d2-fbf1" name="Heavy Barb Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
@@ -3851,7 +3954,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
-    <profile id="84c9-d94d-94d1-4bb9" name="Razor Pincers" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="84c9-d94d-94d1-4bb9" name="Piercing Claws (A3,AP1)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Rending</characteristic>
@@ -3913,6 +4016,61 @@
     <profile id="4e55-7786-ce7d-a273" name="Transport Spore" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Transport Spore</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="de0e-7ae0-8a73-f687" name="Stomp" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7b4b-7667-3512-f588" name="Stomp (Heavy)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2889-5d8d-b260-c347" name="Serrated Claws (A6,AP2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="08c3-f102-6a36-915f" name="Bio-Spitter" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c46-526e-b262-252d" name="Heavy Bio-Spitter" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6b17-8978-2e0f-4e1e" name="Tail Whip" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ba9c-1b61-81fb-ba5b" name="Acid Hooks" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6152-39e9-47e6-d95e" name="Pheromones" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">When this unit is activated pick 2 friendly units within 12&quot;, which get +1 to their rolls next time they take a morale test.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="961e-5970-1890-3f9d" name="Psychic Barrier" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">This model may block spells as if it had the Psychic special rule. If it is a Psychic then it gets +1 to spell block rolls.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
