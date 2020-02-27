@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="10" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="11" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.7"/>
   </publications>
@@ -672,6 +672,9 @@
         <infoLink id="32d7-30e7-6f68-0942" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="8fca-4b20-5b0d-3573" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="79f3-661e-0e13-6497" name="Anti-Tank Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -679,61 +682,77 @@
         <infoLink id="d796-a6fa-1cfb-0684" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="ee05-2c84-9ff1-a442" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b28c-3c17-5552-b1f9" name="Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6295-bd1e-1f14-515b" name="Gatling Cannon" hidden="false" targetId="1546-5828-50d8-3dfb" type="profile"/>
         <infoLink id="18e0-b847-7d0c-df50" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="71e9-a72c-6160-0673" name="Energy Claw" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9ed4-bb8b-d98c-6e9c" name="Energy Claw" hidden="false" targetId="8181-d687-4fac-59bb" type="profile"/>
+        <infoLink id="8036-27b8-80fe-8d86" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="3ff9-e86a-8ea3-5f65" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="859e-e070-e91c-26e1" name="Ambush" hidden="false">
+    <rule id="859e-e070-e91c-26e1" name="Ambush" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>You may choose not to deploy a model with this special rule with your army but instead keep it off the table in reserve.
 
 At the beginning of any round after the first you may place the model anywhere on the table over 9” away from enemy units.
 
 If both players have units with Ambush they must roll-off to see who deploys first.</description>
     </rule>
-    <rule id="1875-13ee-b0ef-5a65" name="Anti-Air" hidden="false">
+    <rule id="1875-13ee-b0ef-5a65" name="Anti-Air" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>When shooting at enemy Aircraft models firing this weapon don’t count as being an extra 12” away and don’t get –1 to hit rolls.</description>
     </rule>
-    <rule id="f84f-fda5-e478-455d" name="AP(X)" hidden="false">
+    <rule id="f84f-fda5-e478-455d" name="AP(X)" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Enemy units taking hits from weapons with this special rule get -X to Defense rolls.</description>
     </rule>
-    <rule id="187f-6414-7037-a542" name="Blast(X)" hidden="false">
+    <rule id="187f-6414-7037-a542" name="Blast(X)" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Whenever enemy units take hits from a weapon with this special rule they multiply the hits by X.</description>
     </rule>
-    <rule id="377b-3864-960e-57ac" name="Deadly(X)" hidden="false">
+    <rule id="377b-3864-960e-57ac" name="Deadly(X)" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Whenever a model takes wounds from a weapon with this special rule multiply the amount of wounds suffered by X.
 
 Note that wounds suffered by that model don’t carry over to other models if it dies.</description>
     </rule>
-    <rule id="f6ca-56fe-a21c-08fa" name="Fast" hidden="false">
+    <rule id="f6ca-56fe-a21c-08fa" name="Fast" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Units with this special rule move 9” when using Advance actions and 18” when using Rush or Charge actions.</description>
     </rule>
-    <rule id="d21e-0b0f-ebec-46da" name="Fear" hidden="false">
+    <rule id="d21e-0b0f-ebec-46da" name="Fear" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>When in melee units with this special rule count as having caused +D3 wounds when determining who won the combat.</description>
     </rule>
-    <rule id="fe6b-f29d-2128-a0b0" name="Fearless" hidden="false">
+    <rule id="fe6b-f29d-2128-a0b0" name="Fearless" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Units with this special rule get +1 to their morale test rolls.</description>
     </rule>
-    <rule id="adc6-ddd5-223d-29b1" name="Flying" hidden="false">
+    <rule id="adc6-ddd5-223d-29b1" name="Flying" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Units with this special rule may move through other units and impassable terrain and they may ignore terrain effects.</description>
     </rule>
-    <rule id="ded5-4f1f-c61d-4659" name="Furious" hidden="false">
+    <rule id="ded5-4f1f-c61d-4659" name="Furious" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Whenever a model with this special rule charges an enemy it gets +1 attack with a weapon of your choice.</description>
     </rule>
-    <rule id="0c08-1729-0be7-c286" name="Impact(X)" hidden="false">
+    <rule id="0c08-1729-0be7-c286" name="Impact(X)" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Whenever a model with this special rule charges it deals X automatic hits.</description>
     </rule>
-    <rule id="587a-b92c-a265-06c4" name="Indirect" hidden="false">
+    <rule id="587a-b92c-a265-06c4" name="Indirect" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Weapons with this special rule may shoot at enemies that are not within line of sight, however they get –1 to hit when doing so.</description>
     </rule>
-    <rule id="2c45-0e1e-fec5-8dbb" name="Poison(X)" hidden="false">
+    <rule id="2c45-0e1e-fec5-8dbb" name="Poison(X)" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Whenever you roll an unmodified to hit result of 6 whilst firing this weapon that hit is multiplied by 3.</description>
     </rule>
-    <rule id="ba47-b43b-18f8-97c1" name="Psychic(X)" hidden="false">
+    <rule id="ba47-b43b-18f8-97c1" name="Psychic(X)" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Models with this special rule may cast one spell at any point during their activation before attacking.
 
 To cast a spell pick one from the psychic’s army and roll D6+X. If the result is equal to or higher than the number in brackets then you may resolve the spell’s effects.
@@ -742,45 +761,46 @@ Enemy psychics within 12” may also roll D6+X, and if the result is higher than
 
 Note that a psychic may only either cast a spell or block a spell each round.</description>
     </rule>
-    <rule id="dea8-a8f9-1865-4424" name="Regeneration" hidden="false">
+    <rule id="dea8-a8f9-1865-4424" name="Regeneration" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Whenever this model takes wounds roll one die for each. On a 5+ the wound is ignored.</description>
     </rule>
-    <rule id="9726-accd-9015-f6f6" name="Rending" hidden="false">
+    <rule id="9726-accd-9015-f6f6" name="Rending" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Whenever you roll an unmodified to hit result of 6 whilst using this weapon that hit counts as having AP(4) and it ignores the Regeneration rule.</description>
     </rule>
-    <rule id="7bc7-a892-49bc-ad88" name="Scout" hidden="false">
+    <rule id="7bc7-a892-49bc-ad88" name="Scout" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>After all other units have been deployed models with scout may deploy within 24” of the player’s table edge (instead of 12”).
+
 If both players have units with Scout they must roll-off to see who deploys first.</description>
     </rule>
-    <rule id="394b-1b64-d270-f49e" name="Slow" hidden="false">
+    <rule id="394b-1b64-d270-f49e" name="Slow" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Units with this special rule move 4” when using Advance actions and 8” when using Rush or Charge actions.</description>
     </rule>
-    <rule id="2943-e3f6-fb44-ae13" name="Sniper" hidden="false">
+    <rule id="2943-e3f6-fb44-ae13" name="Sniper" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Models firing this weapon count as having Quality 2+ when rolling to hit.
 
 This weapon ignores cover and the attacker may pick which model from the target unit is hit when shooting.</description>
     </rule>
-    <rule id="1b59-5d31-4675-c926" name="Stealth" hidden="false">
+    <rule id="1b59-5d31-4675-c926" name="Stealth" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Enemies targeting this unit get –1 to hit when shooting at it.</description>
     </rule>
-    <rule id="9dea-b566-200a-0605" name="Strider" hidden="false">
+    <rule id="9dea-b566-200a-0605" name="Strider" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Units with this special rule treat Difficult Terrain as Open Terrain when moving (may move more than 6”).</description>
     </rule>
-    <rule id="b9d3-4d17-007c-22cb" name="Tough(X)" hidden="false">
+    <rule id="b9d3-4d17-007c-22cb" name="Tough(X)" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Models with this special rule must accumulate X wounds before being removed as a casualty.
 
 If a model with Tough joins a unit without it then you must remove regular models as casualties before starting to accumulate wounds on the model with Tough.
 
 When a unit with multiple Tough models takes wounds you must accumulate them on a single model until it is killed before starting to accumulate them on another.</description>
     </rule>
-    <rule id="3460-57e3-8a15-7977" name="Transport(X)" hidden="false">
+    <rule id="3460-57e3-8a15-7977" name="Transport(X)" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Models with this special rule may transport up to X models in their cargo.
 
 Units may embark by moving into contact with the transport and embarked units may use any action to disembark but only move up to 6”. Units may also be deployed within a transport at the beginning of the game.
 
 If a unit is inside of a Transport when it is destroyed then it must take a Dangerous Terrain test, is immediately Pinned, and surviving models must be placed within 6” of the transport before it is removed.</description>
     </rule>
-    <rule id="5065-c3a4-a9cf-db27" name="Hero" hidden="false">
+    <rule id="5065-c3a4-a9cf-db27" name="Hero" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Models with this special rule may be deployed as part of one other friendly unit at the beginning of the game.
 
 When rolling morale tests use the hero’s Quality value and when rolling to block use the Defense of the majority of models.</description>
@@ -792,7 +812,7 @@ Non-Aircraft models that shoot at Aircraft count as being an extra 12” away wh
 
 When an Aircraft is activated it must move a full 18” to 36” in a straight line. If this move brings it off the table edge then its activation ends immediately and it must be placed back on any table edge you choose.</description>
     </rule>
-    <rule id="2c1d-c23a-cb5d-cb83" name="Immobile" hidden="false">
+    <rule id="2c1d-c23a-cb5d-cb83" name="Immobile" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Units with this special rule may never move regardless of which action they take and they can’t take Charge actions.</description>
     </rule>
     <rule id="973a-bce3-c43c-b039" name="Relentless" publicationId="d755-5d69-pubN65537" hidden="false">
