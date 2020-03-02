@@ -32,6 +32,7 @@
     <entryLink id="8fe7-fa49-68b9-a2e0" name="Invasion Spore" hidden="false" collective="false" import="true" targetId="8ae2-3805-bb4c-a938" type="selectionEntry"/>
     <entryLink id="5aa2-174c-f2a8-256b" name="Rapacious Beast" hidden="false" collective="false" import="true" targetId="6cf3-d758-0964-8c29" type="selectionEntry"/>
     <entryLink id="4b2a-eafb-7963-01bd" name="Veteran Warrior" hidden="false" collective="false" import="true" targetId="795d-eb44-dba6-084f" type="selectionEntry"/>
+    <entryLink id="809f-0310-6ed5-379a" name="Snatcher Veteran" hidden="false" collective="false" import="true" targetId="7ff4-5596-1aa9-f9cd" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="b4ec-35df-a8ec-3001" name="Hive Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -3525,6 +3526,65 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7ff4-5596-1aa9-f9cd" name="Snatcher Veteran" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b9e0-1ad7-2a7e-ef7e" name="Snatcher Veteran" hidden="false" targetId="a395-1e1d-6079-b551" type="profile"/>
+        <infoLink id="47ce-d24d-e79b-0136" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="b323-4ffa-58ef-c5c7" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="3c9f-eaef-87f3-4de6" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="fcc1-5838-cd16-dd69" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="294a-5ef1-fd11-dbcf" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="2be1-f6be-b03c-3378" name="2x Piercing Claws" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="014e-c0b7-badd-62eb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e20d-74cf-ef68-16ac" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0545-c335-34a3-460e" name="Piercing Claws (A2)" hidden="false" collective="false" import="true" targetId="0805-b28f-ca7e-9159" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43e4-fe79-194f-f114" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebee-6085-5022-d26b" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7907-de14-c92f-95c7" name="Upgrade with any:" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="99cf-fa92-98ba-84d0" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8ab-5c7e-2b5b-5466" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3e8c-5de0-fa34-6d1a" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="f0e9-aa22-432a-247d" name="Spells" hidden="false" collective="false" import="true" targetId="db9a-8ce7-bcc1-14f5" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="8088-c238-8c23-81db" name="Razor Claws (A2)" hidden="false" collective="false" import="true" targetId="3f92-30c4-b2a1-9ac4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c47f-c8b4-0a3f-ddca" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="75.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="db9a-8ce7-bcc1-14f5" name="Spells" hidden="false" collective="false" import="true">
@@ -4426,6 +4486,13 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a395-1e1d-6079-b551" name="Snatcher Veteran" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Hero, Scout, Strider, Tough(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
