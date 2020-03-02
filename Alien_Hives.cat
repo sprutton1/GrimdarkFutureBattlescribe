@@ -631,7 +631,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="235.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8d0e-666b-b80f-6195" name="Soul-Snatcher Lord" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8d0e-666b-b80f-6195" name="Snatcher Lord" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2ead-e863-d694-2c08" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="1a5d-e536-a813-4520" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
@@ -641,6 +641,22 @@
         <infoLink id="137c-3634-8d92-bbc7" name="Soul-Snatcher Lord" hidden="false" targetId="2245-14a4-917b-621a" type="profile"/>
         <infoLink id="a4d1-5660-dfdf-3071" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="e385-5984-0f10-cc48" name="2x Piercing Claws" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a17-62c3-07dc-e628" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b3-73ba-6aa8-e3ee" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0d4e-7b07-5ed6-0b92" name="Piercing Claws (A2,AP2)" hidden="false" collective="false" import="true" targetId="11b2-f466-6769-0c50" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96a2-e565-a234-fa3c" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15b6-c6a2-501a-c716" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="f397-5077-28d3-0ee9" name="Psychic" hidden="false" collective="false" import="true" defaultSelectionEntryId="c8d1-d817-757b-b3d7">
           <constraints>
@@ -667,31 +683,17 @@
                 <infoLink id="2294-5a65-b00f-a396" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="aa1f-5a83-cba6-5fb1" name="Razor Pincers" hidden="false" collective="false" import="true" targetId="8238-a866-fe92-0d9f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b70-2565-347a-0ce3" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9221-4e67-68d0-2596" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="3b02-39c5-e45e-2f11" name="Razor Claws" hidden="false" collective="false" import="true" targetId="c76e-deb8-200c-e75a" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb6f-8bf5-0d4e-ce68" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-          </costs>
-        </entryLink>
         <entryLink id="2bcf-db90-1cbe-13cc" name="Spells" hidden="false" collective="false" import="true" targetId="db9a-8ce7-bcc1-14f5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="115.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="135.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8238-a866-fe92-0d9f" name="Piercing Claws (A2)" hidden="false" collective="true" import="true" type="upgrade">
@@ -3245,24 +3247,36 @@
         <infoLink id="b55a-f891-f600-9514" name="Stomp" hidden="false" targetId="de0e-7ae0-8a73-f687" type="profile"/>
         <infoLink id="feec-0529-6e3e-3590" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7e90-7000-7bb7-46b8" name="Stomp (Heavy)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3ac4-2549-4dcd-23c4" name="Stomp (Heavy)" hidden="false" targetId="7b4b-7667-3512-f588" type="profile"/>
         <infoLink id="dc0e-3296-c577-9af9" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4339-677c-1361-9190" name="Serrated Claws (A6,AP2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="bce4-4b41-85c0-ebd8" name="Serrated Claws (A6,AP2)" hidden="false" targetId="2889-5d8d-b260-c347" type="profile"/>
         <infoLink id="8908-cfbd-ac7e-4d47" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8021-94c2-4f34-b199" name="Bio-Spitter" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e3bb-95ef-f460-158b" name="Bio-Spitter" hidden="false" targetId="08c3-f102-6a36-915f" type="profile"/>
         <infoLink id="2cf6-7447-24a9-a72c" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="abc4-b335-2409-eca3" name="Heavy Bio-Spitter" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -3270,29 +3284,51 @@
         <infoLink id="bb3d-9028-29d3-f7ae" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="c53d-ae2c-7e9a-743f" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="df63-ba7f-f649-3504" name="Tail Whip" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0eb5-1879-00f7-8af1" name="Tail Whip" hidden="false" targetId="6b17-8978-2e0f-4e1e" type="profile"/>
         <infoLink id="2f94-e6a3-c984-8cfc" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6441-62c0-b1f1-d179" name="Acid Hooks" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4889-9dc4-dcd4-e2c1" name="Acid Hooks" hidden="false" targetId="ba9c-1b61-81fb-ba5b" type="profile"/>
         <infoLink id="4337-f193-d593-04c4" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="40fd-ce58-371d-5c1b" name="Pheromones" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6265-53d5-4560-cc19" name="Pheromones" hidden="false" targetId="6152-39e9-47e6-d95e" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2a7a-c32c-2234-9969" name="Psychic Barrier" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f8a9-c6dd-6338-c4d9" name="Psychic Barrier" hidden="false" targetId="961e-5970-1890-3f9d" type="profile"/>
         <infoLink id="5b77-7c1e-3a08-d5b1" name="Psychic Barrier" hidden="false" targetId="74c2-7341-acbc-48a9" type="rule"/>
         <infoLink id="8fca-077e-4197-32d8" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="11b2-f466-6769-0c50" name="Piercing Claws (A2,AP2)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3cc5-b9df-0388-a495" name="Piercing Claws (A2,AP2)" hidden="false" targetId="38bb-6b5a-6cfe-99d0" type="profile"/>
+        <infoLink id="0764-5e91-6d67-57e5" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="7341-c860-55ca-c6fa" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -3428,7 +3464,7 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Hero, Tough(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="2245-14a4-917b-621a" name="Soul-Snatcher Lord" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="2245-14a4-917b-621a" name="Snatcher Lord" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
@@ -4152,6 +4188,12 @@
     <profile id="961e-5970-1890-3f9d" name="Psychic Barrier" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">This model may block spells as if it had the Psychic special rule. If it is a Psychic then it gets +1 to spell block rolls.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="38bb-6b5a-6cfe-99d0" name="Piercing Claws (A2,AP2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Rending</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
