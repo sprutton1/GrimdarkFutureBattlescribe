@@ -1240,12 +1240,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bdfd-e970-72a7-39e6" name="Soul-Snatcher" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="baa8-da49-9c99-7981" name="Soul-Snatcher" hidden="false" targetId="eafb-6a61-e952-ccce" type="profile"/>
-        <infoLink id="d325-7dcc-2f8f-676d" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="4546-ddc6-c362-3d07" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-        <infoLink id="9d6c-6c87-8f52-4f37" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="18cb-0915-2281-789b" name="Razor Pincers" hidden="false" collective="false" import="true" targetId="8238-a866-fe92-0d9f" type="selectionEntry">
           <constraints>
@@ -1253,45 +1247,103 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b68-038e-271a-6b9a" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4089-e350-09e2-8dc5" name="Razor Claws" hidden="false" collective="false" import="true" targetId="809d-d00d-d438-6b88" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a70-1bb2-0f17-c347" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="4.0"/>
-          </costs>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="13cf-59f0-e9fe-df0c" name="Soul-Snatchers" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ccc9-b2d4-b31b-14e0" name="Soul-Snatcher" hidden="false" targetId="eafb-6a61-e952-ccce" type="profile"/>
+        <infoLink id="6627-f4a3-1db1-1210" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="bcca-d7f1-a69c-1276" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="c0bc-7d49-c9e9-4804" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f87c-e1e6-fa68-3219" name="Upgrade one:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="9e65-ce8a-2fa8-2e24" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="ec1f-4769-4e3a-b8ce">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d24-3aaa-abd5-c4c4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="671b-5666-ec8e-ebfd" type="max"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry id="da3e-71ce-54d6-4c12" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36d2-5b9c-5fb1-8aaf" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="08d8-063d-8b63-2d32" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
-              </infoLinks>
+            <selectionEntry id="ec1f-4769-4e3a-b8ce" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="e9d7-6e0f-e1fa-e88e" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="ca01-b1d2-b10a-889d" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2aad-6437-26a1-bc1d" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="dcf0-5f85-55f5-6bd4" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink id="dad5-5828-7f63-63a6" name="Spells" hidden="false" collective="false" import="true" targetId="db9a-8ce7-bcc1-14f5" type="selectionEntryGroup"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="d042-a84e-91ea-0798" name="Soul Snatchers" hidden="false" collective="false" import="true" defaultSelectionEntryId="a840-9549-824a-8dbe">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e57-6ffe-7fe7-7e86" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32b5-504a-ce72-2512" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="a840-9549-824a-8dbe" name="Soul-Snatcher" hidden="false" collective="false" import="true" targetId="bdfd-e970-72a7-39e6" type="selectionEntry"/>
+                    <entryLink id="2be2-4cb4-c28d-f913" name="Soul-Snatcher (Piercing+Razor Claws)" hidden="false" collective="false" import="true" targetId="3fe1-3200-30ec-cbda" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="900c-b8f9-658a-05a7" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="6891-c332-b6ff-a846" name="Soul Snatchers" hidden="false" collective="false" import="true" defaultSelectionEntryId="4340-8298-4543-7a7f">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="772f-733c-a44d-0e99" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8518-116a-6da5-0b56" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="4340-8298-4543-7a7f" name="Soul-Snatcher" hidden="false" collective="false" import="true" targetId="bdfd-e970-72a7-39e6" type="selectionEntry"/>
+                    <entryLink id="5b6a-70d8-35eb-968a" name="Soul-Snatcher (Piercing+Razor Claws)" hidden="false" collective="false" import="true" targetId="3fe1-3200-30ec-cbda" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="c3f2-5809-5372-9d09" name="Upgrade up to two models with:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="615f-d682-51f6-ff6f" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ca5-31ee-34cb-f52a" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="d0d6-dd4c-b142-751a" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink id="3b78-3366-f224-5c5c" name="Spells" hidden="false" collective="false" import="true" targetId="db9a-8ce7-bcc1-14f5" type="selectionEntryGroup"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="200.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="e337-73d1-07f0-798a" name="Soul-Snatcher" hidden="false" collective="false" import="true" targetId="bdfd-e970-72a7-39e6" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea13-f4ee-e3c1-a6e8" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9de-83d0-94cf-dbaf" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="200.0"/>
       </costs>
@@ -3997,6 +4049,25 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5063-db04-5a5c-e034" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc93-296a-6efc-a51a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3fe1-3200-30ec-cbda" name="Soul-Snatcher (+Razor Claws)" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="9648-58a0-c37a-293e" name="Razor Pincers" hidden="false" collective="false" import="true" targetId="8238-a866-fe92-0d9f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d9-477a-e03c-ed93" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="435f-978c-cb07-a316" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2a87-8715-8982-adb1" name="Razor Claws" hidden="false" collective="false" import="true" targetId="809d-d00d-d438-6b88" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b46d-0290-565a-360d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8d3-cd70-866d-07c0" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
