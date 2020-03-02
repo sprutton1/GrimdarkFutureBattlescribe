@@ -804,7 +804,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a43-3527-07f4-128e" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="cbe0-cc79-553f-0f41" name="Single Unit" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="cbe0-cc79-553f-0f41" name="Single Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
                 <selectionEntryGroup id="ad31-fc32-5b82-70fc" name="Upgrade all with any:" hidden="false" collective="false" import="true">
                   <entryLinks>
@@ -870,7 +870,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry id="3957-952e-3a19-d161" name="Combined Unit" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3957-952e-3a19-d161" name="Combined Unit [20 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
                 <selectionEntryGroup id="f1e3-02ab-2cfc-bf65" name="Upgrade all with any:" hidden="false" collective="false" import="true">
                   <entryLinks>
@@ -997,7 +997,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ff6-fba4-bfe9-e43d" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e5cf-4f8b-e803-6bc3" name="Single Unit" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e5cf-4f8b-e803-6bc3" name="Single Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
                 <selectionEntryGroup id="9359-f58f-e853-fca6" name="Upgrade all with any:" hidden="false" collective="false" import="true">
                   <entryLinks>
@@ -1039,7 +1039,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry id="2c8d-d35b-3cee-24f2" name="Combined Unit" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2c8d-d35b-3cee-24f2" name="Combined Unit [20 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
                 <selectionEntryGroup id="d6c9-7f56-e900-25d4" name="Upgrade all with any:" hidden="false" collective="false" import="true">
                   <entryLinks>
@@ -1091,7 +1091,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="14bc-89c0-754d-4ad6" name="Winged Grunt" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="14bc-89c0-754d-4ad6" name="Winged Grunt (Bio-Gun)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="503e-9a11-89e3-bb60" name="Winged Grunt" hidden="false" targetId="6c04-0f21-8b3b-0095" type="profile"/>
         <infoLink id="6875-bb31-00ac-d0df" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
@@ -1117,43 +1117,124 @@
     </selectionEntry>
     <selectionEntry id="62b5-85b6-4f73-e3a7" name="Winged Grunts" page="" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="d05d-4e8f-58a9-507c" name="Upgrade all with any:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="c9fc-4819-ec98-0962" name="Adrenaline" hidden="false" collective="false" import="true" targetId="4a74-a48d-f6b0-a75b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d8f-f343-a982-07f3" type="max"/>
-              </constraints>
+        <selectionEntryGroup id="6d62-a3f2-bb4e-c56f" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="d582-864a-9168-a462">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a4-9e0f-f017-093c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40a0-4a8b-a0a9-8978" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d582-864a-9168-a462" name="Single Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="dbe3-1ea5-b395-e142" name="Upgrade all with any:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="bd10-7e6a-fec8-b77f" name="Adrenaline" hidden="false" collective="false" import="true" targetId="4a74-a48d-f6b0-a75b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f52-fcba-ebbc-c943" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="a1fb-ca05-f12f-353a" name="Toxic Bite" hidden="false" collective="false" import="true" targetId="1dbe-4977-670d-178c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd3a-27ab-903d-b6f3" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="60c1-eec0-fa50-a3e6" name="Grunts" hidden="false" collective="false" import="true" defaultSelectionEntryId="ae95-6fdd-d10b-198a">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f55a-197b-b28f-3742" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ef9-7e0c-bf1a-3d99" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="17dc-a86a-be3c-deac" name="Winged Grunt (Twin Bio-Pistols)" hidden="false" collective="false" import="true" targetId="4432-c229-88dc-8919" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="a6dd-6740-10dd-6b0a" name="Winged Grunt (Special Weapon)" hidden="false" collective="false" import="true" targetId="d2af-fda5-7fea-f130" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e18-c284-0d5f-1935" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="ae95-6fdd-d10b-198a" name="Winged Grunt (Bio-Gun)" hidden="false" collective="false" import="true" targetId="14bc-89c0-754d-4ad6" type="selectionEntry"/>
+                    <entryLink id="d585-d75b-a622-5d63" name="Winged Grunt (Bio-Spike)" hidden="false" collective="false" import="true" targetId="22d4-b322-936e-9f93" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="3734-e359-8606-5636" name="Winged Grunt (Bio-Carbine)" hidden="false" collective="false" import="true" targetId="4ec6-0dff-858b-4bf4" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="256f-b83f-8958-9f33" name="Combined Unit [20 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="0921-b7c5-cb41-7f8b" name="Upgrade all with any:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="cd04-a08e-99bb-5266" name="Adrenaline" hidden="false" collective="false" import="true" targetId="4a74-a48d-f6b0-a75b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdf4-b416-c133-e49a" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="8475-3d88-d920-65d3" name="Toxic Bite" hidden="false" collective="false" import="true" targetId="1dbe-4977-670d-178c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9be-aed5-080a-ebed" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="6d2c-b3fa-a2ae-8772" name="Grunts" hidden="false" collective="false" import="true" defaultSelectionEntryId="21a5-a4f5-71c5-d935">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2947-3872-4523-30ce" type="max"/>
+                    <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8469-5a5c-3b00-ae6d" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="49f9-0e0b-ac7d-094d" name="Winged Grunt (Twin Bio-Pistols)" hidden="false" collective="false" import="true" targetId="4432-c229-88dc-8919" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="f351-2c03-d00d-70bc" name="Winged Grunt (Special Weapon)" hidden="false" collective="false" import="true" targetId="d2af-fda5-7fea-f130" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ee6-2423-50a8-3efd" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="21a5-a4f5-71c5-d935" name="Winged Grunt (Bio-Gun)" hidden="false" collective="false" import="true" targetId="14bc-89c0-754d-4ad6" type="selectionEntry"/>
+                    <entryLink id="886c-307b-f4de-6d60" name="Winged Grunt (Bio-Spike)" hidden="false" collective="false" import="true" targetId="22d4-b322-936e-9f93" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="29ba-d305-1471-f5b3" name="Winged Grunt (Bio-Carbine)" hidden="false" collective="false" import="true" targetId="4ec6-0dff-858b-4bf4" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="180.0"/>
               </costs>
-            </entryLink>
-            <entryLink id="1b9a-4be0-de36-ddac" name="Toxic Bite" hidden="false" collective="false" import="true" targetId="1dbe-4977-670d-178c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4ff-bdd2-516d-d414" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="3e37-72b5-0702-ad9c" name="Vicious Jaws" hidden="false" collective="false" import="true" targetId="5e75-e150-b4fa-6b57" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78f4-50ba-397e-a079" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="920a-2b66-fffb-8f6e" name="Winged Grunt" hidden="false" collective="false" import="true" targetId="14bc-89c0-754d-4ad6" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa9d-669b-108d-d66c" type="max"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da70-dc2f-30ed-cc87" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="180.0"/>
       </costs>
@@ -3797,6 +3878,131 @@
         <infoLink id="8f85-fb03-61c5-ca97" name="Sword Claws (A2)" hidden="false" targetId="88d7-8943-3888-5f68" type="profile"/>
         <infoLink id="7c98-095d-580d-136f" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="4ec6-0dff-858b-4bf4" name="Winged Grunt (Bio-Carbine)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="743d-f8df-3dfa-c541" name="Winged Grunt" hidden="false" targetId="6c04-0f21-8b3b-0095" type="profile"/>
+        <infoLink id="103a-dc70-f6a7-8751" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="0664-8301-3680-cfad" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="0add-3ea7-c2e9-be93" name="Razor Claws" hidden="false" collective="false" import="true" targetId="cfe1-1ce9-77d2-fe48" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f62-5a62-3bf6-fec6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fd6-b8e7-0ae1-36e1" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c92f-fa96-5bc5-017e" name="Bio-Carbine" hidden="false" collective="false" import="true" targetId="aede-097e-fe3f-bc18" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="748d-54f3-ca1e-4d3e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="028e-63ac-2a12-8831" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="22d4-b322-936e-9f93" name="Winged Grunt (Bio-Spike)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5175-f97e-6089-1139" name="Winged Grunt" hidden="false" targetId="6c04-0f21-8b3b-0095" type="profile"/>
+        <infoLink id="5787-22b3-65cd-6c81" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="d1ed-0c6c-8ce1-081f" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="9c79-e630-cf6f-6930" name="Razor Claws" hidden="false" collective="false" import="true" targetId="cfe1-1ce9-77d2-fe48" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5880-a64b-60a1-2373" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="945c-49d2-287c-4d6a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b890-db46-f7b8-65cf" name="Bio-Spike" hidden="false" collective="false" import="true" targetId="aa9a-e105-79a4-9b96" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2046-63d2-3c05-7bb4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbe2-be07-5ccf-e7a3" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d2af-fda5-7fea-f130" name="Winged Grunt (Special Weapon)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cff3-e1da-9c21-3b1d" name="Winged Grunt" hidden="false" targetId="6c04-0f21-8b3b-0095" type="profile"/>
+        <infoLink id="e152-45e8-45a8-664d" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="a9e0-0bef-7b1d-6eb6" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ad00-e3d5-c4dd-6c28" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="70e9-95ab-256d-7cd2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ec4-f36a-1fcb-a3ee" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da84-6dd9-6cf3-1828" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="70e9-95ab-256d-7cd2" name="Bio-Shredder" hidden="false" collective="false" import="true" targetId="c6dc-7845-30df-aa7f" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2a6c-5fb6-27f3-451a" name="Bio-Rifle" hidden="false" collective="false" import="true" targetId="6fca-62b8-72f2-1a77" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ee2c-0908-f354-b30e" name="Acid-Gun" hidden="false" collective="false" import="true" targetId="de8e-bde6-f68b-1bc1" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="0ee2-a8c4-a6e4-af2b" name="Bio-Flamer" hidden="false" collective="false" import="true" targetId="2135-b227-388d-fecb" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="92be-c589-9b6d-ed90" name="Shock-Gun" hidden="false" collective="false" import="true" targetId="bd36-1576-44ec-e2ef" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bc26-41a7-faa7-d447" name="Razor Claws" hidden="false" collective="false" import="true" targetId="cfe1-1ce9-77d2-fe48" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9df2-5fda-344d-6e59" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f0d-1bc9-f17f-3c20" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4432-c229-88dc-8919" name="Winged Grunt (Twin Bio-Pistols)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="13aa-bb97-0fc2-8a2d" name="Winged Grunt" hidden="false" targetId="6c04-0f21-8b3b-0095" type="profile"/>
+        <infoLink id="2034-5926-0118-4521" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="15ff-d490-e2c0-e393" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="81da-64c0-0780-5dbc" name="Razor Claws" hidden="false" collective="false" import="true" targetId="cfe1-1ce9-77d2-fe48" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="945f-a655-3a7b-b896" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e45-5d85-1f6e-4581" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="dbb8-3f53-df1e-1932" name="Twin Bio-Pistols" hidden="false" collective="false" import="true" targetId="c46a-0bd1-1964-fc30" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5063-db04-5a5c-e034" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc93-296a-6efc-a51a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
