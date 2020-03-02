@@ -991,43 +991,102 @@
     </selectionEntry>
     <selectionEntry id="dd3b-ad51-9ea7-adf4" name="Assault Grunts" page="" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="c37a-16f0-6efc-5a79" name="Upgrade all with any:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="6e26-cdbd-e5a1-8b5f" name="Adrenaline" hidden="false" collective="false" import="true" targetId="4a74-a48d-f6b0-a75b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e5d-306c-315e-5b86" type="max"/>
-              </constraints>
+        <selectionEntryGroup id="3891-8ea6-6287-7cd4" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="e5cf-4f8b-e803-6bc3">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50fb-9295-d386-8165" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ff6-fba4-bfe9-e43d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e5cf-4f8b-e803-6bc3" name="Single Unit" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="9359-f58f-e853-fca6" name="Upgrade all with any:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="09f1-7b3e-b4d6-d6a8" name="Adrenaline" hidden="false" collective="false" import="true" targetId="4a74-a48d-f6b0-a75b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eb4-1ced-9630-547a" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="a671-912e-cc42-abb7" name="Toxic Bite" hidden="false" collective="false" import="true" targetId="1dbe-4977-670d-178c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6e7-2ec6-0de9-78da" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="107a-1328-8b02-5461" name="Grunts" hidden="false" collective="false" import="true" defaultSelectionEntryId="7675-d8c2-9b73-e0d6">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4223-6484-f6d8-4f54" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9d9-77d2-645c-6789" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="7675-d8c2-9b73-e0d6" name="Assault Grunt" hidden="false" collective="false" import="true" targetId="8c7a-72e2-4070-c6d4" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cce7-3e9f-069c-2a41" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="db40-b4b7-1152-939a" name="Assault Grunt (Special Weapon)" hidden="false" collective="false" import="true" targetId="6e92-65f9-0726-16ea" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6840-6446-e5b6-ccb9" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="2c8d-d35b-3cee-24f2" name="Combined Unit" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="d6c9-7f56-e900-25d4" name="Upgrade all with any:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="99e3-9829-742a-1d9b" name="Adrenaline" hidden="false" collective="false" import="true" targetId="4a74-a48d-f6b0-a75b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86d9-f3f0-f3eb-16f7" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="e3b0-e25d-ce4c-cf18" name="Toxic Bite" hidden="false" collective="false" import="true" targetId="1dbe-4977-670d-178c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f9a-1c3d-4625-8e04" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="5f89-bda9-ea86-5357" name="Grunts" hidden="false" collective="false" import="true" defaultSelectionEntryId="cfc5-5b48-0a90-cb88">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56bf-853b-4a9a-e057" type="min"/>
+                    <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed81-7e99-17d0-57ad" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="cfc5-5b48-0a90-cb88" name="Assault Grunt" hidden="false" collective="false" import="true" targetId="8c7a-72e2-4070-c6d4" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a840-f5f9-29bf-f39a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="42fd-d1da-1d20-fef6" name="Assault Grunt (Special Weapon)" hidden="false" collective="false" import="true" targetId="6e92-65f9-0726-16ea" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c28a-9df7-05ed-08e2" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
               </costs>
-            </entryLink>
-            <entryLink id="6748-f95f-eb69-f599" name="Toxic Bite" hidden="false" collective="false" import="true" targetId="1dbe-4977-670d-178c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f2e-aef8-9fb6-8575" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="14d1-5a8b-d645-0e04" name="Vicious Jaws" hidden="false" collective="false" import="true" targetId="5e75-e150-b4fa-6b57" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae59-2976-6028-d927" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="871b-e032-7bdf-aec6" name="Assault Grunt" hidden="false" collective="false" import="true" targetId="8c7a-72e2-4070-c6d4" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="801c-91cf-3187-9b56" type="max"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="241a-2f66-c258-8d76" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
       </costs>
@@ -3688,6 +3747,57 @@
         <infoLink id="996c-ff9c-c304-67e9" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="6e92-65f9-0726-16ea" name="Assault Grunt (Special Weapon)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4e70-99af-805b-afcf" name="Assault Grunt" hidden="false" targetId="99eb-6d4f-c7ff-9808" type="profile"/>
+        <infoLink id="8b2c-2c86-c1fb-cd76" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="c87f-5f57-51cf-3dc1" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="015c-9cbd-3abc-01fd" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d3c9-9562-cd29-b5ef">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f984-8c61-40a3-ac4e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b385-a783-34d9-787c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="24ec-1626-7f46-b51c" name="Sword Claws (A2)" hidden="false" collective="false" import="true" targetId="2832-64ca-06a5-6725" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d3c9-9562-cd29-b5ef" name="Serrated Claws (A4)" hidden="false" collective="false" import="true" targetId="0c37-4212-8856-3480" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="c333-7855-96a9-8f53" name="Smashing Claw (A2,AP2)" hidden="false" collective="false" import="true" targetId="4764-2fc1-e9be-f1b5" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ff54-8de5-5458-3950" name="Piercing Claws (A2)" hidden="false" collective="false" import="true" targetId="0805-b28f-ca7e-9159" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c37-4212-8856-3480" name="Serrated Claws (A4)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1980-8a0c-55e0-420a" name="Serrated Claws (A4)" hidden="false" targetId="bde7-35ee-a3d4-7def" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2832-64ca-06a5-6725" name="Sword Claws (A2)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8f85-fb03-61c5-ca97" name="Sword Claws (A2)" hidden="false" targetId="88d7-8943-3888-5f68" type="profile"/>
+        <infoLink id="7c98-095d-580d-136f" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="db9a-8ce7-bcc1-14f5" name="Spells" hidden="false" collective="false" import="true">
@@ -4630,6 +4740,18 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bde7-35ee-a3d4-7def" name="Serrated Claws (A4)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="88d7-8943-3888-5f68" name="Sword Claws (A2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Deadly(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
