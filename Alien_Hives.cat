@@ -2987,124 +2987,60 @@
       <infoLinks>
         <infoLink id="9219-414e-61fc-7d9f" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="9c69-1672-062d-5ff9" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-        <infoLink id="e527-54b9-2352-5512" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="4949-3930-63d9-9c6e" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="0add-1ce5-abd7-995b" name="Tyrant Beast" hidden="false" targetId="7527-fe3c-9db4-df7f" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="23e8-f9a4-0070-d98f" name="Upgrade with one:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f2b-b8c3-c4e9-f1e4" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="5019-d988-08f1-744f" name="Shredding Hooks" hidden="false" collective="false" import="true" targetId="7f7d-756a-e1aa-a78e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="406a-638c-36dc-4734" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="eaf4-9b92-1e8a-28b7" name="Poison Hooks" hidden="false" collective="false" import="true" targetId="31ab-9e78-2768-bc9a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f40-6ff1-8aa3-0be5" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="b720-08cd-ab36-6450" name="Shock Hooks" hidden="false" collective="false" import="true" targetId="117b-ca3d-57ce-d6aa" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33ad-6304-0fc7-9640" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="b179-c253-ee12-18aa" name="Upgrade with any:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="adbe-5fff-7763-75f0" name="Bio-Recovery" hidden="false" collective="false" import="true" targetId="2a11-e0c5-1a93-42ab" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e00-bdec-eb38-2617" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="2d85-1b56-0686-5463" name="Toxic Bite" hidden="false" collective="false" import="true" targetId="1dbe-4977-670d-178c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3671-09d9-1114-a583" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="d2f6-1e8e-7922-c90f" name="Acid Bite" hidden="false" collective="false" import="true" targetId="4309-3f1f-9064-d7e3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f5a-a955-4e03-7cd3" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="f1a0-3fdd-c1bf-f0b5" name="Adrenaline" hidden="false" collective="false" import="true" targetId="4a74-a48d-f6b0-a75b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa40-05fe-4d0a-79bb" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="eb6b-8e42-eeee-385e" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f442-fe92-a911-5703">
+        <selectionEntryGroup id="eb6b-8e42-eeee-385e" name="Weapon - Ranged [pick 1]" hidden="false" collective="false" import="true" defaultSelectionEntryId="f442-fe92-a911-5703">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1601-6f29-f1c1-e123" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2dd-e565-4928-d943" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="d116-3905-dbcd-d32d" name="Bio-Minigun" hidden="false" collective="false" import="true" targetId="4070-e0f1-243c-9a20" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8df-f261-6b7e-0022" type="max"/>
-              </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
             </entryLink>
-            <entryLink id="f442-fe92-a911-5703" name="Toxic Spray" hidden="false" collective="false" import="true" targetId="a300-531e-35f7-8c52" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8763-85e7-2f6f-a27c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
+            <entryLink id="f442-fe92-a911-5703" name="Toxic Spray" hidden="false" collective="false" import="true" targetId="a300-531e-35f7-8c52" type="selectionEntry"/>
             <entryLink id="6f89-59b2-be83-1ec3" name="Fracture Cannon" hidden="false" collective="false" import="true" targetId="ea9a-6701-6bb2-96c0" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05f6-d4c0-3050-2797" type="max"/>
-              </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="e53e-43db-e1a7-71d5" name="Heavy Fracture Cannon" hidden="false" collective="false" import="true" targetId="aca7-72f6-e42d-2515" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
               </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ac86-4e5f-f5d2-6fae" name="Stinger Cannon" hidden="false" collective="false" import="true" targetId="fd3b-3312-96b7-175c" type="selectionEntry">
+        <entryLink id="acfe-eed2-4019-dabe" name="Weapons - Beast - Melee" hidden="false" collective="false" import="true" targetId="f2ae-f39e-e790-da86" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfda-31c1-a336-0a51" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2e4-6295-7283-ec3b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac62-44dc-a9f7-7333" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4260-e036-e4a4-4fd4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fbc6-420a-096a-59b1" name="Stomp (Heavy)" hidden="false" collective="false" import="true" targetId="7e90-7000-7bb7-46b8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb5b-0331-8bca-54a6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5033-9a2a-1b36-95a5" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="25a7-4409-1e1b-b95d" name="Beast Upgrades - Upgrade with any:" hidden="false" collective="false" import="true" targetId="5885-a779-cf0b-1c64" type="selectionEntryGroup"/>
+        <entryLink id="892b-de83-34c0-22bf" name="Stinger Cannon" hidden="false" collective="false" import="true" targetId="fd3b-3312-96b7-175c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17ac-d5c3-d288-0776" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
           </costs>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="535.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="490.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4070-e0f1-243c-9a20" name="Bio-Minigun" hidden="false" collective="false" import="true" type="upgrade">
@@ -4238,6 +4174,13 @@
         <infoLink id="904d-924c-5717-8077" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="aca7-72f6-e42d-2515" name="Heavy Fracture Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e298-761f-aeb0-006e" name="Heavy Fracture Cannon" hidden="false" targetId="1972-49da-bb6e-d8eb" type="profile"/>
+        <infoLink id="870e-b6db-9e7c-e841" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="8988-f3e5-90b2-6865" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="db9a-8ce7-bcc1-14f5" name="Spells" hidden="false" collective="false" import="true">
@@ -4449,6 +4392,26 @@
         <entryLink id="fd16-877a-aa2c-5753" name="Heavy Acid Cannon" hidden="false" collective="false" import="true" targetId="e2d8-c57c-c20b-bd7a" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="5885-a779-cf0b-1c64" name="Beast Upgrades - Upgrade with any:" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="a9fd-ac2e-25ec-75e8" name="Battering Tusks" hidden="false" collective="false" import="true" targetId="8959-e038-ee33-3c0d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90ed-23ab-6317-4d48" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="ea73-7488-2223-6e79" name="Bio-Recovery" hidden="false" collective="false" import="true" targetId="2a11-e0c5-1a93-42ab" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b166-30f4-77cf-b4c7" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -4924,7 +4887,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless. Impact(3), Tough(18)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Tough(18)</characteristic>
       </characteristics>
     </profile>
     <profile id="44bb-7085-520b-1566" name="Spawning Beast" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -5005,7 +4968,7 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
     <profile id="f054-22e9-23ec-2e9a" name="Razor Claws (A3,AP1)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -5329,6 +5292,13 @@
     <profile id="e589-3a78-197f-fa45" name="Battering Tusks" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Impact(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1972-49da-bb6e-d8eb" name="Heavy Fracture Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
