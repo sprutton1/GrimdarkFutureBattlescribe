@@ -2176,7 +2176,6 @@
         <infoLink id="ac7c-d8ac-5d8a-a2df" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
         <infoLink id="dd4b-5e4e-2237-242d" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="1380-e708-2df5-4051" name="Psychic Synapse" hidden="false" targetId="8272-5465-c7a2-8ada" type="rule"/>
-        <infoLink id="38b6-a24f-54fa-c08f" name="Pheromone" hidden="false" targetId="b7c0-78ce-1622-6361" type="rule"/>
         <infoLink id="b393-4597-6a21-16d9" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
       </infoLinks>
       <entryLinks>
@@ -2200,17 +2199,88 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c4e9-b3bf-9983-dfe7" name="Synapse Floaters" page="" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="4b05-73f2-7492-3de6" name="Synapse Floater" hidden="false" collective="false" import="true" targetId="8ead-2ed9-e43b-0ed6" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="edb8-60fb-f135-d96b" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="b95f-47d2-f456-ada7">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be37-3139-c96e-7e3f" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd6a-46d1-dc8c-3b76" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="472d-b804-b2e1-0878" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9762-5892-ffda-bb30" type="max"/>
           </constraints>
-        </entryLink>
+          <selectionEntries>
+            <selectionEntry id="b95f-47d2-f456-ada7" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="d12d-78b9-78c2-792e" name="Upgrade one model with any:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="8dbf-0b0c-c408-2477" name="Psychic Barrier" hidden="false" collective="false" import="true" targetId="2a7a-c32c-2234-9969" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3d6-0d37-c861-f2ab" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="dbac-30ac-2041-41be" name="Pheromones" hidden="false" collective="false" import="true" targetId="40fd-ce58-371d-5c1b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34e3-86c9-df9d-889e" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="155e-8687-5803-78c4" name="Synapse Floater" hidden="false" collective="false" import="true" targetId="8ead-2ed9-e43b-0ed6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fd3-419c-9fa5-b6ec" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b88c-85d2-b24d-d8d6" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="f513-d6c5-eb71-e198" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="632c-a261-f8ff-5cc1" name="Upgrade up to two models with any:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="0a25-6481-0e04-6ff4" name="Psychic Barrier" hidden="false" collective="false" import="true" targetId="2a7a-c32c-2234-9969" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ce5-125a-4ff5-888a" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="a3df-6cae-afba-ac30" name="Pheromones" hidden="false" collective="false" import="true" targetId="40fd-ce58-371d-5c1b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d877-a190-9321-7f58" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="4059-35f0-4cbf-9d1e" name="Synapse Floater" hidden="false" collective="false" import="true" targetId="8ead-2ed9-e43b-0ed6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40a3-b98b-2389-ce14" type="max"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b4e-3fc9-2035-0cc6" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="280.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
         <entryLink id="c747-eb5e-6706-0c02" name="Spells" hidden="false" collective="false" import="true" targetId="db9a-8ce7-bcc1-14f5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="255.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="280.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1189-dfe8-9f9e-3dee" name="Flamer Beast" hidden="false" collective="false" import="true" type="upgrade">
@@ -4475,7 +4545,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Pheromones, Regeneration, Psychic Synapse, Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Regeneration, Psychic Synapse, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="bd41-6d79-0658-f9ca" name="Flamer Beast" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
