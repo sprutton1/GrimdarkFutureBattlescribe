@@ -1933,32 +1933,68 @@
         <infoLink id="f61e-c8b4-2d12-49ad" name="Shadow Hunter" hidden="false" targetId="21cb-65c8-1133-9c08" type="profile"/>
         <infoLink id="7f09-1a10-c3de-90dd" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
         <infoLink id="5ff7-7cd8-1722-50df" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="4325-beff-51a2-0635" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink id="fec9-88e7-ac6c-f48c" name="Razor Pincers" hidden="false" collective="false" import="true" targetId="8238-a866-fe92-0d9f" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6dd8-70eb-9a1d-7979" name="Weapons - Hooks [max 1]" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89eb-8a76-ac96-6b96" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2760-a4b8-ccac-a7cc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1d1-cfd0-2820-85ae" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="0dce-e2e3-7a7c-9f11" name="Razor Claws" hidden="false" collective="false" import="true" targetId="3f92-30c4-b2a1-9ac4" type="selectionEntry">
+          <entryLinks>
+            <entryLink id="6f53-933f-4708-fbad" name="Poison Hooks" hidden="false" collective="false" import="true" targetId="31ab-9e78-2768-bc9a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d1ae-9066-4be2-f749" name="Shredding Hooks" hidden="false" collective="false" import="true" targetId="7f7d-756a-e1aa-a78e" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9dae-d1b9-9410-b24f" name="Shock Hooks" hidden="false" collective="false" import="true" targetId="117b-ca3d-57ce-d6aa" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2282-2bb3-26b1-d930" name="Acid Hooks" hidden="false" collective="false" import="true" targetId="6441-62c0-b1f1-d179" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fa72-1a70-deac-d8ae" name="Weapons [pick 2]" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd4a-e3ef-142a-7d2e">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caa3-a123-027c-2a54" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed58-d321-686a-285b" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d2a-adb9-9493-fa5e" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f00c-3604-fa8f-b2d6" type="min"/>
           </constraints>
-        </entryLink>
-        <entryLink id="f741-8817-83bc-0ead" name="Razor Hooks" hidden="false" collective="false" import="true" targetId="a534-ee36-b59b-e3ad" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdc5-eaf5-606f-9e98" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc2b-8623-ae20-ef6e" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+          <entryLinks>
+            <entryLink id="0222-ffe4-fc08-8c49" name="Whip Limb &amp; Sword Claw (A2)" hidden="false" collective="false" import="true" targetId="21ef-4484-3b57-ef5e" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="dd4a-e3ef-142a-7d2e" name="Razor Claws (A3,AP1)" hidden="false" collective="false" import="true" targetId="5c30-2ce2-c8dc-316a" type="selectionEntry"/>
+            <entryLink id="3526-aa4d-7503-f0ea" name="Piercing Claws (A3,AP1)" hidden="false" collective="false" import="true" targetId="50ad-68c4-7540-0320" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ea94-1252-29e3-1a46" name="Sword Claws (A3,AP1)" hidden="false" collective="false" import="true" targetId="6fda-60d4-a266-4432" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="4842-c2cf-e63b-711c" name="Smashing Claw (A3,AP3)" hidden="false" collective="false" import="true" targetId="2917-6565-e6e7-a157" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="75.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3bd1-21f1-e6e0-d956" name="Ravenous Beast" hidden="false" collective="false" import="true" type="upgrade">
@@ -4514,7 +4550,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Fear, Stealth, Strider, Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Fear, Fearless, Stealth, Strider, Tough(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="af43-128b-9c47-fe06" name="Ravenous Beast" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
