@@ -3977,23 +3977,29 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="7297-75e5-15df-d934" name="Bad Shot" hidden="false">
+    <rule id="7297-75e5-15df-d934" name="Bad Shot" publicationId="7363-7493-3b62-53bc" hidden="false">
       <description>This model shoots at Quality 5+.</description>
     </rule>
-    <rule id="bfdc-0c96-42f2-df70" name="Doctor" hidden="false">
-      <description>The hero and his unit get Regeneration.</description>
+    <rule id="bfdc-0c96-42f2-df70" name="Mad Doctor" publicationId="7363-7493-3b62-53bc" hidden="false">
+      <description>This model and his unit get the Regeneration special rule.</description>
     </rule>
-    <rule id="95cb-82bd-c578-3812" name="Good Shot" hidden="false">
+    <rule id="95cb-82bd-c578-3812" name="Good Shot" publicationId="7363-7493-3b62-53bc" hidden="false">
       <description>This model shoots at Quality 4+.</description>
     </rule>
-    <rule id="60cb-1e5b-8bac-9839" name="Repair" publicationId="d755-5d69-pubN65537" hidden="false">
-      <description>Once per turn, if the hero is within 2” of a friendly unit with the Tough rule, it may try to repair it. Roll one die, on a 4+ it repairs 1 wound.</description>
+    <rule id="60cb-1e5b-8bac-9839" name="Repair" publicationId="7363-7493-3b62-53bc" hidden="false">
+      <description>Once per turn, if within 2&quot; of a unit with Tough, roll one die. On a 4+ you may repair 1 wound from the target.</description>
     </rule>
-    <rule id="a923-7ab7-e583-4535" name="WAR!(x)" publicationId="d755-5d69-pubN65537" hidden="false">
-      <description>When the hero is activated pick up to X friendly units within 12”, which may move +3” on Advance and +6” on Rush/Charge actions until the end of the round.</description>
+    <rule id="a923-7ab7-e583-4535" name="WAR!" publicationId="7363-7493-3b62-53bc" hidden="false">
+      <description>The hero and his unit move +3&quot; on advance and +6&quot; on rush/charge actions.</description>
     </rule>
-    <rule id="3b6f-656b-c732-c927" name="Teleport Jump" hidden="false">
-      <description>This model may teleport instead of moving normally. Place the model within 4D6” of its starting position, ignoring units and terrain.</description>
+    <rule id="3b6f-656b-c732-c927" name="Teleport" publicationId="7363-7493-3b62-53bc" hidden="false">
+      <description>When this model is activated it may teleport by up to 6&quot; in any direction, ignoring all units and terrain.</description>
+    </rule>
+    <rule id="db7b-c06c-683d-64f3" name="Energy Field" publicationId="7363-7493-3b62-53bc" hidden="false">
+      <description>The hero and his unit get the Stealth special rule.</description>
+    </rule>
+    <rule id="3238-b18d-25dc-3792" name="Red Paint Job" publicationId="7363-7493-3b62-53bc" hidden="false">
+      <description>This model moves +3&quot; on Advance and +6&quot; on Rush/Charge actions.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -4291,38 +4297,38 @@
     </profile>
     <profile id="1757-d1c3-221a-599e" name="Crackling Bolt" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24” takes D3 automatic hits with AP(1).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 6 automatic hits with AP(2).</characteristic>
       </characteristics>
     </profile>
     <profile id="3468-53f6-ab48-ab9b" name="Headbang" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 36” must take a morale test. If failed it takes 1 wound.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 6&quot; gets -2 to its next morale test roll.</characteristic>
       </characteristics>
     </profile>
-    <profile id="c0a4-932e-486f-5767" name="Psychic WAR!" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="c0a4-932e-486f-5767" name="Warpath" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 6” gets +1 to melee rolls until the end of the round.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +1 to melee rolls on its next combat.</characteristic>
       </characteristics>
     </profile>
     <profile id="acba-f0f4-05aa-a982" name="Psychic Vomit" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12” takes D6+2 automatic hits with AP(2).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 12 automatic hits.</characteristic>
       </characteristics>
     </profile>
     <profile id="f5ab-45ea-5f19-2f73" name="Death Bolt" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24” takes 1 automatic hit with AP(4) and Deadly(3).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 1 hit with AP(4) and Deadly(3).</characteristic>
       </characteristics>
     </profile>
     <profile id="3835-4fc4-cc7e-a4ad" name="Teleport" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">The psychic and his unit may be placed anywhere on the table over 12” away from enemy units.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may be placed anywhere within 9&quot; of its current position, ignoring units and terrain.</characteristic>
       </characteristics>
     </profile>
     <profile id="6399-578c-5c55-496e" name="Truck" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
