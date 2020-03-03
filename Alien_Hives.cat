@@ -2327,7 +2327,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="283c-76e4-afa9-dd0c" name="Spore Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="283c-76e4-afa9-dd0c" name="Spore Gun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a1fd-1d77-ef23-d9a1" name="Spore Cannon" hidden="false" targetId="2e7c-58a9-a4f9-c0fb" type="profile"/>
         <infoLink id="7d36-6375-244d-a2c8" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
@@ -2342,9 +2342,11 @@
       <infoLinks>
         <infoLink id="91f4-fbab-faa1-22a9" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="da9d-5fa7-623b-290b" name="Mortar Beast" hidden="false" targetId="4c88-cdda-53f7-6de8" type="profile"/>
+        <infoLink id="743b-8d9b-c9ea-c770" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="e629-8a54-1291-dca3" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="38e2-f443-01cd-2547" name="Razor Claws" hidden="false" collective="false" import="true" targetId="3f92-30c4-b2a1-9ac4" type="selectionEntry">
+        <entryLink id="38e2-f443-01cd-2547" name="Weapons - Beast - Melee" hidden="false" collective="false" import="true" targetId="f2ae-f39e-e790-da86" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfbc-742f-c04c-de56" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7306-ef8e-f868-83b1" type="min"/>
@@ -2358,7 +2360,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="285.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fe9e-a5e0-3428-1cc7" name="Toxic Touch" hidden="false" collective="true" import="true" type="upgrade">
@@ -4312,8 +4314,8 @@
     <profile id="4c88-cdda-53f7-6de8" name="Mortar Beast" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
-        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Tough(3)</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Tough(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="41cc-7830-ddff-2bd2" name="Spore" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -4399,11 +4401,11 @@
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="2e7c-58a9-a4f9-c0fb" name="Spore Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="2e7c-58a9-a4f9-c0fb" name="Spore Gun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(6), Indirect, Spores</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(9), Indirect, Spores</characteristic>
       </characteristics>
     </profile>
     <profile id="1fd9-7424-9df7-33cc" name="Toxic Touch" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
