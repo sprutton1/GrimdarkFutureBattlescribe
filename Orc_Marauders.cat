@@ -660,26 +660,35 @@
         <infoLink id="b1b7-9c03-0c52-7669" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1966-f25f-88a4-f7c9" name="Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="d03b-d810-9391-5f38">
+        <selectionEntryGroup id="1966-f25f-88a4-f7c9" name="Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="61ea-800f-7774-1bf4">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5e0-6dd2-2336-cd60" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4b2-b02b-7490-2e65" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="9e37-a030-b551-7972" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a1d-9bad-0a5c-0342" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
             <entryLink id="d03b-d810-9391-5f38" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="5b63-62b1-2fd4-55e2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7849-b871-69c8-d2ed" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="bc7b-f3b8-1438-2cfe" name="Shred Rifle" hidden="false" collective="false" import="true" targetId="fa7d-5662-869b-c879" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="61ea-800f-7774-1bf4" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="fc43-b3f8-7566-bc7d" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -703,210 +712,197 @@
         <infoLink id="cb71-9f07-7967-fd9e" name="Bad Shot" hidden="false" targetId="7297-75e5-15df-d934" type="rule"/>
         <infoLink id="9664-59e1-08ca-c419" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="9f2d-3ba7-a28f-2c83" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="0236-5e32-8524-048b">
+      <entryLinks>
+        <entryLink id="55b1-cb54-1f3a-91d5" name="Weapons - Melee - Grunts" hidden="false" collective="false" import="true" targetId="8421-b677-4dc3-a99c" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e04d-3620-e70f-8132" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d893-36c1-581b-de4e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab70-0161-6744-e4db" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d034-b68a-ba93-cccc" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="d261-7c89-8efc-e2ca" name="CCW (A3)" hidden="false" collective="false" import="true" targetId="0926-0005-fbbe-53c1" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70f7-4425-c9a5-7df1" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="f7d1-a22d-9526-7a2e" name="Energy Sword" hidden="false" collective="false" import="true" targetId="e394-3fd3-3177-a1d5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="160d-fcb0-fbab-a6db" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="4e82-40e5-4bc0-a069" name="Energy Fist" hidden="false" collective="false" import="true" targetId="8f77-edaf-0ac8-74db" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d338-ab66-78df-ae3b" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="0236-5e32-8524-048b" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6ae-dcc6-e1ba-7771" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="4a70-b54a-0cba-fae3" name="Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="8590-261f-5ed7-cdbd">
+        </entryLink>
+        <entryLink id="af32-c29b-0855-492f" name="Weapons - Ranged" hidden="false" collective="false" import="true" targetId="a2d6-72e7-2f02-eb3b" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c421-2156-0f3b-4ae6" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d9c-5a04-fedf-995e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7095-981d-cf7e-0a61" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2ad-9ab5-9966-e74d" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="8590-261f-5ed7-cdbd" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81a9-f5fd-d989-4c00" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="a066-a977-f7a9-fe03" name="Carbine" hidden="false" collective="false" import="true" targetId="9c24-f1da-7f16-e44e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a0d-1e98-d426-c28b" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="12b7-3d7c-8589-e26f" name="Carbine Attachment" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3215-a61e-950c-4f1e" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="cb6b-ec8f-5427-5ce3" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e1f-2e03-2161-581a" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="43cb-9bbb-861f-9dfb" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="5b63-62b1-2fd4-55e2" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab9d-b012-3a0b-1370" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="8587-5c79-a7c0-1f68" name="Twin Carbine" hidden="false" collective="false" import="true" targetId="d9bb-825e-93f4-a112" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7640-6939-b1c9-2e07" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="9ff4-d123-500a-7874" name="Carbine Attachment" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bf7-eb47-faec-0b06" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="e11d-0691-9c14-cda2" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8b8-09a7-ee24-354a" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="a019-1dcb-88b2-144a" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="5b63-62b1-2fd4-55e2" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a880-bdd0-f23a-ecae" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c3c2-4a32-4f4f-131f" name="Orcs" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c3c2-4a32-4f4f-131f" name="Orc Mob" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="e1b2-e07a-4900-dac3" name="Upgrade all" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1200-b16c-d21c-8f04" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="0bae-8237-cf7b-2110">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4419-206a-c4d1-9f3e" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="2fc8-6ac6-b2d7-cf01" name="Heavy Armor" hidden="false" collective="false" import="true" targetId="6b69-84c7-e6b3-4bdc" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48be-1978-1208-bb41" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="86fe-e00d-e617-60cb" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="78ac-c3dc-7a23-3da2">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e6a-bd7c-ba80-f40a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da38-772b-4af4-70d7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69a6-ebbe-d04e-c420" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6da5-5123-99f1-d6c3" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="78ac-c3dc-7a23-3da2" name="Pistols and CCWs" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0bae-8237-cf7b-2110" name="Single Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
-                <selectionEntryGroup id="cbcd-d15b-04e0-ccd7" name="Orcs" hidden="false" collective="false" import="true" defaultSelectionEntryId="1740-c7fa-8261-2342">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2bc-821b-9e16-5284" type="min"/>
-                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b16e-aeb4-fac0-f86c" type="max"/>
-                  </constraints>
+                <selectionEntryGroup id="9dbd-74f4-490d-3f3c" name="Upgrade all models with:" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="1740-c7fa-8261-2342" name="Orc" hidden="false" collective="false" import="true" targetId="0dd2-4538-4c62-aeb9" type="selectionEntry">
+                    <entryLink id="a06e-4b8d-8be1-e5ac" name="Heavy Armor" hidden="false" collective="false" import="true" targetId="6b69-84c7-e6b3-4bdc" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b42-957b-e929-8aac" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7780-d98f-6466-1155" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
                     </entryLink>
-                    <entryLink id="cbc5-d627-37f8-5940" name="Orc (Leader)" hidden="false" collective="false" import="true" targetId="dbda-904e-3ea6-dad9" type="selectionEntry">
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="e44d-9fbe-188c-ada0" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="ac84-4ce1-332c-df5c">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd7-cd3c-ba9e-7449" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="418e-0be1-6038-af85" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="ac84-4ce1-332c-df5c" name="Pistols and CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="8823-05eb-b788-6136" name="Orcs" hidden="false" collective="false" import="true" defaultSelectionEntryId="467b-c770-ca87-00fa">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bea2-9c08-2dc8-1275" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aab9-920d-ac62-5ea0" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="467b-c770-ca87-00fa" name="Orc" hidden="false" collective="false" import="true" targetId="0dd2-4538-4c62-aeb9" type="selectionEntry"/>
+                            <entryLink id="2239-c5c7-153e-5eb5" name="Orc (Leader)" hidden="false" collective="false" import="true" targetId="dbda-904e-3ea6-dad9" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e51-c083-370b-cb14" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="0e7c-8953-c8be-71fa" name="Orc (Special Weapon)" hidden="false" collective="false" import="true" targetId="3ffb-46ae-ab04-ff5c" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c365-03b1-ebc7-d2f1" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="1683-60f8-1905-08a5" name="Carbines and CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="bb6e-0881-a484-2126" name="Orcs" hidden="false" collective="false" import="true" defaultSelectionEntryId="5fd7-a161-4114-c172">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a29-aa42-f5cd-e28b" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5264-0272-50e6-8cfd" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="5fd7-a161-4114-c172" name="Orc (Carbine &amp; CCW)" hidden="false" collective="false" import="true" targetId="d348-e467-17cd-41a0" type="selectionEntry"/>
+                            <entryLink id="e129-0f40-877f-93ba" name="Orc (Carbine Leader)" hidden="false" collective="false" import="true" targetId="ab72-8204-f657-1e8e" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c33-902a-717a-b1c9" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="21e1-784c-d05f-8f04" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="fb18-ff10-afab-e712" name="Mad Doctor" hidden="false" collective="false" import="true" targetId="ae77-8afd-da96-2600" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f65-f80a-2086-15df" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c66d-61f1-7110-c134" type="max"/>
                       </constraints>
-                    </entryLink>
-                    <entryLink id="c29e-d871-c895-b9da" name="Orc (Special Weapon)" hidden="false" collective="false" import="true" targetId="3ffb-46ae-ab04-ff5c" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7cf-00d0-d0e5-7c33" type="max"/>
-                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
             </selectionEntry>
-            <selectionEntry id="b639-33db-bdbd-ae1d" name="Carbines and CCWs" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0f77-cfe6-084f-f183" name="Combined Unit [20 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
-                <selectionEntryGroup id="5395-f21c-c31b-8005" name="Orcs" hidden="false" collective="false" import="true" defaultSelectionEntryId="ad7a-d006-ef15-5320">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3a0-f72b-9b28-9857" type="min"/>
-                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f924-f627-2ab2-91c0" type="max"/>
-                  </constraints>
+                <selectionEntryGroup id="c141-c5ce-83d1-e6be" name="Upgrade all models with:" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="ad7a-d006-ef15-5320" name="Orc (Carbine &amp; CCW)" hidden="false" collective="false" import="true" targetId="d348-e467-17cd-41a0" type="selectionEntry">
+                    <entryLink id="c02e-c094-435c-0570" name="Heavy Armor" hidden="false" collective="false" import="true" targetId="6b69-84c7-e6b3-4bdc" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f20d-d873-0992-68d0" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f06-f508-8446-ff8f" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                      </costs>
                     </entryLink>
-                    <entryLink id="0394-6914-dfd5-12af" name="Orc (Leader)" hidden="false" collective="false" import="true" targetId="dbda-904e-3ea6-dad9" type="selectionEntry">
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="50b7-8b02-2124-139d" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="e4e9-2004-8e03-abff">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d024-17fa-bc49-4be9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b862-1b7c-8b62-f0df" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="e4e9-2004-8e03-abff" name="Pistols and CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="5871-f799-fa71-1d21" name="Orcs" hidden="false" collective="false" import="true" defaultSelectionEntryId="708d-6366-bdd2-d595">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57c5-4654-050c-f594" type="min"/>
+                            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14b9-a1fa-694c-d11f" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="708d-6366-bdd2-d595" name="Orc" hidden="false" collective="false" import="true" targetId="0dd2-4538-4c62-aeb9" type="selectionEntry"/>
+                            <entryLink id="86dd-2268-2691-a8fd" name="Orc (Leader)" hidden="false" collective="false" import="true" targetId="dbda-904e-3ea6-dad9" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57bf-5948-693c-f4db" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="7fce-3dc4-de69-c47b" name="Orc (Special Weapon)" hidden="false" collective="false" import="true" targetId="3ffb-46ae-ab04-ff5c" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0fd-87a1-60af-2817" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="f770-9168-4553-734e" name="Carbines and CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="447b-99ec-9cae-20b0" name="Orcs" hidden="false" collective="false" import="true" defaultSelectionEntryId="9b13-cbba-c06d-354f">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2c4-167d-25ec-af55" type="min"/>
+                            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b75a-b90c-64b0-8afe" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="9b13-cbba-c06d-354f" name="Orc (Carbine &amp; CCW)" hidden="false" collective="false" import="true" targetId="d348-e467-17cd-41a0" type="selectionEntry"/>
+                            <entryLink id="aff0-2479-643c-21ba" name="Orc (Carbine Leader)" hidden="false" collective="false" import="true" targetId="ab72-8204-f657-1e8e" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c70-652b-3868-42c9" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="913b-d836-33e2-b3e3" name="Upgrade up to two models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="54b8-b8d9-db4e-5cf8" name="Mad Doctor" hidden="false" collective="false" import="true" targetId="ae77-8afd-da96-2600" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="848e-5edc-c683-2dd0" type="max"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eef-d32a-a56f-2dfd" type="max"/>
                       </constraints>
-                    </entryLink>
-                    <entryLink id="847f-3c52-b366-e0c5" name="Orc (Special Weapon)" hidden="false" collective="false" import="true" targetId="3ffb-46ae-ab04-ff5c" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e797-9629-1f8c-77ea" type="max"/>
-                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3724,6 +3720,56 @@
         <infoLink id="829b-79fc-766f-a617" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="ae77-8afd-da96-2600" name="Mad Doctor" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1982-faf9-1a8e-b4bb" name="Mad Doctor" hidden="false" targetId="5733-161d-b6fb-dca7" type="profile"/>
+        <infoLink id="b4d7-c331-541a-2086" name="Mad Doctor" hidden="false" targetId="bfdc-0c96-42f2-df70" type="rule"/>
+        <infoLink id="da60-c28f-a41e-a2d7" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="ab72-8204-f657-1e8e" name="Orc (Carbine Leader)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1559-104a-3b64-5ddd" name="Orc" hidden="false" targetId="6e30-b221-1179-c2ee" type="profile"/>
+        <infoLink id="1118-8cce-cac5-12fb" name="Bad Shot" hidden="false" targetId="7297-75e5-15df-d934" type="rule"/>
+        <infoLink id="2963-ef62-bd6f-4c02" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="818c-6394-6f47-9239" name="Weapons - Melee - Grunts" hidden="false" collective="false" import="true" targetId="8421-b677-4dc3-a99c" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13b9-6ac5-2485-98e6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc5a-f8bf-7360-9bba" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3f7e-8eaf-67c6-f06a" name="Carbine" hidden="false" collective="false" import="true" targetId="9c24-f1da-7f16-e44e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9be4-334c-92e8-1f87" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c9c-2f0e-7628-9e76" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f3ab-49d5-89da-7cb7" name="Carbine Attachment" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94ce-1c89-a074-266c" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="70db-5be8-5ef3-1108" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1c5f-7911-4338-a4ef" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="5b63-62b1-2fd4-55e2" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a2d6-72e7-2f02-eb3b" name="Weapons - Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="3420-f6e6-3624-1727">
@@ -3939,6 +3985,31 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8421-b677-4dc3-a99c" name="Weapons - Melee - Grunts" hidden="false" collective="false" import="true" defaultSelectionEntryId="867b-51f0-4e24-7441">
+      <entryLinks>
+        <entryLink id="867b-51f0-4e24-7441" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry"/>
+        <entryLink id="337c-3284-1c72-ed7a" name="Ultra Sawblade" hidden="false" collective="false" import="true" targetId="5fd5-2aba-5c2c-60d0" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="c1cf-bea8-d65e-8d93" name="Ultra Drill" hidden="false" collective="false" import="true" targetId="bd01-c215-da32-f916" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="4bba-ab8a-5f9a-b9a3" name="Ultra Axe" hidden="false" collective="false" import="true" targetId="bee8-8338-c599-7fd2" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="75b5-a631-8e0d-e911" name="Ultra Claw" hidden="false" collective="false" import="true" targetId="4fab-cbce-44f6-be45" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -4717,6 +4788,11 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5733-161d-b6fb-dca7" name="Mad Doctor" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">This model and his unit get the Regeneration special rule.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
