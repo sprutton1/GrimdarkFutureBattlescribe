@@ -296,10 +296,12 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8555-ec19-9ff7-7c64" name="Orc Herder" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="8555-ec19-9ff7-7c64" name="Goblin Herder" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3971-3dc4-02c9-a5ce" name="Orc Herder" hidden="false" targetId="e458-9d34-d718-3d12" type="profile"/>
         <infoLink id="a35d-1f05-2db2-8521" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="f74b-9647-0a7d-d508" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
+        <infoLink id="5469-e5cf-1565-3b6d" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -543,30 +545,78 @@
     </selectionEntry>
     <selectionEntry id="6c5a-73f8-69e0-1ed5" name="Goblin Herd" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="0c22-b0e0-0b30-71be" name="Upgrade with one" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2142-b593-5e4c-bbca" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="30a4-4a81-112f-7abd">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64bb-8797-e618-5ee9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="160a-18ee-f31d-d32e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="676d-e1e9-309c-2a9c" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="3469-337f-4d2f-9588" name="Orc Herder" hidden="false" collective="false" import="true" targetId="8555-ec19-9ff7-7c64" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="117c-cf9e-3737-4403" type="max"/>
-              </constraints>
+          <selectionEntries>
+            <selectionEntry id="30a4-4a81-112f-7abd" name="Single Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="c17f-c8ff-cd85-1ba5" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="030d-950c-2217-1fb5" name="Orc Herder" hidden="false" collective="false" import="true" targetId="8555-ec19-9ff7-7c64" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86c9-a494-642c-02ce" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="382c-0f71-ecf4-5032" name="Goblins" hidden="false" collective="false" import="true" defaultSelectionEntryId="1c96-6f03-bd3d-3964">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f7b-c488-e108-feb8" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e577-cf20-14ff-ba5c" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="1c96-6f03-bd3d-3964" name="Goblin" hidden="false" collective="false" import="true" targetId="5c1e-ab18-c545-1712" type="selectionEntry"/>
+                    <entryLink id="4963-6b4a-bd58-019a" name="Goblin (Special Weapon)" hidden="false" collective="false" import="true" targetId="7be9-8d60-d002-bf00" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26c0-c169-7646-215d" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="5c07-3d06-7d92-df06" name="Combined Unit [20 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="ee07-d129-4ca1-e985" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="5cc7-468a-55c7-7bee" name="Orc Herder" hidden="false" collective="false" import="true" targetId="8555-ec19-9ff7-7c64" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7317-1930-edfb-fc70" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="4d8a-1af6-3537-087b" name="Goblins" hidden="false" collective="false" import="true" defaultSelectionEntryId="9f83-db40-2bd6-b921">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7beb-4ede-2615-2461" type="min"/>
+                    <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebd3-b897-86a5-3d2c" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="9f83-db40-2bd6-b921" name="Goblin" hidden="false" collective="false" import="true" targetId="5c1e-ab18-c545-1712" type="selectionEntry"/>
+                    <entryLink id="9527-299c-9c88-779f" name="Goblin (Special Weapon)" hidden="false" collective="false" import="true" targetId="7be9-8d60-d002-bf00" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38b3-3ba8-03ed-315a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="59c7-1ec9-a4c6-0204" name="Goblin" hidden="false" collective="false" import="true" targetId="5c1e-ab18-c545-1712" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4399-429d-861d-191b" type="max"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc34-7640-3fd3-e5a9" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
       </costs>
@@ -3614,6 +3664,66 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7be9-8d60-d002-bf00" name="Goblin (Special Weapon)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cbaf-dd28-3218-40e2" name="Goblin" hidden="false" targetId="c7ff-7aec-6a66-2d95" type="profile"/>
+        <infoLink id="0fab-664d-4efa-6ebe" name="Good Shot" hidden="false" targetId="95cb-82bd-c578-3812" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="340e-8ece-8c9f-02a1" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="711f-b962-402d-3769">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6523-95b9-874f-30b9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="964a-5e13-4d33-da2b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="711f-b962-402d-3769" name="Flame Pistol" hidden="false" collective="false" import="true" targetId="db8f-b317-2b7d-2ed3" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="0880-b236-630a-0b7a" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="b4bf-2a04-6bf7-a1e0" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="0e7d-29f6-bf5e-f146" name="Shred Pistol" hidden="false" collective="false" import="true" targetId="ea5d-986e-bfbd-0543" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="c2df-7b30-83f6-453e" name="Rocket Pistol" hidden="false" collective="false" import="true" targetId="868a-7607-8eb0-9852" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e3b6-b859-fa1e-9bc4" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2a3-6144-5112-20a0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76d3-73cb-942c-02f5" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="868a-7607-8eb0-9852" name="Rocket Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1056-b9df-fe0a-a1cd" name="Rocket Pistol" hidden="false" targetId="6866-439d-f803-b51d" type="profile"/>
+        <infoLink id="630f-14eb-f88e-d9bc" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="48db-d01d-dea9-076a" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="ea5d-986e-bfbd-0543" name="Shred Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a27e-b181-0b6b-844e" name="Shred Pistol" hidden="false" targetId="fff9-345b-9217-6e35" type="profile"/>
+        <infoLink id="829b-79fc-766f-a617" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a2d6-72e7-2f02-eb3b" name="Weapons - Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="3420-f6e6-3624-1727">
@@ -4132,9 +4242,9 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Blast(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="e458-9d34-d718-3d12" name="Orc Herder" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+    <profile id="e458-9d34-d718-3d12" name="Goblin Herder" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Unit get Fearless.</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Fearless, Furious, Relentless</characteristic>
       </characteristics>
     </profile>
     <profile id="6710-e7fa-d992-c15f" name="Twin Rocket Launcher" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -4593,6 +4703,20 @@
     <profile id="1c23-48b1-1a41-da95" name="Precision Monocle" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Good Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6866-439d-f803-b51d" name="Rocket Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fff9-345b-9217-6e35" name="Shred Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Rending</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
