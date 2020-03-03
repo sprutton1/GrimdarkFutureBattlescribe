@@ -1781,58 +1781,53 @@
         <infoLink id="b3a1-a767-3491-8ce5" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ef37-9a2e-3c1b-1612" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b00b-68f8-b205-f9fa">
+        <selectionEntryGroup id="9e83-c06a-1748-9238" name="Weapons [pick 2 - max 1 ranged]" hidden="false" collective="false" import="true" defaultSelectionEntryId="2656-9417-6f06-abda">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="740e-4246-d9e1-e4ba" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02ab-47d4-aebc-a675" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beb1-77a7-5477-78bb" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07d9-bd29-0645-464e" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="466d-11dc-30a3-2125" name="Whip Limb &amp; Sword Claw" hidden="false" collective="false" import="true" targetId="4b6a-becd-466c-f590" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f3e3-1432-8d4e-b57e" name="Ranged Weapon" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f42-bd82-233e-05b5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9988-c7fc-a4b4-ed2c" type="max"/>
               </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="b00b-68f8-b205-f9fa" name="Razor Claws" hidden="false" collective="false" import="true" targetId="3f92-30c4-b2a1-9ac4" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a1-10f9-2854-3d9e" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="7892-b327-43e7-a14b" name="Smashing Claw" hidden="false" collective="false" import="true" targetId="4764-2fc1-e9be-f1b5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63de-031c-8d7b-b99c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="9e83-c06a-1748-9238" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd5d-10cd-23df-f65d">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beb1-77a7-5477-78bb" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07d9-bd29-0645-464e" type="min"/>
-          </constraints>
+              <entryLinks>
+                <entryLink id="0b76-beed-69f6-2791" name="Bio-Harpoon" hidden="false" collective="false" import="true" targetId="3d83-9c2a-c0d0-5e0d" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9d9a-47fc-c8e2-0765" name="Bio-Shock Gun" hidden="false" collective="false" import="true" targetId="7d7a-28eb-e2df-2bc4" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="dd5d-10cd-23df-f65d" name="Razor Pincers" hidden="false" collective="false" import="true" targetId="3ad1-63ca-437f-86f3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d119-04b2-f5f5-84df" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="2c17-5707-cb20-fad7" name="Bio-Harpoon" hidden="false" collective="false" import="true" targetId="3d83-9c2a-c0d0-5e0d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eabb-e7b3-2f4d-0068" type="max"/>
-              </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="008b-fbb6-5eea-b9ad" name="Bio-Shock Gun" hidden="false" collective="false" import="true" targetId="7d7a-28eb-e2df-2bc4" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eaa-0030-aff1-fb9f" type="max"/>
-              </constraints>
+            <entryLink id="2656-9417-6f06-abda" name="Razor Claws (A3,AP2)" hidden="false" collective="false" import="true" targetId="c76e-deb8-200c-e75a" type="selectionEntry"/>
+            <entryLink id="908a-e50f-ad9c-c90b" name="Smashing Claw (A3,AP4)" hidden="false" collective="false" import="true" targetId="86f9-3f6a-6b08-f085" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="360c-e9d0-66ab-733a" name="Serrated Claws (A6,AP2)" hidden="false" collective="false" import="true" targetId="4339-677c-1361-9190" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ce33-ec5e-3728-50e7" name="Sword Claws (A3,AP2)" hidden="false" collective="false" import="true" targetId="5dc8-5fec-55fe-de7a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="86a6-0805-1e7b-e47c" name="Whip Limb &amp; Sword Claw (A2,AP1)" hidden="false" collective="false" import="true" targetId="4b6a-becd-466c-f590" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
@@ -1863,7 +1858,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d7a-28eb-e2df-2bc4" name="Bio-Shock Gun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7d7a-28eb-e2df-2bc4" name="Heavy Shock-Gun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="204d-b46a-7562-1e65" name="Bio-Shock Gun" hidden="false" targetId="5667-c5d3-208c-fe4c" type="profile"/>
         <infoLink id="1c88-242e-232c-8729" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
@@ -1893,45 +1888,40 @@
     </selectionEntry>
     <selectionEntry id="2b85-ca76-6db9-e51b" name="Hive Guardians" page="" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="fa09-e4d1-70b0-a06b" name="Upgrade all with any:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="2891-5907-ddc5-6ade" name="Adrenaline" hidden="false" collective="false" import="true" targetId="4a74-a48d-f6b0-a75b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a92-12a0-ebbd-ff36" type="max"/>
-              </constraints>
+        <selectionEntryGroup id="f512-c758-b6dd-9964" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="b526-e82d-3d8c-4c21">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2e0-7e58-9217-75ae" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="706b-b588-2187-04b7" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b526-e82d-3d8c-4c21" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="2b3a-7ef5-b837-3128" name="Hive Guardian" hidden="false" collective="false" import="true" targetId="9e54-6f22-f1dd-2494" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61eb-00ca-46ff-7d1f" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1427-16d2-66a0-7f58" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="f8a8-ee10-d09f-d125" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="4fa5-87d0-ff20-b075" name="Hive Guardian" hidden="false" collective="false" import="true" targetId="9e54-6f22-f1dd-2494" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3db3-1357-7fd2-f91b" type="max"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="583a-6e97-3f63-e5ae" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="360.0"/>
               </costs>
-            </entryLink>
-            <entryLink id="7c5e-1592-4593-b621" name="Toxic Bite" hidden="false" collective="false" import="true" targetId="1dbe-4977-670d-178c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b313-4bef-d1a4-655d" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="a7f8-7130-b99b-ab12" name="Vicious Jaws" hidden="false" collective="false" import="true" targetId="5e75-e150-b4fa-6b57" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fe4-f7d6-3487-50e9" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="1440-2cb6-0ca5-1113" name="Hive Guardian" hidden="false" collective="false" import="true" targetId="9e54-6f22-f1dd-2494" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ec0-747c-3a31-d3ba" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="526f-51f1-5db3-84d5" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="320.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="360.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a30-5826-3817-83ea" name="Shadow Hunter" hidden="false" collective="false" import="true" type="upgrade">
@@ -4752,9 +4742,9 @@
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Deadly(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="5667-c5d3-208c-fe4c" name="Bio-Shock Gun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="5667-c5d3-208c-fe4c" name="Heavy Shock-Gun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Blast(3)</characteristic>
       </characteristics>
