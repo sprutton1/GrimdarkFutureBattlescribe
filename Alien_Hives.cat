@@ -34,6 +34,7 @@
     <entryLink id="4b2a-eafb-7963-01bd" name="Veteran Warrior" hidden="false" collective="false" import="true" targetId="795d-eb44-dba6-084f" type="selectionEntry"/>
     <entryLink id="809f-0310-6ed5-379a" name="Snatcher Veteran" hidden="false" collective="false" import="true" targetId="7ff4-5596-1aa9-f9cd" type="selectionEntry"/>
     <entryLink id="a5a7-973d-1a9f-fc0c" name="Artillery Spore" hidden="false" collective="false" import="true" targetId="5e1f-e642-137c-0b88" type="selectionEntry"/>
+    <entryLink id="308a-f13e-9d93-b5f7" name="Massive Spore" hidden="false" collective="false" import="true" targetId="0645-7dfa-099a-e25f" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="b4ec-35df-a8ec-3001" name="Hive Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -2364,40 +2365,49 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="285.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fe9e-a5e0-3428-1cc7" name="Toxic Touch" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="ca03-fbc7-4e92-520a" name="Toxic tough" hidden="false" targetId="1fd9-7424-9df7-33cc" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="67da-2ea6-d09c-74d0" name="Spore" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="df63-d2ba-7e7d-35d0" name="Spore" hidden="false" targetId="41cc-7830-ddff-2bd2" type="profile"/>
         <infoLink id="00b7-82a7-dbd2-f411" name="Explosive Head" hidden="false" targetId="9a50-ebf7-113d-0a93" type="rule"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink id="99cb-06e9-1385-6b88" name="Toxic Touch" hidden="false" collective="false" import="true" targetId="fe9e-a5e0-3428-1cc7" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b734-cdaf-22b2-b660" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="610f-894a-77a6-5deb" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9a41-2b5f-6007-20d1" name="Spores" page="" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="566d-0175-f5ff-94b4" name="Spore" hidden="false" collective="false" import="true" targetId="67da-2ea6-d09c-74d0" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3d71-218c-c116-a7d3" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="33ed-df6c-647c-7c90">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47af-a1e7-4c48-ab77" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5abd-1f35-e974-1df1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3edb-e644-2936-e08d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5392-f069-70d7-5e6a" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="33ed-df6c-647c-7c90" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="2d65-757d-c100-0597" name="Spore" hidden="false" collective="false" import="true" targetId="67da-2ea6-d09c-74d0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4a1-2a5c-7103-1013" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfc7-1c6c-5db9-61df" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="3187-51c3-ad94-cce4" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="328c-33b7-084b-7713" name="Spore" hidden="false" collective="false" import="true" targetId="67da-2ea6-d09c-74d0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2326-acf5-6d4d-f3f4" type="max"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e93-6b6f-be0a-8a26" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
       </costs>
@@ -4014,6 +4024,16 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="245.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0645-7dfa-099a-e25f" name="Massive Spore" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2687-18dc-cf70-3df7" name="Massive Spore" hidden="false" targetId="8c47-c82c-db4c-4f43" type="profile"/>
+        <infoLink id="b452-49ab-1e8d-36c9" name="Explosive Head" hidden="false" targetId="9a50-ebf7-113d-0a93" type="rule"/>
+        <infoLink id="ee12-a774-f23c-f309" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="db9a-8ce7-bcc1-14f5" name="Spells" hidden="false" collective="false" import="true">
@@ -5174,6 +5194,13 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(9), Indirect, Spores</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8c47-c82c-db4c-4f43" name="Massive Spore" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">6+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">6+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Explosive Head, Tough(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
