@@ -2648,7 +2648,7 @@
       <infoLinks>
         <infoLink id="43ee-3883-c331-bb17" name="Twin Heavy Acid Cannon" hidden="false" targetId="9a82-f549-1bdf-8551" type="profile"/>
         <infoLink id="e59a-76ff-6a97-5d20" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
-        <infoLink id="0236-b4df-e42b-3397" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+        <infoLink id="0236-b4df-e42b-3397" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -3151,17 +3151,11 @@
           </constraints>
           <entryLinks>
             <entryLink id="488f-a31d-12dc-0405" name="Spore Bombs" hidden="false" collective="false" import="true" targetId="18b2-0719-2ab3-8a6a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af8d-29bf-db8d-3c37" type="max"/>
-              </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
               </costs>
             </entryLink>
             <entryLink id="748e-47e1-a93c-24a5" name="Missile Bugs" hidden="false" collective="false" import="true" targetId="a63f-f877-fa82-2cf2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d71-193b-1f85-da79" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
@@ -3175,54 +3169,45 @@
           </constraints>
           <entryLinks>
             <entryLink id="36f7-1d01-d9a4-9735" name="Twin Heavy Acid Cannon" hidden="false" collective="false" import="true" targetId="937e-7ab7-d673-3b08" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71a2-97cd-f942-aa0a" type="max"/>
-              </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
               </costs>
             </entryLink>
             <entryLink id="9118-5906-f30e-86b1" name="Twin Heavy Barb-Cannon" hidden="false" collective="false" import="true" targetId="c556-7a21-ce4a-1c94" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="938f-08b9-08a6-24c8" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
               </costs>
             </entryLink>
-            <entryLink id="f277-0ed7-978a-8fcf" name="Caustic Cannon" hidden="false" collective="false" import="true" targetId="9302-7f44-f470-1e67" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f54b-6c1f-59b2-7c86" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="f277-0ed7-978a-8fcf" name="Caustic Cannon" hidden="false" collective="false" import="true" targetId="9302-7f44-f470-1e67" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="218a-6b24-54de-9779" name="Upgrade with one:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="218a-6b24-54de-9779" name="Upgrade with:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4355-80d2-f5f6-d550" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="3315-0e73-f2de-412d" name="Spine Cannon" hidden="false" collective="false" import="true" targetId="2833-bdc6-634e-3f37" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2d9-f3b1-42af-4522" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
             <entryLink id="02dd-948f-6d24-5d74" name="Stinger Cannon" hidden="false" collective="false" import="true" targetId="fd3b-3312-96b7-175c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fb8-2ba1-89f1-fcfa" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="cb76-a239-656b-a280" name="Upgrade with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="f624-8bec-3455-4693" name="Bio-Recovery" hidden="false" collective="false" import="true" targetId="2a11-e0c5-1a93-42ab" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="204e-966d-de3a-fe63" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="180.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b500-c0f7-a620-34ee" name="Stomp" hidden="false" collective="false" import="true" type="upgrade">
@@ -4951,7 +4936,7 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Blast(3)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="2370-05ff-684b-4fa8" name="Twin Heavy Barb-Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -4972,7 +4957,7 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(6), Spores</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(9), Spores</characteristic>
       </characteristics>
     </profile>
     <profile id="4e55-7786-ce7d-a273" name="Transport Spore" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
