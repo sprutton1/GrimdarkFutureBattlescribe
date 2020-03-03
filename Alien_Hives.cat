@@ -2122,7 +2122,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="05c3-a1e6-75fd-6911" name="Posion Cloud" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="05c3-a1e6-75fd-6911" name="Poison Cloud" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e4bb-f36e-353e-7a6a" name="Poison Cloud" hidden="false" targetId="7907-0ebc-41dd-4fde" type="profile"/>
         <infoLink id="aa4b-2438-dbf6-2d67" name="Poison(X)" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
@@ -2132,16 +2132,41 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="221f-c9bc-17f8-9f07" name="Venom Floaters" page="" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="ef38-950a-9907-fc5c" name="Venom Floater" hidden="false" collective="false" import="true" targetId="62ed-2c0d-dee6-102b" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b5a7-17ee-77a3-73f4" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="7adf-4859-c9f0-b171">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6307-20c2-6b04-285c" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ccc-283a-3223-b830" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d658-b04d-a27b-fe7f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8015-3696-6a82-ca40" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="7adf-4859-c9f0-b171" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="464b-b761-ab0b-c322" name="Venom Floater" hidden="false" collective="false" import="true" targetId="62ed-2c0d-dee6-102b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28f4-5640-ab4c-6e94" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d25-9a5b-749c-44ca" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="5de9-8534-d4bb-2815" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="e9af-6b04-2f66-caaa" name="Venom Floater" hidden="false" collective="false" import="true" targetId="62ed-2c0d-dee6-102b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6d1-2b6b-3372-228b" type="max"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ea7-c1cf-235b-6319" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="225.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="210.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="225.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8ead-2ed9-e43b-0ed6" name="Synapse Floater" hidden="false" collective="false" import="true" type="upgrade">
