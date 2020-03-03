@@ -2465,11 +2465,12 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c371-5403-81bd-ea00" name="Clawed Tongue" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c371-5403-81bd-ea00" name="Tongue" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ae93-f5fe-4427-0b0d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="d3fb-2ed4-2fdd-22fe" name="Clawed Tongue" hidden="false" targetId="0067-e5e3-a668-1de8" type="profile"/>
         <infoLink id="a397-534b-bbd3-088e" name="Sniper" hidden="false" targetId="2943-e3f6-fb44-ae13" type="rule"/>
+        <infoLink id="d76d-dafb-ebb8-05f5" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -2801,93 +2802,32 @@
       <infoLinks>
         <infoLink id="5753-5476-a1a4-7108" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="ed1d-d357-794e-1af8" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-        <infoLink id="80c6-38e9-1d98-308c" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="fb2e-0b78-4024-c591" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="3817-867c-3661-9924" name="Devourer Beast" hidden="false" targetId="1a84-f563-fed4-3e13" type="profile"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="4e0d-cb9f-2905-4d56" name="Upgrade with one:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ee0-ab00-6391-6509" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="b795-67ee-2303-738d" name="Tail Scythe" hidden="false" collective="false" import="true" targetId="76af-6ed6-c8c0-9cc9" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3306-f306-a8df-ae25" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="1bf1-64cc-df45-0239" name="Tail Mace" hidden="false" collective="false" import="true" targetId="3226-9559-4259-5bb3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7a8-ba9d-e7df-0f58" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="dbe1-5c37-b5ad-c99d" name="Upgrade with any:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="23c1-7a04-d8e5-e08b" name="Bio-Recovery" hidden="false" collective="false" import="true" targetId="2a11-e0c5-1a93-42ab" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f35b-07fe-4172-594a" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="a03f-5209-7e4c-c491" name="Toxic Bite" hidden="false" collective="false" import="true" targetId="1dbe-4977-670d-178c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d05-124e-5e8a-d018" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="f044-09dd-a346-c31f" name="Acid Bite" hidden="false" collective="false" import="true" targetId="4309-3f1f-9064-d7e3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="943e-8a36-b791-54bd" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="f41b-c686-9fd4-6f7c" name="Adrenaline" hidden="false" collective="false" import="true" targetId="4a74-a48d-f6b0-a75b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8f5-425a-ec75-1063" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="5ee9-b9b6-a02d-a7bf" name="Smashing Claw" hidden="false" collective="false" import="true" targetId="86f9-3f6a-6b08-f085" type="selectionEntry">
+        <entryLink id="5ee9-b9b6-a02d-a7bf" name="Stomp (Heavy)" hidden="false" collective="false" import="true" targetId="7e90-7000-7bb7-46b8" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6207-5eb2-ba92-d1a5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43cd-4c0d-9eec-0cc4" type="min"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-          </costs>
         </entryLink>
         <entryLink id="c8c7-96ed-1b1c-c747" name="Clawed Tongue" hidden="false" collective="false" import="true" targetId="c371-5403-81bd-ea00" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d420-6a79-e628-715a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c667-ae4e-85db-641b" type="min"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-          </costs>
         </entryLink>
+        <entryLink id="ff5d-919c-2c98-b5e4" name="Weapons - Beast - Melee" hidden="false" collective="false" import="true" targetId="f2ae-f39e-e790-da86" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c622-fa85-a4e9-aab0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2efa-e39d-3bae-8d7e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5a70-5fd4-7603-06ad" name="Beast Upgrades - Upgrade with any:" hidden="false" collective="false" import="true" targetId="5885-a779-cf0b-1c64" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="515.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="495.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fa8d-78d5-5b25-fe12" name="Artillery Beast" hidden="false" collective="false" import="true" type="upgrade">
@@ -4873,7 +4813,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless. Impact(3), Tough(18)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Tough(18)</characteristic>
       </characteristics>
     </profile>
     <profile id="8b73-1b24-5ddb-543b" name="Artillery Beast" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -4943,11 +4883,11 @@
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4)</characteristic>
       </characteristics>
     </profile>
-    <profile id="0067-e5e3-a668-1de8" name="Clawed Tongue" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="0067-e5e3-a668-1de8" name="Tongue" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Sniper</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(3), Sniper</characteristic>
       </characteristics>
     </profile>
     <profile id="947f-01fb-d201-f8c3" name="Bio-Plasma Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
