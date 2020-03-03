@@ -2287,6 +2287,8 @@
       <infoLinks>
         <infoLink id="608a-533f-54f6-9d31" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="03c8-1111-06ce-751c" name="Flamer Beast" hidden="false" targetId="bd41-6d79-0658-f9ca" type="profile"/>
+        <infoLink id="2ec9-1ef2-6f00-52ad" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="afa9-7553-68a0-36a3" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="2394-a796-042f-7875" name="Spit Flames" hidden="false" collective="false" import="true" targetId="cfee-fac3-75fa-6b75" type="selectionEntry">
@@ -2295,7 +2297,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abbb-38a3-ac5f-89f4" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="541b-1d52-d7be-9c20" name="Fiery Bite" hidden="false" collective="false" import="true" targetId="c11f-002c-8712-a4f8" type="selectionEntry">
+        <entryLink id="541b-1d52-d7be-9c20" name="Weapons - Beast - Melee" hidden="false" collective="false" import="true" targetId="f2ae-f39e-e790-da86" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac02-3043-4f02-2462" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f280-9ef3-8eed-1879" type="min"/>
@@ -2303,13 +2305,14 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="200.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cfee-fac3-75fa-6b75" name="Spit Flames" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7b3d-af1c-4338-2a81" name="Spit Flames" hidden="false" targetId="5914-444a-90f0-1ce0" type="profile"/>
         <infoLink id="79b9-f658-38bc-4cf9" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="cefd-82ee-f170-4ed5" name="Indirect" hidden="false" targetId="587a-b92c-a265-06c4" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -4302,8 +4305,8 @@
     <profile id="bd41-6d79-0658-f9ca" name="Flamer Beast" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
-        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Tough(3)</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Tough(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="4c88-cdda-53f7-6de8" name="Mortar Beast" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -4385,9 +4388,9 @@
     </profile>
     <profile id="5914-444a-90f0-1ce0" name="Spit Flames" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Indirect</characteristic>
       </characteristics>
     </profile>
     <profile id="95ca-22cd-e938-ab8d" name="Fiery Bite" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
