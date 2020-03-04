@@ -177,7 +177,16 @@
     <selectionEntry id="6b71-5af9-c2f9-6ed2" name="Recon Drone" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8e72-c145-2d67-861f" name="Recon Drone" hidden="false" targetId="524f-d09b-e1ad-5cc0" type="profile"/>
+        <infoLink id="fabf-b85b-0f81-304c" name="Beacon" hidden="false" targetId="34c1-d612-2bef-ad92" type="rule"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink id="8d32-06cd-9fcc-d69b" name="Burst Carbine" hidden="false" collective="false" import="true" targetId="ed91-b22e-5150-f82a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea8b-c136-1408-3678" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e705-f529-5695-853e" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
@@ -935,7 +944,11 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="46d7-bd43-8916-9aca" name="Upgrades (1x Drone)" hidden="false" collective="false" import="true" targetId="1897-15d5-5e04-5ce4" type="selectionEntryGroup"/>
+        <entryLink id="46d7-bd43-8916-9aca" name="Upgrades (1x Drone)" hidden="false" collective="false" import="true" targetId="1897-15d5-5e04-5ce4" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2723-0cda-5db8-d4ec" type="max"/>
+          </constraints>
+        </entryLink>
         <entryLink id="5844-9a29-4eee-76b0" name="Pulse Pistol" hidden="false" collective="false" import="true" targetId="73a8-c064-2f83-0ae8" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="591f-dbe4-e32e-3a85" type="min"/>
@@ -967,24 +980,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e7c1-14fd-57ee-1fff" name="Spotter" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="2877-e2c6-c482-87a0" name="Spotter" hidden="false" targetId="80ac-51e3-22de-c62e" type="profile"/>
-        <infoLink id="af80-f87e-4f35-30b5" name="Good Shot" hidden="false" targetId="226a-fb55-139f-87fb" type="rule"/>
-        <infoLink id="d2e5-b430-09c5-9f83" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="010c-a09f-55e5-eb44" name="Spotting Laster" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d93-7ed2-a3e3-5f5c" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="aa56-aee6-239c-b3a7" name="Spotting Laser" hidden="false" targetId="983f-912e-7606-6616" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="1401-5a0d-6647-9f29" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
@@ -1004,43 +999,27 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f227-171f-2455-b9f8" name="Spotter (Special Weapon)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="5fdc-052a-1cad-4178" name="Spotter" hidden="false" targetId="80ac-51e3-22de-c62e" type="profile"/>
-        <infoLink id="dcec-176a-a032-8bef" name="Good Shot" hidden="false" targetId="226a-fb55-139f-87fb" type="rule"/>
-        <infoLink id="9073-2e21-d9ec-eff3" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="377d-bfe4-d663-720f" name="Spotting Laster" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="242d-6735-b88e-0b8e" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="159e-ba42-e007-7caa" name="Spotting Laser" hidden="false" targetId="983f-912e-7606-6616" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="98ca-585b-afda-f3af" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7394-ff38-7f9b-ecad">
+        <selectionEntryGroup id="98ca-585b-afda-f3af" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7445-fd2c-bb0c-9c35">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1e1-2c7c-1147-ec51" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86e2-2c93-d9fc-ab45" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="8300-51b7-0f11-d4f3" name="Ion Rifle" hidden="false" collective="false" import="true" targetId="91f4-6f3f-db48-8845" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b2-4d6e-a8d0-6993" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
             <entryLink id="7394-ff38-7f9b-ecad" name="Rail Rifle" hidden="false" collective="false" import="true" targetId="b2e2-fbd8-902a-ba55" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdda-d141-f4ec-e54f" type="max"/>
-              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7445-fd2c-bb0c-9c35" name="Scoped Rifle" hidden="false" collective="false" import="true" targetId="f1f4-d239-152f-8eb4" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -1058,87 +1037,146 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8170-2e3a-dd1b-9f59" name="Spotter Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8195-a9d6-3585-5f95" name="Spotter" hidden="false" targetId="80ac-51e3-22de-c62e" type="profile"/>
+        <infoLink id="2c8a-cf23-953a-bcf9" name="Good Shot" hidden="false" targetId="226a-fb55-139f-87fb" type="rule"/>
+        <infoLink id="fc84-5eca-2c41-9e3c" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7ee5-f428-721e-a018" name="Spotters" hidden="false" collective="false" import="true" defaultSelectionEntryId="34a0-de61-4115-80bc">
+        <selectionEntryGroup id="dcd3-5100-42cb-a8d3" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a2c-2dcb-414c-a42c">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fbc-b46c-3b26-b3a8" type="min"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e766-13c1-8d21-31aa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb0a-2ba5-95b5-5914" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c11-5c96-168a-3110" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="34a0-de61-4115-80bc" name="Spotter" hidden="false" collective="false" import="true" targetId="e7c1-14fd-57ee-1fff" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1a3-2f13-1f87-d5ce" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="4792-8088-5a25-0d99" name="Spotter (Special Weapon)" hidden="false" collective="false" import="true" targetId="f227-171f-2455-b9f8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe5-bf39-bb08-0bad" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="430b-4ad9-7562-aaa9" name="Upgrade one model with one" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74b3-8743-7cf2-a2d1" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="8e4d-0c39-04c7-d391" name="Accelerator Drone" hidden="false" collective="false" import="true" targetId="5bc6-9adf-a7d8-53b8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2869-fb35-89b9-e006" type="max"/>
-              </constraints>
+          <selectionEntries>
+            <selectionEntry id="8a2c-2dcb-414c-a42c" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="c213-2cca-ba20-8dc7" name="Upgrades (1x Spotter Drone)" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="021e-9bf3-491e-196b" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="3be0-34fa-0367-595b" name="Accelerator Drone" hidden="false" collective="false" import="true" targetId="5bc6-9adf-a7d8-53b8" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="120a-2e21-ae17-48f6" name="Recon Drone" hidden="false" collective="false" import="true" targetId="6b71-5af9-c2f9-6ed2" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="4a94-d402-688d-9dbe" name="Inhibitor Drone" hidden="false" collective="false" import="true" targetId="b9a5-53f0-e0ff-103f" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="8274-e374-da5a-a295" name="Spotters" hidden="false" collective="false" import="true" defaultSelectionEntryId="80bb-e6db-9fe4-a992">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea23-eee0-cebb-2475" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="123c-3836-b938-adcd" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="80bb-e6db-9fe4-a992" name="Spotter" hidden="false" collective="false" import="true" targetId="e7c1-14fd-57ee-1fff" type="selectionEntry"/>
+                    <entryLink id="2d52-ee46-1c15-ee8f" name="Spotter (Special Weapon)" hidden="false" collective="false" import="true" targetId="f227-171f-2455-b9f8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="632b-24e8-f618-5bd0" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="d7d2-08c3-be4c-2b99" name="Upgrade any model with:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a5-a425-6926-31ed" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="0fac-466f-9026-175f" name="Spotting Laser" hidden="false" collective="false" import="true" type="upgrade">
+                      <infoLinks>
+                        <infoLink id="c23a-0a42-13ad-5d91" name="Spotting Laser" hidden="false" targetId="983f-912e-7606-6616" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="402e-0461-42f9-eb0e" name="Upgrades (1x Drone)" hidden="false" collective="false" import="true" targetId="1897-15d5-5e04-5ce4" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a937-0a5f-81ab-6a2c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="ba07-ded7-65d7-96d8" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="9a47-cb00-1ec0-be35" name="Upgrades (1x Spotter Drone)" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4bc-6ab0-124c-50ec" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="2d14-893f-868f-149e" name="Accelerator Drone" hidden="false" collective="false" import="true" targetId="5bc6-9adf-a7d8-53b8" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="1d5d-a2b1-963d-4258" name="Recon Drone" hidden="false" collective="false" import="true" targetId="6b71-5af9-c2f9-6ed2" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="6b72-c269-a2b7-5ba6" name="Inhibitor Drone" hidden="false" collective="false" import="true" targetId="b9a5-53f0-e0ff-103f" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="7b4c-a744-c524-9286" name="Spotters" hidden="false" collective="false" import="true" defaultSelectionEntryId="a85d-992a-0415-3c2f">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f16c-b2db-0fe2-5412" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82c9-0006-185c-d7ef" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="a85d-992a-0415-3c2f" name="Spotter" hidden="false" collective="false" import="true" targetId="e7c1-14fd-57ee-1fff" type="selectionEntry"/>
+                    <entryLink id="d7d4-d8f9-50d6-0f8b" name="Spotter (Special Weapon)" hidden="false" collective="false" import="true" targetId="f227-171f-2455-b9f8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="896b-eaf1-89dc-6fdc" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="00b4-7b84-b87c-59d2" name="Upgrade any model with:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="334d-7dcc-68a8-0e53" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="b984-7cd6-beea-baf7" name="Spotting Laser" hidden="false" collective="false" import="true" type="upgrade">
+                      <infoLinks>
+                        <infoLink id="e9f4-ecb5-3051-e2e2" name="Spotting Laser" hidden="false" targetId="983f-912e-7606-6616" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="16df-9d17-f7d2-7b1c" name="Upgrades (1x Drone)" hidden="false" collective="false" import="true" targetId="1897-15d5-5e04-5ce4" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57d8-efd9-f80b-7120" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="100.0"/>
               </costs>
-            </entryLink>
-            <entryLink id="a568-83da-3e9b-255e" name="Shield Drone" hidden="false" collective="false" import="true" targetId="f7b5-2be0-6f3a-4283" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db09-55f9-5bbb-1be2" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="8ccd-bff7-24fb-3d23" name="Recon Drone" hidden="false" collective="false" import="true" targetId="6b71-5af9-c2f9-6ed2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5eb9-3248-618f-0506" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="6564-bb88-5f15-1b6e" name="Missile Drone" hidden="false" collective="false" import="true" targetId="e5e8-f2cc-f0c6-2e74" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15e3-5c03-76c9-395a" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="1add-1a0a-a4c1-f03f" name="Gun Drone" hidden="false" collective="false" import="true" targetId="a9d7-ac94-62b6-5d46" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83a1-8dce-f92d-f1fb" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="2ae4-22c3-4855-bc7d" name="Spotter Drone" hidden="false" collective="false" import="true" targetId="6d2d-dc99-9075-bc57" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e540-b900-6a25-db45" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="97b2-420b-e354-1b89" name="Inhibitor Drone" hidden="false" collective="false" import="true" targetId="b9a5-53f0-e0ff-103f" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c63-bd17-eb56-bb3c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -3298,6 +3336,13 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f1f4-d239-152f-8eb4" name="Scoped Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d2e5-a02b-be43-1441" name="Scoped Rifle" hidden="false" targetId="8c91-40ad-9cbc-3be8" type="profile"/>
+        <infoLink id="e86b-c32d-0ceb-3980" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="b615-11d0-a92a-2ffc" name="Sniper" hidden="false" targetId="2943-e3f6-fb44-ae13" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cfff-7811-ba42-dc70" name="Spells" hidden="false" collective="false" import="true">
@@ -3350,7 +3395,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7305-f750-1716-3c44" name="Upgrades (2x Drones)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="7305-f750-1716-3c44" name="Upgrades (Heroes)" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffaf-f600-bd10-e8b5" type="max"/>
       </constraints>
@@ -3372,10 +3417,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="1897-15d5-5e04-5ce4" name="Upgrades (1x Drone)" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8a0-10f4-5142-cf8b" type="max"/>
-      </constraints>
+    <selectionEntryGroup id="1897-15d5-5e04-5ce4" name="Upgrades (Squads)" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="eb99-39cd-24fc-d1ad" name="Spotter Drone" hidden="false" collective="false" import="true" targetId="6d2d-dc99-9075-bc57" type="selectionEntry">
           <costs>
@@ -3616,7 +3658,7 @@
     </profile>
     <profile id="524f-d09b-e1ad-5cc0" name="Recon Drone" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Friendly units arriving from Ambush may be placed closer than 12” from enemies if they are within 6” of this model.</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Beacon</characteristic>
       </characteristics>
     </profile>
     <profile id="750d-74c4-0e29-babc" name="Inhibitor Drone" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
@@ -4044,6 +4086,13 @@
     <profile id="a2d3-439d-e3a6-8a27" name="Ethereal" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Regeneration</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8c91-40ad-9cbc-3be8" name="Scoped Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">30&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Sniper</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
