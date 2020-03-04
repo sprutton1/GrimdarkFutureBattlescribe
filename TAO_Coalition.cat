@@ -64,9 +64,10 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4d01-faca-34c9-5d29" name="Sacred Spear" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4d01-faca-34c9-5d29" name="Sacred Sword" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="974c-026e-bfaa-4e5a" name="Sacred Spear" hidden="false" targetId="aa9a-60de-8977-2100" type="profile"/>
+        <infoLink id="1474-6359-b32a-01d4" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -241,7 +242,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8eba-00e7-b98c-9363" name="Combat Baton" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8eba-00e7-b98c-9363" name="Sacred Baton" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ac9c-6c35-321b-e25a" name="Combat Baton" hidden="false" targetId="6f92-ef71-1023-16e7" type="profile"/>
       </infoLinks>
@@ -249,7 +250,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b1eb-b45a-4984-8d60" name="Dual-Spear" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b1eb-b45a-4984-8d60" name="Sacred Dual-Spear" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="fd47-8257-8c3e-09a6" name="Dual-Spear" hidden="false" targetId="548d-0cb7-05f0-4f21" type="profile"/>
         <infoLink id="f5ab-4ab1-72b8-2cdb" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -527,36 +528,68 @@
       <infoLinks>
         <infoLink id="2e7a-fa4c-6938-3982" name="Sage" hidden="false" targetId="0a28-b10d-1615-a8ad" type="profile"/>
         <infoLink id="2aff-5626-e533-8de9" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
-        <infoLink id="20f6-df93-6568-674a" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
         <infoLink id="0d61-37b3-03d5-4ca9" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="943d-4df8-b8cc-db40" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2455-f9a0-67c2-f2a2" name="Upgrade with" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="3ee4-50b2-065b-d789" name="Inspriing" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntryGroup id="2455-f9a0-67c2-f2a2" name="Upgrade with any:" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b1e7-8b5a-ac8c-caf0" name="Psychic:" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e772-9f0b-4435-ffb1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4276-f0bb-067f-98a3" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="f4ac-3e4e-f04b-4307" name="Inspiring" hidden="false" targetId="571f-57a0-77a7-4c9e" type="rule"/>
-              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="796e-4255-8f45-196b" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="74da-c876-da0f-e304" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink id="7ecc-295a-45e6-2437" name="Spells" hidden="false" collective="false" import="true" targetId="cfff-7811-ba42-dc70" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7950-3ff8-4172-275f" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="0428-ba1c-10b1-7d9f" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink id="85a9-5c08-2dbb-709f" name="Spells" hidden="false" collective="false" import="true" targetId="cfff-7811-ba42-dc70" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="1fe8-ac13-2007-f6f9" name="Elemental Power" hidden="false" collective="false" import="true" targetId="f6b7-e605-08ee-975a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a67-6bc5-51c9-418d" type="max"/>
+              </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink id="1433-b92e-de99-74d5" name="Ethereal" hidden="false" collective="false" import="true" targetId="2eec-2811-53e1-4921" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa22-6a6f-f571-c25e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7d99-76bf-5bc3-5762" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a04-223f-1ff7-2d32">
+        <selectionEntryGroup id="7d99-76bf-5bc3-5762" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a04-223f-1ff7-2d32">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a404-ba74-f4ec-4345" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af70-910b-0df4-7478" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1151-627a-12b2-14d7" name="2x Combat Batons" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cff8-be6b-c46d-1772" type="max"/>
-              </constraints>
+            <selectionEntry id="1151-627a-12b2-14d7" name="2x Sacred Batons" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="473c-3397-8e96-914a" name="Combat Baton" hidden="false" collective="false" import="true" targetId="8eba-00e7-b98c-9363" type="selectionEntry">
                   <constraints>
@@ -571,15 +604,13 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="8a04-223f-1ff7-2d32" name="Sacred Spear" hidden="false" collective="false" import="true" targetId="4d01-faca-34c9-5d29" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fbc-da2b-9201-df7e" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="8a04-223f-1ff7-2d32" name="Sacred Spear" hidden="false" collective="false" import="true" targetId="4d01-faca-34c9-5d29" type="selectionEntry"/>
             <entryLink id="e071-31fe-4de6-804a" name="Dual-Spear" hidden="false" collective="false" import="true" targetId="b1eb-b45a-4984-8d60" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e787-a2ff-7d85-891f" type="max"/>
-              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2dd0-3c48-471b-7792" name="Sacred Halberd" hidden="false" collective="false" import="true" targetId="cbeb-2f34-baa7-9e2c" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
@@ -588,7 +619,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="181e-12e9-bb34-dda4" name="Grunt (Pulse Shotgun)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3113,6 +3144,24 @@
         <infoLink id="c96a-90e8-3379-ecab" name="CCW (A4)" hidden="false" targetId="6990-d207-04f6-b850" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="cbeb-2f34-baa7-9e2c" name="Sacred Halberd" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cf0c-c6c6-f15d-9aa4" name="Sacred Halberd" hidden="false" targetId="d4ae-5f93-0e84-0058" type="profile"/>
+        <infoLink id="464d-3222-186f-a3fd" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f6b7-e605-08ee-975a" name="Elemental Power" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c930-ed83-2e2c-ea2b" name="Elemental Power" hidden="false" targetId="6473-6971-68ff-73b0" type="profile"/>
+        <infoLink id="70fb-f068-45f8-a584" name="Elemental Power" hidden="false" targetId="d00a-3583-e565-fb15" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2eec-2811-53e1-4921" name="Ethereal" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1008-7fd3-6fe3-3f5c" name="Ethereal" hidden="false" targetId="a2d3-439d-e3a6-8a27" type="profile"/>
+        <infoLink id="7759-9f9e-6116-5e37" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cfff-7811-ba42-dc70" name="Spells" hidden="false" collective="false" import="true">
@@ -3223,6 +3272,13 @@
     <rule id="34c1-d612-2bef-ad92" name="Beacon" hidden="false">
       <description>Friendly units using Ambush may ignore distance restrictions from enemies if they are withing 6&quot; of this model.</description>
     </rule>
+    <rule id="d00a-3583-e565-fb15" name="Elemental Power" hidden="false">
+      <description>When the hero and his unit are activated pick one of these powers, and they get one of these special rules until the end of the round:
+- Wind: +3&quot; when moving
+- Fire: +1 to shooting rolls
+- Water: +3&quot; to shooting range
+- Earth: +1 to melee rolls</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="3c9f-37d7-99c2-df63" name="Battlesuit Captain" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -3243,7 +3299,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">6+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless. Hero, Regeneration, Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless. Hero, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="5be5-d19b-d596-2c28" name="Grunt" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -3328,10 +3384,10 @@
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
       </characteristics>
     </profile>
-    <profile id="aa9a-60de-8977-2100" name="Sacred Spear" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="aa9a-60de-8977-2100" name="Sacred Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
       </characteristics>
     </profile>
     <profile id="bed7-efa4-bcc1-565c" name="Pulse Shotgun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -3447,16 +3503,16 @@
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">The model and his unit count has having the Regeneration special rule.</characteristic>
       </characteristics>
     </profile>
-    <profile id="6f92-ef71-1023-16e7" name="Combat Baton" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="6f92-ef71-1023-16e7" name="Sacred Baton" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
       </characteristics>
     </profile>
-    <profile id="548d-0cb7-05f0-4f21" name="Dual-Spear" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="548d-0cb7-05f0-4f21" name="Sacred Dual-Spear" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
     <profile id="5b60-81e3-08ab-0f84" name="EMP Grenade" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
@@ -3767,11 +3823,7 @@
     </profile>
     <profile id="6473-6971-68ff-73b0" name="Elemental Power" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">When the hero and his unit are activated pick one of these powers, and they get one of these special rules until the end of the round:
-- Wind: +3&quot; when moving
-- Fire: +1 to shooting rolls
-- Water: +3&quot; to shooting range
-- Earth: +1 to melee rolls</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Elemental Power</characteristic>
       </characteristics>
     </profile>
     <profile id="5cfc-d962-f941-6406" name="Boldness" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
@@ -3845,6 +3897,17 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d4ae-5f93-0e84-0058" name="Sacred Halberd" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a2d3-439d-e3a6-8a27" name="Ethereal" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Regeneration</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
