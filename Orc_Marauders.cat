@@ -37,7 +37,6 @@
     <entryLink id="4e89-afdd-9702-9969" name="Flame Bomber" hidden="false" collective="false" import="true" targetId="19c7-6ae7-b815-144a" type="selectionEntry"/>
     <entryLink id="124e-e74f-fc8e-f9dd" name="Blitz Bomber" hidden="false" collective="false" import="true" targetId="a16c-295b-c2e2-ac13" type="selectionEntry"/>
     <entryLink id="422e-ea67-c957-25b5" name="Attack Plane" hidden="false" collective="false" import="true" targetId="0950-39e0-f06c-f213" type="selectionEntry"/>
-    <entryLink id="c190-6d2e-2d72-48ad" name="Cunning Titan" hidden="false" collective="false" import="true" targetId="713b-138c-fdfc-bb03" type="selectionEntry"/>
     <entryLink id="a746-bc21-19f9-d9c2" name="Brutal Titan" hidden="false" collective="false" import="true" targetId="4931-f7c1-8b61-3e82" type="selectionEntry"/>
     <entryLink id="2400-95cb-6d16-ae66" name="Ultra Bosses" hidden="false" collective="false" import="true" targetId="28a3-3009-7e71-cdb3" type="selectionEntry"/>
   </entryLinks>
@@ -2550,7 +2549,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2500-34da-8118-47d7" name="Mega Fist" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2500-34da-8118-47d7" name="Mega Claw" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="72ba-e3c7-4c8e-4db2" name="Mega Fist" hidden="false" targetId="a25e-0d6e-a265-b81c" type="profile"/>
         <infoLink id="5b56-7f96-6304-97aa" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -3408,16 +3407,68 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="600.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4931-f7c1-8b61-3e82" name="Brutal Titan" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4931-f7c1-8b61-3e82" name="Brutal &amp; Cunning Orc Titan" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="146a-6d73-1bab-81ee" name="Brutal Titan" hidden="false" targetId="3677-c3ee-c8ad-d2d2" type="profile"/>
         <infoLink id="922a-e89f-6d64-adc7" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="a5e4-cbd0-98e2-f34b" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
         <infoLink id="aa2e-096d-e7aa-0b0d" name="Bad Shot" hidden="false" targetId="7297-75e5-15df-d934" type="rule"/>
         <infoLink id="c345-a464-7508-b72d" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-        <infoLink id="6334-61af-1728-6a72" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="3c30-3502-600e-c2ce" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b723-ff28-1e57-f170" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0f4-5912-ca72-4675" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9dbc-9f1a-e8ae-81c8" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1932-8e35-17a7-46aa" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2cc9-32d1-1c0c-875d" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eed8-dab3-d133-37c9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="defd-58b0-e6c6-1cf4" name="Deathstorm Plasma Cannon" hidden="false" collective="false" import="true" targetId="f957-bc7d-ec31-9fd3" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="85e9-09a5-fbcc-6ed3" name="Deathstorm Minigun" hidden="false" collective="false" import="true" targetId="eaa7-5959-c8ee-4f80" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a558-4abb-8fec-eaf4" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ff6-007c-8b1b-ee68" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="00a3-5c5d-d264-03ef" name="Force Field" hidden="false" collective="false" import="true" targetId="0963-9c61-3af7-48fb" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="145.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="323f-2978-e401-aedc" name="Shoot Shoot Shoot!" hidden="false" collective="false" import="true" targetId="f39b-d482-e22f-06eb" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="3ee0-a86d-f102-4c90" name="Mega Fist" hidden="false" collective="false" import="true" targetId="2500-34da-8118-47d7" type="selectionEntry">
           <constraints>
@@ -3425,33 +3476,27 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aedd-096f-25ac-b045" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="870b-8cb8-4f24-7c45" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
+        <entryLink id="5b39-e8ce-4132-dfa5" name="Stomp (Titan)" hidden="false" collective="false" import="true" targetId="1368-82a1-8556-1aa0" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="395e-789c-d739-d74d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b572-e638-efbb-d164" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08c9-e358-d8ba-5876" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4af8-11d4-8c65-d6f6" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="2dbf-f7c5-15d5-01be" name="Twin Heavy Machinegun" hidden="false" collective="false" import="true" targetId="dae8-3106-6a96-228c" type="selectionEntry">
+        <entryLink id="9709-e64f-f33b-40ae" name="2x Twin Heavy Machineguns" hidden="false" collective="false" import="true" targetId="b620-59fe-681b-c484" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3dc-6bfa-90e3-e87d" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49ea-d8dd-d253-259d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c76a-1ce5-a548-53a8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2e6-a9f6-585a-6f91" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="117d-884c-3c41-3b0e" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="5b63-62b1-2fd4-55e2" type="selectionEntry">
+        <entryLink id="9770-b718-6c13-1709" name="2x Rocket Launchers" hidden="false" collective="false" import="true" targetId="02fc-544a-163f-c7f5" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae3a-e65b-4b81-7441" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbfb-96dd-69cc-d636" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="5178-dad2-3460-1947" name="Deathstorm Minigun" hidden="false" collective="false" import="true" targetId="eaa7-5959-c8ee-4f80" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9cb-e3f0-dc5b-e70d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4a9-f277-6762-43d8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb0d-7615-9b37-36d6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c17-da38-ef37-896c" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="630.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="735.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bd01-c215-da32-f916" name="Ultra Drill" hidden="false" collective="false" import="true" type="upgrade">
@@ -4138,6 +4183,26 @@
       <infoLinks>
         <infoLink id="4222-0678-2955-1e93" name="2x Twin Heavy Machineguns" hidden="false" targetId="acb5-95da-f76e-6965" type="profile"/>
         <infoLink id="9baa-2680-ebfd-28ae" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="02fc-544a-163f-c7f5" name="2x Rocket Launchers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="81fe-5126-fc3f-4ec0" name="2x Rocket Launchers" hidden="false" targetId="4063-8b29-9d78-8401" type="profile"/>
+        <infoLink id="b6ad-e94b-52e3-c3f2" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="4c8d-e92b-c9be-9b8d" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f957-bc7d-ec31-9fd3" name="Deathstorm Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7199-3865-8626-85ed" name="Deathstorm Plasma Cannon" hidden="false" targetId="4901-6780-64bd-1dd9" type="profile"/>
+        <infoLink id="23fb-bb7e-8316-30cf" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="17ea-c9ce-bcbc-7d75" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f39b-d482-e22f-06eb" name="Shoot Shoot Shoot!" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e393-7be3-e310-620d" name="Shoot Shoot Shoot!" hidden="false" targetId="9c07-64c8-4825-8e66" type="profile"/>
+        <infoLink id="1a7f-a73c-84fd-1244" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -4976,11 +5041,11 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Bad Shot, Fear, Furious, Impact(9), Tough(18), Transport(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="3677-c3ee-c8ad-d2d2" name="Brutal Titan" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="3677-c3ee-c8ad-d2d2" name="Brutal &amp; Cunning Orc Titan" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
-        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Bad Shot, Fear, Furious, Impact(9), Tough(18), Transport(6)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Bad Shot, Fear, Furious, Tough(24), Transport(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="6081-68d1-c4ea-3421" name="Mini-Claw" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -5078,9 +5143,9 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Blast(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="a25e-0d6e-a265-b81c" name="Mega Fist" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="a25e-0d6e-a265-b81c" name="Mega Claw" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
-        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4)</characteristic>
       </characteristics>
     </profile>
@@ -5094,7 +5159,7 @@
     <profile id="026e-ba49-2713-f290" name="Deathstorm Minigun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A10</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A18</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
@@ -5367,6 +5432,25 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4063-8b29-9d78-8401" name="2x Rocket Launchers" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4901-6780-64bd-1dd9" name="Deathstorm Plasma Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9c07-64c8-4825-8e66" name="Shoot Shoot Shoot!" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Relentless</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
