@@ -1580,12 +1580,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d9a9-76e5-16ca-cb37" name="Gun Drone" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="a49b-3605-20bc-404d" name="Gun Drone" hidden="false" targetId="e9ac-b75d-faaf-7484" type="profile"/>
-        <infoLink id="7c59-967c-d158-db27" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
-        <infoLink id="8841-4502-3459-3526" name="Good Shot" hidden="false" targetId="226a-fb55-139f-87fb" type="rule"/>
-        <infoLink id="d99a-aa70-5085-d4fc" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="f499-be04-6037-3561" name="Twin Pulse Carbine" hidden="false" collective="false" import="true" targetId="9f6d-904d-bba3-2d68" type="selectionEntry">
           <constraints>
@@ -1605,14 +1599,45 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="72d5-a4fc-4803-48c0" name="Gun Drones" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="5855-6af5-188e-b61c" name="Gun Drone" hidden="false" collective="false" import="true" targetId="d9a9-76e5-16ca-cb37" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="9d2c-8b24-ce48-cfc7" name="Gun Drone" hidden="false" targetId="e9ac-b75d-faaf-7484" type="profile"/>
+        <infoLink id="76ec-c3fd-5364-55b3" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="65f8-a522-0f48-bf32" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
+        <infoLink id="2227-3635-da1c-f611" name="Good Shot" hidden="false" targetId="226a-fb55-139f-87fb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2b98-354f-ea0e-34c0" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="cda1-00e5-da1c-14b2">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f479-49a7-2a42-32ca" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4622-947d-d118-a20c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a5a-7b32-27e7-40c4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e15-9536-45e3-3f0a" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="cda1-00e5-da1c-14b2" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="02ec-8556-1458-2255" name="Gun Drone" hidden="false" collective="false" import="true" targetId="d9a9-76e5-16ca-cb37" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61bd-e789-28ed-b996" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d4-08c5-4564-8634" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="b2ac-7340-8a60-aa12" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="937e-79cc-aee5-f7cc" name="Gun Drone" hidden="false" collective="false" import="true" targetId="d9a9-76e5-16ca-cb37" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14ac-95cb-55fc-574e" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2943-4a8b-deb8-53d2" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="155.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="155.0"/>
       </costs>
