@@ -2731,67 +2731,12 @@
         <infoLink id="0083-97af-3ff0-afd4" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
         <infoLink id="b892-d559-db79-3ba2" name="Bad Shot" hidden="false" targetId="7297-75e5-15df-d934" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="122e-92a5-e005-ed6c" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="fe2d-923f-4815-4380">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9118-e189-4fe6-7b1e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="272f-b45c-fa3a-65ee" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="fe2d-923f-4815-4380" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b10e-7575-232f-61da" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="217e-26bb-8d3f-21b5" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="5b63-62b1-2fd4-55e2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13b5-cc8b-8c90-bcc8" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="-5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="335a-a6ac-7bc1-37d4" name="Upgrade with any" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="66cc-506d-d799-b769" name="Battle Ram" hidden="false" collective="false" import="true" targetId="78e1-f56e-57fa-97d5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6253-00e9-642c-ccc4" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="ebf3-0ae4-5af6-3847" name="Red Paint Job" hidden="false" collective="false" import="true" targetId="05b4-8ccc-3663-8f00" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83ba-2272-8e05-9769" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="5c8d-9f40-391d-4d6f" name="Boarding Plank" hidden="false" collective="false" import="true" targetId="801e-eeeb-6ada-0e6b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cf2-5e24-5883-0be3" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="93ab-a446-e45b-2f2e" name="Wrecking Ball" hidden="false" collective="false" import="true" targetId="62f1-b7bd-c3c7-1917" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80aa-cc38-8b44-cbdb" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0dbf-85c4-b679-136b" name="Upgrades (Trucks &amp; Tanks)" hidden="false" collective="false" import="true" targetId="2d10-ad2b-fdd1-e347" type="selectionEntryGroup"/>
+        <entryLink id="2bc5-976d-3545-c0db" name="Weapons - Truck - Ranged" hidden="false" collective="false" import="true" targetId="c42c-2927-78f0-e27d" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="185.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="195.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9e89-a123-f802-ad06" name="Looted Tank" hidden="false" collective="false" import="true" type="upgrade">
@@ -4731,6 +4676,94 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="c42c-2927-78f0-e27d" name="Weapons - Pintle Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="b215-960f-7a9c-1b08">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f14e-ef84-4b1c-bb91" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7635-1ea6-a882-edc7" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="b215-960f-7a9c-1b08" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry"/>
+        <entryLink id="d2ee-8487-5231-1688" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="5b63-62b1-2fd4-55e2" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="-5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2d10-ad2b-fdd1-e347" name="Upgrades (Trucks &amp; Tanks)" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="e30d-7fc0-2cb2-0adc" name="Wrecking Ball" hidden="false" collective="false" import="true" targetId="62f1-b7bd-c3c7-1917" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc70-721e-d7ac-c91a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="d1b0-d9e4-efe9-c241" name="Red Paint Job" hidden="false" collective="false" import="true" targetId="05b4-8ccc-3663-8f00" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23f4-3a5a-d051-4c5f" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="5cae-5353-06d0-9760" name="Boarding Plank" hidden="false" collective="false" import="true" targetId="801e-eeeb-6ada-0e6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c9b-7801-b14a-ee9b" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="4209-b2c8-6430-b753" name="Battle Ram" hidden="false" collective="false" import="true" targetId="78e1-f56e-57fa-97d5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42a3-7b23-6647-a080" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4c20-6f3a-d27a-f175" name="Upgrades [Battle Trucks &amp; Tanks]" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d3e4-d776-2876-2d6f" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c78-eb2d-74d8-33db" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8660-552b-673b-238d" name="Extra Space" hidden="false" collective="false" import="true" targetId="4223-0a52-89db-d0d6" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d501-fe67-1fdd-726c" name="Heavy Cannon" hidden="false" collective="false" import="true" targetId="6fee-5a28-be43-23f9" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1b6a-df2c-dd41-4ba7" name="Upgrade with up to three:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e6-e6ff-a9c9-ce85" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2926-0485-5795-10ff" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2266-52e0-54c4-5824" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="5b63-62b1-2fd4-55e2" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="7297-75e5-15df-d934" name="Bad Shot" publicationId="7363-7493-3b62-53bc" hidden="false">
@@ -5345,7 +5378,7 @@
     </profile>
     <profile id="fe6f-7239-46d8-b0eb" name="Boarding Plank" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Impact(+6) whilst transporting models</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Impact(+6) if transporting models</characteristic>
       </characteristics>
     </profile>
     <profile id="c884-a5d9-db7f-39bd" name="Heavy Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
