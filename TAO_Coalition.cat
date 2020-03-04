@@ -3088,7 +3088,86 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="630.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1e01-021b-b3ce-0ba1" name="Boldness" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a0a2-a947-0a6d-83dc" name="Boldness" hidden="false" targetId="5cfc-d962-f941-6406" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="22f3-3698-b23c-765c" name="Killing Blow" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="87e3-b842-2334-2f15" name="Killing Blow" hidden="false" targetId="9268-8d62-9edc-22ff" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7001-fe76-f88f-04c9" name="Precision" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3a12-7876-d816-9341" name="Precision" hidden="false" targetId="6690-f3e6-daa7-4d43" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="b186-55ef-6564-1f5c" name="Devastating Strike" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6c8a-de5e-28d2-2eb4" name="Devastating Strike" hidden="false" targetId="b697-df52-8155-2648" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7b99-4b93-64f5-4808" name="Patience" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0c2c-1292-3df6-55b7" name="Patience" hidden="false" targetId="8c02-70b0-1dcc-3955" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f3c1-e70b-01c4-f0f8" name="Deadly Surge" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b7f1-1c0b-2193-78d5" name="Deadly Surge" hidden="false" targetId="6351-1ca9-808b-6b6a" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="cfff-7811-ba42-dc70" name="Spells" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cd3-7e44-bcd2-59b5" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="512c-61c8-9fc6-a1fb" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="5611-d5eb-60ca-324b" name="Boldness" hidden="false" collective="false" import="true" targetId="1e01-021b-b3ce-0ba1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eae1-2da7-c94c-9e28" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c52d-6a0f-cb37-cf3d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9f4e-1087-32c2-2395" name="Killing Blow" hidden="false" collective="false" import="true" targetId="22f3-3698-b23c-765c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad2e-bae6-49fb-03d2" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1be-13a8-b7de-3cfc" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="dcff-52aa-5a84-aad2" name="Precision" hidden="false" collective="false" import="true" targetId="7001-fe76-f88f-04c9" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36b1-c2a7-f7cd-b177" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cf6-8020-e47b-9d21" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="34c4-96ba-9531-4548" name="Devastating Strike" hidden="false" collective="false" import="true" targetId="b186-55ef-6564-1f5c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83d8-2dca-f960-a3fa" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dda-56ba-742d-62c1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="cfee-bbda-d4f2-721c" name="Patience" hidden="false" collective="false" import="true" targetId="7b99-4b93-64f5-4808" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2430-4ac0-4e95-702e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0f9-9e60-b48a-1c53" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7353-7166-346b-18ca" name="Deadly Surge" hidden="false" collective="false" import="true" targetId="f3c1-e70b-01c4-f0f8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f81c-8450-fdc2-5f16" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a134-dbf5-553a-b82a" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="226a-fb55-139f-87fb" name="Good Shot" hidden="false">
       <description>This model shoots at Quality 4+.</description>
@@ -3097,10 +3176,13 @@
       <description>The hero and his unit get the Fearless and Regeneration rules.</description>
     </rule>
     <rule id="983f-912e-7606-6616" name="Spotting Laser" hidden="false">
-      <description>This model may mark an enemy unit instead of firing its weapons. Roll one die, on a 4+ one unit in line of sight within 36” is marked. Friendly units may remove markers from the target to get +X to their shooting rolls, where X is the number of markers that were removed.</description>
+      <description>This model may try to mark an enemy unit instead of firing one of its weapons. Pick one enemy unit within 36&quot; and line of sight and roll one die, on a 4+ it&apos;s marked. Friendly units may remove markers from the target to get +X to their shooting rolls against the marked unit, where X is the number of removed markers.</description>
     </rule>
     <rule id="a46f-fde1-8baa-ada1" name="Volley Fire" hidden="false">
-      <description>The hero and his unit get +1A to their pulse rifles or carbines when using Hold actions.</description>
+      <description>The hero and his unit get +1A to their Pulse Shotguns, Pulse Carbines or Pulse Rifles when using Hold actions.</description>
+    </rule>
+    <rule id="34c1-d612-2bef-ad92" name="Beacon" hidden="false">
+      <description>Friendly units using Ambush may ignore distance restrictions from enemies if they are withing 6&quot; of this model.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -3308,7 +3390,7 @@
     </profile>
     <profile id="750d-74c4-0e29-babc" name="Inhibitor Drone" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">This unit counts as being 3” further away when enemies try to charge it.</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Enemies get -3&quot; movement when trying to charge this unit.</characteristic>
       </characteristics>
     </profile>
     <profile id="6326-ce90-d23f-9697" name="Spotter Drone" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
@@ -3318,12 +3400,12 @@
     </profile>
     <profile id="9bac-23d1-3bc2-c793" name="Accelerator Drone" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">This unit’s pulse shotguns, pulse carbines, and pulse rifles get +6” range.</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">This unit gets +6&quot; range when firing its Pulse Carbines.</characteristic>
       </characteristics>
     </profile>
     <profile id="d693-8484-d559-623e" name="Shield Drone" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">This unit counts as having the Regeneration special rule.</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">The model and his unit count has having the Regeneration special rule.</characteristic>
       </characteristics>
     </profile>
     <profile id="6f92-ef71-1023-16e7" name="Combat Baton" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -3642,6 +3724,51 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6473-6971-68ff-73b0" name="Elemental Power" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">When the hero and his unit are activated pick one of these powers, and they get one of these special rules until the end of the round:
+- Wind: +3&quot; when moving
+- Fire: +1 to shooting rolls
+- Water: +3&quot; to shooting range
+- Earth: +1 to melee rolls</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5cfc-d962-f941-6406" name="Boldness" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may immediately move by up to 6&quot;.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6351-1ca9-808b-6b6a" name="Deadly Surge" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target 2 enemy units within 12&quot; take 4 automatic hits each.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8c02-70b0-1dcc-3955" name="Patience" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 18&quot; gets Stealth next time it is shot at.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b697-df52-8155-2648" name="Devastating Strike" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; takes 6 automatic hits with AP(1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6690-f3e6-daa7-4d43" name="Precision" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 24&quot; gets AP(+1) next time it shoots.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9268-8d62-9edc-22ff" name="Killing Blow" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 24&quot; takes 3 automatic hits with AP(2).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
