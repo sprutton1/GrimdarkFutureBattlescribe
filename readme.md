@@ -73,7 +73,7 @@ table!
 |Infected Colonies|v2.1|Done|
 |Machine Cult|v2.2|Done|
 |Mercenaries|-|Not started|
-|Orc Marauders|v2.4|Done|
+|Orc Marauders|v2.9|Done|
 |Ratmen Clans|v2.3|Done|
 |Rebel Guerrillas|-|Not started|
 |Robot Legions|v2.4|Done|
