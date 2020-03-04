@@ -2541,7 +2541,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5faf-ccd6-41b7-dc3c" name="Twin Super Machineguns" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5faf-ccd6-41b7-dc3c" name="Twin Super Machinegun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5857-833a-89b8-f239" name="Twin Super Machineguns" hidden="false" targetId="9aac-e7e7-e690-0d5e" type="profile"/>
         <infoLink id="7fb9-9bbd-7b3d-b94b" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -3255,7 +3255,7 @@
         <infoLink id="3759-bb46-bc23-82a8" name="Bad Shot" hidden="false" targetId="7297-75e5-15df-d934" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0301-56cd-e489-1a22" name="Upgrade with" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="0301-56cd-e489-1a22" name="Upgrade with:" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="9622-46af-c08b-4dd8" name="Flame Missiles" hidden="false" collective="false" import="true" targetId="e191-2588-a605-ab69" type="selectionEntry">
               <constraints>
@@ -3271,9 +3271,12 @@
       <entryLinks>
         <entryLink id="8246-31bf-a03b-f544" name="Twin Super Machineguns" hidden="false" collective="false" import="true" targetId="5faf-ccd6-41b7-dc3c" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0c4-a084-b883-3073" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0c4-a084-b883-3073" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d19-8ec3-8c4b-81fd" type="min"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+          </costs>
         </entryLink>
         <entryLink id="0694-61f1-8d4c-540a" name="Flame Bombs" hidden="false" collective="false" import="true" targetId="fc30-b47a-6315-9995" type="selectionEntry">
           <constraints>
@@ -3289,7 +3292,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="175.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a16c-295b-c2e2-ac13" name="Blitz Bomber" hidden="false" collective="false" import="true" type="upgrade">
@@ -5061,7 +5064,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Blast(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="9aac-e7e7-e690-0d5e" name="Twin Super Machineguns" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="9aac-e7e7-e690-0d5e" name="Twin Super Machinegun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
