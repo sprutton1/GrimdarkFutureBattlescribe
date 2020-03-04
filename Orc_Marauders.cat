@@ -1738,20 +1738,50 @@
         <infoLink id="f343-adbc-9e2b-bdfa" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
         <infoLink id="8010-7579-d48c-c59a" name="Bad Shot" hidden="false" targetId="7297-75e5-15df-d934" type="rule"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink id="bc8e-9d30-2e86-27df" name="CCW (A3)" hidden="false" collective="false" import="true" targetId="0393-566d-207c-0455" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c636-d9bb-6d8f-f7c8" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2609-bc10-5804-0bb0">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e64b-f94a-77eb-221b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef8e-477a-952a-9d8a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17bc-14a9-6805-5798" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f90-da47-eaf3-82fc" type="max"/>
           </constraints>
-        </entryLink>
-        <entryLink id="e9aa-4efa-bd9b-0a78" name="Boarding Gun" hidden="false" collective="false" import="true" targetId="f004-9c32-b8bb-09ca" type="selectionEntry">
+          <entryLinks>
+            <entryLink id="2609-bc10-5804-0bb0" name="Boarding Pistol" hidden="false" collective="false" import="true" targetId="a9ab-0be7-e746-6e0a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a09-6597-b700-ccab" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f5ab-de2f-1314-d6f5" name="Boarding Gun" hidden="false" collective="false" import="true" targetId="f004-9c32-b8bb-09ca" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e04b-c8b3-d18b-0aa6" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="cf0a-f935-e497-eda4" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4a2d-8013-f947-2e52">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f74a-f074-0ded-a91a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ce7-a821-91b7-52c2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ac7-fcec-7a5f-06ca" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8060-c5bf-9976-9ddd" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <entryLinks>
+            <entryLink id="4a2d-8013-f947-2e52" name="CCW (A3)" hidden="false" collective="false" import="true" targetId="0393-566d-207c-0455" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7ef-bf88-5a8f-e521" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9963-f50c-1a86-9f4a" name="Cutlass" hidden="false" collective="false" import="true" targetId="bb1f-fc48-f9cb-4868" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8174-bc66-2c11-8c64" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="3.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
@@ -1765,16 +1795,41 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="41e5-e092-0fae-b18b" name="Orc Pirates" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="6ca0-5f26-4073-b8cf" name="Orc Pirate" hidden="false" collective="false" import="true" targetId="7daf-da38-d6a7-0d2f" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cd2d-220d-612e-e646" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="0476-fc4b-9b56-9481">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa8d-9c75-ac26-206e" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bec-15b6-3f62-2ebb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d77b-85df-8474-37ad" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f3f-ead9-a796-e065" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="0476-fc4b-9b56-9481" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="978f-6e59-e8fc-5427" name="Orc Pirate" hidden="false" collective="false" import="true" targetId="7daf-da38-d6a7-0d2f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a42-480f-faaf-4e65" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8fb-56eb-442a-3c26" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="09c1-d432-c76e-a828" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="013e-ddf6-79bd-d102" name="Orc Pirate" hidden="false" collective="false" import="true" targetId="7daf-da38-d6a7-0d2f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72fb-210a-a98b-850c" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70d6-4d2a-1218-43ff" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="240.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="260.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="240.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9e43-622b-83b8-1677" name="Power Armor Orc (Carbine)" hidden="false" collective="false" import="true" type="upgrade">
@@ -4163,6 +4218,18 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a9ab-0be7-e746-6e0a" name="Boarding Pistol" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6cf8-abd7-81c7-9266" name="Boarding Pistol" hidden="false" targetId="643b-16c2-4ed8-a242" type="profile"/>
+        <infoLink id="4898-3ee6-347c-b5fb" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="bb1f-fc48-f9cb-4868" name="Cutlass" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c05e-314e-29be-f2b8" name="Cutlass" hidden="false" targetId="518d-4add-e57b-57cd" type="profile"/>
+        <infoLink id="0584-de61-a9e8-ad70" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a2d6-72e7-2f02-eb3b" name="Weapons - Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="3420-f6e6-3624-1727">
@@ -5202,6 +5269,19 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="643b-16c2-4ed8-a242" name="Boarding Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="518d-4add-e57b-57cd" name="Cutlass" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
