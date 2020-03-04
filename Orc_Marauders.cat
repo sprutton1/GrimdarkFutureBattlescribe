@@ -110,15 +110,6 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="995d-297f-6056-2385" name="Custom Plasma Rifle" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="4bd2-c6fb-5799-dbbe" name="Custom Plasma Rifle" hidden="false" targetId="0b6e-bfca-6177-8aa6" type="profile"/>
-        <infoLink id="86d5-e8c9-1bf5-a35d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="e394-3fd3-3177-a1d5" name="Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5bfe-e81f-c399-770a" name="Energy Sword" hidden="false" targetId="6e1c-54a3-b349-9d20" type="profile"/>
@@ -2372,41 +2363,34 @@
         <infoLink id="6b89-e166-a731-bd27" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
         <infoLink id="487c-ceef-09f5-771b" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="5c68-cdec-6c37-eb53" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="5fdf-265b-05d9-4b05" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="5fdf-265b-05d9-4b05" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c7f6-b12e-0302-c2d8" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="aa13-e8ba-582d-0edd">
+        <selectionEntryGroup id="c7f6-b12e-0302-c2d8" name="Upgrade with one:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e091-b702-8fbd-de23" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8b3-cdc4-6258-15a2" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="59e2-e0e4-9383-c1fb" name="Twin Heavy Machinegun" hidden="false" collective="false" import="true" targetId="dae8-3106-6a96-228c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf4b-4210-9bc7-ee6f" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </entryLink>
-            <entryLink id="aa13-e8ba-582d-0edd" name="Custom Plasma Rifle" hidden="false" collective="false" import="true" targetId="995d-297f-6056-2385" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f295-0ebc-803b-5927" type="max"/>
-              </constraints>
+            <entryLink id="aa13-e8ba-582d-0edd" name="Twin Plasma Rifle" hidden="false" collective="false" import="true" targetId="d726-b9c0-f08a-068b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
             </entryLink>
             <entryLink id="46de-95e1-1c51-1754" name="Twin Rocket Launcher" hidden="false" collective="false" import="true" targetId="6569-e86e-778a-2cd7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a528-4897-f537-40b8" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="8a59-033a-eac9-f3d6" name="Upgrade with any" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8a59-033a-eac9-f3d6" name="Upgrade with any:" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="747d-50f4-4611-e7ad" name="Sawblade" hidden="false" collective="false" import="true" targetId="03a5-3af8-f537-1a87" type="selectionEntry">
+            <entryLink id="747d-50f4-4611-e7ad" name="Ultra Sawblade (Elite)" hidden="false" collective="false" import="true" targetId="38af-c86f-2e37-01b6" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bd6-ff6c-2e9d-ae5b" type="max"/>
               </constraints>
@@ -2428,13 +2412,19 @@
       <entryLinks>
         <entryLink id="385a-5d92-8825-953c" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1868-8295-a731-ba58" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e071-285a-167d-6c69" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1868-8295-a731-ba58" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e071-285a-167d-6c69" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2c1e-0fad-92c7-0e96" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a6f-496c-4ffc-c5dd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a459-fded-f680-4a4c" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8cb8-b6d1-eef2-994e" name="Mini-Claw" hidden="false" collective="false" import="true" type="upgrade">
@@ -3106,7 +3096,7 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="5eec-f083-e646-3ee8" name="Custom Plasma Rifle" hidden="false" collective="false" import="true" targetId="995d-297f-6056-2385" type="selectionEntry">
+            <entryLink id="5eec-f083-e646-3ee8" name="Twin Plasma Rifle" hidden="false" collective="false" import="true" targetId="d726-b9c0-f08a-068b" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07cf-7cfe-7b8d-b580" type="max"/>
               </constraints>
@@ -3164,7 +3154,7 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="11d0-fb23-7488-4fdf" name="Custom Plasma Rifle" hidden="false" collective="false" import="true" targetId="995d-297f-6056-2385" type="selectionEntry">
+            <entryLink id="11d0-fb23-7488-4fdf" name="Twin Plasma Rifle" hidden="false" collective="false" import="true" targetId="d726-b9c0-f08a-068b" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e115-0770-b81f-4867" type="max"/>
               </constraints>
@@ -3251,7 +3241,7 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="23ea-c33c-aa0f-7aaa" name="Custom Plasma Rifle" hidden="false" collective="false" import="true" targetId="995d-297f-6056-2385" type="selectionEntry">
+            <entryLink id="23ea-c33c-aa0f-7aaa" name="Twin Plasma Rifle" hidden="false" collective="false" import="true" targetId="d726-b9c0-f08a-068b" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="23ea-c33c-aa0f-7aaa" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eba1-9ad2-71f6-7859" type="max"/>
               </constraints>
@@ -3296,7 +3286,7 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="22d3-cf99-0306-7ff9" name="Custom Plasma Rifle" hidden="false" collective="false" import="true" targetId="995d-297f-6056-2385" type="selectionEntry">
+            <entryLink id="22d3-cf99-0306-7ff9" name="Twin Plasma Rifle" hidden="false" collective="false" import="true" targetId="d726-b9c0-f08a-068b" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="22d3-cf99-0306-7ff9" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ffb-b3fa-68fc-f74d" type="max"/>
               </constraints>
@@ -3783,7 +3773,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d42f-0fd7-498b-a233" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="0b7d-c686-308f-5ed1" name="Custom Plasma Rifle" hidden="false" collective="false" import="true" targetId="995d-297f-6056-2385" type="selectionEntry">
+        <entryLink id="0b7d-c686-308f-5ed1" name="Twin Plasma Rifle" hidden="false" collective="false" import="true" targetId="d726-b9c0-f08a-068b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d82-553e-ac7c-964c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dee4-bf97-56a5-268e" type="min"/>
@@ -4877,8 +4867,8 @@
     <profile id="3db8-5526-5d28-a5f1" name="Orc Helicopter" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
-        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Bad Shot, Fast, Furious, Scout, Strider, Tough(3)</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Bad Shot, Fast, Furious, Impact(3), Strider, Tough(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="e595-45b3-6117-e71e" name="CCW (A3)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -4931,13 +4921,6 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A4</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
-      </characteristics>
-    </profile>
-    <profile id="0b6e-bfca-6177-8aa6" name="Custom Plasma Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="df0b-ea33-6acd-afbc" name="Twin Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
