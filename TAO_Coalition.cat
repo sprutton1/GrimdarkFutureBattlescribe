@@ -1643,13 +1643,8 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e578-0d19-cf36-cf99" name="Jackal (Assault Rifle)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="bfb1-a8fb-79cc-f0ef" name="Jackal" hidden="false" targetId="66eb-92e6-68b9-de3a" type="profile"/>
-        <infoLink id="ca9b-5ea0-1595-a2b0" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="a9a9-2541-93ce-1cb2" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-      </infoLinks>
       <entryLinks>
-        <entryLink id="761a-198e-7b0a-79ac" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+        <entryLink id="761a-198e-7b0a-79ac" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb6e-a411-a585-6fa6" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cb0-db4d-115b-1324" type="min"/>
@@ -1666,31 +1661,54 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8593-c499-6078-f560" name="Jackal (Pulse Weapon)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8593-c499-6078-f560" name="Jackal (Leader)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ac8a-ebea-e430-32c2" name="Jackal" hidden="false" targetId="66eb-92e6-68b9-de3a" type="profile"/>
         <infoLink id="c7bc-f99d-472b-6f32" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
         <infoLink id="3851-3117-3783-c9a1" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c134-0f82-4ab6-4633" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e2f0-eec7-8e9b-4684">
+        <selectionEntryGroup id="c134-0f82-4ab6-4633" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="137e-d5da-2d32-6870">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d78-28b0-69ce-d58d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26d8-7475-277d-6960" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="e2f0-eec7-8e9b-4684" name="Pulse Carbine" hidden="false" collective="false" import="true" targetId="1ce9-7923-0d33-1851" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e70-f481-958d-aa12" type="max"/>
-              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ac29-0dbd-5863-64d9" name="Pulse Rifle" hidden="false" collective="false" import="true" targetId="b55d-c9eb-d681-b9c8" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="ac29-0dbd-5863-64d9" name="Pulse Rifle" hidden="false" collective="false" import="true" targetId="b55d-c9eb-d681-b9c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6d8-a4c9-df03-80b2" type="max"/>
-              </constraints>
+            <entryLink id="137e-d5da-2d32-6870" name="Pulse Shotgun" hidden="false" collective="false" import="true" targetId="bdff-1c57-96ce-0eed" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="32dc-5fef-291e-6b64" name="Marksman Rifle" hidden="false" collective="false" import="true" targetId="c6f0-6c0c-1c3b-dc78" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="78f9-0c41-81bf-4418" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a938-b97e-445b-d57c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="857d-b7f4-7492-6af8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8c6-f755-68f2-886a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a938-b97e-445b-d57c" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry"/>
+            <entryLink id="8709-bc8f-7c5b-fa78" name="Plasma Sword" hidden="false" collective="false" import="true" targetId="ee80-c18b-5847-0d8a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="30f4-4f49-0328-274f" name="Plasma Gauntlet" hidden="false" collective="false" import="true" targetId="35f1-e365-5f4c-cf33" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
@@ -1698,114 +1716,69 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="17d8-7918-0047-e26c" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="874d-df3f-c4bf-4b15" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e36a-358b-0688-1123" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="88fd-771c-54f0-6ede" name="Jackals" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="17be-ea15-529b-50d5" name="Jackal" hidden="false" targetId="66eb-92e6-68b9-de3a" type="profile"/>
+        <infoLink id="00e5-7bf1-b4fc-34aa" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="7aeb-465a-21e6-18ad" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f7dc-15ff-1840-80db" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="536e-9281-9c71-f6fc">
+        <selectionEntryGroup id="ffe9-1493-1235-f22d" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="c024-0100-e3ee-9d33">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bbc-fc2e-29ec-797b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6d1-fb8c-7c82-8a02" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35f2-fd39-8f83-30eb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de27-c828-db59-1a01" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="536e-9281-9c71-f6fc" name="Assault Rifles" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5512-265a-b78a-f65d" type="max"/>
-              </constraints>
+            <selectionEntry id="c024-0100-e3ee-9d33" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
-                <selectionEntryGroup id="45da-7e8c-3bd3-9102" name="Jackals" hidden="false" collective="false" import="true" defaultSelectionEntryId="7cb8-d6f2-a893-cd88">
+                <selectionEntryGroup id="3397-8fb0-1402-8891" name="Jackals" hidden="false" collective="false" import="true" defaultSelectionEntryId="7b6c-fb37-1c50-37db">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ad-7381-f63d-f48d" type="min"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce5a-0c91-72a6-e7d9" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0381-5feb-7d86-27e0" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9973-29a6-d54d-740b" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="7cb8-d6f2-a893-cd88" name="Jackal" hidden="false" collective="false" import="true" targetId="e578-0d19-cf36-cf99" type="selectionEntry">
+                    <entryLink id="7b6c-fb37-1c50-37db" name="Jackal (Assault Rifle)" hidden="false" collective="false" import="true" targetId="e578-0d19-cf36-cf99" type="selectionEntry"/>
+                    <entryLink id="c141-58a1-7622-cbf0" name="Jackal (Marksman Rifle)" hidden="false" collective="false" import="true" targetId="199c-8722-f66b-b028" type="selectionEntry"/>
+                    <entryLink id="d685-ee37-7f67-e942" name="Jackal (Leader)" hidden="false" collective="false" import="true" targetId="8593-c499-6078-f560" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cff-603d-b6e4-62cd" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8056-3e57-4ff2-491f" type="max"/>
                       </constraints>
                     </entryLink>
-                    <entryLink id="91ab-2c0d-8875-9148" name="Jackal (Pulse Weapon)" hidden="false" collective="false" import="true" targetId="8593-c499-6078-f560" type="selectionEntry">
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="ae2b-0744-96dc-b86a" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="5ce8-b0d1-c70f-3361" name="Jackals" hidden="false" collective="false" import="true" defaultSelectionEntryId="d99d-d081-4f43-5b46">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3097-1241-5287-d81f" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63ea-5eb8-5606-94ca" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="d99d-d081-4f43-5b46" name="Jackal (Assault Rifle)" hidden="false" collective="false" import="true" targetId="e578-0d19-cf36-cf99" type="selectionEntry"/>
+                    <entryLink id="5f29-b701-c2da-b6d3" name="Jackal (Marksman Rifle)" hidden="false" collective="false" import="true" targetId="199c-8722-f66b-b028" type="selectionEntry"/>
+                    <entryLink id="b70f-e43e-9337-f52c" name="Jackal (Leader)" hidden="false" collective="false" import="true" targetId="8593-c499-6078-f560" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b5a-fb8b-9307-0eae" type="max"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d900-58e9-dfa6-393e" type="max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="cfad-12c7-a566-7db1" name="Marksman Rifles" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f448-a16a-90f9-5f69" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="36a0-211b-f329-f159" name="Jackals" hidden="false" collective="false" import="true" defaultSelectionEntryId="9363-e001-c1bd-b9cd">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32a4-92fc-aa25-740d" type="min"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="546d-5648-9cdd-ca71" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="9363-e001-c1bd-b9cd" name="Jackal (Marksman Rifle)" hidden="false" collective="false" import="true" targetId="199c-8722-f66b-b028" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7111-bece-8f93-3d38" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="6fb1-c1d0-a7c6-a642" name="Upgrade all with" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="b8ff-329e-f33f-081c" name="Bayonets" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="760f-5955-7438-daf7" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="8cb9-429d-18fb-fb5d" name="Bayonet" hidden="false" collective="false" import="true" targetId="1636-caca-60eb-7394" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad0f-51b1-7b07-6012" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dda6-49a6-4e2c-482b" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="baa6-fe0e-ec47-99c3" name="Upgrade one with" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="d65e-5852-5d0b-2a78" name="Ritual Dagger" hidden="false" collective="false" import="true" targetId="f540-9393-040b-1d8e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bf7-026e-a0e6-50f2" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="75.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="199c-8722-f66b-b028" name="Jackal (Marksman Rifle)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1815,7 +1788,7 @@
         <infoLink id="936d-71ed-9f92-9a5e" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="b18f-f83c-d8fd-3189" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+        <entryLink id="b18f-f83c-d8fd-3189" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e690-0b94-c050-799a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dd1-45f0-41da-6781" type="min"/>
@@ -1826,6 +1799,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7a0-90ca-c64f-e9e8" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3902-e9fc-5729-c138" type="min"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <costs>
