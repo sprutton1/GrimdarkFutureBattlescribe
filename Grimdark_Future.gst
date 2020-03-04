@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="11" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="12" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.7"/>
   </publications>
@@ -749,7 +749,7 @@ Note that wounds suffered by that model don’t carry over to other models if it
     <rule id="587a-b92c-a265-06c4" name="Indirect" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Weapons with this special rule may shoot at enemies that are not within line of sight, however they get –1 to hit when doing so.</description>
     </rule>
-    <rule id="2c45-0e1e-fec5-8dbb" name="Poison(X)" publicationId="d755-5d69-pubN65537" hidden="false">
+    <rule id="2c45-0e1e-fec5-8dbb" name="Poison" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Whenever you roll an unmodified to hit result of 6 whilst firing this weapon that hit is multiplied by 3.</description>
     </rule>
     <rule id="ba47-b43b-18f8-97c1" name="Psychic(X)" publicationId="d755-5d69-pubN65537" hidden="false">

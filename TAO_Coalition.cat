@@ -1809,12 +1809,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="30ac-3f30-0018-c756" name="Jackal Hound" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="2267-cd42-a72f-a3b7" name="Jackal Hound" hidden="false" targetId="e65b-9445-65ce-6f27" type="profile"/>
-        <infoLink id="a76f-1609-9cbe-865b" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-        <infoLink id="b01b-b1d8-e474-13c9" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="7bf1-b0cf-9d0c-fba2" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="0b29-d675-adf0-6ba0" name="Claws" hidden="false" collective="false" import="true" targetId="2f9c-38d2-91d7-e138" type="selectionEntry">
           <constraints>
@@ -1828,14 +1822,101 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e572-7ea4-f2eb-cb21" name="Jackal Hounds" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="9c03-a274-3731-2b67" name="Jackal Hounds" hidden="false" collective="false" import="true" targetId="30ac-3f30-0018-c756" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="d566-0eb4-cffd-aba7" name="Jackal Hound" hidden="false" targetId="e65b-9445-65ce-6f27" type="profile"/>
+        <infoLink id="a3cd-ff6b-a106-97ef" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="407e-e656-da19-51eb" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="8a10-90b2-f395-0647" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7b45-ec46-2a46-393c" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="6483-072e-eb8d-e934">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f0c-bdbd-37e6-0530" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a42f-4e15-c01a-5602" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d29-e00e-7367-5fd6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8e5-8d55-d284-38af" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="6483-072e-eb8d-e934" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="f526-3511-f9a4-6b41" name="Upgrade all models with any:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="0853-881a-9e6e-e02c" name="Vicious Bite (Poison)" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1daf-f365-8597-5f20" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="3864-af60-9a9b-9d80" name="Poison(X)" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="f483-0423-38b3-1f31" name="Hunter Breed (Furious)" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0bc-fd35-d020-96f7" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="edbe-fa86-42af-150b" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="2242-35d6-eb03-5a84" name="Jackal Hounds" hidden="false" collective="false" import="true" targetId="30ac-3f30-0018-c756" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f30a-4aa5-81e2-5d1f" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bad9-6310-1d52-12c6" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="dd29-9b13-d851-ac44" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="dcbb-6dfd-cbce-d92d" name="Upgrade all models with any:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="8034-1e86-6882-654b" name="Vicious Bite (Poison)" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a4d-2d68-71cf-addd" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="a2cc-31d3-a6c7-e4c5" name="Poison(X)" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="f1f0-74f0-1dea-ee06" name="Hunter Breed (Furious)" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfd2-1fe3-88a5-1141" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="adda-347f-2a2c-9629" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="509c-e7fe-1416-223e" name="Jackal Hounds" hidden="false" collective="false" import="true" targetId="30ac-3f30-0018-c756" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6621-6c23-92a8-f6bf" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efb9-a952-457a-fc58" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
       </costs>
