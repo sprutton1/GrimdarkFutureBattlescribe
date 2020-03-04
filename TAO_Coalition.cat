@@ -89,7 +89,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ed91-b22e-5150-f82a" name="Gatling Carbine" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ed91-b22e-5150-f82a" name="Burst Carbine" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="abfb-32aa-36b3-815e" name="Gatling Carbine" hidden="false" targetId="e2cf-974d-8839-2e92" type="profile"/>
         <infoLink id="b5f7-bcc4-c1d5-cd91" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -163,7 +163,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f799-74f3-dbb2-f225" name="High Output Gatling Carbine" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f799-74f3-dbb2-f225" name="Rapid Burst Carbine" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4176-7da1-6074-9ece" name="High Output Gatling Carbine" hidden="false" targetId="5bd9-f371-687f-2043" type="profile"/>
         <infoLink id="ce72-59d4-a7f9-b386" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -349,163 +349,66 @@
         <infoLink id="c884-1b91-a116-d428" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3b27-a1b2-0e6d-5aff" name="Upgrade with up to three" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="3b27-a1b2-0e6d-5aff" name="Upgrade with up to four:" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d5e-5c6d-ae38-51cc" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d5e-5c6d-ae38-51cc" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="deeb-4bd6-278f-2891" name="Pulse Rifle" hidden="false" collective="false" import="true" targetId="b55d-c9eb-d681-b9c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1171-da50-62c2-0535" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
             <entryLink id="7749-add7-d076-6355" name="Missile Pod" hidden="false" collective="false" import="true" targetId="4cfe-ec17-9d43-c9a1" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3f8-218c-7c23-ec34" type="max"/>
-              </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
             </entryLink>
             <entryLink id="8665-569b-acf5-55f2" name="Ion Carbine" hidden="false" collective="false" import="true" targetId="3a0a-5013-5891-6737" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c30f-e3a5-f88d-4d31" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </entryLink>
             <entryLink id="f965-f243-ce2a-3e1e" name="Gatling Carbine" hidden="false" collective="false" import="true" targetId="ed91-b22e-5150-f82a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49da-ec02-92e8-fcc7" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </entryLink>
             <entryLink id="7972-b562-caa7-2a07" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8d1-68a5-3f55-1ded" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
             <entryLink id="0f38-305b-4df3-bb79" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1796-78ed-221c-c1e2" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
             <entryLink id="d122-b6e5-f2c0-1d3d" name="High Output Gatling Carbine" hidden="false" collective="false" import="true" targetId="f799-74f3-dbb2-f225" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="646a-0df5-04f3-bde6" type="max"/>
-              </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
               </costs>
             </entryLink>
             <entryLink id="82ee-28a1-d8e9-6b39" name="Fusion Carbine" hidden="false" collective="false" import="true" targetId="4094-cb5c-a447-e560" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d163-0aa7-f92a-5e00" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
               </costs>
             </entryLink>
             <entryLink id="7d0a-ee6e-3981-a8b3" name="Frag Pod" hidden="false" collective="false" import="true" targetId="2eaf-19e0-69e1-b81b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89ed-b8fe-1a0b-3ab9" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="dc4d-fd92-8f4a-bf33" name="Upgrade with one" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="195c-3af6-bb03-8b00" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="acfe-16d3-865f-07db" name="Accelerator Drone" hidden="false" collective="false" import="true" targetId="5bc6-9adf-a7d8-53b8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e18b-1718-6d63-868f" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="0c0f-caf2-9f32-4cf0" name="Shield Drone" hidden="false" collective="false" import="true" targetId="f7b5-2be0-6f3a-4283" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1919-000d-d28c-9f63" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="6053-c65f-ce89-a314" name="Recon Drone" hidden="false" collective="false" import="true" targetId="6b71-5af9-c2f9-6ed2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0de5-dae5-0b5d-0611" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="faaf-ba6e-5419-82e8" name="Missile Drone" hidden="false" collective="false" import="true" targetId="e5e8-f2cc-f0c6-2e74" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a97-d295-55ce-7a52" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="7561-f24e-70bf-abf5" name="Gun Drone" hidden="false" collective="false" import="true" targetId="a9d7-ac94-62b6-5d46" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1ed-9464-62eb-ce3d" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="699e-20be-deb7-950b" name="Spotter Drone" hidden="false" collective="false" import="true" targetId="6d2d-dc99-9075-bc57" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33e9-a1df-5914-9943" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="031a-80e2-9c79-7f7e" name="Inhibitor Drone" hidden="false" collective="false" import="true" targetId="b9a5-53f0-e0ff-103f" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a91a-8bd6-c93d-ddb9" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d80e-1672-f525-55a9" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="82d3-d7cf-1e8b-5f3f">
+        <selectionEntryGroup id="d80e-1672-f525-55a9" name="Weapons - Melee" hidden="false" collective="false" import="true" defaultSelectionEntryId="82d3-d7cf-1e8b-5f3f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcfb-3cb9-2b17-7725" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cad1-43ca-c21a-07d4" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="82d3-d7cf-1e8b-5f3f" name="Suit Fist" hidden="false" collective="false" import="true" targetId="92fa-6ed8-80b5-06eb" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c69-06b0-a470-8e99" type="max"/>
-              </constraints>
+            <entryLink id="82d3-d7cf-1e8b-5f3f" name="Suit Fist" hidden="false" collective="false" import="true" targetId="92fa-6ed8-80b5-06eb" type="selectionEntry"/>
+            <entryLink id="bca8-2358-071b-a007" name="Plasma Gauntlet" hidden="false" collective="false" import="true" targetId="35f1-e365-5f4c-cf33" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
             </entryLink>
-            <entryLink id="978e-c398-48e4-2abc" name="Energy Sword" hidden="false" collective="false" import="true" targetId="5616-b26a-ac00-c196" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b46-5029-1c7d-a52e" type="max"/>
-              </constraints>
+            <entryLink id="ac8a-0c75-b304-6832" name="Plasma Sword" hidden="false" collective="false" import="true" targetId="ee80-c18b-5847-0d8a" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
@@ -513,6 +416,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="905b-d3b3-6617-2bc8" name="Upgrades (2x Drones)" hidden="false" collective="false" import="true" targetId="7305-f750-1716-3c44" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="100.0"/>
       </costs>
@@ -3118,6 +3024,19 @@
         <infoLink id="b7f1-1c0b-2193-78d5" name="Deadly Surge" hidden="false" targetId="6351-1ca9-808b-6b6a" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="ee80-c18b-5847-0d8a" name="Plasma Sword" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1973-d4ff-0ff1-3d0b" name="Plasma Sword" hidden="false" targetId="0e55-726c-0d70-c338" type="profile"/>
+        <infoLink id="8c31-0494-8602-9957" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="584a-618d-eec8-3e5d" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="35f1-e365-5f4c-cf33" name="Plasma Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4bc4-8857-20d1-2657" name="Plasma Gauntlet" hidden="false" targetId="7d76-0b98-fbca-d87c" type="profile"/>
+        <infoLink id="582b-1496-4f33-3df9" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cfff-7811-ba42-dc70" name="Spells" hidden="false" collective="false" import="true">
@@ -3166,6 +3085,50 @@
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="7305-f750-1716-3c44" name="Upgrades (2x Drones)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffaf-f600-bd10-e8b5" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="cff7-b780-4754-2124" name="Spotter Drone" hidden="false" collective="false" import="true" targetId="6d2d-dc99-9075-bc57" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="5362-c445-8616-eef3" name="Gun Drone" hidden="false" collective="false" import="true" targetId="a9d7-ac94-62b6-5d46" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="c873-9193-eb08-d239" name="Shield Drone" hidden="false" collective="false" import="true" targetId="f7b5-2be0-6f3a-4283" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1897-15d5-5e04-5ce4" name="Upgrades (1x Drone)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8a0-10f4-5142-cf8b" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="eb99-39cd-24fc-d1ad" name="Spotter Drone" hidden="false" collective="false" import="true" targetId="6d2d-dc99-9075-bc57" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="b9c4-3ad7-9b54-c178" name="Gun Drone" hidden="false" collective="false" import="true" targetId="a9d7-ac94-62b6-5d46" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="fdd6-0b2d-d98b-2b31" name="Shield Drone" hidden="false" collective="false" import="true" targetId="f7b5-2be0-6f3a-4283" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -3341,7 +3304,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="e2cf-974d-8839-2e92" name="Gatling Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="e2cf-974d-8839-2e92" name="Burst Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A4</characteristic>
@@ -3376,10 +3339,10 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="5bd9-f371-687f-2043" name="High Output Gatling Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="5bd9-f371-687f-2043" name="Rapid Burst Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A12</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A8</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
@@ -3769,6 +3732,18 @@
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
         <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 24&quot; takes 3 automatic hits with AP(2).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0e55-726c-0d70-c338" name="Plasma Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7d76-0b98-fbca-d87c" name="Plasma Gauntlet" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
