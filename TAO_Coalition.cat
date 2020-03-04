@@ -622,22 +622,42 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="181e-12e9-bb34-dda4" name="Grunt (Pulse Shotgun)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="bc69-2487-13da-36da" name="Grunt" hidden="false" targetId="5be5-d19b-d596-2c28" type="profile"/>
-        <infoLink id="4f47-1340-0630-4ed9" name="Good Shot" hidden="false" targetId="226a-fb55-139f-87fb" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="42f6-a553-c369-caf4" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+    <selectionEntry id="181e-12e9-bb34-dda4" name="Grunt (Special Weapon)" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="738c-752d-dd84-d747" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="614b-2c3d-1134-c6aa">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc4e-181a-86d9-2d51" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="661f-a855-e52f-1af6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42d5-7105-8b45-8126" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5299-3d9b-19ce-a0ca" type="max"/>
           </constraints>
-        </entryLink>
-        <entryLink id="52f7-feed-7d3a-a86a" name="Pulse Shotgun" hidden="false" collective="false" import="true" targetId="cb78-eb43-cccd-f698" type="selectionEntry">
+          <entryLinks>
+            <entryLink id="614b-2c3d-1134-c6aa" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2b1f-fe9d-c124-8336" name="Shred Rifle" hidden="false" collective="false" import="true" targetId="fa7d-5662-869b-c879" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="f67d-ecb0-2d7f-b937" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="c329-2406-5bdd-4365" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9a8d-e6af-74c2-5ea3" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="761c-7562-545a-1b55" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fb7-cbf5-f377-b1fe" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cf6-6e48-865f-a4fc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f5b-a418-35e3-9d84" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -646,167 +666,219 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="79dc-34e9-c339-2815" name="Grunt Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3031-a6c8-d17b-3fb9" name="Grunt" hidden="false" targetId="5be5-d19b-d596-2c28" type="profile"/>
+        <infoLink id="8261-9dbf-2e83-853e" name="Good Shot" hidden="false" targetId="226a-fb55-139f-87fb" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="442e-350c-dec0-6d3c" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="7e5c-f102-1766-ca5b">
+        <selectionEntryGroup id="9c2f-63dc-398c-1b11" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="cdc0-f982-d2e4-d257">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3d2-b2d1-c610-e6e7" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4990-9bdb-1a06-2515" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc3d-319a-fb62-c6a0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8669-5c6e-99a8-5e9b" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7e5c-f102-1766-ca5b" name="Pulse Shotguns" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="b8d5-01f4-28db-3fdf" name="Grunt (Pulse Shotgun)" hidden="false" collective="false" import="true" targetId="181e-12e9-bb34-dda4" type="selectionEntry">
+            <selectionEntry id="cdc0-f982-d2e4-d257" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="7972-414b-e9d9-cadf" name="Main Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="f226-645d-fcd1-1f4d">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cf0-6e54-b994-ffd2" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7442-c7d7-bf0a-e594" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceb5-7634-4715-fd2d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c28d-9571-7187-d038" type="max"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
+                  <selectionEntries>
+                    <selectionEntry id="f226-645d-fcd1-1f4d" name="Pulse Shotguns" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="5d10-a5e6-8524-ccd7" name="Grunts" hidden="false" collective="false" import="true" defaultSelectionEntryId="7724-00d3-c875-9e68">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a71-0d07-5ea7-880a" type="min"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0771-8e85-3f04-91b1" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="7150-9b63-a59d-ba23" name="Grunt (Leader)" hidden="false" collective="false" import="true" targetId="9704-9d85-6eb2-3834" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c108-4128-4bae-14ab" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="7724-00d3-c875-9e68" name="Grunt" hidden="false" collective="false" import="true" targetId="f5d6-93bb-d07e-d8cb" type="selectionEntry"/>
+                            <entryLink id="764c-eb81-c2a2-eaae" name="Grunt (Special Weapon)" hidden="false" collective="false" import="true" targetId="181e-12e9-bb34-dda4" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f816-c50f-fc6b-dd72" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntry>
+                    <selectionEntry id="fd5a-4854-358f-321e" name="Pulse Rifles" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="ea25-9dd0-5184-efa6" name="Grunts" hidden="false" collective="false" import="true" defaultSelectionEntryId="e2fd-b8d2-7c95-b3e1">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="759f-d021-51cb-3801" type="min"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cca4-2899-d413-e9a1" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="51aa-34d1-d280-f306" name="Grunt (Leader)" hidden="false" collective="false" import="true" targetId="9704-9d85-6eb2-3834" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a339-0bc7-39a9-bc1b" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="e2fd-b8d2-7c95-b3e1" name="Grunt (Rifle)" hidden="false" collective="false" import="true" targetId="3344-12c8-808c-7d24" type="selectionEntry"/>
+                            <entryLink id="bf56-6bfe-02b8-844f" name="Grunt (Special Weapon)" hidden="false" collective="false" import="true" targetId="181e-12e9-bb34-dda4" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7db-d54a-1fc8-1fbe" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="4762-7a39-2065-5351" name="Pulse Carbines" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="cb85-ae3e-e28c-a6be" name="Grunts" hidden="false" collective="false" import="true" defaultSelectionEntryId="98d1-3d76-aaac-d59d">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5efe-5e03-dc54-83e0" type="min"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4158-06f8-709f-2db8" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="101c-e6ab-f664-4f9a" name="Grunt (Leader)" hidden="false" collective="false" import="true" targetId="9704-9d85-6eb2-3834" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3af-c3e9-fe64-8fbf" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="98d1-3d76-aaac-d59d" name="Grunt (Carbine)" hidden="false" collective="false" import="true" targetId="9adf-f503-7238-e1d0" type="selectionEntry"/>
+                            <entryLink id="87a1-8adb-7579-f11e" name="Grunt (Special Weapon)" hidden="false" collective="false" import="true" targetId="181e-12e9-bb34-dda4" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e25-4a20-9828-2e01" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="6e4e-ea9e-5b46-8b69" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="d4d7-103c-4580-f9fd" name="Support Turret" hidden="false" collective="false" import="true" targetId="1215-6533-2a31-188b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="595e-e79f-0d8e-7fc1" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry id="8c7e-a38d-f4b0-f287" name="Pulse Carbines" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="6b04-e1e9-2e72-250f" name="Grunt (Pulse Carbine)" hidden="false" collective="false" import="true" targetId="f5d6-93bb-d07e-d8cb" type="selectionEntry">
+            <selectionEntry id="5c84-4399-cde9-cca9" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="3379-32bd-587b-5468" name="Main Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="8d50-b727-9779-753e">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fd8-a8dd-b031-05a0" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="767c-6d13-dbae-baab" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fee-4265-93f1-97f5" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87fe-e44b-3db7-8926" type="max"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry id="8d50-b727-9779-753e" name="Pulse Shotguns" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="7a8e-f12f-0ca2-780e" name="Grunts" hidden="false" collective="false" import="true" defaultSelectionEntryId="a547-1ec4-8b7d-81c7">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4ec-c5e2-bc3c-12ce" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b88-a8d1-6ae3-15d5" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="6135-e006-703d-ad69" name="Grunt (Leader)" hidden="false" collective="false" import="true" targetId="9704-9d85-6eb2-3834" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c060-c511-6b40-0d39" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="a547-1ec4-8b7d-81c7" name="Grunt" hidden="false" collective="false" import="true" targetId="f5d6-93bb-d07e-d8cb" type="selectionEntry"/>
+                            <entryLink id="1c36-dec2-9110-433d" name="Grunt (Special Weapon)" hidden="false" collective="false" import="true" targetId="181e-12e9-bb34-dda4" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8a4-3030-f3ab-4017" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntry>
+                    <selectionEntry id="7aff-8798-f942-c86e" name="Pulse Rifles" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="edc9-5a55-98a4-f1d4" name="Grunts" hidden="false" collective="false" import="true" defaultSelectionEntryId="6ca4-1679-5890-d2fa">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13dc-555c-69ff-3108" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7169-929e-58f2-cf65" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="0b9d-195b-6839-ef18" name="Grunt (Leader)" hidden="false" collective="false" import="true" targetId="9704-9d85-6eb2-3834" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1869-4b4f-5f9b-f83b" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="6ca4-1679-5890-d2fa" name="Grunt (Rifle)" hidden="false" collective="false" import="true" targetId="3344-12c8-808c-7d24" type="selectionEntry"/>
+                            <entryLink id="f2e3-63e4-96f8-dd6f" name="Grunt (Special Weapon)" hidden="false" collective="false" import="true" targetId="181e-12e9-bb34-dda4" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d94-4752-1f61-47c3" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="f2c9-9c90-de5b-7415" name="Pulse Carbines" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="0c7e-ad4a-a9fc-3a7b" name="Grunts" hidden="false" collective="false" import="true" defaultSelectionEntryId="7af0-641e-4142-283e">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74fd-0840-cac3-f1be" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c882-308b-4941-dc37" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="c3ea-3bc4-dce6-eae4" name="Grunt (Leader)" hidden="false" collective="false" import="true" targetId="9704-9d85-6eb2-3834" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d015-d042-cc29-9877" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="7af0-641e-4142-283e" name="Grunt (Carbine)" hidden="false" collective="false" import="true" targetId="9adf-f503-7238-e1d0" type="selectionEntry"/>
+                            <entryLink id="0e5b-c195-d6f8-aa5b" name="Grunt (Special Weapon)" hidden="false" collective="false" import="true" targetId="181e-12e9-bb34-dda4" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a37-0101-611c-6d31" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="9e4a-a33b-0a26-b48d" name="Upgrade up to two modesl with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="3ac1-bc0f-c576-b6d3" name="Support Turret" hidden="false" collective="false" import="true" targetId="1215-6533-2a31-188b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e88-1a99-2a2b-a0f6" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="888b-b6dc-19ee-ae63" name="Pulse Rifles" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="a30f-c09e-8a2f-e674" name="Grunt (Pulse Rifle)" hidden="false" collective="false" import="true" targetId="9704-9d85-6eb2-3834" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4141-86d7-adac-76f3" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1558-8036-1665-a438" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="b6e8-860c-8eea-9484" name="Upgrade all with" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="de32-be21-6325-f716" name="EMP Grenade" hidden="false" collective="false" import="true" targetId="9a67-6e91-692c-df55" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60d0-cd3a-6d5f-ec65" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="fee2-a9a5-78d9-3f81" name="Upgrade with one" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7152-cb15-2e4c-a0bc" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="bb9c-66f5-506d-1496" name="Support Turret - Missile Pod" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5afb-01da-d7b2-0dbf" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="15c5-3783-f61c-c1b5" name="Missile Pod" hidden="false" collective="false" import="true" targetId="4cfe-ec17-9d43-c9a1" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ff5-1a25-7b4d-5140" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d564-c0ad-5987-a21e" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f202-63a3-c4ad-2992" name="Support Turret - Smart Missiles" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34e6-3547-5bff-6ed2" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="51d6-f1b6-b9d7-929d" name="Smart Missiles" hidden="false" collective="false" import="true" targetId="f0c2-d074-6605-52ab" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28b1-bd26-f004-78e9" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09ff-75a3-c226-28b1" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ceb4-75e3-68ba-0718" name="Upgrade one model with one" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f17e-4e9f-e68c-77b4" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ecce-58fc-4cb3-5f82" name="Accelerator Drone" hidden="false" collective="false" import="true" targetId="5bc6-9adf-a7d8-53b8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb8e-6dfa-2122-9f01" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="92f5-57f7-eb4d-f808" name="Shield Drone" hidden="false" collective="false" import="true" targetId="f7b5-2be0-6f3a-4283" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f02-8378-07e2-35de" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="986f-06a2-c9f8-5f86" name="Recon Drone" hidden="false" collective="false" import="true" targetId="6b71-5af9-c2f9-6ed2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9742-baaf-7c34-5e18" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="383e-faf8-88c8-c8cc" name="Missile Drone" hidden="false" collective="false" import="true" targetId="e5e8-f2cc-f0c6-2e74" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f212-c1a4-52ca-7f31" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="c100-95b6-a7ec-bd40" name="Gun Drone" hidden="false" collective="false" import="true" targetId="a9d7-ac94-62b6-5d46" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="519b-d02c-1592-55a9" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="c4e9-99ab-69fe-8268" name="Spotter Drone" hidden="false" collective="false" import="true" targetId="6d2d-dc99-9075-bc57" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="065d-0ef5-b7be-1b40" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="7690-d346-e934-2acb" name="Inhibitor Drone" hidden="false" collective="false" import="true" targetId="b9a5-53f0-e0ff-103f" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a90c-0c1d-5225-8e51" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -840,22 +912,34 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9704-9d85-6eb2-3834" name="Grunt (Pulse Rifle)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="5644-397f-7c6a-d18d" name="Grunt" hidden="false" targetId="5be5-d19b-d596-2c28" type="profile"/>
-        <infoLink id="1d24-2d5e-e2cf-b361" name="Good Shot" hidden="false" targetId="226a-fb55-139f-87fb" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="354c-ff41-ecfd-0bb3" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+    <selectionEntry id="9704-9d85-6eb2-3834" name="Grunt (Leader)" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="378e-5e33-155a-f124" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c29d-8f06-541e-30d9">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e94-d35d-029f-98d5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dec-c9ee-50be-0628" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3001-a49d-bdea-dcef" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b32-2b1b-7b0b-8dbc" type="min"/>
           </constraints>
-        </entryLink>
-        <entryLink id="9552-9b4c-499b-3c20" name="Pulse Rifle" hidden="false" collective="false" import="true" targetId="397e-38aa-67c6-d551" type="selectionEntry">
+          <entryLinks>
+            <entryLink id="c29d-8f06-541e-30d9" name="Ritual Dagger" hidden="false" collective="false" import="true" targetId="f540-9393-040b-1d8e" type="selectionEntry"/>
+            <entryLink id="d9b7-2c13-c489-b1a6" name="Plasma Gauntlet" hidden="false" collective="false" import="true" targetId="35f1-e365-5f4c-cf33" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="54cf-0162-47fb-6c80" name="Plasma Sword" hidden="false" collective="false" import="true" targetId="ee80-c18b-5847-0d8a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="46d7-bd43-8916-9aca" name="Upgrades (1x Drone)" hidden="false" collective="false" import="true" targetId="1897-15d5-5e04-5ce4" type="selectionEntryGroup"/>
+        <entryLink id="5844-9a29-4eee-76b0" name="Pulse Pistol" hidden="false" collective="false" import="true" targetId="73a8-c064-2f83-0ae8" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e651-2561-45cd-6a57" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0425-b643-537b-378a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="591f-dbe4-e32e-3a85" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8c6-62ce-a2d5-ff8d" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -863,11 +947,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f5d6-93bb-d07e-d8cb" name="Grunt (Pulse Carbine)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="8fc1-8d9f-f75c-0846" name="Grunt" hidden="false" targetId="5be5-d19b-d596-2c28" type="profile"/>
-        <infoLink id="76f7-0514-e001-f1a5" name="Good Shot" hidden="false" targetId="226a-fb55-139f-87fb" type="rule"/>
-      </infoLinks>
+    <selectionEntry id="f5d6-93bb-d07e-d8cb" name="Grunt (Shotgun)" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
         <entryLink id="cc1e-63ab-51d7-4833" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
@@ -875,10 +955,10 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6007-e1f2-9e3d-4d39" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="b5c0-26bc-983c-221f" name="Pulse Carbine" hidden="false" collective="false" import="true" targetId="1394-793a-31b1-d141" type="selectionEntry">
+        <entryLink id="7d1e-2622-3b67-3736" name="Pulse Shotgun" hidden="false" collective="false" import="true" targetId="cb78-eb43-cccd-f698" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d10-2c8f-c578-1fb1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaeb-db52-4aba-9cf2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36d6-56de-8a65-7fe2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61c8-2647-7e80-3b71" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -3161,6 +3241,62 @@
         <infoLink id="1008-7fd3-6fe3-3f5c" name="Ethereal" hidden="false" targetId="a2d3-439d-e3a6-8a27" type="profile"/>
         <infoLink id="7759-9f9e-6116-5e37" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="1215-6533-2a31-188b" name="Support Turret" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="eb30-7bfe-e86d-37fd" name="Support Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="07af-4665-3a2d-9591">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72f8-7fc5-8ee6-0a54" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7785-e68e-edb4-338c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="07af-4665-3a2d-9591" name="Missile Pod" hidden="false" collective="false" import="true" targetId="4cfe-ec17-9d43-c9a1" type="selectionEntry"/>
+            <entryLink id="2fb6-e842-9cae-f3a2" name="Smart Missiles" hidden="false" collective="false" import="true" targetId="f0c2-d074-6605-52ab" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="9adf-f503-7238-e1d0" name="Grunt (Carbine)" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="6508-5d91-46db-6ac9" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3836-8c39-03c5-cb5d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e95-d39c-55c1-689f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c137-29c0-a1f6-fd51" name="Pulse Carbine" hidden="false" collective="false" import="true" targetId="1394-793a-31b1-d141" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8af3-b0de-fa3d-7184" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0137-adc5-6457-e180" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3344-12c8-808c-7d24" name="Grunt (Rifle)" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="212a-84d6-40b3-c756" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18cd-e03b-8562-e7f5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0e3-5e3c-b571-668a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="941d-a45d-bb4a-82b7" name="Pulse Rifle" hidden="false" collective="false" import="true" targetId="397e-38aa-67c6-d551" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d20e-fbfc-e4f9-0da0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2407-6d1c-76a3-cf20" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
