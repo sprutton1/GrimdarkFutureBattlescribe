@@ -67,9 +67,12 @@ table!
 |Battle Sisters|v2.1|Done|
 |Dark Elf Raiders|v2.3|Done|
 |Dwarf Guilds|v2.3|Done|
+|Elven Jesters|-|Not started|
+|Feudal Guard|-|Not started|
 |Havoc Brothers|Main v2.4 - Detachments v2.4|Done|
 |High Elf Fleets|v2.3|Done|
 |Human Defense Force|v2.2|Done|
+|Human Inquisition|-|Not started|
 |Infected Colonies|v2.1|Done|
 |Machine Cult|v2.2|Done|
 |Mercenaries|-|Not started|
@@ -78,7 +81,7 @@ table!
 |Rebel Guerrillas|-|Not started|
 |Robot Legions|v2.4|Done|
 |Soul-Snatchers|v2.6|Done|
-|TAO Coalition|v2.4|Done|
+|TAO Coalition|v2.7|Done|
 |Titan Lords|v2.2|Done|
 |Wormhole Daemons|-|Not started|
 
