@@ -2751,7 +2751,6 @@
       <infoLinks>
         <infoLink id="b525-5f2a-c1ee-9688" name="Surge Titan" hidden="false" targetId="c7ea-3137-28ab-f776" type="profile"/>
         <infoLink id="6d12-80e7-cc83-48af" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-        <infoLink id="237c-07cf-17bd-af2c" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="62e3-e1f5-4274-27d3" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -2761,59 +2760,35 @@
           </constraints>
           <entryLinks>
             <entryLink id="e1af-7567-c39d-14ec" name="Cluster Rockets" hidden="false" collective="false" import="true" targetId="8bcd-42f1-d6f8-7c58" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1a3-c373-9e72-8591" type="max"/>
-              </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="81e9-691d-3205-9975" name="Cluster Rockets Attachments" hidden="false" collective="false" import="true">
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="6fe0-0631-8e79-e3d1" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9b95-6a0f-6e00-0e95">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b773-86f9-9983-da4b" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="9b95-6a0f-6e00-0e95" name="Twin Flamethrower" hidden="false" collective="false" import="true" targetId="619b-fa14-4a45-3a48" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d595-b7fb-1d87-b316" type="max"/>
-                          </constraints>
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="de62-eb97-9a1d-5b26" name="Twin Frag Pod" hidden="false" collective="false" import="true" targetId="b372-b678-2eff-4d02" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8a7-ba9c-f99d-1750" type="max"/>
-                          </constraints>
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="717d-c7aa-7eb0-3e44" name="Heavy Gatling Carbine" hidden="false" collective="false" import="true" targetId="447f-7d6e-825d-c6b7" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9c0-94cb-8af7-d7dc" type="max"/>
-                          </constraints>
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
+                <selectionEntryGroup id="81e9-691d-3205-9975" name="Cluster Rockets Attachment" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd96-6e89-ed0f-432a" type="max"/>
+                  </constraints>
                   <entryLinks>
                     <entryLink id="4521-fb41-24e0-53b9" name="Destroyer Missiles" hidden="false" collective="false" import="true" targetId="5495-01a2-df3a-7d74" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02d6-ce44-03b9-b3dd" type="max"/>
-                      </constraints>
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
                       </costs>
                     </entryLink>
                     <entryLink id="c9a5-0772-0b1a-efc4" name="Twin Smart Missiles" hidden="false" collective="false" import="true" targetId="8e9e-5925-0813-682e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ee7-341a-6ddd-e745" type="max"/>
-                      </constraints>
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="ad8f-80aa-0a84-a410" name="Heavy Gatling Carbine" hidden="false" collective="false" import="true" targetId="447f-7d6e-825d-c6b7" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="aea6-eb68-4d07-5d57" name="Twin Flamethrower" hidden="false" collective="false" import="true" targetId="619b-fa14-4a45-3a48" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="6348-5d2f-6457-4d4f" name="Twin Frag Pod" hidden="false" collective="false" import="true" targetId="b372-b678-2eff-4d02" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -2831,17 +2806,11 @@
           </constraints>
           <entryLinks>
             <entryLink id="8f65-ac44-4d16-5d51" name="Heavy Pulse Cannon" hidden="false" collective="false" import="true" targetId="86d9-4a10-b873-befd" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0827-88e2-7c0e-c280" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="215.0"/>
               </costs>
             </entryLink>
             <entryLink id="6945-7ff1-5e6e-f2a3" name="Pulse Cannon" hidden="false" collective="false" import="true" targetId="fd00-801c-ee40-9760" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8be7-8758-45f9-6b5c" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
               </costs>
@@ -2850,7 +2819,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d7d7-ecc0-b41a-922e" name="Titan Stomp" hidden="false" collective="false" import="true" targetId="8f70-374d-ff9b-9a50" type="selectionEntry">
+        <entryLink id="d7d7-ecc0-b41a-922e" name="Stomp (Titan)" hidden="false" collective="false" import="true" targetId="9ba9-44e2-f61c-7cd2" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2ff-dab9-74a1-07d0" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6291-24da-1b0b-affa" type="min"/>
@@ -2858,7 +2827,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="575.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="555.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0d72-37c3-3399-a783" name="Tide Titan" hidden="false" collective="false" import="true" type="upgrade">
@@ -3330,6 +3299,12 @@
       <infoLinks>
         <infoLink id="a30b-a8d5-b6f2-031f" name="Stomp (Heavy)" hidden="false" targetId="f3f6-6a02-d22b-f2c9" type="profile"/>
         <infoLink id="c4b4-a65c-83f1-6696" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9ba9-44e2-f61c-7cd2" name="Stomp (Titan)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6049-0d42-4dc8-1fd9" name="Stomp (Titan)" hidden="false" targetId="0955-7e5e-d0f2-417a" type="profile"/>
+        <infoLink id="1a41-96e7-c1ad-aed1" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -3855,7 +3830,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Impact(9), Tough(24)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Tough(24)</characteristic>
       </characteristics>
     </profile>
     <profile id="045e-bdb6-e4ab-6bae" name="Tide Titan" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -4172,6 +4147,12 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0955-7e5e-d0f2-417a" name="Stomp (Titan)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
