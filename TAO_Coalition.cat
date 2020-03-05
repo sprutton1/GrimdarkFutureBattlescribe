@@ -2138,7 +2138,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e8d4-049c-e26f-5668" name="Heavy Suit Fist" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e8d4-049c-e26f-5668" name="Suit Fists (Heavy)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6f24-47a8-df32-1632" name="Heavy Suit Fists" hidden="false" targetId="59e4-9f68-e179-7879" type="profile"/>
         <infoLink id="f7cb-a338-0159-1b1d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -2586,43 +2586,20 @@
       <infoLinks>
         <infoLink id="23b6-6c6a-2528-966a" name="Heavy Battle Suit" hidden="false" targetId="0560-ccae-edfc-6413" type="profile"/>
         <infoLink id="6423-383b-ed11-6125" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-        <infoLink id="247f-3115-ca24-2e46" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="b0bb-8c4b-44bf-f876" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6bab-7002-0d99-9379" name="Upgrade with" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d70-1e5d-8a8d-2a77" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="0311-f9a3-8061-e192" name="Homing Missiles" hidden="false" collective="false" import="true" targetId="2db9-b26f-28de-bfb3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b179-b63d-439d-e327" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="e236-5d22-c4cb-ffb5" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7d66-0bfd-5d08-8967">
+        <selectionEntryGroup id="e236-5d22-c4cb-ffb5" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="55b8-f450-0345-9bd4">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d223-6150-ac18-879a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="457f-4902-fd15-39de" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="55b8-f450-0345-9bd4" name="Twin Heavy Missile Pod" hidden="false" collective="false" import="true" targetId="8061-702c-d69e-a338" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="253c-6b18-4caf-1e68" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
+            <entryLink id="55b8-f450-0345-9bd4" name="Twin Heavy Missile Pod" hidden="false" collective="false" import="true" targetId="8061-702c-d69e-a338" type="selectionEntry"/>
             <entryLink id="7d66-0bfd-5d08-8967" name="Twin Heavy Rail Rifle" hidden="false" collective="false" import="true" targetId="a49e-146a-2af3-f242" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af9e-ff64-61dc-82be" type="max"/>
-              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -2632,17 +2609,11 @@
           </constraints>
           <entryLinks>
             <entryLink id="2278-784f-cc61-61c3" name="Twin Plasma Rifle" hidden="false" collective="false" import="true" targetId="d726-b9c0-f08a-068b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7540-1ce7-bcbb-bb70" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
             <entryLink id="fb45-4ca3-b694-078b" name="Twin Smart Missiles" hidden="false" collective="false" import="true" targetId="8e9e-5925-0813-682e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b116-5c0e-bfd7-3601" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
               </costs>
@@ -2655,25 +2626,16 @@
           </constraints>
           <entryLinks>
             <entryLink id="327c-c4e8-ca6b-7273" name="Gun Drone" hidden="false" collective="false" import="true" targetId="a9d7-ac94-62b6-5d46" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ef0-38cc-4562-2db6" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
             </entryLink>
             <entryLink id="4d8a-abda-f296-26a3" name="Shield Drone" hidden="false" collective="false" import="true" targetId="f7b5-2be0-6f3a-4283" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f06-b82b-91f3-d48c" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
               </costs>
             </entryLink>
             <entryLink id="9d47-e940-594b-9be2" name="Missile Drone" hidden="false" collective="false" import="true" targetId="e5e8-f2cc-f0c6-2e74" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8a0-e3bf-40b0-3b64" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
@@ -2682,15 +2644,22 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1387-e84e-bfb2-224f" name="Suit Fist" hidden="false" collective="false" import="true" targetId="c6a8-5dae-c9b9-8964" type="selectionEntry">
+        <entryLink id="1387-e84e-bfb2-224f" name="Heavy Suit Fist" hidden="false" collective="false" import="true" targetId="e8d4-049c-e26f-5668" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3064-b2dd-8432-7efa" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa39-39a9-bc5f-ac29" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="d41b-964a-fa13-f42e" name="Stomp (Heavy)" hidden="false" collective="false" import="true" targetId="0c0a-3411-9c03-61c5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78bd-6033-914c-8aff" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2966-4d29-d10d-d122" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4ff7-1af7-c55b-8547" name="Vehicles - Homing Missiles" hidden="false" collective="false" import="true" targetId="43d7-2bfe-136b-bd2f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="345.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="365.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b05f-f38e-1b0e-37e2" name="Missile Pod" hidden="false" collective="true" import="true" type="upgrade">
@@ -3907,7 +3876,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Impact(3), Tough(12)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Tough(12)</characteristic>
       </characteristics>
     </profile>
     <profile id="3f92-0932-0c92-5aa6" name="Razor Fighter" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -3945,7 +3914,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Blast(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="59e4-9f68-e179-7879" name="Heavy Suit Fists" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="59e4-9f68-e179-7879" name="Suit Fists (Heavy)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
@@ -3955,7 +3924,7 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(3)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="709a-31ea-3f49-f9d1" name="Ion Tailgun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
