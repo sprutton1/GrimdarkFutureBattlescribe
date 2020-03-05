@@ -2678,36 +2678,14 @@
         <infoLink id="adc8-74b1-17e5-1149" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b349-33c8-db7d-decb" name="Upgrade with" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c93-eefc-ae5b-47f4" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="6781-ccad-43e7-81af" name="Homing Missiles" hidden="false" collective="false" import="true" targetId="2db9-b26f-28de-bfb3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7978-948c-e4ea-13a1" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="a5a6-4080-0083-5989" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="427f-5384-e8f9-981c">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e276-f83f-4091-de53" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9eb-3ef7-e99d-dc48" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="427f-5384-e8f9-981c" name="Gatling Carbine" hidden="false" collective="false" import="true" targetId="ed91-b22e-5150-f82a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e48-682c-5071-1cb4" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="427f-5384-e8f9-981c" name="Gatling Carbine" hidden="false" collective="false" import="true" targetId="ed91-b22e-5150-f82a" type="selectionEntry"/>
             <entryLink id="fce5-a163-d7ce-e143" name="Missile Pod" hidden="false" collective="false" import="true" targetId="4cfe-ec17-9d43-c9a1" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e0e-6b06-6f6d-7b7d" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
@@ -2722,9 +2700,10 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ef3-08f6-57e6-7db5" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="8c1b-922d-35e4-0be3" name="Vehicles - Homing Missiles" hidden="false" collective="false" import="true" targetId="43d7-2bfe-136b-bd2f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="200.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="210.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c98c-8e83-9826-e90e" name="Sun Bomber" hidden="false" collective="false" import="true" type="upgrade">
