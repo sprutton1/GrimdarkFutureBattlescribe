@@ -67,12 +67,14 @@ table!
 |Battle Sisters|v2.1|Done|
 |Dark Elf Raiders|v2.3|Done|
 |Dwarf Guilds|v2.3|Done|
+|Elven Jesters|-|Not started|
+|Feudal Guard|-|Not started|
 |Havoc Brothers|Main v2.4 - Detachments v2.4|Done|
 |High Elf Fleets|v2.3|Done|
 |Human Defense Force|v2.2|Done|
+|Human Inquisition|-|Not started|
 |Infected Colonies|v2.1|Done|
 |Machine Cult|v2.2|Done|
-|Mercenaries|-|Not started|
 |Orc Marauders|v2.9|Done|
 |Ratmen Clans|v2.3|Done|
 |Rebel Guerrillas|-|Not started|
