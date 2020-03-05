@@ -2196,7 +2196,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="447f-7d6e-825d-c6b7" name="Heavy Gatling Carbine" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="447f-7d6e-825d-c6b7" name="Heavy Burst Carbine" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3528-164b-7e2c-7829" name="Heavy Gatling Carbine" hidden="false" targetId="6a8a-aa9e-aadd-4316" type="profile"/>
         <infoLink id="87bf-2a40-f94b-c0f2" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -2832,67 +2832,72 @@
     </selectionEntry>
     <selectionEntry id="0d72-37c3-3399-a783" name="Tide Titan" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="84d3-712e-c287-c7d1" name="Surge Titan" hidden="false" targetId="c7ea-3137-28ab-f776" type="profile"/>
+        <infoLink id="84d3-712e-c287-c7d1" name="Tide Titan" hidden="false" targetId="045e-bdb6-e4ab-6bae" type="profile"/>
         <infoLink id="0610-a014-ddf2-3260" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-        <infoLink id="af18-2a20-488b-c816" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="37c2-7115-b447-ed82" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c02a-a29f-10ef-1571" name="Upgrade with one" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c02a-a29f-10ef-1571" name="Upgrade with one:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e7c-d626-106f-67a1" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="0333-60c8-2660-55a1" name="Twin Plasma Rifle" hidden="false" collective="false" import="true" targetId="d726-b9c0-f08a-068b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7f3-ac5c-d482-8755" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="a4bc-8986-196d-f07d" name="Twin Fusion Rifle" hidden="false" collective="false" import="true" targetId="3fb5-656b-ea36-5cf5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6622-cfab-78bc-2ead" type="max"/>
-              </constraints>
+            <entryLink id="a4bc-8986-196d-f07d" name="Twin Fusion Carbine" hidden="false" collective="false" import="true" targetId="658d-78a3-d092-8724" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
               </costs>
             </entryLink>
             <entryLink id="7ae7-dc20-f605-2276" name="Twin Smart Missiles" hidden="false" collective="false" import="true" targetId="8e9e-5925-0813-682e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5db-749a-688c-3ee6" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
               </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="10cd-c18b-9b55-f914" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b695-f36d-d4da-82ea">
+        <selectionEntryGroup id="10cd-c18b-9b55-f914" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ef1e-d8b8-973b-cd87">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83c1-7aaf-5415-23ff" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba51-bc82-df61-e840" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="913f-9bff-423f-16bd" name="Heavy Ion Cannon" hidden="false" collective="false" import="true" targetId="878e-669c-1e3a-b496" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="defd-cb73-2d28-7fbf" type="max"/>
-              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b695-f36d-d4da-82ea" name="Heavy Gatling Carbine" hidden="false" collective="false" import="true" targetId="447f-7d6e-825d-c6b7" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </entryLink>
-            <entryLink id="b695-f36d-d4da-82ea" name="Heavy Gatling Carbine" hidden="false" collective="false" import="true" targetId="447f-7d6e-825d-c6b7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64b5-c54d-94f3-bf52" type="max"/>
-              </constraints>
+            <entryLink id="ef1e-d8b8-973b-cd87" name="Plasma Sword (Titan)" hidden="false" collective="false" import="true" targetId="c6cb-66ae-2741-6f66" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6f55-f820-36a9-7c6b" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd16-e6e0-7472-fde1" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f37a-c5ee-fd1e-f684" name="Plasma Sword (Titan)" hidden="false" collective="false" import="true" targetId="c6cb-66ae-2741-6f66" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="86ef-0a5e-c75a-0d67" name="Nova Shield" hidden="false" collective="false" import="true" targetId="a9ba-e5d2-3dea-5ee6" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="7415-d246-681e-df1b" name="Titan Stomp" hidden="false" collective="false" import="true" targetId="8f70-374d-ff9b-9a50" type="selectionEntry">
+        <entryLink id="7415-d246-681e-df1b" name="Stomp (Titan)" hidden="false" collective="false" import="true" targetId="9ba9-44e2-f61c-7cd2" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4248-77d2-bccf-2b90" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1c3-40f6-66b9-69fc" type="min"/>
@@ -2900,7 +2905,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="630.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="590.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1e01-021b-b3ce-0ba1" name="Boldness" hidden="false" collective="false" import="true" type="upgrade">
@@ -3282,30 +3287,64 @@
         <infoLink id="b9bf-a300-80c7-5f2d" name="Twin Burst Carbine" hidden="false" targetId="373a-cc83-5fc6-44fb" type="profile"/>
         <infoLink id="64d5-a451-0c97-8bfe" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7b3f-f93f-8d9d-6057" name="2x Twin Pulse Carbines" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="25b5-497e-fbab-99d4" name="2x Twin Pulse Carbines" hidden="false" targetId="c10a-d246-71a4-2c30" type="profile"/>
         <infoLink id="d97c-1b85-1c4e-4b61" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6d02-8316-1954-2a60" name="Stomp (Light)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6ed3-a675-52e6-ac37" name="Stomp (Light)" hidden="false" targetId="818b-4113-ec1d-9688" type="profile"/>
         <infoLink id="dadf-3a2a-bbd5-4853" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0c0a-3411-9c03-61c5" name="Stomp (Heavy)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a30b-a8d5-b6f2-031f" name="Stomp (Heavy)" hidden="false" targetId="f3f6-6a02-d22b-f2c9" type="profile"/>
         <infoLink id="c4b4-a65c-83f1-6696" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9ba9-44e2-f61c-7cd2" name="Stomp (Titan)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6049-0d42-4dc8-1fd9" name="Stomp (Titan)" hidden="false" targetId="0955-7e5e-d0f2-417a" type="profile"/>
         <infoLink id="1a41-96e7-c1ad-aed1" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c6cb-66ae-2741-6f66" name="Plasma Sword (Titan)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b781-9dd6-10e8-c36a" name="Plasma Sword (Titan)" hidden="false" targetId="ff1b-030a-6c2f-257f" type="profile"/>
+        <infoLink id="aa3b-52a2-9f22-1f54" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="e1c4-bb77-901c-292b" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a9ba-e5d2-3dea-5ee6" name="Nova Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4869-f784-249c-37de" name="Nova Shield" hidden="false" targetId="0d1a-cbd8-6426-138a" type="profile"/>
+        <infoLink id="4be4-54d2-2fc7-44a5" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -3415,6 +3454,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3837,7 +3879,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Impact(9), Tough(24)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Tough(24)</characteristic>
       </characteristics>
     </profile>
     <profile id="9d6f-c009-2e02-2dbd" name="Sub-Railgun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -3887,7 +3929,7 @@
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
-    <profile id="6a8a-aa9e-aadd-4316" name="Heavy Gatling Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="6a8a-aa9e-aadd-4316" name="Heavy Burst Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A8</characteristic>
@@ -4153,6 +4195,17 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ff1b-030a-6c2f-257f" name="Plasma Sword (Titan)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A8</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0d1a-cbd8-6426-138a" name="Nova Shield" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Stealth</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
