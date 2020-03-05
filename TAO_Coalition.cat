@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5ccb-36df-46b6-320b" name="TAO Coalition" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5ccb-36df-46b6-320b" name="TAO Coalition" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="f7da-1c06-fb03-4ffa" name="TAO Coalition v2.7"/>
   </publications>
@@ -787,6 +787,13 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="b4c7-af0f-e380-bd24" name="Upgrades (1x Drone)" hidden="false" collective="false" import="true" targetId="1897-15d5-5e04-5ce4" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb9b-168e-4b9e-7e9a" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
               </costs>
@@ -892,6 +899,13 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="46bd-5630-38df-2338" name="Upgrades (1x Drone)" hidden="false" collective="false" import="true" targetId="1897-15d5-5e04-5ce4" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb0d-63d7-3fe6-1be3" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
               </costs>
@@ -953,11 +967,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="46d7-bd43-8916-9aca" name="Upgrades (1x Drone)" hidden="false" collective="false" import="true" targetId="1897-15d5-5e04-5ce4" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2723-0cda-5db8-d4ec" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="5844-9a29-4eee-76b0" name="Pulse Pistol" hidden="false" collective="false" import="true" targetId="73a8-c064-2f83-0ae8" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="591f-dbe4-e32e-3a85" type="min"/>
