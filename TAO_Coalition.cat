@@ -2423,81 +2423,7 @@
         <infoLink id="8275-b2f1-a00f-00c8" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="04b0-0964-5dc8-7edf" name="Upgrade with" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42c1-0511-962d-04f2" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="e5a3-8141-6ba1-f290" name="Homing Missiles" hidden="false" collective="false" import="true" targetId="2db9-b26f-28de-bfb3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="012b-b0d3-2c44-ef76" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="5a85-286c-381f-999c" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5335-0295-7a0e-8caf">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95b4-02dd-dba4-bfb1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af6f-3729-20e0-da46" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="5335-0295-7a0e-8caf" name="2x Twin Pulse Carbines" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd8e-6413-2b6b-43dc" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="2ce5-ffaa-62cc-b11f" name="Twin Pulse Carbine" hidden="false" collective="false" import="true" targetId="9f6d-904d-bba3-2d68" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="885f-d480-f4c6-eda3" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffb6-ed4b-1e7b-2ac6" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="a1e8-3cf3-7333-68ce" name="Twin Smart Missiles" hidden="false" collective="false" import="true" targetId="8e9e-5925-0813-682e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae6d-c6fd-2c07-49db" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="2657-d09b-6fba-9781" name="Twin Gatling Carbine" hidden="false" collective="false" import="true" targetId="247f-b4b0-0e5b-29e7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93c5-629e-48a0-e7e5" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="978d-d1f1-ef63-401e" name="Upgrade with any" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="0a75-3a61-ca9b-f6f1" name="Anti-Charge System" hidden="false" collective="false" import="true" targetId="4b93-307f-4829-ed6d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a168-f1ef-1e3d-2150" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="4ee9-88c6-6197-bb41" name="Distortion Engine" hidden="false" collective="false" import="true" targetId="e9de-04ca-6502-09ae" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57e2-2e80-b096-a092" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="cf84-d9c8-643f-7ec0" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c005-2d77-593e-f092">
+        <selectionEntryGroup id="cf84-d9c8-643f-7ec0" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c005-2d77-593e-f092">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2018-3cd0-cb5a-3f71" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25fd-a992-058b-b859" type="min"/>
@@ -2535,8 +2461,13 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="feb2-d282-dfde-3c37" name="Vehicles - Secondary Weapon" hidden="false" collective="false" import="true" targetId="240f-425d-23e0-29dc" type="selectionEntryGroup"/>
+        <entryLink id="22bf-244a-237e-2556" name="Upgrades (Vehicles)" hidden="false" collective="false" import="true" targetId="327d-eee1-7da0-6715" type="selectionEntryGroup"/>
+        <entryLink id="d1c5-7813-9167-308b" name="Vehicles - Homing Missiles" hidden="false" collective="false" import="true" targetId="43d7-2bfe-136b-bd2f" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="365.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="375.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be4f-987d-d73c-b3d0" name="Hover Attack Bike" hidden="false" collective="false" import="true" type="upgrade">
