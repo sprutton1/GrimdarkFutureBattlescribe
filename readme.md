@@ -75,6 +75,7 @@ table!
 |Human Inquisition|-|Not started|
 |Infected Colonies|v2.1|Done|
 |Machine Cult|v2.2|Done|
+|Mercenaries|-|Not started|
 |Orc Marauders|v2.9|Done|
 |Ratmen Clans|v2.3|Done|
 |Rebel Guerrillas|-|Not started|
