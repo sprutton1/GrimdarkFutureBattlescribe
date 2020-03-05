@@ -2515,18 +2515,17 @@
         <infoLink id="5dfb-6b6d-9739-a488" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="c268-7e68-578b-2452" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
         <infoLink id="6be4-8554-8987-99e1" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-        <infoLink id="6548-4d79-0563-8894" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="1b34-bdf6-685e-fbee" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b71b-c47b-7699-50b1" name="Upgrade with up to two" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="b71b-c47b-7699-50b1" name="Upgrade with up to two:" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="b873-c107-9964-30af" name="Stealth Drone" hidden="false" collective="false" import="true" targetId="5015-ad9f-6fd1-9ef2" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aae8-bc17-458f-69e9" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -2537,23 +2536,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8887-6723-b05b-0880" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="ed45-35f7-35e6-cab2" name="Twin Flamethrower" hidden="false" collective="false" import="true" targetId="619b-fa14-4a45-3a48" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11d3-0909-a856-b465" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="5104-bb01-3067-f1dd" name="Twin Gatling Carbine" hidden="false" collective="false" import="true" targetId="247f-b4b0-0e5b-29e7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="411f-5c8b-5b77-1ce8" type="max"/>
-              </constraints>
+            <entryLink id="ed45-35f7-35e6-cab2" name="Twin Flamethrower" hidden="false" collective="false" import="true" targetId="619b-fa14-4a45-3a48" type="selectionEntry"/>
+            <entryLink id="2dfb-7cc9-80c1-7e8d" name="Fusion Carbine" hidden="false" collective="false" import="true" targetId="4094-cb5c-a447-e560" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="2dfb-7cc9-80c1-7e8d" name="Fusion Carbine" hidden="false" collective="false" import="true" targetId="4094-cb5c-a447-e560" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dade-5888-ae82-7e12" type="max"/>
-              </constraints>
+            <entryLink id="8bcf-5d6c-969a-c619" name="Twin Burst Carbine" hidden="false" collective="false" import="true" targetId="f25d-6e6e-8917-c63c" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
@@ -2566,15 +2555,8 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b7a-c060-2759-5de2" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="df36-cc06-c1c0-6412" name="Ion Carbine" hidden="false" collective="false" import="true" targetId="3a0a-5013-5891-6737" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13d2-8eaf-eda7-2478" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="df36-cc06-c1c0-6412" name="Ion Carbine" hidden="false" collective="false" import="true" targetId="3a0a-5013-5891-6737" type="selectionEntry"/>
             <entryLink id="3fa1-34ec-460c-7446" name="Heavy Fusion Carbine" hidden="false" collective="false" import="true" targetId="53b4-2035-7872-6551" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff36-5d63-28f8-28fc" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
               </costs>
@@ -2589,9 +2571,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5144-c518-f7f9-7494" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="cc05-2dc7-2cb9-b5b5" name="Stomp (Light)" hidden="false" collective="false" import="true" targetId="6d02-8316-1954-2a60" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6cf-0c5e-3508-c467" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1947-c9d9-2c56-8644" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="205.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="230.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c78b-e4d1-639c-8c38" name="Heavy Battle Suit" hidden="false" collective="false" import="true" type="upgrade">
@@ -3405,6 +3393,18 @@
         <infoLink id="d97c-1b85-1c4e-4b61" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="6d02-8316-1954-2a60" name="Stomp (Light)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6ed3-a675-52e6-ac37" name="Stomp (Light)" hidden="false" targetId="818b-4113-ec1d-9688" type="profile"/>
+        <infoLink id="dadf-3a2a-bbd5-4853" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0c0a-3411-9c03-61c5" name="Stomp (Heavy)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a30b-a8d5-b6f2-031f" name="Stomp (Heavy)" hidden="false" targetId="f3f6-6a02-d22b-f2c9" type="profile"/>
+        <infoLink id="c4b4-a65c-83f1-6696" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cfff-7811-ba42-dc70" name="Spells" hidden="false" collective="false" import="true">
@@ -3900,7 +3900,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fear, Flying, Impact(3), Tough(6), Stealth</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fear, Flying, Tough(6), Stealth</characteristic>
       </characteristics>
     </profile>
     <profile id="0560-ccae-edfc-6413" name="Heavy Battle Suit" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -4233,6 +4233,18 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A4</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="818b-4113-ec1d-9688" name="Stomp (Light)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f3f6-6a02-d22b-f2c9" name="Stomp (Heavy)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
