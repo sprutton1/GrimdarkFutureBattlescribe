@@ -2479,56 +2479,14 @@
         <infoLink id="be54-16e7-2e82-e690" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d63a-2ba3-07de-8c03" name="Upgrade with" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a38f-28ae-01d0-7160" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="7f24-3f4b-c031-463d" name="Homing Missiles" hidden="false" collective="false" import="true" targetId="2db9-b26f-28de-bfb3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b0-56f7-6c9d-7d63" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="0406-200f-e8d9-6b5d" name="Upgrade with any" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="b5b4-a6ba-f6be-c62b" name="Anti-Charge System" hidden="false" collective="false" import="true" targetId="4b93-307f-4829-ed6d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1788-25d9-d50a-732c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="4941-431d-1279-2ef9" name="Distortion Engine" hidden="false" collective="false" import="true" targetId="e9de-04ca-6502-09ae" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aee8-c3ac-345a-e863" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="3b40-1df8-ad43-c161" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7cf4-f462-8306-4632">
+        <selectionEntryGroup id="3b40-1df8-ad43-c161" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7cf4-f462-8306-4632">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="525d-8e91-3d46-7874" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c650-4cdd-192a-d1cd" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7cf4-f462-8306-4632" name="Gatling Carbine" hidden="false" collective="false" import="true" targetId="ed91-b22e-5150-f82a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a646-4d9f-5da3-8812" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="7cf4-f462-8306-4632" name="Gatling Carbine" hidden="false" collective="false" import="true" targetId="ed91-b22e-5150-f82a" type="selectionEntry"/>
             <entryLink id="8719-9255-b9f8-e306" name="Fusion Carbine" hidden="false" collective="false" import="true" targetId="4094-cb5c-a447-e560" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75ac-980d-7c62-ab5d" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
@@ -2537,15 +2495,17 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ee66-f39c-72e7-08f5" name="Twin Pulse Carbine" hidden="false" collective="false" import="true" targetId="9f6d-904d-bba3-2d68" type="selectionEntry">
+        <entryLink id="6a38-88c3-9db6-7484" name="Upgrades (Vehicles)" hidden="false" collective="false" import="true" targetId="327d-eee1-7da0-6715" type="selectionEntryGroup"/>
+        <entryLink id="488a-4e4a-e07c-9e9e" name="Vehicles - Homing Missiles" hidden="false" collective="false" import="true" targetId="43d7-2bfe-136b-bd2f" type="selectionEntryGroup"/>
+        <entryLink id="e72d-1402-7bf9-cfe6" name="2x Twin Pulse Carbines" hidden="false" collective="false" import="true" targetId="7b3f-f93f-8d9d-6057" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e24d-de69-c114-f453" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fdd-2acc-ad3c-09c1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e02-da57-2a1c-6818" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="435e-ad39-b610-5703" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="185.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="01a8-e60c-ae43-5838" name="Heavy Stealth Suit" hidden="false" collective="false" import="true" type="upgrade">
@@ -3439,6 +3399,12 @@
         <infoLink id="64d5-a451-0c97-8bfe" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="7b3f-f93f-8d9d-6057" name="2x Twin Pulse Carbines" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="25b5-497e-fbab-99d4" name="2x Twin Pulse Carbines" hidden="false" targetId="c10a-d246-71a4-2c30" type="profile"/>
+        <infoLink id="d97c-1b85-1c4e-4b61" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cfff-7811-ba42-dc70" name="Spells" hidden="false" collective="false" import="true">
@@ -4259,6 +4225,13 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A8</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c10a-d246-71a4-2c30" name="2x Twin Pulse Carbines" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A4</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
