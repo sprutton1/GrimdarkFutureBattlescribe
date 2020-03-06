@@ -1844,12 +1844,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="96d6-884c-8879-ea6f" name="Hawk" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="25ed-f267-e019-4aa4" name="Hawk" hidden="false" targetId="7aa0-c661-da40-30af" type="profile"/>
-        <infoLink id="418c-fa3b-7d96-e63b" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
-        <infoLink id="af86-a355-8f57-ab31" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
-        <infoLink id="af04-af0e-34b9-fbcd" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="8436-440c-cae2-2e3f" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
@@ -1877,93 +1871,39 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0e7d-be4b-32f0-4aa5" name="Hawk (Leader)" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="c24b-0b5b-ca52-1ffc" name="Hawk" hidden="false" targetId="7aa0-c661-da40-30af" type="profile"/>
-        <infoLink id="29c3-7525-5830-5f25" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
-        <infoLink id="6e4a-5f77-ff39-61a5" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
-        <infoLink id="daf9-8df7-c017-a73c" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="520c-df1d-a865-1bef" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="00fa-47dd-53e4-b71a">
+        <selectionEntryGroup id="520c-df1d-a865-1bef" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="d4a5-1efa-078f-e605">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd14-815f-fc42-58b0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25b9-9a3c-6d0b-c72c" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="00fa-47dd-53e4-b71a" name="CCW (A1)" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="4f32-5eae-1a38-c1fd" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d754-05aa-9cbe-6767" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62c0-30cc-d643-f3eb" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3a81-5467-6ca3-6a85" name="Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="dd33-03e2-aac4-47df" name="Energy Sword" hidden="false" collective="false" import="true" targetId="8716-34a0-f5b9-30b2" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea04-af5c-f470-442d" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b244-3ef5-7466-ef7a" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="d4a5-1efa-078f-e605" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry"/>
+            <entryLink id="64b2-cb0b-9e13-a2b5" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1fb0-b285-6719-6b69" name="Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="7a1f-1938-44c2-9819">
+        <selectionEntryGroup id="1fb0-b285-6719-6b69" name="Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="e3e4-82ae-4f82-6afd">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b4f-e2b4-27b8-1342" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b537-f432-bc80-3c2e" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="7a1f-1938-44c2-9819" name="Laser Blaster" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="50ac-da99-48a1-a2b9" name="Laser Blaster" hidden="false" collective="true" import="true" targetId="9395-74bd-cd6c-1e55" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39ab-7166-22cd-e518" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d56c-7d8a-c49c-0af6" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="385c-e070-e62e-2f8b" name="Laser Rifle" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="59f4-e8e0-25cd-49cf" name="Laser Rifle" hidden="false" collective="true" import="true" targetId="db0f-5a6b-e6ff-e515" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="693f-dda0-5fa0-0708" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c8d-1805-ad05-24ef" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="26b0-fbc7-f82f-2b9f" name="Hawk Laser" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="65f4-d992-d250-cc1b" name="Hawk Laser" hidden="false" collective="true" import="true" targetId="073e-db51-c3de-8c8a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cc7-c21c-db28-843d" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4aa7-8846-53d9-e1a8" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="d9e6-2ebd-8c1f-06a1" name="Hawk Laser" hidden="false" collective="true" import="true" targetId="073e-db51-c3de-8c8a" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink id="e3e4-82ae-4f82-6afd" name="Laser Blaster" hidden="false" collective="true" import="true" targetId="0fbe-8dee-2f03-700f" type="selectionEntry"/>
+            <entryLink id="5f05-ec4a-8332-3bd9" name="Laser Rifle" hidden="false" collective="true" import="true" targetId="db0f-5a6b-e6ff-e515" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -1979,34 +1919,79 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="db0f-5a6b-e6ff-e515" name="Laser Rifle" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="db0f-5a6b-e6ff-e515" name="Sun Blaster" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="57b9-ac0b-5885-70b6" name="Laser Rifle" hidden="false" targetId="c112-82ef-a0c3-1845" type="profile"/>
-        <infoLink id="6318-9e7a-dbe7-7a80" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="6318-9e7a-dbe7-7a80" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7499-a635-4bca-11f2" name="Hawk Squad" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="1ab7-ae3f-849c-9e7e" name="Hawk" hidden="false" targetId="7aa0-c661-da40-30af" type="profile"/>
+        <infoLink id="6308-ee9c-18c1-a7aa" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="5fd0-57b5-fdc1-c09f" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="c30a-ed70-d828-bd8e" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5b2b-bfb6-2450-c533" name="Hawks" hidden="false" collective="false" import="true" defaultSelectionEntryId="cabc-ddd7-4c1f-6cd6">
+        <selectionEntryGroup id="f0a6-9065-8429-be3a" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="fb1d-ed51-3e8f-0d49">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93ed-0afc-02f8-5e80" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a5e-4d85-a276-bc36" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ed1-af23-b048-febe" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379e-118b-1372-76c1" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="cabc-ddd7-4c1f-6cd6" name="Hawk" hidden="false" collective="false" import="true" targetId="96d6-884c-8879-ea6f" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55a5-0fd2-6827-02af" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="0fe2-25be-a655-d72e" name="Hawk (Leader)" hidden="false" collective="false" import="true" targetId="0e7d-be4b-32f0-4aa5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acc0-7510-eac1-1232" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="fb1d-ed51-3e8f-0d49" name="Single Unit [5 model]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="8144-15ee-70d1-6d02" name="Hawks" hidden="false" collective="false" import="true" defaultSelectionEntryId="6a55-f075-3548-37a8">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b37e-98d0-aeea-c1c5" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa54-1ff2-3324-9a6d" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6a55-f075-3548-37a8" name="Hawk" hidden="false" collective="false" import="true" targetId="96d6-884c-8879-ea6f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0382-7c55-2017-120c" type="max"/>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="297d-4a7d-fce8-d374" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="aacd-152c-33fc-f174" name="Hawk (Leader)" hidden="false" collective="false" import="true" targetId="0e7d-be4b-32f0-4aa5" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b987-cc80-79bf-e97d" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="2203-d879-19fb-1150" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="e8c8-e7a9-6195-2f5e" name="Hawks" hidden="false" collective="false" import="true" defaultSelectionEntryId="c4a3-6b9f-73b4-c67b">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ccc-7fe2-1c3a-47ee" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="413f-a4d1-e48d-4d39" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c4a3-6b9f-73b4-c67b" name="Hawk" hidden="false" collective="false" import="true" targetId="96d6-884c-8879-ea6f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d93-1df8-8fa0-5610" type="max"/>
+                        <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d71-f414-d14b-0369" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="60d2-1bdc-8bdd-c53f" name="Hawk (Leader)" hidden="false" collective="false" import="true" targetId="0e7d-be4b-32f0-4aa5" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c977-8a04-a985-eab3" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="205.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -4265,11 +4250,11 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="c112-82ef-a0c3-1845" name="Laser Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="c112-82ef-a0c3-1845" name="Sun Blaster" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Poison</characteristic>
       </characteristics>
     </profile>
     <profile id="57f7-dbef-d897-aea2" name="Twin Web Spinner" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
