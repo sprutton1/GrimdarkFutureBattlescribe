@@ -1686,11 +1686,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="35b3-a369-4f6d-d27c" name="Spider" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="a43a-61fe-cd58-b300" name="Spider" hidden="false" targetId="7971-c6ed-412e-370a" type="profile"/>
-        <infoLink id="6b5e-59c4-5f4e-fd05" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
-        <infoLink id="baa6-daa6-236a-4aa8" name="Teleport" hidden="false" targetId="cbbb-f018-7f98-ac02" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="e66b-f2a9-c162-6379" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
@@ -1720,92 +1715,39 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9dcd-14fd-3403-95e8" name="Spider (Leader)" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="185d-3075-f4df-4932" name="Spider" hidden="false" targetId="7971-c6ed-412e-370a" type="profile"/>
-        <infoLink id="ba2e-ad0d-2b63-263d" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
-        <infoLink id="7122-752c-479f-0f69" name="Teleport" hidden="false" targetId="cbbb-f018-7f98-ac02" type="rule"/>
-      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8167-d97a-f603-e0a0" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ba5-b70e-e6cc-8cd4">
+        <selectionEntryGroup id="8167-d97a-f603-e0a0" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="97a1-65d1-7f90-04d5">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a19-9f1b-738c-586d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d5-4945-84cd-0930" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="5ba5-b70e-e6cc-8cd4" name="CCW (A1)" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="a4d2-aa64-69a2-7599" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7ff-774e-b264-c69a" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8300-3bad-34ae-2b6e" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="97a1-65d1-7f90-04d5" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry"/>
+            <entryLink id="58a5-989a-2cec-1b82" name="2x Spider Blades" hidden="false" collective="false" import="true" targetId="7b07-ed6b-7035-4a98" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="2331-8ace-4af8-f33d" name="2x Energy Swords" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="4c15-5c33-774e-d6b5" name="Energy Sword" hidden="false" collective="false" import="true" targetId="8716-34a0-f5b9-30b2" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77ad-bb2c-2b78-23bb" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3577-f7bd-8248-d116" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7d09-4b15-5a99-71fd" name="Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="03bf-42da-36c5-66f1">
+        <selectionEntryGroup id="7d09-4b15-5a99-71fd" name="Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="1336-afef-d3b3-741a">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b4d-a6fc-4856-5786" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b354-8fd3-070a-0bbe" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="03bf-42da-36c5-66f1" name="Web Spinner" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="1049-990d-65e5-30bc" name="Web Spinner" hidden="false" collective="true" import="true" targetId="c1f7-f749-b9cd-d3ca" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4368-6dbb-60ad-bc00" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd4a-33a3-cf25-8e82" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6f3c-e99d-d0e4-0f9c" name="Twin Web Spinner" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="41c2-948c-3755-074f" name="Twin Web Spinner" hidden="false" collective="true" import="true" targetId="4b5a-e7a0-c43f-ef36" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad2e-2c5d-6b4e-22fc" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5674-48d3-ebdc-d051" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="229b-3073-7f9a-65a1" name="Web Spinner Rifle" hidden="false" collective="true" import="true" targetId="7b73-01c1-089b-83a8" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="a48b-f255-cbff-4835" name="Web Spinner Rifle" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="cea9-1d5d-ba40-24cf" name="Web Spinner Rifle" hidden="false" collective="true" import="true" targetId="7b73-01c1-089b-83a8" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f16-50a9-72d1-df33" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a7d-fc39-4cc3-7b0e" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="1336-afef-d3b3-741a" name="Web Spinner" hidden="false" collective="true" import="true" targetId="c1f7-f749-b9cd-d3ca" type="selectionEntry"/>
+            <entryLink id="2f3c-c045-bdc9-fba4" name="Twin Web Spinner" hidden="false" collective="true" import="true" targetId="4b5a-e7a0-c43f-ef36" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -1833,24 +1775,68 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="51b2-f887-92b5-5320" name="Spider Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="790a-d356-94c4-939f" name="Spider" hidden="false" targetId="7971-c6ed-412e-370a" type="profile"/>
+        <infoLink id="930c-ec03-f66d-6ad3" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="364f-6a4b-5ea9-fb80" name="Teleport" hidden="false" targetId="cbbb-f018-7f98-ac02" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d4dc-1275-7d76-94b0" name="Spiders" hidden="false" collective="false" import="true" defaultSelectionEntryId="bfe3-a15a-413c-76fc">
+        <selectionEntryGroup id="1d9b-d989-44af-a6db" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="6ecf-0a81-a5c0-3f84">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d969-b70f-50c5-01b0" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24ac-69a3-a66c-d930" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08a8-d2dc-5b9b-8128" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="759a-4c26-4b3b-5530" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="bfe3-a15a-413c-76fc" name="Spider" hidden="false" collective="false" import="true" targetId="35b3-a369-4f6d-d27c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11fb-cb4b-d753-8bf2" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="b68c-6764-edbf-72e7" name="Spider (Leader)" hidden="false" collective="false" import="true" targetId="9dcd-14fd-3403-95e8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1c0-09cd-6410-4731" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="6ecf-0a81-a5c0-3f84" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="7dfc-3298-83a6-ec81" name="Spiders" hidden="false" collective="false" import="true" defaultSelectionEntryId="22a5-9213-cc64-aa74">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29c9-3a8a-f4fc-72e8" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f58-9d67-185f-b918" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="22a5-9213-cc64-aa74" name="Spider" hidden="false" collective="false" import="true" targetId="35b3-a369-4f6d-d27c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13f7-ec49-6aaf-eb45" type="max"/>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0664-a3e0-dbba-7ca3" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="aaa5-c320-6a14-d629" name="Spider (Leader)" hidden="false" collective="false" import="true" targetId="9dcd-14fd-3403-95e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71f1-d06b-7ec2-63d5" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="658e-b2a5-ec97-77a4" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="dcbe-71ab-63ea-8acb" name="Spiders" hidden="false" collective="false" import="true" defaultSelectionEntryId="acf5-fc8f-e9be-7ada">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16a6-174c-ef74-d6c8" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e892-c7bd-68a7-92db" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="acf5-fc8f-e9be-7ada" name="Spider" hidden="false" collective="false" import="true" targetId="35b3-a369-4f6d-d27c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5510-9944-bfe7-319e" type="max"/>
+                        <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="083d-6ecd-ed8e-d6d8" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="a906-31b8-2cbc-0f37" name="Spider (Leader)" hidden="false" collective="false" import="true" targetId="9dcd-14fd-3403-95e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b99-0818-a965-51b1" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="200.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -3886,6 +3872,12 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7b07-ed6b-7035-4a98" name="2x Spider Blades" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9c43-6a63-67e2-9d12" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="5a5f-81bf-bf8f-215d" name="Spider Blade" hidden="false" targetId="5a1a-969a-673c-2eb2" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1c2e-7fb8-1bec-cc99" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -4163,7 +4155,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4)</characteristic>
       </characteristics>
     </profile>
-    <profile id="1af2-7fdb-836f-a1ee" name="Jetbike" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="1af2-7fdb-836f-a1ee" name="Jetbiker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
@@ -4606,6 +4598,12 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5a1a-969a-673c-2eb2" name="Spider Blade" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
