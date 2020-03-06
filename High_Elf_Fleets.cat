@@ -2811,152 +2811,77 @@
       <infoLinks>
         <infoLink id="8328-d070-db1f-bb0c" name="Wraith Walker" hidden="false" targetId="2e8d-7898-dc2d-8cde" type="profile"/>
         <infoLink id="85ac-de86-2955-4c79" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="c605-ee04-eff2-bd81" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="c605-ee04-eff2-bd81" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="7906-84d9-a152-faaf" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4444-085e-bb01-f081" name="Weapon 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="d397-331b-6097-58be">
+        <selectionEntryGroup id="8315-3cc3-52c7-867e" name="Weapons - Arm Mounts [pick 2]" hidden="false" collective="false" import="true" defaultSelectionEntryId="d9b0-c01a-0ea4-5831">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e52d-ec63-b7a5-456e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33b7-2fba-47a6-4e0d" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b47a-df41-ab94-606b" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fe2-6033-2a99-01be" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="d397-331b-6097-58be" name="Shardgun" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="8dcb-aa3c-2353-f415" name="Shardgun" hidden="false" collective="false" import="true" targetId="f885-1c20-1dbf-62a7" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c674-c07a-7504-9555" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e845-bb06-acb7-7487" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3117-574a-a144-e0bf" name="Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="01f1-e4f0-3f3c-c27c" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8a3-59e2-c313-8a00" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af2-abfb-1b0c-bc6c" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="d9b0-c01a-0ea4-5831" name="Shardgun" hidden="false" collective="false" import="true" targetId="02eb-126d-0644-f54e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67fd-f583-18c7-5ea6" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3ef4-31f3-f29b-abe4" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ef-1a07-c37b-97a1" type="max"/>
+              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ec49-6da5-77bc-884d" name="Weapon 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="48b8-5975-847c-3b44">
+        <selectionEntryGroup id="5c35-aa9d-4493-c9d6" name="Weapons - Shoulder Mounts [max 2]" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8877-6292-b1c2-7871" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="314e-8bf1-658f-cfbf" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e198-2792-612e-0a52" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="48b8-5975-847c-3b44" name="Shardgun" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="9b9a-b4df-23ef-1943" name="Shardgun" hidden="false" collective="false" import="true" targetId="f885-1c20-1dbf-62a7" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2cd-0921-b8a5-8485" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f20-a537-f8ee-2cc2" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b1b7-2191-1390-b5fe" name="Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="9baa-f5c5-35f9-7354" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac87-af2d-e9ec-4c30" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fe1-38c6-3cf4-0fa2" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="c490-6772-178b-2387" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0328-1a9a-ccf8-9ed9" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="8d27-6af9-2474-a064" name="Laser Lance" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="11bf-cd7e-0af3-5e62" name="Laser Lance" hidden="false" collective="false" import="true" targetId="5bf3-3e93-72ea-0fea" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e080-2347-a049-f69f" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eec-83ec-98ff-c7fc" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="41d5-8de7-95a6-231d" name="Star Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="b883-0fe2-89d8-44b3" name="Star Cannon" hidden="false" collective="false" import="true" targetId="596b-6552-1e66-8708" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3be0-856e-b30c-d829" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e51-b657-57bc-b5ab" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="05ef-f0f0-692b-b52a" name="Shard Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="8e9d-20e3-5931-faf6" name="Shard Cannon" hidden="false" collective="false" import="true" targetId="3af1-2e35-ecfc-248f" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0570-adfe-dc88-eb50" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2015-9cea-38c9-37c3" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="cf72-1c5a-f7bd-449d" name="Star Cannon" hidden="false" collective="false" import="true" targetId="596b-6552-1e66-8708" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ef6-a74e-eaab-24dd" type="max"/>
+              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="629f-e76e-268a-1cd9" name="Scatter Laser" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="59f5-b6ac-335d-afca" name="Scatter Laser" hidden="false" collective="false" import="true" targetId="de7b-1a2e-60d6-bf04" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1b0-e82d-17e9-f39c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7747-a2a9-434e-a290" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="a88c-cbd9-7e6c-ccc7" name="Shard Cannon" hidden="false" collective="false" import="true" targetId="90f2-c9d5-c9e9-ae62" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e59f-b1c2-eafe-70e4" type="max"/>
+              </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="c320-51bf-4192-1dbe" name="Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="a782-040e-e68f-9fac" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="ff1b-714c-6353-221d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26e5-3e3b-c47e-99aa" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c0b-031a-5c95-6d35" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="6ac1-579d-f953-427f" name="Scatter Laser" hidden="false" collective="false" import="true" targetId="de7b-1a2e-60d6-bf04" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6f7-4e86-8f24-0539" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a517-f3c5-ce21-38fa" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="ff1b-714c-6353-221d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="793f-4bde-5b85-45f8" type="max"/>
+              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink id="c52a-08c8-0cc2-8900" name="Laser Lance" hidden="false" collective="false" import="true" targetId="5bf3-3e93-72ea-0fea" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e65-6be2-7142-2e85" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2966,9 +2891,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5eec-327e-5bc9-83e7" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="1e55-9b4c-dcd7-3f18" name="Stomp" hidden="false" collective="false" import="true" targetId="2782-c696-d419-134f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e48e-db80-3b9e-0640" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b8e-08e5-4b8c-d7b4" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="330.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="435.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="167e-3db0-1f9a-ecc0" name="Ghost Sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -3588,6 +3519,15 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="02eb-126d-0644-f54e" name="Shardgun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8a4f-450f-c3f6-a242" name="Shardguns" hidden="false" targetId="b9b3-8603-3c3f-451d" type="profile"/>
+        <infoLink id="40de-c72c-d797-ad36" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1c2e-7fb8-1bec-cc99" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -4202,7 +4142,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(3), Tough(12)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Tough(12)</characteristic>
       </characteristics>
     </profile>
     <profile id="b72e-4977-bd66-4f19" name="Ghost Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
