@@ -1046,11 +1046,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="85a2-df26-901c-80a1" name="Banshee" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="194f-89ab-53c1-4a5b" name="Banshee" hidden="false" targetId="21d1-101a-e753-1143" type="profile"/>
-        <infoLink id="18c4-88d4-8373-7636" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-        <infoLink id="b8ee-0ef0-0254-8d32" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="6214-aa4a-2e53-00cd" name="Shard Pistol" hidden="false" collective="true" import="true" targetId="7adc-253d-1bad-49ea" type="selectionEntry">
           <constraints>
@@ -1070,32 +1065,14 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b059-f194-7235-9964" name="Banshee (Special Weapon)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="df2c-af20-553d-2252" name="Banshee" hidden="false" targetId="21d1-101a-e753-1143" type="profile"/>
-        <infoLink id="448e-d15b-e17e-4354" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-        <infoLink id="266e-b3fb-ca08-1692" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ca43-0974-62f7-9563" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4995-df37-cfe1-606f">
+        <selectionEntryGroup id="ca43-0974-62f7-9563" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4995-df37-cfe1-606f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7921-4294-19e7-ee58" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb1f-28cb-984b-6eb2" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="d3d5-9049-af08-8683" name="Execution Sword" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="f9ab-5234-e14f-e84f" name="Execution Sword" hidden="false" collective="false" import="true" targetId="ee00-23bf-023b-7a9d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d72-0d24-4756-a14a" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dbc-b98a-a555-cc86" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4995-df37-cfe1-606f" name="Tri-Sling &amp; CCW (A1)" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4995-df37-cfe1-606f" name="Tri-Sling &amp; CCW (A2)" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="3078-e61f-fb08-ecbf" name="Tri-Sling" hidden="false" collective="false" import="true" targetId="fc55-abe8-e105-8703" type="selectionEntry">
                   <constraints>
@@ -1103,18 +1080,22 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="298d-41ef-9039-79e7" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="24ee-35f3-3a87-7b9c" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+                <entryLink id="24ee-35f3-3a87-7b9c" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4581-540e-ff9a-bb56" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2da4-a2dc-1efa-7ffe" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f33-e537-29e0-d4c6" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34f8-7431-93b7-0c86" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="f142-ca9e-609e-e51a" name="Execution Sword" hidden="false" collective="false" import="true" targetId="ee00-23bf-023b-7a9d" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1141,41 +1122,26 @@
       <infoLinks>
         <infoLink id="3776-30ba-6b85-dbfc" name="Execution Sword" hidden="false" targetId="c7c0-25a9-c62c-a0cd" type="profile"/>
         <infoLink id="2475-9b8a-d638-f803" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="0d81-decd-02ea-f750" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4f73-0a6e-d57e-6070" name="Banshee (Mirror Swords)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="e1b4-f1bf-c492-9549" name="Banshee" hidden="false" targetId="21d1-101a-e753-1143" type="profile"/>
-        <infoLink id="21f9-176f-5b3a-fa6e" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-        <infoLink id="9d9d-aafd-b827-fa92" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="f830-5a97-e6e0-8cab" name="2x Mirror Swords" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="8ede-22b3-cb50-4552" name="Mirror Sword" hidden="false" collective="true" import="true" targetId="60c8-4fe6-7132-be85" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01a1-2f19-dbb3-e635" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="097c-26d5-7376-2403" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ae5-f011-9806-3679" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40d8-3924-c42f-79a4" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="f716-6c07-9d28-4b8e" name="Mirror Sword" hidden="false" collective="true" import="true" targetId="60c8-4fe6-7132-be85" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1538-a58c-99ed-1078" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e185-cdef-5c9f-06b6" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="60c8-4fe6-7132-be85" name="Mirror Sword" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="60c8-4fe6-7132-be85" name="2x Mirror Swords" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="945c-c783-2c67-2e23" name="Mirror Sword" hidden="false" targetId="beda-9fa2-fb2d-0f73" type="profile"/>
       </infoLinks>
@@ -1184,33 +1150,106 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="a776-8eb0-7c5a-0593" name="Banshee Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6d45-0bb9-9ae7-b3e9" name="Banshee" hidden="false" targetId="21d1-101a-e753-1143" type="profile"/>
+        <infoLink id="ba10-07ea-4c17-4d54" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="3194-2ef3-0b08-643d" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ee22-7a1a-8030-a418" name="Banshees" hidden="false" collective="false" import="true" defaultSelectionEntryId="c942-4e64-b317-4e3b">
+        <selectionEntryGroup id="9b2a-6d88-a979-130c" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="e71b-c49f-bfe0-923f">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="238a-9bc8-40bf-9e8b" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeef-eb7a-6420-3420" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="774c-5623-e35a-7d09" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ba2-83b0-bab9-b818" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="c942-4e64-b317-4e3b" name="Banshee" hidden="false" collective="false" import="true" targetId="85a2-df26-901c-80a1" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d8e-0d18-583f-9de6" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="75a9-46c0-b0db-20a3" name="Banshee (Mirror Swords)" hidden="false" collective="false" import="true" targetId="4f73-0a6e-d57e-6070" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9067-112d-95d3-3cc4" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="cfc1-6d74-23aa-cda4" name="Banshee (Special Weapon)" hidden="false" collective="false" import="true" targetId="b059-f194-7235-9964" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4971-0568-216a-d809" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="e71b-c49f-bfe0-923f" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="fb8e-de9d-67d4-3b74" name="Banshees" hidden="false" collective="false" import="true" defaultSelectionEntryId="34db-4296-61ae-ba11">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a94-f694-1515-406d" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ae3-8568-6175-5c19" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="34db-4296-61ae-ba11" name="Banshee" hidden="false" collective="false" import="true" targetId="85a2-df26-901c-80a1" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1017-bd68-8c9b-c47b" type="max"/>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8533-adf2-3760-6ffa" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="4736-7fc8-28dd-eb22" name="Banshee (Mirror Swords)" hidden="false" collective="false" import="true" targetId="4f73-0a6e-d57e-6070" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99a3-d9fc-c023-bc9e" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="0cf2-364e-9a3c-6429" name="Banshee (Special Weapon)" hidden="false" collective="false" import="true" targetId="b059-f194-7235-9964" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d8d-705b-35cb-a94a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="9c44-a061-db69-00eb" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="c3ec-20ea-d676-6567" name="Banshee Howl" hidden="false" collective="false" import="true" targetId="efa7-f874-ffe8-efb3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72ce-f426-2eed-3142" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="ad5c-c00c-4339-baf2" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="e3e0-5df9-3008-f5bb" name="Banshees" hidden="false" collective="false" import="true" defaultSelectionEntryId="f267-ef09-e07c-78b6">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20f2-4fbf-f0a1-aefb" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80f6-a382-0eb7-6244" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="f267-ef09-e07c-78b6" name="Banshee" hidden="false" collective="false" import="true" targetId="85a2-df26-901c-80a1" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db19-d692-6786-fe8f" type="max"/>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ad3-f3e4-62e1-a7a7" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="dff1-d533-674e-af43" name="Banshee (Mirror Swords)" hidden="false" collective="false" import="true" targetId="4f73-0a6e-d57e-6070" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d2e-3ff4-70a4-5f20" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="cc7b-1b58-08ca-5537" name="Banshee (Special Weapon)" hidden="false" collective="false" import="true" targetId="b059-f194-7235-9964" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d4d-b391-591c-3372" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="5322-6c1b-656c-8605" name="Upgrade up to two models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="9730-1574-d5f9-01fd" name="Banshee Howl" hidden="false" collective="false" import="true" targetId="efa7-f874-ffe8-efb3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7816-5116-38ec-6dc5" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="150.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="150.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7d8e-02d3-3c4e-fa28" name="Reaper" hidden="false" collective="false" import="true" type="model">
@@ -3969,7 +4008,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fear</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Strider</characteristic>
       </characteristics>
     </profile>
     <profile id="1ab2-9f9d-1d6d-5888" name="Reaper" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -4117,13 +4156,13 @@
     <profile id="c7c0-25a9-c62c-a0cd" name="Execution Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Deadly(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="beda-9fa2-fb2d-0f73" name="Mirror Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="beda-9fa2-fb2d-0f73" name="2x Mirror Swords" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
-        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
       </characteristics>
     </profile>
     <profile id="ff8a-a601-7cff-db92" name="Dire Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
