@@ -1415,65 +1415,18 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e9e4-9547-051e-7172" name="Dragon" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="ec73-5b48-6b8b-e064" name="Dragon" hidden="false" targetId="c7c3-4f6b-a321-db39" type="profile"/>
-        <infoLink id="cc79-be97-82ac-130f" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="089e-3f26-bb35-7403" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2900-191c-d2a9-3171">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06b8-6656-bc3d-665d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1940-146a-e421-dcb6" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="1b81-701c-9f65-04b7" name="Fusion Pike" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="3b28-17ed-7483-610d" name="Fusion Pike" hidden="false" collective="true" import="true" targetId="837b-b84a-4fc7-590e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d78-0a3f-abba-19fe" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5603-4b17-8e67-a7eb" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3652-c939-1edc-515d" name="Fusion Rifle" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="5810-2a01-a7ed-0b51" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87f2-88b5-a719-d57a" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d2d-8480-ed4b-9877" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2900-191c-d2a9-3171" name="Heavy Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="c10f-aeca-a470-e925" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7346-c517-2f57-bb6b" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="772d-78e2-f73a-c07a" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+    <selectionEntry id="e9e4-9547-051e-7172" name="Dragon (Heavy Flamethrower)" hidden="false" collective="false" import="true" type="model">
       <entryLinks>
         <entryLink id="19ff-2d26-b512-3899" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac06-0abf-3224-104c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78c4-0632-6119-607a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="510d-37c7-0f06-4d4e" name="Heavy Flamethrower" hidden="false" collective="true" import="true" targetId="40d3-1ab7-92c7-1160" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e1a-4d98-33d7-7658" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a28d-61c0-04be-9191" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1482,26 +1435,82 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8a61-d734-c00b-b6db" name="Dragon Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2bec-3c21-054e-7f5d" name="Dragon" hidden="false" targetId="c7c3-4f6b-a321-db39" type="profile"/>
+        <infoLink id="232c-4c3a-de40-35fe" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a496-9f63-fd3a-810e" name="Dragons" hidden="false" collective="false" import="true" defaultSelectionEntryId="6407-cbd3-aeea-0cbb">
+        <selectionEntryGroup id="b003-ec64-acdc-60fb" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="ebc3-d90d-29a1-9374">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7c3-e11f-783d-6332" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f309-41de-d91e-c82b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d6d-59ca-2a01-ae6b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3545-11b7-4bda-fd99" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="6407-cbd3-aeea-0cbb" name="Dragon" hidden="false" collective="false" import="true" targetId="e9e4-9547-051e-7172" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8da3-470f-7143-9bed" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="ebc3-d90d-29a1-9374" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="e727-0276-393a-2094" name="Dragons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a7a2-9a3f-de58-5393">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="680d-23d4-a4ba-f84b" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfad-ea5d-e025-7474" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="a7a2-9a3f-de58-5393" name="Dragon" hidden="false" collective="false" import="true" targetId="e9e4-9547-051e-7172" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e2b-cf6c-8409-0cca" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="143b-bfc4-fe4d-9216" name="Dragon (Fusion Rifle)" hidden="false" collective="false" import="true" targetId="dc7a-1bcb-4733-deb0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb30-45bd-3b80-a89d" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="660c-7bb2-53bf-c93d" name="Dragon (Fusion Pike)" hidden="false" collective="false" import="true" targetId="159a-408d-2869-d5dd" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10bf-6df3-6609-8d7a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="4eb3-0a56-9a5d-b5ea" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2bb3-c1e4-3471-4c89" name="Dragons" hidden="false" collective="false" import="true" defaultSelectionEntryId="d4e3-8985-ffb3-ac60">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e80-7a85-1fb9-be1f" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e80-4560-213e-bf68" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="d4e3-8985-ffb3-ac60" name="Dragon" hidden="false" collective="false" import="true" targetId="e9e4-9547-051e-7172" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48b3-cb36-e37b-ceb1" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="dc0e-2dab-f007-a3d7" name="Dragon (Fusion Rifle)" hidden="false" collective="false" import="true" targetId="dc7a-1bcb-4733-deb0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9e5-20e1-7bc1-206f" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="6713-261a-3c5b-dc88" name="Dragon (Fusion Pike)" hidden="false" collective="false" import="true" targetId="159a-408d-2869-d5dd" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a201-1d71-7855-a0df" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="175.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="175.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="837b-b84a-4fc7-590e" name="Fusion Pike" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="837b-b84a-4fc7-590e" name="Fusion Pike" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7d70-0e34-89ee-b150" name="Fusion Pike" hidden="false" targetId="7dcf-01fe-6792-a8f0" type="profile"/>
         <infoLink id="7266-779f-4874-9369" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -3820,6 +3829,69 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ead-e846-793f-0700" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d214-3947-4a47-9ade" type="max"/>
           </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="40d3-1ab7-92c7-1160" name="Heavy Flamethrower" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="40b8-c1d7-835c-71a2" name="Heavy Flamethrower" hidden="false" targetId="a5d8-f3e8-cea1-7ea2" type="profile"/>
+        <infoLink id="47d9-f22d-b933-578a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dc7a-1bcb-4733-deb0" name="Dragon (Fusion Rifle)" hidden="false" collective="false" import="true" type="model">
+      <entryLinks>
+        <entryLink id="7947-be6d-76d8-d371" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad46-ae8d-fd32-3c96" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b20-c223-295a-3e3e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="20fb-2084-3282-7317" name="Fusion Rifle" hidden="false" collective="true" import="true" targetId="8759-72e3-85bc-2eaa" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f590-c1a8-b33a-bee9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb6b-ae54-8944-0298" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8759-72e3-85bc-2eaa" name="Fusion Rifle" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e674-3bc2-b666-e9c5" name="Fusion Rifle" hidden="false" targetId="d49d-3ce6-6941-e14c" type="profile"/>
+        <infoLink id="5200-eb7f-475f-5523" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="e6d2-7890-91d7-a5dd" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="159a-408d-2869-d5dd" name="Dragon (Fusion Pike)" hidden="false" collective="false" import="true" type="model">
+      <entryLinks>
+        <entryLink id="b3ec-c3a2-5c0c-c233" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4a9-7ba2-173c-8dd0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f6b-0954-da6b-4ae8" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="11a1-5001-96de-2bbe" name="Fusion Pike" hidden="false" collective="true" import="true" targetId="837b-b84a-4fc7-590e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="159e-b884-6ee3-d8e5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac6a-2342-59c3-e22c" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <costs>
