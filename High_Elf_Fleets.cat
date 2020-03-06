@@ -316,7 +316,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dadb-f66f-a18f-a778" name="Energy Spear" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="dadb-f66f-a18f-a778" name="Energy Spear" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ed4f-5038-3abe-3b56" name="Energy Spear" hidden="false" targetId="c203-d5bb-b578-d3d6" type="profile"/>
         <infoLink id="8ea8-144e-5338-aea0" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -325,55 +325,18 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="59d1-6c41-ca48-10e6" name="Seer" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="dd09-e070-1fe0-5c67" name="Seer" hidden="false" targetId="dda9-72ef-872d-7a26" type="profile"/>
-        <infoLink id="3c5b-6142-3659-578f" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-        <infoLink id="da99-2c7f-8acd-eb55" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="4d84-b562-6c9e-b716" name="Council" hidden="false" targetId="8673-77b5-a936-ef78" type="rule"/>
-        <infoLink id="1091-be72-4439-4f89" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="e1e0-d55f-4c64-49ca" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="7108-6f23-e8e8-324c">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70ff-7e33-7712-a36b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3272-cd7b-c80f-2a1c" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0cda-bcd6-1179-d0a5" name="Energy Spear" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="bdf0-8338-c355-15ba" name="Energy Spear" hidden="false" collective="false" import="true" targetId="dadb-f66f-a18f-a778" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abb9-467e-6fff-59bb" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2a8-b679-fd9d-f55d" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7108-6f23-e8e8-324c" name="Energy Sword" hidden="false" collective="true" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="541d-4823-e21e-b2b9" name="Energy Sword" hidden="false" collective="false" import="true" targetId="0630-276d-48b4-dc23" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="798f-277a-c1c7-0374" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58c4-3485-e2b3-d01b" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+    <selectionEntry id="59d1-6c41-ca48-10e6" name="Seer (Energy Sword)" hidden="false" collective="false" import="true" type="model">
       <entryLinks>
-        <entryLink id="3925-db6a-58f0-a80a" name="Shard Pistol" hidden="false" collective="false" import="true" targetId="fc9a-bbe6-3b58-70d6" type="selectionEntry">
+        <entryLink id="3925-db6a-58f0-a80a" name="Shard Pistol" hidden="false" collective="false" import="true" targetId="7adc-253d-1bad-49ea" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad6e-6828-f584-47b4" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5e4-d7c0-3395-a2d1" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="abeb-f4cf-8931-f2c4" name="Energy Sword" hidden="false" collective="false" import="true" targetId="8716-34a0-f5b9-30b2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5046-9ae1-8956-782b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc19-3f2c-87f0-ed31" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -382,42 +345,98 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8bfb-a54a-efdb-528a" name="Seer Council" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntries>
-        <selectionEntry id="b385-e494-126f-09c9" name="Jetbikes" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7a0-f9e6-dec1-7436" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="f6d9-43f7-b32a-9117" name="Jetbike" hidden="false" collective="false" import="true" targetId="958b-b9c2-0da3-3d96" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3809-8ac6-51b0-8428" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e2e-f49d-ba62-84a9" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <infoLinks>
+        <infoLink id="ebd2-1505-29bd-b71a" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="10d6-191f-c93f-e3ef" name="Council" hidden="false" targetId="8673-77b5-a936-ef78" type="rule"/>
+        <infoLink id="688f-3134-89b0-0ae1" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="d300-e3c0-6f94-8256" name="Seer" hidden="false" targetId="dda9-72ef-872d-7a26" type="profile"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e788-dc64-c244-95e3" name="Seers" hidden="false" collective="false" import="true" defaultSelectionEntryId="1886-4b6f-c32b-6449">
+        <selectionEntryGroup id="6484-7750-7abf-c253" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="8cc2-c3f5-0aee-57f2">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1520-d0fd-8e50-532c" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ff2-a498-c737-6eec" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d05-0241-25a8-efbe" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d337-f4c8-8063-e248" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="1886-4b6f-c32b-6449" name="Seer" hidden="false" collective="false" import="true" targetId="59d1-6c41-ca48-10e6" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d38e-318c-33a2-20a7" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3acd-0e9f-d653-01c7" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="8cc2-c3f5-0aee-57f2" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="90bb-5e69-2380-5534" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="6560-9cce-9ff9-e07b" name="3x Jetbikes" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8500-d271-0a3f-c894" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="6b1c-0198-c922-4a8f" name="Jetbike" hidden="false" collective="false" import="true" targetId="958b-b9c2-0da3-3d96" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab2c-46e5-7d22-7264" type="max"/>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6b0-4c0c-7080-8b53" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="e838-36b2-b1ef-510b" name="Seer Council" hidden="false" collective="false" import="true" defaultSelectionEntryId="5734-65de-8b85-87e2">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6514-c6af-3b7e-a9fb" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f6c-2a41-99e9-c709" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="5734-65de-8b85-87e2" name="Seer (Energy Sword)" hidden="false" collective="false" import="true" targetId="59d1-6c41-ca48-10e6" type="selectionEntry"/>
+                    <entryLink id="b103-e5bf-da7e-9da1" name="Seer (Energy Spear)" hidden="false" collective="false" import="true" targetId="9611-e7e3-af09-6de6" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="1d5a-8679-f7b8-4338" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2ec2-fe27-e652-ca6d" name="Seer Council" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd83-5d74-c4ee-2b76">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9672-0d8d-cac7-b08d" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce3f-f3e3-8cf5-23f7" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="dd83-5d74-c4ee-2b76" name="Seer (Energy Sword)" hidden="false" collective="false" import="true" targetId="59d1-6c41-ca48-10e6" type="selectionEntry"/>
+                    <entryLink id="bc1b-b88c-798b-537d" name="Seer (Energy Spear)" hidden="false" collective="false" import="true" targetId="9611-e7e3-af09-6de6" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="ed66-bdef-4663-0248" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="0504-1349-db51-1835" name="6x Jetbikes" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40e1-ed4e-3ac2-2ad5" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="3289-b4e1-f655-748a" name="Jetbike" hidden="false" collective="false" import="true" targetId="958b-b9c2-0da3-3d96" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e706-4de4-b4f0-bc8a" type="max"/>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9770-5cc9-0ee3-ef77" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="200.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2771-64a2-b3c7-4716" name="Psychic Spells" hidden="false" collective="false" import="true" targetId="1c2e-7fb8-1bec-cc99" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="165.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="200.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fe1f-fce2-13e0-6aa1" name="Avatar of Flames" hidden="false" collective="false" import="true" type="unit">
@@ -3691,6 +3710,25 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9611-e7e3-af09-6de6" name="Seer (Energy Spear)" hidden="false" collective="false" import="true" type="model">
+      <entryLinks>
+        <entryLink id="8a7f-6e41-a7dc-c28e" name="Shard Pistol" hidden="false" collective="false" import="true" targetId="7adc-253d-1bad-49ea" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17fc-f3d5-dc75-cc31" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c18d-3443-db4a-2497" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9511-5d3d-00dc-c1c6" name="Energy Spear" hidden="false" collective="false" import="true" targetId="dadb-f66f-a18f-a778" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="939a-db99-da35-c83b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="363a-d5bf-9d46-ad12" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1c2e-7fb8-1bec-cc99" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -3826,7 +3864,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Council, Fast, Hero, Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Psychic Council, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="8f47-cf7b-ea97-03e3" name="Avatar of Flames" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
