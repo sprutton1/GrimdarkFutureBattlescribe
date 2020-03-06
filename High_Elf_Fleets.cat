@@ -1252,52 +1252,18 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="150.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d8e-02d3-3c4e-fa28" name="Reaper" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="eaa4-f061-8c67-b717" name="Reaper" hidden="false" targetId="1ab2-9f9d-1d6d-5888" type="profile"/>
-        <infoLink id="443e-3069-9189-6637" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="aceb-3898-6a8a-f37e" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="fd75-8efc-cea6-e309">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3a1-611d-6074-9b0f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35a8-c52a-ef77-2e97" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="fd75-8efc-cea6-e309" name="Swarm Missiles" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="d961-c3fc-b858-4807" name="Swarm Missiles" hidden="false" collective="true" import="true" targetId="0d43-bdbf-a54e-1eb6" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d7f-7270-49c8-d820" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec27-a77b-c501-24a1" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="03d1-1fab-ab7e-c5c3" name="Shot Missiles" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="081c-9c95-1b8a-f705" name="Shot  Missiles" hidden="false" collective="false" import="true" targetId="d4bf-c922-6cf6-fbfa" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="257f-88f3-b59b-dbf6" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1c9-d366-2d53-a8c4" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+    <selectionEntry id="7d8e-02d3-3c4e-fa28" name="Reaper (Swarm Missiles)" hidden="false" collective="false" import="true" type="model">
       <entryLinks>
         <entryLink id="6374-c841-f114-eff7" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ed4-a21a-4f67-4b00" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b35f-743a-4103-569b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9286-5c45-65d5-20cd" name="Swarm Missiles" hidden="false" collective="true" import="true" targetId="0d43-bdbf-a54e-1eb6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="151c-48d1-602e-a30d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9982-13f1-2b6c-3388" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1325,44 +1291,24 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6cb4-1ad6-8c54-3106" name="Reaper (Special Weapon)" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="9127-2deb-d0f1-2078" name="Reaper" hidden="false" targetId="1ab2-9f9d-1d6d-5888" type="profile"/>
-        <infoLink id="9960-b101-176c-f02b" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
-      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7d40-8558-a602-8f9c" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2af4-fc7f-1fc9-0b3e">
+        <selectionEntryGroup id="7d40-8558-a602-8f9c" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c0a6-9403-e539-3451">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3ef-65f7-a3e6-4922" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c86e-642f-8b0a-c25f" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="ff63-72a1-0574-1a28" name="Tempest Missiles" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="f4d8-5f29-e76c-f67d" name="Tempest Missiles" hidden="false" collective="true" import="true" targetId="ceb6-3dc2-065b-4f10" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1f0-188d-80aa-4906" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2407-dbe4-5872-9b28" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="a39d-5ea2-126a-5333" name="Tempest Missiles" hidden="false" collective="true" import="true" targetId="ceb6-3dc2-065b-4f10" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="2af4-fc7f-1fc9-0b3e" name="Shard Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="a93f-912f-4964-364b" name="Shard Cannon" hidden="false" collective="false" import="true" targetId="3af1-2e35-ecfc-248f" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="393f-e7f8-1d78-f397" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93d2-4738-1fe9-9da7" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="c0a6-9403-e539-3451" name="Shard Cannon" hidden="false" collective="false" import="true" targetId="3af1-2e35-ecfc-248f" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1377,7 +1323,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ceb6-3dc2-065b-4f10" name="Tempest Missiles" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="ceb6-3dc2-065b-4f10" name="Tempest Missiles" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="809b-97c0-7b8d-9ef6" name="Tempest Missiles" hidden="false" targetId="8eb0-caec-b0fc-a3b6" type="profile"/>
         <infoLink id="768f-abd0-9590-9a22" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
@@ -1388,24 +1334,81 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3702-549f-efb8-f488" name="Reaper Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ebe3-1af1-25d1-a9b1" name="Reaper" hidden="false" targetId="1ab2-9f9d-1d6d-5888" type="profile"/>
+        <infoLink id="a02f-f05e-e729-4539" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="21f5-a3d1-f30d-68d8" name="Reapers" hidden="false" collective="false" import="true" defaultSelectionEntryId="db77-c06a-2712-90b2">
+        <selectionEntryGroup id="680b-bdfe-b4f5-f1ab" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="5d08-66cc-693f-7be5">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a95-36b1-9848-6046" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1809-d2ed-2517-8d7e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="518d-12fe-d9c7-ff24" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f32-7b1a-5d8a-f7c1" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="db77-c06a-2712-90b2" name="Reaper" hidden="false" collective="false" import="true" targetId="7d8e-02d3-3c4e-fa28" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d732-4f4c-3227-02bf" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="eff2-e979-1310-f7df" name="Reaper (Special Weapon)" hidden="false" collective="false" import="true" targetId="6cb4-1ad6-8c54-3106" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7602-1df9-be53-6c0c" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="5d08-66cc-693f-7be5" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="04ee-fcba-7280-aad7" name="Reapers" hidden="false" collective="false" import="true" defaultSelectionEntryId="10d4-3fdd-ce28-d1bf">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2599-cb85-6248-13f7" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15b1-4c5d-2c7f-1c66" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="10d4-3fdd-ce28-d1bf" name="Reaper" hidden="false" collective="false" import="true" targetId="7d8e-02d3-3c4e-fa28" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b8d-770c-9814-72ad" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="883f-c018-12c0-5663" name="Reaper (Special Weapon)" hidden="false" collective="false" import="true" targetId="6cb4-1ad6-8c54-3106" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="792f-285d-bf12-8ccb" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1dbe-6cff-ebb4-96ea" name="Reaper (Shot Missiles)" hidden="false" collective="false" import="true" targetId="354a-d930-66cb-fbf9" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ac4-87d6-c9d4-f961" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="5227-a93a-b282-7712" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2c1a-673d-11c5-4708" name="Reapers" hidden="false" collective="false" import="true" defaultSelectionEntryId="3f39-e797-eadc-6ec8">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7f7-61a6-ea7b-2c2b" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d286-5e97-2fb9-8e2d" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="3f39-e797-eadc-6ec8" name="Reaper" hidden="false" collective="false" import="true" targetId="7d8e-02d3-3c4e-fa28" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b05b-88cf-0a03-b427" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="732b-fe1f-ce7f-e620" name="Reaper (Special Weapon)" hidden="false" collective="false" import="true" targetId="6cb4-1ad6-8c54-3106" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6f4-3257-c74e-4f97" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="d52c-fdbf-85d9-e460" name="Reaper (Shot Missiles)" hidden="false" collective="false" import="true" targetId="354a-d930-66cb-fbf9" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a9-f132-54a6-466a" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -3804,6 +3807,25 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="354a-d930-66cb-fbf9" name="Reaper (Shot Missiles)" hidden="false" collective="false" import="true" type="model">
+      <entryLinks>
+        <entryLink id="0898-1aab-fffe-53f9" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="441f-5b7a-9b97-b1c5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca45-43df-512c-09c6" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="86fe-dc9d-6736-da9f" name="Shot  Missiles" hidden="false" collective="true" import="true" targetId="d4bf-c922-6cf6-fbfa" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ead-e846-793f-0700" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d214-3947-4a47-9ade" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1c2e-7fb8-1bec-cc99" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -4228,7 +4250,7 @@
     </profile>
     <profile id="8eb0-caec-b0fc-a3b6" name="Tempest Missiles" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(3), Indirect</characteristic>
       </characteristics>
