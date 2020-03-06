@@ -1999,11 +1999,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9e9d-a760-4160-22c6" name="Wraith Suit (Wraith Cannons)" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="0069-e7cf-8f3f-ce39" name="Wraith Suit" hidden="false" targetId="2f95-884f-a9e8-1fd8" type="profile"/>
-        <infoLink id="451d-b24e-324b-420f" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="ba36-532b-c1c4-284f" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="b2b3-9d42-cf69-4f8d" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
@@ -2032,40 +2027,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="2385-2e95-178f-f146" name="Wraith Suit (Energy Swords)" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="ac02-6928-3ef1-48e6" name="Wraith Suit" hidden="false" targetId="2f95-884f-a9e8-1fd8" type="profile"/>
-        <infoLink id="7758-2ad5-1a0a-54a2" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="c2d8-81a9-89a3-adb1" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="350f-53a3-06b4-3eeb" name="2x Energy Swords" hidden="false" collective="true" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="3c3f-90d7-de29-325e" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa57-c13a-a1e3-5bbc" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86da-8286-2d5b-58e5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="384c-c6b1-d5d3-93c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="334a-6a4c-f4e1-e8bf" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="57b2-540e-2ec2-11e6" name="Energy Sword" hidden="false" collective="false" import="true" targetId="8716-34a0-f5b9-30b2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cc7-f37e-1033-0ed0" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="298c-dacf-ee89-7928" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aa35-ba04-e831-8ef4" name="Wraith Suit (Distortion Scythes)" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="f182-2506-c9e7-9d13" name="Wraith Suit" hidden="false" targetId="2f95-884f-a9e8-1fd8" type="profile"/>
-        <infoLink id="8b7e-6911-a706-df61" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="6638-7bf2-5ba4-9d56" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-      </infoLinks>
+    <selectionEntry id="aa35-ba04-e831-8ef4" name="Wraith Suit (Distortion Gun)" hidden="false" collective="false" import="true" type="model">
       <entryLinks>
         <entryLink id="bd5a-1436-bf9f-eb42" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
@@ -2084,7 +2058,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="479f-311a-5d3a-9a67" name="Distortion Scythe" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="479f-311a-5d3a-9a67" name="Distortion Gun" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a2b2-a409-111e-730f" name="Distortion Scythes" hidden="false" targetId="7526-3d43-074a-6758" type="profile"/>
         <infoLink id="d7a6-eb4f-f5cc-c583" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
@@ -2094,11 +2068,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bd51-f28b-1c2c-87f5" name="Wraith Suit (Energy Sword &amp; Shields)" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="177b-afbc-a7e3-84d6" name="Wraith Suit" hidden="false" targetId="2f95-884f-a9e8-1fd8" type="profile"/>
-        <infoLink id="3172-4457-b97f-76e8" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="7740-32d3-9ee5-2347" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="9ac6-1e40-f07c-4572" name="Energy Sword" hidden="false" collective="false" import="true" targetId="8716-34a0-f5b9-30b2" type="selectionEntry">
           <constraints>
@@ -2118,63 +2087,147 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7cfc-db72-8658-37e5" name="Wraith Suit Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bd15-70df-9963-8d81" name="Wraith Suit" hidden="false" targetId="2f95-884f-a9e8-1fd8" type="profile"/>
+        <infoLink id="721a-d28e-0069-37e1" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="37cd-fe97-6e5d-eef4" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="83c5-46ec-10e0-fb43" name="Wraith Suits" hidden="false" collective="false" import="true" defaultSelectionEntryId="c993-f444-71a0-a0f1">
+        <selectionEntryGroup id="4444-c035-200d-e922" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="5de6-3ebe-4203-f78f">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0292-60f5-cad6-ce99" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a470-4b9c-4d9a-cbe0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="914c-8c99-0cd7-2bf1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d5b-886e-17c4-d2ed" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c993-f444-71a0-a0f1" name="Wraith Suits (Wraith Cannons)" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="baeb-b8f9-eea0-e4bf" name="Wraith Suit (Wraith Cannons)" hidden="false" collective="false" import="true" targetId="9e9d-a760-4160-22c6" type="selectionEntry">
+            <selectionEntry id="5de6-3ebe-4203-f78f" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="8a07-ecf0-3860-c7e5" name="Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="18aa-7098-c55b-6135">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ccd-75ca-be90-e2c1" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31c5-27ec-7a6f-f8dd" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8e2-70d9-fad1-a8ba" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d34b-ba84-52ea-1d6c" type="min"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
+                  <selectionEntries>
+                    <selectionEntry id="18aa-7098-c55b-6135" name="Wraith Cannons" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="e81d-32ff-288a-c966" name="Wraith Suit (Wraith Cannons)" hidden="false" collective="false" import="true" targetId="9e9d-a760-4160-22c6" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ffc-025d-f58f-38b7" type="max"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="667c-0a36-c2ab-2963" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="7193-418f-f405-6a9d" name="2x Energy Swords" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="0179-d0ae-7a1c-6e57" name="Wraith Suit (Energy Swords)" hidden="false" collective="false" import="true" targetId="2385-2e95-178f-f146" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b39c-d4a8-aa78-826f" type="max"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ad2-40a6-afcb-247e" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="083c-33ee-6016-a5f8" name="Energy Swords &amp; Shields" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="edd2-f89c-32f7-ef38" name="Wraith Suit (Energy Sword &amp; Shields)" hidden="false" collective="false" import="true" targetId="bd51-f28b-1c2c-87f5" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb77-fbeb-a534-7fca" type="max"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="788f-cc80-31e8-f8f0" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="4a30-871a-a30f-f97a" name="Distortion Guns" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="27c3-fd17-5b94-c75f" name="Wraith Suit (Distortion Scythes)" hidden="false" collective="false" import="true" targetId="aa35-ba04-e831-8ef4" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0128-5453-4192-e8f2" type="max"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8e1-5352-89c8-1cbd" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry id="8f63-5459-bf83-b3ea" name="Wraith Suits (Energy Swords)" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="f02e-7d4b-82c8-26cb" name="Wraith Suit (Energy Swords)" hidden="false" collective="false" import="true" targetId="2385-2e95-178f-f146" type="selectionEntry">
+            <selectionEntry id="a62c-11f0-1a70-1099" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="6d0f-53a3-e49f-4ebc" name="Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="5b5f-bc12-235b-e0d5">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="329b-4399-1d7d-3ce8" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2195-6cec-3b0e-031e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78ce-7fbc-1df8-5638" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b72c-7b7d-f182-0446" type="min"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry id="5b5f-bc12-235b-e0d5" name="Wraith Cannons &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="8620-c1a0-68e4-9b70" name="Wraith Suit (Wraith Cannons)" hidden="false" collective="false" import="true" targetId="9e9d-a760-4160-22c6" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75c0-79a1-bea8-c1ae" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="868e-4848-a9c9-1d9c" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="c98f-170c-c243-2b00" name="2x Energy Swords" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="29be-431a-8892-241a" name="Wraith Suit (Energy Swords)" hidden="false" collective="false" import="true" targetId="2385-2e95-178f-f146" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88dd-ea84-3867-538a" type="max"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56b7-5dcb-f913-1609" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="100.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="6741-d869-e3bc-220d" name="Energy Swords &amp; Shields" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="71ef-7cb4-dad3-dbf0" name="Wraith Suit (Energy Sword &amp; Shields)" hidden="false" collective="false" import="true" targetId="bd51-f28b-1c2c-87f5" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd9c-ad1e-5dd0-fcdf" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="279d-fe47-77f9-cea1" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="c2cb-359f-a358-a060" name="Distortion Guns &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="9715-c9c0-b2b9-c197" name="Wraith Suit (Distortion Scythes)" hidden="false" collective="false" import="true" targetId="aa35-ba04-e831-8ef4" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e63c-3773-3477-19c5" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f03-b616-d1ea-8f24" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4f3d-3c8e-e502-932f" name="Wraith Suits (Energy Swords &amp; Shields)" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="00f6-5397-354c-938c" name="Wraith Suit (Energy Sword &amp; Shields)" hidden="false" collective="false" import="true" targetId="bd51-f28b-1c2c-87f5" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8702-60a8-9a18-b820" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03ec-c1ff-5d84-a0eb" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ead0-eb36-6653-be39" name="Wraith Suits (Distortion Scythes)" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="36eb-f573-1ffc-aac9" name="Wraith Suit (Distortion Scythes)" hidden="false" collective="false" import="true" targetId="aa35-ba04-e831-8ef4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5672-c0ac-ab7b-11e1" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15ec-b376-e0d5-5d01" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="520.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2187,6 +2240,7 @@
     <selectionEntry id="153e-b9eb-2d07-69c6" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8ee1-656c-8d57-55a0" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="335e-62ef-4596-94a3" name="Shield" hidden="false" targetId="8e0f-9871-15ef-2afc" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -4292,7 +4346,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(3), Indirect</characteristic>
       </characteristics>
     </profile>
-    <profile id="7526-3d43-074a-6758" name="Distortion Scythes" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="7526-3d43-074a-6758" name="Distortion Gun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
