@@ -3079,7 +3079,6 @@
       <infoLinks>
         <infoLink id="6b8d-485f-4127-80f9" name="Wraith Titan" hidden="false" targetId="7433-eefb-c70f-2bd0" type="profile"/>
         <infoLink id="5a58-7f0b-b7d4-63cf" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="3501-5a17-7e34-9bfa" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="4367-c1a2-1a97-b888" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
         <infoLink id="3dc8-9406-b542-81bd" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
       </infoLinks>
@@ -3106,17 +3105,11 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="12f0-ff8b-24a4-4880" name="2x Heavy Wraith Cannons &amp; Titan Stomp" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="12f0-ff8b-24a4-4880" name="2x Heavy Wraith Cannons" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="06b3-72fc-29ea-9954" name="Titan Stomp" hidden="false" collective="false" import="true" targetId="b3ab-4df4-2827-1863" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60c0-5e62-c92e-e2d3" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13e4-7f5f-1382-509c" type="max"/>
-                  </constraints>
-                </entryLink>
                 <entryLink id="3bb4-9117-ee75-6d8d" name="Heavy Wraith Cannon" hidden="false" collective="false" import="true" targetId="5787-77b5-773d-8798" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9db3-897f-424a-511d" type="min"/>
@@ -3144,69 +3137,60 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="205.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="215.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9be1-5ff0-4782-82f6" name="Upgrades" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="9be1-5ff0-4782-82f6" name="Upgrade with up to two:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0877-ca7a-4f18-82c6" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="d57e-398b-f4d9-3a16" name="Star Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="57f7-4ce6-b1d9-4051" name="Star Cannon" hidden="false" collective="false" import="true" targetId="596b-6552-1e66-8708" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6207-da6d-4149-f9da" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a64c-3902-6469-97bd" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="74bb-f8fd-dc2b-94da" name="Shard Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="913e-f242-fc80-1c22" name="Shard Cannon" hidden="false" collective="false" import="true" targetId="3af1-2e35-ecfc-248f" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f0f-1834-f1ea-ad88" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b3c-3008-2957-c407" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="5308-5808-7fd0-4e0d" name="Star Cannon" hidden="false" collective="false" import="true" targetId="596b-6552-1e66-8708" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f1d-5561-fcb1-4472" type="max"/>
+              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="79c5-b272-0f21-0b7f" name="Scatter Laser" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="f708-4f67-5bfd-4896" name="Scatter Laser" hidden="false" collective="false" import="true" targetId="de7b-1a2e-60d6-bf04" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fbc-ce73-8529-3dc8" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65cd-77a9-7334-0928" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="a32f-b8fe-930b-0aae" name="Shard Cannon" hidden="false" collective="false" import="true" targetId="90f2-c9d5-c9e9-ae62" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9abd-34e3-468a-2d7a" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="61d0-036f-cbfa-e2fc" name="Scatter Laser" hidden="false" collective="false" import="true" targetId="de7b-1a2e-60d6-bf04" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="179c-da6a-8fb6-ccf8" type="max"/>
+              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5722-1439-731b-7d49" name="Stomp (Titan)" hidden="false" collective="false" import="true" targetId="4d13-d78a-4c90-60fb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca03-e4e0-c127-fee4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bca-fab5-622e-1d4d" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="855.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="875.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5787-77b5-773d-8798" name="Heavy Wraith Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6adf-8665-3a0f-51af" name="Heavy Wraith Cannons" hidden="false" targetId="de24-1a70-cf98-8c32" type="profile"/>
         <infoLink id="1780-7c15-2238-adad" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="04eb-e60f-6296-0d5b" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -3490,6 +3474,12 @@
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="4d13-d78a-4c90-60fb" name="Stomp (Titan)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="21b3-0e96-d2cd-a7f3" name="Stomp (Titan)" hidden="false" targetId="3d1f-f50a-0e14-5209" type="profile"/>
+        <infoLink id="ef05-15ee-5545-e5a5" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -4160,14 +4150,14 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Impact(9), Tough(24)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Tough(24)</characteristic>
       </characteristics>
     </profile>
     <profile id="de24-1a70-cf98-8c32" name="Heavy Wraith Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="44fb-9ff5-7e17-4f64" name="Titan Stomp" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -4248,7 +4238,7 @@
     </profile>
     <profile id="316e-bb80-a11b-ebdd" name="Ghost Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
-        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4)</characteristic>
       </characteristics>
     </profile>
@@ -4311,6 +4301,12 @@
     <profile id="0f32-a855-c39c-9653" name="Hologram Field" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Stealth</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3d1f-f50a-0e14-5209" name="Stomp (Titan)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
