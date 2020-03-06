@@ -984,13 +984,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="68d8-3732-e196-ccae" name="Ranger" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="bc01-9dc8-685e-8807" name="Ranger" hidden="false" targetId="1974-7c87-7819-46ab" type="profile"/>
-        <infoLink id="89ff-30fa-f068-9d3a" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-        <infoLink id="0c2d-57e9-9b8b-c983" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
-        <infoLink id="2727-e030-fd36-0884" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="ae50-b44a-cc16-244a" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="4e69-ac34-dd7e-0adc" name="Sniper Rifle" hidden="false" collective="true" import="true" targetId="1a94-b65f-e5e8-4864" type="selectionEntry">
           <constraints>
@@ -1020,24 +1013,48 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e41e-e388-271b-31b9" name="Ranger Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="03d0-9acf-bff1-6f6d" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="ea14-90d2-016f-0855" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="ca12-26a3-51b3-78e0" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+        <infoLink id="9739-c0a2-3839-15b7" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="ea7b-3384-4bcf-052a" name="Ranger" hidden="false" targetId="1974-7c87-7819-46ab" type="profile"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8910-d9cf-836f-8745" name="Rangers" hidden="false" collective="false" import="true" defaultSelectionEntryId="023d-2e24-88b6-c3f4">
+        <selectionEntryGroup id="65d8-01ec-fa2b-6254" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="1091-8dd7-400b-fc1d">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1155-fb0c-913e-672b" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6947-3f94-4c35-5c16" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7699-bc76-c95e-6db0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c92-1d8f-ff91-b29f" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="023d-2e24-88b6-c3f4" name="Ranger" hidden="false" collective="false" import="true" targetId="68d8-3732-e196-ccae" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5bf-3292-eb3d-60ca" type="max"/>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ff4-bc1f-5b51-6f4b" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="1091-8dd7-400b-fc1d" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="15b9-46ff-a6f5-aeed" name="Ranger" hidden="false" collective="false" import="true" targetId="68d8-3732-e196-ccae" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="448c-25fe-d6a4-f290" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d79-ed27-90ee-2653" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="c2ad-2d34-719f-f6af" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="5e7f-238a-65ba-b14e" name="Ranger" hidden="false" collective="false" import="true" targetId="68d8-3732-e196-ccae" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7953-796d-f6c3-2d5b" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2708-b1af-f3cb-499d" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="255.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="235.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="255.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="85a2-df26-901c-80a1" name="Banshee" hidden="false" collective="false" import="true" type="upgrade">
