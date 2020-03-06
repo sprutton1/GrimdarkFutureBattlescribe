@@ -1521,13 +1521,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d6b0-29fd-d071-aa4d" name="Scorpion" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="9e3b-7c4e-abed-7cda" name="Scorpion" hidden="false" targetId="96f1-c2c2-d729-6334" type="profile"/>
-        <infoLink id="cb38-7162-6b56-74f5" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="cf6c-ff23-a1f1-a498" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
-        <infoLink id="7248-a8d0-53ca-91d0" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-        <infoLink id="b788-9537-9cee-19d3" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="578a-2d16-63cf-cd65" name="Energy Sword" hidden="false" collective="false" import="true" targetId="8716-34a0-f5b9-30b2" type="selectionEntry">
           <constraints>
@@ -1547,81 +1540,30 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4319-5f25-b7cf-1719" name="Scorpion (Leader)" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="1b60-85d8-c1bd-974b" name="Scorpion" hidden="false" targetId="96f1-c2c2-d729-6334" type="profile"/>
-        <infoLink id="3243-f5e8-6e57-40f6" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="625d-1a91-ae22-924c" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
-        <infoLink id="f6ef-09e6-444f-85d8" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-        <infoLink id="65c3-1ec6-f6ff-b4c1" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e28e-a6a4-83f8-f261" name="Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="09d8-73d1-cd64-5f1f">
+        <selectionEntryGroup id="e28e-a6a4-83f8-f261" name="Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="70f9-f254-a9a3-c9f1">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2ce-505a-3e9a-1b2a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70ad-e36b-f8dd-14d0" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="67f8-c674-4fec-ec69" name="Scorpion Fist" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="27d7-44e9-9f07-8f36" name="Scorpion Fist" hidden="false" collective="true" import="true" targetId="85ef-a7ab-a443-8eae" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42dd-f0a5-7abe-a02c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b648-f8da-c649-40ab" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="70f9-f254-a9a3-c9f1" name="Shard Pistol" hidden="false" collective="true" import="true" targetId="fc9a-bbe6-3b58-70d6" type="selectionEntry"/>
+            <entryLink id="e34e-92d5-8e65-26ca" name="Scorpion Fist" hidden="false" collective="true" import="true" targetId="85ef-a7ab-a443-8eae" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="09d8-73d1-cd64-5f1f" name="Shard Pistol" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="8de7-161f-6b8e-94c8" name="Shard Pistol" hidden="false" collective="true" import="true" targetId="7adc-253d-1bad-49ea" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd2b-b7ec-2bb7-cef3" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3119-dbd8-2f7c-3d2d" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="baa6-ac38-1d0b-3df1" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="7467-5200-d2f7-db2f">
+        <selectionEntryGroup id="baa6-ac38-1d0b-3df1" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4b5e-5d45-0073-d218">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c35e-e9f4-6914-6134" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e00-5723-1573-a23e" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="2d05-af57-9655-c724" name="Biting Sword" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="9c4b-c441-4a79-5ef5" name="Biting Sword" hidden="false" collective="true" import="true" targetId="a258-4f48-a8d5-359c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="101f-357f-eea0-6e6c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87ab-5edf-2745-ea9e" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7467-5200-d2f7-db2f" name="Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="c142-2f09-a378-aae4" name="Energy Sword" hidden="false" collective="false" import="true" targetId="8716-34a0-f5b9-30b2" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b9e-b7bc-e64e-2750" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c854-fd5a-db9e-8e44" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink id="6fa3-c86b-5646-5af4" name="Biting Sword" hidden="false" collective="true" import="true" targetId="a258-4f48-a8d5-359c" type="selectionEntry"/>
+            <entryLink id="4b5e-5d45-0073-d218" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -1632,6 +1574,7 @@
       <infoLinks>
         <infoLink id="3e29-4027-68cf-568d" name="Biting Sword" hidden="false" targetId="8853-6677-5907-9ce6" type="profile"/>
         <infoLink id="264e-b9bc-ed35-86e3" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="efb9-2fdf-bc0b-e833" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -1646,65 +1589,100 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e2a7-8e28-f468-774b" name="Scorpion (Energy Swords)" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="2c57-af2d-fb37-9fd0" name="Scorpion" hidden="false" targetId="96f1-c2c2-d729-6334" type="profile"/>
-        <infoLink id="4a02-85e5-fb61-c8cb" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="40b5-4936-b450-c8c4" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
-        <infoLink id="511f-186b-9846-82bc" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-        <infoLink id="df27-98e6-a498-6108" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="d2e9-3a79-ab57-b5b9" name="2x Energy Swords" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e2a7-8e28-f468-774b" name="Scorpion (2x Energy Swords)" hidden="false" collective="false" import="true" type="model">
+      <entryLinks>
+        <entryLink id="bcd6-520b-3ee1-cff7" name="2x Energy Swords" hidden="false" collective="false" import="true" targetId="b52b-1bba-ca9f-c4be" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e68-4748-9f08-34e8" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9225-9f55-dc19-20c4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ef1-fc05-6b5e-943b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfbb-de28-b145-8a17" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="8cf9-9c3a-5279-640f" name="Energy Sword" hidden="false" collective="false" import="true" targetId="8716-34a0-f5b9-30b2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5b7-c6df-d97f-bba7" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b35-35a6-03a5-cf80" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
           </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5bca-4f7a-5054-3149" name="Scorpion Squad" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="e8fe-7474-a568-8f34" name="Scorpion" hidden="false" targetId="96f1-c2c2-d729-6334" type="profile"/>
+        <infoLink id="6414-c29d-72aa-f43d" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="22cb-bb73-cf16-18ae" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="6bfd-d91e-15bf-448f" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b012-0d33-1d1d-cda6" name="Scorpions" hidden="false" collective="false" import="true" defaultSelectionEntryId="a4b3-3fd4-9edb-2197">
+        <selectionEntryGroup id="1b00-833c-154b-2079" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="abbd-adaa-219f-32d0">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa58-5ebb-2850-358f" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae71-9661-46ad-7bb4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdf0-0204-6f9a-4b27" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17c8-5128-67c8-1688" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="a4b3-3fd4-9edb-2197" name="Scorpion" hidden="false" collective="false" import="true" targetId="d6b0-29fd-d071-aa4d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8798-26a0-195c-8f80" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="33e3-200a-63b6-ef4f" name="Scorpion (Leader)" hidden="false" collective="false" import="true" targetId="4319-5f25-b7cf-1719" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8e4-7304-a5e4-a436" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="0061-8fd2-19dc-dba1" name="Scorpion (Energy Swords)" hidden="false" collective="false" import="true" targetId="e2a7-8e28-f468-774b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d7b-9d37-1a9e-2501" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="abbd-adaa-219f-32d0" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="4e7a-9c2d-85ce-6685" name="Scorpions" hidden="false" collective="false" import="true" defaultSelectionEntryId="cb7c-1194-03a7-3dd1">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="126a-42a9-f4b5-c828" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="632d-8654-0cc2-e02d" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="cb7c-1194-03a7-3dd1" name="Scorpion" hidden="false" collective="false" import="true" targetId="d6b0-29fd-d071-aa4d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b0d-4bd0-6614-968f" type="max"/>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ad1-5a6f-e87c-a5ad" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="90c8-b8d8-2dcd-27c4" name="Scorpion (Leader)" hidden="false" collective="false" import="true" targetId="4319-5f25-b7cf-1719" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f896-41a5-9b11-1f85" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="3bbe-fc94-764a-b3ca" name="Scorpion (Energy Swords)" hidden="false" collective="false" import="true" targetId="e2a7-8e28-f468-774b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e75d-1542-6855-7fbb" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="5cc2-d49d-56c2-3466" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="b952-c466-9083-4c27" name="Scorpions" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ef3-142d-0b4a-dccc">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4843-9f9d-b06d-2b99" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e904-d62f-efcb-0612" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="4ef3-142d-0b4a-dccc" name="Scorpion" hidden="false" collective="false" import="true" targetId="d6b0-29fd-d071-aa4d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d58-ef5f-4a39-e479" type="max"/>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d2c-ff92-b4fc-f4e6" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="3ba4-c076-70c1-9610" name="Scorpion (Leader)" hidden="false" collective="false" import="true" targetId="4319-5f25-b7cf-1719" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8a8-9e0c-7d37-fe05" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="5e13-0818-7ab1-5eb1" name="Scorpion (Energy Swords)" hidden="false" collective="false" import="true" targetId="e2a7-8e28-f468-774b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb4a-d4ba-84b7-3b8a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="185.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="185.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="35b3-a369-4f6d-d27c" name="Spider" hidden="false" collective="false" import="true" type="model">
@@ -3898,6 +3876,16 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b52b-1bba-ca9f-c4be" name="2x Energy Swords" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="eabd-b3af-b205-8a90" name="Energy Sword" hidden="false" targetId="d26d-a459-c183-3009" type="profile"/>
+        <infoLink id="7a6c-4e57-1324-e0e1" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="a840-0e5f-80e0-654c" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1c2e-7fb8-1bec-cc99" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -4130,7 +4118,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Scout, Stealth, Strider</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Scout, Stealth</characteristic>
       </characteristics>
     </profile>
     <profile id="7971-c6ed-412e-370a" name="Spider" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -4275,7 +4263,7 @@
     <profile id="8853-6677-5907-9ce6" name="Biting Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Poison</characteristic>
       </characteristics>
     </profile>
     <profile id="8733-febe-f491-692a" name="Hawk Laser" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
