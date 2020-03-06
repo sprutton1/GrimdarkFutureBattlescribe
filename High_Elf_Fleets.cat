@@ -802,10 +802,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="92f6-7a93-b3da-19f1" name="Avenger" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="6b68-0208-583a-1a1d" name="Avenger" hidden="false" targetId="2337-b867-4509-bec1" type="profile"/>
-        <infoLink id="9c62-2042-65b3-e7a5" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="465f-ba2f-873c-a575" name="Shard Carbine" hidden="false" collective="true" import="true" targetId="75c4-1239-7c49-6901" type="selectionEntry">
           <constraints>
@@ -834,122 +830,103 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="cd46-c88b-1a9e-93da" name="Avengers Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0fd5-7e51-c4f7-4a6f" name="Avenger" hidden="false" targetId="2337-b867-4509-bec1" type="profile"/>
+        <infoLink id="b088-3913-4255-5c34" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="afc0-2a8c-4ae1-1f5c" name="Avengers" hidden="false" collective="false" import="true" defaultSelectionEntryId="f74f-fa4e-445d-d751">
+        <selectionEntryGroup id="f19c-b14a-4f4c-7ee2" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="e625-8b45-654a-b164">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33d2-c497-9bd7-7b7b" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c439-8ed4-3a54-6876" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f65-ea4d-e2bf-9f97" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbb2-dcd2-274d-9b5c" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="f74f-fa4e-445d-d751" name="Avenger" hidden="false" collective="false" import="true" targetId="92f6-7a93-b3da-19f1" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f2-31ec-59aa-6f92" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="9bc4-91e6-83f0-cc40" name="Avenger Leader" hidden="false" collective="false" import="true" targetId="1bd9-af80-17b5-d245" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7ec-76da-be39-348e" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="e625-8b45-654a-b164" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="1779-b0b0-03c6-70e5" name="Avengers" hidden="false" collective="false" import="true" defaultSelectionEntryId="1f89-8dab-4325-4970">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e64-8ddd-7583-470f" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c94-b56b-ba6a-01c7" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="1f89-8dab-4325-4970" name="Avenger" hidden="false" collective="false" import="true" targetId="92f6-7a93-b3da-19f1" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5804-b866-f7c6-1369" type="max"/>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4374-588c-6ada-1278" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="a1c5-3b38-f553-3858" name="Avenger Leader" hidden="false" collective="false" import="true" targetId="1bd9-af80-17b5-d245" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e85a-516e-2d9e-c8fc" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="f168-84e1-9932-e3f8" name="Avenger (Twin Shard Carbine)" hidden="false" collective="false" import="true" targetId="6aeb-f216-09f3-f69f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afe2-9a2c-868e-fb98" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="ad14-07d2-3829-338d" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="bdcc-a625-501b-4b86" name="Avengers" hidden="false" collective="false" import="true" defaultSelectionEntryId="6ddd-59ec-71d5-3f5e">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa3e-35c6-e016-f089" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb13-58d3-22eb-e840" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6ddd-59ec-71d5-3f5e" name="Avenger" hidden="false" collective="false" import="true" targetId="92f6-7a93-b3da-19f1" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="827d-ed79-fdfa-ce29" type="max"/>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5c0-87f7-4f34-d632" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="e784-a6d6-c8a8-716e" name="Avenger Leader" hidden="false" collective="false" import="true" targetId="1bd9-af80-17b5-d245" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfa0-e2fd-cead-d13f" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="bb80-1a4d-09ef-33d2" name="Avenger (Twin Shard Carbine)" hidden="false" collective="false" import="true" targetId="6aeb-f216-09f3-f69f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a267-daf5-661b-13df" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1bd9-af80-17b5-d245" name="Avenger Leader" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="205d-5c02-e67f-ad22" name="Avenger" hidden="false" targetId="2337-b867-4509-bec1" type="profile"/>
-        <infoLink id="1b30-3e55-c870-4d8a" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-      </infoLinks>
+    <selectionEntry id="1bd9-af80-17b5-d245" name="Avenger (Leader)" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="8e31-7f2e-2e95-4769" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="8373-5d85-5d5d-d26d">
+        <selectionEntryGroup id="8e31-7f2e-2e95-4769" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a278-bd81-de24-4887">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01d2-7834-cf14-77a5" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="526b-7778-61d5-4d39" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="8373-5d85-5d5d-d26d" name="Shard Pistol &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntryGroups>
-                <selectionEntryGroup id="e153-bd5f-eb69-b0a4" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="0aef-5d6a-3b2c-1825">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4059-f139-bc52-edca" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9710-d3fe-f900-8653" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="0aef-5d6a-3b2c-1825" name="Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
-                      <entryLinks>
-                        <entryLink id="cbf6-8aae-21aa-f435" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea46-60fa-be09-601b" type="min"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76fb-3940-565f-2bd2" type="max"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8151-e155-25fe-0818" name="Dire Sword" hidden="false" collective="false" import="true" type="upgrade">
-                      <entryLinks>
-                        <entryLink id="58ad-6694-0ed1-ca49" name="Dire Sword" hidden="false" collective="false" import="true" targetId="220b-8e0b-c1ee-8568" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4623-e6e7-ba86-5df0" type="min"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c202-1b35-b654-902d" type="max"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="2cde-81ea-08de-5085" name="Shield &amp; CCW (A1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <entryLinks>
-                        <entryLink id="c4eb-f599-7ed7-030d" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="014e-eb2b-03f9-4462" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92cc-a8c2-59c4-1dcc" type="min"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink id="fcff-2299-1763-5a71" name="Shield" hidden="false" collective="false" import="true" targetId="a079-77b5-e0d2-8dfe" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a5a-3222-45c0-12ec" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48f8-f5ac-02d7-de27" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+            <selectionEntry id="f5f6-8513-6985-66ef" name="Shield &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="ebaa-fff8-37a8-8a62" name="Shard Pistol" hidden="false" collective="true" import="true" targetId="7adc-253d-1bad-49ea" type="selectionEntry">
+                <entryLink id="de2b-b9c8-1ffc-7e1f" name="Shield" hidden="false" collective="false" import="true" targetId="a079-77b5-e0d2-8dfe" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="236f-c800-9f5f-1acc" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c64a-75a7-a43e-b2b0" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8619-9077-ae69-e9e8" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dce8-331d-4fd1-d4f2" type="min"/>
                   </constraints>
                 </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5305-b0a4-222b-69c4" name="Twin Shard Carbine &amp; CCW (A1)" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="fabb-b7a1-176a-f340" name="Twin Shard Carbine" hidden="false" collective="false" import="true" targetId="42fb-c01b-d7ca-e53d" type="selectionEntry">
+                <entryLink id="3b5f-58d1-9553-06ff" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a72-7f07-0c93-e5f3" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75bb-6ce7-5503-0c4b" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="20bd-027e-bbdf-d2a7" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e116-3056-3674-f6cc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab48-7fc0-76ce-6e9e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8576-b03d-55d6-4b9e" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e055-9f71-afb0-3ffb" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -958,8 +935,20 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="a278-bd81-de24-4887" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry"/>
+            <entryLink id="b2bd-2e15-384f-bfa9" name="Dire Sword" hidden="false" collective="false" import="true" targetId="220b-8e0b-c1ee-8568" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7686-7a1f-37f1-0ccd" name="Shard Pistol" hidden="false" collective="true" import="true" targetId="fc9a-bbe6-3b58-70d6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a41a-fa0b-20e7-51bf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a507-afe2-41a2-8b41" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
@@ -968,7 +957,6 @@
       <infoLinks>
         <infoLink id="0d43-c7a2-56ed-796f" name="Dire Sword" hidden="false" targetId="ff8a-a601-7cff-db92" type="profile"/>
         <infoLink id="fe2a-379b-9197-6e00" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
-        <infoLink id="6a86-023f-575a-cfec" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -3749,6 +3737,34 @@
         <infoLink id="8684-56fe-d328-57d3" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="6aeb-f216-09f3-f69f" name="Avenger (Twin Shard Carbine)" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="0eba-4e57-2095-828a" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ad9-9bb7-aabc-3104" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5724-7343-8429-4ff4" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8809-a2b1-11d7-ba0c" name="Twin Shard Carbine" hidden="false" collective="true" import="true" targetId="eb7e-7f18-e230-b7f1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5d4-1b83-f7f3-852d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5745-3295-92ec-ff20" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eb7e-7f18-e230-b7f1" name="Twin Shard Carbine" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6a60-26be-e937-c08c" name="Twin Shard Carbine" hidden="false" targetId="2209-0506-3f8a-9127" type="profile"/>
+        <infoLink id="0b78-83bf-2b22-e945" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1c2e-7fb8-1bec-cc99" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -4113,7 +4129,7 @@
     <profile id="ff8a-a601-7cff-db92" name="Dire Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Rending</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="a840-7753-4586-8e6f" name="Scorpion Fist" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
