@@ -772,7 +772,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3af1-2e35-ecfc-248f" name="Shard Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3af1-2e35-ecfc-248f" name="Shard Cannon" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="41b7-5d12-e2e7-0d94" name="Shard Cannon" hidden="false" targetId="3559-90c5-5334-0a85" type="profile"/>
         <infoLink id="73b1-d2ba-7f7c-9d6a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -2255,12 +2255,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="05e0-1134-38c6-81f8" name="Jetbiker" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="61d3-eff2-1f26-5a78" name="Jetbike" hidden="false" targetId="1af2-7fdb-836f-a1ee" type="profile"/>
-        <infoLink id="1cab-5065-43aa-7960" name="Very Fast" hidden="false" targetId="b5d6-dcf1-e957-ad61" type="rule"/>
-        <infoLink id="6aab-480b-4d0d-3336" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-      </infoLinks>
+    <selectionEntry id="05e0-1134-38c6-81f8" name="Jetbiker (Pistol &amp; CCW)" hidden="false" collective="false" import="true" type="model">
       <entryLinks>
         <entryLink id="a78b-6f04-e762-217e" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
@@ -2268,7 +2263,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7512-d597-5705-588a" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="b19d-831a-d6ae-e6ee" name="Twin Shardgun" hidden="false" collective="false" import="true" targetId="0a4c-0ff0-a88b-95eb" type="selectionEntry">
+        <entryLink id="b19d-831a-d6ae-e6ee" name="Shard Pistol" hidden="false" collective="false" import="true" targetId="7adc-253d-1bad-49ea" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c6c-de19-3952-9f2a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88b7-ca85-16ed-fb8b" type="min"/>
@@ -2279,12 +2274,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c100-ba16-0919-0783" name="Jetbike (Cannon)" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="0687-025a-bf71-3a75" name="Jetbike" hidden="false" targetId="1af2-7fdb-836f-a1ee" type="profile"/>
-        <infoLink id="5d73-ceb2-f933-eb7c" name="Very Fast" hidden="false" targetId="b5d6-dcf1-e957-ad61" type="rule"/>
-        <infoLink id="fd5c-116d-63d9-73a8" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-      </infoLinks>
+    <selectionEntry id="c100-ba16-0919-0783" name="Jetbiker (Shard Cannon)" hidden="false" collective="false" import="true" type="model">
       <entryLinks>
         <entryLink id="292c-6c13-ec82-0ce9" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
@@ -2307,28 +2297,123 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6200-105f-80b2-1ce5" name="Jetbike Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="08d1-d4ee-1773-a618" name="Jetbike" hidden="false" targetId="1af2-7fdb-836f-a1ee" type="profile"/>
+        <infoLink id="fa8e-2df6-79d7-98ac" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="ea50-4a75-b5c7-aceb" name="Very Fast" hidden="false" targetId="b5d6-dcf1-e957-ad61" type="rule"/>
+        <infoLink id="5ffa-2e6e-526f-6ebc" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7089-6a8f-610c-68d6" name="Jetbikes" hidden="false" collective="false" import="true" defaultSelectionEntryId="676e-5cf6-cbd5-2c4e">
+        <selectionEntryGroup id="bba9-0c68-2ec6-6348" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="eb8a-ed31-11f6-3a67">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="307a-7fde-1655-2bf6" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c90b-64b4-c0e6-97aa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6421-dc87-f46d-2563" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7444-1026-0fba-1060" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="676e-5cf6-cbd5-2c4e" name="Jetbike" hidden="false" collective="false" import="true" targetId="05e0-1134-38c6-81f8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b6-d2c3-9ce3-71d2" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="0109-150e-457b-7109" name="Jetbike (Cannon)" hidden="false" collective="false" import="true" targetId="c100-ba16-0919-0783" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f75d-0b8c-e6e4-2322" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="eb8a-ed31-11f6-3a67" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="0dc0-f981-738e-0682" name="Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="f0e2-99bb-7699-6a81">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86a5-032a-fbda-15ff" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e3e-8482-625c-daeb" type="min"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="f0e2-99bb-7699-6a81" name="Pistols &amp; CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="4bb7-d0e0-5f40-7962" name="Jetbiker (Pistol &amp; CCW)" hidden="false" collective="false" import="true" targetId="05e0-1134-38c6-81f8" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1873-0f0b-afbf-a36e" type="min"/>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff69-3c89-fb35-a5e0" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry id="d13d-ca21-3fa0-a29a" name="Twin Shardguns &amp; Cannons" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="57a2-85cb-d270-f0d5" name="Jetbikers" hidden="false" collective="false" import="true" defaultSelectionEntryId="95ac-7899-43c2-36bd">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6310-6b35-c3f7-0e5a" type="min"/>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a9d-32e7-6b6f-1b45" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="95ac-7899-43c2-36bd" name="Jetbiker (Twin Shardgun)" hidden="false" collective="false" import="true" targetId="d327-9ec5-2559-f100" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c419-afa1-a3fb-f224" type="max"/>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="857d-3322-7d48-eab2" type="min"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="6b08-9e6c-0915-f7e2" name="Jetbiker (Cannon)" hidden="false" collective="false" import="true" targetId="c100-ba16-0919-0783" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de08-9587-a614-e290" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="cb8e-4252-4b83-9067" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="786f-97c5-b02a-6230" name="Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="f481-c3ae-cf23-59fa">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87e0-d0c5-0fff-2214" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f50e-a51c-3d03-fd2a" type="min"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="f481-c3ae-cf23-59fa" name="Shard Pistols &amp; CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="587e-570a-190b-e816" name="Jetbiker (Pistol &amp; CCW)" hidden="false" collective="false" import="true" targetId="05e0-1134-38c6-81f8" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12c4-a7af-5df8-8411" type="min"/>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e16a-6f45-4c1d-c2dc" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry id="ab88-a0da-3932-707f" name="Twin Shardguns &amp; Cannons" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="cfe8-6d31-20ba-942a" name="Jetbikers" hidden="false" collective="false" import="true" defaultSelectionEntryId="c18b-442b-907b-03ee">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e37f-2669-167d-af47" type="min"/>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8232-8569-40f7-c29d" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="c18b-442b-907b-03ee" name="Jetbiker (Twin Shardgun)" hidden="false" collective="false" import="true" targetId="d327-9ec5-2559-f100" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1df9-3436-2d57-343a" type="max"/>
+                                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6fb-06ba-fb38-d2ea" type="min"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="f8ae-1e28-df0a-6135" name="Jetbiker (Cannon)" hidden="false" collective="false" import="true" targetId="c100-ba16-0919-0783" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28ae-95a4-904b-f2eb" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="100.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="105.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="100.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="87ad-2527-8640-af00" name="Jetspear" hidden="false" collective="false" import="true" type="upgrade">
@@ -3917,6 +4002,25 @@
         <infoLink id="5a5f-81bf-bf8f-215d" name="Spider Blade" hidden="false" targetId="5a1a-969a-673c-2eb2" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="d327-9ec5-2559-f100" name="Jetbiker (Twin Shardgun)" hidden="false" collective="false" import="true" type="model">
+      <entryLinks>
+        <entryLink id="6881-6012-3a1b-bbe7" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a3d-649c-bb44-77e5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8da-e552-2b45-b19c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="05b4-a1a8-4f77-e755" name="Twin Shardgun" hidden="false" collective="false" import="true" targetId="0a4c-0ff0-a88b-95eb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1be7-0cf6-62f2-ea44" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0534-8b8a-2339-0d04" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1c2e-7fb8-1bec-cc99" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -4198,7 +4302,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Strider, Very Fast</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Impact(1), Strider, Very Fast</characteristic>
       </characteristics>
     </profile>
     <profile id="4135-4f60-0554-0fbf" name="Twin Shardguns" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
