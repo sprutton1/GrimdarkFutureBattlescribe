@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="12" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="13" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.7"/>
   </publications>
@@ -154,6 +154,7 @@
       <infoLinks>
         <infoLink id="9da2-c58b-1c61-80f1" name="Energy Sword" hidden="false" targetId="d26d-a459-c183-3009" type="profile"/>
         <infoLink id="6b9c-aa19-2775-1578" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="10ad-c209-9aa3-d03c" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -394,6 +395,7 @@
       <infoLinks>
         <infoLink id="69a7-f3f8-826d-901c" name="Energy Sword" hidden="false" targetId="d26d-a459-c183-3009" type="profile"/>
         <infoLink id="47b6-c9c0-6e23-a404" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="cfca-fae2-5ed4-996d" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
