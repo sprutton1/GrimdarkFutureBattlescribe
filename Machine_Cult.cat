@@ -1564,43 +1564,30 @@
         <infoLink id="126f-24dc-e7db-85a5" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
         <infoLink id="f7cb-f137-d464-6794" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="9049-c65e-ee15-4d2d" name="Twin Machinegun" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="627e-d88e-d297-a8c2" type="max"/>
-          </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b907-c17b-a1e7-dfb9" name="Upgrade with one:" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="83b5-0c76-33ee-f9af" name="Light Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
+            <entryLink id="76cc-259f-6a5d-5b41" name="Twin Machinegun" hidden="false" collective="false" import="true" targetId="daac-0006-b590-4aa3" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb21-34f3-11dc-d6cd" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9020-541c-46ea-1a23" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ec8-5206-0091-7c1f" type="max"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5573-da06-524c-72bd" name="2x Machinguns" hidden="false" collective="false" import="true" type="upgrade">
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="dd11-2ee5-e88d-a0c8" name="2x Machineguns" hidden="false" collective="false" import="true" targetId="97d2-c799-3822-dd9b" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a2a-f21f-acf6-4c04" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14b8-141e-687c-49de" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e504-d76e-9a84-bda4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4ee-9545-e7f0-9c06" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="f7ab-43eb-27b6-bda8" name="Light Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcfb-2ff2-e81e-5095" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa43-87bd-92d7-d0b3" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="225.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="235.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c289-b1fd-ed61-3baa" name="Attack Craft" hidden="false" collective="false" import="true" type="upgrade">
@@ -2226,6 +2213,16 @@
         <infoLink id="434f-af4e-845f-1b62" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="daac-0006-b590-4aa3" name="Twin Machinegun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8c38-bdcb-fd52-c622" name="Twin Machinegun" hidden="false" targetId="0a7e-cbd8-6a76-99fb" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="97d2-c799-3822-dd9b" name="2x Machineguns" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="63e7-7a7d-f99f-fbdb" name="2x Machineguns" hidden="false" targetId="a55e-9795-28e2-660a" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ddb8-8852-4a3d-d4f8" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -2786,7 +2783,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(1), Strider, Tough(6), Transport(11)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(6), Strider, Tough(6), Transport(11)</characteristic>
       </characteristics>
     </profile>
     <profile id="f210-89db-8146-9ecc" name="Machinegun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -3004,6 +3001,20 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Phosphor</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bfad-01ba-d178-f42c" name="Twin Machinegun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a55e-9795-28e2-660a" name="2x Machineguns" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
