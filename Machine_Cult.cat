@@ -825,7 +825,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2d64-78f4-b778-d38f" name="Stalkers" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2d64-78f4-b778-d38f" name="Sect Stalkers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e73c-ebea-9f84-f7a2" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
         <infoLink id="34da-2c57-88ec-d736" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
@@ -833,66 +833,87 @@
         <infoLink id="465c-a189-66fe-25ca" name="Stalker" hidden="false" targetId="810f-021d-12e7-1552" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5c79-6a5f-caec-90b9" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="cb1b-e184-a43c-58c3">
+        <selectionEntryGroup id="891a-815b-92ba-1f5f" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="80ee-7773-fb28-e5e1">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ce3-c632-f280-6724" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0d9-ba6e-0ea5-193a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a98-2ab5-8151-2b20" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e75e-7666-187d-9cb3" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="ae1b-5beb-723b-cbde" name="2x Sonic Blades" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="2569-3cfb-b156-0c4a" name="Sonic Blades" hidden="false" collective="false" import="true" targetId="db97-efe0-b55e-d6a2" type="selectionEntry">
+            <selectionEntry id="80ee-7773-fb28-e5e1" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="e1fa-8d55-5613-dcc8" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="b6b8-a41a-160d-f30c" name="Metal Spike" hidden="false" collective="false" import="true" targetId="dd12-69bf-753f-ccdb" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e32a-7358-51f9-86dc" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="61bd-6fb1-5ae9-a425" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="253e-e589-845b-a596">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7efa-d5ab-58ad-8d41" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2251-a0cd-21a7-3bf9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8804-41a6-21d9-a467" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5388-26f8-2bf7-2d3a" type="max"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
+                  <selectionEntries>
+                    <selectionEntry id="8e81-9ab0-a16b-e0c7" name="2x Sonic Blades" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="a7f3-a59c-9cc9-a46c" name="Sonic Blades" hidden="false" collective="false" import="true" targetId="db97-efe0-b55e-d6a2" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9509-6efa-0844-c8d8" type="max"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b1c-d1f5-3c83-4b1f" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="253e-e589-845b-a596" name="Sonic Razor &amp; Claw" hidden="false" collective="false" import="true" targetId="384a-b4ad-5257-c4b8" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry id="cb1b-e184-a43c-58c3" name="Sonic Razors &amp; Claws" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="dd5e-62c0-bac9-6317" name="Sonic Razor &amp; Claw" hidden="false" collective="false" import="true" targetId="384a-b4ad-5257-c4b8" type="selectionEntry">
+            <selectionEntry id="0b12-b7b2-9afe-eda8" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="a790-f01d-4cf9-da43" name="Upgrade up to two models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="70bd-2e73-383e-f6f5" name="Metal Spike" hidden="false" collective="false" import="true" targetId="dd12-69bf-753f-ccdb" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b904-1676-614a-5004" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="e58c-9631-b4ef-9d90" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="37ab-62dd-7aba-2d0d">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e669-78ac-7bc7-0e7c" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11e8-3f18-84d2-fc14" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afca-10bc-3228-b4a0" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7618-a5af-e37e-c9f0" type="max"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry id="3d5e-c070-c6ca-2b7c" name="2x Sonic Blades" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="105f-ff43-2e26-4be2" name="Sonic Blades" hidden="false" collective="false" import="true" targetId="db97-efe0-b55e-d6a2" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87f8-ed42-d5fe-2b93" type="max"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd1c-51a3-ae84-ce83" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="37ab-62dd-7aba-2d0d" name="Sonic Razor &amp; Claw" hidden="false" collective="false" import="true" targetId="384a-b4ad-5257-c4b8" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="c131-6a16-cbb1-1ae1" name="Stalkers" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="a6f8-8814-93f2-5246" name="Stalker" hidden="false" collective="false" import="true" targetId="b0de-4e0a-33da-6528" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7618-3c61-538e-612d" type="max"/>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b06-4b20-5bc1-80c5" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="2f68-5c5f-4972-d8c1" name="Equipment" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61fc-0024-e466-477b" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="15d9-e9f7-1080-4807" name="Metal Spike" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="2bff-87e2-6c34-b6d0" name="Metal Spike" hidden="false" collective="false" import="true" targetId="dd12-69bf-753f-ccdb" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46e1-4ff1-b07a-5394" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58d0-8d18-f5d1-319b" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="165.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1877,17 +1898,6 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b0de-4e0a-33da-6528" name="Stalker" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="5a57-6af0-3e0e-4dac" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
-        <infoLink id="68da-0be3-fa32-304a" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="3629-0c46-33fc-e99a" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-        <infoLink id="b179-0d1b-89a7-9435" name="Stalker" hidden="false" targetId="810f-021d-12e7-1552" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="6fe2-56e7-bd9a-46ce" name="Cult Vanguard (Leader)" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
         <entryLink id="0ec0-44ff-592e-9e25" name="Weapons - Cult Leaders" hidden="false" collective="false" import="true" targetId="0854-8aef-67cf-4cc8" type="selectionEntryGroup"/>
@@ -2522,7 +2532,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Taser</characteristic>
       </characteristics>
     </profile>
-    <profile id="810f-021d-12e7-1552" name="Stalker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="810f-021d-12e7-1552" name="Sect Stalker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
