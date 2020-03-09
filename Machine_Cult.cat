@@ -2500,7 +2500,86 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0950-342a-8d82-2f1b" name="Steel Mind" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="25db-9b19-6118-e21c" name="Steel Mind" hidden="false" targetId="a1be-c86d-6252-e6bc" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="72ae-0bd3-390c-87f0" name="Machine Terror" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3ac7-9c3e-5708-512b" name="Machine Terror" hidden="false" targetId="02dc-53ad-0c70-88c2" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="4431-ffa4-723e-c607" name="March" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="370e-34c8-6fe2-c1de" name="March" hidden="false" targetId="6650-2346-2349-0787" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5f6d-0747-85f9-aadb" name="Solar Beam" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a9ec-a726-4b26-8d15" name="Solar Beam" hidden="false" targetId="b6a9-6dd9-ccfb-0bd4" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="59e6-add3-4bc8-10af" name="Metal Shroud" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1d48-b31c-1abb-e848" name="Metal Shroud" hidden="false" targetId="4625-c8e0-d777-ae7a" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="212e-fa1b-f6eb-a7a1" name="Shrapnel" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="72bb-e851-f0cd-2f94" name="Shrapnel" hidden="false" targetId="80ea-9728-5d20-ca29" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="ddb8-8852-4a3d-d4f8" name="Psychic Spells" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="36c6-9fdf-8a54-c199" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d40-26fb-437f-81e1" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="41fb-ad49-cf63-4cc0" name="Steel Mind" hidden="false" collective="false" import="true" targetId="0950-342a-8d82-2f1b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379f-6438-a75e-f6bf" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6835-ba90-849c-2286" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="cd5a-4fb7-fda8-a959" name="Shrapnel" hidden="false" collective="false" import="true" targetId="212e-fa1b-f6eb-a7a1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="262e-4e41-f375-42dc" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b33f-34d0-3b71-9595" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="35fd-adad-a126-56ca" name="Metal Shroud" hidden="false" collective="false" import="true" targetId="59e6-add3-4bc8-10af" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fae0-3793-8f37-5181" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b35f-28b9-866a-bed1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="cbc8-8ee1-8138-8ee1" name="Solar Beam" hidden="false" collective="false" import="true" targetId="5f6d-0747-85f9-aadb" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00c9-dfe8-9c6e-2ec9" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cda6-8cc3-e084-257b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="eeaa-c08f-fd99-0e35" name="March" hidden="false" collective="false" import="true" targetId="4431-ffa4-723e-c607" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77e0-c5a3-c38d-12db" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be5a-4657-4b03-f943" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a73a-6e1c-3936-1553" name="Machine Terror" hidden="false" collective="false" import="true" targetId="72ae-0bd3-390c-87f0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a97-8c85-81cb-4bf1" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e8e-7670-259e-a958" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b668-6266-4fd6-0f17" name="Phosphor" publicationId="cb69-15a9-bc41-d80c" hidden="false">
       <description>This weapon ignores cover.</description>
@@ -2941,6 +3020,42 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a1be-c86d-6252-e6bc" name="Steel Mind" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 6&quot; gets +2 to its next morale test roll.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="80ea-9728-5d20-ca29" name="Shrapnel" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target 2 enemy units within 6&quot; take 8 automatic hits with AP(2) each.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4625-c8e0-d777-ae7a" name="Metal Shroud" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 24&quot; gets Stealth next time it&apos;s shot at.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b6a9-6dd9-ccfb-0bd4" name="Solar Beam" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 1 hit with AP(4) and Deadly(6).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6650-2346-2349-0787" name="March" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may immediately move by up to 9&quot;.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="02dc-53ad-0c70-88c2" name="Machine Terror" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24&quot; must take a morale test. If failed it takes 4 automatic hits with AP(1).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
