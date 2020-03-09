@@ -44,6 +44,7 @@
       <infoLinks>
         <infoLink id="6bb0-5feb-71e6-c231" name="P-Carbine" hidden="false" targetId="2d85-6d07-1e2f-4b34" type="profile"/>
         <infoLink id="4de6-44cd-dd70-c271" name="Phosphor" hidden="false" targetId="b668-6266-4fd6-0f17" type="rule"/>
+        <infoLink id="adcd-ea56-42ad-6611" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -64,113 +65,17 @@
         <infoLink id="cbf4-bc25-d838-31f6" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="220a-ade5-adc4-6bb3" name="Machine Priest" hidden="false" targetId="f27e-dcec-92eb-947f" type="profile"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="8423-45ed-1d4d-b106" name="Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c9c-7b23-fb26-07a3" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25c9-517e-2744-1760" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ac01-a91d-b543-3fd1" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab2e-617a-22d7-15e0" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccdd-2fd4-27bd-2627" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="2758-114e-819b-192d" name="Primary Weapon" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c675-0228-447b-e567" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="993c-aa91-b758-fa7b" name="Combustion Blaster" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="a9bd-3917-d1c2-5c21" name="Combustion Blaster" hidden="false" collective="false" import="true" targetId="62b1-1a15-22d3-6926" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b40d-1b27-3be6-b9ce" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cd7-8b28-0231-f1ec" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e83a-39cd-b12a-9dc4" name="Death Ray" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="51ae-2e54-d5ae-c2cf" name="Death Ray" hidden="false" collective="false" import="true" targetId="dfde-6789-b18b-1fe0" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2264-3a6c-3e6e-47e4" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd5-1bc0-1fb3-bbf2" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="e78d-6152-6996-715a" name="Sidearm" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dd04-d6a8-d481-ed9d" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0aaa-03bc-70bb-3532" name="Burst Pistol" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="f72d-37b6-cfb1-6bfb" name="Burst Pistol" hidden="false" collective="false" import="true" targetId="fa8b-93af-028d-7f31" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a70d-ed81-e2cd-3345" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39b3-241b-82b4-456b" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0011-824a-37f3-2d23" name="P-Carbine" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="8bda-d78a-7bd2-3c60" name="P-Carbine" hidden="false" collective="false" import="true" targetId="9493-8df9-4f3e-828d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bba-a355-3fb5-d3ee" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75ac-8539-067c-3a5d" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ada3-7048-fca3-8829" name="Canticles" hidden="false" collective="false" import="true" targetId="c28b-a120-c561-83c6" type="selectionEntry">
+        <entryLink id="b30f-3a9e-897b-ac07" name="Upgrades - Machine Priests &amp; Deacons" hidden="false" collective="false" import="true" targetId="c79d-5c96-ed9d-961e" type="selectionEntryGroup"/>
+        <entryLink id="611c-0474-6511-58b5" name="Axe-Halberd (Priest)" hidden="false" collective="false" import="true" targetId="702a-d7d0-358d-4187" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4999-6bfb-92be-1805" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3656-cfeb-f112-0e2e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="156e-a1f6-a8e7-3f56" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="dab6-92f5-e0f4-f5f9" name="Repair Master" hidden="false" collective="false" import="true" targetId="2a72-147f-b37e-2f13" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4550-f31f-b585-a453" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-          </costs>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="105.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2a72-147f-b37e-2f13" name="Repair Master" hidden="false" collective="false" import="true" type="upgrade">
@@ -184,6 +89,7 @@
     <selectionEntry id="c28b-a120-c561-83c6" name="Canticles" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="39fc-6212-36a1-d9a5" name="Canticles" hidden="false" targetId="c4ac-752a-2afa-72c2" type="rule"/>
+        <infoLink id="cc1f-8419-9512-a9d1" name="Canticles" hidden="false" targetId="a345-835f-4177-8cbb" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -2504,31 +2410,76 @@
       <infoLinks>
         <infoLink id="25db-9b19-6118-e21c" name="Steel Mind" hidden="false" targetId="a1be-c86d-6252-e6bc" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="72ae-0bd3-390c-87f0" name="Machine Terror" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3ac7-9c3e-5708-512b" name="Machine Terror" hidden="false" targetId="02dc-53ad-0c70-88c2" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4431-ffa4-723e-c607" name="March" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="370e-34c8-6fe2-c1de" name="March" hidden="false" targetId="6650-2346-2349-0787" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5f6d-0747-85f9-aadb" name="Solar Beam" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a9ec-a726-4b26-8d15" name="Solar Beam" hidden="false" targetId="b6a9-6dd9-ccfb-0bd4" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="59e6-add3-4bc8-10af" name="Metal Shroud" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1d48-b31c-1abb-e848" name="Metal Shroud" hidden="false" targetId="4625-c8e0-d777-ae7a" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="212e-fa1b-f6eb-a7a1" name="Shrapnel" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="72bb-e851-f0cd-2f94" name="Shrapnel" hidden="false" targetId="80ea-9728-5d20-ca29" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="25d4-a736-d20e-4052" name="Macro Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f15e-695e-4cd6-780a" name="Macro Pistol" hidden="false" targetId="90a6-83fd-0412-552b" type="profile"/>
+        <infoLink id="90b4-d429-ffa4-26d5" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="702a-d7d0-358d-4187" name="Axe-Halberd (Priest)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e8db-e7e1-c31e-8dcb" name="Axe-Halberd (Priest)" hidden="false" targetId="d484-a703-df2f-3d17" type="profile"/>
+        <infoLink id="3d3a-f557-bcfe-65d6" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0ae7-e07e-9afa-c4ac" name="Axe-Halberd (Deacon)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="470d-3bc1-f5e3-d557" name="Axe-Halberd (Deacon)" hidden="false" targetId="a6d5-c901-5739-333c" type="profile"/>
+        <infoLink id="4311-45e7-0a25-4d02" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2576,8 +2527,97 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="c79d-5c96-ed9d-961e" name="Upgrades - Machine Priests &amp; Deacons" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="83b5-01fd-2c36-399a" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd29-333e-701b-346e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1e2a-9820-76d1-4369" name="Death Ray" hidden="false" collective="false" import="true" targetId="dfde-6789-b18b-1fe0" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="94ff-a7d6-e705-0f47" name="Combustion Blaster" hidden="false" collective="false" import="true" targetId="62b1-1a15-22d3-6926" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1906-d36a-9fc4-0a4b" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8bd-3daf-1539-ae62" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8210-69f1-14f8-64a1" name="P-Carbine" hidden="false" collective="false" import="true" targetId="9493-8df9-4f3e-828d" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="f293-d9d9-a8e4-91bc" name="Macro Pistol" hidden="false" collective="false" import="true" targetId="25d4-a736-d20e-4052" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2dc7-6405-01de-e9c2" name="Psychic(X)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa6d-b936-35a0-f100" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="699b-f326-bd4e-4678" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="5949-1175-3fcb-40a4" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+                <infoLink id="8369-2582-3aba-5a91" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="ddb2-bf4b-f9a5-0f24" name="Psychic Spells" hidden="false" collective="false" import="true" targetId="ddb8-8852-4a3d-d4f8" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8508-7bc9-35d4-db26" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5296-fdb4-f464-9cee" type="notInstanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="5b64-9de1-0d4f-a7ed" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
+                <infoLink id="ada8-d0a5-e407-abda" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="009d-1aef-64e2-97a3" name="Psychic Spells" hidden="false" collective="false" import="true" targetId="ddb8-8852-4a3d-d4f8" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="f609-8745-6732-7c10" name="Canticles" hidden="false" collective="false" import="true" targetId="c28b-a120-c561-83c6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2705-42aa-5ff0-a75b" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -2626,7 +2666,7 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Phosphor</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Phosphor</characteristic>
       </characteristics>
     </profile>
     <profile id="5e32-52c2-fcfd-1234" name="Burst Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -3056,6 +3096,30 @@
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
         <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24&quot; must take a morale test. If failed it takes 4 automatic hits with AP(1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="90a6-83fd-0412-552b" name="Macro Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A5</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a345-835f-4177-8cbb" name="Canticles" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Canticles</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d484-a703-df2f-3d17" name="Axe-Halberd (Priest)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a6d5-c901-5739-333c" name="Axe-Halberd (Deacon)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
