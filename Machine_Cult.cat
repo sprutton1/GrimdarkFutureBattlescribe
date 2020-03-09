@@ -19,6 +19,7 @@
     <entryLink id="f5a5-4efd-72a8-1adb" name="Attack Craft" hidden="false" collective="false" import="true" targetId="c289-b1fd-ed61-3baa" type="selectionEntry"/>
     <entryLink id="caf7-a05d-6619-b0a9" name="Crawler Tank" hidden="false" collective="false" import="true" targetId="43d0-b9ea-9045-dce1" type="selectionEntry"/>
     <entryLink id="e3b7-2450-96bc-c67f" name="Dragoon Walker" hidden="false" collective="false" import="true" targetId="b7ba-27cf-29f7-9b75" type="selectionEntry"/>
+    <entryLink id="eacc-3dbf-5deb-4281" name="Machine Deacon" hidden="false" collective="false" import="true" targetId="2cfe-1db2-1439-2c7a" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="dfde-6789-b18b-1fe0" name="Death Ray" hidden="false" collective="false" import="true" type="upgrade">
@@ -81,6 +82,7 @@
     <selectionEntry id="2a72-147f-b37e-2f13" name="Repair Master" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e43c-2b62-a778-9dd5" name="Repair Master" hidden="false" targetId="6600-d497-6396-7948" type="rule"/>
+        <infoLink id="676e-4fe2-57f1-8bc6" name="Repair Master" hidden="false" targetId="91b8-83b8-d190-6ced" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -2481,6 +2483,25 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2cfe-1db2-1439-2c7a" name="Machine Deacon" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="5da0-5da3-8e4f-fd56" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="1899-64f7-e41a-475a" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="b470-4ea2-812d-bf5c" name="Machine Deacon" hidden="false" targetId="2df3-13aa-a349-72ad" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="e871-473f-57a3-61cd" name="Upgrades - Machine Priests &amp; Deacons" hidden="false" collective="false" import="true" targetId="c79d-5c96-ed9d-961e" type="selectionEntryGroup"/>
+        <entryLink id="5020-67d0-6923-8352" name="Axe-Halberd (Deacon)" hidden="false" collective="false" import="true" targetId="0ae7-e07e-9afa-c4ac" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11d9-b985-939e-a77e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dd8-b9a0-c276-2791" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ddb8-8852-4a3d-d4f8" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -2615,6 +2636,14 @@
           </constraints>
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="a95d-e8c1-0a10-9118" name="Repair Master" hidden="false" collective="false" import="true" targetId="2a72-147f-b37e-2f13" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8707-b52a-a915-0f00" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -3120,6 +3149,18 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2df3-13aa-a349-72ad" name="Machine Deacon" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="91b8-83b8-d190-6ced" name="Repair Master" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Repair Master</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
