@@ -20,6 +20,7 @@
     <entryLink id="caf7-a05d-6619-b0a9" name="Crawler Tank" hidden="false" collective="false" import="true" targetId="43d0-b9ea-9045-dce1" type="selectionEntry"/>
     <entryLink id="e3b7-2450-96bc-c67f" name="Dragoon Walker" hidden="false" collective="false" import="true" targetId="b7ba-27cf-29f7-9b75" type="selectionEntry"/>
     <entryLink id="eacc-3dbf-5deb-4281" name="Machine Deacon" hidden="false" collective="false" import="true" targetId="2cfe-1db2-1439-2c7a" type="selectionEntry"/>
+    <entryLink id="8ffe-d0a3-90bb-02dd" name="Cult Alpha" hidden="false" collective="false" import="true" targetId="aeef-8a9d-4530-4bf2" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="dfde-6789-b18b-1fe0" name="Death Ray" hidden="false" collective="false" import="true" type="upgrade">
@@ -2502,6 +2503,28 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="aeef-8a9d-4530-4bf2" name="Cult Alpha" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0390-b3af-877c-911e" name="Cult Alpha" hidden="false" targetId="efa7-1476-d1ee-8c3e" type="profile"/>
+        <infoLink id="9880-6494-b607-6fd7" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="0701-70cd-9cbd-d7a2" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="c677-f9cf-a2a3-2571" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="14c5-0518-b4b0-1160" name="Weapons - Cult Leaders" hidden="false" collective="false" import="true" targetId="0854-8aef-67cf-4cc8" type="selectionEntryGroup"/>
+        <entryLink id="74e0-e001-3ecc-e608" name="Canticles" hidden="false" collective="false" import="true" targetId="c28b-a120-c561-83c6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b072-1d5e-2b67-902c" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ddb8-8852-4a3d-d4f8" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -2647,6 +2670,104 @@
           </costs>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0854-8aef-67cf-4cc8" name="Weapons - Cult Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="41d0-4d4c-f99a-b932">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54b8-f5ab-94be-3c69" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e6b-183d-e431-0ead" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="41d0-4d4c-f99a-b932" name="Carbine/Rifle &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b9df-0eb9-fc14-ce9b" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="fbf7-2153-2d16-b4e4">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e615-3642-17c6-d830" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2e9-8801-aa30-af0c" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="fbf7-2153-2d16-b4e4" name="R-Carbine" hidden="false" collective="false" import="true" targetId="08ca-9985-b426-d0b5" type="selectionEntry"/>
+                <entryLink id="2660-f5d5-3b3d-27b4" name="Rifle" hidden="false" collective="false" import="true" targetId="e57e-4a03-ae5a-5411" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="4b22-c1a2-df32-3603" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d7f7-4411-cc9a-5b11">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91c1-f7a3-aa09-dc70" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d473-424c-a802-c3a9" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="d7f7-4411-cc9a-5b11" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry"/>
+                <entryLink id="70b7-e44a-1256-3e5c" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9eef-127f-b889-2a42" name="Taser Sword" hidden="false" collective="false" import="true" targetId="3a29-189a-01c5-de44" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6275-0e64-b2d6-299a" name="EMP Sword" hidden="false" collective="false" import="true" targetId="637f-9557-0fd9-dab4" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry id="79f1-6d2f-eeb6-66b4" name="Pistol &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8eef-cba3-3781-779e" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1e99-05de-ce00-a136">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0af-6696-1ad8-c988" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b9e-1861-4b8d-2fb7" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="1e99-05de-ce00-a136" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry"/>
+                <entryLink id="58db-5365-4724-1a21" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="528b-5875-cbad-4226" name="Taser Sword" hidden="false" collective="false" import="true" targetId="3a29-189a-01c5-de44" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bfca-b73c-c92f-0acc" name="EMP Sword" hidden="false" collective="false" import="true" targetId="637f-9557-0fd9-dab4" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="04aa-a5e0-8d8e-08f5" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a075-5bd9-fe10-9502">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2ad-5fda-0173-592c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc11-8d63-74ee-3656" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="a075-5bd9-fe10-9502" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry"/>
+                <entryLink id="a330-96d3-670e-dfce" name="P-Pistol" hidden="false" collective="false" import="true" targetId="a4d7-e0ca-be14-d3be" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="fc85-4831-cce9-ced7" name="EMP Pistol" hidden="false" collective="false" import="true" targetId="7a06-d075-11de-2f61" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="36ab-5ba7-f924-693a" name="R-Pistol" hidden="false" collective="false" import="true" targetId="86cb-aef8-2101-f099" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -3161,6 +3282,13 @@
     <profile id="91b8-83b8-d190-6ced" name="Repair Master" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Repair Master</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="efa7-1476-d1ee-8c3e" name="Cult Alpha" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Strider, Tough(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
