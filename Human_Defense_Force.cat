@@ -628,41 +628,46 @@
         <infoLink id="31c7-641b-06e9-1987" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b560-76fb-2439-2a67" name="Psychic" hidden="false" collective="false" import="true" defaultSelectionEntryId="2cb8-090e-3e35-0932">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6350-3ea0-8bc5-2a77" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9465-2d3d-72b8-0def" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="2cb8-090e-3e35-0932" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="3c62-0e1c-3f6e-49a5" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="da6f-0e6e-86cd-29b7" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="8044-cca7-3ee4-12f1" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntryGroup id="b560-76fb-2439-2a67" name="Psychic" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f37f-c057-3874-7e21" name="Power Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="fd46-9f05-3603-5cf9">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eabc-06f8-2520-1040" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e1e-a284-3546-0c47" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="fd46-9f05-3603-5cf9" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="a3db-50b5-4401-b9ba" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink id="8666-e9a9-69c5-146e" name="Psychic Spells" hidden="false" collective="false" import="true" targetId="c783-63e7-b061-32dc" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8154-2db0-70b3-fc85" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="7ce4-8795-d3d3-e999" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="59f6-d2f5-dd43-f4ed" name="Psychic Spells" hidden="false" collective="false" import="true" targetId="c783-63e7-b061-32dc" type="selectionEntryGroup"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="49f7-63ca-9268-b667" name="Pistol &amp; CCW (A2)" hidden="false" collective="false" import="true" targetId="a0d3-db2e-c6a3-cd70" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a120-559b-b28e-db34" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2e6-0bba-d4a3-1b15" type="min"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="49f7-63ca-9268-b667" name="Weapons - Leaders - Advisors" hidden="false" collective="false" import="true" targetId="848b-3836-2756-0183" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7efc-4f7f-24f7-3f92" name="Conscript" hidden="false" collective="false" import="true" type="unit">
@@ -3620,6 +3625,36 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1adc-37cd-e579-506d" name="Fortitude" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e458-c2b4-02d2-6a16" name="Fortitude" hidden="false" targetId="d183-965f-dc5a-e2b1" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5d79-8f57-b0a8-de47" name="Tempest" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b0d0-e04a-a8d8-e38e" name="Tempest" hidden="false" targetId="095e-8769-b52c-bb78" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="64de-37db-8a09-d947" name="Shroud" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="67d0-147f-f686-7bc6" name="Shroud" hidden="false" targetId="d1f6-97a6-cb42-a4bd" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9f66-f6de-7c62-c10e" name="Psychic Barrier" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d44b-66e6-27f3-89f2" name="Psychic Barrier" hidden="false" targetId="2623-d6b9-b97f-0951" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="de13-288d-a28f-e050" name="Nightmares" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="02d9-4ceb-90c1-65db" name="Nightmares" hidden="false" targetId="fa82-7e7e-5907-d4f3" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f8d6-4cab-d3b0-1e75" name="Furious Blaze" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e201-e69a-64d8-c6c9" name="Furious Blaze" hidden="false" targetId="7294-ac49-5252-1447" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="04ff-6489-4af9-e617" name="Weapons - Leaders - Infantry" hidden="false" collective="false" import="true" defaultSelectionEntryId="aa37-6296-5a7e-152d">
@@ -3811,6 +3846,53 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="c783-63e7-b061-32dc" name="Psychic Spells" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="7574-f3f8-c50b-aa36" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c66-a002-0764-2e90" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1eee-7a87-a4b3-0123" name="Fortitude" hidden="false" collective="false" import="true" targetId="1adc-37cd-e579-506d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52be-0581-0fae-6764" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7883-b2c1-d8b8-9d34" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5084-01da-24bd-6dcd" name="Furious Blaze" hidden="false" collective="false" import="true" targetId="f8d6-4cab-d3b0-1e75" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d78-3da2-83b2-18f9" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9052-a547-8997-dcdf" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="880e-d286-1e0a-c0ff" name="Psychic Barrier" hidden="false" collective="false" import="true" targetId="9f66-f6de-7c62-c10e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="654f-23be-35f8-824b" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbbf-8e02-8c44-d58f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="305d-7cb6-d874-924a" name="Tempest" hidden="false" collective="false" import="true" targetId="5d79-8f57-b0a8-de47" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ce2-ca73-10da-d742" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b14-adad-0797-59cb" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="57c1-f36b-6a5a-f2bc" name="Shroud" hidden="false" collective="false" import="true" targetId="64de-37db-8a09-d947" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c22a-9fa4-1358-274f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="627b-1535-19a6-0a45" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f658-1403-0755-f14f" name="Nightmares" hidden="false" collective="false" import="true" targetId="de13-288d-a28f-e050" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b655-0220-9f8d-4e11" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5feb-318c-35be-9713" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -4201,6 +4283,42 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d183-965f-dc5a-e2b1" name="Fortitude" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; immediately loses all enemy spell effects.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7294-ac49-5252-1447" name="Furious Blaze" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; takes 8 automatic hits with AP(1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2623-d6b9-b97f-0951" name="Psychic Barrier" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +2 to its defense rolls next time it takes hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="095e-8769-b52c-bb78" name="Tempest" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 6&quot; takes 1 automatic hit with AP(1) per model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d1f6-97a6-cb42-a4bd" name="Shroud" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; gets -1 to its rolls next time it shoots.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fa82-7e7e-5907-d4f3" name="Nightmares" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 12&quot; takes 3 automatic hits with AP(2).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
