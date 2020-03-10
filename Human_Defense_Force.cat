@@ -613,63 +613,11 @@
         <infoLink id="dcd2-6046-5c47-ed60" name="Drill Sergeant" hidden="false" targetId="763c-b17b-439a-7d6b" type="profile"/>
         <infoLink id="ab03-3a13-d24f-04b8" name="Battle Drills" hidden="false" targetId="937c-0217-4d51-7b96" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b0ad-ebdd-5c7b-bb83" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="b1fb-6a6c-007a-e75c">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4b0-9549-3b83-8034" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b76f-8c9e-8786-7470" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="b1fb-6a6c-007a-e75c" name="Pistol &amp; CCW (A2)" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="36bf-6baf-421a-4c8c" name="Pistol &amp; CCW (A2)" hidden="false" collective="false" import="true" targetId="a0d3-db2e-c6a3-cd70" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b3e-649e-280a-98b9" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd12-7492-1703-dabe" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e473-6f5c-7a73-22e3" name="Assault Rifle &amp; CCW (A1)" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="f697-5bb1-13b0-ef39" name="Assault Rifle &amp; CCW (A1)" hidden="false" collective="false" import="true" targetId="b771-ea0a-7bdf-0bb1" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95cc-520f-48ae-b51c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b133-34b8-c990-4e66" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="cc49-d882-7b06-460c" name="Plasma Rifle &amp; CCW (A1)" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="53cf-9672-1277-3ae2" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6d1-61a1-f0dd-c365" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6af7-38c4-4cf2-d747" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="e50f-b157-17e5-6414" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac9-a742-13e7-82d9" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d167-6d8e-ee04-ff71" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c298-ea9c-0405-164f" name="Weapons - Leaders - Advisors" hidden="false" collective="false" import="true" targetId="848b-3836-2756-0183" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7e4c-cb99-d403-5b7d" name="Psychic" hidden="false" collective="false" import="true" type="upgrade">
@@ -3876,7 +3824,11 @@
       <description>Whenever the hero’s unit fails a morale test you must kill one of its models and the morale test counts as passed instead. </description>
     </rule>
     <rule id="937c-0217-4d51-7b96" name="Battle Drills" publicationId="e38f-2272-38b2-f8ca" hidden="false">
-      <description>When the hero and his unit are fighting in melee roll one die. On a 4+ all models get AP(+1) in melee</description>
+      <description>When the hero and his unit are activated pick one of the following drills, and they get one of these special rules until the end of the round:
+- Double Time: +3&quot; when moving
+- Take Aim: +1 to shooting rolls
+- Focus Fire: AP(+1) when shooting
+- Fix Bayonets: +1 to melee rolls</description>
     </rule>
     <rule id="4444-15d9-1cde-e806" name="Demo Experts" publicationId="e38f-2272-38b2-f8ca" hidden="false">
       <description>Rending in melee</description>
