@@ -1770,89 +1770,47 @@
         <infoLink id="9327-2662-aedb-a05e" name="Dragoon Walker" hidden="false" targetId="dec5-78dc-b216-4e4d" type="profile"/>
         <infoLink id="c2ea-e944-0392-be2e" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
         <infoLink id="4edc-282c-984b-a5cb" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="7d15-f7a5-5bb1-fa9d" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="25ee-9a0d-fca0-368f" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
         <infoLink id="dec0-faa2-3c81-8ef9" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="ce06-ca3c-2df8-520f" name="Walker Stomp" hidden="false" collective="false" import="true" type="upgrade">
-          <entryLinks>
-            <entryLink id="0f8a-962c-1254-33f6" name="Walker Stomp" hidden="false" collective="false" import="true" targetId="b845-63ae-3628-fa45" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52f7-cef7-e36a-bd42" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="362a-0761-b2f2-893b" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="44c8-8c3e-0f61-a251" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0f08-0419-f3f0-b09e">
+        <selectionEntryGroup id="44c8-8c3e-0f61-a251" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="88b3-3987-ba4d-a473">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e466-4fb6-1d25-7bed" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="991b-a72f-1fd2-fa6a" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="0f08-0419-f3f0-b09e" name="Taser Lance" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="2242-70bf-0f01-0c35" name="Taser Lance" hidden="false" collective="false" import="true" targetId="be0c-38f3-3612-2ff9" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d78d-ff3a-3f8a-958b" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49e0-c5c7-3e2c-159c" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="88b3-3987-ba4d-a473" name="Taser Lance" hidden="false" collective="false" import="true" targetId="be0c-38f3-3612-2ff9" type="selectionEntry"/>
+            <entryLink id="ba36-c6b1-ec12-5c2c" name="R-Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b41-2288-c31f-cf6a" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="67d9-8e73-54cc-a5e2" name="Twin Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="67b0-69d4-c6f9-d351" name="Twin Autocannon" hidden="false" collective="false" import="true" targetId="3640-bb26-8a54-047c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4dc-5161-3b66-0746" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="599f-718a-415b-4546" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4a1f-e9dd-30f1-eccd" name="Upgrade with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="560d-aad9-e977-2604" name="P-Carbine" hidden="false" collective="false" import="true" targetId="9493-8df9-4f3e-828d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b94b-4392-fc55-d4f1" type="max"/>
+              </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="bcb8-925d-97dc-8c63" name="R-Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="2976-f452-3cab-436a" name="R-Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b41-2288-c31f-cf6a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e72-6a64-8348-0bc5" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48ef-2cc2-c20f-a0a1" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7fcd-008e-e377-36a3" name="Twin Laser Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="4336-c147-d672-d609" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86c0-4e90-4e40-7f3b" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32ce-c630-ca06-ded7" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c5fa-ab04-3315-b03a" name="Stomp" hidden="false" collective="false" import="true" targetId="05b7-635e-9186-c91d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f965-9117-7c12-5f11" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da0b-a0cd-82af-bb15" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="195.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="210.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="43d8-2f28-1dbd-07c5" name="Disruption Missiles" hidden="false" collective="false" import="true" type="upgrade">
@@ -2890,13 +2848,13 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fear, Impact(3), Stealth, Strider, Tought(6)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fear, Stealth, Strider, Tought(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="eeaa-bdd4-7ce9-5b3c" name="Taser Lance" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Impact(2), Taser</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Impact(3), Taser</characteristic>
       </characteristics>
     </profile>
     <profile id="0be4-4c76-39ff-5b7f" name="Walker Stomp" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
