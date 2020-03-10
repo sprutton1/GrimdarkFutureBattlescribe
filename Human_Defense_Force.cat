@@ -672,13 +672,19 @@
     </selectionEntry>
     <selectionEntry id="7efc-4f7f-24f7-3f92" name="Conscript" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="4c3d-2bb4-d0f0-902c" name="Conscript" hidden="false" targetId="f9c2-83f5-a2b0-18f7" type="profile"/>
+        <infoLink id="4012-81d7-017a-39e2" name="Conscript" hidden="false" targetId="f9c2-83f5-a2b0-18f7" type="profile"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="5048-23ff-7a55-f59c" name="Assault Rifle &amp; CCW (A1)" hidden="false" collective="false" import="true" targetId="b771-ea0a-7bdf-0bb1" type="selectionEntry">
+        <entryLink id="5048-23ff-7a55-f59c" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="b1f7-fded-6b90-629b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a6b-8888-c7da-e339" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8da-f5cb-a83f-e0eb" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d2c1-1959-490e-be84" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05de-ce2a-b74b-bd0a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb34-d60e-d7d8-a4ef" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -688,14 +694,42 @@
     </selectionEntry>
     <selectionEntry id="1e94-e27e-b6aa-3673" name="Conscripts" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="8a74-78c8-6336-97a3" name="Conscripts" hidden="false" collective="false" import="true" defaultSelectionEntryId="05a0-2283-9f38-b756">
+        <selectionEntryGroup id="540f-428a-b78a-6730" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="f90a-c48c-baed-4752">
           <constraints>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b712-6938-445d-ba46" type="max"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdcd-d35d-b3bd-139e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79a3-340e-dc2e-e8d0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad5e-5f90-f376-cc6a" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="05a0-2283-9f38-b756" name="Conscript" hidden="false" collective="false" import="true" targetId="7efc-4f7f-24f7-3f92" type="selectionEntry"/>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="f90a-c48c-baed-4752" name="Single Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="ac71-a623-d948-1d58" name="Conscripts" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e2f-10cd-fb62-7e47">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b79-e458-11ae-d7f1" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5813-3d9b-757c-caaa" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="2e2f-10cd-fb62-7e47" name="Conscript" hidden="false" collective="false" import="true" targetId="7efc-4f7f-24f7-3f92" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="53bf-9201-3b12-b560" name="Combined Unit [20 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="6c3d-7d7d-ecc1-f169" name="Conscripts" hidden="false" collective="false" import="true" defaultSelectionEntryId="8743-9461-4260-fc37">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7d1-5d21-3f2a-7892" type="max"/>
+                    <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2720-60fe-9c81-0979" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="8743-9461-4260-fc37" name="Conscript" hidden="false" collective="false" import="true" targetId="7efc-4f7f-24f7-3f92" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="75.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
