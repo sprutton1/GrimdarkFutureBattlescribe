@@ -20,6 +20,7 @@
     <entryLink id="e3b7-2450-96bc-c67f" name="Dragoon Walker" hidden="false" collective="false" import="true" targetId="b7ba-27cf-29f7-9b75" type="selectionEntry"/>
     <entryLink id="eacc-3dbf-5deb-4281" name="Machine Deacon" hidden="false" collective="false" import="true" targetId="2cfe-1db2-1439-2c7a" type="selectionEntry"/>
     <entryLink id="8ffe-d0a3-90bb-02dd" name="Cult Alpha" hidden="false" collective="false" import="true" targetId="aeef-8a9d-4530-4bf2" type="selectionEntry"/>
+    <entryLink id="353b-3d90-a316-a604" name="Iron Walker" hidden="false" collective="false" import="true" targetId="14b5-32f2-fa4d-2f48" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="dfde-6789-b18b-1fe0" name="Death Ray" hidden="false" collective="false" import="true" type="upgrade">
@@ -2191,6 +2192,42 @@
         <infoLink id="33d4-e3ea-d8a2-20a3" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="14b5-32f2-fa4d-2f48" name="Iron Walker" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="445d-d777-deac-e019" name="Iron Walker" hidden="false" targetId="8bb1-de1f-afb4-83f6" type="profile"/>
+        <infoLink id="178b-56c2-19ee-2abd" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="0122-57ac-568c-d563" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="f29c-226a-7a4e-b1f4" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="ee98-d324-8fdf-d9f0" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9fb7-7622-a1cd-8075" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1ca6-74af-b0b8-553a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67ae-767c-9ddc-04f3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f23-d71d-2aea-ec31" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1ca6-74af-b0b8-553a" name="Twin Autocannon" hidden="false" collective="false" import="true" targetId="3640-bb26-8a54-047c" type="selectionEntry"/>
+            <entryLink id="4b45-8bbc-eec4-4357" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="037b-bc09-2fc6-c3ad" name="Stomp" hidden="false" collective="false" import="true" targetId="05b7-635e-9186-c91d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d08-b7b4-54f5-0090" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6c1-08d0-d629-2911" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="245.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ddb8-8852-4a3d-d4f8" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -3010,6 +3047,13 @@
     <profile id="39bf-7612-b1b9-3853" name="Mechanic" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Regeneration</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8bb1-de1f-afb4-83f6" name="Iron Walker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fear, Strider, Tough(6)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
