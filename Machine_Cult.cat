@@ -1488,103 +1488,71 @@
     </selectionEntry>
     <selectionEntry id="eadd-5396-c2fc-d344" name="Combat Robot" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="22c5-a801-4485-b727" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="22c5-a801-4485-b727" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
         <infoLink id="f1a1-e756-9df2-d5d1" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
         <infoLink id="f4a9-509e-c8b9-a68f" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="9144-23d6-a064-12d7" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="8a23-b2da-dca1-d464" name="Combat Robot" hidden="false" targetId="3395-7ab1-eff0-c782" type="profile"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="425a-8d47-9923-6a7d" name="Mechanic (Regeneration)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="395d-a519-9f43-3921" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="ff5f-bd64-c65d-798b" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="59c9-9419-4c74-8c7d" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="cdb4-b1de-4c8e-e05a">
+        <selectionEntryGroup id="59c9-9419-4c74-8c7d" name="Weapons - Arm Mounts" hidden="false" collective="false" import="true" defaultSelectionEntryId="31b3-72b0-0580-ef80">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4899-2de9-f552-a802" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74ba-ced4-40a7-b9f7" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="cdb4-b1de-4c8e-e05a" name="2x Energy Fists" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="31b3-72b0-0580-ef80" name="2x Energy Fists" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="85d1-0cd4-00dd-b74a" name="Energy Fists" hidden="false" collective="false" import="true" targetId="14e1-32dd-2f13-18e9" type="selectionEntry">
+                <entryLink id="4c22-9048-6c0d-ec02" name="Energy Fist" hidden="false" collective="false" import="true" targetId="ffff-7bb4-119c-0f59" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="39a0-38d4-ecb1-a0df" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67bd-c1db-23c8-48ef" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b35a-0aaf-840b-997a" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a577-18f6-c4d5-da50" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2750-e814-e395-1375" name="Twin P-Cannon &amp; 2x Fists" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="baf8-6906-9bdd-a875" name="Fists" hidden="false" collective="false" import="true" targetId="3b2a-0a1f-77a1-ad73" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4b03-80ac-0eb6-b9a0" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ebd-48d6-60a8-6fef" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="f0cb-9f2e-6301-53b6" name="Twin P-Rifle" hidden="false" collective="false" import="true" targetId="a8d0-8efc-b6cb-6404" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2460-45ff-b642-e1e7" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26c7-9097-3444-ec67" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="3884-daa9-0381-9404" name="Twin P-Rifle" hidden="false" collective="false" import="true" targetId="a8d0-8efc-b6cb-6404" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="691c-745d-8c96-8140" name="Shoulder" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5c5-b13e-f2f0-ebb9">
+        <selectionEntryGroup id="691c-745d-8c96-8140" name="Weapons - Shoulder Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ff6-a1fc-8a4e-9b16">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5703-ccfe-c138-c166" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9178-8a6a-820a-7cde" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="f5c5-b13e-f2f0-ebb9" name="Flamethrower Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="0e05-5ab6-0c02-8823" name="Flamethrower Cannon" hidden="false" collective="false" import="true" targetId="f587-2140-510e-48b8" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f95c-7286-ba42-c7df" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6abf-6957-2c2a-c4ad" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="db2b-f54d-eb5a-4ace" name="P-Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="ba57-3a2f-5999-c325" name="P-Cannon" hidden="false" collective="false" import="true" targetId="f5ca-3fbf-9de5-12ea" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b894-632c-effd-ddc7" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="edc5-a5b1-e474-abe0" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="9ff6-a1fc-8a4e-9b16" name="Flamethrower Cannon" hidden="false" collective="false" import="true" targetId="f587-2140-510e-48b8" type="selectionEntry"/>
+            <entryLink id="a18a-7c2c-f2bd-129b" name="P-Cannon" hidden="false" collective="false" import="true" targetId="f5ca-3fbf-9de5-12ea" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="777f-ea5c-9421-17ae" name="Stomp" hidden="false" collective="false" import="true" targetId="05b7-635e-9186-c91d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d700-68e1-59a3-754b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdbd-e517-32a5-2ff1" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d03c-0bab-ad3c-75e7" name="Mechanic" hidden="false" collective="false" import="true" targetId="66d3-842b-d193-f1f8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75d8-8195-9e0c-b4b8" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="175.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="200.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f5ca-3fbf-9de5-12ea" name="P-Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2253,6 +2221,18 @@
         <infoLink id="9e61-5729-bfec-e84e" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="05b7-635e-9186-c91d" name="Stomp" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="95fc-21c2-6fe9-c446" name="Stomp" hidden="false" targetId="d181-58a3-91fa-5aaf" type="profile"/>
+        <infoLink id="cd76-f52e-efac-fd31" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="66d3-842b-d193-f1f8" name="Mechanic" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3453-1f10-28c4-1409" name="Mechanic" hidden="false" targetId="39bf-7612-b1b9-3853" type="profile"/>
+        <infoLink id="33d4-e3ea-d8a2-20a3" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ddb8-8852-4a3d-d4f8" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -2792,7 +2772,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Impact(1), Stealth, Tough(6)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Stealth, Tough(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="0439-f181-cb25-8e90" name="Twin P-Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -3059,6 +3039,17 @@
       </characteristics>
     </profile>
     <profile id="2395-488e-10e2-f9a6" name="Repair Arm" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Regeneration</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d181-58a3-91fa-5aaf" name="Stomp" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="39bf-7612-b1b9-3853" name="Mechanic" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Regeneration</characteristic>
       </characteristics>
