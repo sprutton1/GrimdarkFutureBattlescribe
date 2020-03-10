@@ -1722,79 +1722,13 @@
         <infoLink id="515a-2492-92df-f85b" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
         <infoLink id="91c2-1acc-a71d-75ef" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="36ca-3d5b-ab2c-dd3a" name="Machinegun" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fdf-34ed-e53a-1dc9" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="4127-2309-226b-ada7" name="Light Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd1a-e054-91ff-365d" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df5f-d356-b0bf-d796" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3d1a-a08c-5f18-4b19" name="Anti-Charge System" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c37-0218-5cbb-733a" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="4f0a-7505-aa2b-4ed5" name="Anti-Charge System" hidden="false" targetId="b379-4a31-7293-472f" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3b69-7bbd-a06f-d457" name="Repair Arm (Regeneration)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7654-afe3-6488-546e" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="6c03-f9eb-9b9f-ffcd" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="85ef-e62e-b502-72c4" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ebe5-9136-ec08-be57">
+        <selectionEntryGroup id="85ef-e62e-b502-72c4" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0484-d445-56b4-9a04">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfa6-00a9-31c0-536e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02ab-39d9-2963-0941" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1380-ae57-db58-27e2" name="Twin P-Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="27ea-7052-b077-a829" name="Twin P-Cannon" hidden="false" collective="false" import="true" targetId="a8d0-8efc-b6cb-6404" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fae-38f2-34dc-5128" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22f7-f20a-4808-3c6a" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ebe5-9136-ec08-be57" name="Eraser Beam" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="9f1e-0893-4aad-c982" name="Eraser Beam" hidden="false" collective="false" import="true" targetId="7f3c-bd2b-5007-2f04" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b4-7420-4215-db4d" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dec8-9abf-1a62-48a9" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="3543-560f-58e4-6aee" name="Neutron Beam &amp; Machinegun" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="0ef4-cd88-aaa4-8b40" name="Neutron Beam &amp; Machinegun" hidden="false" collective="false" import="true" targetId="47ae-8a83-ed3c-77cd" type="selectionEntry">
@@ -1805,8 +1739,8 @@
                 </entryLink>
                 <entryLink id="5de0-84cd-9b96-21ea" name="Light Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="838c-c865-b733-1d15" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67a4-3075-c038-7229" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fb8-eba2-c20d-719d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0d2-d241-481f-40e1" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1814,24 +1748,52 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="10db-bce3-cf95-6cf7" name="AA-Array" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="6de9-40d6-a07a-6c03" name="AA-Array" hidden="false" collective="false" import="true" targetId="361e-aaa3-65c0-953b" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1165-1918-6819-350c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28f7-6ae6-02bd-fe81" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="30b3-9b8b-2208-3d99" name="Twin P-Cannon" hidden="false" collective="false" import="true" targetId="a8d0-8efc-b6cb-6404" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="0484-d445-56b4-9a04" name="Eraser Beam" hidden="false" collective="false" import="true" targetId="7f3c-bd2b-5007-2f04" type="selectionEntry"/>
+            <entryLink id="6ecb-9d10-e1c0-8ca8" name="AA-Array" hidden="false" collective="false" import="true" targetId="361e-aaa3-65c0-953b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2bc4-8b53-d2f7-2070" name="Upgrade with any:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="cc25-c088-1ad9-87ad" name="Light Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d490-555e-1552-13ed" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="17ff-2976-f4c1-e54f" name="Anti-Charge System" hidden="false" collective="false" import="true" targetId="ba59-a4ff-4f43-1b4a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b0d-1a3c-b592-c795" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="6f80-69b4-ff96-e339" name="Repair Arm" hidden="false" collective="false" import="true" targetId="47c5-c8e3-6ea6-4fe1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7721-f915-23ce-f534" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="365.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="375.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b7ba-27cf-29f7-9b75" name="Dragoon Walker" hidden="false" collective="false" import="true" type="unit">
@@ -1973,12 +1935,12 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="361e-aaa3-65c0-953b" name="AA-Array" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="361e-aaa3-65c0-953b" name="Icarus AA-System" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4fb5-f3e7-be33-f2b5" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
-        <infoLink id="3726-cf9f-ad64-24f4" name="Twin Autocannon" hidden="false" targetId="0d07-33a8-cdbd-6999" type="profile"/>
-        <infoLink id="2192-5320-6441-8208" name="Gatling Rockets" hidden="false" targetId="0eca-e9ad-c899-b77c" type="profile"/>
         <infoLink id="6857-85e5-051d-f3af" name="Flack Missiles" hidden="false" targetId="919b-4b43-1029-3fb2" type="profile"/>
+        <infoLink id="8367-5630-7ec0-bb4c" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+        <infoLink id="7b1f-5e68-019a-58dd" name="Anti-Air" hidden="false" targetId="1875-13ee-b0ef-5a65" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -2278,6 +2240,18 @@
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="ba59-a4ff-4f43-1b4a" name="Anti-Charge System" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9b42-e532-6ac4-5611" name="Anti-Charge System" hidden="false" targetId="faf2-2a85-1f02-5259" type="profile"/>
+        <infoLink id="df55-d270-c20e-1420" name="Anti-Charge System" hidden="false" targetId="b379-4a31-7293-472f" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="47c5-c8e3-6ea6-4fe1" name="Repair Arm" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f00e-51cb-c5d6-7648" name="Repair Arm" hidden="false" targetId="2395-488e-10e2-f9a6" type="profile"/>
+        <infoLink id="9e61-5729-bfec-e84e" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2823,7 +2797,7 @@
     </profile>
     <profile id="0439-f181-cb25-8e90" name="Twin P-Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Phosphor</characteristic>
       </characteristics>
@@ -2911,11 +2885,11 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Blast(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="919b-4b43-1029-3fb2" name="Flack Missiles" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="919b-4b43-1029-3fb2" name="Icarus AA-System" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
-        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Deadly(3), Anti-Air</characteristic>
       </characteristics>
     </profile>
     <profile id="0eca-e9ad-c899-b77c" name="Gatling Rockets" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -3077,6 +3051,16 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
+      </characteristics>
+    </profile>
+    <profile id="faf2-2a85-1f02-5259" name="Anti-Charge System" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Anti-Charge System</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2395-488e-10e2-f9a6" name="Repair Arm" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Regeneration</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
