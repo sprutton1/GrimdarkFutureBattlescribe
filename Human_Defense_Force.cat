@@ -2322,17 +2322,17 @@
         <infoLink id="edd9-070a-6def-fad5" name="Aircraft" hidden="false" targetId="187f-6a03-5b99-a4db" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c596-b7ce-24e1-a557" name="Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="09f8-04e5-320c-8f60" name="Weapon - Door Gunners" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d7e-0a8c-c9ab-cb4a" type="max"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry id="03d5-f580-7d2b-e311" name="2x Heavy Machineguns" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4292-f1ca-60e5-d2e6" type="max"/>
-              </constraints>
+            <selectionEntry id="d0ec-46df-0bb3-3df4" name="2x Heavy Machineguns" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="2f0f-5910-825c-b326" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+                <entryLink id="2586-8eb3-c4cd-ecca" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35a9-d02c-71a0-843b" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aafe-cb5f-2bde-9d89" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c60-7e09-c08f-0550" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afc7-a86d-4bdb-2ab4" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2340,62 +2340,41 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d84c-66e1-37b6-2985" name="Twin Laser Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eccc-4c6c-6fb9-d9d0" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1151-2d4c-231b-5dd8" type="max"/>
-              </constraints>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="50a0-570c-3898-5d6a" name="Weapon - Wing Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="782f-b996-e45d-e5fa">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4781-f499-ccc4-feb4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ee-c726-51de-c381" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b42e-2234-d5ae-0d90" name="2x Twin Laser Cannons" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="3305-3ca1-8ee5-47c4" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
+                <entryLink id="c39e-9f85-adc7-6914" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cbf-3597-5326-443f" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f85-2a54-960c-17fe" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="941d-b086-f90d-d718" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd95-595c-12f3-2f6f" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="99b9-ea61-13fc-8c98" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5533-e396-aaa1-2949">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a489-9bc6-f653-e94f" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa1b-2e88-f1cb-f8cb" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="fa86-9009-8ece-2185" name="2x Twin Laser Cannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <entryLinks>
-                    <entryLink id="43c9-a743-530d-196d" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b01-b7b8-17d1-ff1d" type="max"/>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db1c-27d6-da6a-055d" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5533-e396-aaa1-2949" name="Fury Missiles" hidden="false" collective="false" import="true" type="upgrade">
-                  <entryLinks>
-                    <entryLink id="13b8-d527-74fc-6a55" name="Fury Missiles" hidden="false" collective="false" import="true" targetId="8af6-4246-79ec-bbdb" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d7f-4ebe-55ca-de3c" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="818a-026c-c0e4-9bc3" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="782f-b996-e45d-e5fa" name="Fury Missiles" hidden="false" collective="false" import="true" targetId="8af6-4246-79ec-bbdb" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9e07-a98d-dba3-841c" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa15-cd31-e56f-304f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b552-139c-5b11-48f8" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="390.0"/>
       </costs>
