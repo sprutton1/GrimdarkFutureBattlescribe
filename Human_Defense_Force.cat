@@ -1883,17 +1883,6 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74a4-2d15-2404-3185" name="Ogre" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="5d28-9a3d-2917-7e83" name="Ogre" hidden="false" targetId="0c9a-3171-0bd1-48f6" type="profile"/>
-        <infoLink id="1eb5-bc20-2bcc-4063" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="b872-e88d-462a-d04c" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
-        <infoLink id="5dd6-7d6c-42b7-e50e" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="39cc-03cb-3bc9-a1ec" name="Heavy SMG" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5d82-f4ba-1302-7ee6" name="Heavy SMG" hidden="false" targetId="8511-3f54-8885-f073" type="profile"/>
@@ -1902,7 +1891,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1507-1d8f-92fc-6898" name="Ogre CCW" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="1507-1d8f-92fc-6898" name="CCW (Ogre)" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ff9c-f0a3-04a4-c1b9" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="e31d-d743-10ee-880a" name="Ogre CCW" hidden="false" targetId="74b3-b87e-3292-6859" type="profile"/>
@@ -1911,10 +1900,13 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="864b-2524-e44e-8c2f" name="Mini-GL" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="864b-2524-e44e-8c2f" name="Mini GL" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="749b-9bbf-1a46-945a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="749b-9bbf-1a46-945a" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
         <infoLink id="7e88-4c76-b3a6-cb73" name="Mini-GL" hidden="false" targetId="b636-17d3-080a-cba2" type="profile"/>
+        <infoLink id="425e-4357-6d48-b5e7" name="Mini GL - pick one each turn: AT" hidden="false" targetId="7265-8f90-36d2-028d" type="profile"/>
+        <infoLink id="7876-eea6-39fc-8f82" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="387f-2385-44fa-e921" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -1929,95 +1921,157 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d61c-b3a2-6389-7665" name="Ogre Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9b29-00f7-d807-cd87" name="Ogre" hidden="false" targetId="0c9a-3171-0bd1-48f6" type="profile"/>
+        <infoLink id="c60f-a28f-a689-dfbc" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="c9c8-3478-e4d9-0d4c" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="5aaa-cccc-ae20-b34b" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3d64-22fc-f210-de8e" name="Ogres" hidden="false" collective="false" import="true" defaultSelectionEntryId="d5b9-deb0-6f72-914a">
+        <selectionEntryGroup id="9364-3323-70dc-8ac4" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e5c-2ea7-8e4a-e5fc">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beaa-dba6-a397-ff7a" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7521-cf2f-1767-f4e3" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="d5b9-deb0-6f72-914a" name="Ogre" hidden="false" collective="false" import="true" targetId="74a4-2d15-2404-3185" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="0bc6-ab75-41d1-324f" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="148b-665b-72b6-8837">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9843-e691-1e78-0722" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dad-e843-d6c2-5a77" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb35-460c-0856-28ca" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3600-af36-2412-1559" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="148b-665b-72b6-8837" name="Heavy SMG &amp; Ogre CCW" hidden="false" collective="true" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="d92a-a7b0-8850-0b5c" name="Heavy SMG" hidden="false" collective="false" import="true" targetId="39cc-03cb-3bc9-a1ec" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd2e-2f01-60bd-3f28" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6248-8822-23db-9b0c" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="faf7-85ab-3a7f-105b" name="Ogre CCW" hidden="false" collective="false" import="true" targetId="1507-1d8f-92fc-6898" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffbe-a131-6c02-d23a" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6609-afa2-1dc0-f4b0" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="960f-25c6-60a0-2a9b" name="Heavy Shield and Other Weapon" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="2e5c-2ea7-8e4a-e5fc" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
-                <selectionEntryGroup id="8f3e-d3ad-58da-cd29" name="Other Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f513-160a-ce96-7f43">
+                <selectionEntryGroup id="dd39-8bd6-97b6-76f1" name="Offhand Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="14c9-dd6f-da94-0fc7">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e397-10b7-3516-e2e8" type="min"/>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e87e-f6de-57d0-cf34" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e35b-a1d2-f8fe-718e" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f887-373e-460a-d916" type="min"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry id="f513-160a-ce96-7f43" name="Mini-GL" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="d89a-0caf-1358-0928" name="Light Shield &amp; Shield Bash" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
-                        <entryLink id="47f0-1f98-1f96-1f54" name="Mini-GL" hidden="false" collective="false" import="true" targetId="864b-2524-e44e-8c2f" type="selectionEntry">
+                        <entryLink id="be7a-32c2-fe13-cc4f" name="Light Shield" hidden="false" collective="false" import="true" targetId="701e-f5e7-5ed3-1929" type="selectionEntry">
                           <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e70-ae2c-5c9e-2ff1" type="min"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1822-254d-84e4-0ae9" type="max"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a0f-7341-ebea-1bb7" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="876a-abfd-dec1-34f9" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="de3a-e4ab-70c4-264f" name="Shield Bash" hidden="false" collective="false" import="true" targetId="fc72-dee5-7c84-7976" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b0-7ffb-e2d2-cca4" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9753-21a1-21b3-83d5" type="max"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-                      </costs>
                     </selectionEntry>
-                    <selectionEntry id="7b19-d22b-b7f8-c10a" name="Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="020a-750a-be81-8b29" name="Heavy Shield &amp; Shield Bash" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
-                        <entryLink id="2828-5f35-19ed-bb53" name="Energy Sword" hidden="false" collective="false" import="true" targetId="1c53-94aa-c201-7cdd" type="selectionEntry">
+                        <entryLink id="2e9c-029b-6a66-28f7" name="Heavy Shield" hidden="false" collective="false" import="true" targetId="4416-c035-1082-d5bb" type="selectionEntry">
                           <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e049-3c93-6333-7711" type="min"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5ad-5cc9-cdcd-6675" type="max"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5183-5643-3103-3c14" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5cc-7fb7-e3f5-280d" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="3804-9ba7-64da-953b" name="Shield Bash" hidden="false" collective="false" import="true" targetId="fc72-dee5-7c84-7976" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="511a-a310-7695-fe98" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1c3-4bb4-ba57-588e" type="max"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
                       <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="14c9-dd6f-da94-0fc7" name="CCW (Ogre)" hidden="false" collective="false" import="true" targetId="1507-1d8f-92fc-6898" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="aefa-e969-aaef-2ed6" name="Mainhand Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7a0b-c007-7d8c-8c77">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8660-144d-fbf0-1274" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ff5-3d5c-143e-2287" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="7a0b-c007-7d8c-8c77" name="Heavy SMG" hidden="false" collective="false" import="true" targetId="39cc-03cb-3bc9-a1ec" type="selectionEntry"/>
+                    <entryLink id="1fdd-5eab-0b63-17e4" name="Mini GL" hidden="false" collective="false" import="true" targetId="864b-2524-e44e-8c2f" type="selectionEntry"/>
+                    <entryLink id="dd5a-5f38-9b82-cc1b" name="Heavy Baton" hidden="false" collective="false" import="true" targetId="a56c-e3b2-3f0b-dfc8" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="f7b6-2cd2-c1dd-9150" name="Heavy Shield" hidden="false" collective="false" import="true" targetId="4416-c035-1082-d5bb" type="selectionEntry">
+            </selectionEntry>
+            <selectionEntry id="0aa2-14d3-87d9-9c91" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="b0af-cc11-c1ab-4238" name="Offhand Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="eb95-fd0f-aa1a-43e7">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d847-638f-16cc-419a" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c04-6e66-dfd0-bd3a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a44-c256-220a-8808" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eec-1648-0875-a2c8" type="min"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry id="70f6-8c8a-2335-7de5" name="Light Shield &amp; Shield Bash" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="6453-a6a9-5cb8-5867" name="Light Shield" hidden="false" collective="false" import="true" targetId="701e-f5e7-5ed3-1929" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fc5-75d4-e812-0b0a" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5c7-3bf7-b087-7254" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="9595-de67-f5b6-88c4" name="Shield Bash" hidden="false" collective="false" import="true" targetId="fc72-dee5-7c84-7976" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8e0-41d6-532a-fc98" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d61e-518b-8f61-6e10" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry id="84ac-f905-4fe2-ed2e" name="Heavy Shield &amp; Shield Bash" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="dcda-103c-b618-dc7b" name="Heavy Shield" hidden="false" collective="false" import="true" targetId="4416-c035-1082-d5bb" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d3e-d54a-376f-a021" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee2e-4b40-0309-b93f" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="fe6f-cae5-848c-53fe" name="Shield Bash" hidden="false" collective="false" import="true" targetId="fc72-dee5-7c84-7976" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f4d-680b-1e16-4e80" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5473-0270-dfd1-3713" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="eb95-fd0f-aa1a-43e7" name="CCW (Ogre)" hidden="false" collective="false" import="true" targetId="1507-1d8f-92fc-6898" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="8321-8f6f-e3ac-5d56" name="Mainhand Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="56ee-1c39-bfb6-6ea4">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="846f-6b4a-60b6-b8f1" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="971a-530a-a565-65e8" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="56ee-1c39-bfb6-6ea4" name="Heavy SMG" hidden="false" collective="false" import="true" targetId="39cc-03cb-3bc9-a1ec" type="selectionEntry"/>
+                    <entryLink id="3e1f-29a8-345b-ae99" name="Mini GL" hidden="false" collective="false" import="true" targetId="864b-2524-e44e-8c2f" type="selectionEntry"/>
+                    <entryLink id="28ad-747a-1a68-3999" name="Heavy Baton" hidden="false" collective="false" import="true" targetId="a56c-e3b2-3f0b-dfc8" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="165.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="180.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="165.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1c53-94aa-c201-7cdd" name="Energy Sword" hidden="false" collective="true" import="true" type="upgrade">
@@ -3840,6 +3894,22 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a56c-e3b2-3f0b-dfc8" name="Heavy Baton" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f07a-e73f-bf71-d236" name="Heavy Baton" hidden="false" targetId="bdf9-e26e-bd95-ac24" type="profile"/>
+        <infoLink id="4e41-9b5b-2689-7f4a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="701e-f5e7-5ed3-1929" name="Light Shield" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="90bb-3cfc-cd83-aae1" name="Light Shield" hidden="false" targetId="9748-ff1e-5cb5-44ab" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="fc72-dee5-7c84-7976" name="Shield Bash" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5c94-0d20-8771-b342" name="Shield Bash" hidden="false" targetId="14a4-42b1-c92b-38ca" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="04ff-6489-4af9-e617" name="Weapons - Leaders - Infantry" hidden="false" collective="false" import="true" defaultSelectionEntryId="aa37-6296-5a7e-152d">
@@ -4349,7 +4419,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Impact(1), Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Furious, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="8511-3f54-8885-f073" name="Heavy SMG" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -4359,13 +4429,13 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
-    <profile id="74b3-b87e-3292-6859" name="Ogre CCW" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+    <profile id="74b3-b87e-3292-6859" name="CCW (Ogre)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="b636-17d3-080a-cba2" name="Mini-GL" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="b636-17d3-080a-cba2" name="Mini GL - pick one each turn: HE" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
@@ -4640,6 +4710,30 @@
     <profile id="9496-cff5-d164-4ced" name="Forward Sentries" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Scout</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7265-8f90-36d2-028d" name="Mini GL - pick one each turn: AT" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9748-ff1e-5cb5-44ab" name="Light Shield" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Defense +1 in melee</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="14a4-42b1-c92b-38ca" name="Shield Bash" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bdf9-e26e-bd95-ac24" name="Heavy Baton" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
