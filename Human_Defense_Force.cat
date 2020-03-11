@@ -2241,17 +2241,55 @@
         <infoLink id="4708-2d71-3ec9-1b7b" name="Aircraft" hidden="false" targetId="187f-6a03-5b99-a4db" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d337-5d65-62b0-70bd" name="Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="7ec3-498c-c28f-7cfa" name="Weapon - Prow Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="d96b-6d1d-b302-4f1f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30c7-160a-63e9-8fbb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04c8-44ff-93ad-de8b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d96b-6d1d-b302-4f1f" name="Laser Machinegun" hidden="false" collective="false" import="true" targetId="f7a6-c6c9-0567-4b34" type="selectionEntry"/>
+            <entryLink id="f308-42c1-84a9-cfc9" name="Laser Cannon" hidden="false" collective="false" import="true" targetId="1f20-2b60-f100-bed0" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b8aa-b114-b46d-8f0c" name="Weapon - Wing Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="fc21-a7e9-7230-7a2b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a5-2099-db44-dffc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27c0-2b21-41d9-b1cf" type="max"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry id="a8d2-4152-9141-25fc" name="2x Heavy Machineguns" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9924-8fba-e843-d418" type="max"/>
-              </constraints>
+            <selectionEntry id="f3ab-65dd-25d8-4ed8" name="2x Rocket Pods" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="b140-9c6e-7fe6-f5c1" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+                <entryLink id="71f7-1e9e-62ac-7121" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="eae1-e951-06b8-6669" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="914e-0df8-d656-081c" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb0b-e5e4-ad2a-2f21" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2108-d7aa-1a6d-342f" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c21e-3c44-5a3c-849e" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="fc21-a7e9-7230-7a2b" name="Strike Missiles" hidden="false" collective="false" import="true" targetId="f8a7-272d-e9cc-e4e2" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1436-36b8-27f5-5948" name="Weapon - Door Gunners" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7603-25fa-969d-4373" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="22ea-9747-d227-86a5" name="2x Heavy Machineguns" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="7b59-79d5-e629-2cce" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e5f-229c-d8b6-85e0" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d54-c833-df64-eec5" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2260,76 +2298,6 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="1d74-9b0a-992b-ef19" name="Weapon 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="7d23-10cc-9ffd-5c21">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deb3-0b01-e999-d195" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26d4-68cd-059e-1aad" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="34a4-57c3-f185-e088" name="Laser Cannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <entryLinks>
-                    <entryLink id="7d17-e380-b36b-0c92" name="Laser Cannon" hidden="false" collective="false" import="true" targetId="1f20-2b60-f100-bed0" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ecf-e275-3f5b-e152" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cf1-caee-7dd6-1f83" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7d23-10cc-9ffd-5c21" name="Laser Machinegun" hidden="false" collective="false" import="true" type="upgrade">
-                  <entryLinks>
-                    <entryLink id="3c34-65b4-e80e-a3b4" name="Laser Machinegun" hidden="false" collective="false" import="true" targetId="5b70-7f0d-2270-9b5d" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e791-651e-e32e-7a39" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b06a-50fb-2183-a639" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="3fd5-5c2f-012c-612b" name="Weapon 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="868b-b9bf-a981-91ea">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa5f-9395-9453-10db" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e101-6b95-8bd9-ee4d" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="79f5-6c6d-70a2-e670" name="2x Rocket Pods" hidden="false" collective="false" import="true" type="upgrade">
-                  <entryLinks>
-                    <entryLink id="d228-23a6-f45e-7284" name="Rocket Pods" hidden="false" collective="false" import="true" targetId="eae1-e951-06b8-6669" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6a5-320e-1d70-5475" type="min"/>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="635d-e6d3-b64a-8b17" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="868b-b9bf-a981-91ea" name="Strike Missiles" hidden="false" collective="false" import="true" type="upgrade">
-                  <entryLinks>
-                    <entryLink id="cb55-f7be-99ac-1e03" name="Strike Missiles" hidden="false" collective="false" import="true" targetId="f8a7-272d-e9cc-e4e2" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66fd-03ea-9c46-a7b4" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f13-4269-ade2-67b3" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
