@@ -1685,6 +1685,9 @@
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="86ec-4234-9005-0eea" name="Lances" hidden="false" collective="false" import="true" type="upgrade">
                       <selectionEntryGroups>
@@ -1720,6 +1723,9 @@
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3d14-eb01-7f84-9f94" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -1756,6 +1762,9 @@
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="960e-cdec-7cd1-8a4e" name="Lances" hidden="false" collective="false" import="true" type="upgrade">
                       <selectionEntryGroups>
@@ -1803,54 +1812,65 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d942-9879-9b3c-fe11" name="Sniper" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="37d2-2dff-c9ae-be63" name="Sniper" hidden="false" targetId="f12d-e3f3-79da-acb6" type="profile"/>
-        <infoLink id="d5d0-0e35-b1b3-6620" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
-        <infoLink id="a917-41ba-7b51-be55" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="122d-6eb3-272d-9a9c" name="Sniper Rifle &amp; CCW" hidden="false" collective="true" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="fedd-3f87-59ff-d1b9" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="b71e-f1ac-cc3d-49bb" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5387-8946-b93b-8ba3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e44-7fa1-245b-8b4a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d86-2de7-c42f-d53f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="330a-38fe-690c-5b53" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="5eb8-19eb-bcca-1483" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="b71e-f1ac-cc3d-49bb" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3d5-db07-988f-be16" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfd4-0b62-c4b3-ae8b" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="f8f1-a809-b717-1865" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32a6-895a-d607-55b6" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a6c-7f07-2a92-d416" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </entryLink>
+        <entryLink id="b740-8021-4a47-9377" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3b1-7e48-03ca-2180" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc2a-fbe5-f791-f115" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="df92-9ef2-6cf7-89c3" name="Sniper Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b9be-60a0-72ac-d294" name="Sniper" hidden="false" targetId="f12d-e3f3-79da-acb6" type="profile"/>
+        <infoLink id="3033-9a12-9edd-185a" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+        <infoLink id="b806-8777-503b-e35f" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7fc3-38a8-5b6e-8a36" name="Snipers" hidden="false" collective="false" import="true" defaultSelectionEntryId="2480-2396-777a-9c8f">
+        <selectionEntryGroup id="9636-395e-2f9f-1759" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="86ed-e496-4c59-8dab">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0166-a616-6a94-5cc8" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="defc-afcb-6d9f-3b59" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="290e-b304-233d-d65b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a600-e568-bc63-f0b8" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="2480-2396-777a-9c8f" name="Sniper" hidden="false" collective="false" import="true" targetId="d942-9879-9b3c-fe11" type="selectionEntry"/>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="86ed-e496-4c59-8dab" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="19dc-15d9-4d34-7319" name="Sniper" hidden="false" collective="false" import="true" targetId="d942-9879-9b3c-fe11" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7b6-6873-93d6-deb2" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f5c-fd31-0b5b-0e21" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="7b55-c6d9-befa-1d10" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="9ea2-8dce-d712-0c68" name="Sniper" hidden="false" collective="false" import="true" targetId="d942-9879-9b3c-fe11" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a50-c494-27d9-3877" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecd0-9c03-90b1-e479" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b71e-f1ac-cc3d-49bb" name="Sniper Rifle" hidden="false" collective="true" import="true" type="upgrade">
@@ -3681,23 +3701,35 @@
         <infoLink id="f34e-d35f-a979-bbea" name="Demo Experts" hidden="false" targetId="297e-77d8-8270-ad4d" type="profile"/>
         <infoLink id="8016-9fb3-55ab-cfcd" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8ba6-e270-dcc2-0553" name="Grenadiers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8ce8-1f69-0956-faba" name="Grenadiers" hidden="false" targetId="2469-953c-1320-ee45" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="683c-82bb-cb9d-4bf8" name="Camo Cloaks" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6b8e-084c-2621-dbdf" name="Camo Cloaks" hidden="false" targetId="3c1b-f537-d368-67dd" type="profile"/>
         <infoLink id="dc8d-126a-6cc0-ac0d" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e331-4d2d-8163-139f" name="Forward Sentries" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="66e6-c853-1669-baf2" name="Forward Sentries" hidden="false" targetId="9496-cff5-d164-4ced" type="profile"/>
         <infoLink id="1976-3509-9ca0-8525" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="aaeb-e35b-da06-e0be" name="Cavalry Leader (Lance)" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
