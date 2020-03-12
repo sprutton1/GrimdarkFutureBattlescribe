@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="13" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="14" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.7"/>
   </publications>
@@ -298,7 +298,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6bf9-8992-7b02-5764" name="Light Machinegun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6bf9-8992-7b02-5764" name="Machinegun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9a80-6f53-330c-6f89" name="Light Machinegun" hidden="false" targetId="c0d6-cc28-d227-9727" type="profile"/>
       </infoLinks>
@@ -411,7 +411,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c756-9c2d-beca-986c" name="Hunter Missile" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c756-9c2d-beca-986c" name="Hunter Missiles" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4720-5f91-f344-7081" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="fb86-30bf-d394-3417" name="Hunter Missiles" hidden="false" targetId="0e73-640e-36f0-bd90" type="profile"/>
@@ -1057,7 +1057,7 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="c0d6-cc28-d227-9727" name="Light Machinegun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="c0d6-cc28-d227-9727" name="Machinegun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
