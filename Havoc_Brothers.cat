@@ -1049,6 +1049,9 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a0b8-b727-eea3-72c3" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -1217,21 +1220,21 @@
           <selectionEntries>
             <selectionEntry id="8ec2-f93c-f26c-f283" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
-                <selectionEntryGroup id="d74d-ffbe-59a8-9788" name="Havoc Brothers" hidden="false" collective="false" import="true" defaultSelectionEntryId="ae42-d9d1-0e89-24fa">
+                <selectionEntryGroup id="d74d-ffbe-59a8-9788" name="Havoc Brothers" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08e7-13a5-9be3-37ce" type="min"/>
                     <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd99-2d06-bdab-33e1" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="ae42-d9d1-0e89-24fa" name="Havoc Support" hidden="false" collective="false" import="true" targetId="8e23-ff87-a242-818b" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5985-c751-82a2-af56" type="max"/>
-                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be41-9101-d5cf-20a9" type="min"/>
-                      </constraints>
-                    </entryLink>
                     <entryLink id="b136-0ecd-7803-59b8" name="Havoc Support Leader" hidden="false" collective="false" import="true" targetId="60e1-1114-1a82-7c3f" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e326-8719-54a7-b15b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="972c-47b8-135a-f143" name="Havoc Support Trooper" hidden="false" collective="false" import="true" targetId="8e23-ff87-a242-818b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e90a-02d7-3c27-f247" type="min"/>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a955-778b-f918-0414" type="max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -1259,6 +1262,9 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f207-0849-d7c5-0900" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -1316,16 +1322,11 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="df30-aebf-4ff2-9b11" name="Possessed Brother" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="c8b8-3bcb-7104-d46c" name="Possessed Brothers" hidden="false" targetId="08a6-0ea5-37ef-1c33" type="profile"/>
-        <infoLink id="762f-4281-4649-65d5" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-        <infoLink id="06cb-6b00-94a2-01e4" name="Mutations" hidden="false" targetId="15b4-82cd-ca9a-4b75" type="rule"/>
-      </infoLinks>
       <entryLinks>
-        <entryLink id="cae5-2d36-0fa7-6151" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
+        <entryLink id="cae5-2d36-0fa7-6151" name="2x Claws (A2)" hidden="false" collective="false" import="true" targetId="1794-6f9a-ce02-f261" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="becd-c590-8b90-d92c" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5820-1869-cbd3-2666" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="becd-c590-8b90-d92c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5820-1869-cbd3-2666" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1334,48 +1335,109 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="192d-9373-b723-1938" name="Possessed Brothers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fb44-9450-1a1d-9923" name="Possessed Brothers" hidden="false" targetId="08a6-0ea5-37ef-1c33" type="profile"/>
+        <infoLink id="3110-7d7f-f573-69f3" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="3f71-09ea-3fa9-295b" name="Mutations" hidden="false" targetId="15b4-82cd-ca9a-4b75" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="13ec-6cd6-ffcd-85ad" name="Disciple Upgrades" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="d8f4-b2bb-ea70-4f1a" name="Disciples of War - Furious" hidden="false" collective="false" import="true" targetId="9558-155f-0e94-f06b" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="0476-28ea-7829-42b1" name="Disciples of Change - Stealth" hidden="false" collective="false" import="true" targetId="7629-d874-3b78-b264" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="c21e-6144-c3c9-1cab" name="Disciples of Lust - Lust Speed" hidden="false" collective="false" import="true" targetId="1bd8-79e2-976e-dbc3" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="540b-72f2-fbba-5bfa" name="Disciples of Plague - Regeneration" hidden="false" collective="false" import="true" targetId="7bb7-1ed0-8260-6e07" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+        <selectionEntryGroup id="be47-4664-b356-2990" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="db96-09f9-06cb-14f2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6587-09c3-f7be-3b63" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b861-3658-568f-e18a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="db96-09f9-06cb-14f2" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="7114-051c-c1b1-9352" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="8959-cda4-69cf-ce9e" name="Wings" hidden="false" collective="false" import="true" targetId="bc96-ea1b-8867-06d4" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2efb-2228-2a47-13c8" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="2e69-2e6f-dc96-5514" name="Possessed Brother" hidden="false" collective="false" import="true" targetId="df30-aebf-4ff2-9b11" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af8e-e1fa-8ed1-e95e" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eb9-a9b8-b5d6-3854" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="1f79-40ab-80eb-9123" name="Disciples of Change - Stealth" hidden="false" collective="false" import="true" targetId="7629-d874-3b78-b264" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1174-87fc-a972-d1c9" name="Disciples of Plague - Regeneration" hidden="false" collective="false" import="true" targetId="7bb7-1ed0-8260-6e07" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0713-fab9-59c8-8f54" name="Disciples of War - Furious" hidden="false" collective="false" import="true" targetId="9558-155f-0e94-f06b" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ac99-32b8-60a1-ee85" name="Disciples of Lust - Lust Speed" hidden="false" collective="false" import="true" targetId="1bd8-79e2-976e-dbc3" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="9d24-5dd2-56a6-23a8" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="3adf-eeb3-c0c9-1814" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="bd27-6cd0-e603-908c" name="Wings" hidden="false" collective="false" import="true" targetId="bc96-ea1b-8867-06d4" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f3f-b99e-2ee0-9245" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="38d0-2530-87b2-faa8" name="Possessed Brother" hidden="false" collective="false" import="true" targetId="df30-aebf-4ff2-9b11" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f729-6d7a-f141-e249" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5733-d84d-15d7-feca" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="7498-cc49-639b-a725" name="Disciples of Change - Stealth" hidden="false" collective="false" import="true" targetId="7629-d874-3b78-b264" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b6c4-df7a-47a2-d30c" name="Disciples of Plague - Regeneration" hidden="false" collective="false" import="true" targetId="7bb7-1ed0-8260-6e07" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b0d2-36b4-c154-ae28" name="Disciples of War - Furious" hidden="false" collective="false" import="true" targetId="9558-155f-0e94-f06b" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="29ea-2de1-99b9-7c21" name="Disciples of Lust - Lust Speed" hidden="false" collective="false" import="true" targetId="1bd8-79e2-976e-dbc3" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="f609-f753-9ee4-ca2a" name="Possessed Brother" hidden="false" collective="false" import="true" targetId="df30-aebf-4ff2-9b11" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88b8-df6f-af71-b18d" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dbb-1c60-e0db-3d02" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="2704-89e0-2ab5-e021" name="Wings" hidden="false" collective="false" import="true" targetId="bc96-ea1b-8867-06d4" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="555e-1fd8-e83b-807e" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="215.0"/>
       </costs>
@@ -5095,7 +5157,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1bd8-79e2-976e-dbc3" name="Disciples of Lust - Lust Speed" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1bd8-79e2-976e-dbc3" name="Disciples of Lust (Lust Speed)" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -5106,6 +5168,13 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1543-0bab-1890-122d" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="c8ab-b2f9-3071-3fea" name="Disciples of Lust (Lust Speed)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Lust Speed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
         <infoLink id="9749-0aca-ceda-85e1" name="Lust Speed" hidden="false" targetId="19cc-3d95-d964-104c" type="rule"/>
       </infoLinks>
@@ -7343,6 +7412,16 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1794-6f9a-ce02-f261" name="2x Claws (A2)" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9324-c92a-cf65-33b0" name="2x Claws (A2)" hidden="false" targetId="7712-2bb5-0738-a115" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f1e4-41ac-bca2-91ee" name="2x Claws (A4)" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="03b2-138c-7496-f80e" name="2x Claws (A4)" hidden="false" targetId="1382-3ac2-ea19-9106" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a980-ff5d-be72-2597" name="Psychic Spells" page="" hidden="false" collective="false" import="true">
@@ -8510,6 +8589,18 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Repair, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7712-2bb5-0738-a115" name="2x Claws (A2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
+      </characteristics>
+    </profile>
+    <profile id="1382-3ac2-ea19-9106" name="2x Claws (A4)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
