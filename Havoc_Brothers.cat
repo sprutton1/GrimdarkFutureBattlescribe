@@ -227,6 +227,7 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="500f-dfa9-9668-2145" name="Dark Engineer" hidden="false" collective="false" import="true" targetId="cb49-f17d-bb16-6fc3" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2dd9-d655-8bcb-de91" name="Havoc Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -7641,6 +7642,41 @@
         <infoLink id="b46a-d25d-909c-f522" name="Havoc Tactics" hidden="false" targetId="bea6-3275-ebfb-9579" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="cb49-f17d-bb16-6fc3" name="Dark Engineer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="98ba-d0c1-1bb4-c73b" name="Dark Engineer" hidden="false" targetId="4973-1365-dbc5-b41d" type="profile"/>
+        <infoLink id="f2c9-d38e-f9d7-03da" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="4c45-e2d5-d41f-615e" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="1fab-d92d-7f20-83b8" name="Repair" hidden="false" targetId="45b5-dc1f-1582-da73" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="4b85-8bbb-5e14-e94f" name="Weapons - Havoc Heroes" hidden="false" collective="false" import="true" targetId="be92-5004-a020-9be7" type="selectionEntryGroup"/>
+        <entryLink id="8445-bde1-04b3-47d7" name="Upgrades - Havoc Heroes" hidden="false" collective="false" import="true" targetId="ced6-55ea-9cda-74b1" type="selectionEntryGroup"/>
+        <entryLink id="4b3b-10e3-e8fd-607b" name="Disciple of Change" hidden="false" collective="false" import="true" targetId="7629-d874-3b78-b264" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="7715-7852-0106-0c22" name="Disciple of War" hidden="false" collective="false" import="true" targetId="9558-155f-0e94-f06b" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="d185-0844-d988-6d25" name="Disciple of Plague" hidden="false" collective="false" import="true" targetId="7bb7-1ed0-8260-6e07" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="617a-4857-097a-b09f" name="Disciple of Lust" hidden="false" collective="false" import="true" targetId="3a98-2ab1-bdbc-4b40" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a980-ff5d-be72-2597" name="Spells" page="" hidden="false" collective="false" import="true">
@@ -7777,6 +7813,28 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup id="ba2c-0745-5821-7ff2" name="Assault Rifle Attachment:" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6022-eba7-296d-5648" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="d14c-07a8-72c3-ec87" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="22a9-a527-9bcd-910c" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4e3c-7efc-3511-4474" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="25f6-0985-2ad0-db0b" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="a1da-51ac-5a8f-8f95" type="selectionEntry">
@@ -7784,30 +7842,6 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b1f-9190-1906-c6ac" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="011f-995d-c93d-6e9c" type="min"/>
               </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="51b1-240f-6656-d63f" name="Assault Rifle Attachment:" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1090-b515-a0c2-f4c6" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="65eb-2e35-30ad-7216" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="0244-96db-3f42-2105" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="47d3-6d80-5c37-df59" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
         </selectionEntry>
@@ -8860,6 +8894,13 @@
     <profile id="bdba-abbb-09d7-e3ec" name="Havoc Tactics" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Havoc Tactics</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4973-1365-dbc5-b41d" name="Dark Engineer" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Repair, Tough(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
