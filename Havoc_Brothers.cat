@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f600-0926-eecd-eca5" name="Havoc Brothers" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f600-0926-eecd-eca5" name="Havoc Brothers" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication id="0087-62dd-65cd-178c" name="Havoc Brothers v2.4"/>
-    <publication id="a23a-0fd7-52cd-e3da" name="Havoc Brother Disciples v2.4"/>
+    <publication id="0087-62dd-65cd-178c" name="Havoc Brothers v2.7"/>
+    <publication id="a23a-0fd7-52cd-e3da" name="Havoc Brother Disciples v2.9"/>
   </publications>
   <entryLinks>
     <entryLink id="8484-86df-6565-cec5" name="Havoc Lord" hidden="false" collective="false" import="true" targetId="2dd9-d655-8bcb-de91" type="selectionEntry"/>
@@ -4587,7 +4587,6 @@
         <infoLink id="6a3d-1e04-b91c-d5c1" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
         <infoLink id="02be-0a9e-ba74-26d2" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="62f9-2529-61d7-1a81" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="0273-6000-306a-e862" name="Devourer" hidden="false" targetId="a1d7-6a3b-c335-0e72" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="3db8-0f84-da25-0595" name="2x Excruciating Cannons" hidden="false" collective="false" import="true" type="upgrade">
@@ -8246,38 +8245,53 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="15b4-82cd-ca9a-4b75" name="Mutations" hidden="false">
+    <rule id="15b4-82cd-ca9a-4b75" name="Mutations" publicationId="0087-62dd-65cd-178c" hidden="false">
       <description>When this unit fights in melee roll one die and apply one bonus:
     1-2: Unit gets AP(+1)
     3-4: Unit gets +1 attack
-    5-6: Unit gets Defense +1</description>
+    5-6: Enemies get -1 to hit</description>
     </rule>
-    <rule id="a1d7-6a3b-c335-0e72" name="Devourer" hidden="false">
-      <description>If this unit kills at least one model in melee it may immediately heal D3 wounds.</description>
+    <rule id="da3b-59fb-f1e1-d736" name="Blessing of War" publicationId="a23a-0fd7-52cd-e3da" hidden="false">
+      <description>The hero and his unit get +1 to rolls when fighting in melee.</description>
     </rule>
-    <rule id="da3b-59fb-f1e1-d736" name="Blessing of War" hidden="false">
-      <description>The hero and his unit get +1 to melee rolls.</description>
-    </rule>
-    <rule id="5ae9-914f-c02d-f46e" name="Blessing of Change" hidden="false">
-      <description>Enemies get -1 to shooting rolls when targeting the hero and his unit.</description>
+    <rule id="5ae9-914f-c02d-f46e" name="Blessing of Change" publicationId="a23a-0fd7-52cd-e3da" hidden="false">
+      <description>Enemies get -1 to their rolls when shooting against the hero and his unit.</description>
     </rule>
     <rule id="b31b-5b4b-dd56-3e88" name="Blessing of Lust" hidden="false">
-      <description>The hero and his unit move +1” on Advance and +2” on Rush/Charge actions.</description>
+      <description>The hero and his unit move +3” on Advance and +6” on Rush/Charge actions.</description>
     </rule>
-    <rule id="19cc-3d95-d964-104c" name="Lust Speed" hidden="false">
+    <rule id="19cc-3d95-d964-104c" name="Lust Speed" publicationId="a23a-0fd7-52cd-e3da" hidden="false">
       <description>This unit moves +3” on Advance and +6” on Rush/Charge actions.</description>
     </rule>
-    <rule id="6de6-5dcd-365f-5e11" name="Blessing of Plague" hidden="false">
-      <description>The hero and his unit get +1 to regeneration rolls.</description>
+    <rule id="6de6-5dcd-365f-5e11" name="Blessing of Plague" publicationId="a23a-0fd7-52cd-e3da" hidden="false">
+      <description>The hero and his unit get +1 to Regeneration rolls.</description>
     </rule>
-    <rule id="e144-8d0e-4c3d-a1bb" name="Reaper" hidden="false">
+    <rule id="e144-8d0e-4c3d-a1bb" name="Reaper" publicationId="a23a-0fd7-52cd-e3da" hidden="false">
       <description>When in melee you may choose to attack normally or instead only have 1 attack but gain the Deadly(3) special rule. This attack is boosted to Deadly(6) if used by the Greater Lord of Plague.</description>
     </rule>
-    <rule id="75bd-53dc-787a-019d" name="Ring the Bell" hidden="false">
+    <rule id="75bd-53dc-787a-019d" name="Ring the Bell" publicationId="a23a-0fd7-52cd-e3da" hidden="false">
       <description>The hero and his unit get the Fast special rule.</description>
     </rule>
-    <rule id="f0ec-3e05-f8a4-4133" name="Undead" hidden="false">
-      <description>Whenever this unit must take a morale test it is passed automatically. Then roll as many dice as models/tough in the unit, and for each result of 1 the unit immediately takes one wound (which can’t be regenerated).</description>
+    <rule id="f0ec-3e05-f8a4-4133" name="Undead" publicationId="a23a-0fd7-52cd-e3da" hidden="false">
+      <description>Whenever this unit must take a morale test it is passed automatically. Then roll as many dice as remaining models/tough in the unit, and for each result of 1 the unit immediately takes one wound, which can’t be regenerated.</description>
+    </rule>
+    <rule id="fd74-b6ed-f9c7-241c" name="Chosen Veteran" publicationId="0087-62dd-65cd-178c" hidden="false">
+      <description>This model gets +1 to its attack rolls for melee and shooting.	</description>
+    </rule>
+    <rule id="bea6-3275-ebfb-9579" name="Havoc Tactics" publicationId="0087-62dd-65cd-178c" hidden="false">
+      <description>The hero and his unit get +3&quot; range when shooting and +3&quot; range when using charge actions.</description>
+    </rule>
+    <rule id="45b5-dc1f-1582-da73" name="Repair" publicationId="0087-62dd-65cd-178c" hidden="false">
+      <description>Once per turn, if within 2&quot; of a unit with Tough, roll one die. On a 4+ you may repair 1 wound from the target.</description>
+    </rule>
+    <rule id="8c8e-7dc1-53fe-1e6a" name="War Chant" publicationId="0087-62dd-65cd-178c" hidden="false">
+      <description>The hero and his unit get Furious.</description>
+    </rule>
+    <rule id="2161-87ac-bc8b-f9e8" name="Frenzy" publicationId="a23a-0fd7-52cd-e3da" hidden="false">
+      <description>This model counts as having Furious but gets 2 extra attacks when charging (instead of just 1).</description>
+    </rule>
+    <rule id="4829-491f-37a2-3332" name="Musical Bliss" publicationId="a23a-0fd7-52cd-e3da" hidden="false">
+      <description>Enemy units get -1 to hit in melee when fighting this unit.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
