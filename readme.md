@@ -74,7 +74,7 @@ table!
 |Human Defense Force|v2.10|Done|
 |Human Inquisition|-|Not started|
 |Infected Colonies|v2.1|Done|
-|Machine Cult|v2.6|Done|
+|Machine Cult|v2.7|Done|
 |Mercenaries|-|Not started|
 |Orc Marauders|v2.9|Done|
 |Ratmen Clans|v2.3|Done|
