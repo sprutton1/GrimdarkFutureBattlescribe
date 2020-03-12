@@ -628,9 +628,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7597-295a-585a-8ab6" name="Cultist (Assault Rifle &amp; CCW (A1))" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="c86a-ec52-89fa-b079" name="Cultist" hidden="false" targetId="98e5-273c-c0a4-fb33" type="profile"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="f109-d86b-1537-9c57" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
@@ -650,9 +647,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1377-8bd1-82f0-4c0d" name="Cultist (Pistol &amp; CCW (A2))" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="f85c-9dc6-bca6-2670" name="Cultist" hidden="false" targetId="98e5-273c-c0a4-fb33" type="profile"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="11f6-b4d0-9a55-251d" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
           <constraints>
@@ -672,30 +666,36 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="a1e1-f577-17f0-090e" name="Cultist (Special Weapon)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="2bc3-ba91-bfda-fca9" name="Cultist" hidden="false" targetId="98e5-273c-c0a4-fb33" type="profile"/>
-      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d6de-7749-220b-3235" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a2da-f57d-75c1-de9a">
+        <selectionEntryGroup id="d6de-7749-220b-3235" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="075d-29d9-b8a2-fc02">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58ed-af84-4e8c-2c8a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4ee-4ebb-2cc2-7a2c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a20-dbf5-ba99-fa44" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="a2da-f57d-75c1-de9a" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebf3-d9a0-ba2f-9eac" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
             <entryLink id="61ee-9aea-7352-0ebd" name="Light Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b76d-9484-e5a0-5ab1" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="075d-29d9-b8a2-fc02" name="Shred Rifle" hidden="false" collective="false" import="true" targetId="fa7d-5662-869b-c879" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ac5b-8fee-1a98-065b" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1aee-8fb1-b644-8c80" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="77e0-0bbf-54ae-e813" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -714,9 +714,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="cd93-5048-2a39-72fa" name="Cultist (Shotgun)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="66cd-2965-0c84-6bba" name="Cultist" hidden="false" targetId="98e5-273c-c0a4-fb33" type="profile"/>
-      </infoLinks>
       <entryLinks>
         <entryLink id="37cd-8b73-2c06-212d" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
@@ -724,7 +721,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b230-191b-a0da-cd41" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="c487-b154-910b-feec" name="Shotgun" hidden="false" collective="false" import="true" targetId="9ee5-5c13-dfef-ff7c" type="selectionEntry">
+        <entryLink id="c487-b154-910b-feec" name="Shotgun" hidden="false" collective="false" import="true" targetId="88a0-d37d-8823-9c5c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa11-be73-44f6-0153" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a134-251f-2085-0a8f" type="min"/>
@@ -736,58 +733,131 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f22b-0d46-0c21-c4bc" name="Cultists" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d634-49ea-4413-1161" name="Cultist" hidden="false" targetId="98e5-273c-c0a4-fb33" type="profile"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2e1f-0bae-3d36-89a5" name="Cultists" hidden="false" collective="false" import="true" defaultSelectionEntryId="2bac-5f00-e13d-feb5">
+        <selectionEntryGroup id="f3f4-de6f-c1e3-18db" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="5e42-46c2-f155-1215">
           <constraints>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9698-0071-da6d-9d44" type="max"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51c5-37ff-027e-dbd3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc85-8840-fd05-23ef" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="958b-77a3-c977-d867" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="2bac-5f00-e13d-feb5" name="Cultist (Assault Rifle &amp; CCW (A1))" hidden="false" collective="false" import="true" targetId="7597-295a-585a-8ab6" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f85-c839-0a38-df83" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="6866-ac30-1ab8-5a6a" name="Cultist (Pistol &amp; CCW (A2))" hidden="false" collective="false" import="true" targetId="1377-8bd1-82f0-4c0d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dfb-79b9-85b4-2cc3" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="e27b-d0dd-dd5b-e7ae" name="Cultist (Shotgun)" hidden="false" collective="false" import="true" targetId="cd93-5048-2a39-72fa" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8141-0393-b43b-68a0" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="6f49-c7a3-97a8-f828" name="Cultist (Special Weapon)" hidden="false" collective="false" import="true" targetId="a1e1-f577-17f0-090e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a76d-ae37-aeb4-fadd" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="8871-8600-1841-72ae" name="Disciple Upgrades" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="a708-e6e2-c7c7-792d" name="Disciples of War - Furious" hidden="false" collective="false" import="true" targetId="9558-155f-0e94-f06b" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="5e42-46c2-f155-1215" name="Single Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="0147-b8e0-b146-c235" name="Cultists" hidden="false" collective="false" import="true" defaultSelectionEntryId="42f4-ea11-0b86-3e99">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2c9-ee1a-7976-7166" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c8c-bef8-d8e3-09c3" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="42f4-ea11-0b86-3e99" name="Cultist (Assault Rifle &amp; CCW (A1))" hidden="false" collective="false" import="true" targetId="7597-295a-585a-8ab6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6000-0cd5-cca9-617e" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="111a-2cdf-0c67-9e0f" name="Cultist (Pistol &amp; CCW (A2))" hidden="false" collective="false" import="true" targetId="1377-8bd1-82f0-4c0d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0ea-e1f1-01cc-7209" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="514f-cf75-16ff-bda3" name="Cultist (Shotgun)" hidden="false" collective="false" import="true" targetId="cd93-5048-2a39-72fa" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f96a-f809-2a3f-239b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="7ab4-cba6-2988-4043" name="Cultist (Special Weapon)" hidden="false" collective="false" import="true" targetId="a1e1-f577-17f0-090e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc69-72ac-c002-d69f" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="2ef9-ea04-c412-87a4" name="Disciples of Change - Stealth" hidden="false" collective="false" import="true" targetId="7629-d874-3b78-b264" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1234-9be5-a774-6054" name="Disciples of Lust - Fast" hidden="false" collective="false" import="true" targetId="3a98-2ab1-bdbc-4b40" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="85a9-02ad-3274-2de8" name="Disciples of Plague - Regeneration" hidden="false" collective="false" import="true" targetId="7bb7-1ed0-8260-6e07" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0b92-70f7-d0ff-1aab" name="Disciples of War - Furious" hidden="false" collective="false" import="true" targetId="9558-155f-0e94-f06b" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
               </costs>
-            </entryLink>
-            <entryLink id="def3-be61-3f94-384b" name="Disciples of Change - Stealth" hidden="false" collective="false" import="true" targetId="7629-d874-3b78-b264" type="selectionEntry">
+            </selectionEntry>
+            <selectionEntry id="18a0-6a6c-7fab-b910" name="Combined Unit [20 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="f836-c479-07a6-6401" name="Cultists" hidden="false" collective="false" import="true" defaultSelectionEntryId="b650-b301-f280-5a23">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bce0-4dca-4457-eb22" type="max"/>
+                    <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e90d-2f32-321d-a0d1" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="b650-b301-f280-5a23" name="Cultist (Assault Rifle &amp; CCW (A1))" hidden="false" collective="false" import="true" targetId="7597-295a-585a-8ab6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="631b-4cec-762b-2c22" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="798c-a70b-3041-3763" name="Cultist (Pistol &amp; CCW (A2))" hidden="false" collective="false" import="true" targetId="1377-8bd1-82f0-4c0d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59ad-c209-f200-815a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="fb88-6ca2-2c07-de14" name="Cultist (Shotgun)" hidden="false" collective="false" import="true" targetId="cd93-5048-2a39-72fa" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df9b-d0c9-e5d7-a44d" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="983b-4045-07c7-e0d9" name="Cultist (Special Weapon)" hidden="false" collective="false" import="true" targetId="a1e1-f577-17f0-090e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb2a-0894-60a9-3fdc" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="2f01-b8e9-2bc4-d9d5" name="Disciples of Change - Stealth" hidden="false" collective="false" import="true" targetId="7629-d874-3b78-b264" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="101a-d800-eaf7-143e" name="Disciples of Lust - Fast" hidden="false" collective="false" import="true" targetId="3a98-2ab1-bdbc-4b40" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="eb87-e995-22a2-eb87" name="Disciples of Plague - Regeneration" hidden="false" collective="false" import="true" targetId="7bb7-1ed0-8260-6e07" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3a59-c85a-8576-54dd" name="Disciples of War - Furious" hidden="false" collective="false" import="true" targetId="9558-155f-0e94-f06b" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
               </costs>
-            </entryLink>
-            <entryLink id="0ca7-58f6-acbe-aa1c" name="Disciples of Lust - Fast" hidden="false" collective="false" import="true" targetId="3a98-2ab1-bdbc-4b40" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="0241-4dfa-c1ba-8d1e" name="Disciples of Plague - Regeneration" hidden="false" collective="false" import="true" targetId="7bb7-1ed0-8260-6e07" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -7365,6 +7435,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7340-66e5-babf-aa18" name="War Chant" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -7372,12 +7445,18 @@
         <infoLink id="0680-cc92-e10c-a269" name="War Chant" hidden="false" targetId="8c8e-7dc1-53fe-1e6a" type="rule"/>
         <infoLink id="50bd-a2c4-bbad-7dde" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1919-76b5-227f-fa95" name="Havoc Tactics" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3366-568f-f55d-224c" name="Havoc Tactics" hidden="false" targetId="bdba-abbb-09d7-e3ec" type="profile"/>
         <infoLink id="b46a-d25d-909c-f522" name="Havoc Tactics" hidden="false" targetId="bea6-3275-ebfb-9579" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="cb49-f17d-bb16-6fc3" name="Dark Engineer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -7412,6 +7491,14 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="88a0-d37d-8823-9c5c" name="Shotgun" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="241e-2057-df15-464f" name="Shotgun" hidden="false" targetId="60a3-2b87-f77c-195c" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -7518,6 +7605,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="3224-9147-7f25-c784" name="Pistol/Twin Assault Rifle &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
           <selectionEntryGroups>
@@ -7565,6 +7655,9 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
