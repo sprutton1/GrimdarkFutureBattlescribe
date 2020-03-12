@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f7a8-d03f-df7c-b59a" name="Machine Cult" revision="7" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f7a8-d03f-df7c-b59a" name="Machine Cult" revision="8" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cb69-15a9-bc41-d80c" name="Machine Cult v2.6"/>
   </publications>
@@ -1469,13 +1469,16 @@
           <selectionEntries>
             <selectionEntry id="31b3-72b0-0580-ef80" name="2x Energy Fists" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="4c22-9048-6c0d-ec02" name="Energy Fist" hidden="false" collective="false" import="true" targetId="ffff-7bb4-119c-0f59" type="selectionEntry">
+                <entryLink id="4c22-9048-6c0d-ec02" name="Energy Fist (Robot)" hidden="false" collective="false" import="true" targetId="7565-9457-84ec-fff6" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b35a-0aaf-840b-997a" type="min"/>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a577-18f6-c4d5-da50" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -2113,24 +2116,36 @@
         <infoLink id="9b42-e532-6ac4-5611" name="Anti-Charge System" hidden="false" targetId="faf2-2a85-1f02-5259" type="profile"/>
         <infoLink id="df55-d270-c20e-1420" name="Anti-Charge System" hidden="false" targetId="b379-4a31-7293-472f" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="47c5-c8e3-6ea6-4fe1" name="Repair Arm" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f00e-51cb-c5d6-7648" name="Repair Arm" hidden="false" targetId="2395-488e-10e2-f9a6" type="profile"/>
         <infoLink id="9e61-5729-bfec-e84e" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="05b7-635e-9186-c91d" name="Stomp" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="95fc-21c2-6fe9-c446" name="Stomp" hidden="false" targetId="d181-58a3-91fa-5aaf" type="profile"/>
         <infoLink id="cd76-f52e-efac-fd31" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="66d3-842b-d193-f1f8" name="Mechanic" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3453-1f10-28c4-1409" name="Mechanic" hidden="false" targetId="39bf-7612-b1b9-3853" type="profile"/>
         <infoLink id="33d4-e3ea-d8a2-20a3" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="14b5-32f2-fa4d-2f48" name="Iron Walker" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -2167,6 +2182,12 @@
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="245.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="7565-9457-84ec-fff6" name="Energy Fist (Robot)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="db97-ba47-a2a1-6a74" name="Energy Fist (Robot)" hidden="false" targetId="c12a-3d09-ef6f-36f2" type="profile"/>
+        <infoLink id="b754-fefd-1f8d-350d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2940,6 +2961,12 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fear, Strider, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c12a-3d09-ef6f-36f2" name="Energy Fist (Robot)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
