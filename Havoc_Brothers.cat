@@ -3757,40 +3757,22 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7e17-5a1e-78ae-28a6" name="Sorceror of Change" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7e17-5a1e-78ae-28a6" name="Sorcerer of Change" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a7ae-382b-084b-c32d" name="Sorceror of Change" hidden="false" targetId="fe3b-7299-3b9f-befd" type="profile"/>
         <infoLink id="a80c-3bf3-ebb8-a2cb" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="1b8c-d615-82fe-aee5" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
-        <infoLink id="382b-8365-697c-29da" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="add8-45d4-90ad-04e5" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
         <infoLink id="095e-a977-d2b1-a9dc" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="f75c-de24-4d72-d6b9" name="Disc of Change" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94da-5e02-43bc-0cb3" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="9258-a42a-7d2b-a5d0" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-            <infoLink id="9a1e-502e-b2dc-4519" name="Disc of Change" hidden="false" targetId="ba23-12fe-0f2e-286c" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6cfe-418d-e53d-7ea6" name="Psychic" hidden="false" collective="false" import="true" defaultSelectionEntryId="4333-6bf4-2777-543b">
+        <selectionEntryGroup id="6cfe-418d-e53d-7ea6" name="Psychic(X)" hidden="false" collective="false" import="true" defaultSelectionEntryId="4333-6bf4-2777-543b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5124-ce0e-ee59-6959" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="537e-9155-cd1f-3aaf" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="4333-6bf4-2777-543b" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb89-e45d-3f91-e0c2" type="max"/>
-              </constraints>
               <infoLinks>
                 <infoLink id="7d5d-22c8-42f2-096c" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
               </infoLinks>
@@ -3799,36 +3781,37 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="bb7c-ba0a-84d5-d4b6" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7f3-42ba-9718-780e" type="max"/>
-              </constraints>
               <infoLinks>
                 <infoLink id="545a-c3f5-b838-e792" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="4b30-9933-75fe-7b82" name="Show Spells" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2853-d74f-1789-c682" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="182f-99ab-f50f-ae48" name="Change Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="cf6b-c8e5-e35e-3a11" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="9e08-4ca2-15c9-dffd" name="Spells" hidden="false" collective="false" import="true" targetId="a980-ff5d-be72-2597" type="selectionEntryGroup"/>
-        <entryLink id="8eee-9dc4-a8f3-1a36" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+        <entryLink id="6913-5fbb-ce70-ef19" name="Disc of Change" hidden="false" collective="false" import="true" targetId="0019-22fc-f668-0735" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9cc-6031-adbc-1b16" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5953-46bd-8d37-3717" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d17f-226b-575f-b38a" type="max"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+          </costs>
         </entryLink>
-        <entryLink id="745c-adde-4cb5-9525" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa8c-1494-c619-16ce" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3337-c5dd-3266-9a93" type="min"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="2c1d-9c37-a88f-c893" name="Weapons - Havoc Leaders" hidden="false" collective="false" import="true" targetId="be92-5004-a020-9be7" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="125.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0e88-0caf-8cdf-d501" name="Change Brother" hidden="false" collective="false" import="true" type="upgrade">
@@ -6901,6 +6884,14 @@
         <infoLink id="da54-f493-8140-3971" name="Blessing of Change" hidden="false" targetId="dacf-039c-1034-4979" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="0019-22fc-f668-0735" name="Disc of Change" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="72e8-b110-bba1-dc74" name="Disc of Change" hidden="false" targetId="ba23-12fe-0f2e-286c" type="profile"/>
+        <infoLink id="095b-382c-51d0-3483" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="f665-0fc7-a997-d69e" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="c72d-b2d6-4f71-7dc8" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a980-ff5d-be72-2597" name="Psychic Spells" page="" hidden="false" collective="false" import="true">
@@ -7057,6 +7048,7 @@
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0150-a927-b899-53e0" type="notInstanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e17-5a1e-78ae-28a6" type="notInstanceOf"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -7668,11 +7660,11 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Stealth, Tough(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="fe3b-7299-3b9f-befd" name="Sorceror of Change" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="fe3b-7299-3b9f-befd" name="Sorcerer of Change" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Hero, Stealth, Psychic(x),  Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Stealth, Psychic(1),  Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="cd09-a483-d3a3-ee94" name="Change Brother" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -7698,7 +7690,7 @@
     </profile>
     <profile id="ba23-12fe-0f2e-286c" name="Disc of Change" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Strider</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Fast, Strider, Impact(1)</characteristic>
       </characteristics>
     </profile>
     <profile id="7095-40b7-8969-bed4" name="Hand Flamethrower" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
