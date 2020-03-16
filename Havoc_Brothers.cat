@@ -246,6 +246,15 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="29e5-84b1-5b3a-80f3" name="Greater Lord of Change" hidden="false" collective="false" import="true" targetId="04f9-2d2a-286d-5928" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce70-f4cd-47d9-9c4d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2dd9-d655-8bcb-de91" name="Havoc Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -7096,6 +7105,43 @@
         <infoLink id="f75c-39d6-4084-de28" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="04f9-2d2a-286d-5928" name="Greater Lord of Change" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a57a-7c3e-c8ac-05d3" name="Greater Lord of Change" hidden="false" targetId="438d-c4a4-491b-4e36" type="profile"/>
+        <infoLink id="bb28-6ad6-579c-855f" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
+        <infoLink id="7b66-7b83-f432-cfc0" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="45a3-cb3a-c275-c615" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+        <infoLink id="6cce-3554-b23c-9077" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+        <infoLink id="7027-a778-1daf-637b" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c2e7-58ec-fe77-dc19" name="Show Spells" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f34d-3ab5-3e0c-5c02" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="08fb-3711-4a17-c2f7" name="Change Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="cf6b-c8e5-e35e-3a11" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="86cc-d05d-15f9-fb5a" name="Titanic Volgue" hidden="false" collective="false" import="true" targetId="c878-ed7e-5537-0457" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c293-0f70-2d9e-aed0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01dd-45f5-cf60-c831" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="575.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c878-ed7e-5537-0457" name="Titanic Volgue" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0771-737e-fb2d-debd" name="Titanic Volgue" hidden="false" targetId="cb3a-0148-e408-7669" type="profile"/>
+        <infoLink id="7844-c10a-1905-a93f" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a980-ff5d-be72-2597" name="Psychic Spells" page="" hidden="false" collective="false" import="true">
@@ -8415,6 +8461,19 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="438d-c4a4-491b-4e36" name="Greater Lord of Change" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">2+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Flying, Hero, Psychic(3), Stealth, Tough(12)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cb3a-0148-e408-7669" name="Titanic Volgue" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A8</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
