@@ -255,6 +255,15 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="f8bf-b725-e7fe-3684" name="Birdman Sorcerer" hidden="false" collective="false" import="true" targetId="03b7-c6c6-4522-8761" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce70-f4cd-47d9-9c4d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2dd9-d655-8bcb-de91" name="Havoc Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -6892,6 +6901,74 @@
         <infoLink id="c72d-b2d6-4f71-7dc8" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="66a3-24ca-13c8-b9ec" name="Hexed Staff" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a147-b3ac-5617-3401" name="Hexed Staff" hidden="false" targetId="9fe2-559c-1843-a72c" type="profile"/>
+        <infoLink id="ccc7-6550-c22d-0273" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="03b7-c6c6-4522-8761" name="Birdman Sorcerer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9b65-9a7f-54b4-deaa" name="Birdman Sorcerer" hidden="false" targetId="ee52-d6b1-ecc8-4439" type="profile"/>
+        <infoLink id="44e7-76d2-c2a3-11df" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="3f11-d51a-fa89-a30a" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="025d-d605-a32f-0523" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+        <infoLink id="a70b-ab6c-a88b-6fe7" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="70d9-07ec-03f4-1612" name="Psychic(X)" hidden="false" collective="false" import="true" defaultSelectionEntryId="0bee-16b7-4e9e-6aef">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="182f-6d79-bc19-9e73" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7ac-fdc6-d0b5-fc9e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0bee-16b7-4e9e-6aef" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="7b60-9983-0a74-7ff5" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a22c-119e-5a7a-b2e0" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="b44a-e0fd-2dea-4fd7" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="525d-3dd5-990a-f441" name="Show Spells" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26e1-cb38-143c-6654" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="153b-4ded-70d1-98f5" name="Change Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="cf6b-c8e5-e35e-3a11" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="34f1-d9bc-cb94-2f36" name="Disc of Change" hidden="false" collective="false" import="true" targetId="0019-22fc-f668-0735" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35e8-7dd1-6220-ffff" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="c801-205f-308e-3ccf" name="Hexed Staff" hidden="false" collective="false" import="true" targetId="66a3-24ca-13c8-b9ec" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="566b-d76c-1fad-a435" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8693-960a-849b-e400" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a980-ff5d-be72-2597" name="Psychic Spells" page="" hidden="false" collective="false" import="true">
@@ -8239,6 +8316,19 @@
     <profile id="dacf-039c-1034-4979" name="Blessing of Change" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Enemies get -1 to their rolls when shooting against the hero and his unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ee52-d6b1-ecc8-4439" name="Birdman Sorcerer" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Stealth, Psychic(1), Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9fe2-559c-1843-a72c" name="Hexed Staff" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
