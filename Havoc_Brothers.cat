@@ -264,6 +264,15 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="a472-8823-f4a5-bf99" name="Birdmen Disc Riders" hidden="false" collective="false" import="true" targetId="212f-7403-b14a-68a6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce70-f4cd-47d9-9c4d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2dd9-d655-8bcb-de91" name="Havoc Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -7174,6 +7183,189 @@
         <infoLink id="289b-f568-4c2b-5564" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="212f-7403-b14a-68a6" name="Birdmen Disc Riders" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cff5-5a4c-2c55-31e0" name="Birdman Disc Rider" hidden="false" targetId="fef2-f1d3-a9ac-15e6" type="profile"/>
+        <infoLink id="4465-aaa4-8b60-8270" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="3072-bcfd-b30b-c8d8" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="7a2b-4beb-cf6c-ba38" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+        <infoLink id="315d-f57d-f0b1-7870" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ada1-4085-1e95-a327" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="dc5c-255c-91e9-2809">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="148b-f46f-1548-db7a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4702-edd4-5dc9-5e70" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dc5c-255c-91e9-2809" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="3fcd-7a64-0167-b32f" name="Weapon Option" hidden="false" collective="false" import="true" defaultSelectionEntryId="5c3f-4c18-8db9-cc66">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb2f-f4b7-8614-f93e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fcc-a166-90e8-196a" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="5c3f-4c18-8db9-cc66" name="Pistol &amp; CCW(A2)" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="c51d-94a2-1fc2-bce3" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b15-4a2e-b56d-bbe2" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d26a-c3da-229b-a580" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="135e-8047-bb47-a8f4" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaa2-3d9b-e7a7-9aeb" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27f3-2972-78ed-4133" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry id="14a4-10d2-df15-ee5e" name="2x CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="7a69-14e8-b840-a315" name="2x CCWs (A2)" hidden="false" collective="false" import="true" targetId="96b2-7d8b-a2b9-aa9e" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7446-f14a-2923-d865" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e0c-fc1f-9421-4110" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="d1d4-dfd8-63b3-602c" name="Hexed Spears" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="2f31-2fcd-3075-8d5b" name="Hexed Spear" hidden="false" collective="false" import="true" targetId="b45d-280e-aa5f-5c81" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9043-e2d0-125d-e0c9" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6abf-ea2e-257e-1691" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="0c08-66fa-b3a4-e379" name="Hexed Bows &amp; CCW(A1)" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="9ae4-0216-471d-9122" name="Hexed Bow" hidden="false" collective="false" import="true" targetId="daad-8c9a-9f5e-7ccf" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e94b-d50b-da83-a98f" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08f5-630d-060a-f7a2" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="4b99-085a-b8c7-aaa5" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0e4-8dee-5778-cd48" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57c8-6eaf-9573-7c98" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="1b21-49a4-ed4d-cb05" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="680e-b2c6-a589-f062" name="Weapon Option" hidden="false" collective="false" import="true" defaultSelectionEntryId="4244-f372-b07b-c0e6">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bd6-f9ff-fa74-50b9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9525-217c-14bb-d63a" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="4244-f372-b07b-c0e6" name="Pistol &amp; CCW(A2)" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="8a3c-958c-c7a6-8e0a" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6962-409b-420e-96d2" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b95a-9bd4-6813-92cd" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="01d5-36b5-0d1e-70c2" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d6b-69bc-9cb4-c6fb" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf17-0153-3c46-534d" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry id="1797-9140-e551-360e" name="2x CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="7019-0e95-d310-4909" name="2x CCWs (A2)" hidden="false" collective="false" import="true" targetId="96b2-7d8b-a2b9-aa9e" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfd5-4bfe-7d35-e77b" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="667c-7d38-01fa-dda8" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="4c02-dc66-bdff-e8dd" name="Hexed Spears" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="51c1-a353-8b7b-0abc" name="Hexed Spear" hidden="false" collective="false" import="true" targetId="b45d-280e-aa5f-5c81" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76f4-8d5c-ed1c-0025" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae17-21ab-377b-ebc8" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="3f56-c9eb-967e-ea0a" name="Hexed Bows &amp; CCW(A1)" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="f8a3-bce1-cee2-f645" name="Hexed Bow" hidden="false" collective="false" import="true" targetId="daad-8c9a-9f5e-7ccf" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c4e-9fea-9768-a41c" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b56e-62e9-dd41-81cc" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="c424-c1a1-c45f-0522" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="754d-5897-82bc-2388" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b776-c3ca-a584-d1af" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b45d-280e-aa5f-5c81" name="Hexed Spear" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="20e6-daad-e35d-9e59" name="Hexed Spear" hidden="false" targetId="cedc-9687-d0a2-73f0" type="profile"/>
+        <infoLink id="e551-4f4e-3c6f-82d8" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="daad-8c9a-9f5e-7ccf" name="Hexed Bow" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c5e4-8ea4-4e33-2882" name="Hexed Bow" hidden="false" targetId="f6b9-e5c0-ab40-bcbb" type="profile"/>
+        <infoLink id="81b1-38bd-74e8-bdd8" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a980-ff5d-be72-2597" name="Psychic Spells" page="" hidden="false" collective="false" import="true">
@@ -8554,6 +8746,26 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fef2-f1d3-a9ac-15e6" name="Birdman Disc Rider" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(1), Stealth, Strider</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cedc-9687-d0a2-73f0" name="Hexed Spear" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Impact(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f6b9-e5c0-ab40-bcbb" name="Hexed Bow" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
