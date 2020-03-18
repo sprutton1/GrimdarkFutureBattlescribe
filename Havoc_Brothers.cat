@@ -6137,43 +6137,60 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="570.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3310-d07e-b98c-23e6" name="Plague Bodyguard Destroyer" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="fb0e-e2e3-ba76-22c9" name="Plague Bodyguard Destroyer" hidden="false" targetId="35b3-81d4-a4e8-71bd" type="profile"/>
-        <infoLink id="dbae-a530-d3cf-2be5" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="ffdd-ba07-575c-10d3" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
-        <infoLink id="2faf-86e4-726d-bf0d" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="1804-934b-2388-eb71" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="5536-774a-81ca-0c72" name="Reaper Scythe" hidden="false" collective="false" import="true" targetId="e521-53ed-ca90-ee51" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b947-394c-799f-09a6" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1390-6828-5dff-b052" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="6b06-10b5-2572-58bd" name="Poison Gauntlet" hidden="false" collective="false" import="true" targetId="10f1-2c6d-9eee-523a" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad6c-3d7b-fee8-31e7" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d566-c64c-c745-389f" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="226f-8fc0-a9bb-ca29" name="Plague Bodyguard Destroyers" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="472f-826a-2e06-dc11" name="Plague Bodyguard Destroyer" hidden="false" collective="false" import="true" targetId="3310-d07e-b98c-23e6" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="3649-b68b-fc6a-3e81" name="Plague Bodyguard Destroyer" hidden="false" targetId="35b3-81d4-a4e8-71bd" type="profile"/>
+        <infoLink id="4200-6f16-3e11-e44e" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="3ccb-1c22-1491-f22b" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="1907-74be-98ee-e217" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="42b9-6828-32b2-88a8" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf15-f889-4f83-2450">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b708-2e2a-6990-6981" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bcc-2606-df23-28c4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdd8-423f-977a-d022" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6ee-342f-6f81-9792" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="bf15-f889-4f83-2450" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="e5df-2557-32d9-429c" name="Poison Gauntlet" hidden="false" collective="false" import="true" targetId="10f1-2c6d-9eee-523a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b54c-6030-d05a-8d15" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d1a-cdfd-8aed-e2f3" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="fe97-24bc-b0c5-a632" name="Reaper Scythe" hidden="false" collective="false" import="true" targetId="e521-53ed-ca90-ee51" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fd9-feba-a39e-3dd5" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2032-df5e-1db8-a0f0" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="0746-8f65-6488-75f2" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="c72d-83ec-000b-f278" name="Poison Gauntlet" hidden="false" collective="false" import="true" targetId="10f1-2c6d-9eee-523a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f023-3f30-b59d-0367" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cb7-7d41-9cac-ff54" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="66f1-6909-4b7a-e65e" name="Reaper Scythe" hidden="false" collective="false" import="true" targetId="e521-53ed-ca90-ee51" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8593-886b-47fe-e72b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bad4-efd9-25b4-f8b1" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="355.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="425.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="355.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ab98-cbb5-b254-0f2b" name="Plague Hauler" hidden="false" collective="false" import="true" type="upgrade">
@@ -8212,7 +8229,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fearless, Regeneration, Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Regeneration, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="2cc2-8474-e137-8f63" name="Plague Hauler" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
