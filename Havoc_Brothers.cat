@@ -282,6 +282,15 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="8c24-a8d4-e9cf-fa80" name="Endless Brothers" hidden="false" collective="false" import="true" targetId="05cd-2d35-70d3-1bf6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e00c-c91c-a81d-92d6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2dd9-d655-8bcb-de91" name="Havoc Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -6997,6 +7006,66 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="210.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="05cd-2d35-70d3-1bf6" name="Endless Brothers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e8a8-a401-5911-602f" name="Endless Brother" hidden="false" targetId="8ed8-6eff-a1c0-e8cf" type="profile"/>
+        <infoLink id="b28b-8ef9-bbf0-a9d8" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="f983-2479-8fd2-7fcb" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b6ad-bf8f-6c5c-c828" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="f828-61f3-48e4-af28">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f951-1129-8ec5-4738" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4461-1329-09ac-d95c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f828-61f3-48e4-af28" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="30fb-8885-4270-66dc" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c253-220e-bf41-a4f4" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b359-50ec-d1e5-265f" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="9aba-300b-4ac6-5332" name="Assault Carbine" hidden="false" collective="false" import="true" targetId="8e0e-19cb-9a28-d061" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea30-8d0d-b999-1f6e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44d9-c807-ee18-f662" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="59b5-e806-e42c-56b0" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="05b8-036f-a131-fdd1" name="Assault Carbine" hidden="false" collective="false" import="true" targetId="8e0e-19cb-9a28-d061" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be62-f400-45a0-6291" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abd9-b09a-5434-1abd" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="3a28-e1ea-a5db-fa35" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d08-a1b0-7be7-097a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9f6-ecf3-cab4-2d95" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="210.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="210.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e0e-19cb-9a28-d061" name="Assault Carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dc36-cb01-89c9-9618" name="Assault Carbine" hidden="false" targetId="cc1c-3c4a-cb25-a75e" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a980-ff5d-be72-2597" name="Psychic Spells" page="" hidden="false" collective="false" import="true">
@@ -8471,6 +8540,20 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Musical Bliss</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8ed8-6eff-a1c0-e8cf" name="Endless Brother" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Relentless</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cc1c-3c4a-cb25-a75e" name="Assault Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
