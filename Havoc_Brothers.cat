@@ -5532,12 +5532,20 @@
         <infoLink id="e449-83d6-7570-42c5" name="Plague Psychic" hidden="false" targetId="5300-8aa2-0bd0-6c60" type="profile"/>
         <infoLink id="1d37-c6fd-deef-d349" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="59ff-eca0-e740-f76f" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
-        <infoLink id="3420-c264-7b96-c8cd" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="d7b3-f891-f324-395f" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
         <infoLink id="2c42-73b8-b81a-4146" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="114a-ffc3-cff6-ab68" name="Show Spells" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab7c-b8a2-2601-3646" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3611-2127-11eb-e238" name="Psychic Spells - Disciples of Plague" hidden="false" collective="false" import="true" targetId="4b4f-08a4-e8e8-a7f8" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6597-aa43-264c-ae51" name="Spells" hidden="false" collective="false" import="true" targetId="a980-ff5d-be72-2597" type="selectionEntryGroup"/>
         <entryLink id="a2e3-22b5-97d1-c0d6" name="Plague Staff" hidden="false" collective="false" import="true" targetId="44ae-50af-550f-6c25" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="056d-60a1-ea28-d5f0" type="max"/>
@@ -5552,7 +5560,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="135.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="44ae-50af-550f-6c25" name="Plague Staff" hidden="false" collective="false" import="true" type="upgrade">
@@ -8349,7 +8357,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Hero, Regeneration, Tough(3), Psychic(1)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Regeneration, Tough(3), Psychic(1)</characteristic>
       </characteristics>
     </profile>
     <profile id="be9b-4c51-40fd-29ff" name="Plague Bringer" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
