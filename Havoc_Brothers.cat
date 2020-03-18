@@ -273,6 +273,15 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="e457-0605-6231-c19f" name="Agony Brothers" hidden="false" collective="false" import="true" targetId="e1de-93f6-cba3-bb97" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e00c-c91c-a81d-92d6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2dd9-d655-8bcb-de91" name="Havoc Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -6945,6 +6954,49 @@
         <infoLink id="8b1c-b074-8c18-de4c" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="e1de-93f6-cba3-bb97" name="Agony Brothers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0265-50f1-c583-f811" name="Agony Brother" hidden="false" targetId="8274-71ff-7eb9-10e9" type="profile"/>
+        <infoLink id="9dd9-986c-b34d-265f" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="5774-43d3-287d-2237" name="Musical Bliss" hidden="false" targetId="4829-491f-37a2-3332" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c995-b6a2-d211-1013" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="229f-2586-d70b-8dc4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57f9-890d-ba4f-0608" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbc6-3eb2-513e-2717" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="229f-2586-d70b-8dc4" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="4f58-fec9-0b6b-829d" name="2x CCWs (A2)" hidden="false" collective="false" import="true" targetId="96b2-7d8b-a2b9-aa9e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="506f-1308-d279-4d5e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09f6-7ce5-39b1-0f69" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="c4ce-6305-6801-a50c" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="4fb1-4254-5774-6c8a" name="2x CCWs (A2)" hidden="false" collective="false" import="true" targetId="96b2-7d8b-a2b9-aa9e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e90-6cfd-1f54-ee46" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d66-423f-4764-e525" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="210.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="210.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a980-ff5d-be72-2597" name="Psychic Spells" page="" hidden="false" collective="false" import="true">
@@ -8412,6 +8464,13 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8274-71ff-7eb9-10e9" name="Agony Brother" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Musical Bliss</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
