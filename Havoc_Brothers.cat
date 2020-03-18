@@ -5191,7 +5191,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5e03-e62d-94df-1894" name="Bloat-Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5e03-e62d-94df-1894" name="2x Bloat-Cannons" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="df1b-74aa-20d7-78f7" name="Bloat-Cannon" hidden="false" targetId="38f3-bece-473f-c5d2" type="profile"/>
         <infoLink id="8c4a-c4fd-00a4-3b22" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
@@ -6283,65 +6283,40 @@
         <infoLink id="4509-3ac4-ff8b-da8b" name="Mortar Tank" hidden="false" targetId="e03c-3f74-0fcb-9548" type="profile"/>
         <infoLink id="bc99-875b-7781-8fce" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="e998-bfe0-0258-14d1" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
-        <infoLink id="dbe7-6231-0729-ef52" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="f9e8-1017-87f1-9f6d" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
         <infoLink id="de4f-7aab-3474-57cf" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c109-bb2b-cdb5-2f21" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d4f-e661-3ec1-fcc4">
+        <selectionEntryGroup id="c109-bb2b-cdb5-2f21" name="Weapon - Pintle Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d4f-e661-3ec1-fcc4">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d03-21e6-9c10-f2f2" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed1d-f43b-ab73-2e0e" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9d4f-e661-3ec1-fcc4" name="Light Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9469-1fe9-77fe-4f6f" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="efb7-2d41-e78b-2857" name="Rot Machinegun" hidden="false" collective="false" import="true" targetId="1c71-e5d6-71e5-4c27" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9557-56da-0084-3282" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="9d4f-e661-3ec1-fcc4" name="Light Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry"/>
+            <entryLink id="efb7-2d41-e78b-2857" name="Rot Machinegun" hidden="false" collective="false" import="true" targetId="1c71-e5d6-71e5-4c27" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c821-d0de-115c-fd44" name="Sponsons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c821-d0de-115c-fd44" name="Weapon - Sponsons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6de-56e6-9bc8-e6bb" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="fdf0-871e-3bf8-928a" name="2x Bloat-Spitters" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="98fd-fa4f-07be-b3a9" name="Bloat-Spitter" hidden="false" collective="false" import="true" targetId="bfa8-8efe-fe88-23bf" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a428-5b71-9c33-2b3e" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="793d-0deb-c896-331c" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink id="840c-5d4e-d94c-8e7f" name="2x Bloat-Spitters" hidden="false" collective="false" import="true" targetId="bfa8-8efe-fe88-23bf" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="0c16-43e6-7154-fe55" name="2x Bloat-Cannons" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="3756-7978-c54a-c0c5" name="Bloat-Cannon" hidden="false" collective="false" import="true" targetId="5e03-e62d-94df-1894" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc68-aabc-2791-cf73" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7503-660d-659f-1f40" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="6805-9c3a-e6c1-3abf" name="2x Bloat-Cannons" hidden="false" collective="false" import="true" targetId="5e03-e62d-94df-1894" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="54f4-a4b4-6b80-ebf0" name="Mortar" hidden="false" collective="false" import="true" targetId="5726-d775-71fa-e9fd" type="selectionEntry">
+        <entryLink id="54f4-a4b4-6b80-ebf0" name="Mortar (Plague)" hidden="false" collective="false" import="true" targetId="572f-71e2-31d0-b442" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa84-265f-b8ee-acc6" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66a3-206c-c161-52dd" type="min"/>
@@ -6349,7 +6324,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="565.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="480.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aafb-3b71-b8ba-cd65" name="Combat Bike" hidden="false" collective="false" import="true" type="upgrade">
@@ -7225,6 +7200,14 @@
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="572f-71e2-31d0-b442" name="Mortar (Plague)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6eba-3e50-1066-3340" name="Mortar (Plague)" hidden="false" targetId="6e4f-2817-d4d4-65a1" type="profile"/>
+        <infoLink id="626e-a782-efaf-697e" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="9664-4571-98ab-90b2" name="Indirect" hidden="false" targetId="587a-b92c-a265-06c4" type="rule"/>
+        <infoLink id="5416-da0c-46ee-b7ad" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -8237,7 +8220,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fearless, Impact(6), Regeneration, Tough(12)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(6), Regeneration, Tough(12)</characteristic>
       </characteristics>
     </profile>
     <profile id="c8c4-4bcc-0389-77ac" name="Heavy Plague Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -8368,7 +8351,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="38f3-bece-473f-c5d2" name="Bloat-Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="38f3-bece-473f-c5d2" name="2x Bloat-Cannons" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
@@ -8642,6 +8625,13 @@
     <profile id="8c40-c3d8-3d85-76ea" name="Ring the Bell" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">The hero and his unit get the Fast special rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6e4f-2817-d4d4-65a1" name="Mortar (Plague)" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Blast(3), Indirect</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
