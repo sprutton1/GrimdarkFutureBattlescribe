@@ -164,7 +164,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="9097-46d6-a6e3-05d4" name="Plague Walkers" hidden="false" collective="false" import="true" targetId="cc38-d390-622e-3d51" type="selectionEntry">
+    <entryLink id="9097-46d6-a6e3-05d4" name="Plague Walkers" hidden="false" collective="false" import="true" targetId="9148-4537-e3dc-e9f2" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -5636,65 +5636,46 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="82ab-df8f-3e2b-d9dd" name="Plague Zombie" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="7435-9460-272f-6471" name="Plague Zombie" hidden="false" targetId="1ba7-dc6a-69b0-c294" type="profile"/>
-        <infoLink id="9c8b-4c0d-c558-820b" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
-        <infoLink id="e7d5-2f88-d5b7-69a2" name="Undead" hidden="false" targetId="f0ec-3e05-f8a4-4133" type="rule"/>
-        <infoLink id="2d79-84c1-dce6-4e0c" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="1f8e-f4fe-bfdb-b860" name="Claws" hidden="false" collective="false" import="true" targetId="08fc-e2b8-d6a7-ac47" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6df7-d517-4b43-f933" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6326-3178-4a8b-14fa" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="c095-8e5f-bebf-ac4d" name="Plague Zombies" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="b389-4063-fb30-9ef3" name="Plague Zombie" hidden="false" collective="false" import="true" targetId="82ab-df8f-3e2b-d9dd" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14c4-6423-bcff-d8b0" type="max"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a59d-ae21-a796-1626" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="5562-220e-ee9d-9db3" name="Plague Walker" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="0f79-331a-3766-b2f4" name="Plague Walker" hidden="false" targetId="bfcc-3cd3-a692-07b3" type="profile"/>
-        <infoLink id="5018-35d0-03ca-79ae" name="Undead" hidden="false" targetId="f0ec-3e05-f8a4-4133" type="rule"/>
-        <infoLink id="99c8-7c86-fe97-c1da" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="0265-7c14-0266-a2e7" name="Plague Zombie" hidden="false" targetId="1ba7-dc6a-69b0-c294" type="profile"/>
+        <infoLink id="0ec4-16fd-1598-02ff" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="d08a-926d-2478-5e3b" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
+        <infoLink id="b43b-225d-02c5-d9c1" name="Undead" hidden="false" targetId="f0ec-3e05-f8a4-4133" type="rule"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink id="7c10-1a8e-62e3-1736" name="Claws" hidden="false" collective="false" import="true" targetId="08fc-e2b8-d6a7-ac47" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9802-1682-3d9e-44dd" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="3546-e25e-17a6-0a7b">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6606-6258-24cd-7318" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22b0-ca70-e94d-908e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f9f-260c-997b-2326" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7961-8fca-085c-25c3" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="cc38-d390-622e-3d51" name="Plague Walkers" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="5291-3e78-bb60-6208" name="Plague Walker" hidden="false" collective="false" import="true" targetId="5562-220e-ee9d-9db3" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fbb-5d35-7cee-78d8" type="max"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54b3-8798-7257-76d4" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="3546-e25e-17a6-0a7b" name="Single Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="2283-8931-49ba-6b27" name="Claws" hidden="false" collective="false" import="true" targetId="08fc-e2b8-d6a7-ac47" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b71-ef9f-4a35-9205" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f6-5136-074a-94f7" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="ae5d-2063-34bc-e423" name="Combined Unit [20 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="d30e-30ad-9e45-07cf" name="Claws" hidden="false" collective="false" import="true" targetId="08fc-e2b8-d6a7-ac47" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7a0-45a1-bbc5-8d25" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ae2-c961-b854-e1f6" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
       </costs>
@@ -7414,6 +7395,49 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9148-4537-e3dc-e9f2" name="Plague Walkers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8283-93d5-c287-8ede" name="Plague Walker" hidden="false" targetId="bfcc-3cd3-a692-07b3" type="profile"/>
+        <infoLink id="ce71-66d0-1f9c-f95e" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="cff6-3f1a-c0da-03bc" name="Undead" hidden="false" targetId="f0ec-3e05-f8a4-4133" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="477d-8c33-7e43-6045" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="74a3-9b07-2232-dfce">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc5-2202-f388-243b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cb3-29dc-40c1-dc6e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="74a3-9b07-2232-dfce" name="Single Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="da9b-4a90-72e2-ea6f" name="Claws" hidden="false" collective="false" import="true" targetId="08fc-e2b8-d6a7-ac47" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f6c-88d4-051b-ddd1" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb96-5776-8d80-7ff7" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="7a0f-1fb5-e671-869a" name="Combined Unit [20 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="d9ce-67e4-a66f-07c0" name="Claws" hidden="false" collective="false" import="true" targetId="08fc-e2b8-d6a7-ac47" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fdd-449b-d717-c4a5" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21ad-b9f9-4fcf-2bfa" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
