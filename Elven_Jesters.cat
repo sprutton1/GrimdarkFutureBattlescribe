@@ -3,4 +3,54 @@
   <publications>
     <publication id="964d-232e-d2bc-cf16" name="Elven Jesters v2.4"/>
   </publications>
+  <entryLinks>
+    <entryLink id="5f08-dba2-067b-d00a" name="Jester Solitaire" hidden="false" collective="false" import="true" targetId="cb4f-7fea-51c3-d893" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="1a80-d4a9-5444-4cc3" name="Deathly Arts" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5f8e-423e-5347-4316" name="Deathly Arts" hidden="false" targetId="0c1b-5a3e-c566-16b9" type="profile"/>
+        <infoLink id="d464-fa44-8735-362b" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="88c7-368f-e0ba-82f0" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="cb4f-7fea-51c3-d893" name="Jester Solitaire" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7786-cbb0-b681-13ab" name="Jester Solitaire" hidden="false" targetId="9bd7-d62d-bb7f-a198" type="profile"/>
+        <infoLink id="7408-234d-36d9-cf9c" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="38d9-d867-c998-ae85" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="cbfc-7117-1057-fb8b" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="6fa3-9049-b029-c353" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="761e-bd66-4231-5ef6" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="56a0-c024-a215-18f3" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+        <infoLink id="5798-dbff-da79-67ad" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="3873-921d-5603-77d8" name="Deathly Arts" hidden="false" collective="false" import="true" targetId="1a80-d4a9-5444-4cc3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f22f-5482-9f58-0511" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f45-1e1b-9fb4-2f18" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="115.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="9bd7-d62d-bb7f-a198" name="Jester Solitaire" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Furious, Hero, Regeneration, Strider, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c1b-5a3e-c566-16b9" name="Deathly Arts" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Rending</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
