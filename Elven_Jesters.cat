@@ -6,6 +6,7 @@
   <entryLinks>
     <entryLink id="5f08-dba2-067b-d00a" name="Jester Solitaire" hidden="false" collective="false" import="true" targetId="cb4f-7fea-51c3-d893" type="selectionEntry"/>
     <entryLink id="8a05-01b4-926b-7bb0" name="Jester Seer" hidden="false" collective="false" import="true" targetId="ffe3-a841-ffde-21f4" type="selectionEntry"/>
+    <entryLink id="1ade-70db-4403-b498" name="Jester Sniper" hidden="false" collective="false" import="true" targetId="a83d-01e2-ff5c-d02d" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="1a80-d4a9-5444-4cc3" name="Deathly Arts" hidden="false" collective="false" import="true" type="upgrade">
@@ -160,6 +161,41 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7320-28c7-3d1b-89ce" name="Sniper Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ac48-7875-c716-15e1" name="Sniper Cannon" hidden="false" targetId="2a0b-a880-57ef-7c94" type="profile"/>
+        <infoLink id="8949-016f-f2bf-3ad2" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="c26c-99f7-76bf-6247" name="Sniper" hidden="false" targetId="2943-e3f6-fb44-ae13" type="rule"/>
+        <infoLink id="ff0b-7730-a191-6b8d" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="a83d-01e2-ff5c-d02d" name="Jester Sniper" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a76c-3dcf-5480-75f2" name="Jester Sniper" hidden="false" targetId="3369-11ed-4a85-92d8" type="profile"/>
+        <infoLink id="fed1-1d31-2b8e-462f" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="6482-d62c-c827-719b" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="b5b2-33d8-5079-b5ad" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="3e1b-1177-7c91-6f0c" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="9897-31d4-ea39-a3eb" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="e89e-8788-2d6e-0bff" name="Sniper Cannon" hidden="false" collective="false" import="true" targetId="7320-28c7-3d1b-89ce" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a9a-aaac-f531-f98f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3135-9e44-c29b-a33a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f1fb-78d1-2127-d78a" name="CCW (A4)" hidden="false" collective="false" import="true" targetId="ecbb-bb2e-b19f-656d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a26d-e113-72fb-7d81" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59e3-4fae-e758-47b5" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="b5cd-ffe3-1e03-4119" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -292,6 +328,20 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3369-11ed-4a85-92d8" name="Jester Sniper" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Furious, Hero, Strider, Tought(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2a0b-a880-57ef-7c94" name="Sniper Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Poison, Sniper</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
