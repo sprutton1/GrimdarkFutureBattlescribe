@@ -316,6 +316,7 @@
       <infoLinks>
         <infoLink id="acf5-899a-ba6f-ad68" name="Solar-Protocol" hidden="false" targetId="eb50-494d-008f-646b" type="profile"/>
         <infoLink id="372b-83e1-8ab0-90dd" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="03a8-6396-9a76-c55e" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -324,6 +325,7 @@
     <selectionEntry id="7242-33ec-ba95-960b" name="Dread-Protocol" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3f19-e8aa-81a5-280d" name="Dread-Protocol" hidden="false" targetId="87b8-650e-4da2-6442" type="profile"/>
+        <infoLink id="ef9a-a0bc-d3ec-f07c" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -511,75 +513,102 @@
         <infoLink id="66a3-894d-76c7-4133" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0c93-3945-05d7-df04" name="Upgrade with any:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="0c93-3945-05d7-df04" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67af-fc9f-b190-a5c2" type="max"/>
+          </constraints>
           <entryLinks>
             <entryLink id="e8e5-8128-b53a-2624" name="Gloom-Protocol" hidden="false" collective="false" import="true" targetId="9943-2977-33f8-1ac7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e4b-aaaa-34ce-884c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="fdf1-fc5a-5fd5-56fb" name="Nightmare-Protocol" hidden="false" collective="false" import="true" targetId="7553-db9f-e7f9-c456" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84cd-9440-182f-b301" type="max"/>
-              </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="a328-a964-644b-2d26" name="Regen-Protocol" hidden="false" collective="false" import="true" targetId="fb1b-9740-cf14-81be" type="selectionEntry">
+            <entryLink id="fdf1-fc5a-5fd5-56fb" name="Nightmare-Protocol" hidden="false" collective="false" import="true" targetId="7553-db9f-e7f9-c456" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="3711-033a-5231-52ba" name="Darkness-Protocol" hidden="false" collective="false" import="true" targetId="e01e-02ad-9238-49b5" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="683c-a170-0990-2ef6" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5122-c01b-b296-a56e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a6b6-84d4-b4be-6e6a" name="Flame-Protocol" hidden="false" collective="false" import="true" targetId="f70b-a4b5-77ad-a049" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="e986-70dd-31dd-f85e" name="Dread-Protocol" hidden="false" collective="false" import="true" targetId="7242-33ec-ba95-960b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="59c3-d1ba-88a0-9e7f" name="Solar-Protocol" hidden="false" collective="false" import="true" targetId="0e8c-5c4d-175f-a7c6" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="90c1-644f-bd0d-c546" name="Upgrade with any:" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="c90f-d796-74b0-c0c9" name="Bot-Master" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a42-24d2-b5ad-8f65" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60a7-8801-37cf-f3b7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="876f-693a-5655-98bc" name="Bot-Master" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Psychic(1)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="f35c-184f-6f9b-ebe2" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="85fd-f3e0-b66e-ecd0" name="Spells" hidden="false" collective="false" import="true" targetId="0da2-7341-2e9d-0184" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="8d5f-ad30-4705-6fa5" name="Regen-Protocol" hidden="false" collective="false" import="true" targetId="fb1b-9740-cf14-81be" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dc7-5232-40f3-3bc6" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
               </costs>
             </entryLink>
-            <entryLink id="3711-033a-5231-52ba" name="Darkness-Protocol" hidden="false" collective="false" import="true" targetId="e01e-02ad-9238-49b5" type="selectionEntry">
+            <entryLink id="4b47-a9e8-e9d5-d5ce" name="Jetpack" hidden="false" collective="false" import="true" targetId="1cb7-8c2e-10b5-0d17" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9bf-3b74-eb8a-e84b" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="19a8-4447-d8ed-66ee" name="Flame-Protocol" hidden="false" collective="false" import="true" targetId="f70b-a4b5-77ad-a049" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="525c-55bc-6c10-a6ee" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="857c-d8b3-d66d-a3a4" name="Dread-Protocol" hidden="false" collective="false" import="true" targetId="7242-33ec-ba95-960b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad62-5a02-6163-3658" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b340-e52c-3d1a-cdc5" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="205b-1185-267c-67c3" name="Solar-Protocol" hidden="false" collective="false" import="true" targetId="0e8c-5c4d-175f-a7c6" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a3b-e010-9367-0869" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e918-9227-8000-2e90" name="Energy Staff" hidden="false" collective="false" import="true" targetId="c822-bd05-58a7-a891" type="selectionEntry">
+        <entryLink id="e918-9227-8000-2e90" name="Staff-Shot" hidden="false" collective="false" import="true" targetId="45d4-9624-76b4-9980" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6b3-8e48-2500-3556" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8e2-ff4e-eb59-f58e" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="e2d3-efd6-e43b-500f" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+        <entryLink id="e2d3-efd6-e43b-500f" name="Staff" hidden="false" collective="false" import="true" targetId="1816-fdb9-4af5-af75" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0fa-400b-3ed0-3b11" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8d7-01e3-bfa5-9d90" type="min"/>
@@ -587,7 +616,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="105.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d274-4232-e618-fde3" name="Nanobot Wraith-Shard" hidden="false" collective="false" import="true" type="upgrade">
@@ -1834,12 +1863,12 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="0da2-7341-2e9d-0184" name="Spells" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e617-ee41-0862-6cb0" type="max"/>
-      </constraints>
+    <selectionEntryGroup id="0da2-7341-2e9d-0184" name="Psychic Spells" hidden="false" collective="false" import="true">
       <selectionEntries>
         <selectionEntry id="549a-4de2-92d5-bc8f" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d73-fbc4-8c77-7105" type="max"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="1688-3533-7c6b-b4ff" name="Assault Bots" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -2013,7 +2042,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero,Fearless,Regeneration,Slow,Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Fearless, Regeneration, Slow, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="bc1f-575e-521f-6649" name="Nanobot Wraith-Shard" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -2398,38 +2427,38 @@
     </profile>
     <profile id="446e-8c80-35b0-6daa" name="Fire Bots" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12” takes 2D3 automatic hits.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target 2 enemy units within 6&quot; take 6 automatic hits with AP(1) each.</characteristic>
       </characteristics>
     </profile>
     <profile id="ba97-b8c2-ef52-1151" name="Thunderbolt Bots" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18” takes 1 automatic hit with AP(4).</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 4 automatic hits with AP(2).</characteristic>
       </characteristics>
     </profile>
     <profile id="6f9b-4561-d13a-0f08" name="Star Bots" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12” takes 4D3 automatic hits.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may be placed anywhere within 9&quot; of its current position, ignoring units and terrain.</characteristic>
       </characteristics>
     </profile>
     <profile id="7a62-23b1-94cb-01ad" name="Meteor Bots" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18” takes D3 automatic hits with AP(4).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24&quot; takes 6 automatic hits with AP(1).</characteristic>
       </characteristics>
     </profile>
     <profile id="8970-957e-b8da-e51d" name="Assault Bots" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12” takes 4D3 automatic hits with AP(2).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +3&quot; next time it moves.</characteristic>
       </characteristics>
     </profile>
     <profile id="80bd-f236-4cc4-5541" name="Arrow Bots" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18” takes 1 automatic hit with AP(4) and Deadly(6).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +9&quot; range next time it shoots.</characteristic>
       </characteristics>
     </profile>
     <profile id="ec23-5cb5-1b9d-eb39" name="Bot Fabricator" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
@@ -2442,24 +2471,28 @@
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">The hero and his unit get the Ambush special rule.</characteristic>
       </characteristics>
     </profile>
-    <profile id="87b8-650e-4da2-6442" name="Dread-Protocol" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+    <profile id="87b8-650e-4da2-6442" name="Dread-Protocol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">When the hero is activated target enemy unit within 18” must take a morale test. If failed it takes D3 wounds.</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
       </characteristics>
     </profile>
-    <profile id="bda3-cac3-6a76-4f62" name="Flame-Protocol" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+    <profile id="bda3-cac3-6a76-4f62" name="Flame-Protocol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">When the hero is activated target enemy unit within 12” takes D6 automatic hits with AP(3)</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
       </characteristics>
     </profile>
     <profile id="5807-4462-48b0-0645" name="Gloom-Protocol" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">The hero may block enemy spells as if it was a Psychic.</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">This model may block spells as if it had the Psychic special rule. If it is a Psychic then it gets +1 to spell block rolls.</characteristic>
       </characteristics>
     </profile>
     <profile id="6f3e-82f9-e413-fde7" name="Nightmare-Protocol" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">The hero and his unit get the Fear special rule.</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Fear</characteristic>
       </characteristics>
     </profile>
     <profile id="eded-a403-2c32-b8c2" name="Regen-Protocol" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
@@ -2467,9 +2500,11 @@
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">The hero and his unit may ignore wounds from Regeneration on 4+.</characteristic>
       </characteristics>
     </profile>
-    <profile id="eb50-494d-008f-646b" name="Solar-Protocol" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+    <profile id="eb50-494d-008f-646b" name="Solar-Protocol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">When the hero is activated target enemy unit within 12” takes D3 automatic hits with AP(1).</characteristic>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="27b8-587f-5925-7ab5" name="Twin Flux Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
