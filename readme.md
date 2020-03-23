@@ -67,7 +67,7 @@ table!
 |Battle Sisters|v2.1|Done|
 |Dark Elf Raiders|v2.3|Done|
 |Dwarf Guilds|v2.3|Done|
-|Elven Jesters|-|Not started|
+|Elven Jesters|v2.4|Done|
 |Feudal Guard|-|Not started|
 |Havoc Brothers|Main v2.7 - Disciples v2.9|Done|
 |High Elf Fleets|v2.6|Done|
@@ -97,4 +97,6 @@ Github issue so that myself or the owner of that file can address it.
 Matthew Caron for his work on the original set of Battlescribe files for GF
 
 Scott Prutton for doing this thing.
+
+Darguth for ongoing maintenance and updates.
 
