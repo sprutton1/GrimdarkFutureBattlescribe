@@ -9,6 +9,7 @@
     <entryLink id="1ade-70db-4403-b498" name="Jester Sniper" hidden="false" collective="false" import="true" targetId="a83d-01e2-ff5c-d02d" type="selectionEntry"/>
     <entryLink id="cc8f-7e6a-b0a3-bbf9" name="Jesters" hidden="false" collective="false" import="true" targetId="9ddc-7759-c402-72f5" type="selectionEntry"/>
     <entryLink id="6f65-cc8c-a70c-fc22" name="Jetbikes" hidden="false" collective="false" import="true" targetId="e1f4-5bc3-3190-fc9f" type="selectionEntry"/>
+    <entryLink id="53cf-269a-2fb7-06ad" name="Heavy Jetbike" hidden="false" collective="false" import="true" targetId="9038-2002-fadd-2221" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="1a80-d4a9-5444-4cc3" name="Deathly Arts" hidden="false" collective="false" import="true" type="upgrade">
@@ -558,6 +559,87 @@
         <infoLink id="44a8-31d8-76ba-368b" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="a3a8-fdf4-660b-6b1d" name="Transport(6)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="14a1-b037-7da2-ac32" name="Transport" hidden="false" targetId="5b5b-c5c5-2869-9a30" type="profile"/>
+        <infoLink id="97be-bbb7-1c3c-d021" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="8929-a107-4bd3-62f3" name="Focus Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8937-0873-0cb7-3a39" name="Focus Cannon" hidden="false" targetId="b921-9bf8-d6b2-c01e" type="profile"/>
+        <infoLink id="bf9f-12a6-03c7-5a69" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="472f-6535-329f-a6ed" name="Lance Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e065-da9a-0304-48b7" name="Lance Cannon" hidden="false" targetId="f75c-a1ce-aca7-4474" type="profile"/>
+        <infoLink id="c58f-50f1-f696-7165" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="82ee-99fa-68a9-31d5" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9038-2002-fadd-2221" name="Heavy Jetbike" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d1da-a8b6-cb28-faf9" name="Heavy Jetbike" hidden="false" targetId="27e0-aae3-fcfc-5616" type="profile"/>
+        <infoLink id="4eda-5674-54c6-6544" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+        <infoLink id="2f74-e51c-91ed-d93c" name="Very Fast" hidden="false" targetId="cc0e-1330-e720-9e37" type="rule"/>
+        <infoLink id="57b1-468a-63e5-99d5" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="b380-7f37-8edd-a0f9" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="0ecf-a350-688f-a477" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6c8b-bd9c-418e-47c6" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47f5-2557-e9a6-825a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="af24-f533-4242-71e4" name="Transport(6)" hidden="false" collective="false" import="true" targetId="a3a8-fdf4-660b-6b1d" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d298-3db5-e11f-07f8" name="Focus Cannon" hidden="false" collective="false" import="true" targetId="8929-a107-4bd3-62f3" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="543a-65ff-cc3a-2010" name="Energy Glaive" hidden="false" collective="false" import="true" targetId="b8e7-ca84-429b-1d45" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="c519-3f03-fedb-3f85" name="EMP Cannon" hidden="false" collective="false" import="true" targetId="874a-2aef-000c-f2f1" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="396a-4305-388f-e518" name="Lance Cannon" hidden="false" collective="false" import="true" targetId="472f-6535-329f-a6ed" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8d8b-766b-2593-0e67" name="2x Shard Cannons" hidden="false" collective="false" import="true" targetId="4e81-69e9-38e9-7778" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5027-ae38-b420-693b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db7d-7fd6-246c-a148" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="155.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e81-69e9-38e9-7778" name="2x Shard Cannons" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="36a0-2d2b-d481-b077" name="2x Shard Cannons" hidden="false" targetId="1fd0-bd05-7994-914d" type="profile"/>
+        <infoLink id="f9e9-b5ea-1638-2cfc" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="65c6-9cb5-11d7-523b" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="b5cd-ffe3-1e03-4119" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -780,6 +862,39 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Impact(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="27e0-aae3-fcfc-5616" name="Heavy Jetbike" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Furious, Impact(3), Strider, Tough(3), Very Fast</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5b5b-c5c5-2869-9a30" name="Transport" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Transport(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b921-9bf8-d6b2-c01e" name="Focus Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f75c-a1ce-aca7-4474" name="Lance Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1fd0-bd05-7994-914d" name="2x Shard Cannons" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Rending</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
