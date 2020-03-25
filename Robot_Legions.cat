@@ -386,7 +386,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="edff-88d4-dddd-2a0f" name="Flux Rifle" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="edff-88d4-dddd-2a0f" name="Flux Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="b8a9-cd9c-2b53-594c" name="Flux Rifle" hidden="false" targetId="c1d4-3e78-378c-e509" type="profile"/>
         <infoLink id="8b98-d656-e90a-a784" name="Flux" hidden="false" targetId="f3f7-52df-ba4d-7507" type="rule"/>
@@ -755,6 +755,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ed7d-9e62-d2ad-faee" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -865,6 +868,9 @@
                         <infoLink id="500d-999f-29b5-d725" name="Rod-Shot" hidden="false" targetId="6120-0e02-f442-a8d0" type="profile"/>
                         <infoLink id="68e3-4bc8-92f3-23c6" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
                       </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="5106-3abe-a9bb-a48e" name="War Scythes" hidden="false" collective="false" import="true" type="upgrade">
                       <infoLinks>
@@ -899,6 +905,9 @@
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a1fc-b236-70eb-019c" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -926,6 +935,9 @@
                         <infoLink id="d2b9-3697-d4fe-54f0" name="Rod-Shot" hidden="false" targetId="6120-0e02-f442-a8d0" type="profile"/>
                         <infoLink id="9018-99fb-ad4f-ea40" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
                       </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="67e8-a169-77d2-4c36" name="War Scythes" hidden="false" collective="false" import="true" type="upgrade">
                       <infoLinks>
@@ -971,88 +983,133 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7bb6-f59a-efcf-3c8d" name="Eternal (Guass Rifle)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="164c-0141-ade6-0c56" name="Eternal" hidden="false" targetId="d64c-7f23-7fab-cbe3" type="profile"/>
-        <infoLink id="5c29-4094-c7f1-59e6" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-        <infoLink id="5981-99e7-d2bd-4e6d" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
-        <infoLink id="037d-268b-4a4e-dd8a" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="8eb6-7746-0f31-45b3" name="Guass Rifle" hidden="false" collective="false" import="true" targetId="e911-faca-2c6e-7b9d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7e6-b522-0f60-fb08" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b97-f56a-2392-2189" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c46c-5c68-e143-1e81" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36cc-2381-86ee-672b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="583d-bc0e-92b3-a064" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3289-eeb9-9966-6860" name="Eternal (Flux Rifle)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="0407-b964-617d-032a" name="Eternal" hidden="false" targetId="d64c-7f23-7fab-cbe3" type="profile"/>
-        <infoLink id="d7e5-3e7a-d5de-3040" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-        <infoLink id="1952-0473-e508-11f3" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
-        <infoLink id="4278-90ad-7a6c-d7a0" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="f765-c0b1-6fb6-1d77" name="Flux Rifle" hidden="false" collective="false" import="true" targetId="edff-88d4-dddd-2a0f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcbb-35ed-2b17-089a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d66-64c6-03d4-a879" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="40dd-f68a-f0b7-36fd" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6812-e884-418f-5498" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b126-47b6-9715-3bb3" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="44b6-5a83-28b3-4cc4" name="Eternals" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="01b7-8925-af59-66ca" name="Eternal" hidden="false" targetId="d64c-7f23-7fab-cbe3" type="profile"/>
+        <infoLink id="5d8d-e826-24c5-8b57" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="91af-a1e7-268d-0e6d" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="c746-83bc-e527-253c" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="822a-1e4f-f69b-f17f" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="c4c8-2e14-3ad6-219c">
+        <selectionEntryGroup id="0b8e-972a-b481-e843" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="7885-c762-4579-cad2">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e62-00f0-661e-1ebd" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="505c-db10-273f-298c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="022e-e689-41e8-6d45" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5318-a519-40b0-6232" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7b98-a218-c782-1ba1" name="Flux Rifles" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="6d2f-b710-60be-afd5" name="Eternal (Flux Rifle)" hidden="false" collective="false" import="true" targetId="3289-eeb9-9966-6860" type="selectionEntry">
+            <selectionEntry id="7885-c762-4579-cad2" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="d439-c8b6-5cd1-bd54" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="6049-5ac8-7f13-e37d">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d7d-c896-e892-bdbf" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e84e-0b53-890a-b45b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a0b-4b80-0a25-613b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f745-6823-1a47-b654" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="6049-5ac8-7f13-e37d" name="Gauss Rifles" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="dae9-fa3d-f525-c7e7" name="Gauss Rifle" hidden="false" collective="false" import="true" targetId="b64a-0ef5-b2e2-eaf3" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f89a-479c-9f49-84e2" type="min"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dae-a0d8-7cdb-57cc" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry id="8c59-e6b8-c61e-09e9" name="Flux Rifles" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="fc56-2190-254a-5f29" name="Flux Rifle" hidden="false" collective="false" import="true" targetId="edff-88d4-dddd-2a0f" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18bb-e0a5-232e-2216" type="min"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="364e-39aa-c02d-610e" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="715c-57e6-3b66-e0e2" name="Heavy Gauss Rifles" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="6e33-2b1e-512c-7f66" name="Heavy Gauss Rifle" hidden="false" collective="false" import="true" targetId="091a-ea47-40f3-97ab" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac7d-36e8-662f-9fa1" type="min"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0748-0e53-8c6c-68a0" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="fe08-6bd2-c682-8d74" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7569-25bb-4f8f-5e1d" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f17-439c-6a38-7bb1" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
             </selectionEntry>
-            <selectionEntry id="c4c8-2e14-3ad6-219c" name="Guass Rifles" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="49bc-1141-0e90-123f" name="Eternal (Guass Rifle)" hidden="false" collective="false" import="true" targetId="7bb6-f59a-efcf-3c8d" type="selectionEntry">
+            <selectionEntry id="b67e-9638-047a-0c99" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="9ff4-43d7-4e03-3f0a" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="8d1b-c9c7-d2b9-7f41">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f219-cf44-5571-b89b" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c08d-6147-e32a-29da" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2aa8-374d-1792-58c9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f8b-8573-e8ad-5850" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="8d1b-c9c7-d2b9-7f41" name="Gauss Rifles" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="aee8-52a7-c534-187d" name="Gauss Rifle" hidden="false" collective="false" import="true" targetId="b64a-0ef5-b2e2-eaf3" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0d7-b11a-d23f-3826" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c75a-578e-f286-80da" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry id="34c7-12d4-b041-e3e2" name="Flux Rifles" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="1804-3c78-aa1f-2cc0" name="Flux Rifle" hidden="false" collective="false" import="true" targetId="edff-88d4-dddd-2a0f" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24ce-676b-8516-f83a" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79a3-365b-a8cc-836d" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="ad81-e7e4-db2c-d593" name="Heavy Gauss Rifles" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="6018-b6bf-6533-f62d" name="Heavy Gauss Rifle" hidden="false" collective="false" import="true" targetId="091a-ea47-40f3-97ab" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c78-5d01-1b42-bec9" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="182c-27c8-3ebb-fa6b" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="fa66-06d9-5b47-ca4d" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a76f-b77a-b897-0f7a" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4757-8def-c74c-077e" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1911,17 +1968,26 @@
         <infoLink id="2db6-cd0d-8826-3942" name="Staff-Shot" hidden="false" targetId="9ad4-0c2a-a81b-3280" type="profile"/>
         <infoLink id="27bd-4bfa-aaad-a5fb" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1816-fdb9-4af5-af75" name="Staff" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a6ea-1105-2de7-ae30" name="Staff" hidden="false" targetId="e065-78c7-ed57-51ec" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9885-451d-043e-5304" name="Void Sword" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d1e4-5f0b-708e-51c8" name="Void Sword" hidden="false" targetId="72a9-9ed4-d638-b5df" type="profile"/>
         <infoLink id="ebd9-012d-0399-e4ec" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6512-5a89-2906-5604" name="Hyper Sword" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1929,12 +1995,18 @@
         <infoLink id="d86c-6c1c-5e87-db1e" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="ece8-c14f-8c42-1566" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="393e-f2e9-68bf-d7e4" name="War Scythe" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d3e5-c56d-fe84-4c45" name="War Scythe" hidden="false" targetId="e8f8-522e-dc5a-f146" type="profile"/>
         <infoLink id="c22d-6fe9-374e-ab3e" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b64a-0ef5-b2e2-eaf3" name="Gauss Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1949,18 +2021,34 @@
       <infoLinks>
         <infoLink id="bc3f-6ab7-53b6-4fde" name="Flame Caster" hidden="false" targetId="e2c2-23fe-7fd8-9a9f" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3f14-4122-6bbe-29b3" name="Plasma Caster" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="edb6-589c-9bcd-dbbe" name="Plasma Caster" hidden="false" targetId="c17a-47fd-dc80-0a71" type="profile"/>
         <infoLink id="0eff-76e9-bece-c315" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="58a5-62dd-2eee-b339" name="Fusion Caster" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="b9cb-fd0d-9fa9-aa23" name="Fusion Caster" hidden="false" targetId="384e-61ba-7ce3-957b" type="profile"/>
         <infoLink id="e4b8-4e8c-cdc9-dc1d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="4cb2-681e-7ded-ed60" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="091a-ea47-40f3-97ab" name="Heavy Gauss Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1eb0-972d-d704-a7dc" name="Heavy Gauss Rifle" hidden="false" targetId="e265-6a1e-990d-3df7" type="profile"/>
+        <infoLink id="4d8d-cddf-24ed-9c4c" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="d2f7-59a5-56f3-10be" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2091,6 +2179,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -2638,7 +2729,7 @@
     <profile id="e065-78c7-ed57-51ec" name="Staff" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
       </characteristics>
     </profile>
     <profile id="72a9-9ed4-d638-b5df" name="Void Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -2663,7 +2754,7 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
     <profile id="c17a-47fd-dc80-0a71" name="Plasma Caster" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -2690,7 +2781,14 @@
     <profile id="2eeb-d6c1-7a7a-d0d7" name="Rod" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
+      </characteristics>
+    </profile>
+    <profile id="e265-6a1e-990d-3df7" name="Heavy Gauss Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Rending</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
