@@ -85,7 +85,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4e9e-26fa-5540-705b" name="Swarm Attack" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="4e9e-26fa-5540-705b" name="Swarm Attack" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9843-def6-55e9-19f1" name="Swarm Attack" hidden="false" targetId="e261-2b89-5e2d-dff1" type="profile"/>
         <infoLink id="afb1-c31a-30b7-7743" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
@@ -1402,36 +1402,49 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="260.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1e58-de9c-79ab-6147" name="Bot Swarm" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="3367-8007-5116-19ec" name="Bot Swarm" hidden="false" targetId="f87e-19f8-0475-6db9" type="profile"/>
-        <infoLink id="b47b-5aee-6460-db19" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="8e56-f8cc-2007-b148" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="e83b-9648-0398-7fe9" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="1fd9-6e0b-2598-d4d8" name="Swarm Attack" hidden="false" collective="false" import="true" targetId="4e9e-26fa-5540-705b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20a0-a415-a2ec-6871" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dcd-7d6d-7eb6-9fdc" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="e800-dcf4-139d-c052" name="Bot Swarms" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="5d0e-f88d-7f0d-e161" name="Bot Swarm" hidden="false" collective="false" import="true" targetId="1e58-de9c-79ab-6147" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="b3cb-7afb-1dad-96c3" name="Bot Swarm" hidden="false" targetId="f87e-19f8-0475-6db9" type="profile"/>
+        <infoLink id="6760-0726-d9eb-1198" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="f96d-63ae-bd46-fea2" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="37d6-0022-b940-a191" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="b4c5-c2b6-384a-3b4e" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dcaf-a89d-ffc6-cf75" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="ebf2-933f-51f5-f631">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e6c-d3ca-078c-ed69" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="372b-1d34-21b4-83c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ff-3f2e-cef6-0a0d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b8-d075-80c7-bb70" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="ebf2-933f-51f5-f631" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="1c01-346b-e4b3-5d81" name="Swarm Attack" hidden="false" collective="false" import="true" targetId="4e9e-26fa-5540-705b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82d8-3ec9-dbf9-65e0" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcab-3ef8-3433-f630" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="b9e9-a35e-6a70-08f4" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="d0a3-cbf1-b7a0-3491" name="Swarm Attack" hidden="false" collective="false" import="true" targetId="4e9e-26fa-5540-705b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ba-2c2d-204a-b259" type="max"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2d5-d9d8-6b83-ef0f" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3a2f-24ff-962a-36ec" name="Hover Bike" hidden="false" collective="false" import="true" type="upgrade">
@@ -2489,7 +2502,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">6+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">6+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Strider, Tough(3)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Regeneration, Strider, Tough(3)</characteristic>
       </characteristics>
     </profile>
     <profile id="732b-dea2-0937-6be7" name="Hover Bike" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
