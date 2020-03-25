@@ -65,10 +65,11 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="132d-03bf-d652-3b6c" name="Metal Claws" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="132d-03bf-d652-3b6c" name="Metal Claws" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2fc7-0c56-c088-9f7d" name="Metal Claws" hidden="false" targetId="5622-40d7-c298-bb49" type="profile"/>
         <infoLink id="1603-7f51-b2ca-5e78" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+        <infoLink id="708f-477d-c2cc-600a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -1120,53 +1121,173 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="513b-e9a7-aa33-0629" name="Flesh-Eaters" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d328-d367-b633-882c" name="Flesh-Eater" hidden="false" targetId="8ac5-a065-687a-9c88" type="profile"/>
+        <infoLink id="c4c8-3139-914a-bf6d" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="aaa9-1c4f-7735-0081" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="8478-aead-71b9-ac82" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="31d0-13f8-9e33-1431" name="Upgrade all with:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c7ab-aab0-8534-8aae" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="3896-e1c7-85f5-d20f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7977-66a5-5c06-d4ed" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d578-3ee5-6421-8253" type="max"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry id="ff4c-def2-2ab4-94db" name="Ambush" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ece3-7e78-9ae2-6013" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b6d4-b09f-1b61-d266" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
-              </infoLinks>
+            <selectionEntry id="3896-e1c7-85f5-d20f" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="6819-256f-abff-d3c9" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="58ba-5e93-7540-bff2">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9c3-8ee9-53e2-dada" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="060b-019b-d5da-9a02" type="max"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="2098-8144-7ef0-5e38" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f42e-001b-e807-1bed" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="b526-7276-376c-b14b" name="Chainsaw Claws" hidden="false" collective="false" import="true" targetId="c81d-66bf-d2b6-62a9" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcca-2b6e-98cf-4fec" type="max"/>
+                          </constraints>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="e077-1d66-f412-2e26" name="Electric Claws" hidden="false" collective="false" import="true" targetId="45a9-b19b-322c-561d" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="749f-7fbe-9347-f069" type="max"/>
+                          </constraints>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="f1a7-240c-a974-dcc2" name="Plasma Claws" hidden="false" collective="false" import="true" targetId="890d-6fa4-5a73-268b" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59f4-229d-d665-6283" type="max"/>
+                          </constraints>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink id="58ba-5e93-7540-bff2" name="Metal Claws" hidden="false" collective="false" import="true" targetId="132d-03bf-d652-3b6c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04c3-c54d-8ff2-449b" type="max"/>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c4c-e8fe-75ab-7bce" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="3c8d-e46e-07f2-fa22" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="f6f2-0807-9790-c512" name="Ambush" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ef5-d042-d189-ad90" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="06a4-8c1a-d28e-679f" name="Ambush" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+                          <characteristics>
+                            <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Ambush</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink id="af64-5852-266e-5619" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="529b-6d26-f758-8d84" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2097-3866-10b8-4d0e" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="1499-7827-4983-84c1">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e38f-fab7-5f3b-2c8c" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e00f-eaf2-a498-1e5d" type="max"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="e7ad-b812-952e-e543" name="Upgrade up to two models with:" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3970-0dd4-7fc9-a415" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="6940-c878-d4e4-a32d" name="Chainsaw Claws" hidden="false" collective="false" import="true" targetId="c81d-66bf-d2b6-62a9" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9388-8bd5-5047-2672" type="max"/>
+                          </constraints>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="4897-f544-56b7-71ee" name="Electric Claws" hidden="false" collective="false" import="true" targetId="45a9-b19b-322c-561d" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f32-70c4-4f76-9e29" type="max"/>
+                          </constraints>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="c6dd-8e6b-7711-e157" name="Plasma Claws" hidden="false" collective="false" import="true" targetId="890d-6fa4-5a73-268b" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb7e-684f-4c3e-7ae7" type="max"/>
+                          </constraints>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink id="1499-7827-4983-84c1" name="Metal Claws" hidden="false" collective="false" import="true" targetId="132d-03bf-d652-3b6c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05c5-0a05-f3c7-dc32" type="max"/>
+                        <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b31-0c4f-48d7-ecfb" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="3798-3f0d-85e8-ff26" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="97ed-0418-e6b8-5454" name="Ambush" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7ab-4096-076c-bfb3" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="de30-e7fe-51ab-7057" name="Ambush" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+                          <characteristics>
+                            <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Ambush</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink id="a64a-b549-b6d6-d4b2" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="180.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="77eb-6e8e-ae57-0c9a" name="Flesh-Eater" hidden="false" collective="false" import="true" targetId="9ccb-cc52-1d6f-4e44" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5965-9f7e-a9fc-699e" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d18-cdb3-cb11-fe10" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9ccb-cc52-1d6f-4e44" name="Flesh-Eater" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="c23f-2a0b-7ac0-3b83" name="Flesh-Eater" hidden="false" targetId="8ac5-a065-687a-9c88" type="profile"/>
-        <infoLink id="0cef-9a90-b855-08c6" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-        <infoLink id="71e4-8548-83bd-cef6" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
-        <infoLink id="f26a-1c5b-0676-f683" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="4ef8-ddb1-dc28-c8f9" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="06dd-42af-7f63-65f5" name="Metal Claws" hidden="false" collective="false" import="true" targetId="132d-03bf-d652-3b6c" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="786b-1692-1f15-9774" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a27-8c4e-87c8-3632" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="180.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="04e8-8993-cfa7-6526" name="Sniper" hidden="false" collective="false" import="true" type="upgrade">
@@ -2051,6 +2172,34 @@
         <infoLink id="d2f7-59a5-56f3-10be" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="c81d-66bf-d2b6-62a9" name="Chainsaw Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3e54-0c0f-f560-72b6" name="Chainsaw Claws" hidden="false" targetId="262f-b646-4824-40ae" type="profile"/>
+        <infoLink id="81f7-1389-2ab7-da7b" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="890d-6fa4-5a73-268b" name="Plasma Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7a0f-f856-1598-0a1d" name="Plasma Claws" hidden="false" targetId="e5c0-99d0-4b15-09c9" type="profile"/>
+        <infoLink id="59f1-404b-47b5-c736" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="45a9-b19b-322c-561d" name="Electric Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1e81-4e69-c067-85e3" name="Electric Claws" hidden="false" targetId="09ca-118a-5847-9622" type="profile"/>
+        <infoLink id="b037-0a5f-d200-57f7" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="9545-2740-501f-06c3" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0da2-7341-2e9d-0184" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -2270,7 +2419,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Regeneration, Slow</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Regeneration, Slow</characteristic>
       </characteristics>
     </profile>
     <profile id="88b1-c38c-d41b-de6c" name="Sniper" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -2401,7 +2550,7 @@
     <profile id="5622-40d7-c298-bb49" name="Metal Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Rending</characteristic>
       </characteristics>
     </profile>
     <profile id="454a-af94-08cc-5dd8" name="Sniper Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
@@ -2789,6 +2938,24 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="262f-b646-4824-40ae" name="Chainsaw Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e5c0-99d0-4b15-09c9" name="Plasma Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="09ca-118a-5847-9622" name="Electric Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Deadly(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
