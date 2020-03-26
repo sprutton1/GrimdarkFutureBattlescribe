@@ -61,7 +61,7 @@ table!
 
 | Army | Version | Progress |
 |---|---|---|
-|Game System|v2.7|Done|
+|Game System|v2.8|Done|
 |Alien Hives|v2.7|Done|
 |Battle Brothers|Main v2.10 - Prime v2.10 - Detachments v2.9|Done|
 |Battle Sisters|v2.1|Done|
