@@ -797,79 +797,25 @@
         <infoLink id="c715-e4c8-1ba4-d6c7" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
         <infoLink id="db60-e03b-4c7f-5754" name="Organ Tank" hidden="false" targetId="59fb-e17d-e2e4-a8a6" type="profile"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="e390-623b-e798-07c0" name="Organ Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7fe5-4337-d028-abdb" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d93d-6cde-159b-31f8">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be9e-c4ff-db30-6e41" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f942-9802-50c1-31d0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7681-689c-7803-8863" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c26f-2c81-e4d5-71f8" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="5ecc-72a0-f508-349f" name="Organ Missiles" hidden="false" collective="false" import="true" targetId="ad31-9f3d-be3c-46be" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec29-932c-6699-d3db" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a8f-f684-1359-5edc" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b201-95be-6e6a-353d" name="Upgrades" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="8cc5-1286-329c-ffe4" name="Hunter Missiles" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa6b-959b-44af-d504" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="41b1-6eb8-1c35-23b4" name="Hunter Missile" hidden="false" collective="false" import="true" targetId="c756-9c2d-beca-986c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74eb-e56f-606a-f6cb" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe7e-5ff6-98e2-1093" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+            <entryLink id="44cd-2b0c-cc84-e87f" name="Organ Missiles" hidden="false" collective="false" import="true" targetId="ad31-9f3d-be3c-46be" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="8de1-c101-45fc-ba77" name="Storm Rifle" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b0f-4f91-ab06-b5a8" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="5916-26d6-d175-a305" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8893-dfa7-8bfb-93d9" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe30-dc7c-6857-37e8" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f820-dd01-ab48-628d" name="Dozer Blade" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4660-8321-31cf-e61d" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="f445-8946-a997-2d11" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="5dc2-4ac8-2769-e4ba" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="250c-1c9a-36c5-8975" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08e9-2ed4-bb56-1761" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink id="d93d-6cde-159b-31f8" name="Organ Mortar" hidden="false" collective="false" import="true" targetId="0982-ed3a-1501-d8f0" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ce33-14f1-3584-e3fc" name="Upgrades - Vehicles" hidden="false" collective="false" import="true" targetId="6988-d6e3-e440-ecd4" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="390.0"/>
       </costs>
@@ -2068,6 +2014,17 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0982-ed3a-1501-d8f0" name="Organ Mortar" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ca5f-7a80-de0a-027c" name="Indirect" hidden="false" targetId="587a-b92c-a265-06c4" type="rule"/>
+        <infoLink id="377a-5bdb-fe53-5c8f" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+        <infoLink id="176c-841c-1f8a-25a7" name="Organ Mortar" hidden="false" targetId="b650-83d6-bf7a-5a7f" type="profile"/>
+        <infoLink id="8488-605a-2e0a-cbdd" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7fe4-5916-6809-d27a" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="1923-4b42-7fbf-5093">
@@ -2677,6 +2634,13 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b650-83d6-bf7a-5a7f" name="Organ Mortar" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Blast(3), Indirect</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
