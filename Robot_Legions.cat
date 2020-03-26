@@ -1942,10 +1942,10 @@
         <infoLink id="8a7b-374c-5bc8-d3db" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="0ab7-de20-a97b-e00f" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
         <infoLink id="939b-6232-987f-272b" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-        <infoLink id="90cc-ad7f-3e25-bac0" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="90cc-ad7f-3e25-bac0" name="Repair" hidden="false" targetId="68cf-94ce-01a0-a6c5" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8888-6479-ed93-e066" name="Upgrade with:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8888-6479-ed93-e066" name="Upgrade with any:" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="475b-5834-c62e-3a83" name="Repair Bots" hidden="false" collective="false" import="true" targetId="54c5-492c-a9da-8cd7" type="selectionEntry">
               <constraints>
@@ -1960,23 +1960,27 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e19-e94e-5267-fc2d" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="100.0"/>
               </costs>
             </entryLink>
-            <entryLink id="7b43-68bb-7c8c-a548" name="Antimatter Rifle" hidden="false" collective="false" import="true" targetId="1699-4292-a8ec-328a" type="selectionEntry">
+            <entryLink id="1fbd-d35e-f3bf-283a" name="Gloom-Protocol" hidden="false" collective="false" import="true" targetId="9943-2977-33f8-1ac7" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc01-c282-d64c-4f97" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="9137-41b8-e636-bfda" name="Repair" hidden="false" collective="false" import="true" targetId="ee87-bb99-34e4-e04c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a066-f80a-dc2f-233d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03c4-dd6e-018b-f834" type="max"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="231d-2312-2f10-931f" name="Upgrade with up to two:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="353e-af9b-3d8c-59fc" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="cbe3-52d8-f54b-84f3" name="Antimatter Rifle" hidden="false" collective="false" import="true" targetId="1699-4292-a8ec-328a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -1989,9 +1993,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1566-6680-5974-6371" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="d7d9-113c-8e51-2493" name="Stomp (Robot)" hidden="false" collective="false" import="true" targetId="1d2e-00f4-d683-28df" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3afe-0903-217a-6dfe" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9a1-83db-da84-6e98" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="420.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="250.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ee87-bb99-34e4-e04c" name="Repair" hidden="false" collective="false" import="true" type="upgrade">
@@ -2331,6 +2341,15 @@
         <infoLink id="7ca4-9c1e-829b-e019" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="1d2e-00f4-d683-28df" name="Stomp (Robot)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b588-b30c-ef41-f165" name="Stomp (Robot)" hidden="false" targetId="b384-ad6e-5840-2e33" type="profile"/>
+        <infoLink id="493c-3ac9-18fd-d5c2" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0da2-7341-2e9d-0184" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -2493,7 +2512,7 @@
       <description>On a round in which this unit arrives from Ambush it gets AP(+3).</description>
     </rule>
     <rule id="68cf-94ce-01a0-a6c5" name="Repair" hidden="false">
-      <description>Once per turn, if the hero is within 2” of a friendly unit with the Tough rule, it may try to repair it. Roll one die, on a 4+ it repairs 1 wound.</description>
+      <description>Once per turn, if within 2&quot; of a unit with Tough, roll one die. On a 4+ you may repair 1 wound from the target.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2620,7 +2639,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fear, Fearless, Impact(3), Strider, Tough(6)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fear, Fearless, Repair, Strider, Tough(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="3252-1851-059c-f708" name="Night Transport" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -2753,7 +2772,7 @@
     </profile>
     <profile id="9c66-074c-23d4-e87d" name="Spider Fangs" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
-        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
@@ -2937,7 +2956,7 @@
     </profile>
     <profile id="ec23-5cb5-1b9d-eb39" name="Bot Fabricator" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Once per turn, if this unit is within 6” of a Bot Swarm unit, you may roll one die. On a 4+ add 2 Bot Swarm model to that unit.</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">When this unit is activated place 1 Bot Swarm fully within 6&quot; of this unit.</characteristic>
       </characteristics>
     </profile>
     <profile id="4efd-f915-c0bc-2550" name="Darkness-Protocol" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
@@ -3099,6 +3118,12 @@
     <profile id="3973-497a-0940-455a" name="Crushing Legs" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b384-ad6e-5840-2e33" name="Stomp (Robot)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
