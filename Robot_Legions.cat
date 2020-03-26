@@ -1015,6 +1015,9 @@
                           </constraints>
                         </entryLink>
                       </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="8c59-e6b8-c61e-09e9" name="Flux Rifles" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
@@ -1053,6 +1056,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="b67e-9638-047a-0c99" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -1071,6 +1077,9 @@
                           </constraints>
                         </entryLink>
                       </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="34c7-12d4-b041-e3e2" name="Flux Rifles" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
@@ -1206,6 +1215,9 @@
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="529b-6d26-f758-8d84" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -1357,6 +1369,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2cda-52ab-6fbe-5a0c" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -1426,6 +1441,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="b9e9-a35e-6a70-08f4" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -1447,67 +1465,71 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3a2f-24ff-962a-36ec" name="Hover Bike" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9d7a-33b5-fe07-43fa" name="Hover Bikes" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="93af-ffa1-35d0-8bae" name="Hover Bike" hidden="false" targetId="732b-dea2-0937-6be7" type="profile"/>
-        <infoLink id="0eca-d3f9-07f5-25d9" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-        <infoLink id="7eb9-611f-9a7a-9a6e" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="0071-5be8-7084-7799" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="b5d0-cce8-fbca-5869" name="Hover Bike" hidden="false" targetId="732b-dea2-0937-6be7" type="profile"/>
+        <infoLink id="316a-e855-29a5-3bd0" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="95d1-e404-bb11-d12f" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="3b31-a63c-286c-bc9d" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1a1c-a593-0c77-f390" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="97ef-3803-07dd-9748">
+        <selectionEntryGroup id="3fb8-5dee-c586-db54" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8bb-e46b-52c2-e879">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4343-c06f-8fdd-5893" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d81b-6dc7-6478-babe" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ee-f229-4eab-02bd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4141-a9fc-aeaa-bb00" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="ef21-3d61-cd8f-23b2" name="Antimatter Rifle" hidden="false" collective="false" import="true" targetId="1699-4292-a8ec-328a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0532-3b1f-caa5-9811" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="b3a7-38d9-5ffa-9983" name="Twin Flux Rifle" hidden="false" collective="false" import="true" targetId="b44f-85b9-911b-234c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9919-8773-b1f6-d1ee" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="97ef-3803-07dd-9748" name="Twin Guass Rifle" hidden="false" collective="false" import="true" targetId="c74c-30de-be89-9084" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3ca-e67d-6eb2-5bba" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="a8bb-e46b-52c2-e879" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="01ed-7431-8cf3-1847" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="8719-0c3e-e289-2b5c">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b20-6f1a-ff4e-826e" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb52-4c70-10f1-d0e3" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="8719-0c3e-e289-2b5c" name="Twin Gauss Rifle" hidden="false" collective="false" import="true" targetId="c74c-30de-be89-9084" type="selectionEntry"/>
+                    <entryLink id="6f8a-c977-e1e4-d5ad" name="Twin Flux Cannon" hidden="false" collective="false" import="true" targetId="0863-82bf-6c6d-80fe" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="ca69-b695-e523-164f" name="Antimatter Rifle" hidden="false" collective="false" import="true" targetId="1699-4292-a8ec-328a" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="083c-b617-ec7d-ee71" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="f7e5-da14-3f87-116e" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="2373-4291-eaa1-1121">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64e9-5e7c-66cc-37eb" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd64-a49b-7ea8-70de" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="2373-4291-eaa1-1121" name="Twin Gauss Rifle" hidden="false" collective="false" import="true" targetId="c74c-30de-be89-9084" type="selectionEntry"/>
+                    <entryLink id="e389-0277-8bb5-ce79" name="Twin Flux Cannon" hidden="false" collective="false" import="true" targetId="0863-82bf-6c6d-80fe" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="1a1a-49c4-2dde-f65a" name="Antimatter Rifle" hidden="false" collective="false" import="true" targetId="1699-4292-a8ec-328a" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="b37b-b10c-5d69-6ccc" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a29-2058-dc33-1cf2" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="347d-c980-55db-c7f4" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9d7a-33b5-fe07-43fa" name="Hover Bikes" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="e302-892d-939e-9bb5" name="Hover Bike" hidden="false" collective="false" import="true" targetId="3a2f-24ff-962a-36ec" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0737-7242-37cb-d8e1" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72b8-3fa2-afb5-68f7" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="145.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8b66-6346-eb6f-310d" name="Robot Snake" hidden="false" collective="false" import="true" type="upgrade">
@@ -2240,6 +2262,9 @@
         <infoLink id="4d8d-cddf-24ed-9c4c" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="d2f7-59a5-56f3-10be" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c81d-66bf-d2b6-62a9" name="Chainsaw Claws" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
