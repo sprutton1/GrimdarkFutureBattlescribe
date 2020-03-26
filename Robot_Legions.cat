@@ -190,7 +190,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="43d0-3daf-4f5f-5b00" name="Gauss Machinegun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="43d0-3daf-4f5f-5b00" name="4x Gauss Machineguns" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8daa-b869-22be-26cb" name="Guass Machingun" hidden="false" targetId="652c-505e-4b79-951f" type="profile"/>
         <infoLink id="705b-52f4-5abf-bb30" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
@@ -2094,34 +2094,11 @@
         <infoLink id="0ba1-151b-3d61-847e" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="4c4d-a278-494a-d498" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
         <infoLink id="912c-65b7-66f8-180e" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
-        <infoLink id="f3ac-6a6d-f0aa-78d6" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="2a28-9469-7c1f-f44b" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
         <infoLink id="feed-a8c9-b6e6-f6e6" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="9d6b-ccb8-f6dc-2a27" name="4x Gauss Machineguns" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c910-1a35-bed5-3983" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc0a-8122-4d7f-6303" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="8d4f-84f8-d602-ba28" name="Gauss Machinegun" hidden="false" collective="false" import="true" targetId="43d0-3daf-4f5f-5b00" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c517-d516-e232-683c" type="max"/>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d50-3325-ce50-1f9c" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="23b5-87e3-ba7b-9d67" name="Upgrade with:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dcc-cc04-7784-5cd2" type="max"/>
-          </constraints>
           <entryLinks>
             <entryLink id="8868-131d-270e-701d" name="Repair Bots" hidden="false" collective="false" import="true" targetId="54c5-492c-a9da-8cd7" type="selectionEntry">
               <constraints>
@@ -2141,9 +2118,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb31-95c6-28a6-24cd" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="c36e-6672-b368-3b2c" name="Gauss Machinegun" hidden="false" collective="false" import="true" targetId="43d0-3daf-4f5f-5b00" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53ad-d32b-8a20-5c02" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d15f-28d3-b421-4d24" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="820.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="810.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e30-6d55-b28f-ab55" name="Fortress of Destruction" hidden="false" collective="false" import="true" type="upgrade">
@@ -2654,7 +2637,7 @@
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fear, Fearless, Impact(9), Slow, Strider, Tough(18), Transport(21)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fear, Fearless, Slow, Strider, Tough(18), Transport(21)</characteristic>
       </characteristics>
     </profile>
     <profile id="bf5f-af5a-1e2d-7500" name="Fortress of Destruction" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
@@ -2777,7 +2760,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Blast(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="652c-505e-4b79-951f" name="Gauss Machingun" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="652c-505e-4b79-951f" name="4x Gauss Machineguns" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
