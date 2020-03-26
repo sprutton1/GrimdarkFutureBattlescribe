@@ -21,6 +21,7 @@
     <entryLink id="596f-c739-12f4-d8eb" name="Pistoleer Sisters" hidden="false" collective="false" import="true" targetId="711c-7736-1124-eed8" type="selectionEntry"/>
     <entryLink id="9eb3-50d8-f95b-fb04" name="Destroyer Sisters" hidden="false" collective="false" import="true" targetId="86c2-ae66-9c05-3342" type="selectionEntry"/>
     <entryLink id="3bcb-1233-30d3-1646" name="Biker Sisters" hidden="false" collective="false" import="true" targetId="a542-4493-bdc1-7442" type="selectionEntry"/>
+    <entryLink id="5916-f812-f1d2-7991" name="Crusaders" hidden="false" collective="false" import="true" targetId="de2f-76b2-8562-ce01" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c329-5155-d464-288d" name="High Sister" hidden="false" collective="false" import="true" type="upgrade">
@@ -2053,6 +2054,48 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry id="de2f-76b2-8562-ce01" name="Crusaders" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8c59-a4ae-d013-0edb" name="Crusader" hidden="false" targetId="fe92-d686-0a7a-76d4" type="profile"/>
+        <infoLink id="5fdd-df71-6d48-eb64" name="Shield Wall" hidden="false" targetId="88fe-f22b-1ae7-d988" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8dd1-3e4e-db5c-4d4e" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="1e7d-66e5-218d-b81f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5557-6bd0-e980-ba53" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2539-79c3-ee7b-ceb1" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1e7d-66e5-218d-b81f" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="2455-c064-78d7-8766" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5104-59dd-9eb7-f678" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3850-7b25-c257-3640" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="a199-1759-8702-1ac1" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="3d4c-3fb9-be89-0cfb" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af56-5bed-933e-cb0e" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28a7-1aa2-36c6-1f87" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7fe4-5916-6809-d27a" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="1923-4b42-7fbf-5093">
@@ -2305,6 +2348,9 @@
 - Guidance: AP(+1) when shooting
 - Spirit: AP(+1) when in melee
 - Aegis: enemies get -1 to melee hits</description>
+    </rule>
+    <rule id="88fe-f22b-1ae7-d988" name="Shield Wall" publicationId="e089-4b9a-ff51-ca3e" hidden="false">
+      <description>Enemy units get -1 to all attack rolls when targeting this model.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2591,6 +2637,13 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fe92-d686-0a7a-76d4" name="Crusader" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Shield Wall</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
