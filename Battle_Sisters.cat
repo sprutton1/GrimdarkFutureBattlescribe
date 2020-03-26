@@ -25,6 +25,7 @@
     <entryLink id="7af0-96ec-e685-c959" name="Flagellants" hidden="false" collective="false" import="true" targetId="51f2-a24d-c544-8414" type="selectionEntry"/>
     <entryLink id="5aa4-a661-ee4f-07cf" name="Cult Assassins" hidden="false" collective="false" import="true" targetId="c29c-843e-5279-f818" type="selectionEntry"/>
     <entryLink id="b345-7e6c-a4f3-cf02" name="Assault Walker" hidden="false" collective="false" import="true" targetId="8ae1-ef81-5bd2-29ff" type="selectionEntry"/>
+    <entryLink id="70cf-99b5-eaeb-333f" name="Support Walker" hidden="false" collective="false" import="true" targetId="1476-38e1-10d9-7b21" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c329-5155-d464-288d" name="High Sister" hidden="false" collective="false" import="true" type="upgrade">
@@ -2084,9 +2085,63 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a079-1ce6-2b34-e601" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="90ed-13cc-d588-df81" name="Stomp" hidden="false" collective="false" import="true" targetId="e7af-48e9-943a-d9d8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e6e-5848-2a36-f027" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a87-53a4-f83d-4bdd" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1476-38e1-10d9-7b21" name="Support Walker" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="63df-eeb5-7028-eadc" name="Support Walker" hidden="false" targetId="fa11-f3ad-2517-82c3" type="profile"/>
+        <infoLink id="da74-5563-dae3-5d35" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+        <infoLink id="11e7-8c55-e956-5308" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="b181-4d8d-9fbb-df20" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="ae3d-f316-7135-47de" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
+        <infoLink id="f518-f14d-c738-66e5" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="31b7-a4fe-bf01-98e3" name="Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="be4f-a95a-708c-8e81">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ad6-e330-6a60-e4b6" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6604-992d-992d-fb54" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="be4f-a95a-708c-8e81" name="Walker Fist" hidden="false" collective="false" import="true" targetId="6001-7ab2-db80-04dc" type="selectionEntry"/>
+            <entryLink id="6905-2be3-a9b2-8c69" name="Walker Flail" hidden="false" collective="false" import="true" targetId="2572-d2d6-3d7c-dcfc" type="selectionEntry"/>
+            <entryLink id="a167-2462-ae92-373d" name="Walker Sawblade" hidden="false" collective="false" import="true" targetId="bae5-854d-a9c3-8b47" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c664-d8a5-7d4a-41a7" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="72fc-feea-6ab0-4ba2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aed-376d-6420-6207" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c8d-2e82-4e31-72d6" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="72fc-feea-6ab0-4ba2" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry"/>
+            <entryLink id="0beb-4d8a-4572-43e9" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="afd2-a169-d02d-be3e" name="Stomp" hidden="false" collective="false" import="true" targetId="e7af-48e9-943a-d9d8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0365-3a72-bab9-4ae8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d43-c31f-6a10-13c1" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="260.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2743,6 +2798,13 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fa11-f3ad-2517-82c3" name="Support Walker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Regeneration, Relentless, Tough(6)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
