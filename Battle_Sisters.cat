@@ -17,6 +17,7 @@
     <entryLink id="1e4f-70e7-9400-2967" name="Sister Walker" hidden="false" collective="false" import="true" targetId="2fa0-99d9-b0e1-d74d" type="selectionEntry"/>
     <entryLink id="b1df-9b19-1a4e-3f8c" name="Greater High Sister" hidden="false" collective="false" import="true" targetId="56af-45e5-24a9-9b8a" type="selectionEntry"/>
     <entryLink id="7d8c-f209-0799-8500" name="Champion Sister" hidden="false" collective="false" import="true" targetId="cb3f-e411-2c01-150c" type="selectionEntry"/>
+    <entryLink id="7bcd-5e8c-d8e2-8a94" name="Psychic Sister" hidden="false" collective="false" import="true" targetId="fe27-6d7e-87ef-8fc3" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c329-5155-d464-288d" name="High Sister" hidden="false" collective="false" import="true" type="upgrade">
@@ -2048,6 +2049,22 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="fe27-6d7e-87ef-8fc3" name="Psychic Sister" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3741-4a52-4427-6f97" name="Psychic Sister" hidden="false" targetId="27e0-ae18-4c72-c062" type="profile"/>
+        <infoLink id="5c5e-3e38-8034-101a" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="07e7-aa30-6c6e-f273" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="ef8a-6f70-fe74-b3ad" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="516a-bca3-5a3a-fb86" name="Upgrades - Heroes" hidden="false" collective="false" import="true" targetId="10c3-7834-71ea-7641" type="selectionEntryGroup"/>
+        <entryLink id="63fb-d425-7b2e-3201" name="Weapons - Leaders" hidden="false" collective="false" import="true" targetId="7fe4-5916-6809-d27a" type="selectionEntryGroup"/>
+        <entryLink id="2f74-19b5-33d4-4c56" name="Psychic Power" hidden="false" collective="false" import="true" targetId="50c3-e704-2b49-0298" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7fe4-5916-6809-d27a" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="1923-4b42-7fbf-5093">
@@ -2215,6 +2232,13 @@
           </costs>
         </entryLink>
         <entryLink id="b256-6d83-9bfe-85d0" name="Blind Faith" hidden="false" collective="false" import="true" targetId="77d8-9ad2-3211-a323" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fe27-6d7e-87ef-8fc3" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="427e-28d7-8fa6-cb51" type="max"/>
           </constraints>
@@ -2223,6 +2247,46 @@
           </costs>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="50c3-e704-2b49-0298" name="Psychic Power" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="c046-c2e8-fdd9-9948" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a852-726d-9df5-e96b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6af4-2e1b-7919-0a1f" name="Litanies" hidden="false" targetId="bd8e-b571-df4f-62bc" type="profile"/>
+            <infoLink id="6d6f-dd2f-0db4-9cd2" name="Admonition" hidden="false" targetId="d66f-8682-02c8-a43c" type="profile"/>
+            <infoLink id="ac50-b882-ff82-16f4" name="Eternal Flame" hidden="false" targetId="a1cd-46ee-59d4-6821" type="profile"/>
+            <infoLink id="b59d-5f03-9f45-64a7" name="Heretics" hidden="false" targetId="33cd-236d-8c98-cef5" type="profile"/>
+            <infoLink id="b616-65af-3316-d22e" name="Holy Tears" hidden="false" targetId="a28c-38b5-169a-6c0f" type="profile"/>
+            <infoLink id="7cc5-d7f6-c84f-2eae" name="Righteous Wrath" hidden="false" targetId="71de-7393-3966-3955" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d241-c4f8-a4d1-f799" name="Psychic(X)" hidden="false" collective="false" import="true" defaultSelectionEntryId="1bc9-188f-e99f-7117">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="709b-3e84-48d8-947c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0df-37e9-de3a-faf4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1bc9-188f-e99f-7117" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="cd47-f3b7-5fd9-bc19" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="9d1b-9c08-8f6c-65c0" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="b646-3fc8-e35b-8589" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -2416,6 +2480,49 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="27e0-ae18-4c72-c062" name="Psychic Sister" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Psychic(1), Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bd8e-b571-df4f-62bc" name="Litanies" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +1 to its rolls next time it shoots.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="71de-7393-3966-3955" name="Righteous Wrath" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; must take a morale test, if failed it takes 1 automatic hit per model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="33cd-236d-8c98-cef5" name="Heretics" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; gets -2 to its next morale test roll.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d66f-8682-02c8-a43c" name="Admonition" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24&quot; takes 1 hit with AP(2) and Deadly(6).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a28c-38b5-169a-6c0f" name="Holy Tears" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may heal 1 wound or restore 1 model (with only 1 health left if it had Tough).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a1cd-46ee-59d4-6821" name="Eternal Flame" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 6 automatic hits with AP(1).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
