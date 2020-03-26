@@ -113,7 +113,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2807-e0ef-102a-26cd" name="Gauss Cannon" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="2807-e0ef-102a-26cd" name="Gauss Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2144-b4c2-574e-fcb1" name="Guass Cannon" hidden="false" targetId="36ce-470e-c450-cf94" type="profile"/>
         <infoLink id="603e-2824-a326-7f9a" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
@@ -1503,6 +1503,9 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="083c-b617-ec7d-ee71" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -1526,6 +1529,9 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1582,6 +1588,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="70af-07a3-3f55-6699" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -1636,86 +1645,98 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4307-fbb7-c2a3-357d" name="Annihilator" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="48e5-e4b1-a28c-5aa8" name="Annhilator" hidden="false" targetId="2f58-967f-a38e-ffc1" type="profile"/>
-        <infoLink id="10d0-9ccd-099a-bbb0" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-        <infoLink id="459f-e75b-0a01-f2ee" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="ddc6-f54c-72da-5add" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="5855-c74a-6b3c-5aa0" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="2305-ea17-7e79-3af1" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="872e-88b1-51eb-dd7d" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="966a-bcfa-1749-4790" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29ce-5cad-9729-4b9f" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="81a8-474a-7c37-e5cf" name="Guass Cannon" hidden="false" collective="false" import="true" targetId="2807-e0ef-102a-26cd" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cd3-b47b-4710-7160" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30fa-c8c2-e324-5b5d" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="c812-3dd3-51e8-22df" name="Annihilator (Heavy Gauss Cannon" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="65dc-0ad5-6390-f865" name="Annhilator" hidden="false" targetId="2f58-967f-a38e-ffc1" type="profile"/>
-        <infoLink id="55cc-f469-f361-499d" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-        <infoLink id="ec37-e07b-5165-60f3" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="cc3e-6d74-3857-aa93" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="6509-9193-f403-170a" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="6c4e-4bc8-7cb8-4470" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="32f5-c299-faab-c600" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d22d-c538-7a34-3a4a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c3a-57e5-b047-943e" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="b392-f4de-b683-8341" name="Heavy Guass Cannon" hidden="false" collective="false" import="true" targetId="142b-1f39-dfd5-cf03" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fc8-4910-a513-fee5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91e6-2584-ff73-e389" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="83da-fe57-757b-4ae7" name="Annihilators" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e393-3a94-b7c1-fbb4" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="5a66-04b1-76bc-469b" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="b2ec-27c9-599f-cd0d" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="1c07-3492-ec8f-fd85" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="a7c9-5c7b-b983-7d2f" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="c710-698c-4574-1c5a" name="Annhilator" hidden="false" targetId="2f58-967f-a38e-ffc1" type="profile"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4854-dc7d-84dc-e5fc" name="Annihilators" hidden="false" collective="false" import="true" defaultSelectionEntryId="23ef-3ec8-f47f-f80f">
+        <selectionEntryGroup id="41a6-4cdd-4fb2-a9c1" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="aa7a-ffc0-dcc0-21d6">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cbc-0262-e5db-61c4" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9521-7364-49d6-9d7e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48a4-2898-52e1-6a95" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf9e-04f6-1fb2-00d9" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="23ef-3ec8-f47f-f80f" name="Annihilator" hidden="false" collective="false" import="true" targetId="4307-fbb7-c2a3-357d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e95-db21-fe54-a781" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="0ba3-9334-c80b-464f" name="Annihilator (Heavy Guass Cannon" hidden="false" collective="false" import="true" targetId="c812-3dd3-51e8-22df" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38a1-a2d6-6066-4f4c" type="max"/>
-              </constraints>
+          <selectionEntries>
+            <selectionEntry id="aa7a-ffc0-dcc0-21d6" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="bf10-934a-06e8-af74" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="0663-2416-43f4-c160">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62a3-3d5c-8c8e-c62d" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf1-5dc5-1644-0503" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="0663-2416-43f4-c160" name="Gauss Cannon" hidden="false" collective="false" import="true" targetId="2807-e0ef-102a-26cd" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cc1-8887-95c7-20cf" type="min"/>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ab1-46a4-7148-f303" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="bf30-df9b-be74-a381" name="Heavy Gauss Cannon" hidden="false" collective="false" import="true" targetId="142b-1f39-dfd5-cf03" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bea7-f3fc-3086-96f2" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="fb9e-c10c-d72a-1e29" name="CCW (A3)" hidden="false" collective="false" import="true" targetId="929d-4e14-54f7-0ad8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c988-d1da-c6c3-10a2" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6709-9d8f-9163-27f6" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="b6f2-15f4-39f3-9381" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="fe51-9303-36fe-dd19" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="0205-1569-b3c1-3f71">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f58-3629-6d52-fe7e" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7956-746c-2320-ad1b" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="0205-1569-b3c1-3f71" name="Gauss Cannon" hidden="false" collective="false" import="true" targetId="2807-e0ef-102a-26cd" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="528a-2abf-3d02-134b" type="min"/>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b71-f354-3d40-59fc" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="e140-35fe-59ab-bb59" name="Heavy Gauss Cannon" hidden="false" collective="false" import="true" targetId="142b-1f39-dfd5-cf03" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1233-40e3-0388-5d44" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="6573-5379-f597-3285" name="CCW (A3)" hidden="false" collective="false" import="true" targetId="929d-4e14-54f7-0ad8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c13b-ff98-8dae-2990" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d011-6dd5-050a-683f" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="450.0"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="440.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="450.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2a8d-d256-4dd5-1dc9" name="Transport Tank" hidden="false" collective="false" import="true" type="upgrade">
@@ -2322,6 +2343,11 @@
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="929d-4e14-54f7-0ad8" name="CCW (A3)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bb6d-3f42-1713-7c22" name="CCW (A3)" hidden="false" targetId="6793-53e1-ded6-c405" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -3080,6 +3106,12 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6793-53e1-ded6-c405" name="CCW (A3)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
