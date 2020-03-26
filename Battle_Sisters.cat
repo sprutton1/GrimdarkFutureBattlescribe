@@ -20,6 +20,7 @@
     <entryLink id="7bcd-5e8c-d8e2-8a94" name="Psychic Sister" hidden="false" collective="false" import="true" targetId="fe27-6d7e-87ef-8fc3" type="selectionEntry"/>
     <entryLink id="596f-c739-12f4-d8eb" name="Pistoleer Sisters" hidden="false" collective="false" import="true" targetId="711c-7736-1124-eed8" type="selectionEntry"/>
     <entryLink id="9eb3-50d8-f95b-fb04" name="Destroyer Sisters" hidden="false" collective="false" import="true" targetId="86c2-ae66-9c05-3342" type="selectionEntry"/>
+    <entryLink id="3bcb-1233-30d3-1646" name="Biker Sisters" hidden="false" collective="false" import="true" targetId="a542-4493-bdc1-7442" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c329-5155-d464-288d" name="High Sister" hidden="false" collective="false" import="true" type="upgrade">
@@ -1805,6 +1806,253 @@
         <infoLink id="ceea-22ed-a6a0-13d0" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="a542-4493-bdc1-7442" name="Biker Sisters" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a36b-c327-8b33-2d4a" name="Biker Sister" hidden="false" targetId="8a29-a733-ac9b-d5b8" type="profile"/>
+        <infoLink id="67a2-3413-52c4-390e" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="0620-530c-38ec-139c" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cf16-95b0-d971-9c1a" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="6623-2ee5-7c1a-1bd1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7697-fc60-bb72-0da5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee04-179b-ec53-f319" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6623-2ee5-7c1a-1bd1" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="23d0-f6af-8c1c-7eba" name="Weapon Variants" hidden="false" collective="false" import="true" defaultSelectionEntryId="ddf0-ef9d-6932-00e7">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffea-2690-14fc-1ad4" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2c1-21f5-0ad8-8480" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="a974-9261-0736-7734" name="Pistols &amp; CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="5d71-301f-01e1-bf42" name="Sisters" hidden="false" collective="false" import="true" defaultSelectionEntryId="7154-747d-2a68-f738">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26ca-d269-3cc5-42b4" type="min"/>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afb7-3093-ff3c-99e5" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="7154-747d-2a68-f738" name="Biker Sister (Pistol)" hidden="false" collective="false" import="true" targetId="c273-8803-901d-56c7" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="088f-85d4-46d7-b8e7" type="max"/>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8252-80b6-27b7-f42a" type="min"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="ffa7-dc21-4a42-aea4" name="Biker Sister Leader" hidden="false" collective="false" import="true" targetId="5d30-7636-96a2-2530" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b52-4c23-32dd-b3d2" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntry>
+                    <selectionEntry id="ddf0-ef9d-6932-00e7" name="Assault Rifles &amp; CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="7cb2-ff79-cd67-3b24" name="Sisters" hidden="false" collective="false" import="true" defaultSelectionEntryId="777f-48bd-967c-692e">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="016c-8b89-9be3-e40e" type="min"/>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1390-fc65-64eb-181d" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="777f-48bd-967c-692e" name="Biker Sister (Rifle)" hidden="false" collective="false" import="true" targetId="2ae4-f957-4b44-e50e" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abd7-2032-e5c7-545c" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="6d8b-f8f6-1518-a812" name="Biker Sister Leader" hidden="false" collective="false" import="true" targetId="5d30-7636-96a2-2530" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57b8-6fbf-0e1a-f0ea" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="ffab-6bdb-afaf-ff3c" name="Biker Sister Specialist" hidden="false" collective="false" import="true" targetId="6685-bbb2-d1f1-f235" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0518-04df-aaaf-8685" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="0a2d-5151-46e9-521a" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="d80c-4674-544e-6b5a" name="Twin Assault Rifle" hidden="false" collective="false" import="true" targetId="e098-3b64-3d3c-33c2" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ff4-af17-6b80-c83a" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="fcc1-428d-dec5-9be2" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="b75a-971c-2341-d5b1" name="Weapon Variants" hidden="false" collective="false" import="true" defaultSelectionEntryId="eb8a-480a-2db6-109f">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ee2-59a2-e50d-9367" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5633-9aab-563d-5403" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="ebfe-1ebe-5f77-ee38" name="Pistols &amp; CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="dec7-33ba-16d5-9fef" name="Sisters" hidden="false" collective="false" import="true" defaultSelectionEntryId="4b36-2192-6fbb-b5c2">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89b4-0af4-d946-c1f7" type="min"/>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff3a-664a-0a54-9cbf" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="4b36-2192-6fbb-b5c2" name="Biker Sister (Pistol)" hidden="false" collective="false" import="true" targetId="c273-8803-901d-56c7" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db5d-d7eb-5864-731f" type="max"/>
+                                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b4b-59ab-e2f6-b7fa" type="min"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="d50a-92af-4dde-caf1" name="Biker Sister Leader" hidden="false" collective="false" import="true" targetId="5d30-7636-96a2-2530" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="600c-cced-eb45-6ca1" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntry>
+                    <selectionEntry id="eb8a-480a-2db6-109f" name="Assault Rifles &amp; CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="f5fe-fee3-f7cb-1482" name="Sisters" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6cc-8be2-957a-cecb">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6ba-2f77-8106-0fda" type="min"/>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c051-0b1c-75a3-baa1" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="a6cc-8be2-957a-cecb" name="Biker Sister (Rifle)" hidden="false" collective="false" import="true" targetId="2ae4-f957-4b44-e50e" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5461-2bce-c0d1-eab1" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="5ded-7a26-bf9d-1e2a" name="Biker Sister Leader" hidden="false" collective="false" import="true" targetId="5d30-7636-96a2-2530" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6bb-d5f1-eabe-1087" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="2d3d-ea28-64ca-c3ba" name="Biker Sister Specialist" hidden="false" collective="false" import="true" targetId="6685-bbb2-d1f1-f235" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1846-9aee-9404-e5b9" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="1aba-8b5b-c6c9-7e13" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="825f-1b54-31c1-fffd" name="Twin Assault Rifle" hidden="false" collective="false" import="true" targetId="e098-3b64-3d3c-33c2" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a2c-04b1-094e-61d8" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2ae4-f957-4b44-e50e" name="Biker Sister (Assault Rifle)" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="58f2-993c-38ca-a7e8" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="b1f7-fded-6b90-629b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f27-0748-efe3-39a2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9f0-2443-d360-9d0f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="82b1-aa5d-6107-a34d" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19a2-ec45-f84d-51d2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a323-064d-d16e-9e73" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="c273-8803-901d-56c7" name="Biker Sister (Pistol)" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="dbc0-034a-f485-7634" name="Pistol" hidden="false" collective="false" import="true" targetId="0f74-a615-8329-0c1a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="894b-33af-58be-2138" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="914c-ba3f-bab8-5e8a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="29fe-aad0-5739-11b9" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="138a-cf74-9663-eff9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f7c-7f1f-4218-b3c2" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="5d30-7636-96a2-2530" name="Biker Sister Leader" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="2cac-d908-325d-41f1" name="Weapons - Leaders" hidden="false" collective="false" import="true" targetId="7fe4-5916-6809-d27a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="6685-bbb2-d1f1-f235" name="Biker Sister Specialist" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="638f-2925-55bc-7615" name="Ranged Weapons" hidden="false" collective="true" import="true" defaultSelectionEntryId="d9fb-025f-5c9c-0cd9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a24-c780-4409-ced7" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d9fb-025f-5c9c-0cd9" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="5fa6-a3d6-fa65-58b8" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ba5f-e1ad-a96b-e4a7" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="cdaf-57fd-9e42-51d9" name="Shred Rifle" hidden="false" collective="false" import="true" targetId="fa7d-5662-869b-c879" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b272-1949-62a5-3399" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fefa-b0a1-3ce9-1136" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e71-e220-1246-7803" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7fe4-5916-6809-d27a" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="1923-4b42-7fbf-5093">
@@ -2336,6 +2584,13 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8a29-a733-ac9b-d5b8" name="Biker Sister" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
