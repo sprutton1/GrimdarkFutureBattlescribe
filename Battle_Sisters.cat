@@ -14,7 +14,6 @@
     <entryLink id="7476-97b8-0125-e764" name="APC" hidden="false" collective="false" import="true" targetId="ea25-5876-7f8e-834a" type="selectionEntry"/>
     <entryLink id="a045-6c93-45bc-a70c" name="Infernal APC" hidden="false" collective="false" import="true" targetId="9aa9-c75b-1ba1-70c5" type="selectionEntry"/>
     <entryLink id="d177-bb66-fcfb-5644" name="Organ Tank" hidden="false" collective="false" import="true" targetId="8503-85d4-dd43-0422" type="selectionEntry"/>
-    <entryLink id="1e4f-70e7-9400-2967" name="Sister Walker" hidden="false" collective="false" import="true" targetId="2fa0-99d9-b0e1-d74d" type="selectionEntry"/>
     <entryLink id="b1df-9b19-1a4e-3f8c" name="Greater High Sister" hidden="false" collective="false" import="true" targetId="56af-45e5-24a9-9b8a" type="selectionEntry"/>
     <entryLink id="7d8c-f209-0799-8500" name="Champion Sister" hidden="false" collective="false" import="true" targetId="cb3f-e411-2c01-150c" type="selectionEntry"/>
     <entryLink id="7bcd-5e8c-d8e2-8a94" name="Psychic Sister" hidden="false" collective="false" import="true" targetId="fe27-6d7e-87ef-8fc3" type="selectionEntry"/>
@@ -820,55 +819,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="390.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="2fa0-99d9-b0e1-d74d" name="Sister Walker" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="f0e9-207c-e9af-5e96" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
-        <infoLink id="29da-46d9-1c0f-6446" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="74d2-2433-0fa2-e7dd" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
-        <infoLink id="ef70-788e-e387-4f26" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="bc6f-bcc0-b4e8-73dc" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
-        <infoLink id="efd6-6373-62f2-33a4" name="Sister Walker" hidden="false" targetId="ccdb-fe64-6a60-eef0" type="profile"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="add2-8aed-1c36-70a4" name="2x Energy Fists" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04c2-72d8-81da-cc95" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a21-fb88-3e9e-ca14" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="022b-ed77-1652-ea89" name="Energy Fist" hidden="false" collective="false" import="true" targetId="ffff-7bb4-119c-0f59" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fa9-b410-c4a3-3880" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be4d-0706-cbc3-00cd" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9b1e-e528-53a1-36f3" name="2x Heavy Flamethrowers" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad4d-7b56-e3f6-b4ca" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c33d-967e-7e48-a903" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="455d-0fd3-03e5-b5bf" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b750-0409-f636-767c" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6172-607a-40d9-055f" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="195.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c05f-cba3-14ea-79fe" name="Holy Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -2538,13 +2488,6 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(3), Indirect</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ccdb-fe64-6a60-eef0" name="Sister Walker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
-      <characteristics>
-        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
-        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Furious, Impact(3), Tough(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="da9e-d46f-9703-d55a" name="Greater High Sister" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
