@@ -16,6 +16,7 @@
     <entryLink id="d177-bb66-fcfb-5644" name="Organ Tank" hidden="false" collective="false" import="true" targetId="8503-85d4-dd43-0422" type="selectionEntry"/>
     <entryLink id="1e4f-70e7-9400-2967" name="Sister Walker" hidden="false" collective="false" import="true" targetId="2fa0-99d9-b0e1-d74d" type="selectionEntry"/>
     <entryLink id="b1df-9b19-1a4e-3f8c" name="Greater High Sister" hidden="false" collective="false" import="true" targetId="56af-45e5-24a9-9b8a" type="selectionEntry"/>
+    <entryLink id="7d8c-f209-0799-8500" name="Champion Sister" hidden="false" collective="false" import="true" targetId="cb3f-e411-2c01-150c" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c329-5155-d464-288d" name="High Sister" hidden="false" collective="false" import="true" type="upgrade">
@@ -2033,6 +2034,20 @@
         <infoLink id="e1df-aee5-dea9-ff29" name="Blind Faith" hidden="false" targetId="62cd-440d-cdda-4933" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="cb3f-e411-2c01-150c" name="Champion Sister" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0348-abc2-54f9-15e1" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="8c47-0d4d-57eb-bcbe" name="High Sister" hidden="false" targetId="928c-12ae-b6dd-8cb9" type="profile"/>
+        <infoLink id="21f5-8ce6-1516-e1f8" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="fb35-510f-6d04-7dae" name="Upgrades - Heroes" hidden="false" collective="false" import="true" targetId="10c3-7834-71ea-7641" type="selectionEntryGroup"/>
+        <entryLink id="323e-0937-a84e-f530" name="Weapons - Leaders" hidden="false" collective="false" import="true" targetId="7fe4-5916-6809-d27a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7fe4-5916-6809-d27a" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="1923-4b42-7fbf-5093">
@@ -2394,6 +2409,13 @@
     <profile id="34a0-cd33-f19c-534c" name="Blind Faith" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Blind Faith</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2b43-8445-1304-115b" name="Champion Sister" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Tough(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
