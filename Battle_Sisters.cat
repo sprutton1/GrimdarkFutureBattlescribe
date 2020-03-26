@@ -22,6 +22,8 @@
     <entryLink id="9eb3-50d8-f95b-fb04" name="Destroyer Sisters" hidden="false" collective="false" import="true" targetId="86c2-ae66-9c05-3342" type="selectionEntry"/>
     <entryLink id="3bcb-1233-30d3-1646" name="Biker Sisters" hidden="false" collective="false" import="true" targetId="a542-4493-bdc1-7442" type="selectionEntry"/>
     <entryLink id="5916-f812-f1d2-7991" name="Crusaders" hidden="false" collective="false" import="true" targetId="de2f-76b2-8562-ce01" type="selectionEntry"/>
+    <entryLink id="7af0-96ec-e685-c959" name="Flagellants" hidden="false" collective="false" import="true" targetId="51f2-a24d-c544-8414" type="selectionEntry"/>
+    <entryLink id="5aa4-a661-ee4f-07cf" name="Cult Assassins" hidden="false" collective="false" import="true" targetId="c29c-843e-5279-f818" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c329-5155-d464-288d" name="High Sister" hidden="false" collective="false" import="true" type="upgrade">
@@ -2096,6 +2098,103 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="dafd-a48d-c280-7218" name="Flail" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="04f1-80de-b3d7-acc1" name="Flail" hidden="false" targetId="6916-c7a5-105e-a6ad" type="profile"/>
+        <infoLink id="15a0-3c84-4fa4-4d12" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="51f2-a24d-c544-8414" name="Flagellants" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="15e5-255b-f0b0-8659" name="Flagellant" hidden="false" targetId="d44f-f922-04a6-e451" type="profile"/>
+        <infoLink id="367d-e9f8-e73b-6a65" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="53dc-eb70-8220-a0cd" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d28-e861-b7f5-f9d0">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bef-2ed5-e2b4-6810" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2038-f41b-adf0-6ffa" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9d28-e861-b7f5-f9d0" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="bf70-91d0-bf15-88a5" name="Flail" hidden="false" collective="false" import="true" targetId="dafd-a48d-c280-7218" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fc4-8dc1-3e88-2188" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1843-005a-05a8-faed" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="5449-70e7-3fe0-aebf" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="f3af-a2db-b537-c0a9" name="Flail" hidden="false" collective="false" import="true" targetId="dafd-a48d-c280-7218" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da6f-2006-ea14-db3e" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcc4-a87f-30c8-2800" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9eb7-dbd8-757d-9807" name="2x Energy Swords" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c457-197c-16d5-d68a" name="2x Energy Swords" hidden="false" targetId="04a1-70fc-5669-cac2" type="profile"/>
+        <infoLink id="2e72-420e-a965-ca0a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="0264-99a9-a30c-8472" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="c29c-843e-5279-f818" name="Cult Assassins" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2004-6b68-bac5-d299" name="Cult Assassin" hidden="false" targetId="66cb-3007-ca7c-c778" type="profile"/>
+        <infoLink id="0397-1e9c-c8f7-d66b" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2364-29f7-7390-f003" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="65d6-3237-cc33-2393">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56ce-f08f-c587-6ff2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b87-286d-8944-8fd2" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="65d6-3237-cc33-2393" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="7625-6d86-7a27-1295" name="2x Energy Swords" hidden="false" collective="false" import="true" targetId="9eb7-dbd8-757d-9807" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51d2-bfc9-e0d5-c66f" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bdc-e9b8-05af-bb67" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="a5bd-fb9c-ab0d-94f3" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="a730-145c-abcf-8909" name="2x Energy Swords" hidden="false" collective="false" import="true" targetId="9eb7-dbd8-757d-9807" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c42c-ab5b-6032-14d3" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4aad-853e-3ddb-a228" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="110.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7fe4-5916-6809-d27a" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="1923-4b42-7fbf-5093">
@@ -2644,6 +2743,32 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Shield Wall</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6916-c7a5-105e-a6ad" name="Flail" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d44f-f922-04a6-e451" name="Flagellant" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">6+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Regeneration</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="66cb-3007-ca7c-c778" name="Cult Assassin" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Regeneration</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="04a1-70fc-5669-cac2" name="2x Energy Swords" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Rending</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
