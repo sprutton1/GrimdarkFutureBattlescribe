@@ -103,7 +103,7 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fbee-5fee-b23b-51ed" name="Metal Fangs" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="fbee-5fee-b23b-51ed" name="Metal Fangs" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9c05-fed5-8e4c-f59d" name="Metal Fangs" hidden="false" targetId="751d-a974-c943-0db9" type="profile"/>
         <infoLink id="479e-4cfe-a1a9-76e2" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
@@ -419,6 +419,8 @@
     <selectionEntry id="0881-ff79-ecae-7d4b" name="Whip Coil" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="aff1-a51f-4ec0-bf31" name="Whip Coil" hidden="false" targetId="e78d-e021-f635-16e7" type="profile"/>
+        <infoLink id="0052-ee87-028a-f8f4" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="b260-edf5-387d-dbcc" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -1532,68 +1534,95 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8b66-6346-eb6f-310d" name="Robot Snake" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f28a-157b-84d4-6dad" name="Robot Snakes" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="76f3-3196-53be-ae3e" name="Robot Snake" hidden="false" targetId="b010-f19b-5ba4-4313" type="profile"/>
-        <infoLink id="91b0-ecaa-650b-6639" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-        <infoLink id="5214-a48b-015b-4bfa" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="9892-ceb2-1ca0-2113" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="f0e0-5210-caa3-dce5" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="0fa5-9dac-f458-6852" name="Robot Snake" hidden="false" targetId="b010-f19b-5ba4-4313" type="profile"/>
+        <infoLink id="ae44-13b8-8e7e-7958" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="e845-6a21-0367-6d3b" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="efe9-28ab-de51-1fad" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="9d48-a426-941e-73d1" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d11d-fc86-bbb6-b8d9" name="Upgrade with one:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="d575-9ba3-98b6-714b" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="0c3e-c416-5430-263b">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b934-ae08-1a57-f4f5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c80-a9f4-ec52-adc0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c062-279e-f2c9-ea9a" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="bac5-1afd-76c6-1594" name="Death Gaze" hidden="false" collective="false" import="true" targetId="770d-ee96-19bf-be6a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daac-67ce-222d-0e96" type="max"/>
-              </constraints>
+          <selectionEntries>
+            <selectionEntry id="0c3e-c416-5430-263b" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="065a-5a84-fe4b-338b" name="Upgrade any model with one:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9080-be59-5120-c484" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="2261-2deb-21f4-46c3" name="Antimatter Pistol" hidden="false" collective="false" import="true" targetId="2f9f-c0c8-3166-e8dd" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="1b7c-3ea0-41dc-6a8b" name="Death Gaze" hidden="false" collective="false" import="true" targetId="770d-ee96-19bf-be6a" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="1d32-fd29-e451-cdca" name="Whip Coil" hidden="false" collective="false" import="true" targetId="0881-ff79-ecae-7d4b" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="86f5-f05e-04cd-d6bc" name="Metal Fangs" hidden="false" collective="false" import="true" targetId="fbee-5fee-b23b-51ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd53-c3e7-9478-7fe0" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bd9-d690-a1e0-4fdb" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="70af-07a3-3f55-6699" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="50dc-552f-94ac-d60a" name="Upgrade any model with one:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4043-10ae-9afc-3cd4" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="a617-eec9-c7f9-aec7" name="Antimatter Pistol" hidden="false" collective="false" import="true" targetId="2f9f-c0c8-3166-e8dd" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="7173-1315-99ff-2248" name="Death Gaze" hidden="false" collective="false" import="true" targetId="770d-ee96-19bf-be6a" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="2876-fe7b-47d1-187b" name="Whip Coil" hidden="false" collective="false" import="true" targetId="0881-ff79-ecae-7d4b" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="3d3f-7266-9a06-15de" name="Metal Fangs" hidden="false" collective="false" import="true" targetId="fbee-5fee-b23b-51ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97cd-deab-4a13-7a01" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37f8-dd41-e759-898c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="395.0"/>
               </costs>
-            </entryLink>
-            <entryLink id="f2e4-5732-617f-833e" name="Antimatter Pistol" hidden="false" collective="false" import="true" targetId="2f9f-c0c8-3166-e8dd" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfd8-8d7a-561e-3db0" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="abb2-5af7-8cac-eb35" name="Whip Coil" hidden="false" collective="false" import="true" targetId="0881-ff79-ecae-7d4b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2b0-7de7-87f5-6ee0" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="8663-32e1-7ba9-4bd4" name="Metal Fangs" hidden="false" collective="false" import="true" targetId="fbee-5fee-b23b-51ed" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58ab-5836-f4b9-53f3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79be-8cc1-d915-5462" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f28a-157b-84d4-6dad" name="Robot Snakes" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="5d54-bb6e-e808-26d6" name="Robot Snake" hidden="false" collective="false" import="true" targetId="8b66-6346-eb6f-310d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0911-c2f1-1b74-01cb" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7241-dd05-d2c9-8759" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="395.0"/>
       </costs>
@@ -2837,9 +2866,10 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Deadly(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="e78d-e021-f635-16e7" name="Whip Coil" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+    <profile id="e78d-e021-f635-16e7" name="Whip Coil" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">+A3 in melee</characteristic>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Rending</characteristic>
       </characteristics>
     </profile>
     <profile id="c670-d2c4-e8f1-bd7c" name="Antimatter Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
