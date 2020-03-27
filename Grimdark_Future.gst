@@ -53,30 +53,6 @@
   </categoryEntries>
   <forceEntries>
     <forceEntry id="e1b6-6db4-e6e8-6188" name="Army" hidden="true">
-      <forceEntries>
-        <forceEntry id="4ef0-6e26-703b-6042" name="Daemons of War" hidden="false">
-          <forceEntries>
-            <forceEntry id="4ce6-078a-5085-507a" name="Heroes" hidden="false">
-              <categoryLinks>
-                <categoryLink id="e406-4f8d-a0a3-00af" name="Heroes" hidden="false" targetId="4b4e-fbe0-5211-ae65" primary="false"/>
-              </categoryLinks>
-            </forceEntry>
-            <forceEntry id="aee2-96cb-94f2-2921" name="Infantry" hidden="false">
-              <categoryLinks>
-                <categoryLink id="f070-7fc6-011a-f576" name="Infantry" hidden="false" targetId="dfbf-5076-f148-2f58" primary="false"/>
-              </categoryLinks>
-            </forceEntry>
-            <forceEntry id="5f72-6457-8e05-4d92" name="Vehicles: Heavy" hidden="false">
-              <categoryLinks>
-                <categoryLink id="8f1c-43a4-1315-10cf" name="Vehicles: Heavy" hidden="false" targetId="b820-6309-e900-c733" primary="false"/>
-              </categoryLinks>
-            </forceEntry>
-          </forceEntries>
-          <categoryLinks>
-            <categoryLink id="34f9-f885-06af-22f2" name="Daemons of War" hidden="false" targetId="4e01-41d3-0a8b-d98b" primary="false"/>
-          </categoryLinks>
-        </forceEntry>
-      </forceEntries>
       <categoryLinks>
         <categoryLink id="54fb-5842-f04c-7d68" name="Daemons of Change" hidden="false" targetId="f911-7f52-09f1-f266" primary="false"/>
         <categoryLink id="ccee-9c45-dae7-ddf4" name="Daemons of Plague" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="false"/>
@@ -87,6 +63,7 @@
         <categoryLink id="54ad-3ab5-831d-ee20" name="Vehicles: Light" hidden="false" targetId="3089-78fc-94cc-28a2" primary="false"/>
         <categoryLink id="f7ec-0ce4-a55d-9797" name="Vehicles: Super-heavy" hidden="false" targetId="7528-ccdf-679c-8613" primary="false"/>
         <categoryLink id="5d28-c3b1-e41a-ddf0" name="Heroes" hidden="false" targetId="4b4e-fbe0-5211-ae65" primary="false"/>
+        <categoryLink id="72ce-9262-9879-afa5" name="Daemons of War" hidden="false" targetId="4e01-41d3-0a8b-d98b" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
