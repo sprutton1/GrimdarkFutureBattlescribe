@@ -61,10 +61,10 @@ table!
 
 | Army | Version | Progress |
 |---|---|---|
-|Game System|v2.7|Done|
+|Game System|v2.8|Done|
 |Alien Hives|v2.7|Done|
 |Battle Brothers|Main v2.10 - Prime v2.10 - Detachments v2.9|Done|
-|Battle Sisters|v2.1|Done|
+|Battle Sisters|v2.6|Done|
 |Dark Elf Raiders|v2.3|Done|
 |Dwarf Guilds|v2.3|Done|
 |Elven Jesters|v2.4|Done|
@@ -75,11 +75,10 @@ table!
 |Human Inquisition|2.4|Done|
 |Infected Colonies|v2.1|Done|
 |Machine Cult|v2.7|Done|
-|Mercenaries|-|Not started|
 |Orc Marauders|v2.9|Done|
 |Ratmen Clans|v2.3|Done|
 |Rebel Guerrillas|-|Not started|
-|Robot Legions|v2.4|Done|
+|Robot Legions|v2.7|Done|
 |Soul-Snatchers|v2.6|Done|
 |TAO Coalition|v2.7|Done|
 |Titan Lords|v2.2|Done|
