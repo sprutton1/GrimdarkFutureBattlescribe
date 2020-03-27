@@ -25,6 +25,11 @@
         <categoryLink id="7b54-4a84-a585-e342" name="New CategoryLink" hidden="false" targetId="4e01-41d3-0a8b-d98b" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="56ba-eef1-65b6-fea2" name="Blood Warriors" hidden="false" collective="false" import="true" targetId="2ec5-8f2b-f51f-c9a6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="cfbb-ef36-f638-bf5b" name="New CategoryLink" hidden="false" targetId="4e01-41d3-0a8b-d98b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -517,6 +522,170 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="150.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f40a-6ae8-fc38-fd87" name="CCW (War)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b7c6-4936-61bb-2c07" name="CCW (War)" hidden="false" targetId="14c9-57d2-05df-8a9d" type="profile"/>
+        <infoLink id="5828-cfb7-25e8-26a8" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9f0e-8bec-aa54-4a1a" name="Command Group" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e668-47d6-2fc7-8d66" name="Command Group" hidden="false" targetId="a9c5-3940-fdb0-e900" type="profile"/>
+        <infoLink id="8806-1936-22ae-18f7" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="16ce-9958-860e-b321" name="Banner of War" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0bfe-e12f-6ff9-065c" name="Banner of War" hidden="false" targetId="f544-68b3-cf9f-f2dd" type="profile"/>
+        <infoLink id="f152-5254-94a0-71c0" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="1bdb-10c8-9af6-6741" name="Magical CCW" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="eb1a-5a51-98d0-92af" name="Magical CCW" hidden="false" targetId="5941-8b43-ce0b-f2d7" type="profile"/>
+        <infoLink id="6ab0-39f5-11f5-1613" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="0486-7e1a-badb-db84" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0b38-60fd-5e0e-be36" name="Heavy CCW" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1d85-fc67-e866-5296" name="Heavy CCW" hidden="false" targetId="715f-2485-6fb7-9d00" type="profile"/>
+        <infoLink id="bf97-04cf-2374-8c54" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="323d-a1cf-ed26-fc44" name="2x CCWs (War)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2200-68da-ac90-693f" name="2x CCWs (War)" hidden="false" targetId="eaf5-248d-093f-6b15" type="profile"/>
+        <infoLink id="be97-aded-b113-df02" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2ec5-8f2b-f51f-c9a6" name="Blood Warriors" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="719f-4ba2-2e8c-3d19" name="Blood Warrior" hidden="false" targetId="2f98-c276-a1f2-9ba1" type="profile"/>
+        <infoLink id="6481-c5ed-1689-5ae8" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="6935-286e-b083-b77f" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a1e3-cd5c-0467-4f43" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="c22d-e4e4-62e6-cf32">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4d0-188b-1380-c59e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88fa-56ae-c249-58df" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c22d-e4e4-62e6-cf32" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="9805-7f90-7e2a-186e" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="433b-3731-51de-fe83" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5825-f923-4531-e150" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="9094-17c1-bdbf-92a8" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="fa79-bc9c-5a98-3a88" name="Banner of War" hidden="false" collective="false" import="true" targetId="16ce-9958-860e-b321" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6855-97b3-9dea-12a6" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="7c81-8b05-92ec-70e6" name="Weapons (all models)" hidden="false" collective="false" import="true" defaultSelectionEntryId="d5e3-e2a6-107f-2c85">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed2d-11bb-835c-437b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4cf-f8ae-77f8-e432" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="d5e3-e2a6-107f-2c85" name="CCW (War)" hidden="false" collective="false" import="true" targetId="f40a-6ae8-fc38-fd87" type="selectionEntry"/>
+                    <entryLink id="f960-7050-6405-764d" name="Magical CCW" hidden="false" collective="false" import="true" targetId="1bdb-10c8-9af6-6741" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="51cb-9a3e-9ff1-c6c9" name="Heavy CCW" hidden="false" collective="false" import="true" targetId="0b38-60fd-5e0e-be36" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="292a-6cfd-3552-a87b" name="2x CCWs (War)" hidden="false" collective="false" import="true" targetId="323d-a1cf-ed26-fc44" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="72c1-6c47-a754-2d01" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="c2b8-254c-b4e3-8059" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="91c3-189f-4153-4387" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9d7-056c-4e05-4334" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="0f32-98e2-b072-d873" name="Upgrade up to two models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="2ebc-a107-3e30-73b9" name="Banner of War" hidden="false" collective="false" import="true" targetId="16ce-9958-860e-b321" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0456-a0f6-9a5d-2d98" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="e122-391d-f72f-4344" name="Weapons (all models)" hidden="false" collective="false" import="true" defaultSelectionEntryId="6a29-39b5-82f5-9acc">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7b0-676e-31c3-b717" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a37-8d44-0797-d539" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6a29-39b5-82f5-9acc" name="CCW (War)" hidden="false" collective="false" import="true" targetId="f40a-6ae8-fc38-fd87" type="selectionEntry"/>
+                    <entryLink id="9076-72fa-800f-4824" name="Magical CCW" hidden="false" collective="false" import="true" targetId="1bdb-10c8-9af6-6741" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="1f43-1758-9dd0-25cb" name="Heavy CCW" hidden="false" collective="false" import="true" targetId="0b38-60fd-5e0e-be36" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="d8a8-98e3-75f1-75a6" name="2x CCWs (War)" hidden="false" collective="false" import="true" targetId="323d-a1cf-ed26-fc44" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="aebd-0d27-61ff-76ef" name="Symbol of War(X+)" publicationId="48f1-9b65-1218-3381" hidden="false">
@@ -707,6 +876,47 @@
     <profile id="5769-c54e-a83b-54bf" name="Anti-Psych Collar" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Resistance(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2f98-c276-a1f2-9ba1" name="Blood Warrior" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Furious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="14c9-57d2-05df-8a9d" name="CCW (War)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a9c5-3940-fdb0-e900" name="Command Group" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Fear</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f544-68b3-cf9f-f2dd" name="Banner of War" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">The unit gets Impact(1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5941-8b43-ce0b-f2d7" name="Magical CCW" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="715f-2485-6fb7-9d00" name="Heavy CCW" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="eaf5-248d-093f-6b15" name="2x CCWs (War)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
