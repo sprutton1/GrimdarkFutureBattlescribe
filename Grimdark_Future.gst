@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="14" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="15" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
-    <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.7"/>
+    <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.8"/>
   </publications>
   <costTypes>
     <costType id="567f-6468-66c6-2ea2" name="pts" defaultCostLimit="-1.0"/>
@@ -749,7 +749,7 @@ Note that wounds suffered by that model don’t carry over to other models if it
       <description>Whenever a model with this special rule charges it deals X automatic hits.</description>
     </rule>
     <rule id="587a-b92c-a265-06c4" name="Indirect" publicationId="d755-5d69-pubN65537" hidden="false">
-      <description>Weapons with this special rule may shoot at enemies that are not within line of sight, however they get –1 to hit when doing so.</description>
+      <description>Weapons with this special rule may shoot at enemies that are not within line of sight, however they get –1 to hit when shooting after moving.</description>
     </rule>
     <rule id="2c45-0e1e-fec5-8dbb" name="Poison" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Whenever you roll an unmodified to hit result of 6 whilst firing this weapon that hit is multiplied by 3.</description>
@@ -759,7 +759,7 @@ Note that wounds suffered by that model don’t carry over to other models if it
 
 To cast a spell pick one from the psychic’s army and roll D6+X. If the result is equal to or higher than the number in brackets then you may resolve the spell’s effects.
 
-Enemy psychics within 12” may also roll D6+X, and if the result is higher than that of the casting psychic, then the spell’s effects are blocked instead.
+Enemy psychics within 18” may also roll D6+X, and if the result is higher than that of the casting psychic, then the spell’s effects are blocked instead.
 
 Note that a psychic may only either cast a spell or block a spell each round.</description>
     </rule>
@@ -805,7 +805,7 @@ If a unit is inside of a Transport when it is destroyed then it must take a Dang
     <rule id="5065-c3a4-a9cf-db27" name="Hero" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Models with this special rule may be deployed as part of one other friendly unit at the beginning of the game.
 
-When rolling morale tests use the hero’s Quality value and when rolling to block use the Defense of the majority of models.</description>
+When rolling morale tests units may use the hero’s Quality value and when rolling to block use the Defense of the hero&apos;s unit until all non-hero models are killed.</description>
     </rule>
     <rule id="187f-6a03-5b99-a4db" name="Aircraft" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>These models fly far above the battlefield and can’t physically interact with any other models or terrain, nor can they be moved in base contact with.
