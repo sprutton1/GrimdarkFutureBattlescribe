@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="15" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="16" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.8"/>
   </publications>
@@ -39,8 +39,56 @@
       </characteristicTypes>
     </profileType>
   </profileTypes>
+  <categoryEntries>
+    <categoryEntry id="4e01-41d3-0a8b-d98b" name="Daemons of War" hidden="false"/>
+    <categoryEntry id="f911-7f52-09f1-f266" name="Daemons of Change" hidden="false"/>
+    <categoryEntry id="dc6c-0336-e3ee-4e95" name="Daemons of Lust" hidden="false"/>
+    <categoryEntry id="1dbb-a7bb-4f86-4ec4" name="Daemons of Plague" hidden="false"/>
+    <categoryEntry id="4b4e-fbe0-5211-ae65" name="Heroes" hidden="false"/>
+    <categoryEntry id="dfbf-5076-f148-2f58" name="Infantry" hidden="false"/>
+    <categoryEntry id="b820-6309-e900-c733" name="Vehicles: Heavy" hidden="false"/>
+    <categoryEntry id="d5d5-ffb2-9922-2414" name="Vehicles: Aircraft" hidden="false"/>
+    <categoryEntry id="3089-78fc-94cc-28a2" name="Vehicles: Light" hidden="false"/>
+    <categoryEntry id="7528-ccdf-679c-8613" name="Vehicles: Super-heavy" hidden="false"/>
+  </categoryEntries>
   <forceEntries>
-    <forceEntry id="e1b6-6db4-e6e8-6188" name="Army" hidden="false"/>
+    <forceEntry id="e1b6-6db4-e6e8-6188" name="Army" hidden="true">
+      <forceEntries>
+        <forceEntry id="4ef0-6e26-703b-6042" name="Daemons of War" hidden="false">
+          <forceEntries>
+            <forceEntry id="4ce6-078a-5085-507a" name="Heroes" hidden="false">
+              <categoryLinks>
+                <categoryLink id="e406-4f8d-a0a3-00af" name="Heroes" hidden="false" targetId="4b4e-fbe0-5211-ae65" primary="false"/>
+              </categoryLinks>
+            </forceEntry>
+            <forceEntry id="aee2-96cb-94f2-2921" name="Infantry" hidden="false">
+              <categoryLinks>
+                <categoryLink id="f070-7fc6-011a-f576" name="Infantry" hidden="false" targetId="dfbf-5076-f148-2f58" primary="false"/>
+              </categoryLinks>
+            </forceEntry>
+            <forceEntry id="5f72-6457-8e05-4d92" name="Vehicles: Heavy" hidden="false">
+              <categoryLinks>
+                <categoryLink id="8f1c-43a4-1315-10cf" name="Vehicles: Heavy" hidden="false" targetId="b820-6309-e900-c733" primary="false"/>
+              </categoryLinks>
+            </forceEntry>
+          </forceEntries>
+          <categoryLinks>
+            <categoryLink id="34f9-f885-06af-22f2" name="Daemons of War" hidden="false" targetId="4e01-41d3-0a8b-d98b" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="54fb-5842-f04c-7d68" name="Daemons of Change" hidden="false" targetId="f911-7f52-09f1-f266" primary="false"/>
+        <categoryLink id="ccee-9c45-dae7-ddf4" name="Daemons of Plague" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="false"/>
+        <categoryLink id="7566-0e94-2a46-3233" name="Daemons of Lust" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="false"/>
+        <categoryLink id="f5e9-e347-44e7-6943" name="Flyers" hidden="false" targetId="d5d5-ffb2-9922-2414" primary="false"/>
+        <categoryLink id="3f25-8e55-c2d8-3363" name="Infantry" hidden="false" targetId="dfbf-5076-f148-2f58" primary="false"/>
+        <categoryLink id="1bea-b21e-7ce6-6250" name="Vehicles: Heavy" hidden="false" targetId="b820-6309-e900-c733" primary="false"/>
+        <categoryLink id="54ad-3ab5-831d-ee20" name="Vehicles: Light" hidden="false" targetId="3089-78fc-94cc-28a2" primary="false"/>
+        <categoryLink id="f7ec-0ce4-a55d-9797" name="Vehicles: Super-heavy" hidden="false" targetId="7528-ccdf-679c-8613" primary="false"/>
+        <categoryLink id="5d28-c3b1-e41a-ddf0" name="Heroes" hidden="false" targetId="4b4e-fbe0-5211-ae65" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
     <selectionEntry id="a1da-51ac-5a8f-8f95" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
