@@ -64,7 +64,7 @@ table!
 |Game System|v2.8|Done|
 |Alien Hives|v2.7|Done|
 |Battle Brothers|Main v2.10 - Prime v2.10 - Detachments v2.9|Done|
-|Battle Sisters|v2.1|Done|
+|Battle Sisters|v2.6|Done|
 |Dark Elf Raiders|v2.3|Done|
 |Dwarf Guilds|v2.3|Done|
 |Elven Jesters|v2.4|Done|
