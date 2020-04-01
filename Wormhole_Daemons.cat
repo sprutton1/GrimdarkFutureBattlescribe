@@ -35,6 +35,11 @@
         <categoryLink id="5db2-92e0-ad8d-a1c2" name="New CategoryLink" hidden="false" targetId="4e01-41d3-0a8b-d98b" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="1626-fc9f-a966-9cdc" name="Blood Hounds" hidden="false" collective="false" import="true" targetId="15ed-a1bd-1344-2407" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="852b-1071-9477-b3e4" name="New CategoryLink" hidden="false" targetId="4e01-41d3-0a8b-d98b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -810,6 +815,113 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="335.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="952b-0491-d45a-b08e" name="Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ee9f-8073-a011-3c7c" name="Claws" hidden="false" targetId="897c-afb8-02a3-7b00" type="profile"/>
+        <infoLink id="823f-6ab0-56d5-e8ab" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="cc56-5f1e-3e22-8d21" name="Spiked Collars" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f5ca-693f-1586-b3c6" name="Spiked Collar" hidden="false" targetId="2b26-29ea-7c05-2d23" type="profile"/>
+        <infoLink id="6351-7fd8-3849-9f68" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9fcc-16a4-c46a-df17" name="Anti-Psych Collars" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="00fb-424c-5a6c-e06f" name="Anti-Psych Collar" hidden="false" targetId="5769-c54e-a83b-54bf" type="profile"/>
+        <infoLink id="eb83-4b21-bf5e-90bd" name="Resistance(X)" hidden="false" targetId="ec73-330c-9180-3629" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="15ed-a1bd-1344-2407" name="Blood Hounds" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9324-95fe-2537-c44f" name="Blood Hound" hidden="false" targetId="53d9-2348-4d23-9edf" type="profile"/>
+        <infoLink id="110a-589c-e2ef-d90b" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="7867-1ab9-d6bb-0933" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="ae03-38dc-f3f2-376e" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+        <infoLink id="6259-78b8-a26c-ca41" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="31ef-17ec-594c-f8b0" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="3a68-93cc-366e-83a0">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ff8-ddc9-6ac3-1ad9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f855-3548-2404-8e60" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3a68-93cc-366e-83a0" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="16e9-568b-fdca-0f84" name="Upgrade all models with one:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2469-28a4-e90e-67c0" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="d1c9-f52f-0102-6be3" name="Anti-Psych Collars" hidden="false" collective="false" import="true" targetId="9fcc-16a4-c46a-df17" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="0c4b-c19d-69fb-8804" name="Spiked Collars" hidden="false" collective="false" import="true" targetId="cc56-5f1e-3e22-8d21" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="1af2-d221-331b-fdde" name="Claws" hidden="false" collective="false" import="true" targetId="952b-0491-d45a-b08e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff6c-4a4a-d870-3163" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a98-39bc-d025-50d6" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="c585-ca19-2d65-8081" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="b211-6443-1d56-27d5" name="Upgrade all models with one:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dd9-97b1-a405-a3eb" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="9ba6-2999-5502-b181" name="Anti-Psych Collars" hidden="false" collective="false" import="true" targetId="9fcc-16a4-c46a-df17" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="cab2-a4d7-2a02-9248" name="Spiked Collars" hidden="false" collective="false" import="true" targetId="cc56-5f1e-3e22-8d21" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="bfda-433e-52d5-ca16" name="Claws" hidden="false" collective="false" import="true" targetId="952b-0491-d45a-b08e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3574-0553-cef3-f6ee" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96ad-b9e9-41c5-8164" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="330.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="330.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="aebd-0d27-61ff-76ef" name="Symbol of War(X+)" publicationId="48f1-9b65-1218-3381" hidden="false">
@@ -1048,6 +1160,19 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Furious, Impact(3), Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="53d9-2348-4d23-9edf" name="Blood Hound" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Furious, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="897c-afb8-02a3-7b00" name="Claws" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
