@@ -100,6 +100,11 @@
         <categoryLink id="8720-dc51-641e-5266" name="New CategoryLink" hidden="false" targetId="f911-7f52-09f1-f266" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="e6cc-ad1a-dfd5-1fe0" name="Crab Daemon of Change" hidden="false" collective="false" import="true" targetId="2c81-d437-fa61-06b1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="daa9-70fb-4eb2-7ce1" name="New CategoryLink" hidden="false" targetId="f911-7f52-09f1-f266" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -2146,6 +2151,72 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="145.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ed97-4b4a-ba40-601a" name="Power Claw" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4a10-10f7-6d7e-86ed" name="Power Claw" hidden="false" targetId="9ea6-d7aa-f89e-760d" type="profile"/>
+        <infoLink id="9645-bd3f-b1eb-2c92" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="be07-4fed-afb4-4556" name="Power Blade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bfd2-61e8-87ce-b59c" name="Power Blade" hidden="false" targetId="a0a9-4fd1-3ccc-838d" type="profile"/>
+        <infoLink id="7bf5-2927-f59a-b39f" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="473c-1466-254b-e63f" name="Power Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="77d1-23e8-c8dd-40fd" name="Power Cannon" hidden="false" targetId="b5f6-4007-3a4d-8760" type="profile"/>
+        <infoLink id="9147-8172-4737-24a3" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="6a87-43c8-705c-ebfd" name="Heavy Power Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cf6c-d18f-da80-ef5d" name="Heavy Power Cannon" hidden="false" targetId="ba5a-1383-3bcc-a3be" type="profile"/>
+        <infoLink id="3506-d0de-cce9-be42" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2c81-d437-fa61-06b1" name="Crab Daemon of Change" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3a48-1f42-ccf2-73f9" name="Crab Daemon of Change" hidden="false" targetId="5cf1-3144-b726-e7d8" type="profile"/>
+        <infoLink id="8ed8-8dd5-6296-f4f2" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="21bc-42de-c60a-f256" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="bf01-b293-4b35-4b55" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+        <infoLink id="68ce-88b7-1aa7-9688" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cb81-0859-ef17-72e3" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="31d9-f299-2c38-16ed">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8797-c320-51a2-54fe" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="731e-e28c-70f9-8365" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="31d9-f299-2c38-16ed" name="Power Claw" hidden="false" collective="false" import="true" targetId="ed97-4b4a-ba40-601a" type="selectionEntry"/>
+            <entryLink id="388f-ea58-6ec1-2c77" name="Power Blade" hidden="false" collective="false" import="true" targetId="be07-4fed-afb4-4556" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6acf-9932-569a-c25a" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b8cd-a034-3967-da4c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83ba-2ea9-5595-5f12" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b78a-12be-0664-df38" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ddcd-070b-74a5-1042" name="Heavy Power Cannon" hidden="false" collective="false" import="true" targetId="6a87-43c8-705c-ebfd" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b8cd-a034-3967-da4c" name="Power Cannon" hidden="false" collective="false" import="true" targetId="473c-1466-254b-e63f" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="340.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -2781,6 +2852,39 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Fear, Stealth, Strider, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5cf1-3144-b726-e7d8" name="Crab Daemon of Change" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fear, Stealth, Tough(12)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b5f6-4007-3a4d-8760" name="Power Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ba5a-1383-3bcc-a3be" name="Heavy Power Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9ea6-d7aa-f89e-760d" name="Power Claw" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a0a9-4fd1-3ccc-838d" name="Power Blade" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
