@@ -40,6 +40,16 @@
         <categoryLink id="852b-1071-9477-b3e4" name="New CategoryLink" hidden="false" targetId="4e01-41d3-0a8b-d98b" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="75cb-b43b-5375-3bd7" name="Cannon Chariot" hidden="false" collective="false" import="true" targetId="3079-a45f-ea14-37f6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2c48-55f4-11ff-6a76" name="New CategoryLink" hidden="false" targetId="4e01-41d3-0a8b-d98b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="397e-c490-18c9-5094" name="Crab Daemon of War" hidden="false" collective="false" import="true" targetId="6f1d-9688-a291-2907" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="503f-e9f6-03d3-1a8b" name="New CategoryLink" hidden="false" targetId="4e01-41d3-0a8b-d98b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -922,6 +932,105 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="330.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="abfc-6b52-cb7b-dbc5" name="Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b2fb-1ec2-e581-2acf" name="Cannon" hidden="false" targetId="643c-2083-c912-d104" type="profile"/>
+        <infoLink id="7e8a-ec5b-660e-a2e0" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="be6e-1408-7a9e-ee0f" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="3079-a45f-ea14-37f6" name="Cannon Chariot" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a9c0-41db-9fd0-e443" name="Cannon Chariot" hidden="false" targetId="b63f-ff48-ded3-7286" type="profile"/>
+        <infoLink id="f330-9e5e-6b6e-d44e" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="cb4e-d881-2428-2b12" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="235d-c452-346f-8548" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+        <infoLink id="442b-1d1e-250f-1f20" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="f39b-8e1d-b75f-18f9" name="Cannon" hidden="false" collective="false" import="true" targetId="abfc-6b52-cb7b-dbc5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e7-9ed5-55ff-d25a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7cc-e36e-6b6c-64a7" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="13c2-61e1-87e1-882d" name="Crew Attacks" hidden="false" collective="false" import="true" targetId="ed8d-401e-35de-d5c3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8d6-36ce-245b-63bc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c19f-f809-6a0c-dc3b" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e860-cd8b-b3a3-44c6" name="Flame Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2ad6-cc30-e554-6f2d" name="Flame Cannon" hidden="false" targetId="1dee-d541-9248-09c3" type="profile"/>
+        <infoLink id="e68c-7272-6dbf-5b99" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="76b5-7247-6fe6-3706" name="Flame Claw" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="28f4-a263-126a-6655" name="Flame Claw" hidden="false" targetId="daf5-3b60-cc45-ec89" type="profile"/>
+        <infoLink id="11ba-2b6c-7ea9-e82e" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="353e-6f08-569b-c588" name="Flame Blade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="79c6-d97b-6960-83ce" name="Flame Blade" hidden="false" targetId="55ef-356b-06a5-3768" type="profile"/>
+        <infoLink id="bcc8-3c07-1515-c498" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="17e0-0dca-53c4-a9c3" name="Heavy Flame Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f565-da20-7c18-62cf" name="Heavy Flame Cannon" hidden="false" targetId="924c-372a-b117-f3e2" type="profile"/>
+        <infoLink id="ec10-5354-cc66-909f" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="6f1d-9688-a291-2907" name="Crab Daemon of War" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8129-8eb5-fcf3-d232" name="Crab Daemon of War" hidden="false" targetId="9cad-7a11-278d-491b" type="profile"/>
+        <infoLink id="a60a-78ad-6a6d-914c" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="ff2d-fd21-c233-460c" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="98ad-589d-e0fc-1012" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+        <infoLink id="905b-8fc3-c140-11cc" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9c50-b0b1-c195-60f9" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="37b5-a769-4c4a-9630">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1203-dd47-f6c4-8d2f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8258-0d46-59d1-531f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="37b5-a769-4c4a-9630" name="Flame Claw" hidden="false" collective="false" import="true" targetId="76b5-7247-6fe6-3706" type="selectionEntry"/>
+            <entryLink id="e29e-c599-d220-f381" name="Flame Blade" hidden="false" collective="false" import="true" targetId="353e-6f08-569b-c588" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="dc76-fed4-76e7-77a6" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b2d-dd9a-6e7c-95a7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0820-3920-c88d-9df8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3afe-63b0-c1cb-933a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8eb2-24dc-3eec-2fbc" name="Heavy Flame Cannon" hidden="false" collective="false" import="true" targetId="17e0-0dca-53c4-a9c3" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2b2d-dd9a-6e7c-95a7" name="Flame Cannon" hidden="false" collective="false" import="true" targetId="e860-cd8b-b3a3-44c6" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="325.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="aebd-0d27-61ff-76ef" name="Symbol of War(X+)" publicationId="48f1-9b65-1218-3381" hidden="false">
@@ -1173,6 +1282,53 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b63f-ff48-ded3-7286" name="Cannon Chariot" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fear, Furious, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="643c-2083-c912-d104" name="Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9cad-7a11-278d-491b" name="Crab Daemon of War" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fear, Furious, Tough(12)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1dee-d541-9248-09c3" name="Flame Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="924c-372a-b117-f3e2" name="Heavy Flame Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="daf5-3b60-cc45-ec89" name="Flame Claw" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="55ef-356b-06a5-3768" name="Flame Blade" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
