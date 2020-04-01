@@ -70,6 +70,11 @@
         <categoryLink id="c41f-cabe-8643-65b6" name="New CategoryLink" hidden="false" targetId="f911-7f52-09f1-f266" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="718e-73e1-edad-655c" name="Pink Warriors" hidden="false" collective="false" import="true" targetId="d1c0-2f9f-fe3c-fcb9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="cd48-e122-662f-8b6a" name="New CategoryLink" hidden="false" targetId="f911-7f52-09f1-f266" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -1684,6 +1689,192 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d1c0-2f9f-fe3c-fcb9" name="Pink Warriors" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cb63-cfe3-554f-9554" name="Pink Warrior" hidden="false" targetId="8499-d3ce-edd9-b749" type="profile"/>
+        <infoLink id="1695-2c64-7004-20dc" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="e557-c84f-9210-3728" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+        <infoLink id="1676-0ea1-570b-4a1d" name="Blue Warrior (Split)" hidden="false" targetId="b45e-4778-b096-b34e" type="profile"/>
+        <infoLink id="1b0a-9cb9-6bd4-eb38" name="Yellow Warrior (Split)" hidden="false" targetId="2b8b-9f6e-2180-9589" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ea5b-6590-43d5-818f" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="a87d-e29d-a071-40c7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1c8-7848-6a45-30ed" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf61-5494-800e-6f9b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a87d-e29d-a071-40c7" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="c3f1-b16e-9e3a-210a" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="993c-f7a7-b8d2-508f" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3e8-db71-8981-38b5" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="5da9-e40b-533c-0304" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="aa43-f03d-02a5-80ec" name="Banner of Change" hidden="false" collective="false" import="true" targetId="d262-8e5c-e348-70ee" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d14c-6968-61a9-a044" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="ec44-a372-7dc4-2b1c" name="Melee Weapons (all models)" hidden="false" collective="false" import="true" defaultSelectionEntryId="6fa4-99e8-036e-8a6a">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8e8-aaaa-2856-af87" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00ff-e9fa-292c-8096" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6fa4-99e8-036e-8a6a" name="Claws (Change)" hidden="false" collective="false" import="true" targetId="a020-6316-c1e4-1924" type="selectionEntry"/>
+                    <entryLink id="6968-53ee-9010-92d6" name="Magical CCW (Change)" hidden="false" collective="false" import="true" targetId="dedc-c410-a633-7208" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="c5b9-420e-a591-bc3d" name="Heavy CCW (Change)" hidden="false" collective="false" import="true" targetId="4dca-f0e1-adbe-eb61" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="7648-807a-36e5-23f1" name="2x CCWs (Change)" hidden="false" collective="false" import="true" targetId="fd67-6941-5005-eada" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="79ad-7ab3-e1bf-0e22" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="3aa5-6f3d-a2ab-b1ff" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a47-30e4-1a70-b6f8" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="1284-930e-777d-4abb" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+                        <infoLink id="ecbb-53bc-1eed-4459" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink id="970c-721e-be19-8ea0" name="Psychic Spells - Change" hidden="false" collective="false" import="true" targetId="fb05-79c8-e32f-f835" type="selectionEntryGroup"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="a7cc-a011-971e-782a" name="Fireballs" hidden="false" collective="false" import="true" targetId="c92c-669e-a569-0139" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2283-4fe6-eb46-1539" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71d4-fa9c-1d71-847d" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3799-d55b-f743-3679" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="54f9-c451-cd95-c5cd" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="38fc-ec42-aeb1-174a" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca02-98d9-5e0f-59d1" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="df3b-0abd-698f-b9a5" name="Upgrade up to two models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="cf7c-3360-d203-b76a" name="Banner of Change" hidden="false" collective="false" import="true" targetId="d262-8e5c-e348-70ee" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c45a-fc59-8047-bae3" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="4044-ca2c-6fab-ba6b" name="Melee Weapons (all models)" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5df-e410-ea0e-72ea">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dae-ce35-29ec-5d24" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4191-0da3-ef54-6c45" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="f5df-e410-ea0e-72ea" name="Claws (Change)" hidden="false" collective="false" import="true" targetId="a020-6316-c1e4-1924" type="selectionEntry"/>
+                    <entryLink id="ae0e-1bcb-c5da-30ce" name="Magical CCW (Change)" hidden="false" collective="false" import="true" targetId="dedc-c410-a633-7208" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="1a25-6455-57d9-c64e" name="Heavy CCW (Change)" hidden="false" collective="false" import="true" targetId="4dca-f0e1-adbe-eb61" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="d8b1-2553-04ff-e4ac" name="2x CCWs (Change)" hidden="false" collective="false" import="true" targetId="fd67-6941-5005-eada" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="f71c-1971-d363-9f76" name="Upgrade up to two models with:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="df57-35bb-8b1d-e92b" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2cc-9f08-b152-2021" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="0a4c-8c31-22fd-0f6c" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+                        <infoLink id="aaba-31e1-804a-4477" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink id="6349-3723-c3dd-d34c" name="Psychic Spells - Change" hidden="false" collective="false" import="true" targetId="fb05-79c8-e32f-f835" type="selectionEntryGroup"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="fe1e-c18d-4ec1-7b7c" name="Fireballs" hidden="false" collective="false" import="true" targetId="c92c-669e-a569-0139" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c39d-30ba-58f8-5c6a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="759a-f326-4333-f3bf" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="250.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -1713,6 +1904,15 @@
     </rule>
     <rule id="a627-b011-1dc8-5f45" name="Symbol of Change(X+)" publicationId="48f1-9b65-1218-3381" hidden="false">
       <description>When the hero is activated roll one die. On an X+ one enemy model within 18&quot; takes 1 automatic hit with AP(4) and Deadly(3).</description>
+    </rule>
+    <rule id="6296-787d-3237-1956" name="Split" publicationId="48f1-9b65-1218-3381" hidden="false">
+      <description>Whenever a Pink Warrior is killed you may replace it with 2 Blue Warriors. Note that you may only start assigning wounds to Blue Warriors once all Pink Warriors are killed.	</description>
+    </rule>
+    <rule id="969c-74f5-fbc9-69c1" name="Split Again" publicationId="48f1-9b65-1218-3381" hidden="false">
+      <description>Whenever a Blue Warrior is killed you may replace it with 2 Yellow Warriors. Note that you may only start assigning wounds to Yellow Warriors once all Blue Warriors are killed.	</description>
+    </rule>
+    <rule id="b58d-7aac-8dd4-9c7d" name="Squishy" publicationId="48f1-9b65-1218-3381" hidden="false">
+      <description>This model has no Defense value and is immediately killed when it takes hits.	</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2231,6 +2431,45 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="09d9-cd49-1487-38d9" name="Yellow Warrior" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">6+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">-</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Squishy, Stealth</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="342b-2a77-7b65-66e0" name="-- Blue Warrior" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">6+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">6+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Split Again, Stealth</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8499-d3ce-edd9-b749" name="- Pink Warrior" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Split, Stealth</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2b8b-9f6e-2180-9589" name="--- Yellow Warrior (Split Again)" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">6+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">-</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Squishy, Stealth
+- Fireballs (12&quot;, A1)
+- Claws (A1, AP(1))</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b45e-4778-b096-b34e" name="-- Blue Warrior (Split)" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">6+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">6+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Split Again, Stealth
+- Fireballs (12&quot;, A1)
+- Claws (A1, AP(1))</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
