@@ -70,9 +70,19 @@
         <categoryLink id="c41f-cabe-8643-65b6" name="New CategoryLink" hidden="false" targetId="f911-7f52-09f1-f266" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="718e-73e1-edad-655c" name="Pink Warriors" hidden="false" collective="false" import="true" targetId="d1c0-2f9f-fe3c-fcb9" type="selectionEntry">
+    <entryLink id="718e-73e1-edad-655c" name="Blue Warriors" hidden="false" collective="false" import="true" targetId="f3ab-d7aa-d180-f1d4" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="cd48-e122-662f-8b6a" name="New CategoryLink" hidden="false" targetId="f911-7f52-09f1-f266" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="295a-341f-bcd6-4941" name="Pink Warriors" hidden="false" collective="false" import="true" targetId="d1c0-2f9f-fe3c-fcb9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b16f-4bca-c558-39d5" name="New CategoryLink" hidden="false" targetId="f911-7f52-09f1-f266" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cb7c-4d33-2a01-2a7e" name="Yellow Warriors" hidden="false" collective="false" import="true" targetId="0054-8876-21b0-b8f2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="df46-4d7b-f0a9-68c6" name="New CategoryLink" hidden="false" targetId="f911-7f52-09f1-f266" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1696,6 +1706,9 @@
         <infoLink id="e557-c84f-9210-3728" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
         <infoLink id="1676-0ea1-570b-4a1d" name="Blue Warrior (Split)" hidden="false" targetId="b45e-4778-b096-b34e" type="profile"/>
         <infoLink id="1b0a-9cb9-6bd4-eb38" name="Yellow Warrior (Split)" hidden="false" targetId="2b8b-9f6e-2180-9589" type="profile"/>
+        <infoLink id="9d5a-6c22-6f56-3a80" name="Split" hidden="false" targetId="6296-787d-3237-1956" type="rule"/>
+        <infoLink id="fcef-1dbf-d227-1362" name="Squishy" hidden="false" targetId="b58d-7aac-8dd4-9c7d" type="rule"/>
+        <infoLink id="c9b1-7ff0-9a72-cb5f" name="Split Again" hidden="false" targetId="969c-74f5-fbc9-69c1" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ea5b-6590-43d5-818f" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="a87d-e29d-a071-40c7">
@@ -1873,6 +1886,120 @@
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f3ab-d7aa-d180-f1d4" name="Blue Warriors" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fcf7-7c7b-6257-1d29" name="-- Blue Warrior" hidden="false" targetId="342b-2a77-7b65-66e0" type="profile"/>
+        <infoLink id="0db4-e050-7383-7dae" name="--- Yellow Warrior (Split Again)" hidden="false" targetId="2b8b-9f6e-2180-9589" type="profile"/>
+        <infoLink id="88c1-015f-109e-a9b5" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="f852-85e5-f911-bdcc" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+        <infoLink id="608b-bfa5-3bf1-70fe" name="Split Again" hidden="false" targetId="969c-74f5-fbc9-69c1" type="rule"/>
+        <infoLink id="fdb0-ddbb-b86c-5abb" name="Squishy" hidden="false" targetId="b58d-7aac-8dd4-9c7d" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="63dd-b0bb-9a74-2c5e" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="dfdd-8d85-40b5-6627">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d957-3954-9e3c-d863" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca9d-bef2-fc50-62f0" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dfdd-8d85-40b5-6627" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="7c19-a834-23c6-da23" name="Claws (Change)" hidden="false" collective="false" import="true" targetId="a020-6316-c1e4-1924" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5608-a238-406b-5fc1" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2aa-5ee6-e6c4-1c76" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="f938-19da-0371-7778" name="Fireballs" hidden="false" collective="false" import="true" targetId="c92c-669e-a569-0139" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eef5-1936-c9fc-46e0" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1d8-d565-22a4-2473" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="9c40-d725-6ce4-9461" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="01a8-f5a4-9bb6-5659" name="Claws (Change)" hidden="false" collective="false" import="true" targetId="a020-6316-c1e4-1924" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63c4-7803-2e70-6c6c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ca3-4558-a1da-dd89" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="4d27-2b7b-eaa8-f765" name="Fireballs" hidden="false" collective="false" import="true" targetId="c92c-669e-a569-0139" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58ba-afe7-9e3c-8636" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7125-b6fa-19b9-c5af" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0054-8876-21b0-b8f2" name="Yellow Warriors" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e2f3-8f27-2595-d7a1" name="Yellow Warrior" hidden="false" targetId="09d9-cd49-1487-38d9" type="profile"/>
+        <infoLink id="f4d1-3aa9-8b30-13c9" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="5f1f-83f2-b5c6-6a35" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+        <infoLink id="605d-4446-ec5d-e94f" name="Squishy" hidden="false" targetId="b58d-7aac-8dd4-9c7d" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f5a2-c97c-6d8e-06ed" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="74ed-6a78-d1b5-c795">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9fa-02a1-b601-b7ee" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acc8-a748-3d31-a9c1" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="74ed-6a78-d1b5-c795" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="d9fa-b24a-8dc8-624c" name="Claws (Change)" hidden="false" collective="false" import="true" targetId="a020-6316-c1e4-1924" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf95-4c5a-a53c-e449" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8720-8607-04ed-f4d8" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="c36b-6d9c-5968-d2dc" name="Fireballs" hidden="false" collective="false" import="true" targetId="c92c-669e-a569-0139" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77f6-6a5e-f47b-4d55" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9af-4f18-6cd8-570d" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="b7bc-6b7a-041f-a6fb" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="37f0-f03b-df9c-ec45" name="Claws (Change)" hidden="false" collective="false" import="true" targetId="a020-6316-c1e4-1924" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f4a-f99e-6771-22a3" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="798b-7fa1-6fa7-8e8e" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="d7c5-6c6c-4b01-55f7" name="Fireballs" hidden="false" collective="false" import="true" targetId="c92c-669e-a569-0139" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d07c-e750-8e09-6552" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5959-a7f3-c637-419e" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2470,6 +2597,19 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Split Again, Stealth
 - Fireballs (12&quot;, A1)
 - Claws (A1, AP(1))</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="70c2-99d5-3adf-d3c0" name="Manta Daemon" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Stealth, Strider, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5b56-dd5f-2432-e251" name="Claws (Manta)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
