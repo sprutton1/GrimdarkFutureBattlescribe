@@ -85,6 +85,11 @@
         <categoryLink id="df46-4d7b-f0a9-68c6" name="New CategoryLink" hidden="false" targetId="f911-7f52-09f1-f266" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="836e-baf7-8fff-a31e" name="Manta Daemons" hidden="false" collective="false" import="true" targetId="613d-2526-15bf-3b48" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ee6c-c538-8412-cee5" name="New CategoryLink" hidden="false" targetId="f911-7f52-09f1-f266" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -2001,6 +2006,57 @@
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="613d-2526-15bf-3b48" name="Manta Daemons" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="81de-7f05-0d6d-4b60" name="Manta Daemon" hidden="false" targetId="70c2-99d5-3adf-d3c0" type="profile"/>
+        <infoLink id="e230-d82b-6427-f5b6" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="7b67-2dd7-a5ca-85dd" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="03bc-592a-b68c-e727" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="9647-ae8e-afdc-fcdc" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+        <infoLink id="aafa-686b-610f-fe06" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="48be-bc37-079e-4465" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="daa7-f465-666e-57df">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4bb-2975-d3f1-5c6a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6be1-cb09-8922-8dbb" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="daa7-f465-666e-57df" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="575d-a11b-f619-5e83" name="Claws (Manta)" hidden="false" collective="false" import="true" targetId="efd6-4686-780f-3c79" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a92a-0794-e95f-ac5f" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24b1-3128-ae3c-faae" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="32b3-8f37-e8a1-bc3c" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="5a7c-a25e-3e76-4dc7" name="Claws (Manta)" hidden="false" collective="false" import="true" targetId="efd6-4686-780f-3c79" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03a9-e410-0341-4bca" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6b8-e642-96e6-000e" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="185.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="185.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="efd6-4686-780f-3c79" name="Claws (Manta)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6098-1bdf-57ed-0f3b" name="Claws (Manta)" hidden="false" targetId="5b56-dd5f-2432-e251" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
