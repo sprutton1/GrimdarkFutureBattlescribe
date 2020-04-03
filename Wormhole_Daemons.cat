@@ -115,6 +115,11 @@
         <categoryLink id="de69-1f0e-dee6-b8da" name="New CategoryLink" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="a1a2-010d-aa85-c3c4" name="Champion of Plague" hidden="false" collective="false" import="true" targetId="609a-6ee3-c552-5198" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6140-63e1-6b76-9aa8" name="New CategoryLink" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -2685,6 +2690,117 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="295.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="609a-6ee3-c552-5198" name="Champion of Plague" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1dae-be99-8672-3348" name="Champion of Plague" hidden="false" targetId="1ca8-965b-2923-0662" type="profile"/>
+        <infoLink id="dab8-b2a7-bfee-7381" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="e372-26bd-ddb5-a6cf" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="3056-68c6-cb7c-6822" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="419c-c800-fd39-50a0" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3776-3877-394d-da40" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="01ec-7373-3df5-32f6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44a3-6584-72be-f676" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e0d-4e75-e5e7-08c5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="01ec-7373-3df5-32f6" name="Plague Sword" hidden="false" collective="false" import="true" targetId="4b0d-41bc-8aa0-e16f" type="selectionEntry"/>
+            <entryLink id="cfb6-9cce-2c0d-1709" name="Plague Hammer" hidden="false" collective="false" import="true" targetId="6097-1eb7-a70d-7b77" type="selectionEntry"/>
+            <entryLink id="17c9-07f6-8be5-d759" name="Plague Spear" hidden="false" collective="false" import="true" targetId="e98e-b185-6a3b-b51c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="92db-da1f-dbc7-b8b5" name="Ranged Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4584-ecea-78d8-39d6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="88b9-9bad-2b19-28f2" name="Toxic Spit" hidden="false" collective="false" import="true" targetId="172b-0302-3721-0174" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7c23-1c81-28c0-8024" name="Toxic Bile" hidden="false" collective="false" import="true" targetId="a536-0cc5-87d0-815a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="57ee-0d43-cc6e-f5af" name="Upgrade with any:" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="88a8-4e34-e01c-e270" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d96-98c8-14fd-a91a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="00e8-bcb5-29e0-388e" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+                <infoLink id="cd0d-46e8-63af-c4af" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="6c47-f8c8-80df-e067" name="Psychic Spells - Plague" hidden="false" collective="false" import="true" targetId="bfb3-9435-6596-f5c6" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="7ae2-c145-c737-d266" name="Symbol of Plague(4+)" hidden="false" collective="false" import="true" targetId="298b-f434-bb01-dff2" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9e1-702f-65b9-31cc" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7b9e-a615-3870-89ef" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f60f-4b0d-445b-4135" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c357-4c21-9c3a-2906" name="Throne of Plague" hidden="false" collective="false" import="true" targetId="3cb4-5d2f-b39e-9dae" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="75.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d935-657a-0e74-a820" name="Giant Snail" hidden="false" collective="false" import="true" targetId="7354-85b0-ca43-a1a3" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="150.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3cb4-5d2f-b39e-9dae" name="Throne of Plague" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="685b-78d4-8f35-e892" name="Throne of Plague" hidden="false" targetId="5f39-2d75-2657-273f" type="profile"/>
+        <infoLink id="5291-d7a8-cf9d-51ba" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="f34a-a95d-1abd-a500" name="Claws (Throne)" hidden="false" targetId="d687-ee55-a510-5ee0" type="profile"/>
+        <infoLink id="20be-37fa-d40a-af8d" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7354-85b0-ca43-a1a3" name="Giant Snail" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c9d5-cd3b-6a8c-404d" name="Giant Snail" hidden="false" targetId="3a45-7618-fa8d-6714" type="profile"/>
+        <infoLink id="5073-eeff-81d9-4c30" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
+        <infoLink id="eef5-e857-9a0b-3fbc" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="e5b0-36be-b7dc-931a" name="Toxic Maw" hidden="false" targetId="a785-e5ea-699c-ba71" type="profile"/>
+        <infoLink id="c14b-7ff6-eecb-445c" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+        <infoLink id="2a82-7b12-a6f8-6b55" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="ef40-3369-7f12-d61d" name="Slime Trap" hidden="false" targetId="fa4b-3bee-3a62-ef1c" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -2749,6 +2865,9 @@
     </rule>
     <rule id="2ec9-9996-b7bc-f7c3" name="Symbol of Plague(X+)" publicationId="48f1-9b65-1218-3381" hidden="false">
       <description>When the hero is activated roll one die. On an X+ one enemy unit within 18&quot; must immediately take a Dangerous Terrain test.</description>
+    </rule>
+    <rule id="fa4b-3bee-3a62-ef1c" name="Slime Trap" publicationId="48f1-9b65-1218-3381" hidden="false">
+      <description>Enemy units that fight in melee against the hero count as having the Slow special rule for the rest of the game.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2891,12 +3010,14 @@
     </profile>
     <profile id="e92d-1f37-a66e-077b" name="Brass Beast" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Defense +2, Fast, Impact(3), Tough(+3), Hooves</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Defense +2, Fast, Impact(3), Tough(+3)
+Weapon: Hooves</characteristic>
       </characteristics>
     </profile>
     <profile id="6974-d326-b16f-a585" name="Throne of Blood" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Defense +2, Fear, Tough(+6), Crew Attacks</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Defense +2, Fear, Tough(+6)
+Weapon: Crew Attacks</characteristic>
       </characteristics>
     </profile>
     <profile id="19b0-4a10-5b96-b871" name="Hooves" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -3217,7 +3338,8 @@
     </profile>
     <profile id="eff6-b090-d477-1efe" name="Flame Chariot" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Defense +2, Fast, Strider, Tough(+6), Claws</characteristic>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Defense +2, Fast, Strider, Tough(+6)
+Weapon: Claws</characteristic>
       </characteristics>
     </profile>
     <profile id="7767-989a-89ae-8f0c" name="Claws (Chariot)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -3540,6 +3662,37 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">2+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fear, Hero, Regeneration, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1ca8-965b-2923-0662" name="Champion of Plague" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Hero, Regeneration, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5f39-2d75-2657-273f" name="Throne of Plague" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Tough(+3)
+Weapon: Claws</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3a45-7618-fa8d-6714" name="Giant Snail" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Slime Trap, Slow, Tough(+6)
+Weapon: Toxic Maw</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d687-ee55-a510-5ee0" name="Claws (Throne)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a785-e5ea-699c-ba71" name="Toxic Maw" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Poison</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
