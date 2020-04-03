@@ -120,6 +120,11 @@
         <categoryLink id="6140-63e1-6b76-9aa8" name="New CategoryLink" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="ee56-17a3-b8b8-36f7" name="Plague Warriors" hidden="false" collective="false" import="true" targetId="f621-afa4-217b-9944" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7cb6-8428-111b-2d2c" name="New CategoryLink" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -1613,6 +1618,7 @@
     <selectionEntry id="d262-8e5c-e348-70ee" name="Banner of Change" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="172f-5cee-ecdc-a33a" name="Banner of Change" hidden="false" targetId="7bb0-3879-046e-6bc6" type="profile"/>
+        <infoLink id="8e76-e75f-ebb8-9f33" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -2801,6 +2807,180 @@
         <infoLink id="ef40-3369-7f12-d61d" name="Slime Trap" hidden="false" targetId="fa4b-3bee-3a62-ef1c" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="9538-942f-678d-661b" name="2x CCWs (Plague)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3a6b-2b78-6878-14f4" name="2x CCWs (Plague)" hidden="false" targetId="e25e-c14d-88fe-0683" type="profile"/>
+        <infoLink id="a987-94ba-e58a-6edd" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2cd9-62ad-117a-a750" name="Heavy CCW (Plague)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b981-5894-6636-f34c" name="Heavy CCW (Plague)" hidden="false" targetId="e19a-dada-7b31-b904" type="profile"/>
+        <infoLink id="0236-3cb2-b3ef-0f38" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="a795-63b7-4264-ffc7" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2cd7-6957-bbbd-1793" name="Magical CCW (Plague)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c6da-a083-4b6d-8a4b" name="Magical CCW (Plague)" hidden="false" targetId="ed37-3849-173e-2b93" type="profile"/>
+        <infoLink id="0e5d-a9cd-5c70-7c17" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+        <infoLink id="d1bb-f771-671b-a1bb" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f621-afa4-217b-9944" name="Plague Warriors" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="90d8-a675-64b0-24da" name="Plague Warrior" hidden="false" targetId="d21f-d4b5-0362-aa94" type="profile"/>
+        <infoLink id="26f0-13c9-178d-3703" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="a044-2f64-319d-3238" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c356-274a-5bb9-1af2" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="e5c2-1c3e-1c70-61b3">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95a1-93cf-22a6-93bf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="580d-f32c-0f37-f488" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e5c2-1c3e-1c70-61b3" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="5c6c-779f-e8f3-8295" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="4cc3-17b9-04c7-fa3f" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68de-1e53-e041-86cf" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="27d4-d7f6-0c11-33e4" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="13b4-5ec4-b666-3972" name="Banner of Plague" hidden="false" collective="false" import="true" targetId="6ac6-8c69-9b07-3133" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2419-adb5-0cb5-6274" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="5ce9-c6b6-76bf-7422" name="Melee Weapons (all models)" hidden="false" collective="false" import="true" defaultSelectionEntryId="b3aa-e8de-ea2d-476e">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e264-d014-747d-5f5c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51a6-f444-5fca-b890" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="b3aa-e8de-ea2d-476e" name="CCW (Plague)" hidden="false" collective="false" import="true" targetId="b5a3-782b-d63d-5981" type="selectionEntry"/>
+                    <entryLink id="1899-9226-0950-8c96" name="Magical CCW (Plague)" hidden="false" collective="false" import="true" targetId="2cd7-6957-bbbd-1793" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="5e6d-772e-27d5-0974" name="Heavy CCW (Plague)" hidden="false" collective="false" import="true" targetId="2cd9-62ad-117a-a750" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="e86f-122a-066c-62c9" name="2x CCWs (Plague)" hidden="false" collective="false" import="true" targetId="9538-942f-678d-661b" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fe92-8dc9-1142-60a9" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="4c70-1e41-2b3e-2d0c" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="0446-d4b0-21d5-2e07" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39b6-6535-51d8-1902" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="f4c6-b39d-baf8-3cac" name="Upgrade up to two models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="73dc-a752-6b2a-2d83" name="Banner of Plague" hidden="false" collective="false" import="true" targetId="6ac6-8c69-9b07-3133" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a23b-52f4-efb0-1063" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="f0ff-f949-440d-1fff" name="Melee Weapons (all models)" hidden="false" collective="false" import="true" defaultSelectionEntryId="1f06-67ec-e009-9f04">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fba-2d0f-4752-2fb9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6713-0507-5073-44c2" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="1f06-67ec-e009-9f04" name="CCW (Plague)" hidden="false" collective="false" import="true" targetId="b5a3-782b-d63d-5981" type="selectionEntry"/>
+                    <entryLink id="c490-4911-a405-c31e" name="Magical CCW (Plague)" hidden="false" collective="false" import="true" targetId="2cd7-6957-bbbd-1793" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="130d-3c74-664a-e73d" name="Heavy CCW (Plague)" hidden="false" collective="false" import="true" targetId="2cd9-62ad-117a-a750" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="656e-b424-1429-02e3" name="2x CCWs (Plague)" hidden="false" collective="false" import="true" targetId="9538-942f-678d-661b" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b5a3-782b-d63d-5981" name="CCW (Plague)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0e24-b03c-b615-01ed" name="CCW (Plague)" hidden="false" targetId="212e-2961-4c0a-e5fc" type="profile"/>
+        <infoLink id="63fe-f4fb-2686-ffde" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="6ac6-8c69-9b07-3133" name="Banner of Plague" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b8eb-299d-3b93-3b19" name="Banner of Plague" hidden="false" targetId="4720-0b99-d010-c056" type="profile"/>
+        <infoLink id="714e-945c-bf01-9b81" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -3693,6 +3873,42 @@ Weapon: Toxic Maw</characteristic>
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d21f-d4b5-0362-aa94" name="Plague Warrior" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Regeneration</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4720-0b99-d010-c056" name="Banner of Plague" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">The unit gets Rending.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ed37-3849-173e-2b93" name="Magical CCW (Plague)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison, Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e25e-c14d-88fe-0683" name="2x CCWs (Plague)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e19a-dada-7b31-b904" name="Heavy CCW (Plague)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="212e-2961-4c0a-e5fc" name="CCW (Plague)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
