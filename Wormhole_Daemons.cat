@@ -170,6 +170,11 @@
         <categoryLink id="4a46-6cb7-dec3-e490" name="New CategoryLink" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="76e3-9a62-9780-1dfe" name="Lust Warriors" hidden="false" collective="false" import="true" targetId="a422-ba37-f5bc-0394" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3612-fb13-b5b7-5223" name="New CategoryLink" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -3721,6 +3726,168 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2035-aaaa-01bc-af28" name="Banner of Lust" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1ea1-a9cd-b8c2-db9d" name="Banner of Lust" hidden="false" targetId="7d42-dbac-d29e-bf19" type="profile"/>
+        <infoLink id="c014-20b6-0101-8aa7" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ee33-83aa-ab74-b113" name="2x CCWs (Lust)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="37cc-c4aa-09f2-1b4f" name="2x CCWs (Lust)" hidden="false" targetId="56aa-05f8-c87e-29a9" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1582-d88a-bd45-9456" name="Magical CCW (Lust)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d5cc-0ada-a5ec-9db6" name="Magical CCW (Lust)" hidden="false" targetId="bc85-85ff-abe6-e8bf" type="profile"/>
+        <infoLink id="a25a-039c-efb0-4029" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="82ad-3f9c-4696-2846" name="Heavy CCW (Lust)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="14b2-5a5a-34ee-148d" name="Heavy CCW (Lust)" hidden="false" targetId="a6f5-b4f8-5094-6fac" type="profile"/>
+        <infoLink id="9081-166f-0e56-00f6" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a422-ba37-f5bc-0394" name="Lust Warriors" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a3cc-e364-14d5-848d" name="Lust Warriors" hidden="false" targetId="11a6-fa66-e7d2-579d" type="profile"/>
+        <infoLink id="27a2-d024-4e53-d365" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="2c10-d728-d6f4-38c4" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="de5c-5403-4558-cbff" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ed1-54a3-41b1-247e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="676f-92b1-c4d0-dfdf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3f7-5e65-455c-7787" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4ed1-54a3-41b1-247e" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="5986-4150-2546-06ca" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="92c0-c9c8-8680-90ec" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c48-f7e8-765a-a8f5" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="e563-a914-a572-d6b0" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="fbf3-1426-40b1-4abd" name="Banner of Lust" hidden="false" collective="false" import="true" targetId="2035-aaaa-01bc-af28" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a57-0b12-43f4-a40a" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="0234-0d13-d147-be6c" name="Melee Weapons (all models)" hidden="false" collective="false" import="true" defaultSelectionEntryId="4cbf-dcc5-cd05-638e">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c952-dbb0-7e19-669f" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="059e-f322-bf03-4394" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="4cbf-dcc5-cd05-638e" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry"/>
+                    <entryLink id="b236-db9e-d663-c25a" name="Magical CCW (Lust)" hidden="false" collective="false" import="true" targetId="1582-d88a-bd45-9456" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="a9cb-6ed0-b826-7ea5" name="Heavy CCW (Lust)" hidden="false" collective="false" import="true" targetId="82ad-3f9c-4696-2846" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="6a47-c750-2d93-d39a" name="2x CCWs (Lust)" hidden="false" collective="false" import="true" targetId="ee33-83aa-ab74-b113" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f518-ab3a-a339-8df0" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="c4d2-6c70-fa80-901e" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="33de-b513-5629-0591" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c753-e57f-ba8f-a6be" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="bca9-a344-4067-8efb" name="Upgrade up to two models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="563e-2d89-d90e-8519" name="Banner of Lust" hidden="false" collective="false" import="true" targetId="2035-aaaa-01bc-af28" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="846b-ed50-db9b-6344" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="d8eb-bd24-758e-0621" name="Melee Weapons (all models)" hidden="false" collective="false" import="true" defaultSelectionEntryId="6768-a8f7-84ce-40cb">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e244-d964-a91b-48cc" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eeda-43c4-3dca-9d2f" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6768-a8f7-84ce-40cb" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry"/>
+                    <entryLink id="8f5b-c1fc-cb44-b16b" name="Magical CCW (Lust)" hidden="false" collective="false" import="true" targetId="1582-d88a-bd45-9456" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="6af6-6a7d-e7b1-3d94" name="Heavy CCW (Lust)" hidden="false" collective="false" import="true" targetId="82ad-3f9c-4696-2846" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="b7b2-9e8b-3ff3-8e6c" name="2x CCWs (Lust)" hidden="false" collective="false" import="true" targetId="ee33-83aa-ab74-b113" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="125.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="125.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -5014,6 +5181,36 @@ Weapon: Axe</characteristic>
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="11a6-fa66-e7d2-579d" name="Lust Warrior" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7d42-dbac-d29e-bf19" name="Banner of Lust" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">The unit gets Strider.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="56aa-05f8-c87e-29a9" name="2x CCWs (Lust)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bc85-85ff-abe6-e8bf" name="Magical CCW (Lust)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a6f5-b4f8-5094-6fac" name="Heavy CCW (Lust)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
