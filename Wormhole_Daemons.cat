@@ -145,6 +145,11 @@
         <categoryLink id="499c-84be-2997-1f1e" name="New CategoryLink" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="ebf8-36e0-0cd3-8632" name="Greater Daemon of Lust" hidden="false" collective="false" import="true" targetId="318d-3363-b154-61a8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e983-ac00-2858-961a" name="New CategoryLink" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -3237,6 +3242,180 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="420.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="318d-3363-b154-61a8" name="Greater Daemon of Lust" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="96ce-1576-30f3-d6a0" name="Greater Daemon of Lust" hidden="false" targetId="2c71-0bb4-00b0-1405" type="profile"/>
+        <infoLink id="bdb3-260d-f7a0-b298" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="9645-5ba6-157e-12d3" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="00e4-c20a-d980-7d3e" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="8b64-7c3b-30e8-e454" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="cb28-396b-62d8-7ab8" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+        <infoLink id="c458-fcb8-3cc5-bc8c" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cf4f-8705-c9d5-658b" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f0eb-64f4-8e12-70b4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acb9-01af-7142-a30b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34c0-1eac-6977-2fb2" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f0eb-64f4-8e12-70b4" name="Exalted Ritual Blade" hidden="false" collective="false" import="true" targetId="cc54-8e05-2b04-0433" type="selectionEntry"/>
+            <entryLink id="ba23-3e31-d593-a395" name="Exalted Ritual Hammer" hidden="false" collective="false" import="true" targetId="6bfe-f0ec-7b1b-172b" type="selectionEntry"/>
+            <entryLink id="a663-ac09-7579-cd51" name="Exalted Ritual Spear" hidden="false" collective="false" import="true" targetId="fb13-8323-a28f-3da4" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="dd96-ecf1-ce68-050c" name="Ranged Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aae4-dde1-30e3-4ac7" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ec11-9699-03c0-d6bf" name="Exalted Limb Strike" hidden="false" collective="false" import="true" targetId="5eaf-c517-fd86-a891" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="fb1a-d4ba-8a36-7dce" name="Exalted Tail Strike" hidden="false" collective="false" import="true" targetId="b7e7-44c9-a0d0-7b43" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="3bae-f5e1-96ad-cb4c" name="Upgrade with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="7ec3-e5bf-a339-fef5" name="Symbol of Lust(2+)" hidden="false" collective="false" import="true" targetId="1583-8b5c-2662-bc7f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e0f-d9b0-b763-7e7d" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b892-835b-febd-1bd5" name="Psychic Spells - Lust" hidden="false" collective="false" import="true" targetId="5ed7-47d6-8134-da30" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="555.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cc54-8e05-2b04-0433" name="Exalted Ritual Blade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="807e-7262-8162-45c7" name="Exalted Ritual Blade" hidden="false" targetId="67e2-371d-3c6e-d608" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="8a50-999d-7b47-b3de" name="Great Ritual Blade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6f39-4581-0a15-f886" name="Great Ritual Blade" hidden="false" targetId="531e-a921-daf5-210e" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="82ee-103a-104c-d893" name="Ritual Blade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e9f5-159a-64b9-e874" name="Ritual Blade" hidden="false" targetId="045c-bfe1-47b3-36d6" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="6bfe-f0ec-7b1b-172b" name="Exalted Ritual Hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cdb3-d8fc-838e-c591" name="Exalted Ritual Hammer" hidden="false" targetId="0479-2801-a2c2-7f95" type="profile"/>
+        <infoLink id="d3d6-e6dd-c58e-6cf4" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="91bc-4e93-1e3d-c544" name="Great Ritual Hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1777-4a6c-b2aa-a2d9" name="Great Ritual Hammer" hidden="false" targetId="5ce6-e4f4-90c1-f630" type="profile"/>
+        <infoLink id="591c-2d90-0fb1-7282" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="6435-6fa2-78ab-f216" name="Ritual Hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d319-2d21-0e11-f90a" name="Ritual Hammer" hidden="false" targetId="7cd5-7a55-35be-94ff" type="profile"/>
+        <infoLink id="5403-2648-a43d-60d2" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="fb13-8323-a28f-3da4" name="Exalted Ritual Spear" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a7e1-cf2b-82b0-0e3f" name="Exalted Ritual Spear" hidden="false" targetId="750a-f9bf-2445-6297" type="profile"/>
+        <infoLink id="c04f-ac0b-98dd-9ab2" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="e01a-9153-a71d-3f0d" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5e80-a956-7876-057a" name="Great Ritual Spear" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f643-0945-dcc9-7c5e" name="Great Ritual Spear" hidden="false" targetId="1b96-cd9d-80b8-d622" type="profile"/>
+        <infoLink id="b829-6740-fc18-b5e7" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="492b-4382-1f3d-807d" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5422-a59e-e60e-27cb" name="Ritual Spear" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="df3c-f2e7-fede-fe08" name="Ritual Spear" hidden="false" targetId="35ae-c248-4705-9a72" type="profile"/>
+        <infoLink id="b7cf-9308-0234-71c2" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="7fe3-9aa2-2f04-8756" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="b7e7-44c9-a0d0-7b43" name="Exalted Tail Strike" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c913-d2d9-d8d0-fd42" name="Exalted Tail Strike" hidden="false" targetId="be4e-d6ef-8fe5-1a5c" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="8ffd-5cfa-60ea-30a5" name="Great Tail Strike" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2063-c618-d759-7b23" name="Great Tail Strike" hidden="false" targetId="78a3-0639-5166-2a64" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f394-00df-81e5-b5d6" name="Tail Strike" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3284-b9b1-a13b-6131" name="Limb Strike" hidden="false" targetId="9b61-5879-0ecf-03fd" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5eaf-c517-fd86-a891" name="Exalted Limb Strike" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a30f-3ce9-2598-2848" name="Exalted Limb Strike" hidden="false" targetId="b7b9-f6a2-4199-3cb5" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="21cd-871f-b932-1ef5" name="Great Limb Strike" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f9ce-3987-02e9-17ca" name="Great Limb Strike" hidden="false" targetId="1bfe-c393-d7fe-e490" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="e005-46ae-6470-8ae4" name="Limb Strike" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8f39-25a0-9c32-c41c" name="Limb Strike" hidden="false" targetId="9b61-5879-0ecf-03fd" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="1583-8b5c-2662-bc7f" name="Symbol of Lust(2+)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="85ad-98ed-4552-b0ce" name="Symbol of Lust(2+)" hidden="false" targetId="c19e-e6a7-3f3f-b064" type="profile"/>
+        <infoLink id="ac21-0f4d-0e24-aca7" name="Symbol of Lust(X+)" hidden="false" targetId="a55d-31aa-8634-af9a" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf40-9a1e-0f28-1ff8" name="Symbol of Lust(3+)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4221-b696-4573-d826" name="Symbol of Lust(3+)" hidden="false" targetId="70ff-dd27-0de2-744f" type="profile"/>
+        <infoLink id="6361-3c6e-8708-6917" name="Symbol of Lust(X+)" hidden="false" targetId="a55d-31aa-8634-af9a" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="776e-6648-cf40-918f" name="Symbol of Lust(4+)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fbba-2502-eb46-6311" name="Symbol of Lust(4+)" hidden="false" targetId="6b27-2fe3-da3e-a2f0" type="profile"/>
+        <infoLink id="0de4-0137-6e13-b4f7" name="Symbol of Lust(X+)" hidden="false" targetId="a55d-31aa-8634-af9a" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -3279,6 +3458,26 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="5ed7-47d6-8134-da30" name="Psychic Spells - Lust" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="f5a7-2fcb-ab03-c877" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4797-5560-35f3-f890" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1636-5c0b-1e8e-f4c4" name="Pleasure" hidden="false" targetId="f071-b6d6-a348-75a5" type="profile"/>
+            <infoLink id="d004-9d86-8438-bc01" name="Overload" hidden="false" targetId="bbfe-1410-ebdb-c307" type="profile"/>
+            <infoLink id="64e5-354f-f0d8-c689" name="Ecstasy" hidden="false" targetId="e039-2e66-123f-7476" type="profile"/>
+            <infoLink id="c357-056c-c4d1-b2e0" name="Seizure" hidden="false" targetId="ee8f-5fa8-36e3-2cf8" type="profile"/>
+            <infoLink id="a1cb-ab69-771a-da59" name="Frenzy" hidden="false" targetId="1949-8d4d-10c4-e870" type="profile"/>
+            <infoLink id="a536-9cec-bc39-d2c4" name="Pain" hidden="false" targetId="573a-6b22-3923-aed4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="aebd-0d27-61ff-76ef" name="Symbol of War(X+)" publicationId="48f1-9b65-1218-3381" hidden="false">
@@ -3304,6 +3503,9 @@
     </rule>
     <rule id="fa4b-3bee-3a62-ef1c" name="Slime Trap" publicationId="48f1-9b65-1218-3381" hidden="false">
       <description>Enemy units that fight in melee against the hero count as having the Slow special rule for the rest of the game.</description>
+    </rule>
+    <rule id="a55d-31aa-8634-af9a" name="Symbol of Lust(X+)" hidden="false">
+      <description>When the hero is activated roll one die. On an X+ two enemy units within 18&quot; take 3 automatic hits each.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -4250,6 +4452,160 @@ Weapon: Toxic Maw</characteristic>
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2c71-0bb4-00b0-1405" name="Greater Daemon of Lust" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">2+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Fear, Hero, Tough(12), Psychic(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="67e2-371d-3c6e-d608" name="Exalted Ritual Blade" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A18</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="531e-a921-daf5-210e" name="Great Ritual Blade" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A12</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="045c-bfe1-47b3-36d6" name="Ritual Blade" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0479-2801-a2c2-7f95" name="Exalted Ritual Hammer" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A12</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5ce6-e4f4-90c1-f630" name="Great Ritual Hammer" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A8</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7cd5-7a55-35be-94ff" name="Ritual Hammer" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="750a-f9bf-2445-6297" name="Exalted Ritual Spear" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1b96-cd9d-80b8-d622" name="Great Ritual Spear" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="35ae-c248-4705-9a72" name="Ritual Spear" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="be4e-d6ef-8fe5-1a5c" name="Exalted Tail Strike" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A12</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="78a3-0639-5166-2a64" name="Great Tail Strike" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A8</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ed84-6f04-767f-d7b8" name="Tail Strike" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A4</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b7b9-f6a2-4199-3cb5" name="Exalted Limb Strike" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A12</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1bfe-c393-d7fe-e490" name="Great Limb Strike" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A8</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9b61-5879-0ecf-03fd" name="Limb Strike" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A4</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c19e-e6a7-3f3f-b064" name="Symbol of Lust(2+)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Symbol of Lust(2+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="70ff-dd27-0de2-744f" name="Symbol of Lust(3+)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Symbol of Lust(3+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6b27-2fe3-da3e-a2f0" name="Symbol of Lust(4+)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Symbol of Lust(4+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f071-b6d6-a348-75a5" name="Pleasure" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +1 to hit in melee next time it fights.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bbfe-1410-ebdb-c307" name="Overload" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24&quot; takes 1 hit with AP(4) and Deadly(3).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e039-2e66-123f-7476" name="Ecstasy" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may immediately shoot and gets +1 to hit for that shooting.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ee8f-5fa8-36e3-2cf8" name="Seizure" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target 2 enemy units within 12&quot; take 6 automatic hits each.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1949-8d4d-10c4-e870" name="Frenzy" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +1 attack in melee next time it fights.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="573a-6b22-3923-aed4" name="Pain" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 6 automatic hits with AP(1).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
