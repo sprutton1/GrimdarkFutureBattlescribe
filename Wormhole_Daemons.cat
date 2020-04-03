@@ -150,6 +150,11 @@
         <categoryLink id="e983-ac00-2858-961a" name="New CategoryLink" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="4d35-dd0b-3c2d-fa2a" name="Daemon Champion of Lust" hidden="false" collective="false" import="true" targetId="0587-7ceb-c305-d696" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="138b-cb7e-1c9f-98ef" name="New CategoryLink" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -3416,6 +3421,104 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0587-7ceb-c305-d696" name="Daemon Champion of Lust" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7c30-157f-266f-3df1" name="Daemon Champion of Lust" hidden="false" targetId="0c80-f38b-5439-6c3d" type="profile"/>
+        <infoLink id="43d5-e791-752e-0f37" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="51ad-8930-3449-6e8e" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="9431-8774-096f-dc98" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="b0e2-303e-1583-df4a" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="5129-67fa-9c53-ec87" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="edae-c9f2-eeb7-25bb" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="56cd-3dbb-2023-aa31">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8b0-8b64-2909-1eec" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0ef-f353-c7a9-3994" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="56cd-3dbb-2023-aa31" name="Great Ritual Blade" hidden="false" collective="false" import="true" targetId="8a50-999d-7b47-b3de" type="selectionEntry"/>
+            <entryLink id="c953-7054-a5c0-3f64" name="Great Ritual Hammer" hidden="false" collective="false" import="true" targetId="91bc-4e93-1e3d-c544" type="selectionEntry"/>
+            <entryLink id="70e9-b3d6-562a-7858" name="Great Ritual Spear" hidden="false" collective="false" import="true" targetId="5e80-a956-7876-057a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="cdb5-d6ea-74a4-7f0b" name="Ranged Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="008c-91e1-b22f-9f4b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="fadf-4415-4543-d626" name="Great Limb Strike" hidden="false" collective="false" import="true" targetId="21cd-871f-b932-1ef5" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="549d-3816-26c8-ec0c" name="Great Tail Strike" hidden="false" collective="false" import="true" targetId="8ffd-5cfa-60ea-30a5" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="82fe-fa1b-71bd-1fb2" name="Upgrade with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="8075-1f8b-aa02-f5d3" name="Symbol of Lust(3+)" hidden="false" collective="false" import="true" targetId="bf40-9a1e-0f28-1ff8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5921-a697-c309-1b85" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1862-2441-134b-1345" name="Wings" hidden="false" collective="false" import="true" targetId="ca87-2037-03b9-9eb6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f81-9605-cb38-5986" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5b56-54e2-0051-d942" name="Psychic(X)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="438f-49fa-45b6-8da5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="31ee-c3d2-2454-800b" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="deda-be2b-74f7-7b05" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+                <infoLink id="9b09-e082-af88-a8ad" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="e867-27ef-2359-55df" name="Psychic Spells - Lust" hidden="false" collective="false" import="true" targetId="5ed7-47d6-8134-da30" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="169b-132b-ce58-81fa" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="7e0c-22f6-233f-1507" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
+                <infoLink id="5f78-b05c-9ac5-397d" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="91d3-0d3a-e8a2-ad22" name="Psychic Spells - Lust" hidden="false" collective="false" import="true" targetId="5ed7-47d6-8134-da30" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="290.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -4606,6 +4709,13 @@ Weapon: Toxic Maw</characteristic>
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
         <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 6 automatic hits with AP(1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c80-f38b-5439-6c3d" name="Daemon Champion of Lust" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">2+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Fear, Hero, Tough(6)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
