@@ -130,6 +130,11 @@
         <categoryLink id="2f1d-b59c-b9f4-f5ba" name="New CategoryLink" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="164e-2e9e-be40-c3c7" name="Plague Fly Riders" hidden="false" collective="false" import="true" targetId="55cd-18ff-ad61-f31e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7e60-9516-d763-81fa" name="New CategoryLink" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -3016,6 +3021,134 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="55cd-18ff-ad61-f31e" name="Plague Fly Riders" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2c75-3465-fdce-e22e" name="Plague Fly Rider" hidden="false" targetId="386d-7b6f-a2da-865b" type="profile"/>
+        <infoLink id="362b-35ea-5926-669a" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="d882-a0f3-569c-b0b4" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="54da-e9c9-3f9c-5d5b" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="88b9-fa38-610f-35ee" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="67d3-f57b-7fa3-5f56" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="48ff-fd2f-f00c-0531">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e60a-b825-2f5e-8a48" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbc5-2fb5-16e4-79dd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="48ff-fd2f-f00c-0531" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="c73e-b167-ac2e-94b6" name="Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="7927-2b36-b97c-cc8a">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14dd-5817-191f-7e68" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acc8-335e-76a6-597f" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="7927-2b36-b97c-cc8a" name="Stingers" hidden="false" collective="false" import="true" targetId="3324-888a-56d8-1ea0" type="selectionEntry"/>
+                    <entryLink id="e606-ef3a-8286-acda" name="Poisoned Stingers" hidden="false" collective="false" import="true" targetId="a843-4d2c-e1c6-090e" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="96c1-73a9-bde4-cd38" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="461a-d884-3726-3155" name="Poisoned Spit" hidden="false" collective="false" import="true" targetId="3e11-80dc-4b58-d904" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba24-e9cd-6550-b46c" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="6674-ccae-85b8-4040" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="4c0d-849c-b571-92c5" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1f1-fec8-bb2c-b8b4" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="b9ea-f62a-1418-9144" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="584b-5be7-16bc-b9dc" name="Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="c2c2-a4ff-523a-48a7">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed19-bfb7-b588-fa0e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c056-b300-4896-7c7f" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c2c2-a4ff-523a-48a7" name="Stingers" hidden="false" collective="false" import="true" targetId="3324-888a-56d8-1ea0" type="selectionEntry"/>
+                    <entryLink id="0014-4934-3055-9d97" name="Poisoned Stingers" hidden="false" collective="false" import="true" targetId="a843-4d2c-e1c6-090e" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="9147-521b-0fd5-e428" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="4ddb-180e-7f05-25cc" name="Poisoned Spit" hidden="false" collective="false" import="true" targetId="3e11-80dc-4b58-d904" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8c6-d4f0-bc45-28cd" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="ac0f-6e78-0a93-8d95" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="aebf-9ec8-c227-7307" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a642-179e-2ce2-ea0c" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="235.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="235.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3324-888a-56d8-1ea0" name="Stingers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9c52-5ab5-2d52-98d5" name="Stinger" hidden="false" targetId="ccb1-c811-d36f-05f1" type="profile"/>
+        <infoLink id="c00e-b0b1-e5d1-2229" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="a843-4d2c-e1c6-090e" name="Poisoned Stingers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="48a3-d27f-f27f-2640" name="Poisoned Stinger" hidden="false" targetId="a745-ed59-5c62-0d96" type="profile"/>
+        <infoLink id="7f96-8dc6-8055-f7f6" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="f21c-6926-d187-efc1" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="3e11-80dc-4b58-d904" name="Poisoned Spit" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="059d-a7d3-7462-29c1" name="Poisoned Spit" hidden="false" targetId="e4e2-9431-99a1-bdc0" type="profile"/>
+        <infoLink id="f1bd-6157-14c7-57d2" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -3957,6 +4090,32 @@ Weapon: Toxic Maw</characteristic>
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="386d-7b6f-a2da-865b" name="Plague Fly Rider" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Regeneration, Strider, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ccb1-c811-d36f-05f1" name="Stinger" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e4e2-9431-99a1-bdc0" name="Poisoned Spit" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a745-ed59-5c62-0d96" name="Poisoned Stinger" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Poison</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
