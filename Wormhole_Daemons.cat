@@ -180,6 +180,11 @@
         <categoryLink id="c4c5-3076-af8a-d434" name="New CategoryLink" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="db1c-15ca-0a80-c99e" name="Lust Fiends" hidden="false" collective="false" import="true" targetId="e0fa-0a47-cd8a-eea1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="324b-046c-0cc9-7e3f" name="New CategoryLink" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -3952,6 +3957,35 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e0fa-0a47-cd8a-eea1" name="Lust Fiends" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="809d-ee69-a23c-94b6" name="Lust Fiend" hidden="false" targetId="2c22-daeb-3420-54c0" type="profile"/>
+        <infoLink id="0f23-379e-d8db-9483" name="Claws (Fiend)" hidden="false" targetId="8a10-b4ff-978e-c758" type="profile"/>
+        <infoLink id="0227-dce5-9a7b-5ee9" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="a236-48a1-ae65-26eb" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="c488-7360-9dc3-7079" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="a6d9-15dc-9773-c933" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f908-ff85-f158-1654" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="8f7b-33a3-768b-03d4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13a6-1fb4-302e-d07c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a32-4644-e039-425d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8f7b-33a3-768b-03d4" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="f2fc-9c2e-45f6-6486" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="235.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="235.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -5282,6 +5316,19 @@ Weapon: Axe</characteristic>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Impact(1), Very Fast</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2c22-daeb-3420-54c0" name="Lust Fiend" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Impact(3), Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8a10-b4ff-978e-c758" name="Claws (Fiend)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A6</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"></characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
