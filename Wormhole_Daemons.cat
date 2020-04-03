@@ -175,6 +175,11 @@
         <categoryLink id="3612-fb13-b5b7-5223" name="New CategoryLink" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="78c9-ed3a-6a65-b088" name="Lust Beast Riders" hidden="false" collective="false" import="true" targetId="d7e8-80ae-265e-852b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c4c5-3076-af8a-d434" name="New CategoryLink" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -3888,6 +3893,65 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="125.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d7e8-80ae-265e-852b" name="Lust Beast Riders" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8b0e-01b1-e2bb-3181" name="Lust Beast Rider" hidden="false" targetId="7777-fce9-af42-9b6f" type="profile"/>
+        <infoLink id="c260-f7c4-8c75-b818" name="Claws (Lust Beast)" hidden="false" targetId="33c1-fb73-95fd-202c" type="profile"/>
+        <infoLink id="93ff-90e8-5d0c-473f" name="CCW (A2)" hidden="false" targetId="a133-fbbf-5794-de55" type="profile"/>
+        <infoLink id="042f-41cf-1f2e-9567" name="Very Fast" hidden="false" targetId="8b1d-ba48-69c5-5a12" type="rule"/>
+        <infoLink id="3af8-597d-a0f0-0b69" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+        <infoLink id="7feb-b6fa-b618-5518" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="e41d-96cf-5f7b-8651" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2690-7cbd-936e-6421" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="3393-1fdf-b3d9-a3dd">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35c3-cbb7-5030-5d28" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19fa-25e9-0e38-5f41" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3393-1fdf-b3d9-a3dd" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="b76c-cfc7-d791-35da" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="9d65-e3c1-518b-e3db" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba76-fb38-e0b9-66e6" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="3534-3ed7-6b9d-2f54" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="a0c4-93ff-39d5-cf21" name="Upgrade with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="cbe4-32b7-609a-b1de" name="Command Group" hidden="false" collective="false" import="true" targetId="9f0e-8bec-aa54-4a1a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37b6-f39f-9b80-6d06" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -5211,6 +5275,13 @@ Weapon: Axe</characteristic>
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7777-fce9-af42-9b6f" name="Lust Beast Rider" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Impact(1), Very Fast</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
