@@ -160,6 +160,11 @@
         <categoryLink id="a7f6-2409-deba-2324" name="New CategoryLink" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="18a0-4d0b-8fab-2d28" name="Lust Harpist" hidden="false" collective="false" import="true" targetId="794e-8a66-c264-c7b3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4a31-b34e-9c2b-90d3" name="New CategoryLink" hidden="false" targetId="dc6c-0336-e3ee-4e95" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -3651,6 +3656,48 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="794e-8a66-c264-c7b3" name="Lust Harpist" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1a44-9683-225c-e660" name="Lust Harpist" hidden="false" targetId="ea60-8f7e-78bc-6bd3" type="profile"/>
+        <infoLink id="72a5-deab-971d-06ca" name="Infernal Harp" hidden="false" targetId="0c05-dba7-993a-3de8" type="profile"/>
+        <infoLink id="6813-b344-7a75-bbb5" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="7596-4462-240f-6af7" name="Indirect" hidden="false" targetId="587a-b92c-a265-06c4" type="rule"/>
+        <infoLink id="4725-a7e4-0249-9427" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="a894-633f-90f0-886f" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="b40c-2267-fea8-e6a8" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="599a-11ef-5161-3125" name="Upgrade with any:" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="ef2e-9bd8-4559-9d03" name="Song of Banishment" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36ca-6848-539f-ba91" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b39f-4c66-02ec-4cb3" name="Song of Banishment" hidden="false" targetId="c6f1-c589-41f4-e748" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7540-f090-378c-254f" name="Song of Summoning" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30f8-9640-398b-10d6" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="dbcb-8b2d-fb91-3776" name="Song of Summoning" hidden="false" targetId="af09-349c-53d3-23d6" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="315.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -3739,7 +3786,7 @@
     <rule id="fa4b-3bee-3a62-ef1c" name="Slime Trap" publicationId="48f1-9b65-1218-3381" hidden="false">
       <description>Enemy units that fight in melee against the hero count as having the Slow special rule for the rest of the game.</description>
     </rule>
-    <rule id="a55d-31aa-8634-af9a" name="Symbol of Lust(X+)" hidden="false">
+    <rule id="a55d-31aa-8634-af9a" name="Symbol of Lust(X+)" publicationId="48f1-9b65-1218-3381" hidden="false">
       <description>When the hero is activated roll one die. On an X+ two enemy units within 18&quot; take 3 automatic hits each.</description>
     </rule>
     <rule id="8b1d-ba48-69c5-5a12" name="Very Fast" publicationId="48f1-9b65-1218-3381" hidden="false">
@@ -4900,6 +4947,30 @@ Weapon: Axe</characteristic>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Hero, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ea60-8f7e-78bc-6bd3" name="Lust Harpist" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Hero, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c05-dba7-993a-3de8" name="Infernal Harp" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Indirect</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c6f1-c589-41f4-e748" name="Song of Banishment" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">When the hero is activated pick one enemy unit within 18&quot; which must take a Dangerous Terrain test.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="af09-349c-53d3-23d6" name="Song of Summoning" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">When the hero is activated you may place a unit of 5 Lust Warriors fully within 6&quot;.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
