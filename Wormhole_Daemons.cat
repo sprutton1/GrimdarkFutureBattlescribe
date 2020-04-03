@@ -135,6 +135,11 @@
         <categoryLink id="7e60-9516-d763-81fa" name="New CategoryLink" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="18d3-f594-273b-1685" name="Plague Beast" hidden="false" collective="false" import="true" targetId="238b-8265-a897-7066" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ab15-bdb1-7b4b-59e4" name="New CategoryLink" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -3149,6 +3154,20 @@
         <infoLink id="f1bd-6157-14c7-57d2" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="238b-8265-a897-7066" name="Plague Beast" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6036-8f09-869f-083a" name="Plague Beast" hidden="false" targetId="6b07-800c-fb26-2a90" type="profile"/>
+        <infoLink id="735f-2123-b39e-9561" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="2aff-a727-7fca-efbc" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="c586-53ce-93bf-4a3a" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="1a12-4dfe-ed8a-ee0c" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+        <infoLink id="59a9-46ff-392d-eba7" name="Claws (Beast)" hidden="false" targetId="8c76-5817-300d-7e24" type="profile"/>
+        <infoLink id="2ad0-4d1d-0fe3-c32d" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="115.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -4116,6 +4135,19 @@ Weapon: Toxic Maw</characteristic>
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6b07-800c-fb26-2a90" name="Plague Beast" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fear, Regeneration, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8c76-5817-300d-7e24" name="Claws (Beast)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
