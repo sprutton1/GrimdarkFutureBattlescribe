@@ -125,6 +125,11 @@
         <categoryLink id="7cb6-8428-111b-2d2c" name="New CategoryLink" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="c21d-a890-31eb-a4de" name="Plague Swarms" hidden="false" collective="false" import="true" targetId="f461-f9fa-2a76-f66d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2f1d-b59c-b9f4-f5ba" name="New CategoryLink" hidden="false" targetId="1dbb-a7bb-4f86-4ec4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ee7b-0d7b-627c-0d6b" name="Exalted Flame Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -2981,6 +2986,36 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f461-f9fa-2a76-f66d" name="Plague Swarms" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3cac-1326-e996-1ed8" name="Plague Swarm" hidden="false" targetId="88c0-a11c-be44-dd24" type="profile"/>
+        <infoLink id="0d59-55d7-aa41-a73f" name="Swarm Attacks" hidden="false" targetId="234b-827c-15ec-1fa3" type="profile"/>
+        <infoLink id="ead3-0f70-4d7a-e943" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
+        <infoLink id="5ce6-8769-39bf-a5ee" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="9a6d-0ffa-1fff-89ff" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="5c10-392c-31ba-297b" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="c911-9d57-6c16-6f7c" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7eb9-51ef-f1e4-8add" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="6041-58e1-6ed6-978f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8742-b9a9-58e2-d789" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13f3-7448-eb1e-07ee" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6041-58e1-6ed6-978f" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="f4cf-9f3a-3337-2049" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fb05-79c8-e32f-f835" name="Psychic Spells - Change" hidden="false" collective="false" import="true">
@@ -3908,6 +3943,19 @@ Weapon: Toxic Maw</characteristic>
     <profile id="212e-2961-4c0a-e5fc" name="CCW (Plague)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="88c0-a11c-be44-dd24" name="Plague Swarm" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Scout, Regeneration, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="234b-827c-15ec-1fa3" name="Swarm Attacks" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Poison</characteristic>
       </characteristics>
     </profile>
