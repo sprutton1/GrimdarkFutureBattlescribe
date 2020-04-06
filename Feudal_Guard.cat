@@ -44,6 +44,11 @@
         <categoryLink id="01a3-628c-17be-a7ef" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="94f7-0f92-33ee-1724" name="Feudal Cavalry" hidden="false" collective="false" import="true" targetId="6404-5955-9c75-656b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f312-7f15-dbc0-b112" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fd3d-82b2-5583-a6c1" name="Feudal Steed" hidden="false" collective="false" import="true" type="upgrade">
@@ -1254,6 +1259,141 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry id="6404-5955-9c75-656b" name="Feudal Cavalry" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9af2-f38f-3479-678e" name="Feudal Cavalry" hidden="false" targetId="ae68-f03a-bc94-4fc2" type="profile"/>
+        <infoLink id="50ab-b49b-63af-0d45" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="a808-c843-5901-eacd" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5c75-016e-85a6-6594" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="10f1-87bf-2658-8aaa">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d958-7323-700b-8066" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddd3-80be-a3b6-25ce" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="10f1-87bf-2658-8aaa" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="9122-fbc0-8065-fec6" name="Melee Weapons (all models)" hidden="false" collective="false" import="true" defaultSelectionEntryId="0eb0-f48f-c117-c193">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfba-3a5a-5a37-41e6" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df7e-4614-0419-8316" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="0eb0-f48f-c117-c193" name="CCWs (A2)" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="aef4-e56c-6302-5e6f" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad1a-be85-39f7-ac8c" type="min"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a32-597d-588f-ad2f" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry id="5b1f-6942-f92d-b7c4" name="Energy Swords" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="2463-58aa-0f4f-3cad" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd7e-0fa6-92c0-1cbe" type="min"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ae3-5119-b1a4-96b1" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="bfa2-4509-9d32-ffbd" name="Energy Lances" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="c82c-0055-4188-4a5c" name="Energy Lance" hidden="false" collective="false" import="true" targetId="86da-d1ca-499b-5df0" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e887-a0e3-faa0-fae5" type="min"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bf9-ec4a-3001-6e1b" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="206c-4941-df75-9e47" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bf3-8093-f0b6-a586" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3528-a6d1-afa3-8ce0" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="100.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4678-acda-4e8c-31af" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="693e-2c36-be82-8fd2" name="Melee Weapons (all models)" hidden="false" collective="false" import="true" defaultSelectionEntryId="df9c-482e-df63-039c">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e35-031e-c5f4-9b43" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b3-4cdf-ea38-2ce9" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="df9c-482e-df63-039c" name="CCWs (A2)" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="d65b-456e-b460-5588" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffc8-47ad-98a1-2d87" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f867-27f7-c1eb-6990" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry id="d501-c308-0bd0-e638" name="Energy Swords" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="2aa2-75a4-7f7b-dbfe" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa2c-d151-08e4-efd2" type="max"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="714d-090e-45ad-a679" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="a523-49f1-a6bd-a345" name="Energy Lances" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="7164-28ba-f952-d83c" name="Energy Lance" hidden="false" collective="false" import="true" targetId="86da-d1ca-499b-5df0" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74ce-e9d0-8c7e-2f54" type="max"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1a4-fa10-896b-a7f3" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="b229-9869-1106-16b9" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="022b-4099-a144-1cb1" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de0f-7d80-7586-2582" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="200.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9c5b-c1ff-b05a-ad28" name="Weapons - Leader" hidden="false" collective="false" import="true">
@@ -1622,6 +1762,13 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Furious, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ae68-f03a-bc94-4fc2" name="Feudal Cavalry" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
