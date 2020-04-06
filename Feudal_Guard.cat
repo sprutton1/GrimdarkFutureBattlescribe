@@ -49,6 +49,11 @@
         <categoryLink id="f312-7f15-dbc0-b112" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="6a0c-af10-56f3-40be" name="Heavy APC" hidden="false" collective="false" import="true" targetId="0da8-4c9b-5dd3-48ba" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ee4f-ac57-729b-8135" name="New CategoryLink" hidden="false" targetId="b820-6309-e900-c733" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fd3d-82b2-5583-a6c1" name="Feudal Steed" hidden="false" collective="false" import="true" type="upgrade">
@@ -1394,6 +1399,99 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry id="2fd2-a599-7fc3-9b2c" name="Twin Missile Pod" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4840-2820-2764-8a00" name="Twin Missile Pod" hidden="false" targetId="f98d-8e4f-d2cd-b342" type="profile"/>
+        <infoLink id="acbb-69b9-eb6f-e92e" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0da8-4c9b-5dd3-48ba" name="Heavy APC" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4faf-bff9-f8fe-1015" name="Heavy APC" hidden="false" targetId="cd29-4c2d-d11d-c8fe" type="profile"/>
+        <infoLink id="6178-11bc-efac-27f3" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="5089-a3e9-dcb5-d976" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
+        <infoLink id="b463-d775-4407-e634" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="1df2-8c92-8b94-a8e6" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="03c4-134e-fef9-0b03" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="256a-ff43-57c0-841e" name="Weapon - Turret Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="7374-8011-9daa-4de1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce55-38ef-6ba4-12f3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f2a-656c-15cf-01da" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7374-8011-9daa-4de1" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry"/>
+            <entryLink id="f3eb-5746-13dc-1ac2" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b2e9-776d-9278-9ec1" name="Laser Machinegun" hidden="false" collective="false" import="true" targetId="f7a6-c6c9-0567-4b34" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="52ae-8c6d-ff35-d317" name="Autocannon" hidden="false" collective="false" import="true" targetId="9557-8f54-7c72-fe96" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="65c8-8627-3501-034e" name="Twin Heavy Machinegun" hidden="false" collective="false" import="true" targetId="dae8-3106-6a96-228c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="60f2-4e0f-cbb1-3670" name="Weapon - Hull Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="5733-6695-bf2b-5433">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8d3-b541-a6a6-58cc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ea1-be87-d10f-9629" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5733-6695-bf2b-5433" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry"/>
+            <entryLink id="a7f1-b163-cfcf-1a28" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="48ca-4375-6274-9541" name="Laser Machinegun" hidden="false" collective="false" import="true" targetId="f7a6-c6c9-0567-4b34" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="721b-cc46-31bf-cf52" name="Weapon - Pintle Mount" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0483-aadb-766d-cf99" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b63b-4ee5-9c82-78f9" name="Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="3a8d-f4cc-52d7-29d2" name="Assault Rifle Array" hidden="false" collective="false" import="true" targetId="faa1-761d-0d50-2135" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="af6d-3fb2-2587-9a16" name="Upgrades - Vehicles" hidden="false" collective="false" import="true" targetId="66fb-dc95-fb30-c6b8" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f4-e00f-c213-ffa5" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="290.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9c5b-c1ff-b05a-ad28" name="Weapons - Leader" hidden="false" collective="false" import="true">
@@ -1521,6 +1619,20 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="66fb-dc95-fb30-c6b8" name="Weapons - Vehicle Missiles" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="816d-3c04-88fe-b2b9" name="Twin Missile Pod" hidden="false" collective="false" import="true" targetId="2fd2-a599-7fc3-9b2c" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="59c2-535b-c37f-50d1" name="Hunter Missiles" hidden="false" collective="false" import="true" targetId="c756-9c2d-beca-986c" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -1769,6 +1881,20 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f98d-8e4f-d2cd-b342" name="Twin Missile Pod" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A4</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cd29-4c2d-d11d-c8fe" name="Heavy APC" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fearless, Impact(6), Tough(9), Transport(11)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
