@@ -19,6 +19,11 @@
         <categoryLink id="0235-8d6a-6538-e6e6" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="6336-a00c-1d5a-3115" name="Weapon Teams" hidden="false" collective="false" import="true" targetId="df50-de21-ac1e-543f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a074-b34d-0298-acb5" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fd3d-82b2-5583-a6c1" name="Feudal Steed" hidden="false" collective="false" import="true" type="upgrade">
@@ -231,6 +236,11 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f62-c94a-221b-6a3d" type="max"/>
                       </constraints>
+                      <infoLinks>
+                        <infoLink id="c5fd-3e2e-f707-23b7" name="Weapon Team" hidden="false" targetId="0186-cbb4-41eb-b861" type="profile"/>
+                        <infoLink id="817c-b8e7-604b-10d2" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+                        <infoLink id="46d4-1f14-d977-cc83" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+                      </infoLinks>
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
                       </costs>
@@ -295,6 +305,11 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ba9-fffb-8e48-4052" type="max"/>
                       </constraints>
+                      <infoLinks>
+                        <infoLink id="ad2d-038b-cacb-976f" name="Weapon Team" hidden="false" targetId="0186-cbb4-41eb-b861" type="profile"/>
+                        <infoLink id="e3a3-81ec-3650-99d9" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+                        <infoLink id="3988-117e-1dc9-9845" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+                      </infoLinks>
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
                       </costs>
@@ -416,15 +431,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="cbe6-d49f-7192-6db1" name="Weapon Team" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="80e6-60ec-f887-8991" name="Weapon Team" hidden="false" targetId="0186-cbb4-41eb-b861" type="profile"/>
-        <infoLink id="ab74-cafa-9c1b-1756" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="e998-97d1-14fb-891f" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f23d-c138-e73f-390e" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a9d7-ff3f-e6a2-33c0">
+        <selectionEntryGroup id="f23d-c138-e73f-390e" name="Ranged Weapon" hidden="false" collective="true" import="true" defaultSelectionEntryId="a9d7-ff3f-e6a2-33c0">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acf6-ce34-060f-b508" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39ba-4d46-f790-d2f6" type="min"/>
           </constraints>
           <entryLinks>
@@ -476,6 +485,49 @@
         <infoLink id="dea8-805d-b870-ed38" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
         <infoLink id="dbe4-1827-04b4-dc27" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="df50-de21-ac1e-543f" name="Weapon Teams" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9a3b-09be-036c-3cbd" name="Weapon Team" hidden="false" targetId="0186-cbb4-41eb-b861" type="profile"/>
+        <infoLink id="08b1-2a65-b387-279d" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="9c1f-05f3-c689-04ee" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3ae2-3c71-6586-1d8c" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="a22c-38fe-40a0-263f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="832a-c7a7-591a-5550" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92e1-882c-065e-ff41" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a22c-38fe-40a0-263f" name="Single Unit [3-4]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="df79-b4f5-3eef-2baa" name="Weapon Team" hidden="false" collective="false" import="true" targetId="cbe6-d49f-7192-6db1" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e20f-7d61-0c44-5f53" type="min"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4238-d003-b03b-a12d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="8139-daf6-558a-33ac" name="Combined Unit [6-8 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="6b8e-baa6-5d38-b5a2" name="Weapon Team" hidden="false" collective="false" import="true" targetId="cbe6-d49f-7192-6db1" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="304a-85d1-0cd2-ad2a" type="min"/>
+                    <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="751c-0472-aa4d-33cc" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
