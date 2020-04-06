@@ -9,6 +9,11 @@
         <categoryLink id="7d37-f136-3f27-2f6b" name="New CategoryLink" hidden="false" targetId="4b4e-fbe0-5211-ae65" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="7907-c5ad-7345-22fe" name="Champion" hidden="false" collective="false" import="true" targetId="6110-263b-e631-6486" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fd84-ba70-546b-76da" name="New CategoryLink" hidden="false" targetId="4b4e-fbe0-5211-ae65" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fd3d-82b2-5583-a6c1" name="Feudal Steed" hidden="false" collective="false" import="true" type="upgrade">
@@ -80,6 +85,65 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2ed3-46e2-97ff-370d" name="Honor Doctrine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fdf0-2d06-92f3-dffa" name="Honor Doctrine" hidden="false" targetId="a329-8015-8671-605a" type="profile"/>
+        <infoLink id="7e61-4f78-7b04-9791" name="Honor Doctrine" hidden="false" targetId="c474-52c9-1118-fad5" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="25ef-a1a7-74b6-443f" name="Forbidden Lore" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c5be-fc2b-d5f8-d3b7" name="Forbidden Lore" hidden="false" targetId="c412-d5c0-877c-2a5c" type="profile"/>
+        <infoLink id="e489-ff32-7914-6094" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="cf8c-2d46-320c-c662" name="Tactical Console" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6dd9-abc8-6a9f-70ce" name="Tactical Console" hidden="false" targetId="4d1d-b4c4-aca4-8f65" type="profile"/>
+        <infoLink id="39b4-c846-03ef-1c1a" name="Tactical Console" hidden="false" targetId="6e34-d25e-9bf2-5a39" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="6110-263b-e631-6486" name="Champion" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="79cb-59fd-e714-a164" name="Champion" hidden="false" targetId="b372-c9a9-9ea6-8398" type="profile"/>
+        <infoLink id="b580-e7e2-6e1b-e0ba" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="2119-9ac4-ec31-7bf0" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="1b6c-a413-0353-8c2e" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c5b9-7529-3ab8-05be" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d00c-1084-0cf6-1b39" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f095-70cf-a10c-2210" name="Tactical Console" hidden="false" collective="false" import="true" targetId="cf8c-2d46-320c-c662" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="de0d-97f3-b907-4f66" name="Honor Doctrine" hidden="false" collective="false" import="true" targetId="2ed3-46e2-97ff-370d" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ec57-e7df-4c89-574a" name="Forbidden Lore" hidden="false" collective="false" import="true" targetId="25ef-a1a7-74b6-443f" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="f82f-26d7-7639-0ed7" name="Psychic Spells" hidden="false" collective="false" import="true" targetId="1fbc-195a-cfdf-d7e0" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9054-cc30-9d57-0f12" name="Weapons - Leader" hidden="false" collective="false" import="true" targetId="9c5b-c1ff-b05a-ad28" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -184,6 +248,23 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="1fbc-195a-cfdf-d7e0" name="Psychic Spells" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="373a-298d-6518-c3f2" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="563e-c77e-497a-2ced" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f619-4510-6524-be23" name="Fortitude" hidden="false" targetId="a552-7f1c-8f08-68c2" type="profile"/>
+            <infoLink id="076f-3ca9-1065-ef72" name="Tempest" hidden="false" targetId="3672-bb66-f3fa-f252" type="profile"/>
+            <infoLink id="7b0e-d1dd-3f48-4dc0" name="Shroud" hidden="false" targetId="dccd-99ab-6438-9b56" type="profile"/>
+            <infoLink id="1b19-3c60-3253-a088" name="Psychic Barrier" hidden="false" targetId="8cfd-d2c0-7670-6fd4" type="profile"/>
+            <infoLink id="005b-3ea8-fa4b-9147" name="Furious Blaze" hidden="false" targetId="93dd-b8fc-c15e-760f" type="profile"/>
+            <infoLink id="bf91-8d36-691f-abe4" name="Nightmares" hidden="false" targetId="2495-2efe-8390-1fea" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="d1f0-0410-e330-ab71" name="Purity Scroll" publicationId="f8eb-4993-a2c1-a585" hidden="false">
@@ -194,6 +275,12 @@
     </rule>
     <rule id="e5d2-15a5-4801-6fae" name="Bird of Prey" publicationId="f8eb-4993-a2c1-a585" hidden="false">
       <description>When the hero is activated pick one enemy model within 36&quot; and roll one die, on a 4+ it takes 2 hits with AP(1).</description>
+    </rule>
+    <rule id="c474-52c9-1118-fad5" name="Honor Doctrine" publicationId="f8eb-4993-a2c1-a585" hidden="false">
+      <description>If this unit is within 12&quot; of an enemy unit when it is activated then it must charge the closest enemy units and it gets Furious and AP(+1) for this combat.</description>
+    </rule>
+    <rule id="6e34-d25e-9bf2-5a39" name="Tactical Console" publicationId="f8eb-4993-a2c1-a585" hidden="false">
+      <description>When the hero is activated pick on friendly unit within 12&quot;, which may immediately move by up to 6&quot;.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -226,6 +313,64 @@
     <profile id="986b-3069-10b5-3900" name="General" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Hero, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a329-8015-8671-605a" name="Honor Doctrine" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Honor Doctrine</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4d1d-b4c4-aca4-8f65" name="Tactical Console" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Tactical Console</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c412-d5c0-877c-2a5c" name="Forbidden Lore" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Psychic(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a552-7f1c-8f08-68c2" name="Fortitude" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; immediately loses all enemy spell effects.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="93dd-b8fc-c15e-760f" name="Furious Blaze" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; takes 8 automatic hits with AP(1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8cfd-d2c0-7670-6fd4" name="Psychic Barrier" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +2 to its defense rolls next time it takes hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3672-bb66-f3fa-f252" name="Tempest" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 6&quot; takes 1 automatic hit with AP(1) per model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dccd-99ab-6438-9b56" name="Shroud" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; gets -1 to its rolls next time it shoots.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2495-2efe-8390-1fea" name="Nightmares" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 12&quot; takes 3 automatic hits with AP(2).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b372-c9a9-9ea6-8398" name="Champion" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Hero, Tough(3)</characteristic>
       </characteristics>
