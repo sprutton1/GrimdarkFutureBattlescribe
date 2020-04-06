@@ -82,7 +82,7 @@ table!
 |Soul-Snatchers|v2.6|Done|
 |TAO Coalition|v2.7|Done|
 |Titan Lords|v2.2|Done|
-|Wormhole Daemons|-|Not started|
+|Wormhole Daemons|v2.5|Done|
 
 
 
@@ -98,4 +98,3 @@ Matthew Caron for his work on the original set of Battlescribe files for GF
 Scott Prutton for doing this thing.
 
 Darguth for ongoing maintenance and updates.
-
