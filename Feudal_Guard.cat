@@ -59,6 +59,11 @@
         <categoryLink id="f479-2753-afd1-40c6" name="New CategoryLink" hidden="false" targetId="b820-6309-e900-c733" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="b56c-8704-c5e3-2e51" name="Heavy Battle Tank" hidden="false" collective="false" import="true" targetId="4038-6b92-b091-ecfa" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="31e2-fe3d-cdc5-a954" name="New CategoryLink" hidden="false" targetId="b820-6309-e900-c733" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fd3d-82b2-5583-a6c1" name="Feudal Steed" hidden="false" collective="false" import="true" type="upgrade">
@@ -1591,6 +1596,143 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="355.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="4038-6b92-b091-ecfa" name="Heavy Battle Tank" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="853e-9e02-f3b0-bcdb" name="Heavy Battle Tank" hidden="false" targetId="a759-7dd6-3c0b-b8ff" type="profile"/>
+        <infoLink id="8ad9-81f0-e8e7-ee02" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="4e5c-61d0-c0fe-2b1d" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="9325-7f48-0fad-9da2" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a122-d159-d1b6-74c4" name="Weapon - Turret Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="b33c-8662-c159-a922">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e492-69ab-268d-e36b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="601b-097e-c06b-416c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b33c-8662-c159-a922" name="Nova Cannon" hidden="false" collective="false" import="true" targetId="6a9e-af09-5cf9-4a70" type="selectionEntry"/>
+            <entryLink id="cda0-44a5-603b-6f4d" name="Siege Cannon" hidden="false" collective="false" import="true" targetId="38ec-dcb7-0112-58c5" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="653e-7eb0-8adc-00b8" name="Heavy Autocannon" hidden="false" collective="false" import="true" targetId="e835-5aa3-edaa-ee4a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1a2f-63fe-5463-b020" name="Anti-Tank Cannon" hidden="false" collective="false" import="true" targetId="79f3-661e-0e13-6497" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="981b-b1a9-265d-5294" name="Heavy Plasma Cannon" hidden="false" collective="false" import="true" targetId="e710-08f1-e420-99f1" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="958a-a939-090b-760f" name="Gatling Cannon" hidden="false" collective="false" import="true" targetId="b28c-3c17-5552-b1f9" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="efdf-e635-54a0-bd85" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="2a96-365b-4ad8-7cfd" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fb45-30a6-f51e-b311" name="Weapon - Hull Mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="8673-0556-9ce2-3bed">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97ff-c8f5-6892-21ad" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1a6-fe96-efab-589b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8673-0556-9ce2-3bed" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry"/>
+            <entryLink id="9544-5e19-e6a3-ea0f" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="18d6-ce8b-6ff8-b217" name="Laser Cannon" hidden="false" collective="false" import="true" targetId="1f20-2b60-f100-bed0" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d18f-4627-ac4e-38c6" name="Weapon - Sponson Mounts" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab66-f74d-40a1-1e62" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3831-6e6e-8212-0c7d" name="2x Heavy Flamethrowers" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="5766-e8da-9283-747e" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="608d-c22e-e13c-67b5" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="180a-6dfa-a9c5-c0d0" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="85ce-6fd4-ef5b-14a0" name="2x Heavy Machineguns" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="0a00-7e0e-31f0-c23f" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d024-fc76-9baa-72a5" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00b3-4693-fd93-7ede" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4ff2-0e51-d4f6-42b5" name="2x Plasma Cannons" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="6ba1-5aa0-b6b4-20b8" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="05e9-6fae-2a04-8820" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a73-32a8-f39c-71ee" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fba-f9f5-ca61-940f" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d85c-9edb-2831-265c" name="2x Heavy Fusion Rifles" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="7376-620c-91a9-7c20" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" targetId="a5f5-d44a-03b0-9a99" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eddd-8411-f988-a619" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83fb-161d-d38b-ce5a" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6521-edbd-2527-d65a" name="Upgrades - Vehicles" hidden="false" collective="false" import="true" targetId="66fb-dc95-fb30-c6b8" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e69c-2c6b-9c6a-5404" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="410.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9c5b-c1ff-b05a-ad28" name="Weapons - Leader" hidden="false" collective="false" import="true">
@@ -2029,6 +2171,13 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(6), Tough(9)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a759-7dd6-3c0b-b8ff" name="Heavy Battle Tank" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(6), Tough(15)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
