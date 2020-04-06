@@ -64,6 +64,11 @@
         <categoryLink id="31e2-fe3d-cdc5-a954" name="New CategoryLink" hidden="false" targetId="b820-6309-e900-c733" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="e482-f5d2-e7df-a4cb" name="Heavy Walker" hidden="false" collective="false" import="true" targetId="f907-c12d-fc70-e3c7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a278-bcd4-89d8-86a2" name="New CategoryLink" hidden="false" targetId="b820-6309-e900-c733" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fd3d-82b2-5583-a6c1" name="Feudal Steed" hidden="false" collective="false" import="true" type="upgrade">
@@ -1733,6 +1738,136 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="410.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0913-d0eb-1317-7823" name="Heavy Sword" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="54d6-31d8-4ba4-033d" name="Heavy Sword" hidden="false" targetId="a319-d4a5-3147-2923" type="profile"/>
+        <infoLink id="1bdd-261f-aada-bb9d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="a395-ad35-24b7-e558" name="Heavy Chainsaw" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="49d9-1326-97e1-441a" name="Heavy Chainsaw" hidden="false" targetId="ea4c-dbc6-e93c-7257" type="profile"/>
+        <infoLink id="2231-2719-0e17-6f5f" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="beba-418e-122c-cac4" name="Stomp" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4655-853b-2ec2-bd6d" name="Stomp" hidden="false" targetId="e46d-58ff-0c9f-a9ef" type="profile"/>
+        <infoLink id="dfdb-21e7-c532-52de" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="1895-aee7-2a77-29ad" name="Heavy Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3e94-da17-4db2-d29c" name="Heavy Shield" hidden="false" targetId="6a3e-be3f-7c19-1664" type="profile"/>
+        <infoLink id="2eab-c3a8-344a-3229" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="1599-fddd-cffe-58b6" name="Overcharged Engine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="64d8-8d6f-3ea4-af4f" name="Overcharged Engine" hidden="false" targetId="8c2b-eaeb-2c72-845d" type="profile"/>
+        <infoLink id="4984-aaf1-673d-7204" name="Overcharged Engine" hidden="false" targetId="5ee5-dd0f-4720-b435" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f907-c12d-fc70-e3c7" name="Heavy Walker" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f76f-fb98-70c3-c6a7" name="Heavy Walker" hidden="false" targetId="5f9c-d219-4f5c-ba30" type="profile"/>
+        <infoLink id="0579-b69b-6a2f-0875" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+        <infoLink id="903d-8904-32c6-02f0" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="a0ad-f664-b06a-3e1f" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4e0b-53f4-a139-1e1b" name="Upgrade with any:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="52e2-c311-61a7-2c96" name="Honor Doctrine" hidden="false" collective="false" import="true" targetId="2ed3-46e2-97ff-370d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fc3-d93d-708b-a073" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d421-3fd5-82f5-73a9" name="Overcharged Engine" hidden="false" collective="false" import="true" targetId="1599-fddd-cffe-58b6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a204-1b39-2ecb-33a8" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="17f4-3b1d-907e-6783" name="Weapons [pick 2]" hidden="false" collective="false" import="true" defaultSelectionEntryId="7186-380c-ade3-0573">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dd0-e04f-8318-5d8a" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce1-6626-d4d0-6789" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7186-380c-ade3-0573" name="Heavy Sword" hidden="false" collective="false" import="true" targetId="0913-d0eb-1317-7823" type="selectionEntry"/>
+            <entryLink id="806b-71d2-404e-ea47" name="Heavy Chainsaw" hidden="false" collective="false" import="true" targetId="a395-ad35-24b7-e558" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="e2cf-2fb4-3f72-4c15" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="116c-b015-e531-c6ff" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="13f4-f826-e886-d16e" name="Autocannon" hidden="false" collective="false" import="true" targetId="9557-8f54-7c72-fe96" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a83d-1d96-9e8e-76a6" name="Laser Machinegun" hidden="false" collective="false" import="true" targetId="f7a6-c6c9-0567-4b34" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a892-ccb0-0c8f-b9bd" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="05e9-6fae-2a04-8820" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="fff0-33d5-5dfa-aea5" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="ff1b-714c-6353-221d" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d617-75c9-8707-5f5e" name="Laser Cannon" hidden="false" collective="false" import="true" targetId="1f20-2b60-f100-bed0" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="c00d-e35f-c97c-e8fc" name="Heavy Shield" hidden="false" collective="false" import="true" targetId="1895-aee7-2a77-29ad" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="06c1-de62-318f-035b" name="Weapons - Vehicle Missiles" hidden="false" collective="false" import="true" targetId="66fb-dc95-fb30-c6b8" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d942-d100-61ae-ded6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4617-3615-1a4f-527c" name="Stomp" hidden="false" collective="false" import="true" targetId="beba-418e-122c-cac4" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="547c-d8e2-d654-bd1d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="534c-3c29-ffe7-4cd1" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="255.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9c5b-c1ff-b05a-ad28" name="Weapons - Leader" hidden="false" collective="false" import="true">
@@ -1894,6 +2029,9 @@
     </rule>
     <rule id="8219-7705-7736-df07" name="Field Radio" publicationId="f8eb-4993-a2c1-a585" hidden="false">
       <description>If this unit has a Commander, then it may give orders to other units that have a Field Radio up to 24&quot; away.</description>
+    </rule>
+    <rule id="5ee5-dd0f-4720-b435" name="Overcharged Engine" publicationId="f8eb-4993-a2c1-a585" hidden="false">
+      <description>When this unit moves you may roll one die, on a 2+ this unit moves +4D3&quot;, else it takes 1 automatic wound.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2178,6 +2316,41 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(6), Tough(15)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a319-d4a5-3147-2923" name="Heavy Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e46d-58ff-0c9f-a9ef" name="Stomp" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ea4c-dbc6-e93c-7257" name="Heavy Chainsaw" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6a3e-be3f-7c19-1664" name="Heavy Shield" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Tough(+3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8c2b-eaeb-2c72-845d" name="Overcharged Engine" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Overcharged Engine</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5f9c-d219-4f5c-ba30" name="Heavy Walker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Tough(9)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
