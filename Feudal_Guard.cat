@@ -24,6 +24,11 @@
         <categoryLink id="a074-b34d-0298-acb5" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="f630-c458-fcec-4dc3" name="Feudal Specialists" hidden="false" collective="false" import="true" targetId="0e57-1bc2-41a1-8bc0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="33ff-d151-c4b5-34a5" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fd3d-82b2-5583-a6c1" name="Feudal Steed" hidden="false" collective="false" import="true" type="upgrade">
@@ -242,7 +247,7 @@
                         <infoLink id="46d4-1f14-d977-cc83" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -311,7 +316,7 @@
                         <infoLink id="3988-117e-1dc9-9845" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -524,6 +529,121 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="0e57-1bc2-41a1-8bc0" name="Feudal Specialists" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dfc2-bea6-1aa5-9100" name="Feudal Specialist" hidden="false" targetId="31e9-a72b-e672-5e8b" type="profile"/>
+        <infoLink id="0fe5-e61a-8c52-e445" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="b3c3-c422-33df-6219" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7b6e-2cf3-e736-fba0" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="a1d1-ee7d-b128-cd27">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="345c-dcc9-68b4-4150" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32d0-b16e-d63f-53c7" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a1d1-ee7d-b128-cd27" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="15a4-d835-d895-a3b3" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="d12c-dc0b-a820-01fe">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a9a-62b6-139a-96e2" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed91-81e4-a137-bc53" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="d12c-dc0b-a820-01fe" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="a1da-51ac-5a8f-8f95" type="selectionEntry"/>
+                    <entryLink id="fc11-1727-bd0f-a116" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="dc5f-cb52-4835-3b48" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="126a-2040-bd4c-44e2" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="e089-6dd6-ec4e-12e6" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="628b-8dd9-54a3-d60a" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="3a4f-e23d-e4c8-11cb" name="Shred Rifle" hidden="false" collective="false" import="true" targetId="fa7d-5662-869b-c879" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="2d4b-a44e-24b2-5ef7" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f98-d8a7-8365-d1c4" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbce-0489-5f7d-a5c0" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4928-e04e-ad56-4edb" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="b22c-f539-8dcf-ca8b" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="425e-6b24-52eb-1a0d">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0c6-5ccd-447b-8eea" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a76e-d483-cd01-0598" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="425e-6b24-52eb-1a0d" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="a1da-51ac-5a8f-8f95" type="selectionEntry"/>
+                    <entryLink id="300f-fa2b-1423-ce2d" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="c365-c5ca-1076-4b20" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="f740-b3b8-3003-2cd0" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="e089-6dd6-ec4e-12e6" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="dd57-875e-390f-8086" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="a2f7-d687-3897-7cf0" name="Shred Rifle" hidden="false" collective="false" import="true" targetId="fa7d-5662-869b-c879" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="a9b1-a3a1-0610-bbe3" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2079-1d63-0caf-ea3f" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff7e-4650-292a-c179" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -799,6 +919,13 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Blast(6), Indirect</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="31e9-a72b-e672-5e8b" name="Feudal Specialist" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Relentless</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
