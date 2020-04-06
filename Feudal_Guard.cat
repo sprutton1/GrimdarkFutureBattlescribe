@@ -29,6 +29,11 @@
         <categoryLink id="33ff-d151-c4b5-34a5" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="7c33-e2bb-80b6-6b42" name="Feudal Engineers" hidden="false" collective="false" import="true" targetId="ea2b-3ef7-2a54-4b84" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f042-302d-5a37-116e" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="fd3d-82b2-5583-a6c1" name="Feudal Steed" hidden="false" collective="false" import="true" type="upgrade">
@@ -649,6 +654,116 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry id="7164-ead1-5bcc-e7ea" name="Weapon Team (Engineers)" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="fd9f-de67-fe36-d093" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd9e-3985-6cb9-d25f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e18-d536-ae8e-b369" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="921d-c33f-d5ba-5407" name="Burrowing Torpedo" hidden="false" collective="false" import="true" targetId="a9c6-a0b8-ecfc-c4a0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc7a-ff5e-e98d-daeb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f9e-88b6-061d-05c0" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a9c6-a0b8-ecfc-c4a0" name="Burrowing Torpedo" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e871-b29d-57e3-8045" name="Burrowing Torpedo" hidden="false" targetId="7093-562d-4012-941c" type="profile"/>
+        <infoLink id="47d9-03cf-45d6-5f5f" name="Indirect" hidden="false" targetId="587a-b92c-a265-06c4" type="rule"/>
+        <infoLink id="3b9f-f626-9247-ec04" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="e870-991f-0c15-a630" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="ea2b-3ef7-2a54-4b84" name="Feudal Engineers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="25bb-ac2d-0783-0a9b" name="Feudal Engineers" hidden="false" targetId="5207-6353-3adb-bbd0" type="profile"/>
+        <infoLink id="5326-1da6-e56a-bb56" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="226e-cda8-553a-c8cb" name="Scout" hidden="false" targetId="7bc7-a892-49bc-ad88" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e0ea-7053-9eb5-7d63" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="e19b-9496-4f3b-f703">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8e6-5a7a-518b-228a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdf1-a159-2437-616c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e19b-9496-4f3b-f703" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2d34-a0ad-5ecc-99fd" name="Upgrade with one:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="30db-3e51-6076-caf8" name="Weapon Team (Engineers)" hidden="false" collective="false" import="true" targetId="7164-ead1-5bcc-e7ea" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53d0-6210-c237-ced8" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="4eb9-a92e-f8c0-a35e" name="Shotgun" hidden="false" collective="false" import="true" targetId="9ee5-5c13-dfef-ff7c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4af0-8449-1eff-4a06" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73d4-cfb3-6d9d-30bb" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="2e70-1250-dd79-b051" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89dc-1447-1dc3-19b2" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7cf-bc4e-ea8b-f4dc" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="759a-7752-0b53-5e31" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="e377-42a1-cfb7-c0ba" name="Upgrade with up to two:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="0c33-e1d4-93d9-f629" name="Weapon Team (Engineers)" hidden="false" collective="false" import="true" targetId="7164-ead1-5bcc-e7ea" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0725-85b2-b795-e09a" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="7c6c-350e-4a83-b1f4" name="Shotgun" hidden="false" collective="false" import="true" targetId="9ee5-5c13-dfef-ff7c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a8a-7740-da5d-79e5" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eadc-264a-c28a-939d" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="2eda-f743-a95e-e37a" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c0b-cd6d-363d-b1df" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a056-6849-91c1-6b4a" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9c5b-c1ff-b05a-ad28" name="Weapons - Leader" hidden="false" collective="false" import="true">
@@ -926,6 +1041,13 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Relentless</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5207-6353-3adb-bbd0" name="Feudal Engineer" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Scout</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
