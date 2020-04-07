@@ -79,7 +79,7 @@ table!
 |Ratmen Clans|v2.3|Done|
 |Rebel Guerrillas|-|Not started|
 |Robot Legions|v2.7|Done|
-|Soul-Snatchers|v2.6|Done|
+|Soul-Snatcher Cults|v2.6|Done|
 |TAO Coalition|v2.7|Done|
 |Titan Lords|v2.2|Done|
 |Wormhole Daemons|v2.5|Done|
