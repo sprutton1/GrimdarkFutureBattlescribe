@@ -11,7 +11,7 @@ build army lists.
 
 You can always reach out to me on
 [Discord](https://discordapp.com/channels/610199287346888743/610199287346888746)
-or the [OPR Forum](http://onepagerules.proboards.com/) if you need something.
+or the [OPR Forum](http://forum.onepagerules.com/) if you need something.
 
 # How do I use these files?
 
@@ -68,7 +68,7 @@ table!
 |Dark Elf Raiders|v2.3|Done|
 |Dwarf Guilds|v2.3|Done|
 |Elven Jesters|v2.4|Done|
-|Feudal Guard|-|Not started|
+|Feudal Guard|v2.5|Done|
 |Havoc Brothers|Main v2.7 - Disciples v2.9|Done|
 |High Elf Fleets|v2.6|Done|
 |Human Defense Force|v2.10|Done|
