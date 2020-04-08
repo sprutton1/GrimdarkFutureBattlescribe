@@ -19,6 +19,11 @@
         <categoryLink id="b95b-a799-9b64-66e6" name="Heroes" hidden="false" targetId="4b4e-fbe0-5211-ae65" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="150f-543a-6841-c079" name="Rebel Psychic" hidden="false" collective="false" import="true" targetId="8c3b-5589-f0fd-f35a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ec88-9593-5e76-b1d5" name="Heroes" hidden="false" targetId="4b4e-fbe0-5211-ae65" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8861-7826-0ff2-4a56" name="Camo Cloak" hidden="false" collective="false" import="true" type="upgrade">
@@ -255,6 +260,32 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8c3b-5589-f0fd-f35a" name="Rebel Psychic" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="74c1-4167-a864-d00a" name="Rebel Psychic" hidden="false" targetId="f681-c8c7-c3eb-915b" type="profile"/>
+        <infoLink id="14b0-f9cc-a4e7-b8e4" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="1011-6a93-1b32-2e34" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="a992-f75a-582c-dc3a" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="0e5c-4f4c-8741-e055" name="Psychic Spells" hidden="false" collective="false" import="true" targetId="61dd-a25c-249c-0357" type="selectionEntryGroup"/>
+        <entryLink id="1fda-2e5b-2b07-9ae2" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d250-3519-1b28-5f64" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7444-e696-d166-d2d6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e202-1a67-a5ee-d553" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3932-a5b8-7231-1881" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="360e-2bfc-de3b-eb88" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="31ec-8754-f59d-9e7e" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf82-fdcb-fb76-ed22">
@@ -370,6 +401,23 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="61dd-a25c-249c-0357" name="Psychic Spells" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="b7ab-d424-bf38-b95f" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccaa-fbd2-b7fb-9ea1" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e9a2-c6bc-6f86-9f44" name="Fortitude" hidden="false" targetId="8dd7-69c7-8ff0-0b73" type="profile"/>
+            <infoLink id="9149-b949-5778-3273" name="Tempest" hidden="false" targetId="6a40-196d-082c-1502" type="profile"/>
+            <infoLink id="48b5-88af-1073-a1f1" name="Shroud" hidden="false" targetId="c922-09b7-12b1-3675" type="profile"/>
+            <infoLink id="2209-a2cd-8b43-6df4" name="Psychic Barrier" hidden="false" targetId="65b8-5c9c-8f08-fd61" type="profile"/>
+            <infoLink id="a553-8ec7-5020-1002" name="Nightmares" hidden="false" targetId="d7fc-bec7-4d15-0ddb" type="profile"/>
+            <infoLink id="370d-bb3e-207a-5870" name="Furious Blaze" hidden="false" targetId="2c37-f73f-a268-7b02" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="bf23-4902-3820-3ca2" name="Scavenger" publicationId="4ba5-824c-065d-10f9" hidden="false">
@@ -444,6 +492,49 @@
     <profile id="8877-1d12-5d53-8fe4" name="Claw Gauntlets" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Rending in melee.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f681-c8c7-c3eb-915b" name="Rebel Psychic" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Psychic(1), Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8dd7-69c7-8ff0-0b73" name="Fortitude" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; immediately loses all enemy spell effects.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2c37-f73f-a268-7b02" name="Furious Blaze" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; takes 8 automatic hits with AP(1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="65b8-5c9c-8f08-fd61" name="Psychic Barrier" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +2 to its defense rolls next time it takes hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6a40-196d-082c-1502" name="Tempest" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 6&quot; takes 1 automatic hit with AP(1) per model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c922-09b7-12b1-3675" name="Shroud" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; gets -1 to its rolls next time it shoots.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d7fc-bec7-4d15-0ddb" name="Nightmares" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+      <characteristics>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 12&quot; takes 3 automatic hits with AP(2).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
