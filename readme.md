@@ -66,7 +66,7 @@ table!
 |Battle Brothers|Main v2.10 - Prime v2.10 - Detachments v2.9|Done|
 |Battle Sisters|v2.6|Done|
 |Dark Elf Raiders|v2.3|Done|
-|Dwarf Guilds|v2.3|Done|
+|Dwarf Guilds|v2.4|Done|
 |Elven Jesters|v2.4|Done|
 |Feudal Guard|v2.5|Done|
 |Havoc Brothers|Main v2.7 - Disciples v2.9|Done|
