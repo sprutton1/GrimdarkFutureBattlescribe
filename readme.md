@@ -71,7 +71,7 @@ table!
 |Feudal Guard|v2.5|Done|
 |Havoc Brothers|Main v2.7 - Disciples v2.9|Done|
 |High Elf Fleets|v2.6|Done|
-|Human Defense Force|v2.10|Done|
+|Human Defense Force|v2.11|Done|
 |Human Inquisition|2.4|Done|
 |Infected Colonies|v2.1|Done|
 |Machine Cult|v2.7|Done|
