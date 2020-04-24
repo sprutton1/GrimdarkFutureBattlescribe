@@ -82,7 +82,7 @@ table!
 |Soul-Snatcher Cults|v2.6|Done|
 |TAO Coalition|v2.7|Done|
 |Titan Lords|v2.2|Done|
-|Wormhole Daemons|v2.5|Done|
+|Wormhole Daemons|v2.7|Done|
 
 
 
