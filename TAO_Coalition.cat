@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5ccb-36df-46b6-320b" name="TAO Coalition" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5ccb-36df-46b6-320b" name="TAO Coalition" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="f7da-1c06-fb03-4ffa" name="TAO Coalition v2.9"/>
   </publications>
@@ -38,9 +38,9 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c6a8-5dae-c9b9-8964" name="Suit Fist" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c6a8-5dae-c9b9-8964" name="Suit Fist (A2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="76cc-2856-c36e-830e" name="Suit Fist" hidden="false" targetId="baa5-a002-ea28-30cf" type="profile"/>
+        <infoLink id="76cc-2856-c36e-830e" name="Suit Fist (A2)" hidden="false" targetId="01d3-38cc-10c2-88b6" type="profile"/>
         <infoLink id="bb71-f718-5a9f-0f3d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
       <costs>
@@ -413,13 +413,29 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcfb-3cb9-2b17-7725" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cad1-43ca-c21a-07d4" type="min"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="6215-6117-7bbf-a162" name="Plasma Sword &amp; Energy Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="97d8-2adf-898b-da1f" name="Plasma Sword" hidden="false" collective="false" import="true" targetId="ee80-c18b-5847-0d8a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e001-6638-d26f-98cb" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e7f-64c9-73bc-ae7f" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="af07-d5a1-abd3-39ee" name="Energy Shield" hidden="false" collective="false" import="true" targetId="65f5-cd5f-6941-64b7" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9982-a498-6edb-d53e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5db0-5ddf-a8d5-54eb" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="82d3-d7cf-1e8b-5f3f" name="Suit Fist" hidden="false" collective="false" import="true" targetId="92fa-6ed8-80b5-06eb" type="selectionEntry"/>
-            <entryLink id="bca8-2358-071b-a007" name="Plasma Gauntlet" hidden="false" collective="false" import="true" targetId="35f1-e365-5f4c-cf33" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
             <entryLink id="ac8a-0c75-b304-6832" name="Plasma Sword" hidden="false" collective="false" import="true" targetId="ee80-c18b-5847-0d8a" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
@@ -504,7 +520,7 @@
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="1a6b-dfbb-7b8e-2bec" name="Plasma Sword" hidden="false" collective="false" import="true" targetId="ee80-c18b-5847-0d8a" type="selectionEntry">
+                    <entryLink id="1a6b-dfbb-7b8e-2bec" name="Plasma Sword (A2)" hidden="false" collective="false" import="true" targetId="7e1f-dba4-8b02-89c2" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
                       </costs>
@@ -959,7 +975,7 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="54cf-0162-47fb-6c80" name="Plasma Sword" hidden="false" collective="false" import="true" targetId="ee80-c18b-5847-0d8a" type="selectionEntry">
+            <entryLink id="54cf-0162-47fb-6c80" name="Plasma Sword (A2)" hidden="false" collective="false" import="true" targetId="7e1f-dba4-8b02-89c2" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
@@ -1213,7 +1229,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3bb-72b4-bb0e-96da" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="0f59-4704-7ef3-bedf" name="Gatling Carbine" hidden="false" collective="false" import="true" targetId="48a4-97d0-13b5-9477" type="selectionEntry">
+        <entryLink id="0f59-4704-7ef3-bedf" name="Burst Carbine" hidden="false" collective="false" import="true" targetId="48a4-97d0-13b5-9477" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8c2-ffdd-100d-8c95" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e64-16f3-aca4-9776" type="min"/>
@@ -1421,8 +1437,8 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="960e-f61b-61de-1e5c" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6ec6-54a8-dd82-77eb" name="Suit Fist" hidden="false" collective="false" import="true" targetId="92fa-6ed8-80b5-06eb" type="selectionEntry"/>
-            <entryLink id="0231-06e4-4aed-9a05" name="Plasma Sword" hidden="false" collective="false" import="true" targetId="ee80-c18b-5847-0d8a" type="selectionEntry">
+            <entryLink id="6ec6-54a8-dd82-77eb" name="Suit Fist (A2)" hidden="false" collective="false" import="true" targetId="c6a8-5dae-c9b9-8964" type="selectionEntry"/>
+            <entryLink id="0231-06e4-4aed-9a05" name="Plasma Sword (A2)" hidden="false" collective="false" import="true" targetId="7e1f-dba4-8b02-89c2" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
@@ -1737,7 +1753,7 @@
           </constraints>
           <entryLinks>
             <entryLink id="a938-b97e-445b-d57c" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry"/>
-            <entryLink id="8709-bc8f-7c5b-fa78" name="Plasma Sword" hidden="false" collective="false" import="true" targetId="ee80-c18b-5847-0d8a" type="selectionEntry">
+            <entryLink id="8709-bc8f-7c5b-fa78" name="Plasma Sword (A2)" hidden="false" collective="false" import="true" targetId="7e1f-dba4-8b02-89c2" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
@@ -3047,7 +3063,7 @@
           </constraints>
           <entryLinks>
             <entryLink id="c633-1e7c-c757-36b8" name="CCW (A4)" hidden="false" collective="false" import="true" targetId="959b-a459-6e20-f565" type="selectionEntry"/>
-            <entryLink id="c986-8baa-f547-abbe" name="Plasma Sword" hidden="false" collective="false" import="true" targetId="ee80-c18b-5847-0d8a" type="selectionEntry">
+            <entryLink id="c986-8baa-f547-abbe" name="Plasma Sword (A2)" hidden="false" collective="false" import="true" targetId="7e1f-dba4-8b02-89c2" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
               </costs>
@@ -3351,6 +3367,24 @@
       <infoLinks>
         <infoLink id="4869-f784-249c-37de" name="Nova Shield" hidden="false" targetId="0d1a-cbd8-6426-138a" type="profile"/>
         <infoLink id="4be4-54d2-2fc7-44a5" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="65f5-cd5f-6941-64b7" name="Energy Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a1f0-743a-7a6f-9524" name="Energy Shield" hidden="false" targetId="2864-d9bc-b9e1-ca22" type="profile"/>
+        <infoLink id="b5fe-aa40-8583-0e57" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7e1f-dba4-8b02-89c2" name="Plasma Sword (A2)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c2a8-39ae-32ca-a06b" name="Plasma Sword (A2)" hidden="false" targetId="0acc-ac1a-6f55-ba6b" type="profile"/>
+        <infoLink id="95af-3d9e-6600-5efa" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -4122,8 +4156,8 @@
     </profile>
     <profile id="7d76-0b98-fbca-d87c" name="Plasma Gauntlet" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
       <characteristics>
-        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
-        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2)</characteristic>
       </characteristics>
     </profile>
     <profile id="f9ca-8c97-86b3-059a" name="Volley Fire" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
@@ -4216,6 +4250,23 @@
     <profile id="0d1a-cbd8-6426-138a" name="Nova Shield" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Stealth</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2864-d9bc-b9e1-ca22" name="Energy Shield" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Tough(+3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0acc-ac1a-6f55-ba6b" name="Plasma Sword (A2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="01d3-38cc-10c2-88b6" name="Suit Fist (A2)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2 </characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
