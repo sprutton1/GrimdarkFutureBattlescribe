@@ -80,7 +80,7 @@ table!
 |Rebel Guerrillas|-|Not started|
 |Robot Legions|v2.7|Done|
 |Soul-Snatcher Cults|v2.6|Done|
-|TAO Coalition|v2.7|Done|
+|TAO Coalition|v2.9|Done|
 |Titan Lords|v2.2|Done|
 |Wormhole Daemons|v2.7|Done|
 
