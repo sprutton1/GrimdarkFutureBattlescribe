@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f600-0926-eecd-eca5" name="Havoc Brothers" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f600-0926-eecd-eca5" name="Havoc Brothers" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication id="0087-62dd-65cd-178c" name="Havoc Brothers v2.7"/>
-    <publication id="a23a-0fd7-52cd-e3da" name="Havoc Brother Disciples v2.9"/>
+    <publication id="0087-62dd-65cd-178c" name="Havoc Brothers v2.8"/>
+    <publication id="a23a-0fd7-52cd-e3da" name="Havoc Brother Disciples v2.10"/>
   </publications>
   <entryLinks>
     <entryLink id="8484-86df-6565-cec5" name="Havoc Lord" hidden="false" collective="false" import="true" targetId="2dd9-d655-8bcb-de91" type="selectionEntry"/>
@@ -147,15 +147,6 @@
       </modifiers>
     </entryLink>
     <entryLink id="8b73-ecb7-bea9-c272" name="Plague Bringer" hidden="false" collective="false" import="true" targetId="d28b-9d24-2aea-cc00" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dd22-34b3-9945-ceac" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="adf6-50dd-740f-412d" name="Plague Psychic" hidden="false" collective="false" import="true" targetId="24dd-3426-ac12-eeb1" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -419,17 +410,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38d8-134a-cdf0-11fe" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6559-4bb4-0cc3-79ec" name="Psychic(3)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bb7-f0f0-bb94-af0e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7912-798a-1179-06da" name="Psychic(3)" hidden="false" targetId="cdae-0f78-03a5-6bc8" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="4f34-254e-9994-26e2" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5ec-0e4b-ab8d-c7ec" type="max"/>
@@ -4626,6 +4606,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="aa46-77f2-449e-b6d0" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -5262,42 +5245,6 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="24dd-3426-ac12-eeb1" name="Plague Psychic" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="e449-83d6-7570-42c5" name="Plague Psychic" hidden="false" targetId="5300-8aa2-0bd0-6c60" type="profile"/>
-        <infoLink id="1d37-c6fd-deef-d349" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
-        <infoLink id="59ff-eca0-e740-f76f" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
-        <infoLink id="d7b3-f891-f324-395f" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
-        <infoLink id="2c42-73b8-b81a-4146" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="114a-ffc3-cff6-ab68" name="Show Spells" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab7c-b8a2-2601-3646" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="3611-2127-11eb-e238" name="Psychic Spells - Disciples of Plague" hidden="false" collective="false" import="true" targetId="4b4f-08a4-e8e8-a7f8" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="a2e3-22b5-97d1-c0d6" name="Plague Staff" hidden="false" collective="false" import="true" targetId="44ae-50af-550f-6c25" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="056d-60a1-ea28-d5f0" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19d2-193b-9782-2a33" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="fa8d-221e-6246-919d" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7328-293d-fe19-53b3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f36-d9bb-7023-fb20" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="44ae-50af-550f-6c25" name="Plague Staff" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6022-fea1-9ae5-71a8" name="Plague Staff" hidden="false" targetId="3d2e-e766-c6be-227b" type="profile"/>
@@ -5394,6 +5341,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ae5d-2063-34bc-e423" name="Combined Unit [20 models]" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -5602,6 +5552,9 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2da3-0905-e376-16a6" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -5668,6 +5621,9 @@
                         <infoLink id="32aa-9f27-d643-64a4" name="Twin Assault Rifle" hidden="false" targetId="9cfd-12a7-cc5c-a4e5" type="profile"/>
                         <infoLink id="45d2-6ade-e0e7-e9c2" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
                       </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="04ca-e1d8-3543-793b" name="Assault Rifle &amp; Plague Sword" hidden="false" collective="false" import="true" type="upgrade">
                       <infoLinks>
@@ -5728,6 +5684,9 @@
                             <infoLink id="fb72-9b1d-7e79-d12f" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
                             <infoLink id="b77b-4876-c6d1-7b6f" name="Plague Flamethrower" hidden="false" targetId="822e-5b86-8e54-cd65" type="profile"/>
                           </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry id="7303-5249-9945-f1c2" name="Plague Launcher &amp; Plague Sword" hidden="false" collective="false" import="true" type="upgrade">
                           <infoLinks>
@@ -5736,6 +5695,9 @@
                             <infoLink id="43cd-496a-9759-229c" name="Plague Launcher" hidden="false" targetId="b3ee-f677-8603-a072" type="profile"/>
                             <infoLink id="47ec-5d29-87af-0332" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
                           </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry id="6f58-2ee6-04ee-f4f0" name="Reaper Cannon &amp; Plague Sword" hidden="false" collective="false" import="true" type="upgrade">
                           <infoLinks>
@@ -5744,6 +5706,9 @@
                             <infoLink id="ff15-037d-7a3a-96b9" name="Reaper Cannon" hidden="false" targetId="2f8d-632d-6f70-9241" type="profile"/>
                             <infoLink id="d723-02dc-dc83-b574" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
                           </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                          </costs>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntryGroup>
@@ -5757,6 +5722,9 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="dd1d-951a-af68-01c2" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntryGroups>
@@ -5772,6 +5740,9 @@
                         <infoLink id="a5c0-be79-d2a9-ba38" name="Twin Assault Rifle" hidden="false" targetId="9cfd-12a7-cc5c-a4e5" type="profile"/>
                         <infoLink id="a10a-d042-3fec-8e4e" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
                       </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="417d-2f5e-2b11-1f48" name="Assault Rifle &amp; Plague Sword" hidden="false" collective="false" import="true" type="upgrade">
                       <infoLinks>
@@ -5832,6 +5803,9 @@
                             <infoLink id="cf2b-831b-a7aa-80d6" name="Poison" hidden="false" targetId="2c45-0e1e-fec5-8dbb" type="rule"/>
                             <infoLink id="803f-2738-2bac-0088" name="Plague Flamethrower" hidden="false" targetId="822e-5b86-8e54-cd65" type="profile"/>
                           </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry id="eb25-b67f-6c1d-ca63" name="Plague Launcher &amp; Plague Sword" hidden="false" collective="false" import="true" type="upgrade">
                           <infoLinks>
@@ -5840,6 +5814,9 @@
                             <infoLink id="caa7-bddb-cfbb-4373" name="Plague Launcher" hidden="false" targetId="b3ee-f677-8603-a072" type="profile"/>
                             <infoLink id="2e2f-b7bd-e0b8-e557" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
                           </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry id="95ec-e368-51ee-a85c" name="Reaper Cannon &amp; Plague Sword" hidden="false" collective="false" import="true" type="upgrade">
                           <infoLinks>
@@ -5848,6 +5825,9 @@
                             <infoLink id="8fd4-e542-db0f-e36f" name="Reaper Cannon" hidden="false" targetId="2f8d-632d-6f70-9241" type="profile"/>
                             <infoLink id="546e-6ab5-a2bf-0935" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
                           </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                          </costs>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntryGroup>
@@ -5901,6 +5881,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0746-8f65-6488-75f2" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -6906,6 +6889,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="7a0f-1fb5-e671-869a" name="Combined Unit [20 models]" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -6943,11 +6929,17 @@
         <infoLink id="9664-4571-98ab-90b2" name="Indirect" hidden="false" targetId="587a-b92c-a265-06c4" type="rule"/>
         <infoLink id="5416-da0c-46ee-b7ad" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5a3c-c3f7-eadb-dbae" name="Blessing of Lust" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="59f7-9224-a24a-08b3" name="Blessing of Lust" hidden="false" targetId="e0ea-d7a1-4f57-99b2" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3451-0886-5024-9483" name="Noise Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -6962,6 +6954,9 @@
         <infoLink id="5716-68aa-d383-e9d8" name="Lust Whip" hidden="false" targetId="7f1d-62a8-2851-cde7" type="profile"/>
         <infoLink id="8b1c-b074-8c18-de4c" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e1de-93f6-cba3-bb97" name="Agony Brothers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -6985,6 +6980,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c4ce-6305-6801-a50c" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -7034,6 +7032,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="59b5-e806-e42c-56b0" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -7065,6 +7066,9 @@
       <infoLinks>
         <infoLink id="dc36-cb01-89c9-9618" name="Assault Carbine" hidden="false" targetId="cc1c-3c4a-cb25-a75e" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -8036,13 +8040,6 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Regeneration, Tough(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="5300-8aa2-0bd0-6c60" name="Plague Psychic" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
-      <characteristics>
-        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
-        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Regeneration, Tough(3), Psychic(1)</characteristic>
-      </characteristics>
-    </profile>
     <profile id="be9b-4c51-40fd-29ff" name="Plague Bringer" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
@@ -8553,7 +8550,7 @@
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"></characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
   </sharedProfiles>
