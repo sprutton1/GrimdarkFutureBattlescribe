@@ -49,6 +49,11 @@
         <categoryLink id="eb44-4f6b-7a03-bd96" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="218f-492a-d04d-934c" name="Jeep" hidden="false" collective="false" import="true" targetId="e927-bca9-b7dc-566a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b30b-b863-70d4-5255" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8861-7826-0ff2-4a56" name="Camo Cloak" hidden="false" collective="false" import="true" type="upgrade">
@@ -1004,6 +1009,59 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e927-bca9-b7dc-566a" name="Jeep" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b301-749d-39a3-caf8" name="Jeep" hidden="false" targetId="0829-add5-46a0-96fb" type="profile"/>
+        <infoLink id="783b-7531-9549-da05" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="3b77-2542-0680-eb02" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="67b4-b9cb-6567-47fb" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="eb14-ffbb-b95b-2f0b" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="d11d-666a-9945-2713" name="Transport(6)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66eb-4e85-63ff-9293" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="de35-0e54-11f9-ade3" name="Transport(6)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Transport(6)	</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="196e-515f-72bf-84c6" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d8e8-25bd-8861-bdc1" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="8ddc-5130-6eb8-9cfa">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdb4-999f-470f-517b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9a8-7406-adf0-49fb" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8ddc-5130-6eb8-9cfa" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry"/>
+            <entryLink id="8d0c-d888-d659-5dee" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9370-6b51-a4df-3b6e" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="175.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="31ec-8754-f59d-9e7e" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf82-fdcb-fb76-ed22">
@@ -1348,6 +1406,13 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0829-add5-46a0-96fb" name="Jeep" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(6), Strider, Tough(6)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
