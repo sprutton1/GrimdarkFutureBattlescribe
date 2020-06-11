@@ -77,7 +77,7 @@ table!
 |Machine Cult|v2.9|Done|
 |Orc Marauders|v2.9|Done|
 |Ratmen Clans|v2.3|Done|
-|Rebel Guerrillas|-|Not started|
+|Rebel Guerrillas|v2.3|Done|
 |Robot Legions|v2.7|Done|
 |Soul-Snatcher Cults|v2.6|Done|
 |TAO Coalition|v2.9|Done|
