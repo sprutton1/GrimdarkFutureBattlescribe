@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="17" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="18" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
-    <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.8"/>
+    <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.10"/>
   </publications>
   <costTypes>
     <costType id="567f-6468-66c6-2ea2" name="pts" defaultCostLimit="-1.0"/>
@@ -736,6 +736,9 @@
       <infoLinks>
         <infoLink id="7468-996f-a0c4-fdbd" name="Twin Machinegun" hidden="false" targetId="f8ae-6d7a-6afe-d159" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -787,11 +790,11 @@ Note that wounds suffered by that model don’t carry over to other models if it
     <rule id="ba47-b43b-18f8-97c1" name="Psychic(X)" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Models with this special rule may cast one spell at any point during their activation before attacking.
 
-To cast a spell pick one from the psychic’s army and roll D6+X. If the result is equal to or higher than the number in brackets then you may resolve the spell’s effects.
+To cast a spell pick one from the psychic’s army list, pick a target in line of sight, and roll D6+X. If the result is equal to or higher than the number in brackets then you may resolve the spell’s effects.
 
-Enemy psychics within 18” may also roll D6+X, and if the result is higher than that of the casting psychic, then the spell’s effects are blocked instead.
+Enemy psychics within 18” and line of sight may also roll D6+X at the same time, and if the result is higher than that of the casting psychic, then the spell’s effects are blocked instead.
 
-Note that a psychic may only either cast a spell or block a spell each round.</description>
+Note that a psychic may only either try to cast a spell or try to block a spell each round.</description>
     </rule>
     <rule id="dea8-a8f9-1865-4424" name="Regeneration" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Whenever this model takes wounds roll one die for each. On a 5+ the wound is ignored.</description>
