@@ -89,6 +89,11 @@
         <categoryLink id="d621-a110-cb5f-b255" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="094b-83cf-aa72-7cdf" name="Sky Stalkers" hidden="false" collective="false" import="true" targetId="1a01-131e-e2cc-6ec0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="87aa-e773-f1e4-6f45" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="dfde-6789-b18b-1fe0" name="Death Ray" hidden="false" collective="false" import="true" type="upgrade">
@@ -2225,6 +2230,241 @@
         <infoLink id="5153-7e74-dc26-5670" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="fdf5-2cd5-7624-31b6" name="P-Thrower" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9158-da76-0949-aeb6" name="P-Thrower" hidden="false" targetId="dfd8-0c65-69a7-4b3e" type="profile"/>
+        <infoLink id="93ea-169c-8725-07b7" name="Phosphor" hidden="false" targetId="b668-6266-4fd6-0f17" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="c85b-1121-ee79-2fce" name="Blaster Carbine" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3041-1af7-a06b-659e" name="Blaster Carbine" hidden="false" targetId="6954-0c35-8bf0-3444" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5b4d-e79c-ad5d-580f" name="Cluster Grenades" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="581d-28c5-9999-48f4" name="Cluster Grenades" hidden="false" targetId="1fde-4200-37db-70e1" type="profile"/>
+        <infoLink id="05a3-2d92-b994-98b8" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="1a01-131e-e2cc-6ec0" name="Sky Stalkers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6c5a-2d1f-bcc1-3aea" name="Sky Stalker" hidden="false" targetId="2633-6a8a-6a36-dd05" type="profile"/>
+        <infoLink id="eac3-3fcb-5ddd-7e05" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
+        <infoLink id="f3f2-5034-0b81-c4ab" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="ea4b-474f-725e-77fb" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0cc7-69bc-807c-a0bf" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="9cc0-8c45-3483-9780">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6ff-bbf2-37ca-eb0e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="344a-bee6-abd9-25a5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9cc0-8c45-3483-9780" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="8424-110d-2371-e7f4" name="Armament" hidden="false" collective="false" import="true" defaultSelectionEntryId="8cd0-6e72-4c05-0005">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94e4-3b26-a1a8-3bea" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8bc-b45a-a42c-66f3" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="8cd0-6e72-4c05-0005" name="P-Throwers &amp; CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="5b39-fe7e-24ee-ec40" name="Sky Stalkers" hidden="false" collective="false" import="true" defaultSelectionEntryId="1671-cc93-10d6-aa97">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d9c-acef-7b5e-1dc4" type="min"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a7c-8291-f849-23b7" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="1671-cc93-10d6-aa97" name="Sky Stalker (P-Thrower)" hidden="false" collective="false" import="true" targetId="a694-8039-5126-a9e5" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ee-f7ef-4c13-f7a7" type="min"/>
+                                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f16-a6c9-51e8-6527" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="c8cb-59b4-096a-741d" name="Sky Stalker Leader" hidden="false" collective="false" import="true" targetId="ffd2-c2c2-ce64-2511" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffb7-fe1a-f058-ddda" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntry>
+                    <selectionEntry id="ddf9-e035-4085-1f27" name="Blaster Carbines &amp; CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="068e-8638-2f35-653a" name="Sky Stalkers" hidden="false" collective="false" import="true" defaultSelectionEntryId="b2e3-ab44-22de-6510">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83cb-8bc7-2a1b-116f" type="min"/>
+                            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fb0-b011-6bd2-a1d9" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="b2e3-ab44-22de-6510" name="Sky Stalker (Carbine)" hidden="false" collective="false" import="true" targetId="edb0-c853-a27d-d2f1" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de3a-011c-a438-955b" type="min"/>
+                                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75d0-d778-9903-1131" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="505e-c5af-bc32-8a95" name="Sky Stalker Leader" hidden="false" collective="false" import="true" targetId="ffd2-c2c2-ce64-2511" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a4d-c63d-b6fc-e312" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="785f-f9a7-9f7f-5793" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="6a58-2d99-8008-cdfb" name="Cluster Grenades" hidden="false" collective="false" import="true" targetId="5b4d-e79c-ad5d-580f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2908-405d-c7d6-29c5" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="4e8c-736e-837a-1c85" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="ea3b-99e5-2c2a-bd95" name="Armament" hidden="false" collective="false" import="true" defaultSelectionEntryId="c9b9-1d72-0c77-6e88">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d2c-258b-f5f8-1162" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af4e-592f-fdba-ff84" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="c9b9-1d72-0c77-6e88" name="P-Throwers &amp; CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="5f42-f7df-d7c5-f03b" name="Sky Stalkers" hidden="false" collective="false" import="true" defaultSelectionEntryId="b195-a012-3410-848d">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="833a-a02d-78ca-a8af" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d14-6602-0ef1-a834" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="b195-a012-3410-848d" name="Sky Stalker (P-Thrower)" hidden="false" collective="false" import="true" targetId="a694-8039-5126-a9e5" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04a3-5ce7-9db5-82f9" type="min"/>
+                                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec96-8348-5765-7a32" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="defc-0dd2-c359-cd05" name="Sky Stalker Leader" hidden="false" collective="false" import="true" targetId="ffd2-c2c2-ce64-2511" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5997-7762-9f87-8272" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntry>
+                    <selectionEntry id="26f7-3e3d-cb67-caca" name="Blaster Carbines &amp; CCWs" hidden="false" collective="false" import="true" type="upgrade">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="56d2-678b-5c6d-e14f" name="Sky Stalkers" hidden="false" collective="false" import="true" defaultSelectionEntryId="530e-e405-964d-fd83">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d584-84ec-9b8c-927a" type="min"/>
+                            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dd9-1fe3-f9f1-17bf" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="530e-e405-964d-fd83" name="Sky Stalker (Carbine)" hidden="false" collective="false" import="true" targetId="edb0-c853-a27d-d2f1" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0c0-0627-0312-6641" type="min"/>
+                                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9ca-6dea-191a-e9dd" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="77ec-14c6-7d6a-3127" name="Sky Stalker Leader" hidden="false" collective="false" import="true" targetId="ffd2-c2c2-ce64-2511" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ae7-fb92-5c93-1ea8" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="1099-72ed-bee3-268a" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="96ef-3c8c-c609-6aa9" name="Cluster Grenades" hidden="false" collective="false" import="true" targetId="5b4d-e79c-ad5d-580f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e8d-193a-6bc7-3d35" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="250.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ffd2-c2c2-ce64-2511" name="Sky Stalker Leader" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="7616-3b4a-5dca-27eb" name="Blaster SMG" hidden="false" collective="false" import="true" targetId="ef28-b599-05a6-c967" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0359-55ff-e9bf-1ce6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0597-2260-a123-5d4b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3599-e30c-fc66-b640" name="Taser Sword" hidden="false" collective="false" import="true" targetId="3a29-189a-01c5-de44" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e238-e6c3-a4ca-be6a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e4f-193d-abb5-ec06" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="a694-8039-5126-a9e5" name="Sky Stalker (P-Thrower)" hidden="false" collective="true" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="b353-7531-701f-bd7f" name="P-Thrower" hidden="false" collective="false" import="true" targetId="fdf5-2cd5-7624-31b6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0df-3315-a007-fb1d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a85-3126-e52c-22a6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="78c3-dd9d-ff5f-cb1b" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc7a-7378-18a6-b57c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05d7-29d5-dbd6-6e38" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="edb0-c853-a27d-d2f1" name="Sky Stalker (Carbine)" hidden="false" collective="true" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="dfc6-9204-c9a1-feae" name="Blaster Carbine" hidden="false" collective="false" import="true" targetId="c85b-1121-ee79-2fce" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d83-7012-1fa7-831f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0923-375d-5490-98e7" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a144-b9d8-5fd2-392b" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="026e-343e-575c-d1b3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d81-687a-da38-e944" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ddb8-8852-4a3d-d4f8" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -2997,6 +3237,32 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2633-6a8a-6a36-dd05" name="Sky Stalker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Flying, Furious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dfd8-0c65-69a7-4b3e" name="P-Thrower" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Phosphor</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6954-0c35-8bf0-3444" name="Blaster Carbine" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A5</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
+      </characteristics>
+    </profile>
+    <profile id="1fde-4200-37db-70e1" name="Cluster Grenades" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Impact(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
