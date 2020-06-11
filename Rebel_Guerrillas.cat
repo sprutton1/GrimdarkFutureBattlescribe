@@ -64,6 +64,11 @@
         <categoryLink id="f3ba-7799-7e3d-fc2a" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="23e9-d228-a7d0-5cc1" name="Light Dropship" hidden="false" collective="false" import="true" targetId="1b88-1926-7548-72b9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6522-6bf6-9b1f-c856" name="New CategoryLink" hidden="false" targetId="d5d5-ffb2-9922-2414" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8861-7826-0ff2-4a56" name="Camo Cloak" hidden="false" collective="false" import="true" type="upgrade">
@@ -1211,6 +1216,38 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="180.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1b88-1926-7548-72b9" name="Light Dropship" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5da4-2978-fa08-df6d" name="Light Dropship" hidden="false" targetId="988c-b09d-7cfe-1c5b" type="profile"/>
+        <infoLink id="3ed5-599f-b87c-bf32" name="Aircraft" hidden="false" targetId="187f-6a03-5b99-a4db" type="rule"/>
+        <infoLink id="3fe6-4da5-ba87-415a" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="dbdc-525c-4f32-c35d" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c52e-6ccd-22fb-1edd" name="Armament" hidden="false" collective="false" import="true" defaultSelectionEntryId="448a-b991-ec41-99e1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94cb-2ec2-fcf1-ee51" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbe6-add0-0508-4cd5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="448a-b991-ec41-99e1" name="Minigun" hidden="false" collective="false" import="true" targetId="7b99-9f38-072e-e027" type="selectionEntry"/>
+            <entryLink id="6a39-6e23-0bff-e1b6" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="ff1b-714c-6353-221d" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="5144-c321-dfca-f9c0" name="Laser Cannon" hidden="false" collective="false" import="true" targetId="1f20-2b60-f100-bed0" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="185.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="31ec-8754-f59d-9e7e" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf82-fdcb-fb76-ed22">
@@ -1602,6 +1639,13 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="988c-b09d-7cfe-1c5b" name="Light Dropship" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Aircraft, Tough(6), Transport(11)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
