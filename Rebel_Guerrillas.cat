@@ -59,6 +59,11 @@
         <categoryLink id="bc8d-a2f0-b7d9-269b" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="b677-d27f-3dd4-069e" name="Attack Walker" hidden="false" collective="false" import="true" targetId="ad14-0a91-827c-9b46" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f3ba-7799-7e3d-fc2a" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8861-7826-0ff2-4a56" name="Camo Cloak" hidden="false" collective="false" import="true" type="upgrade">
@@ -1141,6 +1146,71 @@
         <infoLink id="a7ec-efcc-b219-8dbb" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="554c-4469-d1ce-7e23" name="Stomp" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4b87-9e1a-0c90-bf1b" name="Stomp" hidden="false" targetId="2187-eeac-d994-cf39" type="profile"/>
+        <infoLink id="acf4-cedf-df06-c2c4" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="314f-bd84-14bb-07ff" name="Walker Chainsaw" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0a50-a7e4-c5e8-288d" name="Walker Chainsaw" hidden="false" targetId="f948-079b-60a5-32b6" type="profile"/>
+        <infoLink id="77c7-1b52-31a4-53b0" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="ad14-0a91-827c-9b46" name="Attack Walker" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="85e4-11e3-40f9-0b37" name="Attack Walker" hidden="false" targetId="cb2a-baae-5a79-2ccd" type="profile"/>
+        <infoLink id="2bae-bdff-61b6-eae5" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+        <infoLink id="575a-653e-fb5b-1f7f" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a70a-3c2b-4caf-1b7c" name="Armament" hidden="false" collective="false" import="true" defaultSelectionEntryId="fe0b-490e-aeab-9d38">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fc0-9844-8859-6f54" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a601-8c71-8079-5739" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fb0b-9743-1bcb-c17e" name="Heavy Flamethrower &amp; Walker Chainsaw" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="d691-439f-ff37-74bf" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f082-58e7-2922-b676" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e980-0b0b-6033-8dfd" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="30d4-1578-2f43-15f2" name="Walker Chainsaw" hidden="false" collective="false" import="true" targetId="314f-bd84-14bb-07ff" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c47-d846-91e6-9d6f" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3ca-173a-02a3-babb" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="fe0b-490e-aeab-9d38" name="Laser Machinegun" hidden="false" collective="false" import="true" targetId="f7a6-c6c9-0567-4b34" type="selectionEntry"/>
+            <entryLink id="9e2d-066b-6b12-b323" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="05e9-6fae-2a04-8820" type="selectionEntry"/>
+            <entryLink id="9a63-df24-1ab9-eeac" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" targetId="a5f5-d44a-03b0-9a99" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="61c1-658e-4d0d-01c3" name="Stomp" hidden="false" collective="false" import="true" targetId="554c-4469-d1ce-7e23" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82e4-fcea-6dd1-8930" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d879-a266-db7f-08f6" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="180.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="31ec-8754-f59d-9e7e" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf82-fdcb-fb76-ed22">
@@ -1513,6 +1583,25 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cb2a-baae-5a79-2ccd" name="Attack Walker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2187-eeac-d994-cf39" name="Stomp" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A1</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f948-079b-60a5-32b6" name="Walker Chainsaw" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
