@@ -24,6 +24,11 @@
         <categoryLink id="ec88-9593-5e76-b1d5" name="Heroes" hidden="false" targetId="4b4e-fbe0-5211-ae65" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="933d-8414-a814-24ba" name="Rebels" hidden="false" collective="false" import="true" targetId="7de4-daeb-7a48-e924" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1182-7751-bd60-bfc0" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8861-7826-0ff2-4a56" name="Camo Cloak" hidden="false" collective="false" import="true" type="upgrade">
@@ -319,6 +324,221 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7de4-daeb-7a48-e924" name="Rebels" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e762-5798-3ca5-5c92" name="Rebel" hidden="false" targetId="f457-6c54-b00d-664b" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9eaa-7f03-c3ae-68bc" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="f3c2-e1d0-e267-c113">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87b5-a04c-d0e6-daf1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1bf-2e98-acb5-a05b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3b49-4c8c-dccc-a55d" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="9bc4-d320-8c11-8ba7" name="Rebels" hidden="false" collective="false" import="true" defaultSelectionEntryId="c222-6ecd-d513-4ede">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1573-075d-8773-4bfe" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="875c-fe33-3127-341e" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c222-6ecd-d513-4ede" name="Rebel" hidden="false" collective="false" import="true" targetId="4698-9c1b-5bd3-c729" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cba-409d-3ce2-8d5a" type="max"/>
+                        <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d289-597a-5297-d733" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="7f57-e378-57b3-9129" name="Rebel Leader" hidden="false" collective="false" import="true" targetId="90b3-9a4c-7586-64e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e61d-9823-cac8-89ef" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="b398-5229-5e58-553c" name="Upgrade up to two models with one:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc7f-a654-be4f-4b16" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="64e0-0dbc-0b15-ddbe" name="Gun Drone" hidden="false" collective="false" import="true" targetId="c1d7-04b4-a40f-df11" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b8-0e15-7207-0e8e" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="3efe-0547-de62-8fa5" name="Medical Training" hidden="false" collective="false" import="true" targetId="2c07-8cf7-8464-e4cc" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd6f-af5a-ba74-8791" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="8524-e4d7-b1ad-63fa" name="Upgrade all models with one:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd79-b0ce-4e26-ed16" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="d2c0-878b-5c8f-e6dc" name="Camo Cloak" hidden="false" collective="false" import="true" targetId="8861-7826-0ff2-4a56" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="d52c-bfdb-f8fd-5861" name="Wings" hidden="false" collective="false" import="true" targetId="caf0-d7d1-5cc5-f929" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f3c2-e1d0-e267-c113" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="88c7-d7fd-a073-43ca" name="Rebels" hidden="false" collective="false" import="true" defaultSelectionEntryId="a7e0-01fe-45db-795f">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f99c-f303-ec3a-355c" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c18f-4aa8-4180-8625" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="a7e0-01fe-45db-795f" name="Rebel" hidden="false" collective="false" import="true" targetId="4698-9c1b-5bd3-c729" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="558d-2054-8f32-361a" type="max"/>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1153-134d-ff77-9b98" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="0e1d-a18f-a81f-410a" name="Rebel Leader" hidden="false" collective="false" import="true" targetId="90b3-9a4c-7586-64e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bf4-8590-f994-f63b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="cbee-16fe-f160-7b1b" name="Upgrade one model with one:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a66d-2bc8-51b8-6e4a" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="36ec-9996-7e60-d25e" name="Gun Drone" hidden="false" collective="false" import="true" targetId="c1d7-04b4-a40f-df11" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f388-ba8a-fa22-9d73" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="f6d3-ddb6-450e-e23c" name="Medical Training" hidden="false" collective="false" import="true" targetId="2c07-8cf7-8464-e4cc" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b282-424e-e351-8c80" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="8771-dceb-fe4c-df85" name="Upgrade all models with one:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="156f-be57-823c-d35c" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="59db-2388-faa6-b8db" name="Camo Cloak" hidden="false" collective="false" import="true" targetId="8861-7826-0ff2-4a56" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="28fd-74ee-2a7d-caf8" name="Wings" hidden="false" collective="false" import="true" targetId="caf0-d7d1-5cc5-f929" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4698-9c1b-5bd3-c729" name="Rebel" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ab4f-02ea-a7d9-fca8" name="Ranged Weapon" hidden="false" collective="true" import="true" defaultSelectionEntryId="71ba-71bb-bed7-21a7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eef-065c-5a74-f6c5" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="71ba-71bb-bed7-21a7" name="Carbine" hidden="false" collective="false" import="true" targetId="1eb5-e70c-2563-86d4" type="selectionEntry"/>
+            <entryLink id="4009-2865-241e-7334" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry"/>
+            <entryLink id="9799-a478-c058-d4e9" name="Shotgun" hidden="false" collective="false" import="true" targetId="9ee5-5c13-dfef-ff7c" type="selectionEntry"/>
+            <entryLink id="0c71-ba61-1d72-d6b4" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1291-bdaa-2867-9074" name="Shred Rifle" hidden="false" collective="false" import="true" targetId="fa7d-5662-869b-c879" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a219-29ff-7eda-78f7" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b2e4-dcc2-54a8-aec8" name="Minigun" hidden="false" collective="false" import="true" targetId="7b99-9f38-072e-e027" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="351f-1441-125a-bfb9" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="08c1-b78b-bb27-f030" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="ff1b-714c-6353-221d" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="abcb-d584-dd4a-1519" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a6-20f7-ae6e-72f2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="928c-5330-67f7-a49d" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="90b3-9a4c-7586-64e8" name="Rebel Leader" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="1a17-5065-63ac-5260" name="Weapons - Leaders" hidden="false" collective="false" import="true" targetId="31ec-8754-f59d-9e7e" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="2c07-8cf7-8464-e4cc" name="Medical Training" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5cb5-f85d-3560-9b9c" name="Medical Training" hidden="false" targetId="a953-08bb-0f4e-8dd6" type="profile"/>
+        <infoLink id="56e7-32ab-39da-fdba" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="c1d7-04b4-a40f-df11" name="Gun Drone" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="aef5-c970-ca10-26a8" name="Gun Drone" hidden="false" targetId="148b-877c-3561-bc06" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="31ec-8754-f59d-9e7e" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf82-fdcb-fb76-ed22">
@@ -577,6 +797,25 @@
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
         <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets Regeneration next time it takes wounds.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f457-6c54-b00d-664b" name="Rebel" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">5+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32"/>
+      </characteristics>
+    </profile>
+    <profile id="a953-08bb-0f4e-8dd6" name="Medical Training" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">This model and his unit gets the Regeneration rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="148b-877c-3561-bc06" name="Gun Drone" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
       </characteristics>
     </profile>
   </sharedProfiles>
