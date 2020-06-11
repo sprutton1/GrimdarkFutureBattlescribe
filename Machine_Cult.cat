@@ -99,6 +99,11 @@
         <categoryLink id="2091-fc02-011c-6026" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="3514-bbb6-c2ac-94a0" name="Arch Gunship" hidden="false" collective="false" import="true" targetId="f7b1-9915-d8de-8cb1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="08ed-51ab-83ee-ea22" name="New CategoryLink" hidden="false" targetId="d5d5-ffb2-9922-2414" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="dfde-6789-b18b-1fe0" name="Death Ray" hidden="false" collective="false" import="true" type="upgrade">
@@ -2803,6 +2808,85 @@
         <infoLink id="42e3-2605-69a5-7eb1" name="Carbine" hidden="false" targetId="d8f5-017c-af30-39ed" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="52bf-72e5-d253-e088" name="Assault Module" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="91fb-a403-11f2-6e08" name="Assault Module" hidden="false" targetId="04b8-eaf4-71f5-4c39" type="profile"/>
+        <infoLink id="8785-9f44-460c-ea36" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="b71f-fd39-c894-d0e3" name="Bomb Rack" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d620-8d38-8578-46ea" name="Bomb Rack" hidden="false" targetId="5493-756b-c3fb-9c8e" type="profile"/>
+        <infoLink id="5279-d371-f1bb-5965" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="7375-ee87-f3b8-7622" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f7b1-9915-d8de-8cb1" name="Arch Gunship" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ba68-4d79-7ded-85b6" name="Arch Gunship" hidden="false" targetId="fb4a-88e8-4ecc-a31e" type="profile"/>
+        <infoLink id="3fa9-32f5-7a93-33cb" name="Aircraft" hidden="false" targetId="187f-6a03-5b99-a4db" type="rule"/>
+        <infoLink id="9599-c86b-a51c-4d52" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="aeee-2bcb-d6ac-d44a" name="Weapons - Nose Armament (pick 1)" hidden="false" collective="false" import="true" defaultSelectionEntryId="c1ba-ef0f-3eac-1a4d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca70-2acc-f88e-f80f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac8-d332-0fa9-8fb4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c1ba-ef0f-3eac-1a4d" name="Twin Machinegun" hidden="false" collective="false" import="true" targetId="1c25-3e6f-44c9-92da" type="selectionEntry"/>
+            <entryLink id="1754-dc88-1700-e429" name="Twin P-Cannon" hidden="false" collective="false" import="true" targetId="a8d0-8efc-b6cb-6404" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4ba0-2bfa-f887-da24" name="Weapons - Wing Armament (max 1)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b6d-71bb-a59c-8802" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5431-783d-e059-4392" name="Bomb Rack" hidden="false" collective="false" import="true" targetId="b71f-fd39-c894-d0e3" type="selectionEntry"/>
+            <entryLink id="1c16-b30e-2d13-029a" name="Twin Machinegun" hidden="false" collective="false" import="true" targetId="daac-0006-b590-4aa3" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d779-16cd-14c6-eae2" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9db4-08bf-a320-c4b6" name="Hull Upgrade (max 1)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d89-08c4-25cd-f933" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0e8a-3bb9-aa0e-d371" name="2x Machineguns" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="3b2d-9a81-fff0-6641" name="Machinegun" hidden="false" targetId="c0d6-cc28-d227-9727" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="5949-eb0e-5de7-0248" name="Assault Module" hidden="false" collective="false" import="true" targetId="52bf-72e5-d253-e088" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="195.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ddb8-8852-4a3d-d4f8" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -3642,6 +3726,25 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Phosphor</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fb4a-88e8-4ecc-a31e" name="Arch Gunship" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Aircraft, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5493-756b-c3fb-9c8e" name="Bomb Rack" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Blast(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="04b8-eaf4-71f5-4c39" name="Assault Module" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Transport(6)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
