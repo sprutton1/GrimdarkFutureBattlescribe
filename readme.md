@@ -66,23 +66,23 @@ table!
 |Battle Brothers|Main v2.10 - Prime v2.10 - Detachments v2.9|Done|
 |Battle Sisters|v2.6|Done|
 |Dark Elf Raiders|v2.3|Done|
-|Dwarf Guilds|v2.3|Done|
+|Dwarf Guilds|v2.4|Done|
 |Elven Jesters|v2.4|Done|
 |Feudal Guard|v2.5|Done|
-|Havoc Brothers|Main v2.7 - Disciples v2.9|Done|
-|High Elf Fleets|v2.6|Done|
-|Human Defense Force|v2.10|Done|
-|Human Inquisition|2.4|Done|
+|Havoc Brothers|Main v2.8 - Disciples v2.10|Done|
+|High Elf Fleets|v2.7|Done|
+|Human Defense Force|v2.11|Done|
+|Human Inquisition|2.5|Done|
 |Infected Colonies|v2.1|Done|
 |Machine Cult|v2.7|Done|
 |Orc Marauders|v2.9|Done|
 |Ratmen Clans|v2.3|Done|
-|Rebel Guerrillas|-|Not started|
+|Rebel Guerrillas|v2.3|Done|
 |Robot Legions|v2.7|Done|
 |Soul-Snatcher Cults|v2.6|Done|
-|TAO Coalition|v2.7|Done|
+|TAO Coalition|v2.9|Done|
 |Titan Lords|v2.2|Done|
-|Wormhole Daemons|v2.5|Done|
+|Wormhole Daemons|v2.7|Done|
 
 
 
