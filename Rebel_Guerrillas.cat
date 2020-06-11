@@ -39,6 +39,11 @@
         <categoryLink id="7687-74a7-b68c-febe" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="a73c-420e-672d-771c" name="Simians" hidden="false" collective="false" import="true" targetId="5e6e-f772-afa5-6c5a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a661-c720-3bb7-7b6f" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8861-7826-0ff2-4a56" name="Camo Cloak" hidden="false" collective="false" import="true" type="upgrade">
@@ -814,6 +819,82 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5e6e-f772-afa5-6c5a" name="Simians" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6de7-9f15-1bc6-29c1" name="Simian" hidden="false" targetId="b9ca-428b-34e9-457e" type="profile"/>
+        <infoLink id="d953-96bd-0a6c-d363" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+        <infoLink id="7692-d7fe-e2b6-ccee" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c6f4-3679-f0cb-b6f6" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="ced1-9637-7528-6852">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="636a-7303-41a9-d44f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d953-6aae-2be3-20b2" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ced1-9637-7528-6852" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2ff3-6288-51ef-83dd" name="Upgrade any model with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="d0cb-bb80-2241-459e" name="Claw Gauntlets" hidden="false" collective="false" import="true" targetId="3ec5-7c09-0753-1333" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b965-7bf9-2952-00b6" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="1454-cf7a-ebbd-dfcc" name="Fists" hidden="false" collective="false" import="true" targetId="ad47-4eb7-d153-32f7" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c4f-ba33-e1c9-9098" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afc0-4f3c-739f-1f8c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="a421-bec4-cb02-e358" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="7622-33e6-9478-23c8" name="Upgrade any model with:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="83f7-30da-f2dd-2425" name="Claw Gauntlets" hidden="false" collective="false" import="true" targetId="3ec5-7c09-0753-1333" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5215-52b0-5e14-0ed3" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="a8e2-deea-da70-734e" name="Fists" hidden="false" collective="false" import="true" targetId="ad47-4eb7-d153-32f7" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b5a-272f-6f44-7526" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e793-c969-f601-0cd3" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="125.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="125.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ad47-4eb7-d153-32f7" name="Fists" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5992-6c94-d05b-7e63" name="Fists" hidden="false" targetId="a4cd-8403-7e07-4633" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="31ec-8754-f59d-9e7e" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf82-fdcb-fb76-ed22">
@@ -1118,6 +1199,19 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">6+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">6+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Scout, Stealth</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b9ca-428b-34e9-457e" name="Simian" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Furious, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a4cd-8403-7e07-4633" name="Fists" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022"/>
       </characteristics>
     </profile>
   </sharedProfiles>
