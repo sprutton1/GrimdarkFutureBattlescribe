@@ -25,6 +25,11 @@
     <entryLink id="5aa4-a661-ee4f-07cf" name="Cult Assassins" hidden="false" collective="false" import="true" targetId="c29c-843e-5279-f818" type="selectionEntry"/>
     <entryLink id="b345-7e6c-a4f3-cf02" name="Assault Walker" hidden="false" collective="false" import="true" targetId="8ae1-ef81-5bd2-29ff" type="selectionEntry"/>
     <entryLink id="70cf-99b5-eaeb-333f" name="Support Walker" hidden="false" collective="false" import="true" targetId="1476-38e1-10d9-7b21" type="selectionEntry"/>
+    <entryLink id="6815-328e-d8a8-dbe5" name="Biker Fanatics" hidden="false" collective="false" import="true" targetId="c8d3-4497-9e7a-af6f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="790b-7cb2-c657-a15e" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c329-5155-d464-288d" name="High Sister" hidden="false" collective="false" import="true" type="upgrade">
@@ -2168,6 +2173,159 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="260.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5dcb-aca9-9e40-5094" name="Biker Fanatic Leader" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a4e7-f7c0-920f-d312" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5b20-9354-f15f-36c8">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b2a-9c4d-bed0-d16a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9526-c0be-6e59-f9a1" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5b20-9354-f15f-36c8" name="2x Shock Whips" hidden="false" collective="false" import="true" targetId="44b1-8407-1fbc-a848" type="selectionEntry"/>
+            <entryLink id="1be3-264d-b61c-cac9" name="2x Plasma Whips" hidden="false" collective="false" import="true" targetId="f744-ef4d-b84d-a8ba" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="3760-a063-e5d3-60ab" name="2x Force Whips" hidden="false" collective="false" import="true" targetId="85f1-0ca4-6bb0-f738" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c5a7-6fc3-c25b-d7a6" name="Biker Fanatic" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="614c-b1b7-b7c6-5ec9" name="Heavy Chainsaw Sword" hidden="false" collective="true" import="true" targetId="93f6-683c-6c3d-60a4" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d174-2d36-be44-6eb1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9deb-3b68-4e0f-ad5d" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c8d3-4497-9e7a-af6f" name="Biker Fanatics" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cc20-22d3-0ad1-6d10" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+        <infoLink id="bf53-ab46-5f30-a67e" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="4a1a-cd10-1dcd-1852" name="Fanatic Sister" hidden="false" targetId="058c-6d9d-a8a7-4d7b" type="profile"/>
+        <infoLink id="75a1-7091-e35e-1e90" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="eff1-0f1e-9e06-b48b" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fca2-6d85-e618-7113" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="0666-caa3-a839-0361">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d4d-4f75-730b-5be1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="569a-9a90-d143-7e1f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0666-caa3-a839-0361" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="0af6-0958-b07a-c2bf" name="Sisters" hidden="false" collective="false" import="true" defaultSelectionEntryId="6549-57a8-a4f9-1b9c">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d907-e996-ab42-5e23" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a73-af09-a2ad-1ea1" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6549-57a8-a4f9-1b9c" name="Biker Fanatic" hidden="false" collective="false" import="true" targetId="c5a7-6fc3-c25b-d7a6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1a3-6de9-157c-3c8c" type="max"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f48-c193-9ae8-6224" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="cdb1-d83c-7100-f237" name="Biker Fanatic Leader" hidden="false" collective="false" import="true" targetId="5dcb-aca9-9e40-5094" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b736-9edc-c390-cdec" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="2a70-4c6e-b779-702a" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="1042-d908-823c-b39b" name="Bike Armament - Twin Assault Rifles" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0aa8-2b46-ae00-5144" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="d2b3-ef96-918a-7174" name="Twin Assault Rifle" hidden="false" collective="false" import="true" targetId="e098-3b64-3d3c-33c2" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c523-6221-fd52-9c25" type="max"/>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="554f-c0f0-7a33-62f6" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0d88-a644-6b0a-6b80" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="9968-460f-e615-2a39" name="Sisters" hidden="false" collective="false" import="true" defaultSelectionEntryId="e63a-e0d1-25b1-9eff">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1ab-326f-25b3-9804" type="max"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d79-87b0-9f30-8af0" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="e63a-e0d1-25b1-9eff" name="Biker Fanatic" hidden="false" collective="false" import="true" targetId="c5a7-6fc3-c25b-d7a6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="682b-2e01-27f0-93a6" type="max"/>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb1e-a38f-6821-865f" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="fd7e-a6d0-54bd-366e" name="Biker Fanatic Leader" hidden="false" collective="false" import="true" targetId="5dcb-aca9-9e40-5094" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ab6-d997-67d3-be3b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="9335-c69c-31cf-a35d" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="8cd8-531d-349b-a3d5" name="Bike Armament - Twin Assault Rifles" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91a9-6949-785d-8b68" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="edf1-4cca-d4d9-a384" name="Twin Assault Rifle" hidden="false" collective="false" import="true" targetId="e098-3b64-3d3c-33c2" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48c0-8c79-9540-f13a" type="max"/>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00d2-72e7-30a2-9b7a" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="105.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="105.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7fe4-5916-6809-d27a" name="Weapons - Leaders" hidden="false" collective="false" import="true" defaultSelectionEntryId="1923-4b42-7fbf-5093">
@@ -2822,6 +2980,13 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fear, Fearless, Regeneration, Relentless, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="37a4-57cd-3146-e83f" name="Biker Fanatic" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Impact(1), Fearless, Furious</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
