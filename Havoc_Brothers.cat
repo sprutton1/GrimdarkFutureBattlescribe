@@ -4698,9 +4698,9 @@
       <infoLinks>
         <infoLink id="5605-e37e-1015-9419" name="Muscular Atrophy" hidden="false" targetId="0df6-c154-b62a-532d" type="profile"/>
         <infoLink id="90c0-bbce-3f53-6f1c" name="Rot Wave" hidden="false" targetId="13b9-4cb5-208d-a828" type="profile"/>
-        <infoLink id="2ef9-36b6-d564-dfcb" name="Cantagious Poison" hidden="false" targetId="0100-6a82-a8b0-de12" type="profile"/>
+        <infoLink id="2ef9-36b6-d564-dfcb" name="Contagious Poison" hidden="false" targetId="0100-6a82-a8b0-de12" type="profile"/>
         <infoLink id="abf6-55b3-5e9f-5440" name="Poison Wind" hidden="false" targetId="243d-7c8f-9926-ad91" type="profile"/>
-        <infoLink id="0c01-d0dc-fa59-703d" name="Cursed Virus" hidden="false" targetId="5587-72c4-1170-1982" type="profile"/>
+        <infoLink id="0c01-d0dc-fa59-703d" name="Toxic Blades" hidden="false" targetId="5587-72c4-1170-1982" type="profile"/>
         <infoLink id="da06-ca84-38ad-7be6" name="Blessed Virus" hidden="false" targetId="57a2-b00b-9212-486e" type="profile"/>
       </infoLinks>
       <costs>
@@ -7097,7 +7097,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="4e4e-86b9-4750-c2c6" name="Change Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="cf6b-c8e5-e35e-3a11" type="selectionEntry">
+            <entryLink id="4e4e-86b9-4750-c2c6" name="Psychic Spells - Disciples of Change" hidden="false" collective="false" import="true" targetId="cf6b-c8e5-e35e-3a11" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -8267,38 +8267,38 @@
     </profile>
     <profile id="13b9-4cb5-208d-a828" name="Rot Wave" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 8 automatic hits.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 4 automatic hits with AP(2).</characteristic>
       </characteristics>
     </profile>
     <profile id="243d-7c8f-9926-ad91" name="Poison Wind" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 6 automatic hits with AP(2).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may immediately move by up to 6&quot;.</characteristic>
       </characteristics>
     </profile>
     <profile id="57a2-b00b-9212-486e" name="Blessed Virus" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may immediately charge by up to 9&quot;</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets Stealth next time it&apos;s shot at.</characteristic>
       </characteristics>
     </profile>
     <profile id="5587-72c4-1170-1982" name="Toxic Blades" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets AP(+1) next time it fights in melee.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets AP(+2) in melee next time it fights.</characteristic>
       </characteristics>
     </profile>
-    <profile id="0100-6a82-a8b0-de12" name="Contagious Poison" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="0100-6a82-a8b0-de12" name="Deadly Poison" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 1 automatic hit per model.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 1 hit with AP(4) and Deadly(3).</characteristic>
       </characteristics>
     </profile>
     <profile id="0df6-c154-b62a-532d" name="Muscular Atrophy" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; gets -3&quot; next time it moves.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 6&quot; must take a dangerous terrain test.</characteristic>
       </characteristics>
     </profile>
     <profile id="3d2e-e766-c6be-227b" name="Plague Staff" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
