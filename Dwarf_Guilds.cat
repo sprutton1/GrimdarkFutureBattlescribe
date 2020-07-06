@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e77b-bed1-1b52-5b01" name="Dwarf Guilds" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e77b-bed1-1b52-5b01" name="Dwarf Guilds" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication id="b11f-bac7-7853-99a1" name="Dwarf Guilds v2.4"/>
+    <publication id="b11f-bac7-7853-99a1" name="Dwarf Guilds v2.5"/>
   </publications>
   <entryLinks>
     <entryLink id="0a09-815c-0cc5-ad66" name="Dwarf Lord" hidden="false" collective="false" import="true" targetId="fed0-8bd1-0e14-22dc" type="selectionEntry">
@@ -4139,6 +4139,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -4447,40 +4450,40 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Psychic(1), Slow, Tough(3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="7be2-c1b0-ab27-8b70" name="Balance Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="7be2-c1b0-ab27-8b70" name="Drill Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target unit within 12&quot; immediately loses all enemy spell effects.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target piece of terrain within 6&quot; may be moved by up to 6&quot; in any direction or may be removed from play.</characteristic>
       </characteristics>
     </profile>
     <profile id="32e5-f35e-6e6d-0b9b" name="Smiting Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 12&quot; takes 3 automatic hits with AP(4).</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 12&quot; takes 4 automatic hits.</characteristic>
       </characteristics>
     </profile>
     <profile id="f1f9-8baf-c133-34c8" name="Spite Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets Rending next time it shoots.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; gets -1 to hit in melee next time it fights.</characteristic>
       </characteristics>
     </profile>
     <profile id="8fce-2604-3365-55d7" name="Cleaving Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
         <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target 2 enemy units within 12&quot; take 6 automatic hits each.</characteristic>
       </characteristics>
     </profile>
     <profile id="6d31-641d-696d-b6d5" name="Battle Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 24&quot; gets +3&quot; to its next movement.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +6&quot; next time it moves.</characteristic>
       </characteristics>
     </profile>
     <profile id="6f40-3118-2695-0437" name="Breaking Rune" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 24&quot; takes 6 automatic hits with AP(1).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 12&quot; takes 2 automatic hits with AP(2).</characteristic>
       </characteristics>
     </profile>
     <profile id="2aa1-83da-63f6-ae9c" name="Dwarf Support" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
