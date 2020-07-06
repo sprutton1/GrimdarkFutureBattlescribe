@@ -3455,7 +3455,11 @@
             <selectionEntry id="0ebd-4257-a916-ad85" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="aea6-2080-7d0a-cfa5" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+                <infoLink id="7f6f-159e-9152-32ae" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink id="cac6-ebac-25c6-3ec6" name="Psychic Powers" hidden="false" collective="false" import="true" targetId="2604-be7b-42df-817f" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
               </costs>
@@ -3463,24 +3467,20 @@
             <selectionEntry id="765a-344b-0624-b202" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="bdf1-28f1-e0ee-523d" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
+                <infoLink id="3d71-2c5d-d3da-f60f" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink id="bd26-05ad-dcec-0ce4" name="Psychic Powers" hidden="false" collective="false" import="true" targetId="2604-be7b-42df-817f" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="242d-b270-8cfe-43ad" name="Dwarf Psychic Powers" hidden="false" collective="false" import="true" targetId="1e4b-2ab1-f985-50b4" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b27-d18a-60f5-8781" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe43-22e3-bc6b-d15b" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="65.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ea0c-495e-2fb3-fc49" name="Balance Rune" hidden="false" collective="false" import="true" type="upgrade">
@@ -3530,52 +3530,6 @@
         <infoLink id="b5df-c1ff-d316-8f04" name="Breaking Rune" hidden="false" targetId="6f40-3118-2695-0437" type="profile"/>
         <infoLink id="431f-b86f-23c0-f6c4" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1e4b-2ab1-f985-50b4" name="Dwarf Psychic Powers" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="97d6-7fce-ca58-53f3" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="c791-4391-dfa7-00d6" name="Balance Rune" hidden="false" collective="false" import="true" targetId="ea0c-495e-2fb3-fc49" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7d4-a68f-bfd1-240d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf37-4266-1606-b026" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="00a6-4129-ead8-a18e" name="Breaking Rune" hidden="false" collective="false" import="true" targetId="5837-7eab-2919-2354" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e7-1abe-875d-0ac7" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b7a-1fe6-060f-9cde" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="be77-8c87-8df9-5ad4" name="Battle Rune" hidden="false" collective="false" import="true" targetId="be8a-6e4b-b449-0000" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fee8-aafe-9938-435f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87b4-d0f7-b236-5536" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="b897-8fac-7321-8535" name="Cleaving Rune" hidden="false" collective="false" import="true" targetId="81a3-8006-e10e-db9a" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2ee-3df8-abcf-cd9a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f423-365c-bae3-102c" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="4294-6e56-ead6-e51a" name="Spite Rune" hidden="false" collective="false" import="true" targetId="912e-1476-b13b-485e" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4740-e36a-0200-cb83" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="358e-3556-e083-598d" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="9050-601b-a829-b6a5" name="Smiting Rune" hidden="false" collective="false" import="true" targetId="e97e-1c1c-cc3e-85c2" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4912-2474-5b51-b58e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91f0-4dcc-70af-8afd" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
@@ -4144,6 +4098,25 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="2604-be7b-42df-817f" name="Psychic Powers" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="7a6c-71bd-5886-b6fb" name="Show Spells" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9c2-b277-bc69-9b60" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b6de-f33d-c508-5a43" name="Breaking Rune" hidden="false" targetId="6f40-3118-2695-0437" type="profile"/>
+            <infoLink id="c066-58b2-4826-283b" name="Cleaving Rune" hidden="false" targetId="8fce-2604-3365-55d7" type="profile"/>
+            <infoLink id="8ce5-64e3-81d9-01ca" name="Drill Rune" hidden="false" targetId="7be2-c1b0-ab27-8b70" type="profile"/>
+            <infoLink id="54b4-e1e1-33f6-5203" name="Smiting Rune" hidden="false" targetId="32e5-f35e-6e6d-0b9b" type="profile"/>
+            <infoLink id="9230-ef16-49ee-3343" name="Spite Rune" hidden="false" targetId="f1f9-8baf-c133-34c8" type="profile"/>
+            <infoLink id="b844-104d-7a46-f6cd" name="Battle Rune" hidden="false" targetId="6d31-641d-696d-b6d5" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="02aa-a54a-ba59-0336" name="Battle Lore" publicationId="b11f-bac7-7853-99a1" hidden="false">
       <description>The hero and his unit get +1 to hit when fighting in melee.</description>
