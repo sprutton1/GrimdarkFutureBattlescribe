@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
 <catalogue id="f7a8-d03f-df7c-b59a" name="Machine Cult" revision="10" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cb69-15a9-bc41-d80c" name="Machine Cult v2.9"/>
@@ -2023,54 +2024,6 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0950-342a-8d82-2f1b" name="Steel Mind" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="25db-9b19-6118-e21c" name="Steel Mind" hidden="false" targetId="a1be-c86d-6252-e6bc" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="72ae-0bd3-390c-87f0" name="Machine Terror" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="3ac7-9c3e-5708-512b" name="Machine Terror" hidden="false" targetId="02dc-53ad-0c70-88c2" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4431-ffa4-723e-c607" name="March" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="370e-34c8-6fe2-c1de" name="March" hidden="false" targetId="6650-2346-2349-0787" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="5f6d-0747-85f9-aadb" name="Solar Beam" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="a9ec-a726-4b26-8d15" name="Solar Beam" hidden="false" targetId="b6a9-6dd9-ccfb-0bd4" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="59e6-add3-4bc8-10af" name="Metal Shroud" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="1d48-b31c-1abb-e848" name="Metal Shroud" hidden="false" targetId="4625-c8e0-d777-ae7a" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="212e-fa1b-f6eb-a7a1" name="Shrapnel" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="72bb-e851-f0cd-2f94" name="Shrapnel" hidden="false" targetId="80ea-9728-5d20-ca29" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="25d4-a736-d20e-4052" name="Macro Pistol" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f15e-695e-4cd6-780a" name="Macro Pistol" hidden="false" targetId="90a6-83fd-0412-552b" type="profile"/>
@@ -2979,6 +2932,16 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </entryLink>
+            <entryLink id="169e-751c-5b58-2f9e" name="Rail Gun" hidden="false" collective="false" import="true" targetId="2c6a-7ee1-528d-6ae2" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8eed-230e-dd38-eecb" name="Trans Cannon" hidden="false" collective="false" import="true" targetId="6d95-d2c8-0218-e57c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="1906-d36a-9fc4-0a4b" name="Upgrade with one:" hidden="false" collective="false" import="true">
@@ -3555,7 +3518,7 @@
         <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may heal 1 wound or restore 1 model (with only 1 health left if it had Tough).</characteristic>
       </characteristics>
     </profile>
-    <profile id="80ea-9728-5d20-ca29" name="Shrapnel" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="80ea-9728-5d20-ca29" name="Corroded Metal" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
         <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target 2 enemy units within 6&quot; take 3 automatic hits with AP(2) each.</characteristic>
@@ -3579,7 +3542,7 @@
         <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets AP(+1) next time it shoots.	</characteristic>
       </characteristics>
     </profile>
-    <profile id="02dc-53ad-0c70-88c2" name="Machine Terror" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="02dc-53ad-0c70-88c2" name="Lock-On" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
         <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 8 automatic hits.</characteristic>
@@ -3764,7 +3727,7 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Aircraft, Tough(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="c04d-9b4e-4424-d21d" name="Bomb Rack" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+    <profile id="c04d-9b4e-4424-d21d" name="Bomb Rack" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">r
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">6&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
