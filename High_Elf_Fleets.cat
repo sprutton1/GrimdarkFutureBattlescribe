@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c684-bb58-7b6d-1f24" name="High Elf Fleets" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c684-bb58-7b6d-1f24" name="High Elf Fleets" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication id="0470-6c7e-7502-e5c8" name="High Elf Fleets v2.7"/>
+    <publication id="0470-6c7e-7502-e5c8" name="High Elf Fleets v2.8"/>
   </publications>
   <entryLinks>
     <entryLink id="1967-8640-4f61-2be4" name="Elven King" hidden="false" collective="false" import="true" targetId="d4f1-65de-cd60-6d06" type="selectionEntry">
@@ -355,7 +355,7 @@
                     <infoLink id="29ba-f50a-85a6-bd82" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="a447-432e-a1ab-503b" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
@@ -391,7 +391,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dadb-f66f-a18f-a778" name="Energy Spear" hidden="false" collective="true" import="true" type="upgrade">
@@ -517,7 +517,7 @@
         <entryLink id="2771-64a2-b3c7-4716" name="Psychic Spells" hidden="false" collective="false" import="true" targetId="1c2e-7fb8-1bec-cc99" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="200.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="205.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fe1f-fce2-13e0-6aa1" name="Avatar of Flames" hidden="false" collective="false" import="true" type="unit">
@@ -3988,37 +3988,37 @@
     <profile id="01e8-fc16-6626-d6fc" name="Hide" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit withtin 12&quot; gets the Stealth rule next time it&apos;s shot at.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; gets -1 to hit next time it shoots.</characteristic>
       </characteristics>
     </profile>
     <profile id="32fd-ba97-f38f-0171" name="Soul Seeker" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; takes 6 automatic hits.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 12&quot; takes 1 automatic hit with AP(2).</characteristic>
       </characteristics>
     </profile>
     <profile id="b37c-8275-9b7d-d292" name="Creator" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may heal 1 wound or restore 1 model (with only 1 health left if it had Tough).</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +1 to defense next time it takes hits.</characteristic>
       </characteristics>
     </profile>
     <profile id="ea2d-bdaf-279d-6326" name="Destroyer" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; takes 1 hit with AP(3) and Deadly(6).</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 6 automatic hits.</characteristic>
       </characteristics>
     </profile>
     <profile id="e4cd-ddbb-b083-28c4" name="Blessing" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +1 to its rolls next time it shoots.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may immediately charge by up to 6&quot; and gets +1 to hit for that melee.</characteristic>
       </characteristics>
     </profile>
     <profile id="aefb-7300-d5e1-e701" name="Curse" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 6&quot; takes 1 automatic hit with AP(2) per model.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target 2 enemy units within 6&quot; take 4 hits with AP(2) each.</characteristic>
       </characteristics>
     </profile>
     <profile id="53ee-cf85-8185-db53" name="Scatter Laser" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90cb-11c2-2d69-37f4" name="Human Defense Force" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90cb-11c2-2d69-37f4" name="Human Defense Force" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication id="e38f-2272-38b2-f8ca" name="Human Defense Force v2.11"/>
+    <publication id="e38f-2272-38b2-f8ca" name="Human Defense Force v2.12"/>
   </publications>
   <entryLinks>
     <entryLink id="f4db-6b04-d04a-ecc7" name="Commander" hidden="false" collective="false" import="true" targetId="d78c-23df-2b35-df36" type="selectionEntry">
@@ -251,7 +251,7 @@
                     <infoLink id="7ce4-8795-d3d3-e999" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -266,7 +266,7 @@
         <entryLink id="49f7-63ca-9268-b667" name="Weapons - Leaders - Advisors" hidden="false" collective="false" import="true" targetId="848b-3836-2756-0183" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7efc-4f7f-24f7-3f92" name="Conscript" hidden="false" collective="false" import="true" type="unit">
@@ -3303,40 +3303,40 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="d183-965f-dc5a-e2b1" name="Fortitude" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="d183-965f-dc5a-e2b1" name="Foresight" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; immediately loses all enemy spell effects.</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +1 to hit next time it shoots.</characteristic>
       </characteristics>
     </profile>
-    <profile id="7294-ac49-5252-1447" name="Furious Blaze" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="7294-ac49-5252-1447" name="Flame Breath" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; takes 8 automatic hits with AP(1).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 2 automatic hits with AP(2).</characteristic>
       </characteristics>
     </profile>
-    <profile id="2623-d6b9-b97f-0951" name="Psychic Barrier" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="2623-d6b9-b97f-0951" name="Protective Dome" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets +2 to its defense rolls next time it takes hits.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; gets Regeneration next time it takes wounds.</characteristic>
       </characteristics>
     </profile>
     <profile id="095e-8769-b52c-bb78" name="Tempest" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 6&quot; takes 1 automatic hit with AP(1) per model.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 6&quot; takes 1 automatic hit per model.</characteristic>
       </characteristics>
     </profile>
-    <profile id="d1f6-97a6-cb42-a4bd" name="Shroud" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="d1f6-97a6-cb42-a4bd" name="Psychic Speed" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 18&quot; gets -1 to its rolls next time it shoots.</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">6+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target friendly unit within 12&quot; may immediately move by up to 6&quot;.</characteristic>
       </characteristics>
     </profile>
-    <profile id="fa82-7e7e-5907-d4f3" name="Nightmares" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
+    <profile id="fa82-7e7e-5907-d4f3" name="Expel" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
-        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy model within 12&quot; takes 3 automatic hits with AP(2).</characteristic>
+        <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">5+</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 1 automatic hit with AP(4) and Deadly(3).</characteristic>
       </characteristics>
     </profile>
     <profile id="a1f1-0335-ebc1-fc87" name="Field Radio" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">

@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="17" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="18" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
-    <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.8"/>
+    <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.10"/>
   </publications>
   <costTypes>
     <costType id="567f-6468-66c6-2ea2" name="pts" defaultCostLimit="-1.0"/>
@@ -49,7 +49,11 @@
     <categoryEntry id="b820-6309-e900-c733" name="Vehicles: Heavy" hidden="false"/>
     <categoryEntry id="d5d5-ffb2-9922-2414" name="Vehicles: Aircraft" hidden="false"/>
     <categoryEntry id="3089-78fc-94cc-28a2" name="Vehicles: Light" hidden="false"/>
-    <categoryEntry id="7528-ccdf-679c-8613" name="Vehicles: Super-heavy" hidden="false"/>
+    <categoryEntry id="7528-ccdf-679c-8613" name="Vehicles: Super-Heavy" hidden="false"/>
+    <categoryEntry id="d248-d52b-61c0-d4d9" name="Monster: Aircraft" hidden="false"/>
+    <categoryEntry id="2ac9-aad6-b0c0-3833" name="Monster: Light" hidden="false"/>
+    <categoryEntry id="a4d0-1721-c616-6775" name="Monster: Heavy" hidden="false"/>
+    <categoryEntry id="c40a-e782-9c9c-ace7" name="Monster: Super-Heavy" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="e1b6-6db4-e6e8-6188" name="Army" hidden="true">
@@ -64,6 +68,10 @@
         <categoryLink id="1bea-b21e-7ce6-6250" name="Vehicles: Heavy" hidden="false" targetId="b820-6309-e900-c733" primary="false"/>
         <categoryLink id="f5e9-e347-44e7-6943" name="Vehicles: Aircraft" hidden="false" targetId="d5d5-ffb2-9922-2414" primary="false"/>
         <categoryLink id="f7ec-0ce4-a55d-9797" name="Vehicles: Super-heavy" hidden="false" targetId="7528-ccdf-679c-8613" primary="false"/>
+        <categoryLink id="97f4-c76b-ea28-da10" name="Monster: Light" hidden="false" targetId="2ac9-aad6-b0c0-3833" primary="false"/>
+        <categoryLink id="01f7-4b67-d9b6-5f83" name="Monster: Heavy" hidden="false" targetId="a4d0-1721-c616-6775" primary="false"/>
+        <categoryLink id="d974-5b2a-9e4f-73c9" name="Monster: Aircraft" hidden="false" targetId="d248-d52b-61c0-d4d9" primary="false"/>
+        <categoryLink id="83b7-f556-c396-22d6" name="Monster: Super-Heavy" hidden="false" targetId="c40a-e782-9c9c-ace7" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -736,6 +744,9 @@
       <infoLinks>
         <infoLink id="7468-996f-a0c4-fdbd" name="Twin Machinegun" hidden="false" targetId="f8ae-6d7a-6afe-d159" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -787,11 +798,11 @@ Note that wounds suffered by that model don’t carry over to other models if it
     <rule id="ba47-b43b-18f8-97c1" name="Psychic(X)" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Models with this special rule may cast one spell at any point during their activation before attacking.
 
-To cast a spell pick one from the psychic’s army and roll D6+X. If the result is equal to or higher than the number in brackets then you may resolve the spell’s effects.
+To cast a spell pick one from the psychic’s army list, pick a target in line of sight, and roll D6+X. If the result is equal to or higher than the number in brackets then you may resolve the spell’s effects.
 
-Enemy psychics within 18” may also roll D6+X, and if the result is higher than that of the casting psychic, then the spell’s effects are blocked instead.
+Enemy psychics within 18” and line of sight may also roll D6+X at the same time, and if the result is higher than that of the casting psychic, then the spell’s effects are blocked instead.
 
-Note that a psychic may only either cast a spell or block a spell each round.</description>
+Note that a psychic may only either try to cast a spell or try to block a spell each round.</description>
     </rule>
     <rule id="dea8-a8f9-1865-4424" name="Regeneration" publicationId="d755-5d69-pubN65537" hidden="false">
       <description>Whenever this model takes wounds roll one die for each. On a 5+ the wound is ignored.</description>
