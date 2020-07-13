@@ -9,6 +9,11 @@
         <categoryLink id="4e95-96e7-2e1e-9f58" name="New CategoryLink" hidden="false" targetId="4b4e-fbe0-5211-ae65" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="e7d4-d0fd-398e-15d2" name="Defiler Priest" hidden="false" collective="false" import="true" targetId="85a8-fc6d-9b6e-5e1e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="34ca-d688-4b74-0856" name="New CategoryLink" hidden="false" targetId="4b4e-fbe0-5211-ae65" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="f3a5-5889-ccb1-5187" name="Defiler Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -188,6 +193,162 @@
         <infoLink id="852c-65c5-5e17-a4ed" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="85a8-fc6d-9b6e-5e1e" name="Defiler Priest" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1546-019a-2840-e91d" name="Defiler Priest" hidden="false" targetId="115d-7f04-491c-f06c" type="profile"/>
+        <infoLink id="dd93-849a-a79b-5464" name="Hero" hidden="false" targetId="5065-c3a4-a9cf-db27" type="rule"/>
+        <infoLink id="d419-3ac3-7e69-c5b9" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="b3e3-fc71-2d6d-726e" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="036a-84a2-6ef0-b598" name="Weapon Variants (pick 2)" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ada-a346-4a32-a3c1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a9-8927-b78b-0545" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="271d-7e8d-4189-873e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4ada-a346-4a32-a3c1" name="2x One-Handed Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ba-8c5a-9dfd-74d1" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="a8ef-3d08-bace-a6e0" name="Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="7c30-15c0-1c5e-77a3">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71aa-ef2a-fd29-1eb1" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb41-44fd-aa1e-27e9" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="7c30-15c0-1c5e-77a3" name="Heavy Claw" hidden="false" collective="false" import="true" targetId="f742-4b36-a788-c5ec" type="selectionEntry"/>
+                    <entryLink id="a283-4081-2551-a926" name="Heavy Pistol" hidden="false" collective="false" import="true" targetId="47a8-5dd6-25cf-6ae1" type="selectionEntry"/>
+                    <entryLink id="528f-b9bc-d464-b050" name="P-Carbine" hidden="false" collective="false" import="true" targetId="e554-4e87-830f-96be" type="selectionEntry"/>
+                    <entryLink id="3570-ffb5-f5ac-c9e3" name="Fusion Pistol" hidden="false" collective="false" import="true" targetId="2071-4cb6-f32c-5d11" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="5adc-6dec-de4e-cbf8" name="Sonic Boomer" hidden="false" collective="false" import="true" targetId="74f4-8356-870d-aef0" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="ef05-e479-39b8-e1bd" name="Macro Pistol" hidden="false" collective="false" import="true" targetId="0a21-91df-5e1c-6b22" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="c1aa-8bae-7c64-32a2" name="Rail Rifle" hidden="false" collective="false" import="true" targetId="8b3e-d395-8944-7f0b" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="797f-f73c-0ab3-8e7d" name="Death Ray" hidden="false" collective="false" import="true" targetId="7301-99ec-ea8d-5848" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="3306-3c80-b225-0107" name="Combustion Blaster" hidden="false" collective="false" import="true" targetId="8fba-5f0f-a070-ad33" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="b81e-6b3f-69ad-9204" name="Two-Handed Weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4de4-b1e5-1455-a115" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="1ea9-4b66-d319-373f" name="Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="9c5c-aebb-3a0c-4bf4">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b083-e50e-a190-877f" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d454-b4e4-25ef-bb30" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="9c5c-aebb-3a0c-4bf4" name="Heavy Staff" hidden="false" collective="false" import="true" targetId="881e-c80a-2d8d-4fae" type="selectionEntry"/>
+                    <entryLink id="ef84-5647-da98-1866" name="Heavy Halberd" hidden="false" collective="false" import="true" targetId="0913-5668-0c6e-8438" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="f413-2623-dcdd-2b01" name="Heavy Wrench" hidden="false" collective="false" import="true" targetId="1c7e-4ee9-e2e5-2efe" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="258e-47e1-f9cf-a709" name="Psychic(1)" hidden="false" collective="false" import="true" targetId="2e29-fb87-6371-999e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5198-f125-c39b-01f9" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="abee-6a4e-8e33-9192" name="Upgrades - Heroes" hidden="false" collective="false" import="true" targetId="560e-d16a-a1e4-7a79" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f742-4b36-a788-c5ec" name="Heavy Claw" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4692-c407-c42f-cef3" name="Heavy Claw" hidden="false" targetId="b124-76f3-30ff-95d2" type="profile"/>
+        <infoLink id="c31a-cb6e-8900-5078" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="47a8-5dd6-25cf-6ae1" name="Heavy Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5551-bd2f-8769-2e9f" name="Heavy Pistol" hidden="false" targetId="bf32-056d-69b5-7fe1" type="profile"/>
+        <infoLink id="54e6-ca74-6938-7daa" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="74f4-8356-870d-aef0" name="Sonic Boomer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9f2b-22e2-e4f6-d585" name="Sonic Boomer" hidden="false" targetId="11ef-1a5b-77d8-a8fe" type="profile"/>
+        <infoLink id="7d21-3cd7-4692-11f2" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="8b3e-d395-8944-7f0b" name="Rail Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0e19-b235-4710-0256" name="Rail Rifle" hidden="false" targetId="25cb-2f9d-0e7f-3757" type="profile"/>
+        <infoLink id="b582-3305-2d09-a6db" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="4992-af9c-9a4c-e9b8" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7301-99ec-ea8d-5848" name="Death Ray" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7b60-9a81-cb89-7ff5" name="Death Ray" hidden="false" targetId="c59e-504f-dfd7-bd4d" type="profile"/>
+        <infoLink id="35b3-d4fc-6d3f-728d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="7e30-f8fd-86b2-37ec" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="1c7e-4ee9-e2e5-2efe" name="Heavy Wrench" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a65b-ebb8-f348-6b2b" name="Heavy Wrench" hidden="false" targetId="1f87-1ff2-37bc-c370" type="profile"/>
+        <infoLink id="3115-e46b-6cb0-d003" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0913-5668-0c6e-8438" name="Heavy Halberd" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9e44-3ebb-e15c-93ac" name="Heavy Halberd" hidden="false" targetId="3420-226f-a849-22d6" type="profile"/>
+        <infoLink id="f938-1396-1698-e733" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="881e-c80a-2d8d-4fae" name="Heavy Staff" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ef2a-e444-fc40-c9f3" name="Heavy Staff" hidden="false" targetId="4418-a28b-432e-0c8f" type="profile"/>
+        <infoLink id="070a-f7dc-97c5-187e" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f0d2-3350-441a-c16f" name="Psychic Powers" hidden="false" collective="false" import="true">
@@ -324,6 +485,65 @@
     <profile id="5059-61ce-e36f-3a3c" name="Techno-Horror" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Fear	</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="115d-7f04-491c-f06c" name="Defiler Priest" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Strider, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b124-76f3-30ff-95d2" name="Heavy Claw" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A2</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bf32-056d-69b5-7fe1" name="Heavy Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="11ef-1a5b-77d8-a8fe" name="Sonic Boomer" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="25cb-2f9d-0e7f-3757" name="Rail Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c59e-504f-dfd7-bd4d" name="Death Ray" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4418-a28b-432e-0c8f" name="Heavy Staff" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3420-226f-a849-22d6" name="Heavy Halberd" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1f87-1ff2-37bc-c370" name="Heavy Wrench" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">Deadly(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
