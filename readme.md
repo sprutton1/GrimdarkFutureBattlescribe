@@ -69,12 +69,13 @@ table!
 |Dwarf Guilds|v2.5|Done|
 |Elven Jesters|v2.5|Done|
 |Feudal Guard|v2.7|Done|
-|Havoc Brothers|Main v2.9 - Disciples v2.11|Done|
+|Havoc Brothers|Main v2.10 - Disciples v2.12|Done|
 |High Elf Fleets|v2.8|Done|
 |Human Defense Force|v2.12|Done|
 |Human Inquisition|2.6|Done|
 |Infected Colonies|v2.3|Done|
 |Machine Cult|v2.9|Done|
+|Machine Cult Defilers|v2.2|Done|
 |Orc Marauders|v2.10|Done|
 |Ratmen Clans|v2.5|Done|
 |Rebel Guerrillas|v2.3|Done|
