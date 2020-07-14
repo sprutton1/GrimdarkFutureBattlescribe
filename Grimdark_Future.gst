@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="18" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d755-5d69-2721-c11b" name="Grimdark Future" revision="19" battleScribeVersion="2.03" authorName="Scott Prutton" authorContact="sprutton1@gmail.com" authorUrl="https://github.com/sprutton1/GrimdarkFutureBattlescribe" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="d755-5d69-pubN65537" name="Grimdark Future v2.10"/>
   </publications>
   <costTypes>
-    <costType id="567f-6468-66c6-2ea2" name="pts" defaultCostLimit="-1.0"/>
+    <costType id="567f-6468-66c6-2ea2" name="pts" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="a8fa-e9ce-c38a-c73e" name="Unit">
@@ -485,7 +485,7 @@
     <selectionEntry id="dfe2-1816-bfb9-2813" name="Heavy Gravity Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3e76-dbe6-b7ad-9506" name="Heavy Gravity Cannon" hidden="false" targetId="9259-0661-988e-be92" type="profile"/>
-        <infoLink id="86da-aaf0-821c-44a9" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="86da-aaf0-821c-44a9" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
@@ -1191,7 +1191,7 @@ When an Aircraft is activated it must move a full 18” to 36” in a straight l
       <characteristics>
         <characteristic name="Range" typeId="79f4-5578-c041-f866">30&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A5</characteristic>
-        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(D3)</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Rending</characteristic>
       </characteristics>
     </profile>
     <profile id="70e5-4ee0-4848-bed9" name="Twin Flamethrower" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
