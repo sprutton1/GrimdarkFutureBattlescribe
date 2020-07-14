@@ -44,6 +44,11 @@
         <categoryLink id="e77c-7f0a-439d-6e10" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="c7a6-b8ac-7769-0db6" name="Isopod Vehicle" hidden="false" collective="false" import="true" targetId="da1f-ae66-66b9-7812" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4d46-7cd3-9e52-a0f1" name="New CategoryLink" hidden="false" targetId="b820-6309-e900-c733" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="f3a5-5889-ccb1-5187" name="Defiler Lord" hidden="false" collective="false" import="true" type="upgrade">
@@ -1941,6 +1946,147 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="195.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8280-3d8d-f22b-6f7d" name="Disruption Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="84cc-6da7-7a1c-585f" name="Disruption Missiles" hidden="false" targetId="ed72-346e-2fec-36a1" type="profile"/>
+        <infoLink id="f15e-4644-b04e-5a2e" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7f2c-82f3-7a12-9693" name="Energy Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="eea4-4011-ba9c-29f2" name="Energy Cannon" hidden="false" targetId="ef63-30aa-1b0b-b48f" type="profile"/>
+        <infoLink id="903e-3a82-5a60-1bc7" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="912d-82be-2622-2165" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+        <infoLink id="7633-4b58-8a90-8294" name="Indirect" hidden="false" targetId="587a-b92c-a265-06c4" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="ecc0-58c2-12df-4732" name="Iron Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b9b6-24a8-1cfe-94c4" name="Iron Cannon" hidden="false" targetId="7993-0c0d-26c4-4524" type="profile"/>
+        <infoLink id="8fdc-ba8f-cd73-502d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="05e0-8520-18c7-bce8" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9a80-ce14-4e45-a264" name="Cargo Space" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7b72-a332-ad79-60d8" name="Cargo Space" hidden="false" targetId="aa88-488f-201b-8851" type="profile"/>
+        <infoLink id="4860-23e8-ca9d-373d" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0967-bb62-9e9a-591e" name="Reinforced Carapace" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c6dd-07cf-7616-2d47" name="Reinforced Carapace" hidden="false" targetId="fc02-7c54-c245-871e" type="profile"/>
+        <infoLink id="9a9a-3819-fde4-f54b" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="da1f-ae66-66b9-7812" name="Isopod Vehicle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c475-6b85-980c-b776" name="Isopod Vehicle" hidden="false" targetId="c001-79c2-88bc-58d4" type="profile"/>
+        <infoLink id="f470-9ba6-c751-429b" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="3632-8f2a-d375-05f5" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7ad0-354b-f05c-6a7d" name="Upgrade with any:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="4242-6ca3-fd51-edd4" name="Twin Machinegun" hidden="false" collective="false" import="true" targetId="1c25-3e6f-44c9-92da" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cac5-b520-d51d-6262" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1939-e47e-ceae-dbb2" name="Disruption Missiles" hidden="false" collective="false" import="true" targetId="8280-3d8d-f22b-6f7d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c38d-4d64-aa48-d87e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="55.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="544d-947a-8892-056a" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f976-ec92-8dfb-1af4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="33a2-1453-8dfd-b209" name="Energy Cannon &amp; Machinegun" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="9a6f-ccc7-1592-9650" name="Energy Cannon" hidden="false" collective="false" import="true" targetId="7f2c-82f3-7a12-9693" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18ed-2784-33ac-e90c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2be6-1b9c-2fc9-802b" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="dc61-5d7f-06c1-09c8" name="Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8abf-fe4a-1434-b8f3" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b5c-e937-c667-34a6" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9fc1-8c03-95a1-e35b" name="Iron Cannon &amp; Machinegun" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="9db0-a8f7-42be-175a" name="Iron Cannon" hidden="false" collective="false" import="true" targetId="ecc0-58c2-12df-4732" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58ac-2bfa-0c2a-f871" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="122e-0a3d-24a6-9510" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="4642-6131-1b70-6d16" name="Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06e5-663b-1ca3-55d8" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd74-3930-7a99-77bc" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="105.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="17e3-4811-0080-ac1c" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4e1-e75c-4ad4-e470" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9770-cf9d-271b-dc27" name="Cargo Space" hidden="false" collective="false" import="true" targetId="9a80-ce14-4e45-a264" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c527-dae2-986a-e362" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="33c5-2bef-14f0-7438" name="Reinforced Carapace" hidden="false" collective="false" import="true" targetId="0967-bb62-9e9a-591e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07ba-a961-59ae-c485" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="faad-628e-d1cf-2057" name="Machinegun" hidden="false" collective="false" import="true" targetId="6bf9-8992-7b02-5764" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ccd-01e5-8cc1-dd59" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7935-dc61-ad7d-fef3" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="165.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f0d2-3350-441a-c16f" name="Psychic Powers" hidden="false" collective="false" import="true">
@@ -2465,6 +2611,44 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Strider, Tough</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c001-79c2-88bc-58d4" name="Isopod Vehicle" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Strider, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ed72-346e-2fec-36a1" name="Disruption Missiles" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ef63-30aa-1b0b-b48f" name="Energy Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Blast(3), Indirect</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7993-0c0d-26c4-4524" name="Iron Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aa88-488f-201b-8851" name="Cargo Space" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Transport(11)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fc02-7c54-c245-871e" name="Reinforced Carapace" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Tough(+6)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
