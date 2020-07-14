@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7572-18be-6192-e654" name="Machine Cult Defilers" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7572-18be-6192-e654" name="Machine Cult Defilers" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="b83e-a5b7-b6a1-a3b3" name="Machine Cult Defilers v2.2"/>
   </publications>
@@ -32,6 +32,11 @@
     <entryLink id="61c6-56ad-fdf6-9631" name="Enslaved Gunners" hidden="false" collective="false" import="true" targetId="779a-2e28-504d-1024" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="1b18-fd65-1756-a8f7" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c64b-c34b-bd37-12d4" name="Brutalizer Secutors" hidden="false" collective="false" import="true" targetId="25e7-4f79-889a-4229" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="23d1-8b24-39d2-10f0" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1432,6 +1437,9 @@
                           </constraints>
                         </entryLink>
                       </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="75c0-1c12-c1e6-f1a2" name="EMP Claws" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
@@ -1524,6 +1532,9 @@
                           </constraints>
                         </entryLink>
                       </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="2c13-c0b6-14fc-8681" name="EMP Claws" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
@@ -1592,6 +1603,92 @@
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="51db-1e2c-14f6-a8ab" name="Heavy Axe" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c145-c073-2472-4617" name="Heavy Axe" hidden="false" targetId="606c-99cd-0409-1488" type="profile"/>
+        <infoLink id="171b-f3f8-18bb-0cd9" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="1b1a-e16f-f37f-fd3f" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="25e7-4f79-889a-4229" name="Brutalizer Secutors" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b575-a396-726d-319a" name="Brutalizer Secutor" hidden="false" targetId="b8c2-f51f-3020-59cd" type="profile"/>
+        <infoLink id="acfe-7d7c-fec8-ad9b" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="c74f-f509-4a51-db9b" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="56ef-7927-2056-2806" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="74ac-f4df-551e-19ec" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="79ff-65b9-7861-c22c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f3f-3b72-8070-d4aa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f99-d4cf-4055-2eb2" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="79ff-65b9-7861-c22c" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="4d12-2f22-3009-fe78" name="Upgrade any model with up to two:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60fd-8b17-12d6-739b" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="7e63-7507-7883-e11e" name="Combustion Blaster" hidden="false" collective="false" import="true" targetId="8fba-5f0f-a070-ad33" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="475b-045a-c84c-74e3" name="Minigun" hidden="false" collective="false" import="true" targetId="7b99-9f38-072e-e027" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="05f0-ea32-8354-3954" name="Heavy Axe" hidden="false" collective="false" import="true" targetId="51db-1e2c-14f6-a8ab" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32bb-61f3-a2cd-a2be" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f66c-fdee-765e-c3a6" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="8d49-2640-098d-2adc" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="dc4e-6889-dd4b-7815" name="Upgrade any model with up to two:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00e6-ec42-e817-59b3" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="112a-66d2-0613-7742" name="Combustion Blaster" hidden="false" collective="false" import="true" targetId="8fba-5f0f-a070-ad33" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="0f38-d4e3-ec22-d7a2" name="Minigun" hidden="false" collective="false" import="true" targetId="7b99-9f38-072e-e027" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="6a76-137a-36a0-ca1e" name="Heavy Axe" hidden="false" collective="false" import="true" targetId="51db-1e2c-14f6-a8ab" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26e5-3d69-e6ee-97bf" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85b5-b62b-38b6-7614" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="175.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2098,6 +2195,19 @@
     <profile id="b671-df78-0116-21f3" name="Armored Carapace" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Defense +1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b8c2-f51f-3020-59cd" name="Brutalizer Secutor" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">4+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Strider, Tough</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="606c-99cd-0409-1488" name="Heavy Axe" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(2), Rending</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
