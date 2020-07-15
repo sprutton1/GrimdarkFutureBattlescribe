@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90cb-11c2-2d69-37f4" name="Human Defense Force" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90cb-11c2-2d69-37f4" name="Human Defense Force" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="e38f-2272-38b2-f8ca" name="Human Defense Force v2.12"/>
   </publications>
@@ -777,6 +777,33 @@
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="309e-b75b-4653-597e" name="Upgrade all models with one:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="621c-f959-fa6d-d77e" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="0932-5af0-614b-c980" name="Demo Experts" hidden="false" collective="false" import="true" targetId="2b0b-7013-64ab-074a" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="294e-bfdf-ed64-cf06" name="Grenadiers" hidden="false" collective="false" import="true" targetId="8ba6-e270-dcc2-0553" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="3b44-26e8-67e1-5bb6" name="Camo Cloaks" hidden="false" collective="false" import="true" targetId="683c-82bb-cb9d-4bf8" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="9b47-324d-ddf2-67ed" name="Forward Sentries" hidden="false" collective="false" import="true" targetId="e331-4d2d-8163-139f" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="a0f0-e2d0-be4e-f5f4" name="Upgrades - Squads" hidden="false" collective="false" import="true" targetId="3d98-afdc-dd79-5925" type="selectionEntryGroup">
@@ -812,6 +839,33 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a941-5933-1b39-fb20" type="max"/>
                       </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="0f06-b497-2506-d342" name="Upgrade all models with one:" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44f7-557c-d15d-9139" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="95a9-e34c-846e-356b" name="Demo Experts" hidden="false" collective="false" import="true" targetId="2b0b-7013-64ab-074a" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="7507-13e1-cbdf-d24c" name="Grenadiers" hidden="false" collective="false" import="true" targetId="8ba6-e270-dcc2-0553" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="f43a-bfad-8fef-da06" name="Camo Cloaks" hidden="false" collective="false" import="true" targetId="683c-82bb-cb9d-4bf8" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="4909-e1e2-d7cc-dcc8" name="Forward Sentries" hidden="false" collective="false" import="true" targetId="e331-4d2d-8163-139f" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -1047,33 +1101,6 @@
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="f976-2c4a-55e9-d627" name="Upgrade all models with one:" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a37a-72d1-6b7d-4661" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="32e4-0873-b611-1ae0" name="Demo Experts" hidden="false" collective="false" import="true" targetId="2b0b-7013-64ab-074a" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="e02e-2741-f55c-f668" name="Grenadiers" hidden="false" collective="false" import="true" targetId="8ba6-e270-dcc2-0553" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="20ac-87be-4a82-833a" name="Camo Cloaks" hidden="false" collective="false" import="true" targetId="683c-82bb-cb9d-4bf8" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="039b-2afa-e13f-c8f4" name="Forward Sentries" hidden="false" collective="false" import="true" targetId="e331-4d2d-8163-139f" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="ba79-0d2a-99e6-96c8" name="Upgrades - Squads" hidden="false" collective="false" import="true" targetId="3d98-afdc-dd79-5925" type="selectionEntryGroup">
@@ -1109,33 +1136,6 @@
                         <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ead8-60db-bf55-6858" type="max"/>
                         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d4c-ca55-8e24-e7aa" type="min"/>
                       </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="6fe8-3580-3d6e-5bc0" name="Upgrade all models with one:" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddcd-b745-c0e3-14b7" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="255a-8156-c823-f4c8" name="Demo Experts" hidden="false" collective="false" import="true" targetId="2b0b-7013-64ab-074a" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="07c7-d1d3-7df4-be09" name="Grenadiers" hidden="false" collective="false" import="true" targetId="8ba6-e270-dcc2-0553" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="928f-dec9-fddf-a15d" name="Camo Cloaks" hidden="false" collective="false" import="true" targetId="683c-82bb-cb9d-4bf8" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="521e-580c-ff96-a9f6" name="Forward Sentries" hidden="false" collective="false" import="true" targetId="e331-4d2d-8163-139f" type="selectionEntry">
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
-                      </costs>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
