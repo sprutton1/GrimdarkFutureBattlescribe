@@ -68,7 +68,7 @@ table!
 |Dark Elf Raiders|v2.7|Done|
 |Dwarf Guilds|v2.6|Done|
 |Elven Jesters|v2.6|Done|
-|Feudal Guard|v2.7|Done|
+|Feudal Guard|v2.8|Done|
 |Havoc Brothers|Main v2.10 - Disciples v2.12|Done|
 |High Elf Fleets|v2.8|Done|
 |Human Defense Force|v2.12|Done|
