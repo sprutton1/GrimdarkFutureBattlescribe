@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3214-a045-ec22-0058" name="Battle Sisters" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3214-a045-ec22-0058" name="Battle Sisters" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication id="e089-4b9a-ff51-ca3e" name="Battle Sisters v2.8"/>
+    <publication id="e089-4b9a-ff51-ca3e" name="Battle Sisters v2.9"/>
   </publications>
   <entryLinks>
     <entryLink id="6cde-138b-5cc2-da01" name="High Sister" hidden="false" collective="false" import="true" targetId="c329-5155-d464-288d" type="selectionEntry">
@@ -356,6 +356,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82bf-09f0-8db4-b2fb" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c530-36cc-7605-ee82" type="max"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+          </costs>
         </entryLink>
         <entryLink id="df81-9ebb-f7a8-69dd" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
           <constraints>
@@ -394,7 +397,7 @@
                         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2929-3287-ebf8-9218" type="min"/>
                       </constraints>
                     </entryLink>
-                    <entryLink id="87bb-b74c-9983-ef9b" name="Scout Sister (Special Weapon)" hidden="false" collective="false" import="true" targetId="74ae-4e56-4c65-8106" type="selectionEntry">
+                    <entryLink id="87bb-b74c-9983-ef9b" name="Vanguard Sister Specialist" hidden="false" collective="false" import="true" targetId="74ae-4e56-4c65-8106" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3825-d6d1-4f16-a64b" type="max"/>
                       </constraints>
@@ -830,7 +833,7 @@
         <entryLink id="d855-37b9-3cf5-524f" name="Upgrades - Vehicles" hidden="false" collective="false" import="true" targetId="6988-d6e3-e440-ecd4" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="180.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9aa9-c75b-1ba1-70c5" name="Infernal APC" hidden="false" collective="false" import="true" type="upgrade">
@@ -866,7 +869,7 @@
         <entryLink id="9a86-e638-d4d8-4f78" name="Upgrades - Vehicles" hidden="false" collective="false" import="true" targetId="6988-d6e3-e440-ecd4" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="195.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ad31-9f3d-be3c-46be" name="Organ Missiles" hidden="false" collective="false" import="true" type="upgrade">
@@ -907,7 +910,7 @@
         <entryLink id="ce33-14f1-3584-e3fc" name="Upgrades - Vehicles" hidden="false" collective="false" import="true" targetId="6988-d6e3-e440-ecd4" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="390.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="340.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c05f-cba3-14ea-79fe" name="Holy Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -954,7 +957,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="390.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="305.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f271-edb8-d9db-6669" name="Jetpack" hidden="false" collective="false" import="true" type="upgrade">
@@ -2207,7 +2210,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="250.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="225.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1476-38e1-10d9-7b21" name="Support Walker" hidden="false" collective="false" import="true" type="upgrade">
@@ -2255,7 +2258,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="260.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="235.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e6df-17ea-6c6d-8619" name="Biker Fanatics" hidden="false" collective="false" import="true" type="upgrade">
@@ -2290,7 +2293,6 @@
                     <entryLink id="1c0f-4c23-990e-f30d" name="Biker Fanatic Leader" hidden="false" collective="false" import="true" targetId="7db7-4c89-6f82-134c" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6db6-16b7-1df5-4337" type="max"/>
-
                       </constraints>
                     </entryLink>
                   </entryLinks>
