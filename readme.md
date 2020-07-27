@@ -72,7 +72,7 @@ table!
 |Havoc Brothers|Main v2.11 - Disciples v2.13|Done|
 |High Elf Fleets|v2.9|Done|
 |Human Defense Force|v2.13|Done|
-|Human Inquisition|2.6|Done|
+|Human Inquisition|2.7|Done|
 |Infected Colonies|v2.3|Done|
 |Machine Cult|v2.9|Done|
 |Machine Cult Defilers|v2.2|Done|
