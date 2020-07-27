@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b41f-6946-b3b9-fe3e" name="Ratmen Clans" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b41f-6946-b3b9-fe3e" name="Ratmen Clans" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication id="e6e7-4904-f614-fbcb" name="Ratmen Clans v2.5"/>
+    <publication id="e6e7-4904-f614-fbcb" name="Ratmen Clans v2.6"/>
   </publications>
   <entryLinks>
     <entryLink id="45f7-9e60-bfe0-7602" name="Clan Mother" hidden="false" collective="false" import="true" targetId="ca79-64f5-3468-7155" type="selectionEntry">
@@ -319,6 +319,16 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="5d44-b52d-379d-c147" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="77e0-0bbf-54ae-e813" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="530d-6b96-87f2-9aab" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="1c58-ddf0-56d0-1adf" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="3f62-1184-05cb-c71d">
           <constraints>
@@ -1204,7 +1214,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="175.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="150.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c63e-52c4-f88d-ad10" name="Claws" hidden="false" collective="false" import="true" type="upgrade">
@@ -1248,7 +1258,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="415.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="365.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bd84-5709-43c0-917d" name="Death Wheel" hidden="false" collective="false" import="true" type="upgrade">
@@ -1268,7 +1278,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="180.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="155.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a5dd-554d-0207-aa8d" name="Super Machinegun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1363,7 +1373,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="135.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="582a-1b07-edc0-592c" name="Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -1436,7 +1446,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="350.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="300.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7f34-4a2e-5bdd-8f39" name="Tunneling Drill" hidden="false" collective="false" import="true" type="upgrade">
@@ -1497,12 +1507,18 @@
         <infoLink id="a61a-0682-40b8-92c7" name="Stomp" hidden="false" targetId="9646-8774-9c91-b843" type="profile"/>
         <infoLink id="b9c6-22b8-bf88-d5ff" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2695-00f7-a2f2-21fa" name="Stomp" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="244a-4577-aa4f-5ade" name="Stomp" hidden="false" targetId="65d2-5d9d-6aa7-b824" type="profile"/>
         <infoLink id="92cd-8fbf-00a9-9ca4" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -1520,6 +1536,9 @@
             <infoLink id="3abe-521c-0538-2460" name="Pestilence" hidden="false" targetId="a1ea-cf80-839f-777a" type="profile"/>
             <infoLink id="5700-8e7f-df57-1205" name="Sickness" hidden="false" targetId="444e-e065-3a4f-e408" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
