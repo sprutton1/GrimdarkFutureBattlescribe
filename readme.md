@@ -70,7 +70,7 @@ table!
 |Elven Jesters|v2.6|Done|
 |Feudal Guard|v2.8|Done|
 |Havoc Brothers|Main v2.11 - Disciples v2.13|Done|
-|High Elf Fleets|v2.8|Done|
+|High Elf Fleets|v2.9|Done|
 |Human Defense Force|v2.12|Done|
 |Human Inquisition|2.6|Done|
 |Infected Colonies|v2.3|Done|
