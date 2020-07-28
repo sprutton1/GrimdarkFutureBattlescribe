@@ -1,6 +1,16 @@
-[![Build Status](https://travis-ci.com/sprutton1/GrimdarkFutureBattlescribe.svg?branch=master)](https://travis-ci.com/sprutton1/GrimdarkFutureBattlescribe)
+![CI](https://github.com/sprutton1/GrimdarkFutureBattlescribe/workflows/CI/badge.svg?branch=master)
 
-<!-- TOC -->autoauto- [Introduction](#introduction)auto- [How do I use these files?](#how-do-i-use-these-files)auto    - [Instructions](#instructions)auto- [How can I help?](#how-can-i-help)auto    - [Adding an army](#adding-an-army)auto        - [Guidelines](#guidelines)auto        - [What's Done](#whats-done)auto    - [Reporting an issue](#reporting-an-issue)auto- [Credits](#credits)autoauto<!-- /TOC -->
+<!-- TOC -->
+- [Introduction](#introduction) 
+- [How do I use these files?](#how-do-i-use-these-files)
+   - [Instructions](#instructions)
+- [How can I help?](#how-can-i-help)
+   - [Adding an army](#adding-an-army)
+      - [Guidelines](#guidelines)
+      - [What's Done](#whats-done)
+   - [Reporting an issue](#reporting-an-issue)
+- [Credits](#credits)
+<!-- /TOC -->
 
 # Introduction
 
@@ -70,19 +80,19 @@ table!
 |Elven Jesters|v2.6|Done|
 |Feudal Guard|v2.8|Done|
 |Havoc Brothers|Main v2.11 - Disciples v2.13|Done|
-|High Elf Fleets|v2.8|Done|
-|Human Defense Force|v2.12|Done|
-|Human Inquisition|2.6|Done|
-|Infected Colonies|v2.3|Done|
-|Machine Cult|v2.9|Done|
-|Machine Cult Defilers|v2.2|Done|
-|Orc Marauders|v2.10|Done|
-|Ratmen Clans|v2.5|Done|
-|Rebel Guerrillas|v2.3|Done|
-|Robot Legions|v2.8|Done|
-|Soul-Snatcher Cults|v2.7|Done|
-|TAO Coalition|v2.10|Done|
-|Titan Lords|v2.3|Done|
+|High Elf Fleets|v2.9|Done|
+|Human Defense Force|v2.13|Done|
+|Human Inquisition|2.7|Done|
+|Infected Colonies|v2.4|Done|
+|Machine Cult|v2.10|Done|
+|Machine Cult Defilers|v2.3|Done|
+|Orc Marauders|v2.11|Done|
+|Ratmen Clans|v2.6|Done|
+|Rebel Guerrillas|v2.5|Done|
+|Robot Legions|v2.10|Done|
+|Soul-Snatcher Cults|v2.8|Done|
+|TAO Coalition|v2.11|Done|
+|Titan Lords|v2.4|Done|
 |Wormhole Daemons|v2.8|Done|
 
 
