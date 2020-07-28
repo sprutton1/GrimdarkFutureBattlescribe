@@ -81,7 +81,7 @@ table!
 |Rebel Guerrillas|v2.5|Done|
 |Robot Legions|v2.10|Done|
 |Soul-Snatcher Cults|v2.8|Done|
-|TAO Coalition|v2.10|Done|
+|TAO Coalition|v2.11|Done|
 |Titan Lords|v2.3|Done|
 |Wormhole Daemons|v2.8|Done|
 
