@@ -93,7 +93,7 @@ table!
 |Soul-Snatcher Cults|v2.8|Done|
 |TAO Coalition|v2.11|Done|
 |Titan Lords|v2.4|Done|
-|Vile Rattus Cult|v2.5|Awaiting Review|
+|Vile Rattus Cult|v2.5|Done|
 |Wormhole Daemons|v2.8|Done|
 
 
