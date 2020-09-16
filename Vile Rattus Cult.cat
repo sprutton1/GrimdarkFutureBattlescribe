@@ -576,6 +576,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0e71-de17-2542-1a3b" name="Clawpack" hidden="false" collective="false" import="true" type="unit">
       <selectionEntryGroups>
@@ -654,6 +657,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c84e-e089-a850-4eea" name="Vermin" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -727,6 +733,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0ed2-df70-edc2-c9a1" name="Weapon Teams " hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -813,6 +822,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f210-c120-1cf2-708d" name="Bomb Rat" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -954,6 +966,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ff6f-40ff-b326-e9dd" name="Heavy Tunnel Rider" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -973,7 +988,12 @@
       </infoLinks>
       <entryLinks>
         <entryLink id="f498-7bd2-af71-0b65" name="Upgrades J" hidden="false" collective="false" import="true" targetId="274f-8656-a3ae-381d" type="selectionEntryGroup"/>
-        <entryLink id="c408-8dcc-5cdb-1430" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry"/>
+        <entryLink id="c408-8dcc-5cdb-1430" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46bd-212b-7eaf-bee1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ed-1161-4fae-9b9b" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
@@ -1664,6 +1684,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4df9-7ddc-9920-c529" name="Rat Swarms" hidden="false" collective="false" import="true" type="unit">
       <selectionEntryGroups>
@@ -1702,6 +1725,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="be4f-1ecf-5f12-7d2b" name="Swarm Attacks" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1796,6 +1822,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bdf3-52a4-7183-0ade" name="Warren Lord" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -1898,6 +1927,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="22f2-7961-13e3-fd04" name="Tunnel Riders " hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1941,6 +1973,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="953c-7698-27df-3c6e" name="Wolf Rat Rider (Replace One Pistol)" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
@@ -2427,6 +2462,9 @@
       <infoLinks>
         <infoLink id="13d5-24e6-5d46-8c66" name="Shotgun" hidden="false" targetId="60a3-2b87-f77c-195c" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2915,7 +2953,7 @@
         <selectionEntryGroup id="ac40-be38-5eb8-411c" name="Replace Heavy Flamethrower:" hidden="false" collective="false" import="true" defaultSelectionEntryId="4558-ae57-933b-2741">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a8b-bad4-adbb-a1e7" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7630-5d8e-a5a0-d7d5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7630-5d8e-a5a0-d7d5" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="4558-ae57-933b-2741" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry"/>
