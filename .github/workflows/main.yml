@@ -15,10 +15,10 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0
+        dotnet-version: 2.1
      
     - name: Install Wham
-      run: dotnet tool install wham --global
+      run: dotnet tool install wham --global --version 0.11.0
       
     - name: Build Index
       run:  wham publish -a zip bsi -s . -o ./index --repo-name https://grimdark-future.s3.amazonaws.com/index.bsi -f index
