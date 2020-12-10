@@ -34,6 +34,11 @@
         <categoryLink id="db11-c9d9-7348-88be" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="5820-dc9b-6031-409c" name="Destroyers" hidden="false" collective="false" import="true" targetId="8c2c-98b4-9d3f-427a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fec4-a913-ffc5-d843" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6aa2-c74a-2453-285b" name="Custodian Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -584,6 +589,136 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry id="0a49-b50a-3c5d-4300" name="Wrist-GL" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9c4e-ffa9-c476-23bd" name="Wrist-GL" hidden="false" targetId="dbf6-fd35-7b72-ef62" type="profile"/>
+        <infoLink id="d315-207a-144e-5aad" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="8c2c-98b4-9d3f-427a" name="Destroyers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="248f-9ad4-3ce3-6b96" name="Destroyer" hidden="false" targetId="475c-3e4d-5813-339e" type="profile"/>
+        <infoLink id="df31-395f-cc45-5bdf" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="349d-4ea4-727c-faa6" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+        <infoLink id="5854-7e77-995d-9182" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6c2b-3f15-ba20-f527" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="0195-fd08-d002-ccec">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9ed-a6c6-50df-163f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c46f-5fb5-9f76-291c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0195-fd08-d002-ccec" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="737d-e8cf-b85f-6980" name="Upgrade List J" hidden="false" collective="false" import="true">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="df50-9672-ea4f-d2ef" name="Replace any Spear-Rifle:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6075-24a0-74d4-b4f1">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07fb-8f88-1d9c-aaa4" type="min"/>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a011-1136-ae2a-fec7" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="6075-24a0-74d4-b4f1" name="Spear-Rifle" hidden="false" collective="false" import="true" targetId="2031-9dc7-5c03-46f4" type="selectionEntry"/>
+                        <entryLink id="13b5-9baa-990f-d392" name="Axe-Rifle" hidden="false" collective="false" import="true" targetId="32f0-99ee-3cec-b469" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup id="fa64-a1e6-f6af-eed1" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                      <selectionEntries>
+                        <selectionEntry id="16ff-aed7-605e-7b54" name="Wrist-GLs" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1a9-7b75-d318-d159" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="1999-2703-a9a1-ff3a" name="Wrist-GL" hidden="false" collective="false" import="true" targetId="0a49-b50a-3c5d-4300" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c136-5c16-a917-b932" type="min"/>
+                                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9200-14df-9ef7-e3be" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup id="d53a-9d62-2b3e-a9ae" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b302-5eec-ac28-12a8" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="e719-6253-b06a-de05" name="Battle Standard" hidden="false" collective="false" import="true" targetId="7e9b-b183-b0b9-9883" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="515.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f69c-65b2-6546-5780" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="6c50-a920-3a66-c51c" name="Upgrade List J" hidden="false" collective="false" import="true">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="7e54-2a2a-330c-6443" name="Replace any Spear-Rifle:" hidden="false" collective="false" import="true" defaultSelectionEntryId="145f-5276-9ba3-9547">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5eeb-bcce-e0e7-d056" type="min"/>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="677e-0c4f-981d-836e" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="145f-5276-9ba3-9547" name="Spear-Rifle" hidden="false" collective="false" import="true" targetId="2031-9dc7-5c03-46f4" type="selectionEntry"/>
+                        <entryLink id="adf3-898e-76e3-2061" name="Axe-Rifle" hidden="false" collective="false" import="true" targetId="32f0-99ee-3cec-b469" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup id="2947-27f5-f858-bf11" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+                      <selectionEntries>
+                        <selectionEntry id="2a6f-2a63-ae21-6b27" name="Wrist-GLs" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="971d-9fbd-ec3c-0fe6" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="03ab-cd4b-3218-40e6" name="Wrist-GL" hidden="false" collective="false" import="true" targetId="0a49-b50a-3c5d-4300" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b080-cff0-ccb7-8df6" type="min"/>
+                                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45e7-bdc2-4a44-adc9" type="max"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup id="00df-562e-558f-643b" name="Upgrade two models with:" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58d7-556a-d9f3-5e7c" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="1494-44c1-84ed-d4e2" name="Battle Standard" hidden="false" collective="false" import="true" targetId="7e9b-b183-b0b9-9883" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="1030.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1897-d8cd-05a0-2d67" name="Upgrade List A" hidden="false" collective="false" import="true" defaultSelectionEntryId="45f9-43d5-601f-a9b6">
@@ -1063,6 +1198,20 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="475c-3e4d-5813-339e" name="Destroyer" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fearless, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dbf6-fd35-7b72-ef62" name="Wrist-GL" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">Blast(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
