@@ -29,6 +29,11 @@
         <categoryLink id="9346-6cff-ab57-ed2a" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="e3e3-af96-1307-9d0b" name="Custodian Squad" hidden="false" collective="false" import="true" targetId="4ff5-9212-af1f-273d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="db11-c9d9-7348-88be" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6aa2-c74a-2453-285b" name="Custodian Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -544,6 +549,41 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry id="4ff5-9212-af1f-273d" name="Custodian Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c972-7e14-c7a4-3d0c" name="Custodian Team" hidden="false" targetId="b71a-907b-067c-bd0a" type="profile"/>
+        <infoLink id="0f08-cc43-7087-b540" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="2cfe-7aa0-de45-8355" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7974-f669-5d64-aaec" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="6a62-927c-ea35-b45b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37d4-55f0-360a-9fd2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3807-f982-3dcc-cfc5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6a62-927c-ea35-b45b" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="6665-1dbc-19a1-2b64" name="Upgrade List G (5-man)" hidden="false" collective="false" import="true" targetId="851f-79e8-da7e-d3ee" type="selectionEntryGroup"/>
+                <entryLink id="47a6-0174-4e9a-53d5" name="Upgrade List I (single unit)" hidden="false" collective="false" import="true" targetId="be4e-c6ed-0e50-8c78" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="445.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="49fe-11b7-9ef1-3ac8" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="38d5-119a-5910-3fb5" name="Upgrade List G (10-man)" hidden="false" collective="false" import="true" targetId="df4b-35b4-e1f7-ad3a" type="selectionEntryGroup"/>
+                <entryLink id="1cc8-5c26-41f2-16cb" name="Upgrade List I (combined unit)" hidden="false" collective="false" import="true" targetId="c40d-cee6-59e7-43ca" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="890.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1897-d8cd-05a0-2d67" name="Upgrade List A" hidden="false" collective="false" import="true" defaultSelectionEntryId="45f9-43d5-601f-a9b6">
@@ -606,7 +646,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7695-17c4-7700-b2fc" name="Upgrade List G (single unit)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="7695-17c4-7700-b2fc" name="Upgrade List G (3-man)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="2c37-a201-5a44-e6ff" name="Replace any Spear-Rifle:" hidden="false" collective="false" import="true" defaultSelectionEntryId="4bc5-787f-89ef-3193">
           <constraints>
@@ -648,7 +688,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="4d05-bdb2-3473-c219" name="Upgrade List G (combined unit)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="4d05-bdb2-3473-c219" name="Upgrade List G (6-man)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="5d53-4df8-2c6f-af99" name="Replace any Spear-Rifle:" hidden="false" collective="false" import="true" defaultSelectionEntryId="437b-99ce-c10a-f4b4">
           <constraints>
@@ -684,6 +724,138 @@
             <entryLink id="16a6-042c-6c7e-3d3a" name="Battle Standard" hidden="false" collective="false" import="true" targetId="7e9b-b183-b0b9-9883" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="851f-79e8-da7e-d3ee" name="Upgrade List G (5-man)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="684f-61fd-1aa2-6e51" name="Replace any Spear-Rifle:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce84-a17a-5042-c40c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="826c-557f-213f-b83d" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bec-feae-8f31-cf3b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="52e4-8448-8b42-c509" name="Heavy Assault Rifle &amp; Ritual Dagger" hidden="false" collective="false" import="true" targetId="c96a-25c9-7431-9117" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="85da-fb69-96d4-7e86" name="Axe-Rifle" hidden="false" collective="false" import="true" targetId="32f0-99ee-3cec-b469" type="selectionEntry"/>
+            <entryLink id="899b-8fd8-d088-ebc7" name="Sword-Rifle" hidden="false" collective="false" import="true" targetId="2324-7fe8-7559-ebf1" type="selectionEntry"/>
+            <entryLink id="8ac0-3da8-2ed6-f219" name="Spear-Bolt" hidden="false" collective="false" import="true" targetId="e0fa-230d-eb47-a793" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="cfa0-a924-26d7-d79d" name="Spear-Fuse" hidden="false" collective="false" import="true" targetId="eef1-3099-f708-4385" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ce84-a17a-5042-c40c" name="Spear-Rifle" hidden="false" collective="false" import="true" targetId="2031-9dc7-5c03-46f4" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1dd1-0ac0-28d1-af9a" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="851b-242e-459d-a989" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b6e8-6aae-5230-d905" name="Battle Standard" hidden="false" collective="false" import="true" targetId="7e9b-b183-b0b9-9883" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="df4b-35b4-e1f7-ad3a" name="Upgrade List G (10-man)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="343a-cfea-a2fd-e309" name="Replace any Spear-Rifle:" hidden="false" collective="false" import="true" defaultSelectionEntryId="adc3-c2ec-8c23-ac7d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d09-5d8a-2732-f02a" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f813-bb1a-95e4-f228" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="136a-6f36-e7dd-f524" name="Heavy Assault Rifle &amp; Ritual Dagger" hidden="false" collective="false" import="true" targetId="c96a-25c9-7431-9117" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="20ab-5503-380f-973f" name="Axe-Rifle" hidden="false" collective="false" import="true" targetId="32f0-99ee-3cec-b469" type="selectionEntry"/>
+            <entryLink id="b05c-419c-7711-23f5" name="Sword-Rifle" hidden="false" collective="false" import="true" targetId="2324-7fe8-7559-ebf1" type="selectionEntry"/>
+            <entryLink id="a719-40c6-db1c-fb0f" name="Spear-Bolt" hidden="false" collective="false" import="true" targetId="e0fa-230d-eb47-a793" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="da8e-3bbc-8723-c326" name="Spear-Fuse" hidden="false" collective="false" import="true" targetId="eef1-3099-f708-4385" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="adc3-c2ec-8c23-ac7d" name="Spear-Rifle" hidden="false" collective="false" import="true" targetId="2031-9dc7-5c03-46f4" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8849-109c-ee1e-200d" name="Upgrade two models with:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2234-29cf-34dc-2d16" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4c17-b365-2551-fe44" name="Battle Standard" hidden="false" collective="false" import="true" targetId="7e9b-b183-b0b9-9883" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="be4e-c6ed-0e50-8c78" name="Upgrade List I (single unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8285-e412-ff6b-b0ec" name="Upgrade all models with any:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="2548-541f-d6b8-00b3" name="Combat Shield" hidden="false" collective="false" import="true" targetId="b8dd-5148-eadf-05fc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4053-b41b-3ef5-7153" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="50ef-52da-0e68-6ec7" name="Warden" hidden="false" collective="false" import="true" targetId="c163-94e8-2a3d-2c56" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ace5-0a01-6d17-9fd5" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="c40d-cee6-59e7-43ca" name="Upgrade List I (combined unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="78c4-79b9-8efe-9d08" name="Upgrade all models with any:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="ff09-f12d-09a1-d462" name="Combat Shield" hidden="false" collective="false" import="true" targetId="b8dd-5148-eadf-05fc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c85-bf40-1e57-d2aa" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="83fd-fa96-b1be-b59b" name="Warden" hidden="false" collective="false" import="true" targetId="c163-94e8-2a3d-2c56" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a067-c7e6-f7af-54c7" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="180.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -886,7 +1058,7 @@
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
       </characteristics>
     </profile>
-    <profile id="b71a-907b-067c-bd0a" name="Custodian Team" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="b71a-907b-067c-bd0a" name="Custodian" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
