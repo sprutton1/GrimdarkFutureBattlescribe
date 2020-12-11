@@ -44,6 +44,11 @@
         <categoryLink id="fefb-2041-d3c6-89f9" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="e635-8e17-a5e2-9375" name="Jetbikes" hidden="false" collective="false" import="true" targetId="cdcb-11fd-cf20-05d6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fa38-f2a3-2f81-4927" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6aa2-c74a-2453-285b" name="Custodian Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -897,6 +902,169 @@
         <infoLink id="2368-154f-8798-50b6" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="58bb-5e7e-20f9-99d3" name="Energy Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="29cf-de6a-c250-4053" name="Energy Lance" hidden="false" targetId="60ac-359e-829f-f4e4" type="profile"/>
+        <infoLink id="839e-e563-fa62-646b" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="0a8e-aeb7-84de-02c4" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="8fd8-9d7f-41b8-6efe" name="Devastator" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="676f-2e40-bc38-13bf" name="Devastator" hidden="false" targetId="d308-4f3e-c0d4-2039" type="profile"/>
+        <infoLink id="57b7-695a-645c-e36d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="25d0-05db-5cd1-48cc" name="Fusion Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2d11-1ef4-e4a5-fad1" name="Fusion Missiles" hidden="false" targetId="e7ee-beae-8923-0595" type="profile"/>
+        <infoLink id="d7d4-53ec-6def-4c4b" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="06e0-88a7-8331-7957" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="cf15-e65b-8c54-d2e4" name="Twin Laser Pulser" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="90a7-a773-29ee-0ac4" name="Twin Laser Pulser" hidden="false" targetId="dcc6-4e8e-0578-c236" type="profile"/>
+        <infoLink id="dff3-f300-9603-877a" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="23f4-747e-9510-6faf" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="cdcb-11fd-cf20-05d6" name="Jetbikes" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="de7d-ab87-8f46-70f0" name="Jetbiker" hidden="false" targetId="c20b-5c23-5bb3-f91b" type="profile"/>
+        <infoLink id="47b5-7cfa-6cfb-6c5a" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="b8b4-c5c4-e080-4db8" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="f54e-1a88-25f3-e232" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="b8eb-f93a-9c37-5b5a" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="e666-43fd-51df-ac58" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d654-6f28-1c97-a1fa" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="2f3c-11ec-eca7-5b84">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a355-de78-23ff-bfc2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e60-f240-8924-99d3" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2f3c-11ec-eca7-5b84" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="b656-eba6-40ad-4cc6" name="Upgrade List L" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="9081-644a-e57d-7c98" name="Upgrade all models with Assault Rifle Arrays" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="059e-9d33-c5a2-2126" type="max"/>
+                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="2c9e-3f73-2bd8-9bde" name="Replace any Assault Rifle Array:" hidden="false" collective="false" import="true" defaultSelectionEntryId="21b3-0523-3b8c-9dd3">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bd8-dbf2-268d-1423" type="min"/>
+                            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b05-0611-7da7-d147" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="21b3-0523-3b8c-9dd3" name="Assault Rifle Array" hidden="false" collective="false" import="true" targetId="faa1-761d-0d50-2135" type="selectionEntry"/>
+                            <entryLink id="58d1-211a-9b1b-29f2" name="Fusion Missiles" hidden="false" collective="false" import="true" targetId="25d0-05db-5cd1-48cc" type="selectionEntry">
+                              <costs>
+                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                              </costs>
+                            </entryLink>
+                            <entryLink id="f919-28d1-b3c9-1b94" name="Devastator" hidden="false" collective="false" import="true" targetId="8fd8-9d7f-41b8-6efe" type="selectionEntry">
+                              <costs>
+                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                              </costs>
+                            </entryLink>
+                            <entryLink id="a9e3-d8f5-e27a-deee" name="Twin Laser Pulser" hidden="false" collective="false" import="true" targetId="cf15-e65b-8c54-d2e4" type="selectionEntry">
+                              <costs>
+                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+                              </costs>
+                            </entryLink>
+                            <entryLink id="5f65-1e55-e998-e7f1" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+                              <costs>
+                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                              </costs>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="888c-a34c-1e22-19c3" name="Energy Lance" hidden="false" collective="false" import="true" targetId="58bb-5e7e-20f9-99d3" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="821b-a409-dfad-0860" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9787-b948-058f-12b5" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="295.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="82d9-db5b-a634-4537" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2e99-915f-683b-c300" name="Upgrade List L" hidden="false" collective="false" import="true">
+                  <selectionEntries>
+                    <selectionEntry id="2277-a916-f21a-89a1" name="Upgrade all models with Assault Rifle Arrays" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f529-cc1e-adb3-0232" type="max"/>
+                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup id="9da8-f2e8-22d5-c6b6" name="Replace any Assault Rifle Array:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e24-992f-2507-1e22">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e13-3818-6351-a4c1" type="min"/>
+                            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3843-d309-3bf2-f2e6" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="2e24-992f-2507-1e22" name="Assault Rifle Array" hidden="false" collective="false" import="true" targetId="faa1-761d-0d50-2135" type="selectionEntry"/>
+                            <entryLink id="a439-3f14-5a23-dd9a" name="Fusion Missiles" hidden="false" collective="false" import="true" targetId="25d0-05db-5cd1-48cc" type="selectionEntry">
+                              <costs>
+                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                              </costs>
+                            </entryLink>
+                            <entryLink id="7e9a-18cc-34ab-a444" name="Devastator" hidden="false" collective="false" import="true" targetId="8fd8-9d7f-41b8-6efe" type="selectionEntry">
+                              <costs>
+                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                              </costs>
+                            </entryLink>
+                            <entryLink id="a7e5-0451-f885-f1ec" name="Twin Laser Pulser" hidden="false" collective="false" import="true" targetId="cf15-e65b-8c54-d2e4" type="selectionEntry">
+                              <costs>
+                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+                              </costs>
+                            </entryLink>
+                            <entryLink id="f883-5141-23ac-1379" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+                              <costs>
+                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                              </costs>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <costs>
+                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="140.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="3b88-1eb2-0111-be30" name="Energy Lance" hidden="false" collective="false" import="true" targetId="58bb-5e7e-20f9-99d3" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="978d-abd7-92f3-0641" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="654b-40f2-c989-4f89" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="590.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1897-d8cd-05a0-2d67" name="Upgrade List A" hidden="false" collective="false" import="true" defaultSelectionEntryId="45f9-43d5-601f-a9b6">
@@ -1423,6 +1591,40 @@
       <characteristics>
         <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
         <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c20b-5c23-5bb3-f91b" name="Jetbiker" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fearless, Impact(1), Strider, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="60ac-359e-829f-f4e4" name="Energy Lance" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A3</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(1), Impact(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d308-4f3e-c0d4-2039" name="Devastator" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A4</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e7ee-beae-8923-0595" name="Fusion Missiles" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dcc6-4e8e-0578-c236" name="Twin Laser Pulser" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Blast(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
