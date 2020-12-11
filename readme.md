@@ -79,7 +79,7 @@ table!
 |Dwarf Guilds|v2.6|Done|
 |Elven Jesters|v2.6|Done|
 |Feudal Guard|v2.8|Done|
-|Havoc Brothers|Main v2.11 - Disciples v2.13|Done|
+|Havoc Brothers|Main v2.11 - Disciples v2.15|Done|
 |High Elf Fleets|v2.9|Done|
 |Human Defense Force|v2.13|Done|
 |Human Inquisition|2.7|Done|
