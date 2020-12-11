@@ -54,6 +54,11 @@
         <categoryLink id="28cd-c6a7-83a2-16c4" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="1550-50f6-9096-9c6e" name="Prosecution Sisters" hidden="false" collective="false" import="true" targetId="4b4d-8d79-c3ef-9dc1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="14fe-d7e3-832d-4391" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6aa2-c74a-2453-285b" name="Custodian Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -1143,6 +1148,97 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="240.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="4b4d-8d79-c3ef-9dc1" name="Prosecution Sisters" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8f18-9314-ebc9-be31" name="Prosecution Sister" hidden="false" targetId="f211-bf2f-ff59-3f01" type="profile"/>
+        <infoLink id="ebde-ff24-c2c0-4707" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="90d3-6f28-865b-e29b" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d98a-a93f-a200-066d" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b26-b0dd-d11d-4184">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da88-b40e-5a23-df74" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a0f-d302-9699-11b5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2b26-b0dd-d11d-4184" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="38f0-b47c-63c5-4caa" name="Upgrade List E:" hidden="false" collective="false" import="true">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="924a-a758-ccd4-55c1" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                      <entryLinks>
+                        <entryLink id="9822-f0d5-d2e7-4c8c" name="Anti-Psychic" hidden="false" collective="false" import="true" targetId="9860-5ae6-85ce-1f33" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3031-4f23-f391-377f" type="max"/>
+                          </constraints>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="57d5-246b-efec-f4f7" name="Prosecution Rifle" hidden="false" collective="false" import="true" targetId="c89b-585b-b84f-adc9" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c10-c7ce-342c-823a" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0aad-534b-e9a2-a38b" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="9680-8132-048f-4bd0" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8114-14d6-71ab-ad7b" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75ce-f4c0-729a-8cf1" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="150.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c0ab-cc49-bb6f-5f64" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="0aef-52c3-4697-77ef" name="Upgrade List E:" hidden="false" collective="false" import="true">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="9269-ecb4-3b45-84ed" name="Upgrade two models with:" hidden="false" collective="false" import="true">
+                      <entryLinks>
+                        <entryLink id="0c69-1f18-d85e-a5f6" name="Anti-Psychic" hidden="false" collective="false" import="true" targetId="9860-5ae6-85ce-1f33" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd37-8da9-7137-dd70" type="max"/>
+                          </constraints>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="7627-6c97-784a-e806" name="Prosecution Rifle" hidden="false" collective="false" import="true" targetId="c89b-585b-b84f-adc9" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bfe-6e5c-4eea-ff43" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4638-a98a-2209-1809" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="1562-833a-e3f4-5f71" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daca-6542-351e-2a3a" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac34-eb75-7917-7198" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="300.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
