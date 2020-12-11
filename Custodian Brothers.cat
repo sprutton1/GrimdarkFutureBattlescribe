@@ -49,6 +49,11 @@
         <categoryLink id="fa38-f2a3-2f81-4927" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="404a-912a-55a4-f3cf" name="Vigilant Sisters" hidden="false" collective="false" import="true" targetId="5119-6a6b-60be-cc89" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="28cd-c6a7-83a2-16c4" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6aa2-c74a-2453-285b" name="Custodian Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -1065,6 +1070,85 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry id="5119-6a6b-60be-cc89" name="Vigilant Sisters" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="33fd-414f-9126-1815" name="Vigilant Sister" hidden="false" targetId="252b-d8ef-c7db-2134" type="profile"/>
+        <infoLink id="1e6c-93f5-5bf1-fc3b" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="ca78-cb3e-b0ab-9041" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4c56-1e2c-b20c-3a92" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="937b-1c8c-a0c2-ed21">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="580d-8a41-a0a5-491c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6240-df27-1c7d-6c9b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="937b-1c8c-a0c2-ed21" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="ee79-2f0a-6492-72b6" name="Upgrade List E:" hidden="false" collective="false" import="true">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="4e42-bf71-d633-4344" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+                      <entryLinks>
+                        <entryLink id="b300-0fbf-2cb8-49cc" name="Anti-Psychic" hidden="false" collective="false" import="true" targetId="9860-5ae6-85ce-1f33" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcf7-a9bd-2e7f-3cb1" type="max"/>
+                          </constraints>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="01c8-ea43-7889-86d8" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a19-4ee5-0615-f854" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7151-86df-1fbf-403c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dff4-b11a-a1f0-9638" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="6c87-d793-466d-3955" name="Upgrade List E:" hidden="false" collective="false" import="true">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="de0f-ce25-f7b4-496e" name="Upgrade two models with:" hidden="false" collective="false" import="true">
+                      <entryLinks>
+                        <entryLink id="9fd7-6ba9-51de-17f1" name="Anti-Psychic" hidden="false" collective="false" import="true" targetId="9860-5ae6-85ce-1f33" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6bf-ca57-83bb-0b7e" type="max"/>
+                          </constraints>
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="3eb5-2f35-5d28-2f4e" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1430-a434-3d3f-19da" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15d7-2a24-a66a-dadb" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="240.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1897-d8cd-05a0-2d67" name="Upgrade List A" hidden="false" collective="false" import="true" defaultSelectionEntryId="45f9-43d5-601f-a9b6">
@@ -1625,6 +1709,27 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="386b-053d-aabb-416f" name="Hunter Sister" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Scout</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f211-bf2f-ff59-3f01" name="Prosecution Sister" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Relentless</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="252b-d8ef-c7db-2134" name="Vigilant Sister" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">3+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Furious</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
