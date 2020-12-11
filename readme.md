@@ -77,7 +77,7 @@ table!
 |Battle Sisters|v2.9|Done|
 |Dark Elf Raiders|v2.7|Done|
 |Dwarf Guilds|v2.6|Done|
-|Elven Jesters|v2.6|Done|
+|Elven Jesters|v2.7|Done|
 |Feudal Guard|v2.8|Done|
 |Havoc Brothers|Main v2.11 - Disciples v2.13|Done|
 |High Elf Fleets|v2.9|Done|
