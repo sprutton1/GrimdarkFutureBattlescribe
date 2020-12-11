@@ -74,6 +74,11 @@
         <categoryLink id="4dac-0021-2423-f87c" name="New CategoryLink" hidden="false" targetId="b820-6309-e900-c733" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="ad5c-6ecf-8666-62c7" name="Anti-Grav Heavy Battle Tank" hidden="false" collective="false" import="true" targetId="06ab-13e8-ba1e-c809" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="39c4-bcb4-294e-fc72" name="New CategoryLink" hidden="false" targetId="7528-ccdf-679c-8613" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6aa2-c74a-2453-285b" name="Custodian Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -1439,6 +1444,54 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="470.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="06ab-13e8-ba1e-c809" name="Anti-Grav Heavy Battle Tank" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2080-69e6-2bad-5e2a" name="Anti-Grav Heavy Battle Tank" hidden="false" targetId="4d18-96da-cb99-2667" type="profile"/>
+        <infoLink id="d7ca-5598-51ba-24d2" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="708b-94da-dbaf-a27f" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="5281-b66a-650b-5677" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="4942-9fc0-35f1-3d5d" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="fc71-11c9-a7b2-8802" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b2c5-53f2-daec-93d6" name="Upgrade List B (Vehicles):" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="fcf1-7185-061e-1c80" name="Transport(6)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ba6-2568-11ae-8067" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="175a-2f40-3a57-097b" name="Transport(6)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Transport(6)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="1a7c-9836-fe12-5ee5" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="32b5-ed12-4818-90d5" name="Twin Blazer" hidden="false" collective="false" import="true" targetId="a363-a2b0-15fc-f40b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c18-2816-5dad-327c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f4d-1bb2-fd9d-7249" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b922-d430-71e4-1362" name="Twin Bolt Cannon" hidden="false" collective="false" import="true" targetId="3302-0b8f-45ea-1b7e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fc0-efc1-bf72-9ada" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dfa-32bc-9af2-95a8" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="565.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1897-d8cd-05a0-2d67" name="Upgrade List A" hidden="false" collective="false" import="true" defaultSelectionEntryId="45f9-43d5-601f-a9b6">
@@ -2062,6 +2115,13 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A8</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4d18-96da-cb99-2667" name="Anti-Grav Heavy Battle Tank" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fearless, Impact(6), Strider, Tough(18)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
