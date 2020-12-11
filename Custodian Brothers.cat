@@ -89,6 +89,11 @@
         <categoryLink id="2fdb-cdb5-d932-f76d" name="New CategoryLink" hidden="false" targetId="b820-6309-e900-c733" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="3c39-cfd8-cd72-93ef" name="Custodian Assault Walker" hidden="false" collective="false" import="true" targetId="d032-8792-b487-1030" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fcc1-cc59-7c4b-9cea" name="New CategoryLink" hidden="false" targetId="b820-6309-e900-c733" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6aa2-c74a-2453-285b" name="Custodian Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -1625,6 +1630,86 @@
         <infoLink id="e307-eed0-7501-bae2" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="5c18-3ea9-efd5-358e" name="Walker Spear-Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b89d-b7a3-e093-d1e4" name="Walker Spear" hidden="false" targetId="91f2-6d03-7c3a-f3a7" type="profile"/>
+        <infoLink id="3e20-c678-1180-d90a" name="Walker Spear-Rifle" hidden="false" targetId="d61c-52bf-fd1a-f60d" type="profile"/>
+        <infoLink id="7364-3454-9656-cdd3" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="8f73-8d2d-1cfb-95c2" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0d86-7331-dc3f-30eb" name="Walker Sword-Flame" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a82a-8fc8-5a5e-4505" name="Walker Sword" hidden="false" targetId="e9a2-0fb8-f6e2-b8fb" type="profile"/>
+        <infoLink id="d201-db3c-a70f-c194" name="Walker Sword-Flame" hidden="false" targetId="0c88-0215-e70f-374a" type="profile"/>
+        <infoLink id="5fdc-bbf2-6c7b-5bc1" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="d032-8792-b487-1030" name="Custodian Assault Walker" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fc93-dd34-8035-84e3" name="Custodian Walker" hidden="false" targetId="0e11-f724-3f79-1ec6" type="profile"/>
+        <infoLink id="3af7-0786-5822-1d8c" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
+        <infoLink id="48c4-2ff4-2f69-ce52" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="3417-8ea2-5941-38c1" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ebcc-8640-c892-16ef" name="Upgrade List E (Vehicles):" hidden="false" collective="false" import="true" defaultSelectionEntryId="e962-759d-3084-f7f2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5109-11aa-be08-6b15" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b448-42c9-e649-1659" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e962-759d-3084-f7f2" name="Spear-Rifle &amp; 2x Destroyer Pistols" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="25b4-7385-5b07-794b" name="Walker Spear-Rifle" hidden="false" collective="false" import="true" targetId="5c18-3ea9-efd5-358e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e4-e434-ef76-fe6d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c8e-88de-20b8-7a1e" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="7042-3d06-f257-c21e" name="Destroyer Pistol" hidden="false" collective="false" import="true" targetId="e35e-7e90-b74d-dcd5" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0075-50c9-3b61-ed43" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8419-1ed9-cadc-400f" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="ee45-1f39-91eb-e74b" name="Sword-Flame &amp; Combat Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="ea23-d56a-0774-9720" name="Walker Sword-Flame" hidden="false" collective="false" import="true" targetId="0d86-7331-dc3f-30eb" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8f5-19d4-dd59-f645" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb3b-66d6-4e6f-2bcd" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="f3e2-2eaa-6740-f6c9" name="Combat Shield" hidden="false" collective="false" import="true" targetId="b8dd-5148-eadf-05fc" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ed2-e882-e7c3-0930" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9b6-3f93-bc42-4295" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="45.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="395.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e35e-7e90-b74d-dcd5" name="Destroyer Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a09d-c3ae-56aa-1224" name="Destroyer Pistol" hidden="false" targetId="9933-2ba7-64b2-1415" type="profile"/>
+        <infoLink id="5fd5-9a6c-f401-166f" name="Rending" hidden="false" targetId="9726-accd-9015-f6f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1897-d8cd-05a0-2d67" name="Upgrade List A" hidden="false" collective="false" import="true" defaultSelectionEntryId="45f9-43d5-601f-a9b6">
@@ -2288,6 +2373,32 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d61c-52bf-fd1a-f60d" name="Walker Spear-Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="91f2-6d03-7c3a-f3a7" name="Walker Spear" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A4</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c88-0215-e70f-374a" name="Walker Sword-Flame" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A12</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e9a2-0fb8-f6e2-b8fb" name="Walker Sword" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
+      <characteristics>
+        <characteristic name="Attacks" typeId="af84-b2a4-6a80-9e7b">A8</characteristic>
+        <characteristic name="Special Rules" typeId="7a54-240f-72ef-5022">AP(4)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
