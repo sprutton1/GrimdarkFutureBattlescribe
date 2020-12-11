@@ -86,32 +86,6 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e664-c632-cbb2-381e" name="Upgrade List A:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="5800-e121-ac2b-ac6d" name="Jetbike" hidden="false" collective="false" import="true" targetId="7d5b-1c9a-944d-528d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dad-4ca1-6e3e-f903" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="e200-e581-cc70-aaf3" name="Upgrade Jetbike with:" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="121d-11f8-823c-c1a1" name="Shard Cannon" hidden="false" collective="false" import="true" targetId="536d-fad0-6874-28db" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e482-8b08-7ef5-34a7" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="3873-921d-5603-77d8" name="Deathly Arts" hidden="false" collective="false" import="true" targetId="1a80-d4a9-5444-4cc3" type="selectionEntry">
@@ -120,6 +94,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f45-1e1b-9fb4-2f18" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="8e34-cf65-c26b-1da4" name="Upgrade List A:" hidden="false" collective="false" import="true" targetId="26ec-71e3-a4fb-68a6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
@@ -220,44 +195,60 @@
         <infoLink id="009c-5cae-a301-de0f" name="Stealth" hidden="false" targetId="1b59-5d31-4675-c926" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c3f3-92e8-c986-096c" name="Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="7bc1-e588-0125-6ee8">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="899b-d576-7c3d-e782" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1228-c478-0631-bbb7" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="7bc1-e588-0125-6ee8" name="Shard Pistol" hidden="false" collective="false" import="true" targetId="2551-1051-0349-bc45" type="selectionEntry"/>
-            <entryLink id="345a-297c-65fd-b3fc" name="Neuron Pistol" hidden="false" collective="false" import="true" targetId="b8b1-98bf-785f-6809" type="selectionEntry"/>
-            <entryLink id="800d-b87d-ef3b-aa39" name="Fusion Pistol" hidden="false" collective="false" import="true" targetId="2071-4cb6-f32c-5d11" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="e06f-956a-a2e8-97ca" name="Psychic(X)" hidden="false" collective="false" import="true" defaultSelectionEntryId="2860-a0b2-ba29-69e6">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c67-ea9c-c926-948f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcf9-37d6-b051-9d7b" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="2860-a0b2-ba29-69e6" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="a87e-30f4-3376-285e" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9881-55f2-0759-01ba" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="5bf8-06bc-dba0-c2c1" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntryGroup id="d4c5-6da0-2cd0-5269" name="Upgrade List C:" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="16a7-2e19-c26f-9901" name="Replace Shard Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="c7e7-46c8-01ca-820e">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fb2-a7ce-5930-e456" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e77-ea60-0a40-e05b" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="c7e7-46c8-01ca-820e" name="Shard Pistol" hidden="false" collective="false" import="true" targetId="2551-1051-0349-bc45" type="selectionEntry"/>
+                <entryLink id="6466-4a8a-64d4-ef21" name="Neuron Pistol" hidden="false" collective="false" import="true" targetId="b8b1-98bf-785f-6809" type="selectionEntry"/>
+                <entryLink id="e5b2-043c-9a35-283e" name="Fusion Pistol" hidden="false" collective="false" import="true" targetId="2071-4cb6-f32c-5d11" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="d84a-4f8f-01ec-8253" name="Upgrade Psychic(1):" hidden="false" collective="false" import="true" defaultSelectionEntryId="202f-ba0f-d0e5-9415">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5890-e048-ff2b-80ae" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91d7-048a-869e-8bdc" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="202f-ba0f-d0e5-9415" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="636d-3564-a256-31c0" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3eb5-8086-e1f4-d7d6" name="Psychic(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="9a28-6543-239d-3a6f" name="Psychic(2)" hidden="false" targetId="3e8c-01f9-834d-a443" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="b028-9a0e-d187-fc31" name="Upgrade with:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="9bd1-ab72-d953-dfd4" name="GL-Backpack" hidden="false" collective="false" import="true" targetId="3b85-8b37-7d51-98ac" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="562b-93c8-0d64-3b7b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -267,15 +258,8 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce2a-d7d6-a314-6022" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="70a5-b03f-443d-ce00" name="GL-Backpack" hidden="false" collective="false" import="true" targetId="3b85-8b37-7d51-98ac" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d71-7874-49f3-7c4e" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
         <entryLink id="c6a7-409e-f865-993a" name="Psychic Spells" hidden="false" collective="false" import="true" targetId="b5cd-ffe3-1e03-4119" type="selectionEntryGroup"/>
+        <entryLink id="427b-a3bd-050a-8f74" name="Upgrade List A:" hidden="false" collective="false" import="true" targetId="26ec-71e3-a4fb-68a6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
@@ -1023,6 +1007,32 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="26ec-71e3-a4fb-68a6" name="Upgrade List A:" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="cee2-2b1b-0343-4140" name="Jetbike" hidden="false" collective="false" import="true" targetId="7d5b-1c9a-944d-528d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ff3-d8b4-9277-8330" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="81e7-f621-80be-644f" name="Upgrade Jetbike with:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="829a-c81c-85e3-bbc6" name="Shard Cannon" hidden="false" collective="false" import="true" targetId="536d-fad0-6874-28db" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a58c-f039-d29e-d6aa" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
