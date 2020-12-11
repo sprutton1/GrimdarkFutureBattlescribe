@@ -79,6 +79,11 @@
         <categoryLink id="39c4-bcb4-294e-fc72" name="New CategoryLink" hidden="false" targetId="7528-ccdf-679c-8613" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="ac29-e0ba-9ee8-eb41" name="Custodian Heavy Battle Tank" hidden="false" collective="false" import="true" targetId="f50a-5eee-f568-fc28" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b3f4-2b0b-fb26-c22d" name="New CategoryLink" hidden="false" targetId="7528-ccdf-679c-8613" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6aa2-c74a-2453-285b" name="Custodian Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -1492,6 +1497,60 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="565.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f50a-5eee-f568-fc28" name="Custodian Heavy Battle Tank" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dac0-ad40-aff9-8709" name="Custodian Heavy Battle Tank" hidden="false" targetId="15c1-3e1c-d915-9fe1" type="profile"/>
+        <infoLink id="4e67-3cba-58d6-8176" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="7882-ce0f-69a1-73cf" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="0bcb-0718-b08f-d0c3" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="5062-c05c-9b1d-407b" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="6232-d81e-9a2e-8600" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="fd64-64e2-de59-9291" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6c65-ab9c-fbb2-00d3" name="Upgrade List C (Vehicles):" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="cb39-0692-0d4f-4cbd" name="Upgrade with any:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="bbdc-aa3a-7cf0-0761" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4132-21cc-b7ee-71d9" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bef3-c5ca-96d9-cfb7" name="Hunter Missiles" hidden="false" collective="false" import="true" targetId="c756-9c2d-beca-986c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b2-50f0-e9c4-fc73" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b02f-050b-852c-f0dd" name="Twin Heavy Machinegun" hidden="false" collective="false" import="true" targetId="dae8-3106-6a96-228c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c171-1273-c3a4-3578" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49d2-a763-19b4-20c8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c675-2e34-80a5-dbe7" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82c7-d0eb-8e65-f71d" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82a2-98fc-b3b2-d181" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="725.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1897-d8cd-05a0-2d67" name="Upgrade List A" hidden="false" collective="false" import="true" defaultSelectionEntryId="45f9-43d5-601f-a9b6">
@@ -2122,6 +2181,13 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fearless, Impact(6), Strider, Tough(18)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="15c1-3e1c-d915-9fe1" name="Custodian Heavy Battle Tank" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fearless, Impact(6), Strider, Tough(18), Transport(11)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
