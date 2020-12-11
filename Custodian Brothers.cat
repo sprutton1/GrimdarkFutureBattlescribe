@@ -69,6 +69,11 @@
         <categoryLink id="576f-5945-11fd-b11c" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="ecc1-c4af-a810-17da" name="Anti-Grav Battle Tank" hidden="false" collective="false" import="true" targetId="8aca-71ef-0838-6f2a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4dac-0021-2423-f87c" name="New CategoryLink" hidden="false" targetId="b820-6309-e900-c733" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6aa2-c74a-2453-285b" name="Custodian Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -1374,6 +1379,66 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="220.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d86f-7a65-eb09-517c" name="Twin Heavy Blazer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a002-945e-18ef-3f44" name="Twin Heavy Blazer" hidden="false" targetId="13ae-e13d-e14a-641c" type="profile"/>
+        <infoLink id="906d-28f8-ba9f-8bf0" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="d03c-f37a-0688-8f94" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="3302-0b8f-45ea-1b7e" name="Twin Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2042-7fa4-c818-2621" name="Twin Bolt Cannon" hidden="false" targetId="8c13-5dd3-19fb-414a" type="profile"/>
+        <infoLink id="562b-f4cf-5af9-904f" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9a7a-faaf-da74-76f9" name="Twin Accelerator" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b902-3294-09ff-212c" name="Twin Accelerator" hidden="false" targetId="fbf5-b5ba-bb28-e5f3" type="profile"/>
+        <infoLink id="7a6b-c8e1-52f5-ba5f" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="8aca-71ef-0838-6f2a" name="Anti-Grav Battle Tank" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b410-f0b4-3421-6fdb" name="Anti-Grav Battle Tank" hidden="false" targetId="29dd-8253-4626-472c" type="profile"/>
+        <infoLink id="7c75-3813-85b1-0bac" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="090d-91b3-19c3-cf66" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="1344-0940-9126-bb7f" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="6a89-28ec-b880-3fab" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+        <infoLink id="50e3-b3f5-6f60-7233" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5642-967a-b3c0-d646" name="Upgrade List A (Vehicles):" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="426f-21f1-3a87-ce52" name="Replace Twin Heavy Blazer:" hidden="false" collective="false" import="true" defaultSelectionEntryId="211f-0d22-80b2-74e2">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbad-a263-8c97-a92c" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f025-4312-7a27-a876" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="211f-0d22-80b2-74e2" name="Twin Heavy Blazer" hidden="false" collective="false" import="true" targetId="d86f-7a65-eb09-517c" type="selectionEntry"/>
+                <entryLink id="c2d3-2d09-501b-7288" name="Twin Accelerator" hidden="false" collective="false" import="true" targetId="9a7a-faaf-da74-76f9" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4c0d-2d30-0e78-8520" name="Twin Bolt Cannon" hidden="false" collective="false" import="true" targetId="3302-0b8f-45ea-1b7e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45df-2cbc-f21c-9cd9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2122-c508-6740-71e3" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="470.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1897-d8cd-05a0-2d67" name="Upgrade List A" hidden="false" collective="false" import="true" defaultSelectionEntryId="45f9-43d5-601f-a9b6">
@@ -1969,6 +2034,34 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="29dd-8253-4626-472c" name="Anti-Grav Battle Tank" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fast, Fearless, Impact(6), Strider, Tough(12)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="13ae-e13d-e14a-641c" name="Twin Heavy Blazer" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8c13-5dd3-19fb-414a" name="Twin Bolt Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A6</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fbf5-b5ba-bb28-e5f3" name="Twin Accelerator" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A8</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
