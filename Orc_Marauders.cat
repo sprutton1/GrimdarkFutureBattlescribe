@@ -391,19 +391,32 @@
         <infoLink id="8b6f-87c3-1521-c910" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
         <infoLink id="34ea-1833-d512-2ff8" name="Bad Shot" hidden="false" targetId="7297-75e5-15df-d934" type="rule"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="1456-a723-c529-6a11" name="WAR!" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c7b8-1d8b-7199-d8e7" name="Upgrade with one:" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f37e-41bd-df00-c202" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dff6-ac58-f031-32f4" type="max"/>
           </constraints>
-          <infoLinks>
-            <infoLink id="1186-5830-97c3-0bca" name="WAR!" hidden="false" targetId="a923-7ab7-e583-4535" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+          <selectionEntries>
+            <selectionEntry id="62e5-aee6-87cf-d879" name="WAR!" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="65db-a9c1-edfe-0522" name="WAR!" hidden="false" targetId="a923-7ab7-e583-4535" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cd96-8cb8-9962-5f67" name="SHOOT!" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="4ebf-d464-c1f0-add8" name="SHOOT!" hidden="false" targetId="de03-b3fa-3170-ebad" type="rule"/>
+                <infoLink id="f0f5-878a-cd2d-e95a" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="de11-3795-ced5-1fb2" name="[A] Weapons - Ranged - Pistol or Carbines" hidden="false" collective="false" import="true" targetId="a2d6-72e7-2f02-eb3b" type="selectionEntryGroup">
           <constraints>
@@ -4511,6 +4524,9 @@
     </rule>
     <rule id="3238-b18d-25dc-3792" name="Red Paint Job" publicationId="7363-7493-3b62-53bc" hidden="false">
       <description>This model moves +3&quot; on Advance and +6&quot; on Rush/Charge actions.</description>
+    </rule>
+    <rule id="de03-b3fa-3170-ebad" name="SHOOT!" publicationId="7363-7493-3b62-53bc" hidden="false">
+      <description>The hero and his unit get the Relentless special rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
