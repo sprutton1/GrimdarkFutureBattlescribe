@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f600-0926-eecd-eca5" name="Havoc Brothers" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f600-0926-eecd-eca5" name="Havoc Brothers" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0087-62dd-65cd-178c" name="Havoc Brothers v2.11"/>
-    <publication id="a23a-0fd7-52cd-e3da" name="Havoc Brother Disciples v2.13"/>
+    <publication id="a23a-0fd7-52cd-e3da" name="Havoc Brother Disciples v2.15"/>
   </publications>
   <entryLinks>
     <entryLink id="8484-86df-6565-cec5" name="Havoc Lord" hidden="false" collective="false" import="true" targetId="2dd9-d655-8bcb-de91" type="selectionEntry">
@@ -4158,7 +4158,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="150.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="90a8-2499-76b7-950d" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
@@ -4225,7 +4225,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="260.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="300.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4282,7 +4282,7 @@
             </entryLink>
             <entryLink id="c581-b875-a9bb-6ee6" name="Reaper Minigun" hidden="false" collective="false" import="true" targetId="df65-ce53-c014-7808" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -4682,7 +4682,7 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
               </costs>
             </entryLink>
-            <entryLink id="4e82-85be-104a-417c" name="Combat Bike" hidden="false" collective="false" import="true" targetId="aafb-3b71-b8ba-cd65" type="selectionEntry">
+            <entryLink id="4e82-85be-104a-417c" name="Combat Bike (Lust)" hidden="false" collective="false" import="true" targetId="3a6c-9d98-57a2-8e5a" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
               </costs>
@@ -7377,6 +7377,24 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3a6c-9d98-57a2-8e5a" name="Combat Bike (Lust)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="91bd-ea5b-3077-4eab" name="Combat Bike (Lust)" hidden="false" targetId="19bf-713a-30c8-1b2b" type="profile"/>
+        <infoLink id="a439-ed12-5e5f-a35a" name="Very Fast" hidden="false" targetId="6173-de17-db0f-1162" type="rule"/>
+        <infoLink id="9d6b-dfc0-4b26-63d4" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="8949-0655-40a8-c602" name="Twin Assault Rifle" hidden="false" collective="false" import="true" targetId="e098-3b64-3d3c-33c2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f88d-d0c2-0be0-5fec" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f3f-ca7e-c270-956c" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a980-ff5d-be72-2597" name="Psychic Spells" page="" hidden="false" collective="false" import="true">
@@ -7739,6 +7757,9 @@
     </rule>
     <rule id="4829-491f-37a2-3332" name="Musical Bliss" publicationId="a23a-0fd7-52cd-e3da" hidden="false">
       <description>Enemy units get -1 to hit in melee when fighting this unit.</description>
+    </rule>
+    <rule id="6173-de17-db0f-1162" name="Very Fast" publicationId="a23a-0fd7-52cd-e3da" hidden="false">
+      <description>This model moves 12&quot; when using Advance and 24&quot; when using Rush/Charge.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -8324,7 +8345,7 @@
     <profile id="f0c3-4d19-7091-b7d2" name="Seizure" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
       <characteristics>
         <characteristic name="Roll" typeId="86f2-adcb-3afd-566c">4+</characteristic>
-        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit takes 1 hit with AP(2) and Deadly(3).</characteristic>
+        <characteristic name="Details" typeId="e490-3d41-dc85-9d0f">Target enemy unit within 12&quot; takes 1 hit with AP(2) and Deadly(3).</characteristic>
       </characteristics>
     </profile>
     <profile id="65ab-7cc4-dca3-ceae" name="Overload" hidden="false" typeId="57dc-caf6-641d-327b" typeName="Psychic Power">
@@ -8865,6 +8886,11 @@
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Hero, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="19bf-713a-30c8-1b2b" name="Combat Bike (Lust)" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Very Fast, Impact(1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

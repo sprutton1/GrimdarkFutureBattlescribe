@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c684-bb58-7b6d-1f24" name="High Elf Fleets" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c684-bb58-7b6d-1f24" name="High Elf Fleets" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication id="0470-6c7e-7502-e5c8" name="High Elf Fleets v2.9"/>
+    <publication id="0470-6c7e-7502-e5c8" name="High Elf Fleets v2.10"/>
   </publications>
   <entryLinks>
     <entryLink id="1967-8640-4f61-2be4" name="Elven King" hidden="false" collective="false" import="true" targetId="d4f1-65de-cd60-6d06" type="selectionEntry">
@@ -1137,6 +1137,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="85a2-df26-901c-80a1" name="Banshee" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
@@ -2350,6 +2353,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="153e-b9eb-2d07-69c6" name="Shield" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
@@ -2792,15 +2798,15 @@
       <entryLinks>
         <entryLink id="f6ac-bb77-1db2-8213" name="Vehicle - Weapon - Main Armament" hidden="false" collective="false" import="true" targetId="454f-8df5-26dc-b3a9" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5a5-4308-95f8-e33a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50f0-8819-5f6f-482e" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5a5-4308-95f8-e33a" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50f0-8819-5f6f-482e" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="5274-5ec8-098c-7fa7" name="Vehicle - Weapon - Prow Mount" hidden="false" collective="false" import="true" targetId="3a42-5040-274e-37c1" type="selectionEntryGroup"/>
         <entryLink id="cdfa-f2c6-5079-6991" name="Vehicle Upgrades" hidden="false" collective="false" import="true" targetId="78b6-0b1d-9844-2ea2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="315.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="340.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ed75-a22f-6349-9016" name="Doom Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3628,6 +3634,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ab9-26b9-2102-a1e9" type="max"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
           </costs>
@@ -3640,6 +3649,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f3d-bc39-23d3-b90d" type="max"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
           </costs>
