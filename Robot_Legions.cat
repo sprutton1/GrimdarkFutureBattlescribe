@@ -1508,7 +1508,7 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="8719-0c3e-e289-2b5c" name="Twin Gauss Rifle" hidden="false" collective="false" import="true" targetId="c74c-30de-be89-9084" type="selectionEntry"/>
-                    <entryLink id="6f8a-c977-e1e4-d5ad" name="Twin Flux Cannon" hidden="false" collective="false" import="true" targetId="0863-82bf-6c6d-80fe" type="selectionEntry">
+                    <entryLink id="6f8a-c977-e1e4-d5ad" name="Twin Flux Rifle" hidden="false" collective="false" import="true" targetId="6f7e-8074-d296-df10" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
                       </costs>
@@ -1534,7 +1534,7 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="2373-4291-eaa1-1121" name="Twin Gauss Rifle" hidden="false" collective="false" import="true" targetId="c74c-30de-be89-9084" type="selectionEntry"/>
-                    <entryLink id="e389-0277-8bb5-ce79" name="Twin Flux Cannon" hidden="false" collective="false" import="true" targetId="0863-82bf-6c6d-80fe" type="selectionEntry">
+                    <entryLink id="e389-0277-8bb5-ce79" name="Twin Flux Rifle" hidden="false" collective="false" import="true" targetId="6f7e-8074-d296-df10" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
                       </costs>
@@ -2661,6 +2661,13 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="6f7e-8074-d296-df10" name="Twin Flux Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0ebc-a0d5-1406-bee0" name="Twin Flux Rifle" hidden="false" targetId="2499-c27a-8996-cb7e" type="profile"/>
+        <infoLink id="00aa-22f4-d7c9-7464" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="bfb2-3d3f-b7ff-5775" name="Flux" hidden="false" targetId="f3f7-52df-ba4d-7507" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0da2-7341-2e9d-0184" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -3417,6 +3424,13 @@
     <profile id="86e1-a6ed-cafc-d09e" name="Reanimator" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">When this unit is activated pick one firendly unit within 12&quot;, which may ignroe wounds from Regeneration on 4+ next time it takes wounds.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2499-c27a-8996-cb7e" name="Twin Flux Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Flux</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
