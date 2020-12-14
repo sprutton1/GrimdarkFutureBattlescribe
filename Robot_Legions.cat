@@ -134,6 +134,11 @@
         <categoryLink id="6f5c-176e-4374-2aab" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="4672-9185-e98f-c120" name="Destroyer Robot Snakes" hidden="false" collective="false" import="true" targetId="af1a-e65c-1551-01a6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="99d6-6432-3ae6-e0ea" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c0a8-6221-1d17-dfd5" name="Spirit Attack" hidden="false" collective="false" import="true" type="upgrade">
@@ -2508,83 +2513,17 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="f91e-16ca-0507-2115" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntryGroups>
-                <selectionEntryGroup id="e5b1-4bc1-b314-ffd6" name="Upgrade all models with:" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="f770-b4ec-0907-1253" name="Plasmabots" hidden="false" collective="false" import="true" targetId="4a4c-75e0-9248-9ba1" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4187-1559-a477-d673" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="1e12-2370-9d7e-9d0e" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="e9f0-2224-f4a0-d242">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d45-e682-4ba2-20c3" type="min"/>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d49-5e8c-fc0c-a819" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="3b95-a482-caf6-9783" name="Heavy Armblade" hidden="false" collective="false" import="true" targetId="277b-3b3a-d870-dbef" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b27-a604-5b27-4a68" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="e9f0-2224-f4a0-d242" name="2x Armblades" hidden="false" collective="false" import="true" targetId="b67a-69f3-7867-0e1a" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b49-eb92-9f06-3a3b" type="min"/>
-                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0ce-b8a4-90c5-e35a" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="ea82-762d-1765-94e0" name="Upgrade List K (single unit)" hidden="false" collective="false" import="true" targetId="429b-9f60-0419-5e00" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c3d5-f46e-91e8-c680" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntryGroups>
-                <selectionEntryGroup id="af6b-61f1-9a12-96c0" name="Upgrade all models with:" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="d4d2-0784-2e14-3048" name="Plasmabots" hidden="false" collective="false" import="true" targetId="4a4c-75e0-9248-9ba1" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a157-76c7-45e2-e7c0" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="a161-b78d-6a16-2b07" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="2eb5-03ec-fd66-9965">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ca3-88d0-c18a-3bb1" type="min"/>
-                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad76-2190-edd5-a828" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="da49-ac9b-52df-959e" name="Heavy Armblade" hidden="false" collective="false" import="true" targetId="277b-3b3a-d870-dbef" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c3a-cf3d-61c3-f26f" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="2eb5-03ec-fd66-9965" name="2x Armblades" hidden="false" collective="false" import="true" targetId="b67a-69f3-7867-0e1a" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1721-d2ea-22a2-2a2d" type="min"/>
-                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccf5-ae66-ed86-d5e0" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="86d1-617e-2738-c290" name="Upgrade List K (combined unit)" hidden="false" collective="false" import="true" targetId="e981-6061-8d1f-e648" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="330.0"/>
               </costs>
@@ -2668,6 +2607,54 @@
         <infoLink id="bfb2-3d3f-b7ff-5775" name="Flux" hidden="false" targetId="f3f7-52df-ba4d-7507" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="af1a-e65c-1551-01a6" name="Destroyer Robot Snakes" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="39af-8e20-bc12-d022" name="Destroyer Robot Snake" hidden="false" targetId="3ea3-a488-b539-c496" type="profile"/>
+        <infoLink id="5ab5-aaba-c81f-83fa" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="7a26-decd-dd3f-88f5" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="785c-2e7d-237a-a4f9" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="c92f-6ddd-5bfd-7e4f" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="6b6a-53cb-bea7-1ace" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3600-faee-2116-5648" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="292c-5210-af7e-2d59">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e71d-628d-e275-e27c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0d1-8227-26ab-b5a6" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="292c-5210-af7e-2d59" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="b956-604b-6dfd-8b14" name="Upgrade List K (single unit)" hidden="false" collective="false" import="true" targetId="429b-9f60-0419-5e00" type="selectionEntryGroup"/>
+                <entryLink id="8d73-0065-00ed-a62a" name="Metal Fangs" hidden="false" collective="false" import="true" targetId="fbee-5fee-b23b-51ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17e6-3f05-39e3-b45e" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="023a-a27c-60ec-3f3c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="37a0-99b1-da9e-e073" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="938a-23b2-f743-fe52" name="Upgrade List K (combined unit)" hidden="false" collective="false" import="true" targetId="e981-6061-8d1f-e648" type="selectionEntryGroup"/>
+                <entryLink id="dbac-e690-ec86-5997" name="Metal Fangs" hidden="false" collective="false" import="true" targetId="fbee-5fee-b23b-51ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baf5-6ff4-d34e-4c50" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbe3-fca8-9ae3-499d" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="395.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="395.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0da2-7341-2e9d-0184" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -2750,6 +2737,72 @@
             <entryLink id="1eae-d9a4-f88d-ea90" name="Phase Glaive" hidden="false" collective="false" import="true" targetId="d502-b94c-9c93-ae9b" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="429b-9f60-0419-5e00" name="Upgrade List K (single unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cb29-b409-6e86-59fb" name="Replace one 2x Arm Blades:" hidden="false" collective="false" import="true" defaultSelectionEntryId="3eb6-987c-e239-eb66">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b0d-fd27-d5bf-4953" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2741-62d2-9810-60b2" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3eb6-987c-e239-eb66" name="2x Armblades" hidden="false" collective="false" import="true" targetId="b67a-69f3-7867-0e1a" type="selectionEntry"/>
+            <entryLink id="cf53-a862-6d3c-4e05" name="Heavy Armblade" hidden="false" collective="false" import="true" targetId="277b-3b3a-d870-dbef" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d5a-b4be-9d3a-b0dd" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b581-41b0-b3b3-e6bc" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="8bb2-52bd-e2f9-d37d" name="Plasmabots" hidden="false" collective="false" import="true" targetId="4a4c-75e0-9248-9ba1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11df-049e-6449-24dd" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e981-6061-8d1f-e648" name="Upgrade List K (combined unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="857a-45ed-b7d9-dfbf" name="Replace two 2x Arm Blades:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8dde-743a-b3ed-ec45">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd70-7db1-54d4-2391" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="883f-4856-bb48-9d44" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8dde-743a-b3ed-ec45" name="2x Armblades" hidden="false" collective="false" import="true" targetId="b67a-69f3-7867-0e1a" type="selectionEntry"/>
+            <entryLink id="937f-735f-4ddc-08a2" name="Heavy Armblade" hidden="false" collective="false" import="true" targetId="277b-3b3a-d870-dbef" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3ed-bda5-5f5a-b5cf" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9b53-1ad7-5be7-591c" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="4667-2281-95db-85e3" name="Plasmabots" hidden="false" collective="false" import="true" targetId="4a4c-75e0-9248-9ba1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71fe-3d0f-f77d-3a15" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -3431,6 +3484,13 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Flux</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3ea3-a488-b539-c496" name="Destroyer Robot Snake" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fearless, Regeneration, Strider, Tough(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
