@@ -2261,15 +2261,14 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="120.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7859-2352-607c-e084" name="Orc Helicopter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7859-2352-607c-e084" name="Mini Helicopter" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="f566-4af0-d998-5113" name="Orc Helicopter" hidden="false" targetId="3db8-5526-5d28-a5f1" type="profile"/>
+        <infoLink id="f566-4af0-d998-5113" name="Mini Helicopter" hidden="false" targetId="3db8-5526-5d28-a5f1" type="profile"/>
         <infoLink id="886a-c14b-e14d-2618" name="Furious" hidden="false" targetId="ded5-4f1f-c61d-4659" type="rule"/>
         <infoLink id="bb49-e54f-54ff-98c0" name="Bad Shot" hidden="false" targetId="7297-75e5-15df-d934" type="rule"/>
         <infoLink id="6b89-e166-a731-bd27" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
         <infoLink id="487c-ceef-09f5-771b" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="5c68-cdec-6c37-eb53" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="5fdf-265b-05d9-4b05" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="c7f6-b12e-0302-c2d8" name="Upgrade with one:" hidden="false" collective="false" import="true">
@@ -2312,6 +2311,14 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
+            <entryLink id="ab07-9b83-e584-f5e8" name="Rotor Blade Attack" hidden="false" collective="false" import="true" targetId="b3f3-6da1-99db-bf0a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f32-afe1-ac09-aac9" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2330,7 +2337,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="85.0"/>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="75.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8cb8-b6d1-eef2-994e" name="Mini-Claw" hidden="false" collective="false" import="true" type="upgrade">
@@ -4125,6 +4132,12 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b3f3-6da1-99db-bf0a" name="Rotor Blade Attack" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e403-a1a3-266d-d926" name="Rotor Blade Attack" hidden="false" targetId="ad65-db53-6231-97e5" type="profile"/>
+        <infoLink id="e87e-e6fc-a381-f985" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a2d6-72e7-2f02-eb3b" name="Weapons - Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="3420-f6e6-3624-1727">
@@ -4587,11 +4600,11 @@
         <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Bad Shot, Fast, Furious, Impact(3), Relentless, Tough(6)</characteristic>
       </characteristics>
     </profile>
-    <profile id="3db8-5526-5d28-a5f1" name="Orc Helicopter" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+    <profile id="3db8-5526-5d28-a5f1" name="Mini Helicopter" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
       <characteristics>
         <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">4+</characteristic>
         <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">5+</characteristic>
-        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Bad Shot, Fast, Furious, Impact(3), Strider, Tough(6)</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Bad Shot, Fast, Furious, Strider, Tough(6)</characteristic>
       </characteristics>
     </profile>
     <profile id="e595-45b3-6117-e71e" name="CCW (A3)" hidden="false" typeId="a876-7ff4-b28f-0999" typeName="Melee Weapon">
@@ -5264,6 +5277,11 @@
     <profile id="9c07-64c8-4825-8e66" name="Shoot Shoot Shoot!" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Relentless</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ad65-db53-6231-97e5" name="Rotor Blade Attack" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Impact(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
