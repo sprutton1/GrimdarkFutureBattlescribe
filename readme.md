@@ -90,7 +90,7 @@ table!
 |Orc Marauders|v2.12|Done|
 |Ratmen Clans|v2.6|Done|
 |Rebel Guerrillas|v2.5|Done|
-|Robot Legions|v2.10|Done|
+|Robot Legions|v2.12|Done|
 |Soul-Snatcher Cults|v2.8|Done|
 |TAO Coalition|v2.11|Done|
 |Titan Lords|v2.4|Done|

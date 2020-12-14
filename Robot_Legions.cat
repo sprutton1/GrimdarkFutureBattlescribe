@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1ef1-1f77-62c2-8cc5" name="Robot Legions" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1ef1-1f77-62c2-8cc5" name="Robot Legions" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication id="14f7-853d-2d82-efca" name="Robot Legions v2.11"/>
+    <publication id="14f7-853d-2d82-efca" name="Robot Legions v2.12"/>
   </publications>
   <entryLinks>
     <entryLink id="02a4-8be6-717e-8eec" name="Annihilator Overseer" hidden="false" collective="false" import="true" targetId="29c0-92c6-c1da-02e9" type="selectionEntry">
@@ -132,6 +132,21 @@
     <entryLink id="0dbf-4ac6-59cb-2e3e" name="Tripod Robot" hidden="false" collective="false" import="true" targetId="f245-15d4-40d5-36b2" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="6f5c-176e-4374-2aab" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4672-9185-e98f-c120" name="Destroyer Robot Snakes" hidden="false" collective="false" import="true" targetId="af1a-e65c-1551-01a6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="99d6-6432-3ae6-e0ea" name="New CategoryLink" hidden="false" targetId="dfbf-5076-f148-2f58" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ba26-33eb-47f5-ea75" name="Tri-Scorpion Pistoleer" hidden="false" collective="false" import="true" targetId="37a4-6737-e8e3-a32d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="397e-91a4-948f-d5b9" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="42fa-9d18-75a7-84bd" name="Heavy Annihilator" hidden="false" collective="false" import="true" targetId="683a-f1fa-20b0-e5b5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2ab3-9dea-05e6-9df0" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1508,7 +1523,7 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="8719-0c3e-e289-2b5c" name="Twin Gauss Rifle" hidden="false" collective="false" import="true" targetId="c74c-30de-be89-9084" type="selectionEntry"/>
-                    <entryLink id="6f8a-c977-e1e4-d5ad" name="Twin Flux Cannon" hidden="false" collective="false" import="true" targetId="0863-82bf-6c6d-80fe" type="selectionEntry">
+                    <entryLink id="6f8a-c977-e1e4-d5ad" name="Twin Flux Rifle" hidden="false" collective="false" import="true" targetId="6f7e-8074-d296-df10" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
                       </costs>
@@ -1534,7 +1549,7 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="2373-4291-eaa1-1121" name="Twin Gauss Rifle" hidden="false" collective="false" import="true" targetId="c74c-30de-be89-9084" type="selectionEntry"/>
-                    <entryLink id="e389-0277-8bb5-ce79" name="Twin Flux Cannon" hidden="false" collective="false" import="true" targetId="0863-82bf-6c6d-80fe" type="selectionEntry">
+                    <entryLink id="e389-0277-8bb5-ce79" name="Twin Flux Rifle" hidden="false" collective="false" import="true" targetId="6f7e-8074-d296-df10" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
                       </costs>
@@ -1770,20 +1785,6 @@
         <infoLink id="ab28-41fb-1745-e9e9" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
         <infoLink id="453f-152f-0371-8580" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="26eb-c6b0-dc38-f6ea" name="Upgrade with:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="a593-e53d-ab77-e4d8" name="Repair Bots" hidden="false" collective="false" import="true" targetId="54c5-492c-a9da-8cd7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d73-03f7-d6d4-d948" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="26d5-23c0-fd03-4238" name="Gauss Rifle Array" hidden="false" collective="false" import="true" targetId="cfac-06ea-c04f-519f" type="selectionEntry">
           <constraints>
@@ -1791,6 +1792,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cbe-2b13-7fc2-8cdd" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="ed30-31cd-1774-b201" name="Upgrade List A (Vehicles)" hidden="false" collective="false" import="true" targetId="d4d3-1d6d-4256-fff9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="225.0"/>
@@ -1805,20 +1807,6 @@
         <infoLink id="1329-668b-75f1-8a29" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
         <infoLink id="23df-e8fa-7ebe-5f86" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="f9d0-9230-b719-b61e" name="Upgrade with:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="9d4d-ce54-67c4-c80a" name="Repair Bots" hidden="false" collective="false" import="true" targetId="54c5-492c-a9da-8cd7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bac-f09a-ac59-9ad3" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d231-35d3-95ca-3a54" name="Gauss Rifle Array" hidden="false" collective="false" import="true" targetId="cfac-06ea-c04f-519f" type="selectionEntry">
           <constraints>
@@ -1832,6 +1820,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bd2-bfda-f336-ffc8" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="3514-8115-018f-6345" name="Upgrade List A (Vehicles)" hidden="false" collective="false" import="true" targetId="d4d3-1d6d-4256-fff9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="275.0"/>
@@ -1846,18 +1835,6 @@
         <infoLink id="5510-bc6f-9916-ad9e" name="Slow" hidden="false" targetId="394b-1b64-d270-f49e" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a51e-90a5-c723-c402" name="Upgrade with:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="9187-946c-7f01-3944" name="Repair Bots" hidden="false" collective="false" import="true" targetId="54c5-492c-a9da-8cd7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13e1-c81b-d8f3-f373" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="5051-7265-ff6a-8037" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="967e-ad1d-161c-f01f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22b4-fc40-4583-1783" type="max"/>
@@ -1880,6 +1857,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8427-7c39-fab9-36c7" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="6d7b-cb5e-5e5c-1a20" name="Upgrade List A (Vehicles)" hidden="false" collective="false" import="true" targetId="d4d3-1d6d-4256-fff9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="250.0"/>
@@ -1905,18 +1883,6 @@
         <infoLink id="8a5d-7ead-3b86-b41d" name="Fear" hidden="false" targetId="d21e-0b0f-ebec-46da" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6b2e-e4f5-9087-8f62" name="Upgrade with:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="1727-3a5e-b0fb-9b94" name="Repair Bots" hidden="false" collective="false" import="true" targetId="54c5-492c-a9da-8cd7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e77-0127-d681-250a" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="17c6-efd5-6486-d0cf" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d395-4fd1-47b5-e33a">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdcd-db1d-25c3-dec1" type="max"/>
@@ -1950,6 +1916,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4c0-67bd-82f7-0300" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="ce66-8b73-8a1e-ace2" name="Upgrade List A (Vehicles)" hidden="false" collective="false" import="true" targetId="d4d3-1d6d-4256-fff9" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="380.0"/>
@@ -2508,83 +2475,17 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="f91e-16ca-0507-2115" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntryGroups>
-                <selectionEntryGroup id="e5b1-4bc1-b314-ffd6" name="Upgrade all models with:" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="f770-b4ec-0907-1253" name="Plasmabots" hidden="false" collective="false" import="true" targetId="4a4c-75e0-9248-9ba1" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4187-1559-a477-d673" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="1e12-2370-9d7e-9d0e" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="e9f0-2224-f4a0-d242">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d45-e682-4ba2-20c3" type="min"/>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d49-5e8c-fc0c-a819" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="3b95-a482-caf6-9783" name="Heavy Armblade" hidden="false" collective="false" import="true" targetId="277b-3b3a-d870-dbef" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b27-a604-5b27-4a68" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="e9f0-2224-f4a0-d242" name="2x Armblades" hidden="false" collective="false" import="true" targetId="b67a-69f3-7867-0e1a" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b49-eb92-9f06-3a3b" type="min"/>
-                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0ce-b8a4-90c5-e35a" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="ea82-762d-1765-94e0" name="Upgrade List K (single unit)" hidden="false" collective="false" import="true" targetId="429b-9f60-0419-5e00" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c3d5-f46e-91e8-c680" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntryGroups>
-                <selectionEntryGroup id="af6b-61f1-9a12-96c0" name="Upgrade all models with:" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="d4d2-0784-2e14-3048" name="Plasmabots" hidden="false" collective="false" import="true" targetId="4a4c-75e0-9248-9ba1" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a157-76c7-45e2-e7c0" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="a161-b78d-6a16-2b07" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="2eb5-03ec-fd66-9965">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ca3-88d0-c18a-3bb1" type="min"/>
-                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad76-2190-edd5-a828" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="da49-ac9b-52df-959e" name="Heavy Armblade" hidden="false" collective="false" import="true" targetId="277b-3b3a-d870-dbef" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c3a-cf3d-61c3-f26f" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="2eb5-03ec-fd66-9965" name="2x Armblades" hidden="false" collective="false" import="true" targetId="b67a-69f3-7867-0e1a" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1721-d2ea-22a2-2a2d" type="min"/>
-                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccf5-ae66-ed86-d5e0" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="86d1-617e-2738-c290" name="Upgrade List K (combined unit)" hidden="false" collective="false" import="true" targetId="e981-6061-8d1f-e648" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="330.0"/>
               </costs>
@@ -2621,45 +2522,144 @@
         <infoLink id="9cbf-bf4a-2021-418e" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
         <infoLink id="5668-79ae-2a3a-b9c9" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="7e3c-14f6-61d0-dfeb" name="Upgrade with:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="8d34-4907-b07a-aa9b" name="Repair Bots" hidden="false" collective="false" import="true" targetId="54c5-492c-a9da-8cd7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a150-3f7f-d24a-01ad" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="251f-c893-30b4-bcff" name="Reanimator" hidden="false" collective="false" import="true" targetId="b541-3b58-dcbb-fb0c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4b7-2386-817a-4bca" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a8ad-d2ba-aeab-a90f" name="2x Atom Beam" hidden="false" collective="false" import="true" targetId="0dfd-4cb6-eeaf-134f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce58-ffbc-7d91-ef92" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="081c-1381-3815-638b" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="8659-98c5-80f9-b9a3" name="Stomp (Robot)" hidden="false" collective="false" import="true" targetId="1d2e-00f4-d683-28df" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74d7-4eb4-58f5-b965" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4899-eeac-c16f-1003" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="aecd-83e0-f193-9230" name="Upgrade List A (Vehicles)" hidden="false" collective="false" import="true" targetId="d4d3-1d6d-4256-fff9" type="selectionEntryGroup"/>
+        <entryLink id="fc0a-cf2a-10b0-58df" name="Upgrade List D (Vehicles)" hidden="false" collective="false" import="true" targetId="2438-abc5-63e6-1e24" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="6f7e-8074-d296-df10" name="Twin Flux Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0ebc-a0d5-1406-bee0" name="Twin Flux Rifle" hidden="false" targetId="2499-c27a-8996-cb7e" type="profile"/>
+        <infoLink id="00aa-22f4-d7c9-7464" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="bfb2-3d3f-b7ff-5775" name="Flux" hidden="false" targetId="f3f7-52df-ba4d-7507" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="af1a-e65c-1551-01a6" name="Destroyer Robot Snakes" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="39af-8e20-bc12-d022" name="Destroyer Robot Snake" hidden="false" targetId="3ea3-a488-b539-c496" type="profile"/>
+        <infoLink id="5ab5-aaba-c81f-83fa" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="7a26-decd-dd3f-88f5" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="785c-2e7d-237a-a4f9" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="c92f-6ddd-5bfd-7e4f" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="6b6a-53cb-bea7-1ace" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3600-faee-2116-5648" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="292c-5210-af7e-2d59">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e71d-628d-e275-e27c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0d1-8227-26ab-b5a6" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="292c-5210-af7e-2d59" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="b956-604b-6dfd-8b14" name="Upgrade List K (single unit)" hidden="false" collective="false" import="true" targetId="429b-9f60-0419-5e00" type="selectionEntryGroup"/>
+                <entryLink id="8d73-0065-00ed-a62a" name="Metal Fangs" hidden="false" collective="false" import="true" targetId="fbee-5fee-b23b-51ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17e6-3f05-39e3-b45e" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="023a-a27c-60ec-3f3c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="37a0-99b1-da9e-e073" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="938a-23b2-f743-fe52" name="Upgrade List K (combined unit)" hidden="false" collective="false" import="true" targetId="e981-6061-8d1f-e648" type="selectionEntryGroup"/>
+                <entryLink id="dbac-e690-ec86-5997" name="Metal Fangs" hidden="false" collective="false" import="true" targetId="fbee-5fee-b23b-51ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baf5-6ff4-d34e-4c50" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbe3-fca8-9ae3-499d" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="395.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="395.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e448-6c66-f2fd-3574" name="Disintegration Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9b59-8f90-1702-6c76" name="Disintegration Pistol" hidden="false" targetId="307d-9371-f61e-d2a7" type="profile"/>
+        <infoLink id="6470-7326-de45-be5d" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="37a4-6737-e8e3-a32d" name="Tri-Scorpion Pistoleer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="379a-1400-1369-9162" name="Tri-Scorpion Pistoleer" hidden="false" targetId="d28f-5686-c4b5-e787" type="profile"/>
+        <infoLink id="2878-0f8a-f1ad-305a" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="ee78-5685-41e6-cb71" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="06cb-051b-492e-c2bd" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
+        <infoLink id="f64c-a0f8-f85b-2ae8" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="4bfc-964c-6bbd-2824" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="96b6-7254-f897-0688" name="Disintegration Pistol" hidden="false" collective="false" import="true" targetId="e448-6c66-f2fd-3574" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26d3-a74e-e40d-fe5d" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9346-c3d7-df30-b3ed" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3f02-8aaf-fec2-39ae" name="CCW (A3)" hidden="false" collective="false" import="true" targetId="929d-4e14-54f7-0ad8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dca1-0c5d-91ff-f009" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9485-19f4-a5ca-7972" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="220.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="856d-7681-0d24-a3a7" name="Exterminator Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="899b-a39b-bc6e-abd0" name="Exterminator Cannon" hidden="false" targetId="1e64-d4c2-517b-8b0f" type="profile"/>
+        <infoLink id="e2f7-25e2-408d-f3b9" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="1cd9-0267-8d14-c8a4" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="683a-f1fa-20b0-e5b5" name="Heavy Annihilator" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7bc7-9496-b97a-1b36" name="Heavy Annihilator" hidden="false" targetId="3a56-621e-042c-2a90" type="profile"/>
+        <infoLink id="2834-fcb9-8e86-b421" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="c044-3ced-d311-01d9" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="d471-e636-99ac-1759" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="2c72-44b0-9332-c29d" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="94df-606f-98d6-6554" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="3cbe-dcb2-6086-00ab" name="Upgrade List M" hidden="false" collective="false" import="true" targetId="e045-2c29-2316-f685" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="265.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5fc1-e080-02bc-d4cb" name="Doom Blaster" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b4ab-21bb-bd78-a85a" name="Doom Blaster" hidden="false" targetId="915c-068a-0c04-e96c" type="profile"/>
+        <infoLink id="5bef-ec64-5728-cab2" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="643f-501b-8e6c-22ed" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9f46-79e8-3435-0ed1" name="Heavy Doom Blaster" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8b96-daf2-a4e1-485b" name="Heavy Doom Blaster" hidden="false" targetId="ff16-677d-89cf-ea37" type="profile"/>
+        <infoLink id="ae08-06ec-f6a4-5d2e" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="c964-2152-22e6-4eb6" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2743,6 +2743,157 @@
             <entryLink id="1eae-d9a4-f88d-ea90" name="Phase Glaive" hidden="false" collective="false" import="true" targetId="d502-b94c-9c93-ae9b" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="429b-9f60-0419-5e00" name="Upgrade List K (single unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cb29-b409-6e86-59fb" name="Replace one 2x Arm Blades:" hidden="false" collective="false" import="true" defaultSelectionEntryId="3eb6-987c-e239-eb66">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b0d-fd27-d5bf-4953" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2741-62d2-9810-60b2" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3eb6-987c-e239-eb66" name="2x Armblades" hidden="false" collective="false" import="true" targetId="b67a-69f3-7867-0e1a" type="selectionEntry"/>
+            <entryLink id="cf53-a862-6d3c-4e05" name="Heavy Armblade" hidden="false" collective="false" import="true" targetId="277b-3b3a-d870-dbef" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d5a-b4be-9d3a-b0dd" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b581-41b0-b3b3-e6bc" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="8bb2-52bd-e2f9-d37d" name="Plasmabots" hidden="false" collective="false" import="true" targetId="4a4c-75e0-9248-9ba1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11df-049e-6449-24dd" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e981-6061-8d1f-e648" name="Upgrade List K (combined unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="857a-45ed-b7d9-dfbf" name="Replace two 2x Arm Blades:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8dde-743a-b3ed-ec45">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd70-7db1-54d4-2391" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="883f-4856-bb48-9d44" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8dde-743a-b3ed-ec45" name="2x Armblades" hidden="false" collective="false" import="true" targetId="b67a-69f3-7867-0e1a" type="selectionEntry"/>
+            <entryLink id="937f-735f-4ddc-08a2" name="Heavy Armblade" hidden="false" collective="false" import="true" targetId="277b-3b3a-d870-dbef" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3ed-bda5-5f5a-b5cf" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9b53-1ad7-5be7-591c" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="4667-2281-95db-85e3" name="Plasmabots" hidden="false" collective="false" import="true" targetId="4a4c-75e0-9248-9ba1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71fe-3d0f-f77d-3a15" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e045-2c29-2316-f685" name="Upgrade List M" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7be9-8428-cf46-540b" name="Replace Heavy Gauss Cannon:" hidden="false" collective="false" import="true" defaultSelectionEntryId="20d6-6cf2-5425-b73b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b16-be65-3319-8cfa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1aa-6eb6-46e0-5f17" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="20d6-6cf2-5425-b73b" name="Heavy Gauss Cannon" hidden="false" collective="false" import="true" targetId="142b-1f39-dfd5-cf03" type="selectionEntry"/>
+            <entryLink id="f162-b4f5-a7b2-2fb6" name="Exterminator Cannon" hidden="false" collective="false" import="true" targetId="856d-7681-0d24-a3a7" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d4d3-1d6d-4256-fff9" name="Upgrade List A (Vehicles)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="866e-8959-b2ec-60e4" name="Upgrade with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="7309-58c2-8d75-ad8b" name="Repair Bots" hidden="false" collective="false" import="true" targetId="54c5-492c-a9da-8cd7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5221-50a2-c454-5584" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2438-abc5-63e6-1e24" name="Upgrade List D (Vehicles)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="77b9-4663-fac1-9bf3" name="Replace 2x Atom Beam:" hidden="false" collective="false" import="true" defaultSelectionEntryId="53f4-b7fe-3d04-f21a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d90-8ea7-2855-06de" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a05-65a8-31df-8164" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="53f4-b7fe-3d04-f21a" name="2x Atom Beam" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="1b2a-534b-514f-69fd" name="Atom Beam" hidden="false" collective="false" import="true" targetId="0dfd-4cb6-eeaf-134f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1c9-0205-49c1-8dc3" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="009e-f576-455d-0de5" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="bb22-1522-41ca-79ee" name="Doom Blaster" hidden="false" collective="false" import="true" targetId="5fc1-e080-02bc-d4cb" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1a58-f93c-596a-8f8a" name="Heavy Doom Blaster" hidden="false" collective="false" import="true" targetId="9f46-79e8-3435-0ed1" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1bdd-c3de-d82d-624e" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="994b-e670-1a5d-b8ad" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6156-37fe-1257-59fe" name="Twin Gauss Rifle" hidden="false" collective="false" import="true" targetId="c74c-30de-be89-9084" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7c22-1cc0-7f02-dd52" name="Reanimator" hidden="false" collective="false" import="true" targetId="b541-3b58-dcbb-fb0c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -3417,6 +3568,62 @@
     <profile id="86e1-a6ed-cafc-d09e" name="Reanimator" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">When this unit is activated pick one firendly unit within 12&quot;, which may ignroe wounds from Regeneration on 4+ next time it takes wounds.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2499-c27a-8996-cb7e" name="Twin Flux Rifle" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1), Flux</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3ea3-a488-b539-c496" name="Destroyer Robot Snake" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fearless, Regeneration, Strider, Tough(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d28f-5686-c4b5-e787" name="Tri-Scorpion Pistoleer" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Fearless, Regeneration, Relentless, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="307d-9371-f61e-d2a7" name="Disintegration Pistol" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3a56-621e-042c-2a90" name="Heavy Annihilator" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fearless, Regeneration, Strider, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1e64-d4c2-517b-8b0f" name="Exterminator Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Blast(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="915c-068a-0c04-e96c" name="Doom Blaster" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Blast(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ff16-677d-89cf-ea37" name="Heavy Doom Blaster" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Blast(6)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
