@@ -144,6 +144,11 @@
         <categoryLink id="397e-91a4-948f-d5b9" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="42fa-9d18-75a7-84bd" name="Heavy Annihilator" hidden="false" collective="false" import="true" targetId="683a-f1fa-20b0-e5b5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2ab3-9dea-05e6-9df0" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c0a8-6221-1d17-dfd5" name="Spirit Attack" hidden="false" collective="false" import="true" type="upgrade">
@@ -2693,6 +2698,29 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="220.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="856d-7681-0d24-a3a7" name="Exterminator Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="899b-a39b-bc6e-abd0" name="Exterminator Cannon" hidden="false" targetId="1e64-d4c2-517b-8b0f" type="profile"/>
+        <infoLink id="e2f7-25e2-408d-f3b9" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="1cd9-0267-8d14-c8a4" name="Blast(X)" hidden="false" targetId="187f-6414-7037-a542" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="683a-f1fa-20b0-e5b5" name="Heavy Annihilator" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7bc7-9496-b97a-1b36" name="Heavy Annihilator" hidden="false" targetId="3a56-621e-042c-2a90" type="profile"/>
+        <infoLink id="2834-fcb9-8e86-b421" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="c044-3ced-d311-01d9" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="d471-e636-99ac-1759" name="Regeneration" hidden="false" targetId="dea8-a8f9-1865-4424" type="rule"/>
+        <infoLink id="2c72-44b0-9332-c29d" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="94df-606f-98d6-6554" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="3cbe-dcb2-6086-00ab" name="Upgrade List M" hidden="false" collective="false" import="true" targetId="e045-2c29-2316-f685" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="265.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0da2-7341-2e9d-0184" name="Psychic Spells" hidden="false" collective="false" import="true">
@@ -2841,6 +2869,24 @@
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e045-2c29-2316-f685" name="Upgrade List M" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7be9-8428-cf46-540b" name="Replace Heavy Gauss Cannon:" hidden="false" collective="false" import="true" defaultSelectionEntryId="20d6-6cf2-5425-b73b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b16-be65-3319-8cfa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1aa-6eb6-46e0-5f17" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="20d6-6cf2-5425-b73b" name="Heavy Gauss Cannon" hidden="false" collective="false" import="true" targetId="142b-1f39-dfd5-cf03" type="selectionEntry"/>
+            <entryLink id="f162-b4f5-a7b2-2fb6" name="Exterminator Cannon" hidden="false" collective="false" import="true" targetId="856d-7681-0d24-a3a7" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -3543,6 +3589,20 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">18&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3a56-621e-042c-2a90" name="Heavy Annihilator" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fearless, Regeneration, Strider, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1e64-d4c2-517b-8b0f" name="Exterminator Cannon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A3</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Blast(3)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
