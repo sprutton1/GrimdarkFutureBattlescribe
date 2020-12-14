@@ -95,7 +95,7 @@ table!
 |TAO Coalition|v2.11|Done|
 |Titan Lords|v2.4|Done|
 |Vile Rattus Cult|v2.5|Done|
-|Wormhole Daemons|v2.8|Done|
+|Wormhole Daemons|v2.9|Done|
 
 
 
