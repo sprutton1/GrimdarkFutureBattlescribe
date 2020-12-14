@@ -4138,6 +4138,13 @@
         <infoLink id="e87e-e6fc-a381-f985" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="e2f7-f557-9f39-abd8" name="Jetpack" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9783-bdc6-c6f5-1496" name="Jetpack" hidden="false" targetId="98a1-ee92-c8ca-e8f5" type="profile"/>
+        <infoLink id="04f7-a772-cbab-3834" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="136b-2593-aa70-ffc0" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a2d6-72e7-2f02-eb3b" name="Weapons - Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="3420-f6e6-3624-1727">
@@ -4295,7 +4302,12 @@
             </entryLink>
             <entryLink id="647d-b6a5-8139-e072" name="Ultra Armor" hidden="false" collective="false" import="true" targetId="caf8-c2dd-6bf8-8893" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7ede-0f2e-6692-77ef" name="Jetpack" hidden="false" collective="false" import="true" targetId="e2f7-f557-9f39-abd8" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -5282,6 +5294,11 @@
     <profile id="ad65-db53-6231-97e5" name="Rotor Blade Attack" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Impact(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="98a1-ee92-c8ca-e8f5" name="Jetpack" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Ambush, Flying</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
