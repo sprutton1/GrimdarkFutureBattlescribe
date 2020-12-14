@@ -2884,6 +2884,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6e06-5adb-3e49-33f9" name="Upgrade List A (Vehicles):" hidden="false" collective="false" import="true" targetId="2d10-ad2b-fdd1-e347" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
       </costs>
@@ -4396,7 +4399,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2d10-ad2b-fdd1-e347" name="Upgrades (Trucks &amp; Tanks)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="2d10-ad2b-fdd1-e347" name="Upgrade List A (Vehicles):" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="e30d-7fc0-2cb2-0adc" name="Wrecking Ball" hidden="false" collective="false" import="true" targetId="62f1-b7bd-c3c7-1917" type="selectionEntry">
           <constraints>
@@ -4428,6 +4431,14 @@
           </constraints>
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="75c1-0035-2741-cec2" name="Shoot Shoot Shoot!" hidden="false" collective="false" import="true" targetId="f39b-d482-e22f-06eb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a55-74b2-40c0-6bda" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
           </costs>
         </entryLink>
       </entryLinks>
