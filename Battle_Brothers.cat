@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6b93-03ad-4cbe-782d" name="Battle Brothers" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6b93-03ad-4cbe-782d" name="Battle/Prime Brothers" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="dead-6af1-a069-5579" name="Battle Brothers v2.12"/>
     <publication id="a380-f550-5f9a-c792" name="Battle Brothers Detachments v2.14"/>
-    <publication id="339e-d00a-321f-4a00" name="Prime Brothers v2.12"/>
+    <publication id="339e-d00a-321f-4a00" name="Prime Brothers v2.13"/>
   </publications>
   <entryLinks>
     <entryLink id="5e41-31cb-5063-301e" name="Champion" hidden="false" collective="false" import="true" targetId="7708-7d52-a3b5-5a3a" type="selectionEntry">
@@ -638,6 +638,7 @@
         <categoryLink id="fa55-3aeb-058c-0a40" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="4260-efb1-e48e-399a" name="**Army Selection**" hidden="false" collective="false" import="true" targetId="817b-3644-0181-0296" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="40e7-3f33-f159-d98d" name="Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -4635,20 +4636,11 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1e4-de6f-cdd9-5714" type="max"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="79c4-4981-e954-98eb" name="Detachment" hidden="false" collective="false" import="true" defaultSelectionEntryId="3803-8a8b-5bbf-496f">
+        <selectionEntryGroup id="79c4-4981-e954-98eb" name="Detachment" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73d5-72c9-0f06-632e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb3a-5e2e-e57c-c8cd" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3803-8a8b-5bbf-496f" name="Battle Brothers" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a676-ca2a-72c8-520d" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="fc5e-c95a-636b-865d" name="Blood Brothers" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5930-d208-6fcc-e730" type="max"/>
@@ -12209,6 +12201,24 @@
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="817b-3644-0181-0296" name="**Army Selection**" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc27-6d9b-9464-b19f" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e24-2b0e-fa56-e1a2" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="74f2-5e90-f001-3a5c" name="Army Book" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d555-a187-f619-f061" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9a0-c8e1-e767-0c28" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6937-7865-61f3-66a7" name="Battle Brothers" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="dc7a-12df-d69b-ed72" name="Prime Brothers" hidden="false" collective="false" import="true" type="upgrade"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
