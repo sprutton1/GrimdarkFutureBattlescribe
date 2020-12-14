@@ -87,7 +87,7 @@ table!
 |Infected Colonies|v2.4|Done|
 |Machine Cult|v2.10|Done|
 |Machine Cult Defilers|v2.5|Done|
-|Orc Marauders|v2.11|Done|
+|Orc Marauders|v2.12|Done|
 |Ratmen Clans|v2.6|Done|
 |Rebel Guerrillas|v2.5|Done|
 |Robot Legions|v2.10|Done|
