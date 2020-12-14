@@ -1061,57 +1061,15 @@
         <infoLink id="e988-ef58-dbce-f8bf" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
         <infoLink id="c8a2-4889-0cea-9135" name="Repair" hidden="false" targetId="e5ed-cad2-4eba-2fbc" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="c48b-321a-c687-f544" name="Equipment Upgrade [max 1]" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc8-8c1b-52d4-362d" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="4a15-ba5c-fb56-d300" name="Jetpack" hidden="false" collective="false" import="true" targetId="33d6-ea20-9d27-5f4e" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="7dd1-94e1-e63f-4f08" name="Bike" hidden="false" collective="false" import="true" targetId="c47e-3660-de3d-86f7" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="2330-6fed-be54-f741" name="Destroyer Armor" hidden="false" collective="false" import="true" targetId="8150-2743-e904-7a5c" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="74bb-bf2e-1e09-86a3" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-          </costs>
+        <entryLink id="f812-eba8-e347-4910" name="Battle Brothers - Upgrade List A" hidden="false" collective="false" import="true" targetId="763b-1230-bcad-b19d" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c685-b270-5b8b-c0df" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e79f-2522-4dcc-55ca" type="max"/>
+          </constraints>
         </entryLink>
-        <entryLink id="821e-3f51-9a65-9d46" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="71b5-f67b-eaeb-e25c" name="Wolf Brothers - Counter-Attack" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="f311-80c0-57fe-21b2" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="6955-8410-95fc-a104" name="Dark Brothers - Dark Assault" hidden="false" collective="false" import="true" targetId="cf31-8c37-3347-79a3" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="f812-eba8-e347-4910" name="Leader Weapons" hidden="false" collective="false" import="true" targetId="763b-1230-bcad-b19d" type="selectionEntryGroup"/>
+        <entryLink id="5ef0-8c47-70c4-006b" name="Battle Brothers - Upgrade List B" hidden="false" collective="false" import="true" targetId="1053-1e3d-6ca4-6012" type="selectionEntryGroup"/>
+        <entryLink id="c84f-0804-18a7-efd3" name="Detachment Upgrade (Heroes)" hidden="false" collective="false" import="true" targetId="64f3-fff6-95b2-f27b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="90.0"/>
@@ -13051,7 +13009,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="64f3-fff6-95b2-f27b" name="Detachment Upgrade (Heroes)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="64f3-fff6-95b2-f27b" name="** Detachment Upgrade (Heroes) **" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="5e1b-152a-008f-571a" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
           <costs>
