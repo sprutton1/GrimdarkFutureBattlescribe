@@ -1726,270 +1726,29 @@
         <infoLink id="356d-3384-c1d1-cc5b" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
         <infoLink id="0e31-6448-2350-0f89" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="f379-131c-9645-78f6" name="Bike Weapon Upgrade" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcd7-f9e4-6083-4733" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="c62b-9622-dc73-feb5" name="Twin Assault Rifle" hidden="false" collective="false" import="true" targetId="e098-3b64-3d3c-33c2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16b3-5930-a818-c8ec" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96be-dbbd-2f8b-4af2" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b785-a621-2199-5649" name="Brother Biker Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="7164-9d3e-3d2c-5dc5">
+        <selectionEntryGroup id="ce47-2b82-9f95-7eb6" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="dace-e5f3-0528-3a26">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baaf-5ceb-ce5b-b12c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0350-ade0-b542-e3db" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57d1-d5a5-7be4-3756" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9de9-a740-a92b-2b39" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="772b-2448-0bf5-01d2" name="Pistol/Shield + Melee" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntryGroups>
-                <selectionEntryGroup id="80f1-dd06-03a3-03da" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4243-1aab-9e45-1da7">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9189-2bbb-2ca6-7477" type="max"/>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0370-20de-3a7f-fb89" type="min"/>
-                  </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="5ef0-c903-7554-82b6" name="Melee Upgrade [max 1]" hidden="false" collective="false" import="true">
-                      <constraints>
-                        <constraint field="selections" scope="bcdb-26e5-0075-6157" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dedb-cadd-3697-b28f" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d36b-f2e8-a94c-5ac7" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="0d76-cce5-832f-f9d1" name="Chainsaw Fist" hidden="false" collective="false" import="true" targetId="ee7c-53ab-fcc5-afdb" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="a95d-96e3-9e44-94c1" name="Energy Fist" hidden="false" collective="false" import="true" targetId="ffff-7bb4-119c-0f59" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="50ad-d2ae-1a62-d092" name="Energy Hammer" hidden="false" collective="false" import="true" targetId="ee08-0414-e5c3-908f" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="385b-d719-a352-15a1" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <entryLinks>
-                    <entryLink id="4243-1aab-9e45-1da7" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c521-ae96-644e-3e67" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="f7bf-6367-f505-0281" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1d7b-c417-42de-0bd9">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db83-7115-dbb2-6613" type="min"/>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b38d-bdfc-a7d3-c63a" type="max"/>
-                  </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="4ce3-d2e1-1e0d-d652" name="Ranged/Shield Upgrade [max 1]" hidden="false" collective="false" import="true">
-                      <constraints>
-                        <constraint field="selections" scope="bcdb-26e5-0075-6157" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1007-a9f7-fec4-128f" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46c5-e851-32c4-cd6a" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="4e5a-32a0-c356-3a99" name="Gravity Pistol" hidden="false" collective="false" import="true" targetId="f790-2f7c-63a0-1603" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="9568-09e0-0236-6607" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="b4bf-2a04-6bf7-a1e0" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="811c-e8f5-6424-5a6a" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="81eb-54bb-486a-1563" name="Combat Shield" hidden="false" collective="false" import="true" targetId="5d42-38b9-de5e-58fd" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <entryLinks>
-                    <entryLink id="1d7b-c417-42de-0bd9" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="213e-1f20-10eb-280a" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+            <selectionEntry id="dac5-d62c-b12a-1bcf" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="6a4f-eed7-c538-f8af" name="Battle Brothers 1 - Upgrade List A (combined unit)" hidden="false" collective="false" import="true" targetId="2d44-65f8-8cb8-30f4" type="selectionEntryGroup"/>
+                <entryLink id="a9da-e310-cbae-49e0" name="** Detachment Upgrade (Units of [3], combined unit) **" hidden="false" collective="false" import="true" targetId="453e-ef26-c3dc-e2b5" type="selectionEntryGroup"/>
+                <entryLink id="86bc-dc5a-8f52-3ea1" name="Battle Brothers 1 - Upgrade List I (combined unit)" hidden="false" collective="false" import="true" targetId="d06b-539c-e739-9b10" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="125.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7164-9d3e-3d2c-5dc5" name="Rifle + Melee" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntryGroups>
-                <selectionEntryGroup id="e1cd-7c66-2cc0-b272" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5211-dbcf-cf43-2fa4">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="881c-c6e2-4f5f-ce93" type="max"/>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="272d-c7ea-2380-b45f" type="min"/>
-                  </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="63b2-aa73-cbd2-e044" name="Melee Upgrade" hidden="false" collective="false" import="true">
-                      <constraints>
-                        <constraint field="selections" scope="bcdb-26e5-0075-6157" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0771-cf05-6909-1470" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4010-f25e-3cf1-f193" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="2a3f-bcf0-2371-cc37" name="Chainsaw Fist" hidden="false" collective="false" import="true" targetId="ee7c-53ab-fcc5-afdb" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="1179-df0b-db55-3e34" name="Energy Fist" hidden="false" collective="false" import="true" targetId="ffff-7bb4-119c-0f59" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="1e6e-2f2b-8cb8-20e4" name="Energy Hammer" hidden="false" collective="false" import="true" targetId="ee08-0414-e5c3-908f" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="4212-71ce-5f44-8909" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <entryLinks>
-                    <entryLink id="5211-dbcf-cf43-2fa4" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beb6-c36d-d827-4a7e" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="0d0b-7088-6285-0af3" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1f18-c5bd-652f-0d2f">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d77-63d0-afff-1c02" type="min"/>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdbd-7b84-da29-267d" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="139a-1f55-1542-9928" name="Assault Rifle + Attachment" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="bcdb-26e5-0075-6157" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d5ee-55a5-d1d2-9063" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0d6-0186-83ee-ac72" type="max"/>
-                      </constraints>
-                      <selectionEntryGroups>
-                        <selectionEntryGroup id="71c2-85c1-9f22-a159" name="Rifle Attachment [pick 1]" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e75-33b5-4e58-cbad">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2b82-98be-7a64-2976" type="min"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2ce-b77e-08da-7e89" type="max"/>
-                          </constraints>
-                          <entryLinks>
-                            <entryLink id="4451-b0aa-174a-e761" name="Gravity Rifle" hidden="false" collective="false" import="true" targetId="3e4a-da63-fdf2-c5fb" type="selectionEntry">
-                              <costs>
-                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                              </costs>
-                            </entryLink>
-                            <entryLink id="80ec-d762-fbe8-34d5" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
-                              <costs>
-                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-                              </costs>
-                            </entryLink>
-                            <entryLink id="9e75-33b5-4e58-cbad" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
-                              <costs>
-                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-                              </costs>
-                            </entryLink>
-                            <entryLink id="dfb9-10f8-3a3c-7b78" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
-                              <costs>
-                                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-                              </costs>
-                            </entryLink>
-                          </entryLinks>
-                        </selectionEntryGroup>
-                      </selectionEntryGroups>
-                      <entryLinks>
-                        <entryLink id="d98a-c602-0f88-5c8b" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="a1da-51ac-5a8f-8f95" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9638-ae66-7b98-edab" type="min"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7b3-bfba-6a57-e618" type="max"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="1f18-c5bd-652f-0d2f" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45c9-9a12-2009-2ad8" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="acf9-0604-a149-381c" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="a1da-51ac-5a8f-8f95" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5737-306c-abaa-ffa6" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="175d-b7bb-7411-f189" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="602d-ac75-8834-748c" name="Specialist Weapon" hidden="false" collective="false" import="true">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87d8-4807-4deb-82bc" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="942e-011f-1cea-4f7e" name="Gravity Rifle" hidden="false" collective="false" import="true" targetId="3e4a-da63-fdf2-c5fb" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="9f44-b13c-be73-34f8" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="f582-873d-bf2b-035e" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="1068-fef6-244e-7824" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
-                          <costs>
-                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+            <selectionEntry id="dace-e5f3-0528-3a26" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="e480-d46b-de5e-7c6f" name="Battle Brothers 1 - Upgrade List A (single unit)" hidden="false" collective="false" import="true" targetId="763b-1230-bcad-b19d" type="selectionEntryGroup"/>
+                <entryLink id="b3bb-2362-a4e9-38d9" name="** Detachment Upgrade (Units of [3], single unit) **" hidden="false" collective="false" import="true" targetId="a060-d513-9f57-6e27" type="selectionEntryGroup"/>
+                <entryLink id="b944-d07e-1f31-ab49" name="Battle Brothers 1 - Upgrade List I (single unit)" hidden="false" collective="false" import="true" targetId="b2b2-20da-8fb2-4e38" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
               </costs>
@@ -1997,28 +1756,6 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="5e4c-6370-2440-3493" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="dc70-1fa2-68e3-7ca8" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="3100-88f4-6f5d-ba80" name="Wolf Brothers - Counter-Attack" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="ff7c-bbdd-8925-bc3a" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="125.0"/>
       </costs>
@@ -11219,7 +10956,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="763b-1230-bcad-b19d" name="Battle Brothers - Upgrade List A (single unit)" hidden="false" collective="false" import="true" defaultSelectionEntryId="4323-8b88-efda-e548">
+    <selectionEntryGroup id="763b-1230-bcad-b19d" name="Battle Brothers 1 - Upgrade List A (single unit)" hidden="false" collective="false" import="true" defaultSelectionEntryId="4323-8b88-efda-e548">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bfb-94b0-e0b1-92b7" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1efe-7240-bf7f-8978" type="max"/>
@@ -11242,6 +10979,13 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="4323-8b88-efda-e548" name="Assault Rifle &amp; CCW (A1)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="330f-2245-e9af-36b6" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62d7-4625-7d28-f436" type="max"/>
           </constraints>
@@ -11400,6 +11144,13 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="da4f-6086-ae77-03b0" name="Upgrade List G Options - Heavy Weapon &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6ba-d26e-87f1-8f9c" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3faf-53d6-f39d-fcdd" type="max"/>
           </constraints>
@@ -12006,7 +11757,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="1053-1e3d-6ca4-6012" name="Battle Brothers - Upgrade List B" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="1053-1e3d-6ca4-6012" name="Battle Brothers 1 - Upgrade List B" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="61ad-2adb-0653-175a" name="Upgrade with one:" hidden="false" collective="false" import="true">
           <constraints>
@@ -12044,7 +11795,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="92f1-dd62-99c9-e1f8" name="Battle Brothers - Upgrade List C" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="92f1-dd62-99c9-e1f8" name="Battle Brothers 1 - Upgrade List C" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="5461-0f45-adb2-f31e" name="Upgrade with one:" hidden="false" collective="false" import="true">
           <constraints>
@@ -12132,7 +11883,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0e51-ec02-2e40-920a" name="Battle Brothers - Upgrade List D" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="0e51-ec02-2e40-920a" name="Battle Brothers 1 - Upgrade List D" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="4e68-5a92-a2d8-ae0b" name="Upgrade Psychic(1):" hidden="false" collective="false" import="true" defaultSelectionEntryId="fac9-b5f6-923d-fe15">
           <constraints>
@@ -12239,7 +11990,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="33a7-ac28-5edb-04a2" name="Battle Brothers - Upgrade List H (single unit)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="33a7-ac28-5edb-04a2" name="Battle Brothers 1 - Upgrade List H (single unit)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="c092-6f88-4d56-fc99" name="Upgrade all models with:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -12451,7 +12202,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="4a5e-00fa-fec9-a3b1" name="Battle Brothers - Upgrade List H (combined unit)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="4a5e-00fa-fec9-a3b1" name="Battle Brothers 1 - Upgrade List H (combined unit)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="826d-8bb0-0ceb-94a7" name="Upgrade all models with:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -12735,7 +12486,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="9eb9-9282-302b-dedf" name="Battle Brothers - Upgrade List E (single unit)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="9eb9-9282-302b-dedf" name="Battle Brothers 1 - Upgrade List E (single unit)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="77cb-cfbe-03c2-6098" name="Upgrade all models with:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -12849,7 +12600,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="4985-2bdb-6d89-7256" name="Battle Brothers - Upgrade List E (combined unit)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="4985-2bdb-6d89-7256" name="Battle Brothers 1 - Upgrade List E (combined unit)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="41c3-cf5b-68f9-97e8" name="Upgrade all models with:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -12963,7 +12714,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2d44-65f8-8cb8-30f4" name="Battle Brothers - Upgrade List A (combined unit)" hidden="false" collective="false" import="true" defaultSelectionEntryId="eedc-1dc4-394e-daf0">
+    <selectionEntryGroup id="2d44-65f8-8cb8-30f4" name="Battle Brothers 1 - Upgrade List A (combined unit)" hidden="false" collective="false" import="true" defaultSelectionEntryId="eedc-1dc4-394e-daf0">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b492-1652-f5c6-26c1" type="min"/>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd6-7e24-bb3a-83ce" type="max"/>
@@ -12986,6 +12737,13 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="eedc-1dc4-394e-daf0" name="Assault Rifle &amp; CCW (A1)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cc6-7217-fa4d-48e8" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b95f-9782-4570-07c9" type="max"/>
           </constraints>
@@ -13109,7 +12867,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="cffb-7914-9b84-b489" name="Replace one Pistol:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="cffb-7914-9b84-b489" name="Replace one Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="21fc-970e-81df-af4a">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ae7-1d4c-e1c0-e8fd" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a25-f418-3941-d58e" type="max"/>
@@ -13144,6 +12902,13 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="ae4d-fb0d-0bba-42f5" name="Upgrade List G Options - Heavy Weapon &amp; CCW" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6ba-d26e-87f1-8f9c" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e98e-e809-24dc-d8c3" type="max"/>
           </constraints>
@@ -13331,7 +13096,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="63a6-57b0-3e51-fb05" name="Battle Brothers - Upgrade List F (single unit)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="63a6-57b0-3e51-fb05" name="Battle Brothers 1 - Upgrade List F (single unit)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="cbe9-ee29-15e2-fc88" name="Upgrade all models with any:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -13497,7 +13262,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="e4df-3887-7da8-583c" name="Battle Brothers - Upgrade List A (Assault - single unit)" hidden="false" collective="false" import="true" defaultSelectionEntryId="3b0b-8172-2dcb-2aa5">
+    <selectionEntryGroup id="e4df-3887-7da8-583c" name="Battle Brothers 1 - Upgrade List A (Assault - single unit)" hidden="false" collective="false" import="true" defaultSelectionEntryId="3b0b-8172-2dcb-2aa5">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b20f-d262-3c1a-13b5" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa47-4dbd-a664-dae7" type="max"/>
@@ -13605,7 +13370,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="21c4-9f9c-c3d5-4f2b" name="Battle Brothers - Upgrade List A (Assault - combined unit)" hidden="false" collective="false" import="true" defaultSelectionEntryId="9b71-163d-334f-b316">
+    <selectionEntryGroup id="21c4-9f9c-c3d5-4f2b" name="Battle Brothers 1 - Upgrade List A (Assault - combined unit)" hidden="false" collective="false" import="true" defaultSelectionEntryId="9b71-163d-334f-b316">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8929-4c33-929b-aa17" type="min"/>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c757-9f6e-07d3-8d0c" type="max"/>
@@ -13713,7 +13478,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="10ae-6e44-4d31-9e24" name="Battle Brothers - Upgrade List F (combined unit)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="10ae-6e44-4d31-9e24" name="Battle Brothers 1 - Upgrade List F (combined unit)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="58da-b8c5-c95d-b180" name="Upgrade all models with any:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -13879,7 +13644,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0b46-62ae-1706-b7bd" name="Battle Brothers - Upgrade List G (single unit)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="0b46-62ae-1706-b7bd" name="Battle Brothers 1 - Upgrade List G (single unit)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="33d2-4324-7f8b-ffa2" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="5f03-4c9b-46e6-0d3e">
           <constraints>
@@ -13941,7 +13706,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="4c7e-9cd1-b2ca-b964" name="Battle Brothers - Upgrade List G (combined unit)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="4c7e-9cd1-b2ca-b964" name="Battle Brothers 1 - Upgrade List G (combined unit)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="3699-0123-a9c1-2f93" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="6748-e397-899f-fa84">
           <constraints>
@@ -14000,6 +13765,250 @@
             <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79c6-f739-f63a-2bcb" type="min"/>
             <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21ae-6af2-192a-4c01" type="max"/>
           </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b2b2-20da-8fb2-4e38" name="Battle Brothers 1 - Upgrade List I (single unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="39c4-1343-30e5-2f57" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="fb0e-4f5e-32de-5d8a" name="Twin Assault Rifles" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4182-e98a-854a-011a" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="804c-a68e-7d57-a3a9" name="Twin Assault Rifle" hidden="false" collective="false" import="true" targetId="e098-3b64-3d3c-33c2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99af-3a41-e845-25fb" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5242-d1f5-91cb-e3f8" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6d04-61d6-d6d7-e8de" name="Replace all Assault Rifles &amp; CCWs:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2426-2658-0cce-5c03">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d1a-8635-4045-8937" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d2-de1b-3439-0048" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2426-2658-0cce-5c03" name="Assault Rifles &amp; CCWs (A1)" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2286-8e4f-3238-78f5" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a01a-8c03-9d0b-0474">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1663-387a-0658-4ec7" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f822-480f-2289-b87e" type="max"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="eeec-12a9-683a-c913" name="Replace up to two Assault Rifles:" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c66b-a5cd-68c5-7039" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="e34a-fa74-b81c-eaf2" name="Gravity Rifle" hidden="false" collective="false" import="true" targetId="3e4a-da63-fdf2-c5fb" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="4d92-bf21-b9d0-7cf3" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="9ab9-5aad-e6c4-23c0" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="308b-4cf9-b870-6d0d" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink id="a01a-8c03-9d0b-0474" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="a1da-51ac-5a8f-8f95" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="8568-5474-6a73-5690" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="4761-1567-afe2-c2ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="456c-ed21-96f0-b931" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb13-1982-a3e6-1a9f" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="330f-2245-e9af-36b6" name="Pistols &amp; CCWs (A2)" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="6848-ed3c-f378-042e" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3c2-91be-c3f5-8e3d" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="405d-cd10-f31d-80f6" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="578e-c307-a8b8-42f8" name="Pistol" hidden="false" collective="false" import="true" targetId="bb7e-64f2-5ded-f697" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4abe-1a20-3613-6ec1" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fc9-a6f9-1904-c621" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d06b-539c-e739-9b10" name="Battle Brothers 1 - Upgrade List I (combined unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="56ab-657c-922d-a875" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="2fdf-0f4f-ff26-0384" name="Twin Assault Rifles" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adda-7d0e-91d7-0de6" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="b50d-1918-d4ea-1051" name="Twin Assault Rifle" hidden="false" collective="false" import="true" targetId="715c-2e7b-79a7-3d50" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c39-f941-2d60-5ce1" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a44f-0337-9734-ec00" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="cdc4-04a9-6562-83e2" name="Replace all Assault Rifles &amp; CCWs:" hidden="false" collective="false" import="true" defaultSelectionEntryId="49d4-3a9d-d2ef-0852">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afc8-c3de-e376-61f2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e62-b4b0-2584-a51e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="49d4-3a9d-d2ef-0852" name="Assault Rifles &amp; CCWs (A1)" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="f4f7-1f2d-f341-d341" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="d9f2-2456-1f67-e475">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d09-824e-c845-d60d" type="min"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c56-1ced-4083-2f7a" type="max"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="ce63-3b38-1ec8-feb6" name="Replace up to four Assault Rifles:" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77cd-979a-5137-c656" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="d2a7-e882-3a91-8f5b" name="Gravity Rifle" hidden="false" collective="false" import="true" targetId="3e4a-da63-fdf2-c5fb" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="b980-e4a7-a534-fe12" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="4cb4-c780-e943-646a" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="8c14-1335-5f00-d0be" name="Flamethrower" hidden="false" collective="false" import="true" targetId="ebb4-9dca-acaa-4dcf" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="30bd-7a28-e22b-4673" name="Fusion Rifle" hidden="false" collective="false" import="true" targetId="f389-e078-075e-fbff" type="selectionEntry">
+                          <costs>
+                            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink id="d9f2-2456-1f67-e475" name="Assault Rifle" hidden="false" collective="false" import="true" targetId="b1f7-fded-6b90-629b" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="5eff-3dcc-4b66-ff52" name="CCW (A1)" hidden="false" collective="false" import="true" targetId="b521-2bfc-867e-4ea1" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f90-cef4-33d5-6bdc" type="min"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8257-c953-ef90-3851" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="8cc6-7217-fa4d-48e8" name="Pistols &amp; CCWs (A2)" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="dc61-4335-d6db-0188" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e09-11f6-f2e4-b23f" type="min"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d04-d563-a62b-8209" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="7ea5-66ec-138f-e521" name="Pistol" hidden="false" collective="false" import="true" targetId="0f74-a615-8329-0c1a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0a5-5f42-5e24-ee8b" type="min"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3b2-07fc-e69e-b90b" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a060-d513-9f57-6e27" name="** Detachment Upgrade (Units of [3], single unit) **" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="1ee3-ccc4-5cd6-c059" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="a2d7-5da6-8de7-6d97" name="Wolf Brothers - Counter" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="657e-e67d-55d5-1ee6" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="ecca-957a-f78e-505e" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="453e-ef26-c3dc-e2b5" name="** Detachment Upgrade (Units of [3], combined unit) **" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="251f-597e-5167-8d6c" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="6a74-0be6-a6b0-d6ed" name="Wolf Brothers - Counter" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="c54d-eb3d-65ae-e179" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="3937-b316-2d39-e8a5" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
