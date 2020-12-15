@@ -756,6 +756,14 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1a63-e1d6-dad4-d821" name="Shotgun" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3e8e-df45-3867-397d" name="Shotgun" hidden="false" targetId="60a3-2b87-f77c-195c" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="859e-e070-e91c-26e1" name="Ambush" publicationId="d755-5d69-pubN65537" hidden="false">
