@@ -1552,22 +1552,10 @@
         <infoLink id="bbf9-f41f-442c-6910" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
         <infoLink id="f558-3816-d32b-ecc4" name="Large Cargo" hidden="false" targetId="1014-5e6a-76ca-b552" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="a787-bbd3-d5ef-4cf5" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b147-a783-7404-5088">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78c0-3277-d86f-a466" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7150-0925-ea2c-3d2c" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="9c72-46de-0a5d-8f43" name="Death Launcher" hidden="false" collective="false" import="true" targetId="c35f-7c3c-a214-d2b1" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="b147-a783-7404-5088" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9554-cfd1-5992-70c1" name="** Detachment Upgrade (Units of [1] with Tough(6)) **" hidden="false" collective="false" import="true" targetId="dd6c-df9e-3bed-5be4" type="selectionEntryGroup"/>
+        <entryLink id="721b-77de-0934-639d" name="Battle Brothers 2 - Upgrade List E" hidden="false" collective="false" import="true" targetId="fef4-2832-998d-d484" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
       </costs>
@@ -14034,6 +14022,24 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
               </costs>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="fef4-2832-998d-d484" name="Battle Brothers 2 - Upgrade List E" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9c6f-6757-edd1-9c9b" name="Replace Storm Rifle:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a17f-f3ad-4ec5-0cd5">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdfa-8f41-8e5e-5acd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79df-ec1c-e35d-4dca" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e00b-dba2-402c-c42e" name="Death Launcher" hidden="false" collective="false" import="true" targetId="c35f-7c3c-a214-d2b1" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a17f-f3ad-4ec5-0cd5" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
