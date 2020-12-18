@@ -1510,48 +1510,18 @@
         <infoLink id="1830-7524-3db9-e9ad" name="Transport(X)" hidden="false" targetId="3460-57e3-8a15-7977" type="rule"/>
         <infoLink id="0cd6-d24b-8986-934a" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b044-dfd7-e143-09d5" name="Vehicle Upgrades" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="9fb5-30ad-b911-dde6" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="5dc2-4ac8-2769-e4ba" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89d9-f0d2-3384-4667" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="be28-0c2d-90b0-d6e8" name="Hunter Missiles" hidden="false" collective="false" import="true" targetId="c756-9c2d-beca-986c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc60-cd56-f31e-69c9" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6525-5ea6-c1af-c6dd" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47dc-56d5-b21b-c5eb" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f9-53d8-61cc-1ca4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47dc-56d5-b21b-c5eb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9f9-53d8-61cc-1ca4" type="min"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
-        <entryLink id="0e6c-89be-a393-c933" name="Blood Brothers - Very Fast" hidden="false" collective="false" import="true" targetId="ec17-0396-1d9d-0ad9" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="53b0-61f0-f457-46a2" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-          </costs>
-        </entryLink>
+        <entryLink id="3615-4fb7-d395-971f" name="Battle Brothers 2 - Upgrade List C" hidden="false" collective="false" import="true" targetId="57df-ce36-b267-0ced" type="selectionEntryGroup"/>
+        <entryLink id="332c-737a-649a-f10a" name="** Detachment Upgrade (Units of [1] with Tough(6)) **" hidden="false" collective="false" import="true" targetId="dd6c-df9e-3bed-5be4" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
@@ -14073,6 +14043,67 @@
         <entryLink id="fec9-a799-59ad-b572" name="Wolf Brothers - Counter" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="57df-ce36-b267-0ced" name="Battle Brothers 2 - Upgrade List C" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c99f-39a7-de4a-1dcc" name="Upgrade with any:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="bef8-a329-8358-0ef3" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="5dc2-4ac8-2769-e4ba" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="44ed-4f8a-3e47-725e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2dbd-c4a5-d26d-3ac3" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="91c7-d6e3-5032-c432" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d8f3-c1fb-de22-132a" name="Hunter Missiles" hidden="false" collective="false" import="true" targetId="c756-9c2d-beca-986c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c05-d23f-caba-e28c" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="dd6c-df9e-3bed-5be4" name="** Detachment Upgrade (Units of [1] with Tough(6)) **" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="bde6-2be5-9311-c736" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="919a-cad2-811c-12b4" name="Blood Brothers - Very Fast" hidden="false" collective="false" import="true" targetId="ec17-0396-1d9d-0ad9" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="6ceb-6337-7699-8312" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="e4b4-ed8f-c585-2c9b" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="ecf7-975e-3aa8-8754" name="Wolf Brothers - Counter" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
           </costs>
         </entryLink>
       </entryLinks>
