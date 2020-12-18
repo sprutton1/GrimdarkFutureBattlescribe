@@ -1553,7 +1553,7 @@
         <infoLink id="f558-3816-d32b-ecc4" name="Large Cargo" hidden="false" targetId="1014-5e6a-76ca-b552" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="9554-cfd1-5992-70c1" name="** Detachment Upgrade (Units of [1] with Tough(6)) **" hidden="false" collective="false" import="true" targetId="dd6c-df9e-3bed-5be4" type="selectionEntryGroup"/>
+        <entryLink id="9554-cfd1-5992-70c1" name="** Detachment Upgrade (Units of [1] with Tough(6) **" hidden="false" collective="false" import="true" targetId="35c2-8df3-f833-4949" type="selectionEntryGroup"/>
         <entryLink id="721b-77de-0934-639d" name="Battle Brothers 2 - Upgrade List E" hidden="false" collective="false" import="true" targetId="fef4-2832-998d-d484" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -1861,72 +1861,9 @@
         <infoLink id="b4ab-4999-5fc9-286b" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
         <infoLink id="d337-f5bb-fea4-3b03" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="009b-731f-8f4c-e3a4" name="Weapons [pick 2, max 1 Typhoon Missiles]" hidden="false" collective="false" import="true" defaultSelectionEntryId="03b3-e5ab-da9b-8aff">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1898-d73e-17ed-1f20" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9fa-52d1-370c-c39f" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="03b3-e5ab-da9b-8aff" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69bd-f569-9d63-cbaa" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="3d44-83a8-a9ca-13f2" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" targetId="a5f5-d44a-03b0-9a99" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89ed-55d3-7973-9c66" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="7aca-25de-a652-1033" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="273d-bea9-0372-f181" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="b15f-cfca-b973-da9d" name="Minigun" hidden="false" collective="false" import="true" targetId="7b99-9f38-072e-e027" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9131-64f7-527a-148b" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="c8b6-c9a3-6a6d-3410" name="Typhoon Missiles" hidden="false" collective="false" import="true" targetId="8aef-9844-eaa7-e640" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6361-b3cb-b870-34f0" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e11b-bcfb-36f1-0d16" name="Open Sides" hidden="false" collective="false" import="true" targetId="1e54-3ed4-793d-4264" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b866-a83a-4a69-fa8b" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="47dd-dc75-5743-31fa" name="Blood Brothers - Very Fast" hidden="false" collective="false" import="true" targetId="ec17-0396-1d9d-0ad9" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="22b6-046a-a8fa-ecba" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-          </costs>
-        </entryLink>
+        <entryLink id="4e00-3c82-f1e4-0474" name="** Detachment Upgrade (Units of [1] with Tough(6) &amp; Fast) **" hidden="false" collective="false" import="true" targetId="dd6c-df9e-3bed-5be4" type="selectionEntryGroup"/>
+        <entryLink id="a948-58ad-4a54-c430" name="Battle Brothers 2 - Upgrade List F" hidden="false" collective="false" import="true" targetId="4055-17a2-2337-556c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="220.0"/>
@@ -13948,7 +13885,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="dd6c-df9e-3bed-5be4" name="** Detachment Upgrade (Units of [1] with Tough(6)) **" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="dd6c-df9e-3bed-5be4" name="** Detachment Upgrade (Units of [1] with Tough(6) &amp; Fast) **" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="bde6-2be5-9311-c736" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
           <costs>
@@ -14040,6 +13977,99 @@
               </costs>
             </entryLink>
             <entryLink id="a17f-f3ad-4ec5-0cd5" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="35c2-8df3-f833-4949" name="** Detachment Upgrade (Units of [1] with Tough(6) **" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="9b37-13fd-7866-8da6" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="edcf-c63b-dafd-d9af" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="e12b-b614-7172-3a1f" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="f62f-9be3-8a40-f3e7" name="Wolf Brothers - Counter" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4055-17a2-2337-556c" name="Battle Brothers 2 - Upgrade List F" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ee49-fedb-261d-6d8f" name="Upgrade with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="2ed1-e939-4d50-9de5" name="Open Sides" hidden="false" collective="false" import="true" targetId="1e54-3ed4-793d-4264" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1817-54f5-58fb-0f9d" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2754-c486-c358-4ded" name="Replace one Heavy Flamethrower:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ccff-2626-fd03-5a2e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="249a-e639-f36b-7da7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87b6-59ae-8a5b-981b" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="09cd-a3c1-3b95-c18a" name="Minigun" hidden="false" collective="false" import="true" targetId="7b99-9f38-072e-e027" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="81a2-38ed-a242-d14b" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b26f-29d9-9ab7-6272" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" targetId="a5f5-d44a-03b0-9a99" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ccff-2626-fd03-5a2e" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="32cb-f5e7-b349-2116" name="Replace one Heavy Flamethrower:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d2d-d739-cedb-0b1a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1d6-bc40-a1dc-60ce" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f633-3b7e-4dd2-0a11" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="25fa-90c8-07af-1cf4" name="Minigun" hidden="false" collective="false" import="true" targetId="7b99-9f38-072e-e027" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="f793-76b4-7f1f-4899" name="Heavy Machinegun" hidden="false" collective="false" import="true" targetId="4481-49a4-e4f7-925b" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="f486-5902-e731-dc88" name="Heavy Fusion Rifle" hidden="false" collective="false" import="true" targetId="a5f5-d44a-03b0-9a99" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2827-7138-ec83-e5fd" name="Typhoon Missiles" hidden="false" collective="false" import="true" targetId="8aef-9844-eaa7-e640" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="60.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9d2d-d739-cedb-0b1a" name="Heavy Flamethrower" hidden="false" collective="false" import="true" targetId="b4cc-bca2-fafc-9825" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
