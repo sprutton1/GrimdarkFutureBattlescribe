@@ -1808,42 +1808,6 @@
         <infoLink id="138d-3aa7-e8aa-151c" name="Hawk Interceptor" hidden="false" targetId="3a06-70eb-92f5-58ee" type="profile"/>
         <infoLink id="b55e-0ad0-4bed-f922" name="Aircraft" hidden="false" targetId="187f-6a03-5b99-a4db" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="153c-113f-af87-442c" name="Weapon 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="c0a5-9256-d3ac-b7a4">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a58-01a0-d5ac-8d97" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="505d-4bd7-3441-39db" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="c0a5-9256-d3ac-b7a4" name="Laser Talon" hidden="false" collective="false" import="true" targetId="a799-464d-ce26-f29b" type="selectionEntry"/>
-            <entryLink id="167d-c50f-6cc9-412d" name="Storm Cannon" hidden="false" collective="false" import="true" targetId="114d-53c3-1207-7a35" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="fe96-1f2f-156b-3a5a" name="Weapon 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="be6f-ed25-efdb-1d0c">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6579-ea51-3c1b-8e73" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8f5-ca50-7ff2-d38f" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="8f1f-fe71-e60f-a229" name="Hammer Missiles" hidden="false" collective="false" import="true" targetId="2b23-f91f-8f74-d7d9" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="-5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="be6f-ed25-efdb-1d0c" name="Twin Heavy Machinegun" hidden="false" collective="false" import="true" targetId="dae8-3106-6a96-228c" type="selectionEntry"/>
-            <entryLink id="dcd5-d4d0-1558-8456" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="8826-9878-a3ed-d601" name="Typhoon Missiles" hidden="false" collective="false" import="true" targetId="8aef-9844-eaa7-e640" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="f7db-09a9-322c-7713" name="Twin Minigun" hidden="false" collective="false" import="true" targetId="a8f7-27d2-59eb-c865" type="selectionEntry">
           <constraints>
@@ -1851,6 +1815,8 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ef2-7856-114c-b78d" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="1e11-b64b-5df0-15ee" name="Battle Brothers 3 - Upgrade List F" hidden="false" collective="false" import="true" targetId="b318-fdf6-1539-0b03" type="selectionEntryGroup"/>
+        <entryLink id="2446-1cf0-af2a-3a08" name="** Detachment Upgrade (Units of [1] with Tough(6) **" hidden="false" collective="false" import="true" targetId="35c2-8df3-f833-4949" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="310.0"/>
@@ -14140,6 +14106,44 @@
               </costs>
             </entryLink>
             <entryLink id="80f1-52ea-bee1-cddd" name="Typhoon Missiles" hidden="false" collective="false" import="true" targetId="8aef-9844-eaa7-e640" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b318-fdf6-1539-0b03" name="Battle Brothers 3 - Upgrade List F" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ef87-7d7b-b07c-e10b" name="Replace Laser Talon:" hidden="false" collective="false" import="true" defaultSelectionEntryId="c1dc-4c05-de58-a7c4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60e7-fe48-b6b4-38b4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecd3-7a1d-5407-2e3b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c1dc-4c05-de58-a7c4" name="Laser Talon" hidden="false" collective="false" import="true" targetId="a799-464d-ce26-f29b" type="selectionEntry"/>
+            <entryLink id="96ef-d1ca-3633-d1c3" name="Storm Cannon" hidden="false" collective="false" import="true" targetId="114d-53c3-1207-7a35" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a162-93bd-ae9c-2f6c" name="Replace Twin Heavy Machinegun:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5bb8-8aef-dcdd-a7c9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="814f-6ab0-de7e-94c8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b08-e769-b694-ff63" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c429-8db7-5f3a-54c8" name="Hammer Missiles" hidden="false" collective="false" import="true" targetId="2b23-f91f-8f74-d7d9" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="-5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="5bb8-8aef-dcdd-a7c9" name="Twin Heavy Machinegun" hidden="false" collective="false" import="true" targetId="dae8-3106-6a96-228c" type="selectionEntry"/>
+            <entryLink id="62de-a2f9-4dab-f091" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8752-8c12-ea8e-9cc4" name="Typhoon Missiles" hidden="false" collective="false" import="true" targetId="8aef-9844-eaa7-e640" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
