@@ -6957,25 +6957,6 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e864-29a4-df16-c891" name="Jetpack Brother (Plasma Carbines)" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="9d41-6f69-3f21-98eb" name="Plasma Carbine" hidden="false" collective="false" import="true" targetId="6adc-a2b8-8cec-3fa6" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="462a-1948-0882-3d97" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e010-e7f5-0b00-0811" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="048e-d8ca-230c-d6e1" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f03-3af9-07a8-f2fe" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31b9-3ad8-1252-77d1" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="6adc-a2b8-8cec-3fa6" name="Plasma Carbine" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="b7f1-6c22-ebf3-51cd" name="Plasma Carbines" hidden="false" targetId="eb1c-18c1-7411-5fe1" type="profile"/>
@@ -6993,95 +6974,38 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="555c-c32f-5943-66f6" name="Jetpack Brother (Assault Carbines)" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="3028-9119-9fd9-cded" name="Assault Carbine" hidden="false" collective="false" import="true" targetId="14bf-1db5-882f-d03d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9229-cfb6-1742-242b" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a27d-4c8f-d480-8a96" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="d874-7eb2-4d63-5484" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="168d-fc4b-a9af-d00f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="459a-9fb0-d5d5-94ef" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="377d-2107-0815-3109" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="31be-af60-1b60-f510" name="Jetpack Squad" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="31a1-f538-543e-a879" name="Jetpack Brother" hidden="false" targetId="344a-22b2-a43e-2e29" type="profile"/>
+        <infoLink id="31a1-f538-543e-a879" name="Prime Jetpack Brother" hidden="false" targetId="344a-22b2-a43e-2e29" type="profile"/>
         <infoLink id="b974-a348-8056-229d" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
         <infoLink id="a743-70cc-3ac6-32c6" name="Firstborn" hidden="false" targetId="7399-4a35-48ef-4119" type="rule"/>
         <infoLink id="cb1b-17db-1e88-ebe1" name="Flying" hidden="false" targetId="adc6-ddd5-223d-29b1" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3933-ce3d-21e4-13b2" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="be9c-fcf4-f14e-8462">
+        <selectionEntryGroup id="4b05-4eac-3312-b510" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="d94b-e9d9-8ada-9cb4">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88b2-ee8a-08be-50d5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a77-df37-40fc-d5d7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fc5-ca12-dca2-c65c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6a2-d2ba-8eda-76b5" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="be9c-fcf4-f14e-8462" name="Plasma Carbines" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d94b-e9d9-8ada-9cb4" name="Single Unit [3 models]" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="7bd8-eba0-1bec-d704" name="Jetpack Brother (Plasma Carbines)" hidden="false" collective="false" import="true" targetId="e864-29a4-df16-c891" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3e7-74fe-0ce9-991d" type="max"/>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed25-636e-d999-2bcf" type="min"/>
-                  </constraints>
-                </entryLink>
+                <entryLink id="e415-db6e-442a-8578" name="Prime Brothers 1 - Upgrade List K (single unit)" hidden="false" collective="false" import="true" targetId="eac9-917e-02f5-35d0" type="selectionEntryGroup"/>
+                <entryLink id="a793-1310-fd56-c40a" name="** Detachment Upgrade (Units of [3], single unit) **" hidden="false" collective="false" import="true" targetId="a060-d513-9f57-6e27" type="selectionEntryGroup"/>
               </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-              </costs>
             </selectionEntry>
-            <selectionEntry id="7ec5-8885-8b67-b060" name="Assault Carbines" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f9ba-6055-fb64-623f" name="Combined Unit [6 models]" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="897b-3d52-7652-6367" name="Jetpack Brother (Assault Carbines)" hidden="false" collective="false" import="true" targetId="555c-c32f-5943-66f6" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0329-683d-0f36-245f" type="max"/>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdc6-c218-964c-9415" type="min"/>
-                  </constraints>
-                </entryLink>
+                <entryLink id="91e6-9b47-c7bf-9932" name="Prime Brothers 1 - Upgrade List K (combined unit)" hidden="false" collective="false" import="true" targetId="c3be-3b74-0be6-b173" type="selectionEntryGroup"/>
+                <entryLink id="2d15-a041-c560-088e" name="** Detachment Upgrade (Units of [3], combined unit) **" hidden="false" collective="false" import="true" targetId="453e-ef26-c3dc-e2b5" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="185.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="79b1-b67e-3005-1fc8" name="Blood Brothers - Furious" hidden="false" collective="false" import="true" targetId="058f-6713-6de0-2dc0" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="61a5-50ab-14bb-4a20" name="Wolf Brothers - Counter-Attack" hidden="false" collective="false" import="true" targetId="df0a-bf8a-ece8-04f5" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="510.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="d82d-9c4c-b864-ca54" name="Dark Brothers - Dark Assault &amp; Dark Resolve" hidden="false" collective="false" import="true" targetId="cf31-8c37-3347-79a3" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="efd3-b5e2-0a98-e9ea" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="db0d-78dd-a1f0-19a3" name="Knight Brothers - Aegis" hidden="false" collective="false" import="true" targetId="e88d-6563-fb44-e4bf" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="185.0"/>
       </costs>
@@ -11900,6 +11824,23 @@
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
           </costs>
         </entryLink>
+        <entryLink id="fb57-e054-8981-0a93" name="Dark Brothers - Dark Assault" hidden="true" collective="false" import="true" targetId="cf31-8c37-3347-79a3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="31be-af60-1b60-f510" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d7d-3f02-6345-2f6c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="453e-ef26-c3dc-e2b5" name="** Detachment Upgrade (Units of [3], combined unit) **" hidden="false" collective="false" import="true">
@@ -11922,6 +11863,23 @@
         <entryLink id="3937-b316-2d39-e8a5" name="Dark Brothers - Grim" hidden="false" collective="false" import="true" targetId="aa16-9052-a575-e57a" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="280c-f63f-1cf1-2782" name="Dark Brothers - Dark Assault" hidden="true" collective="false" import="true" targetId="cf31-8c37-3347-79a3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="31be-af60-1b60-f510" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d7d-3f02-6345-2f6c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -14584,6 +14542,100 @@
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="eac9-917e-02f5-35d0" name="Prime Brothers 1 - Upgrade List K (single unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5587-44ca-2af2-e47b" name="Replace all Plasma Carbines:" hidden="false" collective="false" import="true" defaultSelectionEntryId="f6d7-d427-a0de-0877">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3c6-7a5d-f17e-a686" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be5f-a73d-5ceb-304e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f6d7-d427-a0de-0877" name="Plasma Carbines" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="8697-9e7b-0a6d-4d21" name="Plasma Carbine" hidden="false" collective="false" import="true" targetId="6adc-a2b8-8cec-3fa6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="545f-1a9b-9087-06ce" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e0e-d054-a189-1abe" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="752d-d4b4-af7c-eca6" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fea6-f377-0930-eee3" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1894-636b-1ee3-ab88" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="aca5-a366-024b-b4dc" name="Assault Carbines" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="f884-092f-5661-a91a" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4641-5dac-999a-76f1" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="432b-8a8d-3580-7c5c" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="a43b-fcc4-ab7b-44da" name="Assault Carbine" hidden="false" collective="false" import="true" targetId="14bf-1db5-882f-d03d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="623d-a2e6-d5f1-7ae4" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c5f-192d-1ded-8c48" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="c3be-3b74-0be6-b173" name="Prime Brothers 1 - Upgrade List K (combined unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e4c6-280b-9f73-e5ce" name="Replace all Plasma Carbines:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9f6e-c1ca-fb59-2951">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f42-6a6d-6dd9-a88d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84a2-0774-2b8a-099c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9f6e-c1ca-fb59-2951" name="Plasma Carbines" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="a240-6db6-b8f3-29bf" name="Plasma Carbine" hidden="false" collective="false" import="true" targetId="6adc-a2b8-8cec-3fa6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f16-19f6-ba41-d809" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4746-acb2-c03a-3944" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="b2c4-9c93-f7cc-cfc1" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76fb-bfc6-c055-f092" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4629-1c39-14e3-273f" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="b860-c16c-ba4f-0bfe" name="Assault Carbines" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="236f-fb55-e478-48e1" name="CCW (A2)" hidden="false" collective="false" import="true" targetId="2cf5-bae0-bd1b-c205" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feef-52ec-b2cc-d913" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99f4-7af0-661b-ec55" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="e0c7-5194-618e-b511" name="Assault Carbine" hidden="false" collective="false" import="true" targetId="14bf-1db5-882f-d03d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be8c-d965-24ee-c226" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5160-7821-595e-344d" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
