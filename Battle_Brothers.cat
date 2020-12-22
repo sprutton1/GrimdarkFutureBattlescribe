@@ -3399,47 +3399,39 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e85d-abf8-6f4d-e52d" name="Wolf Brother" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="8098-4d3b-f6d0-a2ed" name="Wolf Brother" hidden="false" targetId="f954-0ab0-5bd2-5b2f" type="profile"/>
-        <infoLink id="76c9-964e-cae9-c2c2" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="26a5-fe11-7f4f-19df" name="Counter-Attack" hidden="false" targetId="5c24-d8ee-b4ed-4c8d" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="0a4f-afda-9bbc-8797" name="Wolf Leader Weapons" hidden="false" collective="false" import="true" targetId="d882-5701-85b1-d209" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="42e0-c2cb-bb2a-321a" name="Wolf Brothers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4a40-66f2-bd84-b937" name="Wolf Brother" hidden="false" targetId="f954-0ab0-5bd2-5b2f" type="profile"/>
+        <infoLink id="d0dd-9b16-ed9f-7693" name="Counter" hidden="false" targetId="5c24-d8ee-b4ed-4c8d" type="rule"/>
+        <infoLink id="bce2-6e20-0c87-4eac" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2a13-8d28-2786-8643" name="Upgrade all:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="122f-bcbd-5073-ba56" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="34c8-d182-fb85-d470">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d976-dced-7387-e074" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63cd-92be-a2a4-643a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b097-98db-3e0c-d89f" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="c687-3dd9-6cd2-7f89" name="Jetpack" hidden="false" collective="false" import="true" targetId="33d6-ea20-9d27-5f4e" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="34c8-d182-fb85-d470" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="d684-16ff-059b-8925" name="Wolf Brothers - Upgrade List A (single unit)" hidden="false" collective="false" import="true" targetId="d882-5701-85b1-d209" type="selectionEntryGroup"/>
+                <entryLink id="3ba9-6411-f5dd-214d" name="Wolf Brothers - Upgrade List C (single unit)" hidden="false" collective="false" import="true" targetId="af3b-9e7e-0448-ab7e" type="selectionEntryGroup"/>
+                <entryLink id="0644-6f80-1e48-0531" name="Wolf Brothers - Upgrade List D (single unit)" hidden="false" collective="false" import="true" targetId="4e1f-09a7-914a-8301" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="ad85-6096-609a-aa93" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="8b24-40cd-4afc-bda0" name="Wolf Brothers - Upgrade List A (combined unit)" hidden="false" collective="false" import="true" targetId="769e-f400-b20a-d6db" type="selectionEntryGroup"/>
+                <entryLink id="49aa-10ab-0839-aed1" name="Wolf Brothers - Upgrade List C (combined unit)" hidden="false" collective="false" import="true" targetId="4254-c06a-e4db-a35c" type="selectionEntryGroup"/>
+                <entryLink id="8e34-a3da-b15a-933d" name="Wolf Brothers - Upgrade List D (combined unit)" hidden="false" collective="false" import="true" targetId="7817-6914-254f-75fe" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="155.0"/>
               </costs>
-            </entryLink>
-            <entryLink id="9cbe-63e2-a4e2-aacb" name="Bike" hidden="false" collective="false" import="true" targetId="c47e-3660-de3d-86f7" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="f76d-cb04-7bf4-1e31" name="Wolf Brother" hidden="false" collective="false" import="true" targetId="e85d-abf8-6f4d-e52d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3179-b7f5-3ae1-75ee" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4133-1a08-11ef-41dc" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="155.0"/>
       </costs>
@@ -16260,6 +16252,72 @@
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4e1f-09a7-914a-8301" name="Wolf Brothers - Upgrade List D (single unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="13f0-f615-3652-b6dd" name="Upgrade all models with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51cf-9c9c-affa-dcfc" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f6dd-f211-414a-ce86" name="Jetpack" hidden="false" collective="false" import="true" targetId="33d6-ea20-9d27-5f4e" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9e47-109c-cff5-8fa2" name="Combat Bike" hidden="false" collective="false" import="true" targetId="c47e-3660-de3d-86f7" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fd53-f9cb-9165-f886" name="Upgrade one model with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0979-05a2-ede5-e302" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8c9a-faf4-9d89-b583" name="Battle Standard" hidden="false" collective="false" import="true" targetId="398c-3d34-79c6-a425" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="7817-6914-254f-75fe" name="Wolf Brothers - Upgrade List D (combined unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e73b-99d3-1b62-4058" name="Upgrade all models with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d906-7ade-548d-d3ff" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8ed0-678d-322f-e69a" name="Jetpack" hidden="false" collective="false" import="true" targetId="33d6-ea20-9d27-5f4e" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="160.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="aab0-5584-5c53-759e" name="Combat Bike" hidden="false" collective="false" import="true" targetId="c47e-3660-de3d-86f7" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="190.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7c9a-b093-eeb8-90d6" name="Upgrade two models with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9a7-21e9-6e0e-248e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6474-9d9d-2cc6-6d6d" name="Battle Standard" hidden="false" collective="false" import="true" targetId="398c-3d34-79c6-a425" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
