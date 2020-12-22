@@ -3749,105 +3749,36 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="215.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4962-a702-8350-9aff" name="Purgation Brother" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3a9d-ea63-7afe-bd69" name="Purgation Brothers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="69cf-d6a0-44ea-d153" name="Purgation Brother" hidden="false" targetId="f461-b4cd-60e6-d787" type="profile"/>
-        <infoLink id="f634-c61f-7c80-2636" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="e8ea-97f9-b48b-9650" name="Aegis" hidden="false" targetId="ed8b-a6ad-6d94-9c14" type="rule"/>
-        <infoLink id="b2f8-058e-2894-86cf" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
+        <infoLink id="0756-edb9-6ed0-9929" name="Purgation Brother" hidden="false" targetId="f461-b4cd-60e6-d787" type="profile"/>
+        <infoLink id="bf68-9c5b-95bd-6bb5" name="Aegis" hidden="false" targetId="ed8b-a6ad-6d94-9c14" type="rule"/>
+        <infoLink id="6577-ca4c-24db-b109" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
+        <infoLink id="f3f6-6690-fe18-aa46" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="b81c-10b0-6ceb-efa6" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a72-e803-c643-1914" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="0658-0fb8-9f82-1117" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
-            <infoLink id="5f43-62cf-ad0b-9e91" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink id="be75-4f9a-9ade-9ceb" name="Knight Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="ef87-9afc-97d0-abdf" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6bd2-ff6a-70b7-5c82" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ec0e-aa40-ab5d-ac61">
+        <selectionEntryGroup id="4610-568a-c7dd-759f" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="b73e-8af5-86fc-1c34">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8416-8ff6-3bb7-cfd8" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8441-3855-31be-4694" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d267-2b8f-ad23-1a0e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4527-4a2b-49e7-eb95" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6559-4aa3-22ce-eb81" name="2x Energy Falchions" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b73e-8af5-86fc-1c34" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="53f4-1d00-8995-9179" name="Energy Falchions" hidden="false" collective="false" import="true" targetId="50ff-a6f0-26a7-44be" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2044-431c-9a98-41a0" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac89-4a7c-1b2d-a2e6" type="max"/>
-                  </constraints>
-                </entryLink>
+                <entryLink id="f374-9a61-aaac-1764" name="Knight Brothers - Upgrade List C (single unit)" hidden="false" collective="false" import="true" targetId="745a-57a6-863e-226e" type="selectionEntryGroup"/>
+                <entryLink id="f2ff-f460-b87f-c98f" name="Knight Brothers - Upgrade List E (single unit)" hidden="false" collective="false" import="true" targetId="c413-23dc-124c-d1e5" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="ecea-56a5-0649-cb7f" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="d850-1193-ba3e-ebe0" name="Knight Brothers - Upgrade List C (combined unit)" hidden="false" collective="false" import="true" targetId="0b1d-81b5-7380-570e" type="selectionEntryGroup"/>
+                <entryLink id="6e9c-0495-fc29-de2d" name="Knight Brothers - Upgrade List E (combined unit)" hidden="false" collective="false" import="true" targetId="bad9-bddd-3169-c1c5" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="225.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="ec0e-aa40-ab5d-ac61" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry"/>
-            <entryLink id="f3d1-78aa-3945-1997" name="Energy Staff" hidden="false" collective="false" import="true" targetId="5812-eb85-ab7d-c183" type="selectionEntry"/>
-            <entryLink id="6253-1052-0eda-0598" name="Energy Halberd" hidden="false" collective="false" import="true" targetId="7b55-7b95-caec-2fe5" type="selectionEntry"/>
-            <entryLink id="258b-51f3-ed6d-a81a" name="Daemon Hammer" hidden="false" collective="false" import="true" targetId="10b6-089c-2053-fa2d" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="bfbe-f95d-e1ff-f2d4" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d0aa-30e6-5878-5066">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cf1-49ca-6bc6-4588" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76ad-8a4f-8871-6865" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="1160-ac75-a8e7-c768" name="Psychic Silencer" hidden="false" collective="false" import="true" targetId="ad33-44fc-7c8b-a775" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="f9dd-6f84-32d4-99ed" name="Psychic Cannon" hidden="false" collective="false" import="true" targetId="c6a1-a06c-031f-3a28" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="d0aa-30e6-5878-5066" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3a9d-ea63-7afe-bd69" name="Purgation Brothers" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntryGroups>
-        <selectionEntryGroup id="4ccc-f7a8-8587-a319" name="Brothers" hidden="false" collective="false" import="true" defaultSelectionEntryId="5437-da0b-cf07-e1c7">
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="670b-c309-6161-0754" type="min"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67c5-54fe-2c80-71cb" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="5437-da0b-cf07-e1c7" name="Purgation Brother" hidden="false" collective="false" import="true" targetId="4962-a702-8350-9aff" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c3c-4787-ef8e-498a" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="b35b-faa3-9c64-b57e" name="Purgation Brother (Special Weapon)" hidden="false" collective="false" import="true" targetId="b831-cf8d-de12-ab04" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5295-e3f4-a862-120d" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -6588,90 +6519,6 @@
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b831-cf8d-de12-ab04" name="Purgation Brother (Special Weapon)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="c8ca-eba3-1465-1f93" name="Purgation Brother" hidden="false" targetId="f461-b4cd-60e6-d787" type="profile"/>
-        <infoLink id="7e01-d767-6f19-5706" name="Fearless" hidden="false" targetId="fe6b-f29d-2128-a0b0" type="rule"/>
-        <infoLink id="c222-9ff9-cdb9-345f" name="Aegis" hidden="false" targetId="ed8b-a6ad-6d94-9c14" type="rule"/>
-        <infoLink id="d3a7-2f70-c3cf-f325" name="Relentless" hidden="false" targetId="973a-bce3-c43c-b039" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="026a-1308-f181-eb89" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c29-72d4-2f2d-a23b" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="cffe-3260-dd56-319b" name="Psychic(1)" hidden="false" targetId="2432-e2b3-c2c4-9482" type="profile"/>
-            <infoLink id="ea26-9542-dbc4-4e0e" name="Psychic(X)" hidden="false" targetId="ba47-b43b-18f8-97c1" type="rule"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink id="742e-9638-5859-27d1" name="Knight Brothers Psychic Spells" hidden="false" collective="false" import="true" targetId="ef87-9afc-97d0-abdf" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="5c82-fd0b-fd25-fdf2" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="dc30-ac60-3608-1355">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dac5-2576-c6cf-2069" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5768-fa1f-8dd9-6f02" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="e3ea-681d-b7a2-a7bd" name="2x Energy Falchions" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="5996-2c72-94fc-6660" name="Energy Falchions" hidden="false" collective="false" import="true" targetId="50ff-a6f0-26a7-44be" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cfd-62cb-3c72-e7b2" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="011c-5ebe-9398-1228" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="dc30-ac60-3608-1355" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry"/>
-            <entryLink id="4df5-54b9-c752-f215" name="Energy Staff" hidden="false" collective="false" import="true" targetId="5812-eb85-ab7d-c183" type="selectionEntry"/>
-            <entryLink id="a9ef-cd00-6044-b0ab" name="Energy Halberd" hidden="false" collective="false" import="true" targetId="7b55-7b95-caec-2fe5" type="selectionEntry"/>
-            <entryLink id="5426-0e22-6515-2cfa" name="Daemon Hammer" hidden="false" collective="false" import="true" targetId="10b6-089c-2053-fa2d" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="7a51-dbf9-71e7-8715" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="490a-e868-0fb3-f3c4">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a50-0a54-cbbc-ec8e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="782f-c04e-15c6-b0cf" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="54d5-2a2a-f3ef-5536" name="Psychic Silencer" hidden="false" collective="false" import="true" targetId="ad33-44fc-7c8b-a775" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="0a9b-6de6-dc55-ce62" name="Psychic Cannon" hidden="false" collective="false" import="true" targetId="c6a1-a06c-031f-3a28" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="490a-e868-0fb3-f3c4" name="Incinerator" hidden="false" collective="false" import="true" targetId="10a4-0331-6a0c-0de6" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
@@ -15597,9 +15444,9 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="c413-23dc-124c-d1e5" name="Knight Brothers - Upgrade List E (single unit)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
-        <selectionEntryGroup id="39fa-12dc-861e-9075" name="Upgrade two models with:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="39fa-12dc-861e-9075" name="Upgrade one model with:" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3617-2219-531e-9db9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3617-2219-531e-9db9" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="e9de-c747-44e0-d0ff" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
@@ -15620,9 +15467,9 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="bad9-bddd-3169-c1c5" name="Knight Brothers - Upgrade List E (combined unit)" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
-        <selectionEntryGroup id="0533-7157-714c-e82a" name="Upgrade one model with:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="0533-7157-714c-e82a" name="Upgrade two models with:" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="096f-1a71-5a89-95a6" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="096f-1a71-5a89-95a6" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="0570-dd18-7786-45d8" name="Psychic(1)" hidden="false" collective="false" import="true" type="upgrade">
@@ -15640,6 +15487,78 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="745a-57a6-863e-226e" name="Knight Brothers - Upgrade List C (single unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a660-93c4-d6e9-9afc" name="Replace any Storm Rifle:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2549-d1ad-5eb8-bdaa">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a02-1a8d-c281-e5b0" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb9e-49a6-a2cd-fcbc" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2549-d1ad-5eb8-bdaa" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry"/>
+            <entryLink id="2ad4-66d8-f708-1eee" name="Incinerator" hidden="false" collective="false" import="true" targetId="10a4-0331-6a0c-0de6" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2155-47c7-a4df-b234" name="Psychic Silencer" hidden="false" collective="false" import="true" targetId="ad33-44fc-7c8b-a775" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ad40-7c96-2c63-b0aa" name="Psychic Cannon" hidden="false" collective="false" import="true" targetId="c6a1-a06c-031f-3a28" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="acfe-a6b6-80d0-cc5d" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41c3-130b-c31b-b652" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6665-90d2-8d4f-eb90" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0b1d-81b5-7380-570e" name="Knight Brothers - Upgrade List C (combined unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1765-27cc-7b8b-8a91" name="Replace any Storm Rifle:" hidden="false" collective="false" import="true" defaultSelectionEntryId="f071-ef15-fd9e-bbc7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ea2-7627-df50-5098" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b1-7d34-d5a7-ac11" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f071-ef15-fd9e-bbc7" name="Storm Rifle" hidden="false" collective="false" import="true" targetId="696d-b8cf-37bb-c9bf" type="selectionEntry"/>
+            <entryLink id="33d0-762d-c160-95f5" name="Incinerator" hidden="false" collective="false" import="true" targetId="10a4-0331-6a0c-0de6" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="686c-92b9-034f-ef7b" name="Psychic Silencer" hidden="false" collective="false" import="true" targetId="ad33-44fc-7c8b-a775" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9a51-20fc-53da-198c" name="Psychic Cannon" hidden="false" collective="false" import="true" targetId="c6a1-a06c-031f-3a28" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e16f-50f1-fa8a-9adb" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fad8-d87e-3c2e-e63b" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c28b-32ae-739c-a310" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
