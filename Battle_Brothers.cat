@@ -956,6 +956,18 @@
         <categoryLink id="d9bd-f830-cce0-1015" name="New CategoryLink" hidden="false" targetId="b820-6309-e900-c733" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="835a-391c-e158-d001" name="Prime Speeder" hidden="false" collective="false" import="true" targetId="cac1-714c-f9c2-7edb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dc7a-12df-d69b-ed72" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8d10-24e1-7505-c91c" name="New CategoryLink" hidden="false" targetId="3089-78fc-94cc-28a2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="40e7-3f33-f159-d98d" name="Captain" hidden="false" collective="false" import="true" type="upgrade">
@@ -8406,6 +8418,59 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="cac1-714c-f9c2-7edb" name="Prime Speeder" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c05f-a2aa-ecb0-37db" name="Prime Speeder" hidden="false" targetId="1711-674c-8591-616a" type="profile"/>
+        <infoLink id="8937-1b29-2f91-4bf9" name="Ambush" hidden="false" targetId="859e-e070-e91c-26e1" type="rule"/>
+        <infoLink id="7e9a-c038-f59c-1c86" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="33f9-92be-4fb2-91ae" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="46b3-c651-3753-3368" name="Prime" hidden="false" targetId="7399-4a35-48ef-4119" type="rule"/>
+        <infoLink id="a0ce-63d9-d3a7-5da5" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+        <infoLink id="3797-5c7b-40ce-266b" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="c18a-eb73-b2b8-8346" name="** Detachment Upgrade (Units of [1] with Tough(6) &amp; Fast) **" hidden="false" collective="false" import="true" targetId="dd6c-df9e-3bed-5be4" type="selectionEntryGroup"/>
+        <entryLink id="5a70-5bbc-8588-3878" name="Prime Brothers 2 - Upgrade List E" hidden="false" collective="false" import="true" targetId="7fb3-aa14-e643-9310" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6293-e55e-e6c5-1ec0" name="Fusion Destroyer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="79b3-92df-0963-e607" name="Fusion Destroyer" hidden="false" targetId="ef6d-eb63-0aeb-6e39" type="profile"/>
+        <infoLink id="cd98-227a-90f2-c068" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="4e9d-6c6f-372b-839f" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="682b-440e-a942-5986" name="Heavy Laser Talon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="26ad-9750-fabc-c5c6" name="Heavy Laser Talon" hidden="false" targetId="40bf-6f02-e53a-8587" type="profile"/>
+        <infoLink id="f91c-709d-67d6-02e1" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="9115-920a-7cf6-7786" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5e0c-bc57-d643-ad5c" name="Twin AA-Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8d82-95ff-5a5f-177e" name="Twin AA-Rocket Pod" hidden="false" targetId="8696-2a36-d8d5-791c" type="profile"/>
+        <infoLink id="59a2-8767-f480-03f4" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="640a-e3d5-bffe-6c76" name="Anti-Air" hidden="false" targetId="1875-13ee-b0ef-5a65" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="89bd-59e9-b651-bc16" name="Strike Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4452-a74b-2ba4-e5af" name="Strike Missiles" hidden="false" targetId="f269-c8d7-1227-1527" type="profile"/>
+        <infoLink id="624e-3e28-554a-727b" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="569e-a674-9e30-fd99" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="b462-6a11-cedb-7b97" name="Fury Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c91c-941d-74ab-bb7e" name="Fury Missiles" hidden="false" targetId="5e73-a0d5-917e-8b4d" type="profile"/>
+        <infoLink id="c6b2-e620-c2dd-50b4" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+        <infoLink id="0e0b-22e8-a7af-cd9b" name="Deadly(X)" hidden="false" targetId="377b-3864-960e-57ac" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="763b-1230-bcad-b19d" name="Battle Brothers 1 - Upgrade List A (single unit)" hidden="false" collective="false" import="true" defaultSelectionEntryId="4323-8b88-efda-e548">
@@ -14888,6 +14953,91 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
+    <selectionEntryGroup id="7fb3-aa14-e643-9310" name="Prime Brothers 2 - Upgrade List E" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cb84-d29f-b3ae-46da" name="Replace Gatling Gun:" hidden="false" collective="false" import="true" defaultSelectionEntryId="59a4-14c0-bc15-9a17">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1f1-bbec-08af-9ceb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19b7-cd4a-53fb-7f07" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="59a4-14c0-bc15-9a17" name="Gatling Gun" hidden="false" collective="false" import="true" targetId="2680-ae75-416d-93ea" type="selectionEntry"/>
+            <entryLink id="8d25-077f-df5d-860c" name="Fusion Destroyer" hidden="false" collective="false" import="true" targetId="6293-e55e-e6c5-1ec0" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9d09-0712-55e9-86a0" name="Heavy Laser Talon" hidden="false" collective="false" import="true" targetId="682b-440e-a942-5986" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6d60-6f31-33d5-0634" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="277f-58af-12f0-ca4d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="87e4-27a0-dc5e-c65e" name="Twin Machinegun" hidden="false" collective="false" import="true" targetId="1c25-3e6f-44c9-92da" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="eba4-a11b-e6c0-1ab4" name="Twin AA-Rocket Pod" hidden="false" collective="false" import="true" targetId="5e0c-bc57-d643-ad5c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8c73-f786-21db-8899" name="Strike Missiles" hidden="false" collective="false" import="true" targetId="89bd-59e9-b651-bc16" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="95.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0d68-43d3-8d0e-1d69" name="Upgrade with one:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0a1-432a-46f6-4b62" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ffad-da8a-ddef-fdd3" name="2x HE-Launchers" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="2769-383f-0a97-ef0f" name="HE-Launcher" hidden="false" collective="false" import="true" targetId="3599-2d43-1180-9d59" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbfa-2719-73be-4580" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e11e-6b19-b3d8-90fc" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ad0e-017a-f62b-a323" name="2x AT-Launchers" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="1837-481f-5c8a-3019" name="AT-Launcher" hidden="false" collective="false" import="true" targetId="0e41-7739-d286-fce8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e38-e015-06bb-4376" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7b0-f7ad-503b-2aa9" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="70.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="a74e-012e-9f93-d254" name="Fury Missiles" hidden="false" collective="false" import="true" targetId="b462-6a11-cedb-7b97" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="50.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="ff04-8ef9-82f1-a88b" name="Shield Wall" publicationId="dead-6af1-a069-5579" hidden="false">
@@ -16739,6 +16889,48 @@
         <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
         <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A4	</characteristic>
         <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d"/>
+      </characteristics>
+    </profile>
+    <profile id="1711-674c-8591-616a" name="Prime Speeder" hidden="false" typeId="a8fa-e9ce-c38a-c73e" typeName="Unit">
+      <characteristics>
+        <characteristic name="Quality" typeId="c619-fc26-5d0b-187d">3+</characteristic>
+        <characteristic name="Defense" typeId="5564-b1cb-27d0-1af7">2+</characteristic>
+        <characteristic name="Special Rules" typeId="6039-8041-2416-3f32">Ambush, Fast, Impact(6), Prime, Strider, Tough(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ef6d-eb63-0aeb-6e39" name="Fusion Destroyer" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="40bf-6f02-e53a-8587" name="Heavy Laser Talon" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8696-2a36-d8d5-791c" name="Twin AA-Rocket Pod" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(2), Anti-Air</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f269-c8d7-1227-1527" name="Strike Missiles" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">36&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A2</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(3), Deadly(3)	</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5e73-a0d5-917e-8b4d" name="Fury Missiles" hidden="false" typeId="3c71-da94-e5b3-d7c8" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="79f4-5578-c041-f866">48&quot;</characteristic>
+        <characteristic name="Attacks" typeId="4633-0aa3-94f7-3be7">A1</characteristic>
+        <characteristic name="Special Rules" typeId="9fb1-424b-834c-5e7d">AP(4), Deadly(6)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
