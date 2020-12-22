@@ -2508,22 +2508,6 @@
         <infoLink id="fe9c-7178-891e-fb22" name="Aircraft" hidden="false" targetId="187f-6a03-5b99-a4db" type="rule"/>
         <infoLink id="00d3-556e-8de9-cc2b" name="Dark Resolve" hidden="false" targetId="5dec-9937-47f8-7cf4" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="9f78-595a-df2f-170e" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce47-6908-1431-4372">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96bf-e8c6-54e0-a198" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8194-33f5-d829-f336" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="e263-3973-46a1-20d2" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="ce47-6908-1431-4372" name="Avenger Minigun" hidden="false" collective="false" import="true" targetId="e0e3-5fcc-e09c-d3a2" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="65ef-f75c-4d4a-65b0" name="Sword Missiles" hidden="false" collective="false" import="true" targetId="7f7f-d5ae-aa1e-45ef" type="selectionEntry">
           <constraints>
@@ -2537,6 +2521,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ae6-abe7-0667-d30a" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="c90f-2396-8669-95d5" name="Dark Brothers - Upgrade List G" hidden="false" collective="false" import="true" targetId="6148-ddcb-4f64-1370" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="295.0"/>
@@ -15496,6 +15481,24 @@
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="30.0"/>
               </costs>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="6148-ddcb-4f64-1370" name="Dark Brothers - Upgrade List G" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="df47-9a64-7ac0-8cc1" name="Replace Avenger Minigun:" hidden="false" collective="false" import="true" defaultSelectionEntryId="4945-fc96-3c5f-2fff">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="924d-79f3-cc51-c591" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25b8-9470-17a9-79c3" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4e54-45a3-629c-b3a6" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="4945-fc96-3c5f-2fff" name="Avenger Minigun" hidden="false" collective="false" import="true" targetId="e0e3-5fcc-e09c-d3a2" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
