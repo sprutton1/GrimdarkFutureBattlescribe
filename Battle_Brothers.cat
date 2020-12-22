@@ -2253,6 +2253,7 @@
       </infoLinks>
       <entryLinks>
         <entryLink id="795d-c995-17bb-1553" name="Dark Brothers - Upgrade List A" hidden="false" collective="false" import="true" targetId="f950-3ba7-5f90-d23d" type="selectionEntryGroup"/>
+        <entryLink id="f28f-1b20-815c-f9a7" name="** Detachment Upgrade (Heroes) **" hidden="false" collective="false" import="true" targetId="64f3-fff6-95b2-f27b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="105.0"/>
@@ -2306,32 +2307,31 @@
       <infoLinks>
         <infoLink id="ba2c-e933-3c03-e567" name="Destroyer Knight" hidden="false" targetId="1095-a5b6-8960-00f2" type="profile"/>
         <infoLink id="40a6-8fa9-8d10-771d" name="Dark Assault" hidden="false" targetId="2f63-3966-49eb-3601" type="rule"/>
-        <infoLink id="57b4-f2f7-c516-5073" name="Dark Resolve" hidden="false" targetId="5dec-9937-47f8-7cf4" type="rule"/>
+        <infoLink id="57b4-f2f7-c516-5073" name="Grim" hidden="false" targetId="5dec-9937-47f8-7cf4" type="rule"/>
         <infoLink id="3bcb-e362-e026-b3a6" name="Shield Wall" hidden="false" targetId="ff04-8ef9-82f1-a88b" type="rule"/>
         <infoLink id="6b51-d5f3-921e-9969" name="Tough(X)" hidden="false" targetId="b9d3-4d17-007c-22cb" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8cc7-aec5-38d1-3268" name="Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="11d0-724c-b9ae-76b7">
+        <selectionEntryGroup id="5e76-9085-567c-3f60" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="6257-c193-6152-65b0">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be1b-ba07-67d6-2d21" type="min"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adff-a6ed-4af5-36fa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4842-0326-0f00-e574" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ef7-0bbb-beee-88b2" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="11d0-724c-b9ae-76b7" name="Heavy Mace" hidden="false" collective="false" import="true" targetId="1231-61b7-e02f-3361" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdfb-7213-e4ab-255f" type="max"/>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="542f-b171-3864-d654" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="dcaf-ae34-84fc-9164" name="Heavy Flail" hidden="false" collective="false" import="true" targetId="87a3-d290-9631-54dc" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="067c-9616-8d7c-23d1" type="max"/>
-              </constraints>
+          <selectionEntries>
+            <selectionEntry id="6257-c193-6152-65b0" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="3f96-0a69-efff-bee6" name="Dark Brothers - Upgrade List C (single unit)" hidden="false" collective="false" import="true" targetId="66db-87d3-f028-93a8" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="7aa2-e897-eb07-783d" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="f84f-bd56-4a3b-51ed" name="Dark Brothers - Upgrade List C (combined unit)" hidden="false" collective="false" import="true" targetId="7188-335b-606e-d5c7" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="605.0"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -8517,6 +8517,11 @@
             </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f729-b6f1-70a7-ab93" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8150-2743-e904-7a5c" type="greaterThan"/>
               </conditions>
             </modifier>
@@ -8535,6 +8540,11 @@
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d40-9fa2-76fb-f0c1" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f729-b6f1-70a7-ab93" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -15350,6 +15360,58 @@
             <entryLink id="0b7f-f9bf-0c72-ab8a" name="Cyclone Missiles" hidden="false" collective="false" import="true" targetId="de20-063e-ab3f-d5cb" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="80.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="66db-87d3-f028-93a8" name="Dark Brothers - Upgrade List C (single unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7071-21be-30dd-b5e0" name="Replace one Heavy Mace:" hidden="false" collective="false" import="true" defaultSelectionEntryId="dcd2-4d02-2d3e-60e1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51d6-6d64-532e-68ca" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab09-43dd-3eab-6c5c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="dcd2-4d02-2d3e-60e1" name="Heavy Mace" hidden="false" collective="false" import="true" targetId="1231-61b7-e02f-3361" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bd7-6fde-2ab5-956c" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9d2-e1b1-7b2e-5afb" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="710f-7114-404f-f3f4" name="Heavy Flail" hidden="false" collective="false" import="true" targetId="87a3-d290-9631-54dc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03e7-625a-f7b5-28a6" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="7188-335b-606e-d5c7" name="Dark Brothers - Upgrade List C (combined unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f984-a85d-c19e-350a" name="Replace two Heavy Maces:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5795-7058-b4e3-de18">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a35-2f42-7e04-e0e1" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29aa-9a81-e74c-96c9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5795-7058-b4e3-de18" name="Heavy Mace" hidden="false" collective="false" import="true" targetId="1231-61b7-e02f-3361" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eae-1cfe-b507-0fcd" type="max"/>
+                <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fff4-a5bf-dfd6-cd06" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="67a1-805f-03fe-f97c" name="Heavy Flail" hidden="false" collective="false" import="true" targetId="87a3-d290-9631-54dc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2da7-ba88-b6ea-7c46" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
               </costs>
             </entryLink>
           </entryLinks>
