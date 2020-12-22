@@ -2869,56 +2869,6 @@
         <infoLink id="4a52-c417-797b-4e0e" name="Death Star Jet" hidden="false" targetId="7375-638f-2bb5-aba2" type="profile"/>
         <infoLink id="11d6-9af0-c4ae-5da5" name="Aircraft" hidden="false" targetId="187f-6a03-5b99-a4db" type="rule"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="cc9b-31b9-5c93-ec3f" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9bcf-e081-16d4-1b32">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef8f-43aa-b7be-5ee0" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3a7-1efa-66cd-363a" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="9bcf-e081-16d4-1b32" name="Twin Minigun" hidden="false" collective="false" import="true" targetId="a8f7-27d2-59eb-c865" type="selectionEntry"/>
-            <entryLink id="94fc-4ee4-544a-3ded" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="abac-7d07-63a6-5994" name="Ordnance" hidden="false" collective="false" import="true" defaultSelectionEntryId="e9b6-6396-10cf-eda8">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a487-4b2d-7f1a-ff73" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff07-e310-d3d6-424f" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="8ce5-06c7-edf5-fe44" name="Storm Missiles" hidden="false" collective="false" import="true" targetId="ae99-efd2-91f4-19d6" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="e9b6-6396-10cf-eda8" name="Death Rockets" hidden="false" collective="false" import="true" targetId="f0af-d1d7-aa49-7903" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="0dd1-4382-ddd9-4038" name="Upgrades" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="ce72-b1bb-ce47-e258" name="Cargo Space" hidden="false" collective="false" import="true" targetId="d1c0-d223-5e2f-fc42" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a41-5d59-49c5-4f40" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="b428-a855-b4b8-7339" name="Assault Rifle Array" hidden="false" collective="false" import="true" targetId="faa1-761d-0d50-2135" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="134c-97ed-fde7-a074" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ea74-fe8b-8c11-8de9" name="Cluster Bombs" hidden="false" collective="false" import="true" targetId="fa8d-6425-5252-5eb7" type="selectionEntry">
           <constraints>
@@ -2926,6 +2876,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db45-b28a-5cc6-3dcc" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="f44b-9d42-7f74-5dbc" name="Watch Brothers - Upgrade List E" hidden="false" collective="false" import="true" targetId="b196-ed90-05a4-8ce6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="250.0"/>
@@ -16108,6 +16059,58 @@
               </constraints>
               <costs>
                 <cost name="pts" typeId="567f-6468-66c6-2ea2" value="40.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b196-ed90-05a4-8ce6" name="Watch Brothers - Upgrade List E" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6c5f-f1de-7703-bf11" name="Replace Twin Minigun:" hidden="false" collective="false" import="true" defaultSelectionEntryId="b135-59f7-97fe-40a4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0277-3140-71b8-0ded" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d902-e7ac-4d5b-6848" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b135-59f7-97fe-40a4" name="Twin Minigun" hidden="false" collective="false" import="true" targetId="a8f7-27d2-59eb-c865" type="selectionEntry"/>
+            <entryLink id="19fc-085c-5070-ea4d" name="Twin Laser Cannon" hidden="false" collective="false" import="true" targetId="d271-2d81-e640-0040" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e1f0-131e-e6cd-4de0" name="Replace Death Rockets:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6161-5fdd-f957-5a2c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fcc-7e48-7b48-b3f2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cad2-e26a-58ec-43c0" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="fdc7-21ae-6eb2-1fca" name="Storm Missiles" hidden="false" collective="false" import="true" targetId="ae99-efd2-91f4-19d6" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="6161-5fdd-f957-5a2c" name="Death Rockets" hidden="false" collective="false" import="true" targetId="f0af-d1d7-aa49-7903" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a3ed-4a4c-9bd5-1986" name="Upgrade with any:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="1e17-8f4b-7fa0-74fd" name="Cargo Space" hidden="false" collective="false" import="true" targetId="d1c0-d223-5e2f-fc42" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e25-ad02-792d-bcf9" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="5e37-42aa-949f-fe99" name="Assault Rifle Array" hidden="false" collective="false" import="true" targetId="faa1-761d-0d50-2135" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d04-264e-5acf-ac32" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="25.0"/>
               </costs>
             </entryLink>
           </entryLinks>
