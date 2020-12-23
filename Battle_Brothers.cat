@@ -3645,26 +3645,6 @@
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="315.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="21ae-cfbf-b345-5314" name="Wolf" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="ce75-c507-f8b7-62ac" name="Cyborg Wolf" hidden="false" targetId="88b6-3cef-d05a-0798" type="profile"/>
-        <infoLink id="bb20-d437-1eb0-d79b" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
-        <infoLink id="a87f-7241-c3e3-d379" name="Counter-Attack" hidden="false" targetId="5c24-d8ee-b4ed-4c8d" type="rule"/>
-        <infoLink id="7fdb-f4f0-b846-628d" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
-        <infoLink id="d8bb-c5c6-90e8-76aa" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink id="427a-733d-0159-6bde" name="Claws" hidden="false" collective="false" import="true" targetId="a8f4-d9ee-4670-fd42" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad9f-78b1-ca37-3fb3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7349-417b-43a7-3cfd" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="a8f4-d9ee-4670-fd42" name="Claws" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d420-475f-30c4-5773" name="Claws" hidden="false" targetId="fa11-1250-0332-9b2c" type="profile"/>
@@ -3674,31 +3654,48 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="2fe2-f15a-5e23-4215" name="Wolves" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntries>
-        <selectionEntry id="f761-c505-02fb-72d1" name="Cyborg Bodies" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a92a-3bd1-1db7-2ac9" name="Wolf" hidden="false" targetId="88b6-3cef-d05a-0798" type="profile"/>
+        <infoLink id="437f-5c79-c3f5-c0ab" name="Counter" hidden="false" targetId="5c24-d8ee-b4ed-4c8d" type="rule"/>
+        <infoLink id="8ada-c3f0-600d-df99" name="Fast" hidden="false" targetId="f6ca-56fe-a21c-08fa" type="rule"/>
+        <infoLink id="eeea-636f-0f9a-834e" name="Impact(X)" hidden="false" targetId="0c08-1729-0be7-c286" type="rule"/>
+        <infoLink id="3140-773c-e874-6cc5" name="Strider" hidden="false" targetId="9dea-b566-200a-0605" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6b4b-a428-134c-a65e" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="99d3-b5ff-db21-03af">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5499-6199-c314-5989" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b7-a697-0adf-d42e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2666-d499-8030-282f" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="df74-2f72-2cc6-942d" name="Cyborg Bodies" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Defense +1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="28e7-0c16-f710-1092" name="Cyborg Wolf" hidden="false" collective="false" import="true" targetId="21ae-cfbf-b345-5314" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="def7-34b4-074d-ba73" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="667a-7340-4806-70d2" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="99d3-b5ff-db21-03af" name="Single Unit [5 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="9799-d9b4-9dd8-deb3" name="Claws" hidden="false" collective="false" import="true" targetId="a8f4-d9ee-4670-fd42" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0403-dc96-412a-0a6a" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3297-765d-eeb6-225c" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="6386-e2a5-db24-5851" name="Wolf Brothers - Upgrade List G (single unit)" hidden="false" collective="false" import="true" targetId="ebeb-5197-d5be-559c" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="c567-e19c-7ea0-b37c" name="Combined Unit [10 models]" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="8be8-8b6e-5008-9b4d" name="Claws" hidden="false" collective="false" import="true" targetId="a8f4-d9ee-4670-fd42" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0a1-ca37-8c83-327e" type="min"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be95-8d5d-1d62-5ea3" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="eba0-e441-2c4f-707c" name="Wolf Brothers - Upgrade List G (combined unit)" hidden="false" collective="false" import="true" targetId="c748-9545-be84-9050" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="170.0"/>
       </costs>
@@ -5988,6 +5985,11 @@
       <costs>
         <cost name="pts" typeId="567f-6468-66c6-2ea2" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="1e94-b758-ffec-0f8d" name="Cyborg Bodies" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a0ff-9024-7428-6097" name="Cyborg Bodies" hidden="false" targetId="244b-3059-7103-28f8" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -16524,6 +16526,38 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
+    <selectionEntryGroup id="ebeb-5197-d5be-559c" name="Wolf Brothers - Upgrade List G (single unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ac85-4a9d-e35c-d1b6" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="e9c2-4f10-b6b9-9dec" name="Cyborg Bodies" hidden="false" collective="false" import="true" targetId="1e94-b758-ffec-0f8d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d69e-3784-e92b-c17f" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="c748-9545-be84-9050" name="Wolf Brothers - Upgrade List G (combined unit)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b456-51ff-7976-bb4d" name="Upgrade all models with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="1aca-0607-43ef-0802" name="Cyborg Bodies" hidden="false" collective="false" import="true" targetId="1e94-b758-ffec-0f8d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3345-74ca-91ac-72b5" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="567f-6468-66c6-2ea2" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="ff04-8ef9-82f1-a88b" name="Shield Wall" publicationId="dead-6af1-a069-5579" hidden="false">
@@ -18448,6 +18482,11 @@
     <profile id="e91c-d006-e62c-ad96" name="Interceptors" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Teleport</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="244b-3059-7103-28f8" name="Cyborg Bodies" hidden="false" typeId="a964-43c6-d8f5-e47f" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="189e-687a-bec2-51ad">Defense +1</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
