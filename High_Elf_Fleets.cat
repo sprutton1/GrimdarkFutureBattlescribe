@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c684-bb58-7b6d-1f24" name="High Elf Fleets" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c684-bb58-7b6d-1f24" name="High Elf Fleets" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="d755-5d69-2721-c11b" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0470-6c7e-7502-e5c8" name="High Elf Fleets v2.10"/>
   </publications>
@@ -337,8 +337,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="792f-9d53-4660-2f58" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9448-ce8f-38a3-990e" type="min"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="e0fd-c38e-b05e-435a" name="Energy Spear" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="91b2-a5a1-90da-2191" name="AP(X)" hidden="false" targetId="f84f-fda5-e478-455d" type="rule"/>
+                <infoLink id="0d5b-e612-7699-7f4e" name="Energy Spear" hidden="false" targetId="c203-d5bb-b578-d3d6" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
-            <entryLink id="57c3-d5ca-33e0-40e2" name="Energy Spear" hidden="false" collective="false" import="true" targetId="dadb-f66f-a18f-a778" type="selectionEntry"/>
             <entryLink id="208c-718c-0ec4-740d" name="Energy Sword" hidden="false" collective="false" import="true" targetId="b085-6801-9084-46f0" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
